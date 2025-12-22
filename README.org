@@ -1,0 +1,49 @@
+#+author: Mathieu Renzo
+#+email: mrenzo@arizona.edu
+
+* Theoretical Astrophysics - Stellar Evolution
+
+
+[[https://www.as.arizona.edu/~mrenzo/courses/index.html][https://img.shields.io/website-up-down-green-red/http/shields.io.svg]]
+
+Material developed for the =AST400A= course (one semester) at the Department of
+Astronomy and Steward Observatory of the University of Arizona (Fall
+semester 2024/Spring semester 2025).
+
+ - [[./org-content/syllabus.org][Syllabus]]
+ - [[./org-content/lectures.org][Lectures topic-by-topic]]
+ - [[./org-content/projects.org][Projects and presentations]]
+
+* Technical details
+
+The lecture notes are written as emacs =org= files available in
+[[./org-content]] and exported to =html= (available [[https://www.as.arizona.edu/~mrenzo/courses/index.html][online here]], the output
+of the export also relies on the =css= and =html= templates in
+[[./html-content]]), and in =pdf= (compiled with =LaTeX=) for printing and
+annotating before I give a lecture.
+
+** How to build it?
+
+The script =build.sh= is the main script to build the website. It first
+checks if the flag =--all= was passed as an argument, in which case it
+will build all the =org= files, otherwise it will look for the =org=-files
+that have been modified using =git diff= and only build those.
+
+The script actually calls emacs to do the build (with =-Q= flag so the
+process does not depend on my specific emacs configuration), which is
+run by =build.sh= in =script= mode to run the =elisp= script =build-site.el=.
+
+=build-site.el= checks for the =htmlize= and =ox-publish= packages, and
+installs them locally if they are not available, then exports to =html=
+the appropriate files (either all the =org= files or the ones modified
+since the last commit) to the folder =html-content=, and hands back the
+control to =build.sh=, which finishes things by pushing to this repo and
+rsync the =html= files from the server where I host the website (this is
+just because the server is very old and I cannot have a modern version
+of emacs to build directly there).
+
+* Log
+
+Each semester's website is archived as a [[https://github.com/mathren/stellar_phys_400A/releases][release]]:
+- Fall 2024: [[https://github.com/mathren/stellar_phys_400A/releases/tag/v1.0][v1.0]]
+- Spring 2025: [[https://github.com/mathren/stellar_phys_400A/releases/tag/v2.0][v2.0]]

@@ -1,0 +1,205 @@
+#+Title: ASTR545 - Lectures topic-by-topic
+#+author: Mathieu Renzo
+#+email: mrenzo@arizona.edu
+#+options: title:nil
+#+PREVIOUS_PAGE: syllabus.org
+#+NEXT_PAGE: notes-lecture-Intro.org
+
+* Lectures topic-by-topic
+This is a rough schedule of the topics we will cover. However, we may
+not get to all topics, depending on progress throughout the semester
+and student interests. The order roughly follows the presentation in
+[[https://www.astro.ru.nl/~onnop/][Prof. Onno Pols' notes]], but it is subject to changes as the course
+progresses.
+
+*N.B.:* The notes provided here are intended to complement, /not/
+substitute other sources. You are *strongly encouraged* to consult books
+(e.g., Kippenhahn et al. 2012) and Prof. Onno Pols' notes.
+
+
+
+# Schedule for ASTR400A
+
+# ** <2025-01-16 Thu> - Intro & orders of magnitude
+# *Aim*:
+#  - Discuss [[./syllabus.org][syllabus]] and learning outcomes
+#  - Go over some basics (magnitudes, parallaxes, solar quantities: M_{\odot}, R_{\odot}, L_{\odot}, stellar lifetimes)
+#  - Discuss project, show list
+#  - Discuss expectations and grading rubrics for course and project
+
+# [[./notes-lecture-Intro.org][Notes]]
+
+# ** <2025-01-21 Tue> - Color-magnitude and Hertzsprung-Russell diagram
+# *Aim*: Introduce color-magnitude diagrams, theoretical HR diagram, and
+# how they relate to each other. Review some black body radiation and
+# the basics of spectral formation to introduce spectral types.
+
+# [[./notes-lecture-CMD-HRD.org][Notes]]
+
+# ** <2025-01-23 Thu> - Binaries and mass measurements
+# *Aim*: Introduce the concept of binarity of stars as something /not/
+# exotic. Walk through some classes of binaries based on how we observe
+# them (astrometric, visual, spectroscopic, eclipsing) and how they can
+# be used for empirical mass determination.
+
+# [[./notes-lecture-BIN.org][Notes]]
+
+# ** <2025-01-28 Tue> - Hydrostatic equilibrium
+# *Aim*: Introduce the mass conservation and hydrostatic equilibrium
+# equations of stellar evolution. Re-discuss the assumption of spherical
+# symmetry. Introduce the dynamical timescale(s). Brief introduction to
+# [[http://user.astro.wisc.edu/~townsend/static.php?ref=mesa-web-submit][MESA-web]].
+
+# [[./notes-lecture-HSE.org][Notes]]
+
+# ** <2025-01-30 Thu> - Equation of state 1
+# *Aim*: Introduce Polytropic and ideal gas equation of state.
+
+# [[./notes-lecture-EOS1.org][Notes]]
+
+# ** <2025-02-04 Tue> - Virial theorem
+# *Aim*: Introduce the Virial theorem in various forms. Demonstrate that
+# stars "become hotter as they lose energy".
+
+# [[./notes-lecture-VirTheo.org][Notes]]
+
+# ** <2025-02-06 Thu> - Equation of state 2
+# *Aim*: Introduce other relevant equations of state
+# - Degenerate and non-relativistic gas
+# - Degenerate and relativistic gas
+# - Radiation-dominated EOS
+
+# [[./notes-lecture-EOS2.org][Notes]]
+
+# ** <2025-02-11 Tue> - Radiative energy transport & conduction
+# *Aim*: Energy transport in radiative layers, the third stellar structure
+# equation for non-polytropic models, and local energy conservation
+
+# [[./notes-lecture-ETransport.org][Notes]]
+
+# ** <2025-02-13 Thu> - Opacities
+# *Aim*: discuss opacity, Rosseland mean opacities, atomic physics and other
+# sources of opacity in a star
+
+# [[./notes-lecture-kappa.org][Notes]]
+
+# ** <2025-02-18 Tue> - Convection
+# *Aim*: Introduce convective instability, mixing length theory, and its
+# limitations
+
+# [[./notes-lecture-convection.org][Notes]]
+
+# ** <2025-02-20 Thu> - Nuclear energy generation
+# *Aim*: Introduce basics of nuclear energy generation through fusion,
+# recall basic quantum mechanics elements, Gamow peak
+
+# [[./notes-lecture-nuclear-burning.org][Notes]]
+
+# ** <2025-02-25 Tue> - Nuclear reaction chains
+# *Aim*: Introduce pp chain, CN-NO bi-cycle, 3\alpha burning, and later burning
+# phases.
+
+# [[./notes-lecture-nuclear-cycles.org][Notes]]
+
+# ** <2025-02-27 Thu> - Neutrino cooling + stellar evolution codes
+# *Aim*: discuss neutrino physics relevant to stars, cooling processes and
+# thus complete the physics needed for 1D stellar evolution calculation.
+# Introduce general principles of stellar structure and evolution codes
+# and population synthesis.
+
+# [[./notes-lecture-neutrinos.org][Notes]]
+
+# ** <2025-03-06 Thu> - *Guest lecture*: Neutrinos in stars and using neural networks for Si burning
+# Guest lecturer: [[https://sites.google.com/view/aldanagrichener][Dr. Aldana Grichener]]
+
+# - [[https://drive.google.com/file/d/1AjrG15hWyWJdA9pg5cUYCm1ubIr3IiDx/view?usp=drive_link][Notes]] (Neutrinos)
+# - [[https://drive.google.com/file/d/1EpWOF-hU87DjrZwdmVOgm2MuDkS_CD9v/view?usp=drive_link][Slides]] (Neutrinos)
+# - [[https://drive.google.com/file/d/19BX64zOuuAxZZHW8mV5Uul4kk3wSfr0v/view?usp=drive_link][Slides]] (Neural network and burning)
+
+
+# ** <2025-03-10 Mon> - <2025-03-14 Fri> - SPRING BREAK
+
+
+# ** <2025-03-18 Tue> - *Guest Lecture*: Roche potential
+# Guest Lecturer: [[https://koushiksen1995.github.io/][Dr. Koushik Sen]]
+
+#  - [[https://koushiksen1995.github.io/#resources][Notes from Dr. Sen available here]]
+#  - (Notes from previous semester: [[./notes-lecture-RLOF.org][Notes]])
+
+# ** <2025-03-20 Thu> - *Special Guest Lecture*: Asteroseismology
+# Guest Lecturer: [[https://fys.kuleuven.be/ster/staff/conny-aerts][Prof. Conny Aerts]] from KU Leuven
+
+#  - [[https://www.aanda.org/articles/aa/full_html/2024/12/aa48575-23/aa48575-23.html][Recent review article]]
+#  - Slides are available on [[https://d2l.arizona.edu/d2l/le/news/1561844/2547588/view][d2l (enrolled students only)]]
+
+# Participation from Steward Observatory and NOIR lab will be encouraged
+
+# ** <2025-03-25 Tue> - Stellar atmospheres and outer boundary conditions
+# *Aims*: discuss in more detail the following:
+# - outer boundary conditions
+# - Saha equation
+# - line formation region
+# - line broadening mechanisms
+
+# [[./notes-lecture-radTrans.org][Notes]]
+
+# ** <2025-03-27 Thu> - In class activity: Evolution 1
+# *Aim*: discuss the evolution of stars in an in-class activity based on
+# =MESA-web= models precomputed by the students
+
+# [[./notes-in-class-evol.org][Notes]]
+
+# ** <2025-04-01 Tue> - In class activity: Evolution 2
+# *Aim*: discuss the evolution of stars in an in-class activity based on
+# =MESA-web= models precomputed by the students
+
+# [[./notes-in-class-evol.org][Notes]]
+
+# ** <2025-04-03 Thu> - In class activity: Evolution 3
+# *Aim*: discuss the evolution of stars in an in-class activity based on
+# =MESA-web= models precomputed by the students
+
+# [[./notes-in-class-evol.org][Notes]]
+
+# ** <2025-04-08 Tue> - In class activity: Evolution 4
+# *Aim*: discuss the evolution of stars in an in-class activity based on
+# =MESA-web= models precomputed by the students
+
+# Discuss written and oral presentations, and refereeing process.
+
+# [[./notes-in-class-evol.org][Notes]]
+
+# ** <2025-04-10 Thu> - Supernovae
+# *Aim*: Introduce the nomenclature for supernovae, discuss the physics of
+# core-collapse and the formation of compact objects
+
+# [[./notes-lecture-SNe.org][Notes]]
+
+# ** <2025-04-15 Tue> - Gravitational wave progenitors
+# *Aim*: introduce gravitational wave formation scenario (isolated binary
+# and dynamical assembly), discuss some known uncertainties.
+
+# [[./notes-lecture-GWprog.org][Notes]]
+
+# ** <2025-04-17 Thu> - Two student presentations
+# *Aim*: students will present a topic in stellar evolution to the class.
+# The details of the schedule will be communicated on D2L
+
+# ** <2025-04-22 Tue> - Two student presentations
+# *Aim*: students will present a topic in stellar evolution to the class.
+# The details of the schedule will be communicated on D2L
+
+# ** <2025-04-24 Thu> - Two student presentations
+# *Aim*: students will present a topic in stellar evolution to the class.
+# The details of the schedule will be communicated on D2L
+
+# ** <2025-04-29 Tue> - Two student presentations
+# *Aim*: students will present a topic in stellar evolution to the class.
+# The details of the schedule will be communicated on D2L
+
+# ** <2025-05-01 Thu> - Two student presentations
+# *Aim*: students will present a topic in stellar evolution to the class.
+# The details of the schedule will be communicated on D2L
+
+# ** <2025-05-06 Tue> - One student presentations
+# Extra time can be used as backup

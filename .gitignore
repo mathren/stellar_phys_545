@@ -1,0 +1,49 @@
+*~
+.packages/*
+
+# ignore materials from other courses
+
+others_materials/*
+
+# ignore lecture notes for now
+
+org-content/presentation_schedule.org
+
+# ignore products for now
+
+html-content/*.html
+*.tex
+*.pdf
+
+# ignore gimp figures
+*.xcf
+
+# ignore MESA-web results
+MESA-web/*
+# but force python scripts
+!MESA-web/python/*.py
+!MESA-web/python/matplotlibrc
+
+grades/*
+
+# ignore admin stuff
+*.docx
+*~
+*.lock
+presentation_schedule.*
+
+MIST/*
+
+*.zip
+
+student_projects/*
+
+feedback/*
+Fall2024_materials/*
+Spring2025_materials/*
+
+*homework_deadlines.org
+
+*.tar.xz
+*.tar.gz
+*.tar
