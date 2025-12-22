@@ -1,14 +1,18 @@
 #+author: Mathieu Renzo
 #+email: mrenzo@arizona.edu
 
-* Theoretical Astrophysics - Stellar Evolution
+* TODO ASTR545 prep
+- [ ] final project: no need to produce anything written?
+- [ ] final project: push to make new calculations?
+- [ ] schedule
 
+* Theoretical Astrophysics - Stellar Evolution
 
 [[https://www.as.arizona.edu/~mrenzo/courses/index.html][https://img.shields.io/website-up-down-green-red/http/shields.io.svg]]
 
-Material developed for the =AST400A= course (one semester) at the Department of
-Astronomy and Steward Observatory of the University of Arizona (Fall
-semester 2024/Spring semester 2025).
+Material developed for the =ASTR/PTYS 545= course (one semester) at the
+Department of Astronomy and Steward Observatory of the University of
+Arizona (Fall semester 2024/Spring semester 2025).
 
  - [[./org-content/syllabus.org][Syllabus]]
  - [[./org-content/lectures.org][Lectures topic-by-topic]]
@@ -44,6 +48,4 @@ of emacs to build directly there).
 
 * Log
 
-Each semester's website is archived as a [[https://github.com/mathren/stellar_phys_400A/releases][release]]:
-- Fall 2024: [[https://github.com/mathren/stellar_phys_400A/releases/tag/v1.0][v1.0]]
-- Spring 2025: [[https://github.com/mathren/stellar_phys_400A/releases/tag/v2.0][v2.0]]
+Each semester's website will be archived as a release.

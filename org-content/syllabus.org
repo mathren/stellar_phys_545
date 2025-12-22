@@ -1,4 +1,4 @@
-#+title: ASTR545 Syllabus - Stellar Evolution
+#+title: ASTR/PTYS 545 Syllabus - Stellar Evolution
 #+author: Mathieu Renzo
 #+email: mrenzo@arizona.edu
 #+PREVIOUS_PAGE: index.org
@@ -55,8 +55,8 @@ solving activities (individual and in group), and student
 presentations. Some problem solving activities will be of
 computational nature.
 
-This is also a class with "writing emphasis", which will be included
-as part of homework and the final presentation.
+# This is also a class with "writing emphasis", which will be included
+# as part of homework and the final presentation.
 
 * Recommended textbooks and resources
 Most stellar physics text books will contain most of the information
@@ -66,7 +66,7 @@ follow these:
 
  - [[https://www.astro.ru.nl/~onnop/][Prof. Onno Pols notes]]. These lecture notes are freely available,
    accessible, and thorough, making them an excellent starting point.
-   I strongly suggest downloading a copy for yourself early in the
+   I *strongly* suggest downloading a copy for yourself early in the
    course.
  - [[https://link.springer.com/book/10.1007/978-3-642-30304-3][Kippenhahn, Weigert, & Weiss 2012]]. This is a classic textbook that
    you may continue to consult even as a seasoned researcher with
@@ -78,7 +78,7 @@ We will also use [[http://user.astro.wisc.edu/~townsend/static.php?ref=mesa-web-
 evolution simulations with the open-source, community-developed, code
 [[https://docs.mesastar.org/en/latest/][MESA]].
 
-* Exams and grading
+* TODO Exams and grading
 The course grade will be based on:
  - In class participation: 20%
  - Homework: 40%
@@ -92,7 +92,7 @@ between final percentages and letter grades:
  - D: 30-50%
  - E: 0-30%
 
-** Participation
+** Participation (\neq presence)
 Your engagement, quality of contributions, and interactions with the
 instructors and with your peers will contribute to your final grade.
 Quality and frequency of your contributions will be evaluated
@@ -163,7 +163,7 @@ contextualise them as appropriate.
 Timely feedback will be provided for you to assess your understanding
 and progress.
 
-** Literature review project and presentation
+** TODO Literature review project and presentation
 You will be assigned a topic relevant to the course to explain to your
 peers. You will search the literature and prepare a written text plus
 an oral presentation. The written text will be evaluated both by the

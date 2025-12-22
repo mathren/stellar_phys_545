@@ -4,7 +4,7 @@
 #+PREVIOUS_PAGE: index.org
 #+NEXT_PAGE: syllabus.org
 
-* 400A Theoretical Astrophysics - Stellar Evolution
+* ASTR/PTYS 545 Theoretical Astrophysics - Stellar Evolution
 
 Material developed for a one-semester graduate-level course at the
 Department of Astronomy and Steward Observatory of the University of
@@ -28,7 +28,7 @@ parsecs!/"
 
 All the pages of this website are under active construction, may
 contain errors and change without notice. If you find an error please
-let me know and feel free to open an issue/PR on [[https://github.com/mathren/stellar_phys_400A][GitHub]].
+let me know and feel free to open an issue/PR on [[https://github.com/mathren/stellar_phys_545][GitHub]].
 
 ** How to use this website
 
