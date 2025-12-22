@@ -1,4 +1,4 @@
-#+title: 400A Projects
+#+title: ASTR/PTYS 545 Projects
 #+author: Mathieu Renzo
 #+email: mrenzo@arizona.edu
 #+PREVIOUS_PAGE: syllabus.org
