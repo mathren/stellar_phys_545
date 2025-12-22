@@ -4,7 +4,7 @@
 #+PREVIOUS_PAGE: syllabus.org
 #+NEXT_PAGE: lectures.org
 
-* Literature review project/presentation
+* TODO Final Project: Literature review and presentation
 The aim of this literature review project is for each student to
 engage in a bit more depth with an important topic in modern stellar
 physics /and/ explain it to the rest of the class. This is effectively a
@@ -223,10 +223,10 @@ This counts for 10% of this assignment, corresponding to 4% of total grade.
 presentation. You are asked to evaluate the work, /not/ the author. Give
 clear and constructive criticism focusing on helping the presenter.
 
-* Honors project
+# * Honors project
 
-To get honors credits for this class, on top of the project described
-above, you will do a stellar evolution theory project using the [[https://docs.mesastar.org/en/latest/][MESA]]
-code on your own laptop to investigate in more depth some aspect that
-we will only barely mention in class. [[./honors.org][Follow this link to see an
-example honors project]].
+# To get honors credits for this class, on top of the project described
+# above, you will do a stellar evolution theory project using the [[https://docs.mesastar.org/en/latest/][MESA]]
+# code on your own laptop to investigate in more depth some aspect that
+# we will only barely mention in class. [[./honors.org][Follow this link to see an
+# example honors project]].

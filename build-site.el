@@ -32,7 +32,6 @@
 	(message "No modified Org files found.")))
     ))
 
-
 (defun mr/read-file (file)
   "Read contents of FILE to string"
   (with-temp-buffer (insert-file-contents file) (buffer-string)))
@@ -70,10 +69,6 @@ INFO is the export plist."
                          (format-time-string "%-d %B %Y")
                          emacs-version
                          org-version)))
-    ;; Substitute previous_page and next_page in the footer template
-    ;; (message "Footer template before substitution: %s" footer-template)
-    ;; (message "Previous page: %s" previous-page)
-    ;; (message "Next page: %s" next-page)
     (setq footer (replace-regexp-in-string "PREVIOUS_PAGE" (or previous-page "#") footer t t))
     (setq footer (replace-regexp-in-string "NEXT_PAGE" (or next-page "#") footer t t))
     ))

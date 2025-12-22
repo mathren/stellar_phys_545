@@ -16,13 +16,15 @@ progresses.
 substitute other sources. You are *strongly encouraged* to consult books
 (e.g., Kippenhahn et al. 2012) and Prof. Onno Pols' notes.
 
-** <2026-01-16 Fri> - Intro & orders of magnitude
+
+** <2026-01-14 Wed> - Intro & orders of magnitude
 *Aim*:
  - Discuss [[./syllabus.org][syllabus]] and learning outcomes
  - Go over some basics (magnitudes, parallaxes, solar quantities: M_{\odot}, R_{\odot}, L_{\odot}, stellar lifetimes)
  - Discuss project, show list
  - Discuss expectations and grading rubrics for course and project
 
+** <2026-01-16 Fri>
 ** <2026-01-19 Mon>
 ** <2026-01-21 Wed>
 ** <2026-01-23 Fri>
@@ -70,9 +72,6 @@ substitute other sources. You are *strongly encouraged* to consult books
 ** <2026-05-01 Fri>
 ** <2026-05-04 Mon>
 ** <2026-05-06 Wed>
-** <2026-05-08 Fri>
-** <2026-05-11 Mon>
-** <2026-05-13 Wed>
 
 
 
