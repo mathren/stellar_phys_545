@@ -134,7 +134,7 @@ INFO is the export plist."
 	     :html-html5-fancy t
 	     :email "mrenzo@arizona.edu"
 	     :meta-type "website"
-	     :description: "Website for 400A Theoretical Astrophysics - Stellar Evolution"
+	     :description: "Website for ASTR/PTYS 545 Theoretical Astrophysics - Stellar Evolution"
 	     :with-title nil
 	     :with-latex t
 	     :with-sub-superscript t
