@@ -20,37 +20,154 @@ substitute other sources. You are *strongly encouraged* to consult books
 ** <2026-01-14 Wed> - Intro & orders of magnitude
 *Aim*:
  - Discuss [[./syllabus.org][syllabus]] and learning outcomes
+ - Intro questionnaire
  - Go over some basics (magnitudes, parallaxes, solar quantities: M_{\odot}, R_{\odot}, L_{\odot}, stellar lifetimes)
  - Discuss project, show list
  - Discuss expectations and grading rubrics for course and project
 
-** <2026-01-16 Fri>
-** <2026-01-19 Mon>
-** <2026-01-21 Wed>
+[[./notes-lecture-Intro.org][Notes]]
+
+** <2026-01-16 Fri> - Color-magnitude and Hertzsprung-Russell diagram
+*Aim*: Introduce color-magnitude diagrams, theoretical HR diagram, and
+how they relate to each other. Review some black body radiation and
+the basics of spectral formation to introduce spectral types.
+
+[[./notes-lecture-CMD-HRD.org][Notes]]
+
+** <2026-01-19 Mon> - Binaries and mass measurements
+*Aim*: Introduce the concept of binarity of stars as something /not/
+exotic. Walk through some classes of binaries based on how we observe
+them (astrometric, visual, spectroscopic, eclipsing) and how they can
+be used for empirical mass determination.
+
+[[./notes-lecture-BIN.org][Notes]]
+
+
+** <2026-01-21 Wed> - Hydrostatic equilibrium
+*Aim*: Introduce the mass conservation and hydrostatic equilibrium
+equations of stellar evolution. Re-discuss the assumption of spherical
+symmetry. Introduce the dynamical timescale(s). Brief introduction to
+[[http://user.astro.wisc.edu/~townsend/static.php?ref=mesa-web-submit][MESA-web]].
+
+[[./notes-lecture-HSE.org][Notes]]
 ** <2026-01-23 Fri>
-** <2026-01-26 Mon>
-** <2026-01-28 Wed>
+
+** <2026-01-26 Mon>  - Equation of state 1
+*Aim*: Introduce Polytropic and ideal gas equation of state.
+
+[[./notes-lecture-EOS1.org][Notes]]
+
+** <2026-01-28 Wed> - Virial theorem
+*Aim*: Introduce the Virial theorem in various forms. Demonstrate that
+stars "become hotter as they lose energy".
+
+[[./notes-lecture-VirTheo.org][Notes]]
+
 ** <2026-01-30 Fri>
-** <2026-02-02 Mon>
-** <2026-02-04 Wed>
+
+** <2026-02-02 Mon>- Equation of state 2
+*Aim*: Introduce other relevant equations of state
+- Degenerate and non-relativistic gas
+- Degenerate and relativistic gas
+- Radiation-dominated EOS
+
+[[./notes-lecture-EOS2.org][Notes]]
+** <2026-02-04 Wed>- Radiative energy transport & conduction
+*Aim*: Energy transport in radiative layers, the third stellar structure
+equation for non-polytropic models, and local energy conservation
+
+[[./notes-lecture-ETransport.org][Notes]]
+
 ** <2026-02-06 Fri>
-** <2026-02-09 Mon>
-** <2026-02-11 Wed>
+
+
+** <2026-02-09 Mon>  - Opacities
+*Aim*: discuss opacity, Rosseland mean opacities, atomic physics and other
+sources of opacity in a star
+
+[[./notes-lecture-kappa.org][Notes]]
+
+** <2026-02-11 Wed> - Convection
+*Aim*: Introduce convective instability, mixing length theory, and its
+limitations
+
+[[./notes-lecture-convection.org][Notes]]
+
 ** <2026-02-13 Fri>
-** <2026-02-16 Mon>
-** <2026-02-18 Wed>
+** <2026-02-16 Mon> - Nuclear energy generation
+*Aim*: Introduce basics of nuclear energy generation through fusion,
+recall basic quantum mechanics elements, Gamow peak
+
+[[./notes-lecture-nuclear-burning.org][Notes]]
+** <2026-02-18 Wed>  - Nuclear reaction chains
+*Aim*: Introduce pp chain, CN-NO bi-cycle, 3\alpha burning, and later burning
+phases.
+
+[[./notes-lecture-nuclear-cycles.org][Notes]]
+
 ** <2026-02-20 Fri>
-** <2026-02-23 Mon>
-** <2026-02-25 Wed>
+
+
+** <2026-02-23 Mon> - Neutrino cooling + stellar evolution codes
+*Aim*: discuss neutrino physics relevant to stars, cooling processes and
+thus complete the physics needed for 1D stellar evolution calculation.
+Introduce general principles of stellar structure and evolution codes
+and population synthesis.
+
+[[./notes-lecture-neutrinos.org][Notes]]
+
+** <2026-02-25 Wed> - Stellar atmospheres and outer boundary conditions
+*Aims*: discuss in more detail the following:
+- outer boundary conditions
+- Saha equation
+- line formation region
+- line broadening mechanisms
+
+[[./notes-lecture-radTrans.org][Notes]]
+
 ** <2026-02-27 Fri>
-** <2026-03-02 Mon>
-** <2026-03-04 Wed>
+** <2026-03-02 Mon>  - In class activity: Evolution 1
+*Aim*: discuss the evolution of stars in an in-class activity based on
+=MESA-web= models precomputed by the students
+
+[[./notes-in-class-evol.org][Notes]]
+** <2026-03-04 Wed> - In class activity: Evolution 2
+*Aim*: discuss the evolution of stars in an in-class activity based on
+=MESA-web= models precomputed by the students
+
+[[./notes-in-class-evol.org][Notes]]
+
+** <2025-03-07 Fri> - <2025-03-15 Sat> - SPRING BREAK
 ** <2026-03-06 Fri>
-** <2026-03-09 Mon>
-** <2026-03-11 Wed>
+
+** <2026-03-09 Mon> - In class activity: Evolution 3
+*Aim*: discuss the evolution of stars in an in-class activity based on
+=MESA-web= models precomputed by the students
+
+[[./notes-in-class-evol.org][Notes]]
+
+** <2026-03-11 Wed> <2025-04-08 Tue> - In class activity: Evolution 4
+*Aim*: discuss the evolution of stars in an in-class activity based on
+=MESA-web= models precomputed by the students
+
+Discuss written and oral presentations, and refereeing process.
+
+[[./notes-in-class-evol.org][Notes]]
+
 ** <2026-03-13 Fri>
-** <2026-03-16 Mon>
-** <2026-03-18 Wed>
+
+** <2026-03-16 Mon> - Supernovae
+*Aim*: Introduce the nomenclature for supernovae, discuss the physics of
+core-collapse and the formation of compact objects
+
+[[./notes-lecture-SNe.org][Notes]]
+
+** <2026-03-18 Wed> - Gravitational wave progenitors
+*Aim*: introduce gravitational wave formation scenario (isolated binary
+and dynamical assembly), discuss some known uncertainties.
+
+[[./notes-lecture-GWprog.org][Notes]]
+
 ** <2026-03-20 Fri>
 ** <2026-03-23 Mon>
 ** <2026-03-25 Wed>
@@ -76,7 +193,7 @@ substitute other sources. You are *strongly encouraged* to consult books
 
 
 
-# Schedule for ASTR400A
+# Schedule for ASTRASTR545
 
 # ** <2025-01-16 Thu> - Intro & orders of magnitude
 # *Aim*:

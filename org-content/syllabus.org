@@ -78,6 +78,8 @@ We will also use [[http://user.astro.wisc.edu/~townsend/static.php?ref=mesa-web-
 evolution simulations with the open-source, community-developed, code
 [[https://docs.mesastar.org/en/latest/][MESA]].
 
+* TODO Statement on Generative AI
+
 * TODO Exams and grading
 The course grade will be based on:
  - In class participation: 20%
