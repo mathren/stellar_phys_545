@@ -50,3 +50,5 @@ Spring2025_materials/*
 *.tar.xz
 *.tar.gz
 *.tar
+
+MESA_web/*
