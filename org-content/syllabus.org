@@ -78,7 +78,25 @@ We will also use [[http://user.astro.wisc.edu/~townsend/static.php?ref=mesa-web-
 evolution simulations with the open-source, community-developed, code
 [[https://docs.mesastar.org/en/latest/][MESA]].
 
-* TODO Statement on Generative AI
+* Statement on Generative AI
+You are welcome to use generative AI tools as part of your learning
+process in this course. These tools can be valuable aids for exploring
+concepts, organizing your thoughts, and supporting your research.
+However, /all work you submit must represent your own understanding,
+analysis, and intellectual effort/. When you use generative AI in
+preparing an assignment, you must:
+
+1. Declare its use and describe how you employed it
+2. Provide answers, solutions, and interpretations that reflect your
+   own reasoning and expertise
+
+Submitting AI-generated content as your own work - whether in whole or
+in part - constitutes a violation of the [[https://deanofstudents.arizona.edu/policies/code-academic-integrity][Code of Academic Integrity]],
+specifically the prohibition against submitting work that is not your
+own. This includes text, code, calculations, or analyses that you have
+not personally verified, understood, and made your own through genuine
+intellectual engagement. If you have questions about appropriate use
+of AI tools for a particular assignment, please ask.
 
 * TODO Exams and grading
 The course grade will be based on:
