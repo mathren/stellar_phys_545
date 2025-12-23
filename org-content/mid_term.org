@@ -1,0 +1,21 @@
+#+Title: ASTR/PYTS 545 Mid-term take-home exam
+#+author: Mathieu Renzo
+#+email: mrenzo@arizona.edu
+#+options: title:nil
+#+PREVIOUS_PAGE: notes-in-class-evol.org
+#+NEXT_PAGE: notes-in-class-evol.org
+
+* TODO Mid-term exam
+
+Take home exercise:
+
+- MESA/MESA-web task
+- explain a Kippenhahn diagram (given ref.)
+- virial theorem exercise
+- Stellar lifetimes
+- R(Z) on the MS: why radial expansion?
+-
+
+* TODO Evaluation Rubric
+Will look at the code only if needed but a full reproducibility
+package has to be provided.

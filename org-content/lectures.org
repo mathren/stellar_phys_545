@@ -137,8 +137,10 @@ and population synthesis.
 [[./notes-in-class-evol.org][Notes]]
 
 ** TODO <2026-03-02 Fri> - <2026-03-04 Sat> - SPRING BREAK
-Take home assignment?
-** TODO <2026-03-16 Mon>- Star (& planet) formation
+
+[[mid_term.org][Midterm exam]]
+
+** TODO <2026-03-16 Mon> - Star (& planet) formation
 ** <2026-03-18 Mon> - In class activity: Evolution 3
 *Aim*: discuss the evolution of stars in an in-class activity based on
 =MESA-web= models precomputed by the students
@@ -158,8 +160,8 @@ Discuss written and oral presentations, and refereeing process.
 *Aim*: Introduce helio and asteroseismology concepts. p- and g- waves,
  restoring force, mixed modes.
 ** TODO <2026-03-27 Fri> - Tides
-** <2026-03-30 Mon> - Roche Geometry
-** TODO <2026-04-01 Fri> - Common envelope
+** TODO <2026-03-30 Mon> - Interacting binaries
+** <2026-04-01 Fri> -
 ** <2026-04-03 Wed> - SNIa
 ** <2026-04-06 Fri> - Supernovae
 *Aim*: Introduce the nomenclature for supernovae, discuss the physics of

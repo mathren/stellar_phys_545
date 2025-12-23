@@ -2,10 +2,12 @@
 #+email: mrenzo@arizona.edu
 
 * TODO ASTR545 prep
-- [ ] final project: no need to produce anything written?
+
 - [ ] final project: push to make new calculations?
-- [ ] final project: how to divide presentations in 3 lectures?
 - [ ] schedule
+
+** Mid term take-home
+see [[./org-content/mid_term.org]]
 
 * TODO Theoretical Astrophysics - Stellar Evolution
 
