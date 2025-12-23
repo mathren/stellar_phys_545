@@ -138,7 +138,7 @@ and population synthesis.
 
 ** TODO <2026-03-02 Fri> - <2026-03-04 Sat> - SPRING BREAK
 
-[[mid_term.org][Midterm exam]]
+[[./mid_term.org][Midterm exam]]
 
 ** TODO <2026-03-16 Mon> - Star (& planet) formation
 ** <2026-03-18 Mon> - In class activity: Evolution 3
