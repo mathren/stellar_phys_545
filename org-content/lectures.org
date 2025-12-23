@@ -17,13 +17,14 @@ substitute other sources. You are *strongly encouraged* to consult books
 (e.g., Kippenhahn et al. 2012) and Prof. Onno Pols' notes.
 
 
-** <2025-03-07 Wed> - Intro & orders of magnitude
+** TODO <2025-03-07 Wed> - Intro
 *Aim*:
  - Discuss [[./syllabus.org][syllabus]] and learning outcomes
- - Intro questionnaire
- - Go over some basics (magnitudes, parallaxes, solar quantities: M_{\odot}, R_{\odot}, L_{\odot}, stellar lifetimes)
+ - [ ] Intro questionnaire
+ - [ ] Discuss take home assignment ?
  - Discuss project, show list
  - Discuss expectations and grading rubrics for course and project
+ - Go over some basics (magnitudes, parallaxes, solar quantities: M_{\odot}, R_{\odot}, L_{\odot}, stellar lifetimes)
 
 [[./notes-lecture-Intro.org][Notes]]
 
