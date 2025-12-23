@@ -20,7 +20,7 @@ substitute other sources. You are *strongly encouraged* to consult books
 ** TODO <2025-03-07 Wed> - Intro
 *Aim*:
  - Discuss [[./syllabus.org][syllabus]] and learning outcomes
- - [ ] Intro questionnaire
+ - [ ] Intro questionnaire (see email)
  - [ ] Discuss take home assignment ?
  - Discuss project, show list
  - Discuss expectations and grading rubrics for course and project
