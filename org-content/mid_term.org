@@ -7,14 +7,89 @@
 
 * TODO Mid-term exam
 
-Take home exercise:
+This mid-term is a take-home exam due on <2026-03-27 Fri>. All
+assignments can be completed using data generated with =MESA-web=
+([[http://user.astro.wisc.edu/~townsend/static.php?ref=mesa-web-submit][calculation submission page]]) or with your own installation =MESA=.
+Instructions are provided assuming the use of the former, and the
+latter does not guarantees any bonus bit may afford more flexibility
+in performing numerical experiments to answer the questions.
 
-- MESA/MESA-web task
-- explain a Kippenhahn diagram (given ref.)
-- virial theorem exercise
-- Stellar lifetimes
-- R(Z) on the MS: why radial expansion?
--
+** Understanding the Sun's radial evolution
+What physics drives the evolution of the stellar radius?
+
+*** A simple model of the Sun
+Run a model of a $1M_{\odot}$ star until 14Gyr.
+
+:Hint:
+You may want to change the =Detailed profile output frequency= under the
+=General= options
+:end:
+
+Plot as a function of a time-like variable (e.g., $t$, $\log_{10}(t)$,
+$T_{center}$) the evolution of the radius of the Sun ($R$ or
+$\log_{10}(R)$).
+
+1. What is the present-day value (assume $t_{\odot}=4.5Gyr$_{})?
+2. At what $t$ does the radius equal 1$R_{\odot}$?
+3. Explain which physical ingredients may cause possible mis-matches
+4. *Bonus*: show with varying model parameters an improved agreement
+
+:Hint:
+For the bonus task, you can help yourself searching [[https://ui.adsabs.harvard.edu/][NASA/ADS]] to search
+for papers modeling the Sun with MESA
+:end:
+
+*** Stellar evolution
+The evolution of a star is mostly driven by the thermonuclear
+conversion of fuel in the core, which changes (on a nuclear timescale)
+the composition.
+
+1. Identify in the stellar structure equations all the quantities
+   dependent on the chemical composition and briefly describe how
+
+Let's use numerical models to change some physical ingredients and see
+what would happen to a star. Re-run the previous model, but now three
+times using the =Burning modifiers= option under =Nuclear reactions=.
+
+These will respectively:
+- ignore the changes in chemical composition due to nuclear burning
+- ignore the energy release due to nuclear burning
+- ignore /both/ of the above.
+
+Compare the radial evolution of the four (or five) models at end.
+1. Which physical effect drives the evolution of the radius?
+2. What is the lifetime of the model that has no energy release?
+
+*** Metallicity variations
+Now run models of a 1M_{\odot} star with normal physics assumptions (/not/
+neglecting chemical evolution and/or energy release) varying the
+initial metallicity Z=0.03, (0.02, you have already), 0.01, 0.004,
+0.0001.
+
+Once again, compare the radial evolution and the HR diagram of these
+models.
+
+1. How is the R(Z) trend at a given evolutionary phase?
+2. Explain the physics of the trend, with a theoretically-motivated
+   analytic estimate and confront it quantitatively with your models
+
+:Debugging:
+In case you run into issues with producing the MESA models, first try
+searching the web (specifically the [[http://user.astro.wisc.edu/~townsend/static.php?ref=mesa-web][MESA-web documentation]], [[https://docs.mesastar.org/en/25.12.1/][MESA
+documentation]], and [[https://lists.mesastar.org/pipermail/mesa-users/][MESA mailing list archive]], . It is also
+acceptable to vary parameters other than those specified in the
+exercises if it helps.
+:end:
+
+** Mass loss
+
+** Kippenhahn diagram
+
+Explain diagram above and star that it represents, walking through its
+past.
+
+** Virial theorem exercise
+
 
 * TODO Evaluation Rubric
 Will look at the code only if needed but a full reproducibility

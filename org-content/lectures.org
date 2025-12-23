@@ -141,6 +141,9 @@ and population synthesis.
 [[./mid_term.org][Midterm exam]]
 
 ** TODO <2026-03-16 Mon> - Star (& planet) formation
+*Aim*: Introduce concept of Jeans mass, feedback, YSO.
+
+
 ** <2026-03-18 Mon> - In class activity: Evolution 3
 *Aim*: discuss the evolution of stars in an in-class activity based on
 =MESA-web= models precomputed by the students
@@ -174,15 +177,15 @@ core-collapse and the formation of compact objects
 and dynamical assembly), discuss some known uncertainties.
 
 [[./notes-lecture-GWprog.org][Notes]]
-** <2026-04-10 Wed> - Two students presentations
-** <2026-04-13 Fri> - Two students presentations
-** <2026-04-15 Mon> - Two students presentations
-** <2026-04-17 Wed> - Two students presentations
-** <2026-04-20 Fri> - Two students presentations
-** <2026-04-22 Fri> - Two students presentations
-** <2026-04-24 Mon> - Two students presentations
-** <2026-04-27 Wed> - Two students presentations
-** TODO <2026-04-29 Mon> - Guest lecture 1
-** TODO <2026-05-01 Wed> - Guest lecture 2
+** TODO <2026-04-10 Mon> - Guest lecture 1
+** TODO <2026-04-13 Wed> - Guest lecture 2
+** <2026-04-15 Wed> - Two students presentations
+** <2026-04-17 Fri> - Two students presentations
+** <2026-04-20 Mon> - Two students presentations
+** <2026-04-22 Wed> - Two students presentations
+** <2026-04-24 Fri> - Two students presentations
+** <2026-04-27 Fri> - Two students presentations
+** <2026-04-29 Mon> - Two students presentations
+** <2026-05-01 Wed> - Two students presentations
 ** TODO <2026-05-04 Wed> -
 ** TODO <2026-05-06 Mon> -

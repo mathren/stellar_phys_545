@@ -98,11 +98,12 @@ not personally verified, understood, and made your own through genuine
 intellectual engagement. If you have questions about appropriate use
 of AI tools for a particular assignment, please ask.
 
-* TODO Exams and grading
+* Exams and grading
 The course grade will be based on:
  - In class participation: 20%
- - Homework: 40%
- - Literature review project/presentation (written+oral): 40%
+ - Homework: 30%
+ - Mid-term take home: 20%
+ - Literature review project/presentation (written+oral): 30%
 
 The class will not be curved, and this will be the correspondence
 between final percentages and letter grades:
@@ -172,16 +173,29 @@ free to use resources outside of the textbook. You can also
 collaborate with your peers, but please *each time you do, indicate
 with whom*. You *must* show your individual work to receive full credit.
 
-Assignments should be uploaded *in pdf form* via D2L. Deadlines will be
-designed to use the homework materials in class. *Late submissions will
-not be accepted unless explicitly agreed upon beforehand*, if you
-expect not to make it on time, ask for an extension *at least one day
-before the deadline*. It's better to submit something incomplete than
-nothing. In your pdf files, you should show the calculations done and
-contextualise them as appropriate.
+Assignments should be uploaded *in pdf form* via D2L and include a
+minimal "reproducibility package" when involving code/data. The
+reproducibility package can be limited to the bare minimal (source of
+the data, scripts) and I will typically /not/ need to run your code,
+unless necessary. The submission of the reproducibility package
+*complements but does not substitute the submission of answers in pdf*.
+
+Deadlines will be designed to use the homework materials in class.
+*Late submissions will not be accepted unless explicitly agreed upon
+beforehand*, if you expect not to make it on time, ask for an extension
+*at least one day before the deadline*. It's better to submit something
+incomplete than nothing. In your pdf files, you should show the
+calculations done and contextualise them as appropriate.
 
 Timely feedback will be provided for you to assess your understanding
 and progress.
+
+** Mid-term take-home exam
+
+There will be a mid-term take-home exam consisting of theoretical
+questions, =MESA-web= (and/or MESA) based calculations, analysis and
+interpretation. Like for the homework, a minimal reproducibility
+package will be required.
 
 ** TODO Literature review project and presentation
 You will be assigned a topic relevant to the course to explain to your
