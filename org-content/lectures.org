@@ -17,7 +17,7 @@ substitute other sources. You are *strongly encouraged* to consult books
 (e.g., Kippenhahn et al. 2012) and Prof. Onno Pols' notes.
 
 
-** <2026-01-14 Wed> - Intro & orders of magnitude
+** <2025-03-07 Wed> - Intro & orders of magnitude
 *Aim*:
  - Discuss [[./syllabus.org][syllabus]] and learning outcomes
  - Intro questionnaire
@@ -27,14 +27,14 @@ substitute other sources. You are *strongly encouraged* to consult books
 
 [[./notes-lecture-Intro.org][Notes]]
 
-** <2026-01-16 Fri> - Color-magnitude and Hertzsprung-Russell diagram
+** <2025-03-15 Fri> - Color-magnitude and Hertzsprung-Russell diagram
 *Aim*: Introduce color-magnitude diagrams, theoretical HR diagram, and
 how they relate to each other. Review some black body radiation and
 the basics of spectral formation to introduce spectral types.
 
 [[./notes-lecture-CMD-HRD.org][Notes]]
 
-** <2026-01-19 Mon> - Binaries and mass measurements
+** <2026-01-14 Mon> - Binaries and mass measurements
 *Aim*: Introduce the concept of binarity of stars as something /not/
 exotic. Walk through some classes of binaries based on how we observe
 them (astrometric, visual, spectroscopic, eclipsing) and how they can
@@ -42,72 +42,72 @@ be used for empirical mass determination.
 
 [[./notes-lecture-BIN.org][Notes]]
 
-** <2026-01-21 Wed> - Hydrostatic equilibrium
+** <2026-01-16 Wed> - Hydrostatic equilibrium
 *Aim*: Introduce the mass conservation and hydrostatic equilibrium
 equations of stellar evolution. Re-discuss the assumption of spherical
 symmetry. Introduce the dynamical timescale(s). Brief introduction to
 [[http://user.astro.wisc.edu/~townsend/static.php?ref=mesa-web-submit][MESA-web]].
 
 [[./notes-lecture-HSE.org][Notes]]
-** <2026-01-23 Fri>
-** <2026-01-26 Mon> - Equation of state 1
+** <2026-01-19 Fri>
+** <2026-01-21 Mon> - Equation of state 1
 *Aim*: Introduce Polytropic and ideal gas equation of state.
 
 [[./notes-lecture-EOS1.org][Notes]]
 
-** <2026-01-28 Wed> - Virial theorem
+** <2026-01-23 Wed> - Virial theorem
 *Aim*: Introduce the Virial theorem in various forms. Demonstrate that
 stars "become hotter as they lose energy".
 
 [[./notes-lecture-VirTheo.org][Notes]]
 
-** <2026-01-30 Fri>
-** <2026-02-02 Mon> - Equation of state 2
+** <2026-01-26 Fri>
+** <2026-01-28 Mon> - Equation of state 2
 *Aim*: Introduce other relevant equations of state
 - Degenerate and non-relativistic gas
 - Degenerate and relativistic gas
 - Radiation-dominated EOS
 
 [[./notes-lecture-EOS2.org][Notes]]
-** <2026-02-04 Wed> - Radiative energy transport & conduction
+** <2026-01-30 Wed> - Radiative energy transport & conduction
 *Aim*: Energy transport in radiative layers, the third stellar structure
 equation for non-polytropic models, and local energy conservation
 
 [[./notes-lecture-ETransport.org][Notes]]
 
-** <2026-02-06 Fri>
-** <2026-02-09 Mon> - Opacities
+** <2026-02-02 Fri>
+** <2026-02-04 Mon> - Opacities
 *Aim*: discuss opacity, Rosseland mean opacities, atomic physics and other
 sources of opacity in a star
 
 [[./notes-lecture-kappa.org][Notes]]
 
-** <2026-02-11 Wed> - Convection
+** <2026-02-06 Wed> - Convection
 *Aim*: Introduce convective instability, mixing length theory, and its
 limitations
 
 [[./notes-lecture-convection.org][Notes]]
 
-** <2026-02-13 Fri>
-** <2026-02-16 Mon> - Nuclear energy generation
+** <2026-02-09 Fri>
+** <2026-02-11 Mon> - Nuclear energy generation
 *Aim*: Introduce basics of nuclear energy generation through fusion,
 recall basic quantum mechanics elements, Gamow peak
 
 [[./notes-lecture-nuclear-burning.org][Notes]]
-** <2026-02-18 Wed> - Nuclear reaction chains
+** <2026-02-13 Wed> - Nuclear reaction chains
 *Aim*: Introduce pp chain, CN-NO bi-cycle, 3\alpha burning, and later burning
 phases.
 
 [[./notes-lecture-nuclear-cycles.org][Notes]]
 
-** <2026-02-20 Fri>
-** <2026-02-23 Mon> - Neutrino cooling
+** <2026-02-16 Fri>
+** <2026-02-18 Mon> - Neutrino cooling
 *Aim*: discuss neutrino physics relevant to stars, cooling processes and
 thus complete the physics needed for 1D stellar evolution calculation.
 
 [[./notes-lecture-neutrinos.org][Notes]]
 
-** <2026-02-25 Wed> - Stellar atmospheres and outer boundary conditions
+** <2026-02-20 Wed> - Stellar atmospheres and outer boundary conditions
 *Aims*: discuss in more detail the following:
 - outer boundary conditions
 - Saha equation
@@ -116,37 +116,35 @@ thus complete the physics needed for 1D stellar evolution calculation.
 
 [[./notes-lecture-radTrans.org][Notes]]
 
-** <2026-02-27 Fri> - Stellar evolution codes
+** <2026-02-23 Fri> - Stellar evolution codes
 *Aim:* Introduce general principles of stellar structure and evolution codes
 and population synthesis.
 
 *N.B.:* same as neutrino lecture
 [[./notes-lecture-neutrinos.org][Notes]]
 
-** TODO <2026-04-01 Wed> - Asteroseismology
-*Aim*: Introduce helio and asteroseismology concepts. p- and g- waves,
- restoring force, mixed modes.
-** <2026-03-02 Mon> - In class activity: Evolution 1
-*Aim*: discuss the evolution of stars in an in-class activity based on
-=MESA-web= models precomputed by the students
-
-[[./notes-in-class-evol.org][Notes]]
-** <2026-03-04 Wed> - In class activity: Evolution 2
+** <2026-02-25 Mon> - In class activity: Evolution 1
 *Aim*: discuss the evolution of stars in an in-class activity based on
 =MESA-web= models precomputed by the students
 
 [[./notes-in-class-evol.org][Notes]]
 
-** TODO <2025-03-07 Fri> - <2025-03-15 Sat> - SPRING BREAK
+** <2026-02-27 Wed> - In class activity: Evolution 2
+*Aim*: discuss the evolution of stars in an in-class activity based on
+=MESA-web= models precomputed by the students
+
+[[./notes-in-class-evol.org][Notes]]
+
+** TODO <2026-03-02 Fri> - <2026-03-04 Sat> - SPRING BREAK
 Take home assignment?
-** TODO <2026-03-30 Mon>- Star (& planet) formation
-** <2026-03-16 Mon> - In class activity: Evolution 3
+** TODO <2026-03-16 Mon>- Star (& planet) formation
+** <2026-03-18 Mon> - In class activity: Evolution 3
 *Aim*: discuss the evolution of stars in an in-class activity based on
 =MESA-web= models precomputed by the students
 
 [[./notes-in-class-evol.org][Notes]]
 
-** <2026-03-18 Wed> - In class activity: Evolution 4
+** <2026-03-20 Wed> - In class activity: Evolution 4
 *Aim*: discuss the evolution of stars in an in-class activity based on
 =MESA-web= models precomputed by the students
 
@@ -154,31 +152,34 @@ Discuss written and oral presentations, and refereeing process.
 
 [[./notes-in-class-evol.org][Notes]]
 
-** <2026-03-20 Fri>
-** <2026-03-23 Fri> - Roche Geometry
-** TODO <2026-04-03 Fri> - Common envelope
-** <2026-03-25 Mon> - SNIa
-** <2026-03-27 Mon> - Supernovae
+** <2026-03-23 Fri>
+** TODO <2026-03-25 Wed> - Asteroseismology
+*Aim*: Introduce helio and asteroseismology concepts. p- and g- waves,
+ restoring force, mixed modes.
+** TODO <2026-03-27 Fri> - Tides
+** <2026-03-30 Mon> - Roche Geometry
+** TODO <2026-04-01 Fri> - Common envelope
+** <2026-04-03 Wed> - SNIa
+** <2026-04-06 Fri> - Supernovae
 *Aim*: Introduce the nomenclature for supernovae, discuss the physics of
 core-collapse and the formation of compact objects
 
 [[./notes-lecture-SNe.org][Notes]]
 
-** <2026-04-06 Wed> - Gravitational wave progenitors
+** <2026-04-08 Mon> - Gravitational wave progenitors
 *Aim*: introduce gravitational wave formation scenario (isolated binary
 and dynamical assembly), discuss some known uncertainties.
 
 [[./notes-lecture-GWprog.org][Notes]]
-** <2026-04-08 Wed> Two students presentations
-** <2026-04-10 Fri> Two students presentations
-** <2026-04-13 Mon> Two students presentations
-** <2026-04-15 Wed> Two students presentations
-** <2026-04-17 Fri> Two students presentations
-** <2026-04-24 Fri> Two students presentations
-** <2026-04-27 Mon> Two students presentations
-** <2026-04-29 Wed> Two students presentations
-** TODO <2026-04-20 Mon> Guest lecture 1
-** TODO <2026-04-22 Wed> Guest lecture 2
-** TODO <2026-05-01 Fri>
-** TODO <2026-05-04 Mon>
-** TODO <2026-05-06 Wed>
+** <2026-04-10 Wed> - Two students presentations
+** <2026-04-13 Fri> - Two students presentations
+** <2026-04-15 Mon> - Two students presentations
+** <2026-04-17 Wed> - Two students presentations
+** <2026-04-20 Fri> - Two students presentations
+** <2026-04-22 Fri> - Two students presentations
+** <2026-04-24 Mon> - Two students presentations
+** <2026-04-27 Wed> - Two students presentations
+** TODO <2026-04-29 Mon> - Guest lecture 1
+** TODO <2026-05-01 Wed> - Guest lecture 2
+** TODO <2026-05-04 Wed> -
+** TODO <2026-05-06 Mon> -
