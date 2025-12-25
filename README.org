@@ -17,7 +17,7 @@ see [[./org-content/mid_term.org]]
 
 Material developed for the =ASTR/PTYS 545= course (one semester) at the
 Department of Astronomy and Steward Observatory of the University of
-Arizona (Fall semester 2024/Spring semester 2025).
+Arizona (Spring semester 2026).
 
  - [[./org-content/syllabus.org][Syllabus]]
  - [[./org-content/lectures.org][Lectures topic-by-topic]]
