@@ -120,10 +120,12 @@ thus complete the physics needed for 1D stellar evolution calculation.
 and population synthesis.
 
 *N.B.:* same as neutrino lecture
-[[./notes-lecture-neutrinos.org][Notes]]
+[[./notes-lecture-codes.org][Notes]]
 
 ** TODO <2026-03-04 Mon> - Star (& planet) formation
 *Aim*: Introduce concept of Jeans mass, feedback, YSO.
+
+[[./notes-lecture-formation.org][Notes]]
 
 ** <2026-03-04 Wed> - In class activity: Evolution 1
 *Aim*: discuss the evolution of stars in an in-class activity based on
