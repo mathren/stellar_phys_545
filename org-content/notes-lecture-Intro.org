@@ -344,7 +344,7 @@ the metallicity (i.e., taking X=Fe).
   hard to fit in the main body of the course
 - Occasion for you to dig deeper and teach to your peers
 - You should look over the [[file:projects.org::*List of possible projects/presentations][proposed project]], and give us a ranked list
-  of 5 projects you'd like to do (see [[https://d2l.arizona.edu/d2l/home/1463376][D2L]] for updated deadline).
+  of 5 projects you'd like to do (see [[https://d2l.arizona.edu/d2l/home/1701369][D2L]] for updated deadline).
 - After receiving your preferences, we will assign to each a project
   trying to maximize happiness (though it may not be possible to
   accommodate everyone), and for each project we will assign two peer
@@ -361,7 +361,7 @@ the metallicity (i.e., taking X=Fe).
     though you can discuss with your peers. Science is made of
     collaborations, but you are expected to be able to do all the
     homeworks yourself.
-  - Always consult [[https://d2l.arizona.edu/d2l/home/1463376][D2L]] for official deadlines. If you need an
+  - Always consult [[https://d2l.arizona.edu/d2l/home/1701369][D2L]] for official deadlines. If you need an
     extension, it should be agreed upon at least *one day before the
     official deadline*.
   - Throughout the course the typology of exercises and difficulty
