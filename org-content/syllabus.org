@@ -197,7 +197,7 @@ questions, =MESA-web= (and/or MESA) based calculations, analysis and
 interpretation. Like for the homework, a minimal reproducibility
 package will be required.
 
-** TODO Literature review project and presentation
+** Literature review project and presentation
 You will be assigned a topic relevant to the course to explain to your
 peers. You will search the literature and prepare a written text plus
 an oral presentation. The written text will be evaluated both by the
