@@ -1,14 +1,6 @@
 #+author: Mathieu Renzo
 #+email: mrenzo@arizona.edu
 
-* TODO ASTR545 prep
-
-- [ ] final project: push to make new calculations?
-- [ ] schedule
-
-** Mid term take-home
-see [[./org-content/mid_term.org]]
-
 * TODO Theoretical Astrophysics - Stellar Evolution
 
 - [ ] fix link
