@@ -1,9 +1,7 @@
 #+author: Mathieu Renzo
 #+email: mrenzo@arizona.edu
 
-* TODO Theoretical Astrophysics - Stellar Evolution
-
-- [ ] fix link
+* Theoretical Astrophysics - Stellar Evolution
 
 # [[https://www.as.arizona.edu/~mrenzo/][https://img.shields.io/website-up-down-green-red/http/shields.io.svg]]
 

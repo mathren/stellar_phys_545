@@ -437,7 +437,18 @@ sequence" stars, the one following also the L(T_{eff}) relatively tight
 relation on the color-magnitude diagram: evolved stars are a different
 problem!
 
-* TODO "Know thy star, know thy planet"
+* "Know thy star, know thy planet"
+From the point of view of gravity, and thus at zeroth order, from the
+point of view of orbital dynamics, there is no difference between a
+star+star binary and star+planet binary.
+
+Typically, when looking for exoplanets, what one sees is the host
+star, and perturbations on the host star (e.g., an eclipse, and/or a
+periodic radial velocity variation, or a microlensing event):
+systematic errors in the properties of the stars propagate onto the
+properties of the planets, and often constitute the limiting factor
+for the understanding of the planets!
+
 
 * TODO Homework
 Maybe more planet-y?

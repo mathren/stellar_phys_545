@@ -115,7 +115,7 @@ thus complete the physics needed for 1D stellar evolution calculation.
 
 [[./notes-lecture-radTrans.org][Notes]]
 
-** TODO <2026-03-02 Sat> - Stellar evolution codes
+** <2026-03-02 Sat> - Stellar evolution codes
 *Aim:* Introduce general principles of stellar structure and evolution codes
 and population synthesis.
 
