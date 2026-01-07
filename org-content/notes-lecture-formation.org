@@ -74,7 +74,7 @@ planetary radii, possibly including environmental effects (such as the
 irradiation of the surrounding stars). These efforts are still ongoing
 (including groups here at Steward Observatory).
 
-* TODO: Pre-Main Sequence Evolution as Initial Conditions for Evolutionary Calculations
+* TODO  Pre-Main Sequence Evolution as Initial Conditions for Evolutionary Calculations
 
 We begin with a homogeneous ball of gas in hydrostatic, but not
 necessarily thermal equilibrium: this leads to a quasi-static
@@ -91,7 +91,7 @@ ignite H are the boundary between planets and stars, and called Brown
 Dwarfs. These are typically very cold and faint bodies, that can be
 found in isolation, or orbiting from the orbit of companions.
 
-*N.B.:* Through radio-imaging of pulsars, several binaries with a
+*N.B.:* Through radio-monitoring of pulsars, several binaries with a
 neutron star (remnant of the evolution of massive stars that have
 exploded) and a brown dwarf have been found.
 
