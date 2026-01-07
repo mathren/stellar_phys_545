@@ -1,0 +1,126 @@
+#+Title: ASTR545 - Stars & Planet formation
+#+author: Mathieu Renzo
+#+email: mrenzo@arizona.edu
+#+PREVIOUS_PAGE: notes-lecture-codes.org
+#+NEXT_PAGE: notes-in-class-evol.org
+
+*Materials*: [[https://ui.adsabs.harvard.edu/abs/2023ASPC..534..275O/abstract][Offner et al. 2023]], [[https://ui.adsabs.harvard.edu/abs/2017ASSL..442.....M/abstract][A dirty window, Ch. 1, Magnani & Shore]]
+
+* Recap
+
+We have seen that stellar evolution is the product of the competition
+between self-gravity and the pressure gradient in the hydrostatic
+stellar gas, which requires high temperatures in the center, causing
+thermonuclear burning and chemical evolution. Here, we will look a bit
+more at how this starts from a large cold molecular cloud.
+
+The aim of a /comprehensive/ theory of star formation is to explain the
+/distribution/ of orbital architecture(s) across masses from planets to
+super-massive stars, and metallicities. This aim has not yet been
+achieved by the scientific community.
+
+* The beginning: Giant molecular clouds
+
+Consider a cold cloud of a given initial homogeneous composition,
+typically $\gtrsim 70\%$ by mass will be hydrogen (H), $\sim 28\%$ helium
+(He), and the rest in metals. In absence of external energy sources
+(e.g., irradiation from a nearby cluster or AGN), the gas will be
+cold, and hydrogen atoms will collisionally find each other and form
+molecules of H_{2}. This is a *molecular cloud*.
+
+*N.B.:* The notation can be confusing: H_{2} is molecular hydrogen, H${\rm
+II}$ is ionized hydrogen (ion, just the proton).
+
+These have typical densities of $n\gtrsim100\,\mathrm{cm^{-3}}$, that is
+100\times or more the typical density of the interstellar material (ISM):
+such a structure could in principle plow through the ISM like a
+bullet. Despite most of the mass being molecular hydrogen, there are
+other tracers (typically CO molecules) used to find these, and
+molecular and atomic H and CO do not necessarily trace each other.
+
+:Question:
+- *Q*: can you estimate the lifetime of such a structure?
+:end:
+
+* Jeans Mass
+
+
+
+* Accretion
+Bondi?
+
+* Turbulence, magnetic-fields, angular momentum
+
+The simplistic picture of a molecular cloud painted [[*The beginning: Giant molecular clouds][above]] would result
+in an excessively efficient star formation. Presently, we think that
+molecular clouds are partially supported, likely by magnetic fields
+and/or turbulence, which leads to the formation of over-dense cores
+and filaments. Collapsing parcels of gas may converge on these with an
+impact parameter, implying the presence of angular momentum, and thus
+centrifugal barrier and disk formation. Instabilities (e.g., purely
+Newtonian gravitational instabilities) can lead to the formation of
+spiral waves shaping the inflow. Finally, accretion onto cores can
+lead to feedback (jets, disk winds) which create non-linear feedback
+loops between inflows and outflows.
+
+For planets, the impact of the irradiation (by the central star and
+its possible flares) of the protoplanetary disk on the ionization
+structure of the disk and the physics and chemistry of the gas, dust,
+and pebbles play crucial role.
+
+Understanding the physics of these processes requires comparing
+(radiation-)(magneto-)hydrodynamics simulations with observations
+across scales from $\sim100$s of parsecs (GMC) down to stellar and
+planetary radii, possibly including environmental effect (such as the
+radiation of the surrounding stars). These efforts are still ongoing
+(including groups here at Steward Observatory).
+
+* TODO Pre-main sequence evolution as modeled in evolutionary calculations
+
+We begin with a homogeneous ball of gas in hydrostatic, but not
+necessarily thermal equilibrium: this leads to a quasi-static
+Kelvin-Helmholtz contraction on the corresponding timescale. By the
+virial theorem this will stop when degeneracy pressure support changes
+the EOS (as in the case of planets), or the core reaches temperatures
+sufficient to ignite thermonuclear burning. We already know that the
+total mass sets $\langle T \rangle$ and thus the route the collapsing core will
+take.
+
+The loosely bound nucleus of Deuterium may burn first but releases
+little energy and can only slow without halting the collapse. Objects
+sufficiently massive to experience Deuterium burning, but not to
+ignite H are the boundary between planets and stars, and called Brown
+Dwarfs. These are typically very cold and faint bodies, that can be
+found in isolation, or inferred from the orbit of companions.
+
+*N.B.:* Through radio-monitoring of pulsars, several binaries with a
+neutron star (remnant of the evolution of massive stars that have
+exploded) and a brown dwarf have been found.
+
+After Deuterium burning, gravity continues to compress the gas,
+decreasing $R$ and increasing $\langle T \rangle$, until the center reaches
+temperatures sufficient to overcome Coulomb barriers and H core
+burning begins. The moment when the stellar luminosity $L$ equals the
+energy production rate in the core $L_{\rm nuc}$ is usually called /zero age main sequence/
+(ZAMS) and at this point the evolutionary timescale changes from
+$\tau\sim\tau_{\rm KH}$ to $\tau\sim\tau_{\rm nuc}$.
+
+In reality, most of these things start to happen when the collapsing
+matter is still accreting! From the observed statistics of young
+stellar objects we can infer a typical lifetime, or for a given mass,
+a typical accretion rate during the formation process:
+
+#+BEGIN_latex
+\begin{equation}\label{eq:scale_SF}
+\Delta t_{\rm formation}\simeq1-100\,\mathrm{Myr} \Leftrightarrow \dot{M}_{\rm acc} \simeq 10^{-6}-10^{-8} M_{\odot}\ \mathrm{yr^{-1}} \ \ .
+\end{equation}
+#+END_latex
+
+Recalling that $\tau_{\rm KH}\propto M^{2}/RL$, there can be situations where $\tau_{\rm
+KH}\lesssim \Delta t_{\rm formation}$: the implicit picture assumed in stellar
+evolution codes is an approximation!
+
+
+* Homework
+- Calculate the minimum mass for a brown-dwarf
+- Calculate the minimum mass for a star

@@ -64,30 +64,32 @@ please come talk to me early on, as we may be able to accommodate it.
 7. Astrometric detection of /Gaia/ BH1, BH2, BH3, and NS1
 8. Algol Paradox
 9. Clusters: globular and open
-10. Formation of stars
+10. Stellar magnetism and flares
 11. Stars in galaxies: Chemical evolution
 12. Stars in galaxies: Mechanical feedback
 13. Stars in galaxies: Radiative feedback
 14. Nucleosynthesis: s-process
-15. Nucleosynthesis: r-process
-16. X-ray binaries
-17. Thermonuclear explosion in WDs
-18. Neutron star structure
-19. The Eddington limit
-20. Convective boundary mixing
-21. Schönberg-Chandrasekhar limit and its consequences
-22. Supernova Ia
-23. Analytic stellar models: Lane-Emden equation
-24. Analytic stellar models: Eddington standard model
-25. Novae
-26. Supermassive stars
-27. Stellar neutrinos
-28. Pair instability supernovae
-29. Triple systems: Kozai-Lidov-von Zeipel oscillations
-30. Orbital architectures of (star+star) binaries in the Universe
-31. The lowest mass stars: M dwarfs and Brown dwarfs
-32. Something else within the scope of the course (*to be agreed upon*!)
-33. Combination of topics above (*to be agreed upon*!)
+15. Chemically homogeneous evolution
+16. Nucleosynthesis: r-process
+17. X-ray binaries
+18. Thermonuclear explosion in WDs
+19. Neutron star structure
+20. The Eddington limit
+21. Convective boundary mixing
+22. Schönberg-Chandrasekhar limit and its consequences
+23. Supernova Ia
+24. Analytic stellar models: Lane-Emden equation
+25. Analytic stellar models: Eddington standard model
+26. Novae
+27. Supermassive stars
+28. Stellar neutrinos
+29. Pair instability supernovae
+30. Triple systems: Kozai-Lidov-von Zeipel oscillations
+31. Orbital architectures of (star+star) binaries in the Universe
+32. The lowest mass stars: M dwarfs and Brown dwarfs
+33. Something else within the scope of the course (*to be agreed upon*!)
+34. Combination of topics above (*to be agreed upon*!)
+35. Dynamical interactions
 
 ** Recommended sources
 You are encouraged to do your own research, but in the final
