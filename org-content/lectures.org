@@ -119,8 +119,10 @@ thus complete the physics needed for 1D stellar evolution calculation.
 *Aim:* Introduce general principles of stellar structure and evolution codes
 and population synthesis.
 
-*N.B.:* same as neutrino lecture
 [[./notes-lecture-codes.org][Notes]]
+
+Discuss written and oral presentations, and refereeing process.
+
 
 ** TODO <2026-03-04 Mon> - Star (& planet) formation
 *Aim*: Introduce concept of Jeans mass, feedback, YSO.
@@ -152,8 +154,6 @@ and population synthesis.
 ** <2026-03-18 Wed> - In class activity: Evolution 4
 *Aim*: discuss the evolution of stars in an in-class activity based on
 =MESA-web= models precomputed by the students
-
-Discuss written and oral presentations, and refereeing process.
 
 [[./notes-in-class-evol.org][Notes]]
 

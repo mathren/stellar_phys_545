@@ -4,7 +4,6 @@
 #+PREVIOUS_PAGE: notes-lecture-radTrans.org
 #+NEXT_PAGE: notes-lecture-formation.org
 
-
 * Principles of computational stellar evolution
 
 :Quote:
