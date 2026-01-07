@@ -18,6 +18,10 @@ achieved by the scientific community.
 
 * The Beginning: Giant Molecular Clouds
 
+# #+CAPTION: The nearby dark cloud Barnard 68, the abscence of foreground stars and high opacity make it completely dark. Credits VLT/ANTU/FORS1, ESO. This is Fig. 1.7 in Magnani & Shore's book.
+# #+ATTR_HTML: :width 100%
+# [[./images/Barnard68.png]]
+
 Consider a cold cloud of a given initial homogeneous composition,
 typically ≳70% by mass will be hydrogen (H), ≈28% helium (He), and the
 rest as metals. In absence of external energy sources (e.g., radiation
@@ -35,8 +39,12 @@ Despite most of the mass being molecular hydrogen, there are other
 tracers (typically CO molecules) used to find these, and molecular and
 atomic H and CO do not necessarily trace each other.
 
+
+
+
+
 :Question:
-- **Q:** Can you estimate the lifetime of such a structure?
+- *Q:* Can you estimate the lifetime of such a structure?
 :end:
 
 * Jeans Mass
