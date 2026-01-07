@@ -1,20 +1,47 @@
 #+title: ASTR545 - Stars & Planet Formation
-#+author: [[mailto:mrenzo@arizona.edu][Mathieu Renzo]]
+#+author: Mathieu Renzo
+#+email: mrenzo@arizona.edu
 
-*Materials:* [[https://ui.adsabs.harvard.edu/abs/2023ASPC..534..275O/abstract][Offner et al. 2023]], [[https://ui.adsabs.harvard.edu/abs/2017ASSL..442....1M/abstract][A dirty window, Ch. 1, Magnani & Shore]]
+*Materials:* [[https://royalsocietypublishing.org/rsta/article/199/312-320/1/40316/I-The-stability-of-a-spherical-nebula][Jeans 1902]], [[https://ui.adsabs.harvard.edu/abs/2023ASPC..534..275O/abstract][Offner et al. 2023]], [[https://ui.adsabs.harvard.edu/abs/2017ASSL..442....1M/abstract][Ch. 1, A dirty window,
+Magnani & Shore]], Ch 6.8.1 "Tapestry of Modern Astrophysics" by S. N.
+Shore, Ch. 26 in Kippenhahn's book, Ch. 9 in Onno Pols' lecture notes.
 
-* Recap
+* How do stars (& planets) form?
 
 We have seen that stellar evolution is the product of the competition
 between self-gravity and the pressure gradient of the hydrostatic
-stellar gas, which requires high temperatures at the core, causing
-thermonuclear burning and chemical evolution. Here, we will look a bit
-more at how this starts from a large cold molecular cloud.
+stellar gas, which requires high temperatures in the innermost
+regions, causing thermonuclear burning and chemical evolution on a
+nuclear timescale. Here, we will look a bit more at how this begins.
+
+*N.B.:* The physical processes governing planet formation are the same
+as for stars, especially when considering the formation of multiple
+stellar systems where irradiation from external sources can play a
+role. What can be different is the $T$ and $\rho$ regime of matter, which
+impacts the EOS, the opacities, and the astro-chemistry.
 
 The aim of a *comprehensive* theory of star formation is to explain the
 *distribution* of orbital architectures across masses from planets to
 super-massive stars, and metallicities. This aim has not yet been
-achieved by the scientific community.
+achieved by the scientific community, and questions related to star
+formation remain some of the most important unanswered questions of
+astrophysics:
+- Given initial properties of a gas cloud, what fraction of its mass
+  will end up in stars (/star formation efficiency/)?
+- What distribution of stellar-masses (/Initial mass function/) and
+  orbital architectures will come out?
+In the absence of a comprehensive predictive theory, these are
+informed by observations.
+
+*N.B.:* In general, the rate of formation of stars is a function of both
+the mass of the star $M$ and the time $t$, $\Psi\equiv\Psi(M, t)$. It is a common
+assumption, dating back to [[https://ui.adsabs.harvard.edu/abs/1955ApJ...121..161S/abstract][Salpeter 1955]] to *assume* that the variables
+are separable, meaning one can write the star formation mass- and
+time-dependent rate as $\Psi = IMF(M) \times SFR(t)$ defining an initial mass
+function $IMF$ dependent only on the mass and a star formation rate
+$SFR$ dependent only on time. Given the success of this heuristic
+hypothesis that simplifies greatly the math, we continue to use it
+without a strong first-principle justification.
 
 * The Beginning: Giant Molecular Clouds
 
@@ -24,15 +51,11 @@ achieved by the scientific community.
 
 Consider a cold cloud of a given initial homogeneous composition,
 typically $\sim70\%$ by mass will be hydrogen (H), $\sim28\%$ helium (He),
-and the rest as metals. If it's initially out of hydrostatic
-equilibrium, within a few $\tau_{\rm dyn}$ (e.g., sound crossing time), it
-would establish hydrostatic equilibrium. From that point onwards,
-anything will happen in a "quasi-static" fashion, meaning most
-velocities are going to be small compared to thermal velocity and
-sound speed. At this point, in absence of external energy sources
-(e.g., radiation from a nearby cluster or AGN), the gas will be cold,
-and hydrogen atoms will collisionally find each other and form
-molecules of H₂. This is a *molecular cloud*.
+and the rest as metals. At this point, in absence of external energy
+sources (e.g., radiation from a nearby cluster or AGN), the gas will
+be cold ($T\simeq10-100\,\mathrm{K}$), and hydrogen atoms will
+collisionally find each other and form molecules of H₂. This is a
+*molecular cloud*.
 
 *N.B.:* The notation can be confusing: H₂ is molecular hydrogen, H${\rm
 II}$ is ionized hydrogen (i.e., just the proton).
@@ -44,6 +67,11 @@ through fog. Despite most of the mass being molecular hydrogen, there
 are other tracers (typically CO molecules) used to find these, and
 molecular and atomic H and CO do not necessarily trace each other.
 
+From a radiative perspective, matter will also contain a small
+fraction of dust, leading to a very high opacity in the optical
+wavelengths (see figure above). However, IR radiation can leak out of
+the cloud, initially allowing for efficient cooling.
+
 :Question:
 - *Q:* Give and motivate a physical scaling for lifetime of such a
   cloud?
@@ -51,6 +79,32 @@ molecular and atomic H and CO do not necessarily trace each other.
 :end:
 
 * Jeans Mass
+
+Let's assume, following [[https://royalsocietypublishing.org/rsta/article/199/312-320/1/40316/I-The-stability-of-a-spherical-nebula][Jeans 1902]], that the cloud is /isothermal/. This
+simplification allows us to use a very simple polytropic EOS:
+#+begin_latex
+\begin{equation}
+P = c_{s}^{2}\rho \ \ ,
+\end{equation}
+#+end_latex
+with a constant sound speed $c_{s}$, and therefore we don't need an
+energy transport equation to describe the cloud (recall [[./notes-lecture-EOS1.org][the first
+lecture on EOS]]s). Under these hypothesis, the cloud is described by
+the momentum continuity equation (or Euler's equation), the mass
+continuity equation, and the gravitational potential has to solve the
+Poisson's equation:
+
+#+BEGIN_latex
+\begin{equation}
+\frac{\partial \mathbf{v}}{\partial t} + (\mathbf{v}\cdot\mathbf{\nabla}) \mathbf{v} = -\frac{1}{\rho}\mathbf{\nabla} P -\mathbf{\nabla}\Phi\ \ , \\
+\frac{\partial\rho}{\partial t}+\mathbf{\nabla}\cdot(\rho\mathbf{v}) = 0 \ \ ,\\
+\nabla^{2}\Phi = 4\pi G \rho \ \ .
+\end{equation}
+#+END_latex
+
+
+
+
 
 Presumably, a self-gravitating hydrostatic structure is in [[./notes-lecture-VirTheo.org][Virial equilibrium]].
 
