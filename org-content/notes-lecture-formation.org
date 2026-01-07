@@ -18,38 +18,41 @@ achieved by the scientific community.
 
 * The Beginning: Giant Molecular Clouds
 
-# #+CAPTION: The nearby dark cloud Barnard 68, the abscence of foreground stars and high opacity make it completely dark. Credits VLT/ANTU/FORS1, ESO. This is Fig. 1.7 in Magnani & Shore's book.
-# #+ATTR_HTML: :width 100%
-# [[./images/Barnard68.png]]
+#+CAPTION: The nearby dark cloud Barnard 68, the abscence of foreground stars and high opacity make it completely dark. Credits VLT/ANTU/FORS1, ESO. This is Fig. 1.7 in Magnani & Shore's book.
+#+ATTR_HTML: :width 100%
+[[./images/Barnard68.png]]
 
 Consider a cold cloud of a given initial homogeneous composition,
-typically ≳70% by mass will be hydrogen (H), ≈28% helium (He), and the
-rest as metals. In absence of external energy sources (e.g., radiation
-from a nearby cluster or AGN), the gas will be cold, and hydrogen
-atoms will collisionally find each other and form molecules of H₂.
-This is a **molecular cloud**.
+typically $\sim70\%$ by mass will be hydrogen (H), $\sim28\%$ helium (He),
+and the rest as metals. If it's initially out of hydrostatic
+equilibrium, within a few $\tau_{\rm dyn}$ (e.g., sound crossing time), it
+would establish hydrostatic equilibrium. From that point onwards,
+anything will happen in a "quasi-static" fashion, meaning most
+velocities are going to be small compared to thermal velocity and
+sound speed. At this point, in absence of external energy sources
+(e.g., radiation from a nearby cluster or AGN), the gas will be cold,
+and hydrogen atoms will collisionally find each other and form
+molecules of H₂. This is a *molecular cloud*.
 
-*N.B.:* The notation can be confusing: H₂ is molecular hydrogen, H${\rm II}$ is
-ionized hydrogen (i.e., just the proton).
+*N.B.:* The notation can be confusing: H₂ is molecular hydrogen, H${\rm
+II}$ is ionized hydrogen (i.e., just the proton).
 
-These have typical densities of n ≳ 100 cm^{-3} that is 100\times or
-more the typical density of the interstellar medium (ISM): such a
-structure could in principle plow through the ISM like a bullet.
-Despite most of the mass being molecular hydrogen, there are other
-tracers (typically CO molecules) used to find these, and molecular and
-atomic H and CO do not necessarily trace each other.
-
-
-
-
+These have typical densities of $n\gtrsim 100 \mathrm{cm^{-3}}^{}$, that is
+100\times or more the typical density of the interstellar medium (ISM):
+such a structure could in principle plow through the ISM like a bullet
+through fog. Despite most of the mass being molecular hydrogen, there
+are other tracers (typically CO molecules) used to find these, and
+molecular and atomic H and CO do not necessarily trace each other.
 
 :Question:
-- *Q:* Can you estimate the lifetime of such a structure?
+- *Q:* Give and motivate a physical scaling for lifetime of such a
+  cloud?
+- *Q*: What do you expect the temperature gradient to be?
 :end:
 
 * Jeans Mass
 
-
+Presumably, a self-gravitating hydrostatic structure is in [[./notes-lecture-VirTheo.org][Virial equilibrium]].
 
 * Accretion
 
@@ -108,13 +111,19 @@ decreasing R and increasing ⟨T⟩, until the core reaches temperatures
 sufficient to overcome Coulomb barriers and H core burning begins. The
 moment when the stellar luminosity L equals the energy production rate
 in the core L_nuc is usually called *zero age main sequence* (ZAMS) and
-at this point the evolutionary timescale changes from τ ≈ τ_KH to τ ≈
-τ_nuc.
+at this point the evolutionary timescale changes from $\sim\tau_{\rm KH}$ to
+$τ_{\rm nuc}$.
 
-In reality, most of these things start to happen when the collapsing
-matter is still accreting! From the observed statistics of young
-stellar objects we can infer a typical lifetime, or for a given mass,
-a typical accretion rate during the formation process:
+During this entire process, the outermost layer of the clouds remain
+opaque (unless feedback carves "holes" to see through): star
+formation, especially of massive stars with large $L$ and thus short
+$\tau_{\rm KH}$, is often embedded in opaque clouds. Long wavelengths (IR,
+radio) are often the primary observational tool to probe this phase.
+
+Moreover, in reality, most of these things start to happen when the
+collapsing matter is still accreting! From the observed statistics of
+young stellar objects we can infer a typical lifetime, or for a given
+mass, a typical accretion rate during the formation process:
 
 $$\Delta t_{\text{formation}} \simeq 1-100\,\text{Myr} \Leftrightarrow \dot{M}_{\text{acc}} \simeq 10^{-6}-10^{-8} M_{\odot}\,\text{yr}^{-1}$$
 
