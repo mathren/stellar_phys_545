@@ -208,7 +208,7 @@ reaction in the cycle, as the high temperatures can allow to bypass Coulomb
 barriers more easily.
 
 :Question:
-- *Q*: How did population III stars do this? See also [[./honors.org::*Main sequence burning in massive population III  stars][honors project]]
+- *Q*: How did population III stars do this?
 :end:
 
 *** pp \rightarrow CNO transition

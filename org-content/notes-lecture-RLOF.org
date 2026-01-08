@@ -615,7 +615,7 @@ Note that a lot of the physics at play here may happen while the stars
 are /not/ in gravothermal equilibrium, something that is neglected in
 /rapid/ binary population synthesis calculations based on pre-computed
 single star models (where the single stars were always in gravothermal
-equilibrium themselves), cf. [[./notes-lecture-neutrinos.org::*Population synthesis][notes on codes]].
+equilibrium themselves), cf. [[./notes-lecture-codes.org::*Population synthesis][notes on stellar evolution codes]].
 
 
 :Question:

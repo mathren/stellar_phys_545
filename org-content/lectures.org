@@ -161,7 +161,7 @@ Lecturer: [[https://www.tomwagg.com/][Dr. Tom Wagg]]
 *Aim*: Introduce helio and asteroseismology concepts. p- and g- waves,
  restoring force, mixed modes.
 ** <2026-03-27 Fri> -
-** TODO <2026-03-30 Mon> - Interacting binaries
+** TODO <2026-03-30 Mon> - Interacting binaries and Roche lobe overflow
 ** TODO <2026-04-01 Wed> - Tides
 *Aim*: Introduce the concept of tides in binaries
 
