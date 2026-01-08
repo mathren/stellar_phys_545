@@ -430,12 +430,7 @@ comparing theoretical tracks from computer-simulated stellar models
 and observed samples one can infer the physical properties of
 the observed stars and the processes determining them.
 
-*** Example: cluster with isochrone
-
-# <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/lhSFQXrVr48?si=_BOdw_WG2eGqoV2;start=12" " allowfullscreen></iframe>
-
-#+HTML: <iframe width="600" height="400" src="https://www.youtube-nocookie.com/embed/lhSFQXrVr48?si=_BOdw_WG2eGqoV2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-# [[https://www.youtube.com/watch?v=lhSFQXrVr48]]
+*** Example: \Omega Centauri cluster
 
 This video shows how /HST/ observations of the Globular cluster \Omega
 Centauri can be sorted in color and magnitude to create...a
@@ -443,6 +438,10 @@ color-magnitude diagram, where all the stars end up along an
 isochrone (credits NASA/ESA, J. Anderson, R. van der Marel, G. Bacon, M.
 Estacion, STScI).
 
+#+HTML: <video  controls width="600" height="400" src="./images/CMD_omega_cen.mp4" </video>
+# [[https://www.youtube.com/watch?v=lhSFQXrVr48]]
+
+**** Isochrone fitting
 An *isochrone* (from iso = "same" + chronos = "time") is the locus of
 points occupied by a population of different stars at a given time.
 Typically these are used in analyzing clusters, which are in first
@@ -464,7 +463,6 @@ nothing forbids one to make isochrones on other planes.
 #+ATTR_HTML: :width 100%
 #+ATTR_HTML: :alt /HST/ observations of NGC1818 with isochrone fitting
 [[./images/Wang_NGC1818.png]]
-
 
 *** Example: 30 Doradus region
 
