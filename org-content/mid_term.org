@@ -76,14 +76,14 @@ models.
 :Debugging:
 In case you run into issues with producing the MESA models, first try
 searching the web (specifically the [[http://user.astro.wisc.edu/~townsend/static.php?ref=mesa-web][MESA-web documentation]], [[https://docs.mesastar.org/en/25.12.1/][MESA
-documentation]], and [[https://lists.mesastar.org/pipermail/mesa-users/][MESA mailing list archive]], . It is also
+documentation]], and [[https://lists.mesastar.org/pipermail/mesa-users/][MESA mailing list archive]]. It is also
 acceptable to vary parameters other than those specified in the
 exercises if it helps.
 :end:
 
-** Mass loss
+** TODO Mass loss exercise
 
-** Kippenhahn diagram
+** TODO Kippenhahn diagram
 
 Explain diagram above and star that it represents, walking through its
 past.

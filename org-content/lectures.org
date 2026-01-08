@@ -49,6 +49,7 @@ symmetry. Introduce the dynamical timescale(s). Brief introduction to
 
 [[./notes-lecture-HSE.org][Notes]]
 ** <2026-01-23 Fri> -
+
 ** <2026-01-26 Mon> - Equation of state 1
 *Aim*: Introduce Polytropic and ideal gas equation of state.
 
@@ -123,8 +124,7 @@ and population synthesis.
 
 Discuss written and oral presentations, and refereeing process.
 
-
-** TODO <2026-03-04 Mon> - Star (& planet) formation
+** <2026-03-04 Mon> - Star (& planet) formation
 *Aim*: Introduce concept of Jeans mass, feedback, YSO.
 
 [[./notes-lecture-formation.org][Notes]]
@@ -141,9 +141,9 @@ Discuss written and oral presentations, and refereeing process.
 
 [[./notes-in-class-evol.org][Notes]]
 
-** TODO <2026-03-07 Sat> - <2026-03-15 Sun> - SPRING BREAK
+** <2026-03-07 Sat> - <2026-03-15 Sun> - SPRING BREAK
 
-[[./mid_term.org][Midterm exam]]
+[[./mid_term.org][Take home midterm exam]]
 
 ** <2026-03-16 Mon> - In class activity: Evolution 3
 *Aim*: discuss the evolution of stars in an in-class activity based on
@@ -158,13 +158,16 @@ Discuss written and oral presentations, and refereeing process.
 [[./notes-in-class-evol.org][Notes]]
 
 ** <2026-03-20 Fri> -
-
 ** TODO <2026-03-23 Mon> - Asteroseismology
 *Aim*: Introduce helio and asteroseismology concepts. p- and g- waves,
  restoring force, mixed modes.
-** TODO <2026-03-25 Wed> - Tides
-** TODO <2026-03-27 Fri> -
-** TODO <2026-03-30 Mon> - Interacting binaries
+** TODO <2026-03-25 Wed> - Interacting binaries
+** <2026-03-27 Fri> -
+** TODO <2026-03-30 Mon> - Tides
+*Aim*: Introduce the concept of tides in binaries
+
+
+
 ** <2026-04-01 Wed> Supernovae
 *Aim*: Introduce the nomenclature for supernovae, discuss the physics of
 core-collapse and the formation of compact objects

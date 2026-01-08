@@ -27,8 +27,8 @@ parsecs!/"
 ** Disclaimer
 
 All the pages of this website are under active construction, may
-contain errors and change without notice. If you find an error please
-let me know and feel free to open an issue/PR on [[https://github.com/mathren/stellar_phys_545][GitHub]].
+contain errors and/or change without notice. If you find an error
+please let me know and feel free to open an issue/PR on [[https://github.com/mathren/stellar_phys_545][GitHub]].
 
 ** How to use this website
 
@@ -47,5 +47,4 @@ the repository of this website.
 
 *** Only for students at University of Arizona
 
-Homework assignments and other official communications
-will be on [[https://d2l.arizona.edu/d2l/home/1701369][D2L]].
+Homework assignments and other official communications will be on [[https://d2l.arizona.edu/d2l/home/1701369][D2L]].

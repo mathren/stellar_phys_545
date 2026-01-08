@@ -450,8 +450,7 @@ properties of the planets, and often constitute the limiting factor
 for the understanding of the planets!
 
 
-* TODO Homework
-Maybe more planet-y?
+* Homework
 
 ** Exercise 7.4 on Carroll & Ostie
 
