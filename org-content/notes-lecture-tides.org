@@ -217,7 +217,7 @@ Although we cannot directly see the interior structure of stars
 possibly affected by tides, we can see binary orbits!
 
 
-#+CAPTION: Eccentricity vs. orbital period (on a logarithmic scale) for binaries in the globular cluster M35 from [[https://iopscience.iop.org/article/10.1088/0004-6256/150/1/10][Leiner et al. 2015]]. The significant lack of eccentricity for $P\lesssim 10$ days suggest that for such short period the circularization timescale by tides is short compared to the lifetime of these binaries.
+#+CAPTION: Eccentricity vs. orbital period (on a logarithmic scale) for binaries in the globular cluster M35 from [[https://ui.adsabs.harvard.edu/abs/2015AJ....150...10L/abstract][Leiner et al. 2015]]. The significant lack of eccentricity for $P\lesssim 10$ days suggest that for such short period the circularization timescale by tides is short compared to the lifetime of these binaries.
 #+HTML_ATTR: :width 50%
 [[./images/Pe_M35.png]]
 
