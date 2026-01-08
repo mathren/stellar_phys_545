@@ -145,7 +145,7 @@ Discuss written and oral presentations, and refereeing process.
 [[./mid_term.org][Take home midterm exam]]
 
 ** <2026-03-16 Mon> - *Guest Lecture* (topic TBD)
-Lecturer: [[https://www.tomwagg.com/][Dr. Tom Wagg]]
+Guest lecturer: [[https://www.tomwagg.com/][Dr. Tom Wagg]]
 ** <2026-03-18 Wed> - In class activity: Evolution 3
 *Aim*: discuss the evolution of stars in an in-class activity based on
 =MESA-web= models precomputed by the students
@@ -162,6 +162,11 @@ Lecturer: [[https://www.tomwagg.com/][Dr. Tom Wagg]]
  restoring force, mixed modes.
 ** <2026-03-27 Fri> -
 ** TODO <2026-03-30 Mon> - Interacting binaries and Roche lobe overflow
+*Aim*: Introduce the Roche approximation for interacting binaries.
+
+[[./notes-lecture-RLOF.org][Notes]]
+
+
 ** TODO <2026-04-01 Wed> - Tides
 *Aim*: Introduce the concept of tides in binaries
 
