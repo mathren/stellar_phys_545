@@ -165,14 +165,14 @@ Guest lecturer: [[https://www.tomwagg.com/][Dr. Tom Wagg]]
 
 
 ** <2026-03-27 Fri> -
-** TODO <2026-03-30 Mon> - Interacting binaries and Roche lobe overflow
+** <2026-03-30 Mon> - Interacting binaries and Roche lobe overflow
 *Aim*: Introduce the Roche approximation for interacting binaries.
 
 [[./notes-lecture-RLOF.org][Notes]]
 
-
 ** TODO <2026-04-01 Wed> - Tides
-*Aim*: Introduce the concept of tides in binaries
+*Aim*: Introduce the concept of tides in binaries, build physical
+intuition for tidal disruption and orbital evolution
 
 [[./notes-lecture-tides.org][Notes]]
 
