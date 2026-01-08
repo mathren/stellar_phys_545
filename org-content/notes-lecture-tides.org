@@ -4,7 +4,7 @@
 #+PREVIOUS_PAGE: notes-lecture-RLOF.org
 #+NEXT_PAGE: notes-lecture-SNe.org
 
-*Materials:* Zahn 1977
+*Materials:* [[https://ui.adsabs.harvard.edu/abs/1977A%26A....57..383Z/abstract][Zahn 1977]], Tauris & Van den Heuvel book, [[https://ui.adsabs.harvard.edu/abs/2018A%26A...616A..28Q/abstract][Qin et al. 2018]]
 
 * Tides
 
@@ -59,7 +59,7 @@ r^{-2}$. For wide systems tides are usually negligible (although this
 depends also on the masses and radii). Viceversa, for very close
 binaries, tides can be an important perturbation.
 
-** Non-perturbative tides: tidal disruption radius
+* Non-perturbative tides: tidal disruption radius
 From the functional dependence on $r$, we can see that at small
 separation the tidal field can become strong. Could it exceed the
 self-gravity of the star $m$?
@@ -86,9 +86,9 @@ tidal disruption event to occur.
   could lead to a tidal disruption event (in terms of $m$ and $R_{\star}$)?
 :end:
 
-** Tides as a perturbation
+* Tides as a perturbation
 Let's now consider the regime $r\gg r_{\rm TD} (\gg R_{\star})$, in which case (cf. Eq.
-\ref{tidal_dis_radius}), the tidal field $\mathbf{T}$ is a small
+\ref{eq:tidal_dis_radius}), the tidal field $\mathbf{T}$ is a small
 perturbation over the self-gravity of the stars.
 
 The presence of this perturbation will cause deviations from spherical
@@ -148,10 +148,60 @@ bulge may not be able to follow the change in equipotential surfaces
 along the orbital period. Therefore, the equilibrium condition (which
 minimizes the orbital energy of the system) is both:
 1. circularization of the orbit ($e=0$)
-2. synchronization of rotation and orbital revolution (\omega_{\rm surf}=\omega_{\rm orb})
+2. synchronization of rotation and orbital revolution ($\omega_{\rm surf}=\omega_{\rm orb}$)
 
 If an binary fulfills condition 2. with $e\ne0$, we talk about
 *pseudo-synchronization*, while both 1. and 2. correspond to a fully
 synchronized orbit.
 
-*** Tidal evolution for a generic orbit
+** Tidal evolution for a generic orbit
+For a generic orbit with arbitrary eccentricity and non-synchronized
+rotation rate of $m$, we expect tides to couple orbital energy and
+angular momentum with the stellar structure (formation and torquing of
+the bulge).
+
+Since the orbital angular momentum greatly exceed the stellar spins,
+$J_{\rm orb} \gg J_{\rm spin}$ (think that the orbital separation is a much
+larger lever arm than the stellar radii!), we should expect that
+changing the angular momentum of the stars is easier than changing the
+orbit, that is, we expect *pseudo-synchronization* of the rotation with
+the orbit before the orbit can *circularize*.
+
+The timescales for pseudo-synchronization and circularization are
+determined by the processes by which the tidal perturbations are
+dissipated in the star $m$ feeling the tides. These are an active area
+of study, and depend on the structure of the envelope of the star
+where the tides are stronger and most perturbing
+- *Convective envelopes*: the turbulent cascade within the convective
+  region pumps the extra energy provided by tides to small scales
+  until the gas viscosity dissipates it into heat. This process is
+  very efficient, so we can assume the tidal bulge to be *hydrostatic*
+  albeit misaligned, and use this to calculate the torques and
+  dissipation timescale. In this case we talk about *equilibrium tides*.
+- *Radiative envelope*: tides excite waves in the stably stratified
+  envelope, meaning we need to consider the *dynamics* of the gas in the
+  envelope. These waves can be /gravity waves/ (restoring force is
+  buoyancy), /pressure waves/ (restoring force is pressure gradient), or
+  /inertial wave/ (restoring force is Coriolis) - see also
+  [[./notes-lecture-asteroseismology.org][lecture on asteroseismology]].
+For the latter case, the problem becomes determining which waves (and
+modes) are excited in the star, how they propagate and eventually
+dissipate.
+
+The dominant paradigm to treat this is the *radiative dissipation* model
+from [[https://ui.adsabs.harvard.edu/abs/1977A%26A....57..383Z/abstract][Zahn 1977]]: the idea is that as waves travel to the surface at
+lower optical depth, radiation can leak out causing the waves to lose
+energy. Note however that Zahn's calculations of the tidal
+pseudo-synchronization and circularization timescales implemented in
+many codes are based on zero-age main sequence models of massive stars
+with radiative envelopes: because of the core-evolution during the
+main sequence, this in general underestimates the size of the envelope
+(the core shrinks as the star evolve), and can lead to underestimating
+the timescales (i.e., overestimating the impact of tides).
+
+A key problem is if these waves can hit resonances in the stellar
+structure: resonant waves may /not/ damp at all!
+
+* TODO Observational P(e) diagram
+
+* TODO Example of application: the spin of the second born BH
