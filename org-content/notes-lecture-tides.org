@@ -5,7 +5,8 @@
 #+NEXT_PAGE: notes-lecture-SNe.org
 
 *Materials:* [[https://ui.adsabs.harvard.edu/abs/1977A%26A....57..383Z/abstract][Zahn 1977]], [[https://ui.adsabs.harvard.edu/abs/1981A%26A....99..126H/abstract][Hut 1981]] [[https://ui.adsabs.harvard.edu/abs/2002MNRAS.329..897H/abstract][Hurley et al. 2002]], Tauris & Van den
-Heuvel book, [[https://ui.adsabs.harvard.edu/abs/2018A%26A...616A..28Q/abstract][Qin et al. 2018]], [[https://ui.adsabs.harvard.edu/abs/2023MNRAS.524.3978M/abstract][Mirouh et al. 2023]]
+Heuvel book, Ch. 5.3.2 of "Tapestry of Modern Astrophysics" by S. N.
+Shore, [[https://ui.adsabs.harvard.edu/abs/2018A%26A...616A..28Q/abstract][Qin et al. 2018]], [[https://ui.adsabs.harvard.edu/abs/2023MNRAS.524.3978M/abstract][Mirouh et al. 2023]]
 
 * Tides
 
@@ -94,10 +95,13 @@ Let's now consider the regime $r\gg r_{\rm TD} (\gg R_{\star})$, in which case (
 \ref{eq:tidal_dis_radius}), the tidal field $\mathbf{T}$ is a small
 perturbation over the self-gravity of the stars.
 
+*N.B.:* We can already intuitively expect that the tides are sensitive
+to $R_{\star}/r$.
+
 The presence of this perturbation will cause deviations from spherical
 symmetry (since the perturbation is /not/ a central force!). This means
 the gas of star $m$ will have a bulge (more extended than a sphere
-along the separation).
+along the separation), and $\nabla\rho\times\nabla P \ne 0$.
 
 Consider now the interplay between tides and stellar rotation. If the
 star is rotating non-synchronously with the orbit (i.e., $\omega_{\rm
@@ -216,9 +220,28 @@ active area of research. So how do we know that tides matter?
 Although we cannot directly see the interior structure of stars
 possibly affected by tides, we can see binary orbits!
 
-
-#+CAPTION: Eccentricity vs. orbital period (on a logarithmic scale) for binaries in the globular cluster M35 from [[https://ui.adsabs.harvard.edu/abs/2015AJ....150...10L/abstract][Leiner et al. 2015]]. The significant lack of eccentricity for $P\lesssim 10$ days suggest that for such short period the circularization timescale by tides is short compared to the lifetime of these binaries.
-#+HTML_ATTR: :width 50%
+#+CAPTION: Eccentricity vs. orbital period (on a logarithmic scale) for binaries in the open cluster M35 from [[https://ui.adsabs.harvard.edu/abs/2015AJ....150...10L/abstract][Leiner et al. 2015]].
+#+ATTR_HTML: :width 50%
+#+ATTR_HTML: :alt Fig. 8 in Leiner et al. 2015.
 [[./images/Pe_M35.png]]
 
-* TODO Example of application: the spin of the second born BH
+The figure above exemplifies the kind of observations that can be used
+to constrain tides. Using multi-epoch spectroscopic campaigns, one can
+measure the orbital properties of binaries (including $P\leftrightarrow\omega_{\rm orb}$ and
+$e$). Focusing on a specific cluster, one can analyze a co-eval
+population of binaries.
+
+The significant lack of eccentricity for $P\lesssim 10$ days suggest
+that for such short period the circularization timescale by tides is
+short compared to the lifetime of these binaries. At large $P$ instead
+any eccentricity is possible, suggesting a certain initial
+distribution of eccentricities and negligible impact of tidal
+interactions.
+
+*N.B.:* this example /is/ representative: many clusters show qualitatively
+similar $e(P)$ distributions with the "circularization period" (i.e.,
+the period below which all binaries are consistent with $e\approx0$) mildly
+depending on the age of the cluster, see for example [[https://ui.adsabs.harvard.edu/abs/2005ApJ...620..970M/abstract][Meibom & Mathieu
+2005]].
+
+* Example of application: the spin of the second born BH

@@ -4,4 +4,24 @@
 #+PREVIOUS_PAGE: notes-in-class-evol.org
 #+NEXT_PAGE: notes-lecture-RLOF.org
 
+*Materials*: [[https://doi.org/10.1103/RevModPhys.93.015001][Aerts 2021]]
+
 * TODO Asteroseismology
+
+- Photometry and spectroscopy
+- helioseismology
+
+** p-modes
+
+** g-modes
+
+** mixed modes
+
+* Excitation mechanism and mode recognition
+
+** $\kappa$- and $\varepsilon$- mechanisms
+
+
+* Homeworks
+
+-Use GYRE (maybe from zenodo?) To make a propagation diagram?

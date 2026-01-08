@@ -158,8 +158,8 @@ Guest lecturer: [[https://www.tomwagg.com/][Dr. Tom Wagg]]
 
 [[./notes-in-class-evol.org][Notes]]
 ** TODO <2026-03-25 Wed> - Asteroseismology
-*Aim*: Introduce helio and asteroseismology concepts. p- and g- waves,
- restoring force, mixed modes.
+*Aim*: Introduce helio and asteroseismology concepts. Brunt-Vaiasala
+ frequency, p- and g- waves, restoring force, mixed modes.
 
 [[./notes-lecture-asteroseismology.org][Notes]]
 
@@ -170,7 +170,7 @@ Guest lecturer: [[https://www.tomwagg.com/][Dr. Tom Wagg]]
 
 [[./notes-lecture-RLOF.org][Notes]]
 
-** TODO <2026-04-01 Wed> - Tides
+** <2026-04-01 Wed> - Tides
 *Aim*: Introduce the concept of tides in binaries, build physical
 intuition for tidal disruption and orbital evolution
 
