@@ -188,6 +188,10 @@ and dynamical assembly), discuss some known uncertainties.
 
 [[./notes-lecture-GWprog.org][Notes]]
 ** TODO <2026-04-10 Fri> - SNIa
+*Aim*: discuss SNIa
+
+[[./notes-lecture-SNIa.org][Notes]]
+
 ** TODO <2026-04-13 Mon> - Guest lecture 2
 ** <2026-04-15 Wed> - Two students presentations
 ** <2026-04-17 Fri> - Two students presentations
@@ -198,4 +202,4 @@ and dynamical assembly), discuss some known uncertainties.
 ** <2026-04-29 Wed> - Two students presentations
 ** <2026-05-01 Fri> - *No lecture*
 ** <2026-05-04 Mon> - Two students presentations
-** TODO <2026-05-06 Wed> -
+** <2026-05-06 Wed> - *Buffer*
