@@ -206,8 +206,19 @@ A key problem is if these waves can hit resonances in the stellar
 structure: resonant waves may /not/ damp at all!
 
 * Observational evidence: P(e) diagram
+As we have seen above, when the size of the stars is non-negligible
+compared to the size of an orbit, the tides resulting from the
+differences in the gravitational field across the star couple the
+stellar structure (spin and energy profile) with the orbit.
+Modeling this coupling requires in general considering
+out-of-equilibrium stellar structure, wave dissipation, and is an
+active area of research. So how do we know that tides matter?
+Although we cannot directly see the interior structure of stars
+possibly affected by tides, we can see binary orbits!
 
 
-
+#+CAPTION: Eccentricity vs. orbital period (on a logarithmic scale) for binaries in the globular cluster M35 from [[https://iopscience.iop.org/article/10.1088/0004-6256/150/1/10][Leiner et al. 2015]]. The significant lack of eccentricity for $P\lesssim 10$ days suggest that for such short period the circularization timescale by tides is short compared to the lifetime of these binaries.
+#+HTML_ATTR: :width 50%
+[[./images/Pe_M35.png]]
 
 * TODO Example of application: the spin of the second born BH
