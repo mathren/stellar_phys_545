@@ -1,0 +1,7 @@
+#+Title: ASTR545 - SNIa
+#+author: Mathieu Renzo
+#+email: mrenzo@arizona.edu
+#+NEXT_PAGE: notes-lecture-GWprog.org
+#+PREVIOUS_PAGE: projects.org
+
+* TODO Explosion of WDs

@@ -1,0 +1,9 @@
+#+Title: ASTR545 - Tides
+#+author: Mathieu Renzo
+#+email: mrenzo@arizona.edu
+#+PREVIOUS_PAGE: notes-lecture-RLOF.org
+#+NEXT_PAGE: notes-lecture-SNe.org
+
+*Materials:* Zahn 1977
+
+* TODO Tidal interactions

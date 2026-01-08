@@ -1,0 +1,7 @@
+#+title: ASTR545 - Asteroseismology
+#+author: Mathieu Renzo
+#+email: mrenzo@arizona.edu
+#+PREVIOUS_PAGE: notes-in-class-evol.org
+#+NEXT_PAGE: notes-lecture-RLOF.org
+
+* TODO Asteroseismology
