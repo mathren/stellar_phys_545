@@ -5,7 +5,7 @@
 #+PREVIOUS_PAGE: notes-in-class-evol.org
 #+NEXT_PAGE: notes-in-class-evol.org
 
-* TODO Mid-term exam
+* Mid-term exam
 
 This mid-term is a take-home exam due on <2026-03-27 Fri>. All
 assignments can be completed using data generated with =MESA-web=

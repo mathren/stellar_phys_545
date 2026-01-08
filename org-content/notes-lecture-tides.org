@@ -4,7 +4,8 @@
 #+PREVIOUS_PAGE: notes-lecture-RLOF.org
 #+NEXT_PAGE: notes-lecture-SNe.org
 
-*Materials:* [[https://ui.adsabs.harvard.edu/abs/1977A%26A....57..383Z/abstract][Zahn 1977]], Tauris & Van den Heuvel book, [[https://ui.adsabs.harvard.edu/abs/2018A%26A...616A..28Q/abstract][Qin et al. 2018]]
+*Materials:* [[https://ui.adsabs.harvard.edu/abs/1977A%26A....57..383Z/abstract][Zahn 1977]], [[https://ui.adsabs.harvard.edu/abs/1981A%26A....99..126H/abstract][Hut 1981]] [[https://ui.adsabs.harvard.edu/abs/2002MNRAS.329..897H/abstract][Hurley et al. 2002]], Tauris & Van den
+Heuvel book, [[https://ui.adsabs.harvard.edu/abs/2018A%26A...616A..28Q/abstract][Qin et al. 2018]], [[https://ui.adsabs.harvard.edu/abs/2023MNRAS.524.3978M/abstract][Mirouh et al. 2023]]
 
 * Tides
 
@@ -51,13 +52,15 @@ and thus:
 \mathbf{T}(\mathbf{r}) = - \frac{2GMmR_{\star}}{r^{3}}\mathbf{\hat{r}} \propto \frac{1}{r^{3}} \ \ .
 \end{equation}
 #+end_latex
-
 To first order in $R_{\star}/r$, the tidal forces resulting from differences
 in the gravitational field created by a body scale like $\propto r^{-3}$,
 meaning the tidal field drops /faster/ than the gravitational field $\propto
 r^{-2}$. For wide systems tides are usually negligible (although this
 depends also on the masses and radii). Viceversa, for very close
 binaries, tides can be an important perturbation.
+
+Note also how the tidal force is directed along the separation between
+the two bodies.
 
 * Non-perturbative tides: tidal disruption radius
 From the functional dependence on $r$, we can see that at small
@@ -202,6 +205,9 @@ the timescales (i.e., overestimating the impact of tides).
 A key problem is if these waves can hit resonances in the stellar
 structure: resonant waves may /not/ damp at all!
 
-* TODO Observational P(e) diagram
+* Observational evidence: P(e) diagram
+
+
+
 
 * TODO Example of application: the spin of the second born BH

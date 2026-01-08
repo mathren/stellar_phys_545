@@ -438,8 +438,12 @@ color-magnitude diagram, where all the stars end up along an
 isochrone (credits NASA/ESA, J. Anderson, R. van der Marel, G. Bacon, M.
 Estacion, STScI).
 
-#+HTML: <video  controls width="600" height="400" src="./images/CMD_omega_cen.mp4" </video>
-# [[https://www.youtube.com/watch?v=lhSFQXrVr48]]
+# # # Embedded
+#+HTML: <iframe width="560" height="315" src="https://www.youtube.com/embed/lhSFQXrVr48?si=vY__bxf5JoMMjU24" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+# # # LOCAL COPY
+# #+HTML: <video  controls width="600" height="400" src="./images/CMD_omega_cen.mp4" </video>
+# # [[https://www.youtube.com/watch?v=lhSFQXrVr48]]
 
 **** Isochrone fitting
 An *isochrone* (from iso = "same" + chronos = "time") is the locus of
