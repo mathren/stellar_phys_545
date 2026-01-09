@@ -88,9 +88,10 @@ please come talk to me early on, as we may be able to accommodate it.
 31. Orbital architectures of (star+star) binaries in the Universe
 32. The lowest mass stars: M dwarfs and Brown dwarfs
 33. Stellar flares
-34. What's going on with Betelgeuse?
-35. Something else within the scope of the course (*to be agreed upon*!)
-36. Combination of topics above (*to be agreed upon*!)
+34. Stellar hydrodynamics: convective boundary mixing
+35. What's going on with Betelgeuse?
+36. Something else within the scope of the course (*to be agreed upon*!)
+37. Combination of topics above (*to be agreed upon*!)
 
 ** Recommended sources
 You are encouraged to do your own research, but in the final

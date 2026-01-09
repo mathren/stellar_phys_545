@@ -4,7 +4,7 @@
 #+PREVIOUS_PAGE: notes-in-class-evol.org
 #+NEXT_PAGE: notes-lecture-RLOF.org
 
-*Materials*: [[https://ui.adsabs.harvard.edu/abs/1980ApJS...43..469T/abstract][Tassoul 1980]], [[https://adsabs.harvard.edu/full/1984srps.conf...11C][Christensen-Dalsgaard 1984]], [[https://doi.org/10.1007/978-1-4020-5803-5][Aerts,
+*Materials*: [[https://ui.adsabs.harvard.edu/abs/1980ApJS...43..469T/abstract][Tassoul 1980]], [[https://adsabs.harvard.edu/full/1984srps.conf...11C][Christensen-Dalsgaard 1984]], [[https://ui.adsabs.harvard.edu/abs/1990ApJ...358..313T/abstract][Tassoul 1990]], [[https://doi.org/10.1007/978-1-4020-5803-5][Aerts,
 Christensen-Dalsgaard, Kurtz 2010]], [[https://doi.org/10.1103/RevModPhys.93.015001][Aerts 2021]].
 
 * How to see inside stars?
@@ -129,7 +129,8 @@ perturbation and the radius of the star by
 \lambda = \frac{2\pi R}{\sqrt{l(l+1)}} \ \ .
 \end{equation}
 #+end_latex
-Each mode of oscillation can be identified by ($n, l, m$).
+Each mode of oscillation can be identified by "quantum numbers" ($n,
+l, m$).
 
 *N.B.:* At this stage we are not enforcing spherical symmetry and want
 to keep terms with $l, m \ne 0$.
@@ -182,6 +183,26 @@ the outer layers of the stars!
 
 Their frequency and wavelength are related by the sound speed in the
 star.
+
+[[https://ui.adsabs.harvard.edu/abs/1980ApJS...43..469T/abstract][Tassoul 1980]] and [[https://ui.adsabs.harvard.edu/abs/1990ApJ...358..313T/abstract][1990]] calculated the asymptotic period spacing for
+p-modes as:
+#+begin_latex
+\begin{equation}\label{eq:p-spacing}
+\nu_{n,l} \simeq \Delta\nu \left(n+\frac{l}{2}+\tilde{alpha}\right)+\delta\nu_{n,l}\ \ ,
+\end{equation}
+#+end_latex
+where $\tilde{alpha}$ is a constant of $\mathcal{O}(1)$, $\delta\nu_{n,l}$ are small
+corrections, and $\Delta \nu$ is the /large separation/ related to the sound
+travel time through the star:
+#+begin_latex
+\begin{equation}\label{eq:delta_nu}
+\Delta\nu = \frac{1}{2\int_{0}^{R}\frac{dr}{c_{\rm sound}(r)}} \ \ .
+\end{equation}
+#+end_latex
+
+#+CAPTION: Power spectrum of the Sun-like star from CoRoT. The vertical axis shows how much power there is in modes of the corresponding frequency on the x-axis (in Hz), in arbitrary units. The separation between the large peaks correspond to $\Delta\nu()
+#+ATTR_HTML: :width 50%
+
 
 *** g-modes
 Gravity modes are oscillations where the restoring force is buoyancy.
@@ -285,6 +306,17 @@ energy in the oscillation modes of a star.
 ** \kappa-mechanism
 
 ** \varepsilon-mechanisms
+
+** Stochastic excitation
+When there is a convective layer (core or shell), convective bubbles
+are going to stochastically overshoot, "banging" on the
+convective/radiative boundary. We have discussed this in the context
+of [[./notes-lecture-convection.org::*Convective boundary mixing (a.k.a. "overshooting")][overshooting]], but this process can also perturb the stable layer
+above, seeding g-modes.
+
+*N.B.:* [[https://ui.adsabs.harvard.edu/abs/2017MNRAS.470.1642F/abstract][Fuller 2017]] uses this idea to propose "wave-driven" late injection of
+energy in the envelope of pre-supernova star, to explain the
+circumstellar material around SNe
 
 * TODO Observational asteroseismology
 To be able to do asteroseismology, we need to /monitor/ stars and study
