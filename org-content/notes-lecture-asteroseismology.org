@@ -4,7 +4,7 @@
 #+PREVIOUS_PAGE: notes-in-class-evol.org
 #+NEXT_PAGE: notes-lecture-RLOF.org
 
-*Materials*: Cox & Giuli 1980, [[https://adsabs.harvard.edu/full/1984srps.conf...11C][Christensen-Dalsgaard 1984]], [[https://doi.org/10.1007/978-1-4020-5803-5][Aerts,
+*Materials*: [[https://ui.adsabs.harvard.edu/abs/1980ApJS...43..469T/abstract][Tassoul 1980]], [[https://adsabs.harvard.edu/full/1984srps.conf...11C][Christensen-Dalsgaard 1984]], [[https://doi.org/10.1007/978-1-4020-5803-5][Aerts,
 Christensen-Dalsgaard, Kurtz 2010]], [[https://doi.org/10.1103/RevModPhys.93.015001][Aerts 2021]].
 
 * How to see inside stars?
@@ -151,7 +151,7 @@ without introducing a temperature variable.
 *** Asymptotic theory
 Restricting the analysis to high-order radial modes (that is high
 values of $n$), we can use asymptotic theory to derive /analytic/
-relations between the various modes. While this causes a loss of
+relations between the various modes (see [[https://ui.adsabs.harvard.edu/abs/1980ApJS...43..469T/abstract][Tassoul 1980]]). While this causes a loss of
 generality, it turns out that observed modes are typically high order,
 and the success of asymptotic theory are remarkable.
 
@@ -167,7 +167,7 @@ is written as an asymptotic series:
 and taking the limit $\varepsilon\rightarrow0$ (the "asymptotic" part of the name).
 The new variables $S_{k}(x)$ are usually easier to solve for.
 
-** TODO Oscillation modes
+** Oscillation modes
 There can be several different modes of pulsations for stars, each
 propagate in (and thus probe) different regions, and wave-dynamics
 phenomena such as tunneling through evanescent zones can couple
@@ -179,6 +179,9 @@ force is the pressure gradient, that is /sound waves/ propagating in the
 star. They propagate in radiative and convective layers of the stars,
 but higher density regions reflect incoming waves: these probe mostly
 the outer layers of the stars!
+
+Their frequency and wavelength are related by the sound speed in the
+star.
 
 *** g-modes
 Gravity modes are oscillations where the restoring force is buoyancy.
@@ -195,14 +198,29 @@ $\rho$ is higher and thus most of the mass is), and thus the size of the
 core.
 
 The animation below shows a (greatly exaggerated) g-mode oscillation:
-#+HTML:  <video  controls width="600" height="400" src="./images/g-mode.mp4" </video>
+#+HTML:  <video  controls loop autostart width="600" height="400" src="./images/g_mode.mp4" </video>
 
 The g-modes include also the so-called f-modes, i.e. the "fundamental"
 gravity mode, confined to the surface of stars, typically relevant in
 the study of neutron stars
 
+The characteristic frequency of these g-mode oscillations in an ideal
+gas is the Brunt-Vaiasala frequency
+#+begin_latex
+\begin{equation}\label{eq:brunt-vaisala}
+N^{2} = \frac{g^{2} \rho}{P}\left(\nabla_{ad}-\nabla+\frac{\varphi}{\delta}\nabla_{\mu}\right) \ \ ,
+\end{equation}
+#+end_latex
+which depends on dynamical quantities ($P$, $\rho$, the local
+gravitational acceleration $g$), and the super-adiabaticity in
+parenthesis, as one could expect from [[./notes-lecture-convection.org][convection theory]].
 
-- [ ] derive $N^{2}$
+If $N^{2}\ge0$, meaning the temperature gradient is /not/ super-adiabatic,
+then we have a stably stratified region of the star, where
+the fundamental oscillation mode $N$, viceversa $N^{2}<0$ correspond to
+convectively unstable region, where any oscillation would result in
+an exponentially growing instability until the steady state described
+by convection settles.
 
 *** mixed modes
 Oscillation modes with different restoring forces can be coupled to
@@ -214,22 +232,46 @@ infer the core rotation rate of red giants, where the convective
 envelope oscillates through p-modes coupled to the g-modes in the
 core.
 
-** Period spacing
+*** Where do these oscillation propagate
+To visualize where each of these mode in the stars can exist, consider
+"ray-tracing" approach, that is imagine the wave vector $\mathbf{k}$
+in the star.
 
+#+CAPTION: Ray-tracing of p-modes (right) and g-modes (left) in a Sun-like star with a convective envelope and radiative core. The left panel shows sound waves with $\nu=3000$ \mu Hz and, in increasing depth of penetration, modes with $l=75, 25, 20, 2$: sound waves are deflected as they penetrate inwards, until they turn around, lower $l$ stay shallower. The right panel shows g-modes of $\nu=190$ \mu Hz and $l=5$ trapped in the radiative core. From [[https://ui.adsabs.harvard.edu/abs/2007A%26ARv..14..217C/abstract][Cuhna et al. 2007]].
+#+ATTR_HTML: :width 100%
+[[./images/rays_pulsation.png]]
 
-* Observational asteroseismology
-To be able to do asteroseismology, we need to /monitor/ stars and study
-their time variability (cadence and duration of the observing window are).
+Another way to look at where each mode in the star can exist is to
+plot a "propagation diagram" with the characteristic frequencies.
+Given a stellar structure (e.g., a =profile*.data= snapshot of the
+stellar structure at fixed time from =MESA=), we can plot the /profile/ as
+a function of mass, radius, or any other suitable variable of the
+frequencies. The following is an example from [[https://ui.adsabs.harvard.edu/abs/2017MNRAS.470.1642F/abstract][Fuller 2017]]:
 
-The fact that we only detect directly only the outermost layers of a
-star remains through, but asteroseismology adds the temporal dimension
-looking at /stellar variability/. This can be done through both
-photometry (with state-of-the-art sensitivities reaching down to
-micro magnitudes, corresponding to $\sim$ one part per /million/ variations) and
-high-cadence and high-resolution spectroscopy (trying to capture
-velocity variations in the stellar atmosphere, with state-of-the-art
-resolution reaching $\mathrm{cm s^{-1}}$ sensitivity).
+#+CAPTION: Relevant frequencies as a function of stellar radius for a $15M_{\odot}$ star during O core burning. This consider the propagation of a wave of frequency $\omega_{\rm wave}$ comparing it to the Bunt-Vaiasala frequency $N$ and the frequency of the $l=1$ p-mode ($L_{1}$).
+#+ATTR_HTML: :width 50%
 
+[[./images/propagation_diagram.png]]
+
+A wave of frequency $\omega_{\rm wave}$ can propagate only in regions where
+the restoring force allows for oscillating solution. In the figure
+above, the gray area correspond to regions where $N^{2}<0$, therefore
+convectively unstable and unable to support g-modes. The blue regions
+are radiative and can support g-modes: this particular star has three
+distinct g-mode cavities, and in analogy with quantum mechanical
+calculations, there is a possibility of tunneling (through the
+appropriate superposition of evanescent, i.e., exponentially
+decreasing in amplitude, modes in the gray regions) through the
+forbidden regions and therefore coupling the cavities with each other.
+The red area can support acoustic modes, that is p-waves with $\omega_{\rm
+wave}\ge L_{1}(r)$ with $L_{1}$ the frequency of sound waves with $l=1$, so
+called Lamb frequency:
+
+#+begin_latex
+\begin{equation}\label{eq:lamb}
+L_{1} = \sqrt{2}\frac{c_{s}}{r} \ \ .
+\end{equation}
+#+end_latex
 
 * Excitation mechanism and mode recognition
 While identifying the frequencies of oscillations provides a lot of
@@ -243,6 +285,21 @@ energy in the oscillation modes of a star.
 ** \kappa-mechanism
 
 ** \varepsilon-mechanisms
+
+* TODO Observational asteroseismology
+To be able to do asteroseismology, we need to /monitor/ stars and study
+their time variability (cadence and duration of the observing window are).
+
+The fact that we only detect directly only the outermost layers of a
+star remains through, but asteroseismology adds the temporal dimension
+looking at /stellar variability/. This can be done through both
+photometry (with state-of-the-art sensitivities reaching down to
+micro magnitudes, corresponding to $\sim$ one part per /million/ variations) and
+high-cadence and high-resolution spectroscopy (trying to capture
+velocity variations in the stellar atmosphere, with state-of-the-art
+resolution reaching $\mathrm{cm s^{-1}}$ sensitivity).
+
+- [ ] mention /KEPLER, TESS, PLATO/. Mention connection to exoplanets
 
 * Helioseismology
 
