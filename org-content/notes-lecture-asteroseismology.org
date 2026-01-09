@@ -4,22 +4,155 @@
 #+PREVIOUS_PAGE: notes-in-class-evol.org
 #+NEXT_PAGE: notes-lecture-RLOF.org
 
-*Materials*: [[https://doi.org/10.1103/RevModPhys.93.015001][Aerts 2021]]
+*Materials*: [[https://adsabs.harvard.edu/full/1984srps.conf...11C][Christensen-Dalsgaard 1984]], [[https://doi.org/10.1103/RevModPhys.93.015001][Aerts 2021]],
+
+* How to see inside stars?
+
+Stars are optically thick (allowing us to treat them as black bodies
+inside and excluding the atmosphere), and we have developed a physical
+model for their interior, which can be tested /indirectly/ using stellar
+(and transients!) /populations/.
+
+How can we /directly/ see inside the stars?
+- *Neutrinos*: we have seen that [[./notes-lecture-neutrinos.org][neutrinos]] can freely stream out of the
+  cores, which has provided direct evidence for thermonuclear
+  reactions in the Sun, and (as [[./notes-lecture-SNe.org][as we will see]]) their role in the
+  collapse of massive stars. However, neutrinos are so extremely hard
+  to detect, that this is not a practical way (yet?) to understand
+  stellar interiors.
+- *Stripped stars*: Another possibility to see the interior, is when
+  nature removes by some means their envelope (e.g., binary mass
+  transfer!): this effectively moves the photosphere inwards, but only
+  to a single new location, and the process may induce changes in the
+  structure in response, muddying the interpretation.
+- *Supernova light curves*: We will discuss these in more detail [[./notes-lecture-SNe.org][later]],
+  but /if/ a star explodes, as the density (and thus $\tau\sim \kappa\rho\Delta r$)
+  decreases, the photosphere moves inward in mass-coordinate within
+  the ejecta, offering at each time a view of a different inner
+  spherical shell of the star. This is of course limited to stars that
+  /do/ explode at the end of their life and only offers a scan through
+  the final structure. Moreover, it comes with the explosion, which
+  itself modifies the gas.
+- *Asteroseismology*: we can also study the stellar interior through
+  seeing the outer surface response to the propagation of waves,
+  similar to how in geophysics we can infer the internal structure of
+  the planets by observing Earth quakes.
 
 * TODO Asteroseismology
+
+Asteroseismology is etymologically "the study of how stars shake". The
+idea is to obtain the properties of the stellar interior (e.g., the
+presence of a strong gradient at a core-envelope interface, the
+internal rotation profile) indirectly by studying the eigenmodes of
+vibration of the star, much like one can infer the length and boundary
+conditions of a guitar string from the note it plays, or the
+properties of a bell from its ring.
+
+Imagine an impulsive perturbation on an object (e.g., hitting a bell,
+plucking a guitar string): this excites a spectrum of vibration
+modes - most of which interfere and cancel each other. The boundary
+conditions and the properties of the object determine the
+eigen-frequencies of the system, which will be the only vibration
+modes that interfere constructively and be long-lived oscillations. By
+detecting frequency, amplitude, and phase of these oscillations we can
+infer the properties of the object oscillating.
+
+The same apply if the object is a star: all the possible external
+perturbations /excite/ various modes, of which only the eigen-modes of
+the star (determined by its internal structure, which sets the
+oscillation cavities and boundary conditions for the modes) leave a
+steady long-lasting signature. By detecting and identifying these
+modes one can study the interior of stars.
+
+** Stellar variability
+To do this, we need to /monitor/ stars and study their time variability.
+
+Stochastic processes (e.g., stellar flares for magnetic and convective
+stars such as M dwarfs, or the Sun) can contribute to the stellar
+variability, but asteroseismology is mostly concerned with /periodic/
+variability.
+
+#+CAPTION: HR diagram with stellar evolution tracks (black) and marked regions (blue/red) of observed photometric stellar variability, labeled according to the acronyms defined in [[https://doi.org/10.1007/978-1-4020-5803-5][Aerts, Christensen-Dalsgaard, Kurtz 2010]]. This is Fig. 1 from [[https://doi.org/10.1103/RevModPhys.93.015001][Aerts 2021]].
+#+ATTR_HTML: :width 100%
+[[./images/HRD_asteroseismology.png]]
+
+The phenomenology of periodic stellar variability is wide, and its
+interpretation as stellar oscillations is not always unique (e.g., RV
+variations can be caused by radial pulsations of a star but also
+orbital velocity).
+
+When this variability is a product of oscillations, we can study it
+using /linear perturbation theory/ on the stellar equations, and the
+resulting wave-solutions can experience all phenomena typical of wave
+mechanics such as tunneling, rotational splitting, etc.
+
+** Oscillation modes
+There can be several different modes of pulsations for stars, each
+propagate in (and thus probe) different regions, and wave-dynamics
+phenomena such as tunneling through evanescent zones can couple
+different modes.
+
+*** p-modes
+Pressure modes are oscillations of the stellar gas where the restoring
+force is the pressure gradient, that is /sound waves/ propagating in the
+star. They propagate in radiative and convective layers of the stars,
+but higher density regions reflect incoming waves: these probe mostly
+the outer layers of the stars!
+
+*** g-modes
+Gravity modes are oscillations where the restoring force is buoyancy.
+These are the stable oscillation of /radiative/ regions, in a sense the
+counter part to convection which occurs when these oscillations are
+/unstable/ because the buoyancy acts as a forcing mechanism instead of
+restoring mechanism.
+
+Therefore, these cannot exists as stable oscillation modes in fully
+convective stars, propagate in the cores of low mass stars (e.g., the
+Sun), and the envelope of massive stars. In the latter case they are
+especially useful to probe the inner regions of the envelope (where
+$\rho$ is higher and thus most of the mass is), and thus the size of the
+core.
+
+The g-modes include also the so-called f-modes, i.e. the "fundamental"
+gravity mode, confined to the surface of stars, typically relevant in
+the study of neutron stars
+
+*** mixed modes
+Oscillation modes with different restoring forces can be coupled to
+each other if the stellar structure allows it (think of quantum
+mechanics solution of the Schr\"odinger equation imposing continuity
+at the points where $E=V$). These "mixed" modes can allow to probe
+different regions of the star, for example they are what is used to
+infer the core rotation rate of red giants, where the convective
+envelope oscillates through p-modes coupled to the g-modes in the
+core.
+
+** General considerations
+Dynamical timescale
+
+**
+
+
+
+* Observational asteroseismology
+
+The fact that we only detect directly only the outermost layers of a
+star remains through, but asteroseismology adds the temporal dimension
+looking at /stellar variability/. This can be done through both
+photometry (with state-of-the-art sensitivities reaching down to
+$\mu$mag corresponding to $\sim$ one part per /million/ variations) and
+high-cadence and high-resolution spectroscopy (trying to capture
+velocity variations in the stellar atmosphere).
 
 - Photometry and spectroscopy
 - helioseismology
 
-** p-modes
-
-** g-modes
-
-** mixed modes
 
 * Excitation mechanism and mode recognition
 
-** $\kappa$- and $\varepsilon$- mechanisms
+** $\kappa$-mechanism
+
+** $\varepsilon$- mechanisms
 
 
 * Homeworks
