@@ -4,7 +4,8 @@
 #+PREVIOUS_PAGE: notes-in-class-evol.org
 #+NEXT_PAGE: notes-lecture-RLOF.org
 
-*Materials*: [[https://adsabs.harvard.edu/full/1984srps.conf...11C][Christensen-Dalsgaard 1984]], [[https://doi.org/10.1103/RevModPhys.93.015001][Aerts 2021]],
+*Materials*: [[https://adsabs.harvard.edu/full/1984srps.conf...11C][Christensen-Dalsgaard 1984]], [[https://doi.org/10.1007/978-1-4020-5803-5][Aerts, Christensen-Dalsgaard,
+Kurtz 2010]], [[https://doi.org/10.1103/RevModPhys.93.015001][Aerts 2021]],
 
 * How to see inside stars?
 
@@ -38,7 +39,7 @@ How can we /directly/ see inside the stars?
   similar to how in geophysics we can infer the internal structure of
   the planets by observing Earth quakes.
 
-* TODO Asteroseismology
+* Asteroseismology
 
 Asteroseismology is etymologically "the study of how stars shake". The
 idea is to obtain the properties of the stellar interior (e.g., the
@@ -86,7 +87,8 @@ using /linear perturbation theory/ on the stellar equations, and the
 resulting wave-solutions can experience all phenomena typical of wave
 mechanics such as tunneling, rotational splitting, etc.
 
-** Oscillation modes
+** TODO Oscillation modes
+- [ ] find gifs of g-/p- and f- modes?
 There can be several different modes of pulsations for stars, each
 propagate in (and thus probe) different regions, and wave-dynamics
 phenomena such as tunneling through evanescent zones can couple

@@ -10,7 +10,7 @@ Department of Astronomy and Steward Observatory of the University of
 Arizona (Spring semester 2026).
 
  - [[./org-content/syllabus.org][Syllabus]]
- - [[./org-content/lectures.org][Lectures topic-by-topic]]
+ - [[./org-content/lectures.org][Lectures]]
  - [[./org-content/projects.org][Projects and presentations]]
 
 * Technical details
