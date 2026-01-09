@@ -201,7 +201,7 @@ travel time through the star:
 #+end_latex
 
 #+CAPTION: Power spectrum of the Sun-like star from CoRoT. The vertical axis shows how much power there is in modes of the corresponding frequency on the x-axis (in Hz), in arbitrary units. The frequency separation between the large peaks correspond to $\Delta\nu(n+l/2+\tilde{\alpha})$ and the distances between small peaks arises because of the $\delta\nu_{n,l}$. From [[https://sci.esa.int/web/corot/-/40955-frequency-power-spectrum-of-stellar-light-variations][ESA's CoRoT webpage]].
-#+ATTR_HTML: :width 50%
+#+ATTR_HTML: :width 100%
 [[./images/Sun_powerspectrum.png]]
 
 *** g-modes
@@ -269,7 +269,7 @@ stellar structure at fixed time from =MESA=), we can plot the /profile/ as
 a function of mass, radius, or any other suitable variable of the
 frequencies. The following is an example from [[https://ui.adsabs.harvard.edu/abs/2017MNRAS.470.1642F/abstract][Fuller 2017]]:
 
-#+CAPTION: Relevant frequencies as a function of stellar radius for a $15M_{\odot}$ star during O core burning. This consider the propagation of a wave of frequency $\omega_{\rm wave}$ comparing it to the Bunt-Vaiasala frequency $N$ and the frequency of the $l=1$ p-mode ($L_{1}$).
+#+CAPTION: gngne .
 #+ATTR_HTML: :width 50%
 
 [[./images/propagation_diagram.png]]
