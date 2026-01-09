@@ -4,8 +4,8 @@
 #+PREVIOUS_PAGE: notes-in-class-evol.org
 #+NEXT_PAGE: notes-lecture-RLOF.org
 
-*Materials*: [[https://adsabs.harvard.edu/full/1984srps.conf...11C][Christensen-Dalsgaard 1984]], [[https://doi.org/10.1007/978-1-4020-5803-5][Aerts, Christensen-Dalsgaard,
-Kurtz 2010]], [[https://doi.org/10.1103/RevModPhys.93.015001][Aerts 2021]],
+*Materials*: Cox & Giuli 1980, [[https://adsabs.harvard.edu/full/1984srps.conf...11C][Christensen-Dalsgaard 1984]], [[https://doi.org/10.1007/978-1-4020-5803-5][Aerts,
+Christensen-Dalsgaard, Kurtz 2010]], [[https://doi.org/10.1103/RevModPhys.93.015001][Aerts 2021]].
 
 * How to see inside stars?
 
@@ -33,7 +33,7 @@ How can we /directly/ see inside the stars?
   spherical shell of the star. This is of course limited to stars that
   /do/ explode at the end of their life and only offers a scan through
   the final structure. Moreover, it comes with the explosion, which
-  itself modifies the gas.
+  introduces destructive changes in the structure.
 - *Asteroseismology*: we can also study the stellar interior through
   seeing the outer surface response to the propagation of waves,
   similar to how in geophysics we can infer the internal structure of
@@ -42,16 +42,14 @@ How can we /directly/ see inside the stars?
 * Asteroseismology
 
 Asteroseismology is etymologically "the study of how stars shake". The
-idea is to obtain the properties of the stellar interior (e.g., the
-presence of a strong gradient at a core-envelope interface, the
-internal rotation profile) indirectly by studying the eigenmodes of
-vibration of the star, much like one can infer the length and boundary
-conditions of a guitar string from the note it plays, or the
-properties of a bell from its ring.
+idea is to obtain the properties of the stellar interior indirectly by
+studying the eigen modes of vibration of the star, much like one can
+infer the length and boundary conditions of a guitar string from the
+note it plays, or the properties of a bell from its ring.
 
 Imagine an impulsive perturbation on an object (e.g., hitting a bell,
 plucking a guitar string): this excites a spectrum of vibration
-modes - most of which interfere and cancel each other. The boundary
+modes - most of which interfere with each other and cancel out. The boundary
 conditions and the properties of the object determine the
 eigen-frequencies of the system, which will be the only vibration
 modes that interfere constructively and be long-lived oscillations. By
@@ -65,30 +63,111 @@ oscillation cavities and boundary conditions for the modes) leave a
 steady long-lasting signature. By detecting and identifying these
 modes one can study the interior of stars.
 
-** Stellar variability
-To do this, we need to /monitor/ stars and study their time variability.
+Before diving into the details, let's consider what timescale is
+relevant for oscillations in a star: these are a dynamical phenomena
+(albeit small and perturbative in nature), so likely the free-fall
+timescale will be relevant, $t_{\rm ff}\propto \sqrt{R^{3}/M}$. We should expect
+that the fundamental frequency of oscillations probes stellar radii
+and masses! When multiple frequencies can be identified, further
+information on the core mass, rotation rate, etc. can be inferred.
+Other examples of the stellar properties that have been derived from
+asteroseismology include the internal sound speed of the Sun, the
+presence of a strong gradient at a core-envelope interface and thus
+core masses, the core rotation rate, the sound speed profiles, etc.
+All this from the time-variability of stars revealing their eigen
+modes.
 
+** Stellar variability
 Stochastic processes (e.g., stellar flares for magnetic and convective
 stars such as M dwarfs, or the Sun) can contribute to the stellar
 variability, but asteroseismology is mostly concerned with /periodic/
 variability.
 
-#+CAPTION: HR diagram with stellar evolution tracks (black) and marked regions (blue/red) of observed photometric stellar variability, labeled according to the acronyms defined in [[https://doi.org/10.1007/978-1-4020-5803-5][Aerts, Christensen-Dalsgaard, Kurtz 2010]]. This is Fig. 1 from [[https://doi.org/10.1103/RevModPhys.93.015001][Aerts 2021]].
+#+CAPTION: HR diagram with stellar evolution tracks (black) and marked regions (blue/red) of observed photometric stellar variability, labeled according to the acronyms for each observational class of pulsators defined in [[https://doi.org/10.1007/978-1-4020-5803-5][Aerts, Christensen-Dalsgaard, Kurtz 2010]]. This is Fig. 1 from [[https://doi.org/10.1103/RevModPhys.93.015001][Aerts 2021]].
 #+ATTR_HTML: :width 100%
 [[./images/HRD_asteroseismology.png]]
 
-The phenomenology of periodic stellar variability is wide, and its
-interpretation as stellar oscillations is not always unique (e.g., RV
-variations can be caused by radial pulsations of a star but also
-orbital velocity).
+The phenomenology of periodic stellar variability is wide (see Fig.
+1), and its interpretation as stellar oscillations is not always
+unique (e.g., RV variations can be caused by radial pulsations of a
+star but also orbital velocity). When this variability is a product of
+oscillations, we can study it using /linear perturbation theory/ on the
+stellar equations, and the resulting wave-solutions can experience all
+phenomena typical of wave mechanics such as tunneling, rotational
+splitting, etc.
 
-When this variability is a product of oscillations, we can study it
-using /linear perturbation theory/ on the stellar equations, and the
-resulting wave-solutions can experience all phenomena typical of wave
-mechanics such as tunneling, rotational splitting, etc.
+** General considerations
+As for any other linear perturbation theory, the idea is to start with
+a solution to the equations describing a stellar structure, introduce
+a perturbation $\mathbf{x}\rightarrow\mathbf{x}+\mathbf{\delta x}$ such that
+$\mathbf{\delta x}\ll \mathbf{x}$, and derive the equations describing the
+time-evolution of $\mathbf{\delta x}$ neglecting all terms of
+$\mathcal{O}({\mathbf{\delta x}^{2}})$.
+
+*N.B.:* The assumption that $\mathbf{\delta x}$ is "small"
+prevents us from obtaining a predictive theory for the /amplitude/ of
+the oscillation modes in stars with linear theory. Nevertheless, the
+/frequency/ analysis that this approximation allows for has proven
+extremely fruitful.
+
+At linear order, solutions will be
+expressed in general as the linear superposition of modes with
+functional form:
+#+begin_latex
+\begin{equation}
+\delta\mathrm{x} \sim \sum_{l,n,m} \delta_{n,l,m}\ \ \mathrm{with}  \ \ \delta_{n,l,m} \sim F_{n}(r)Y_{l}^{m}(\theta,\varphi) \ \ ,
+\end{equation}
+#+end_latex
+where some function $F_{n}$ of order $n$ represent the radial dependence,
+and the angular dependence is described by spherical harmonics of
+order $l$, $m$. $n$ roughly corresponds to the number of zeros in the
+radial direction for the perturbation, and $m$ the number of zeros
+along the equator. $l$ is related to the wavelength $\lambda$ of the
+perturbation and the radius of the star by
+#+begin_latex
+\begin{equation}
+\lambda = \frac{2\pi R}{\sqrt{l(l+1)}} \ \ .
+\end{equation}
+#+end_latex
+Each mode of oscillation can be identified by ($n, l, m$).
+
+*N.B.:* At this stage we are not enforcing spherical symmetry and want
+to keep terms with $l, m \ne 0$.
+
+Determining the solutions can in many cases be simplified with a few
+approximation.
+
+*** Adiabatic approximation
+The typical oscillation periods observed in stars span $\sim$ minutes to
+$\sim$ decades. This are extremely short compared to the global thermal
+timescale of the oscillating stars, so it is often reasonable to
+assume the oscillations occur without energy exchanges, that is
+adiabatically.
+
+This allows to use a simple polytropic equation $P\propto \rho^{\Gamma_{1}}$ and close
+the system of stellar equations with conservation of mass and momentum
+without introducing a temperature variable.
+
+*** Asymptotic theory
+Restricting the analysis to high-order radial modes (that is high
+values of $n$), we can use asymptotic theory to derive /analytic/
+relations between the various modes. While this causes a loss of
+generality, it turns out that observed modes are typically high order,
+and the success of asymptotic theory are remarkable.
+
+*N.B.:* This is analogous to the WKB approximation in quantum mechanics.
+
+In this approximation the solution for the perturbation $\mathbf{\delta x}$
+is written as an asymptotic series:
+#+begin_latex
+\begin{equation}
+\mathbf{\delta x} = \exp\left(\frac{1}{\varepsilon} \sum_{k}\varepsilon^{k}S_{k}(x)\right) \ \ ,
+\end{equation}
+#+end_latex
+and taking the limit $\varepsilon\rightarrow0$ (the "asymptotic" part of the name).
+The new variables $S_{k}(x)$ are usually easier to solve for.
 
 ** TODO Oscillation modes
-- [ ] find gifs of g-/p- and f- modes?
 There can be several different modes of pulsations for stars, each
 propagate in (and thus probe) different regions, and wave-dynamics
 phenomena such as tunneling through evanescent zones can couple
@@ -115,9 +194,15 @@ especially useful to probe the inner regions of the envelope (where
 $\rho$ is higher and thus most of the mass is), and thus the size of the
 core.
 
+The animation below shows a (greatly exaggerated) g-mode oscillation:
+#+HTML:  <video  controls width="600" height="400" src="./images/g-mode.mp4" </video>
+
 The g-modes include also the so-called f-modes, i.e. the "fundamental"
 gravity mode, confined to the surface of stars, typically relevant in
 the study of neutron stars
+
+
+- [ ] derive $N^{2}$
 
 *** mixed modes
 Oscillation modes with different restoring forces can be coupled to
@@ -129,33 +214,39 @@ infer the core rotation rate of red giants, where the convective
 envelope oscillates through p-modes coupled to the g-modes in the
 core.
 
-** General considerations
-Dynamical timescale
-
-**
-
+** Period spacing
 
 
 * Observational asteroseismology
+To be able to do asteroseismology, we need to /monitor/ stars and study
+their time variability (cadence and duration of the observing window are).
 
 The fact that we only detect directly only the outermost layers of a
 star remains through, but asteroseismology adds the temporal dimension
 looking at /stellar variability/. This can be done through both
 photometry (with state-of-the-art sensitivities reaching down to
-$\mu$mag corresponding to $\sim$ one part per /million/ variations) and
+micro magnitudes, corresponding to $\sim$ one part per /million/ variations) and
 high-cadence and high-resolution spectroscopy (trying to capture
-velocity variations in the stellar atmosphere).
-
-- Photometry and spectroscopy
-- helioseismology
+velocity variations in the stellar atmosphere, with state-of-the-art
+resolution reaching $\mathrm{cm s^{-1}}$ sensitivity).
 
 
 * Excitation mechanism and mode recognition
+While identifying the frequencies of oscillations provides a lot of
+information, it is not always clear what excites the modes. This is a
+crucial question for the /identification/ of the modes and thus their
+interpretation.
 
-** $\kappa$-mechanism
+Several excitation mechanism have been proposed to explain what inputs
+energy in the oscillation modes of a star.
 
-** $\varepsilon$- mechanisms
+** \kappa-mechanism
 
+** \varepsilon-mechanisms
+
+* Helioseismology
+
+* Wave-driven late mass loss?
 
 * Homeworks
 
