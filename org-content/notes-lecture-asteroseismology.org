@@ -188,10 +188,10 @@ star.
 p-modes as:
 #+begin_latex
 \begin{equation}\label{eq:p-spacing}
-\nu_{n,l} \simeq \Delta\nu \left(n+\frac{l}{2}+\tilde{alpha}\right)+\delta\nu_{n,l}\ \ ,
+\nu_{n,l} \simeq \Delta\nu \left(n+\frac{l}{2}+\tilde{\alpha}\right)+\delta\nu_{n,l}\ \ ,
 \end{equation}
 #+end_latex
-where $\tilde{alpha}$ is a constant of $\mathcal{O}(1)$, $\delta\nu_{n,l}$ are small
+where $\tilde{\alpha}$ is a constant of $\mathcal{O}(1)$, $\delta\nu_{n,l}$ are small
 corrections, and $\Delta \nu$ is the /large separation/ related to the sound
 travel time through the star:
 #+begin_latex
@@ -200,9 +200,9 @@ travel time through the star:
 \end{equation}
 #+end_latex
 
-#+CAPTION: Power spectrum of the Sun-like star from CoRoT. The vertical axis shows how much power there is in modes of the corresponding frequency on the x-axis (in Hz), in arbitrary units. The separation between the large peaks correspond to $\Delta\nu()
+#+CAPTION: Power spectrum of the Sun-like star from CoRoT. The vertical axis shows how much power there is in modes of the corresponding frequency on the x-axis (in Hz), in arbitrary units. The frequency separation between the large peaks correspond to $\Delta\nu(n+l/2+\tilde{\alpha})$ and the distances between small peaks arises because of the $\delta\nu_{n,l}$. From [[https://sci.esa.int/web/corot/-/40955-frequency-power-spectrum-of-stellar-light-variations][ESA's CoRoT webpage]].
 #+ATTR_HTML: :width 50%
-
+[[./images/Sun_powerspectrum.png]]
 
 *** g-modes
 Gravity modes are oscillations where the restoring force is buoyancy.
