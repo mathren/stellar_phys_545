@@ -44,7 +44,7 @@ if [ $? -eq 0 ]; then
 	pulled=false
 	read -p "rsync to remote server?" yn
 	if [ "$yn" = "y" ] || [ "$yn" = "Y" ]; then
-	    rsync -rz --exclude="*~" html-content/* lavinia:~/public_html/courses/545A/
+	    rsync -rz --exclude="*~" html-content/* lavinia:~/public_html/courses/545/
 	    if [ $? -eq 0 ]; then
 		pulled=true
 	    fi
@@ -71,7 +71,7 @@ if [ $? -eq 0 ]; then
 	echo "Done: local build, not pushed, check html file"
     else
 	if [ "$pulled" == true ] ; then
-	    echo "Done: local build pushed, and synced with remote! Website is online at https://www.as.arizona.edu/~mrenzo/courses/index.html"
+	    echo "Done: local build pushed, and synced with remote! Website is online at https://www.as.arizona.edu/~mrenzo/courses/545/index.html"
 	else
 	    echo "Done: local build pushed, but not synced with remote! Latest version of website is *NOT* online"
 	fi
