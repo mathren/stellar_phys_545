@@ -168,6 +168,9 @@ is written as an asymptotic series:
 and taking the limit $\varepsilon\rightarrow0$ (the "asymptotic" part of the name).
 The new variables $S_{k}(x)$ are usually easier to solve for.
 
+We are not going to do the full mathematical treatment here, see
+[[https://ui.adsabs.harvard.edu/abs/1980ApJS...43..469T/abstract][Tassoul 1980]], [[https://ui.adsabs.harvard.edu/abs/1990ApJ...358..313T/abstract][1990]].
+
 ** Oscillation modes
 There can be several different modes of pulsations for stars, each
 propagate in (and thus probe) different regions, and wave-dynamics
@@ -226,7 +229,7 @@ gravity mode, confined to the surface of stars, typically relevant in
 the study of neutron stars
 
 The characteristic frequency of these g-mode oscillations in an ideal
-gas is the Brunt-Vaiasala frequency
+gas is the Brunt-Väisälä frequency
 #+begin_latex
 \begin{equation}\label{eq:brunt-vaisala}
 N^{2} = \frac{g^{2} \rho}{P}\left(\nabla_{ad}-\nabla+\frac{\varphi}{\delta}\nabla_{\mu}\right) \ \ ,
@@ -243,23 +246,36 @@ convectively unstable region, where any oscillation would result in
 an exponentially growing instability until the steady state described
 by convection settles.
 
-*** mixed modes
-Oscillation modes with different restoring forces can be coupled to
-each other if the stellar structure allows it (think of quantum
-mechanics solution of the Schr\"odinger equation imposing continuity
-at the points where $E=V$). These "mixed" modes can allow to probe
-different regions of the star, for example they are what is used to
-infer the core rotation rate of red giants, where the convective
-envelope oscillates through p-modes coupled to the g-modes in the
-core.
+The asymptotic period spacing for g-modes is (e.g., [[https://doi.org/10.1007/978-1-4020-5803-5][Aerts,
+Christensen-Dalsgaard, Kurtz 2010]]):
+#+begin_latex
+\begin{equation}\label{eq:g-spacing}
+\Pi_{n,l} = \frac{\Pi_{0}}{\sqrt{l(l+1)}}(n+\varepsilon) \ \ ,
+\end{equation}
+#+end_latex
+with $\varepsilon$ is a small constant, and $\Pi_{0} = 2\pi^{2}/\int drN/r$ with $N$
+Brunt-Väisälä frequency.
+
+*** Other modes
+- *Mixed modes:* Oscillation modes with different restoring forces can
+  be coupled to each other if the stellar structure allows it (think
+  of quantum mechanics solution of the Schr\"odinger equation imposing
+  continuity at the points where $E=V$). These "mixed" modes can allow
+  to probe different regions of the star, for example they are what is
+  used to infer the core rotation rate of red giants, where the
+  convective envelope oscillates through p-modes coupled to the
+  g-modes in the core.
+- *Inertial waves*: in this case the restoring force is the Coriolis
+  force, this requires a rotating star
 
 *** Where do these oscillation propagate
 To visualize where each of these mode in the stars can exist, consider
 "ray-tracing" approach, that is imagine the wave vector $\mathbf{k}$
-in the star.
+in the star. For simplicity let's focus on the main types of
+oscillations, p- and g-modes.
 
 #+CAPTION: Ray-tracing of p-modes (right) and g-modes (left) in a Sun-like star with a convective envelope and radiative core. The left panel shows sound waves with $\nu=3000$ \mu Hz and, in increasing depth of penetration, modes with $l=75, 25, 20, 2$: sound waves are deflected as they penetrate inwards, until they turn around, lower $l$ stay shallower. The right panel shows g-modes of $\nu=190$ \mu Hz and $l=5$ trapped in the radiative core. From [[https://ui.adsabs.harvard.edu/abs/2007A%26ARv..14..217C/abstract][Cuhna et al. 2007]].
-#+ATTR_HTML: :width 100%
+#+ATTR_HTML: :width 75%
 [[./images/rays_pulsation.png]]
 
 Another way to look at where each mode in the star can exist is to
@@ -269,7 +285,8 @@ stellar structure at fixed time from =MESA=), we can plot the /profile/ as
 a function of mass, radius, or any other suitable variable of the
 frequencies.
 
-#+CAPTION: Relevant frequencies as a function of stellar radius for a $15M_{\odot}$ star during O core burning. This consider the propagation of a wave of frequency $\omega_{\rm wave}$ comparing it to the Bunt-Vaiasala frequency $N$ and the frequency of the $l=1$ p-mode ($L_{1}$). From [[https://ui.adsabs.harvard.edu/abs/2017MNRAS.470.1642F/abstract][Fuller 2017]].
+#+CAPTION: Relevant frequencies as a function of stellar radius for a $15M_{\odot}$ star during O core burning. This consider the propagation of a wave of frequency $\omega_{\rm wave}$ comparing it to the Bunt-Väisälä frequency $N$ and the frequency of the $l=1$ p-mode ($L_{1}$). From [[https://ui.adsabs.harvard.edu/abs/2017MNRAS.470.1642F/abstract][Fuller 2017]].
+#+ATTR_HTML: :width 75%
 [[./images/propagation_diagram.png]]
 
 
@@ -293,18 +310,41 @@ L_{1} = \sqrt{2}\frac{c_{s}}{r} \ \ .
 \end{equation}
 #+end_latex
 
-* Excitation mechanism and mode recognition
+* Mode recognition
+In the limit of high-order ($l\gg1$), using asymptotic theory to treat
+the solutions to the linearly-perturbed stellar structure equations,
+we can predict distribution of oscillations frequencies.
+
+However, the correct interpretation of time-series of stellar
+observations probing periodic variability relies on correctly
+/identifing/ which oscillation mode causes the variability, which is in
+general a complex and challenging task.
+
+Usually, one tries to use the relation between frequency $\nu$ and order
+of the modes $l$: high-order p- and g-modes tend to separate cleanly
+on this plane:
+
+#+CAPTION: Frequency (in $\mu$ Hz) versus order $l$ of g-modes (conventionally labeled with $n<0$), p-modes in a Sun-like star. The right x-axis labels the $n$ of corresponding p-modes. Note that $l\in\mathbb{Z}$ is an integer even if the curves are continuous. From [[https://doi.org/10.1007/978-1-4020-5803-5][Aerts, Christensen-Dalsgaard, Kurtz 2010]].
+#+ATTR_HTML: :width 70%
+[[./images/pg-modes_l.png]]
+
+Typically, high-order p-modes have higher frequencies as $l$ and $n$
+increase, while $\nu$ decreases with increasing $n$ (defining $n<0$ for
+g-modes), and is rather flat w.r.t. variations in $l$.
+
+* Excitation and driving mechanisms
 While identifying the frequencies of oscillations provides a lot of
-information, it is not always clear what excites the modes. This is a
+information, it is not always clear what excites and keeps going the
+modes. Predicting which modes can be excited in a given star is a
 crucial question for the /identification/ of the modes and thus their
 interpretation.
 
 Several excitation mechanism have been proposed to explain what inputs
-energy in the oscillation modes of a star.
-
-** \kappa-mechanism
-
-** \varepsilon-mechanisms
+energy in the oscillation modes of a star. Observations of Mira
+suggest that pulsations can be stable for centuries, but at each cycle
+pulsations should be damped by energy losses, so this implies the
+presence of a continuous driving mechanism (analogous to a player that
+keeps plucking guitar strings).
 
 ** Stochastic excitation
 When there is a convective layer (core or shell), convective bubbles
@@ -313,9 +353,33 @@ convective/radiative boundary. We have discussed this in the context
 of [[./notes-lecture-convection.org::*Convective boundary mixing (a.k.a. "overshooting")][overshooting]], but this process can also perturb the stable layer
 above, seeding g-modes.
 
-*N.B.:* [[https://ui.adsabs.harvard.edu/abs/2017MNRAS.470.1642F/abstract][Fuller 2017]] uses this idea to propose "wave-driven" late injection of
-energy in the envelope of pre-supernova star, to explain the
-circumstellar material around SNe
+*N.B.:* [[https://ui.adsabs.harvard.edu/abs/2017MNRAS.470.1642F/abstract][Fuller 2017]] uses this idea to propose "wave-driven" late
+injection of energy in the envelope of pre-supernova star, to explain
+the circumstellar material around SNe
+
+** \varepsilon-mechanism
+If a portion of the star (e.g., a spherical shell for a radial
+pulsator) contract, it usually heats up during the compression: these
+layers can drive oscillations if they can convert their thermal energy
+gained into mechanical energy, leading to a re-expansion of the layer.
+Whether this mechanism actually functions in nature is still unclear.
+It is referred to as \varepsilon-mechanism since it is based on the energetics
+of stellar layers.
+
+** \kappa-mechanism
+The contraction/expansion cycle caused by an oscillation can cause
+changes in the opacity profile $\kappa$. An ionized layer layer of the star
+is opaque and traps radiation, causing heat to cumulate and the layer
+to expand. As it expands, it will recombine, lowering the
+electron-scattering opacity, causing radiation to leak out more easily
+and thus losing the thermal energy supporting the layer.
+
+\beta Cepheids, \delta Scuti stars, and many other pulsator seem to work based
+on this \kappa-mechanism related to opacity.
+
+The $\kappa(T,\rho)$ dependence of opacity on the thermal state of the gas,
+and the presence of metals can significantly complicate this picture.
+
 
 * TODO Observational asteroseismology
 To be able to do asteroseismology, we need to /monitor/ stars and study
@@ -331,6 +395,8 @@ velocity variations in the stellar atmosphere, with state-of-the-art
 resolution reaching $\mathrm{cm s^{-1}}$ sensitivity).
 
 - [ ] mention /KEPLER, TESS, PLATO/. Mention connection to exoplanets
+
+
 
 * Helioseismology
 
