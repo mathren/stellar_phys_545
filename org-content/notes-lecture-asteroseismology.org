@@ -380,7 +380,6 @@ on this \kappa-mechanism related to opacity.
 The $\kappa(T,\rho)$ dependence of opacity on the thermal state of the gas,
 and the presence of metals can significantly complicate this picture.
 
-
 * Observational asteroseismology
 To be able to do asteroseismology, we need to /monitor/ stars and study
 their time variability, photometrically and/or spectroscopically. The
@@ -403,7 +402,9 @@ s^{-1}}$.
 
 Each time-series of signals is typically analyzed in Fourier space to
 identify the dominant frequencies, and their spacing to compare with
-asymptotic theory.
+asymptotic theory. This is for example what Fig. 2 shows for a
+Sun-like star, where the y-axis indicates how much power there is per
+each frequency bin.
 
 * Homeworks
 
