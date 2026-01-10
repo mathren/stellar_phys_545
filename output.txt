@@ -9,9 +9,5 @@ Changes not staged for commit:
 	modified:   org-content/notes-lecture-asteroseismology.org
 	modified:   output.txt
 
-Untracked files:
-  (use "git add <file>..." to include in what will be committed)
-	html-content/images/pg-modes_l.png
-
 no changes added to commit (use "git add" and/or "git commit -a")
 

@@ -381,26 +381,29 @@ The $\kappa(T,\rho)$ dependence of opacity on the thermal state of the gas,
 and the presence of metals can significantly complicate this picture.
 
 
-* TODO Observational asteroseismology
+* Observational asteroseismology
 To be able to do asteroseismology, we need to /monitor/ stars and study
-their time variability (cadence and duration of the observing window are).
+their time variability, photometrically and/or spectroscopically. The
+cadence of observations and duration of the observing window
+(determining the lowest frequency that can be measured) are crucial
+limiting factors.
 
-The fact that we only detect directly only the outermost layers of a
-star remains through, but asteroseismology adds the temporal dimension
-looking at /stellar variability/. This can be done through both
-photometry (with state-of-the-art sensitivities reaching down to
-micro magnitudes, corresponding to $\sim$ one part per /million/ variations) and
-high-cadence and high-resolution spectroscopy (trying to capture
-velocity variations in the stellar atmosphere, with state-of-the-art
-resolution reaching $\mathrm{cm s^{-1}}$ sensitivity).
+Photometric variations are usually very small, typically requiring
+space-based observations (e.g., CoRoT, /KEPLER/, /TESS/ missions and in
+the near future /PLATO/). These can reach sensitivities of $\mu$
+magnitudes, typically corresponding to relative variations in flux of
+parts per millions. These missions are usually funded primarily for
+exoplanets research (specifically looking for eclipses), but the
+light curve they produce are ideal for asteroseismic analyses.
 
-- [ ] mention /KEPLER, TESS, PLATO/. Mention connection to exoplanets
+Spectroscopically, one can look for the time-dependent Doppler shift
+of spectral lines across pulsation phases in radial oscillations.
+State-of-the-art spectroscopic resolutions can exceed $\mathrm{cm
+s^{-1}}$.
 
-
-
-* Helioseismology
-
-* Wave-driven late mass loss?
+Each time-series of signals is typically analyzed in Fourier space to
+identify the dominant frequencies, and their spacing to compare with
+asymptotic theory.
 
 * Homeworks
 
