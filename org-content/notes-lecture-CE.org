@@ -4,4 +4,25 @@
 #+PREVIOUS_PAGE: notes-in-class-RLOF.org
 #+NEXT_PAGE: notes-lecture-tides.org
 
-*
+*Materials*: [[https://ui.adsabs.harvard.edu/abs/1975PhDT.......165W/abstract][Webbink 1975]], [[https://ui.adsabs.harvard.edu/abs/1976IAUS...73...75P/abstract][Paczynski 1976]], [[https://ui.adsabs.harvard.edu/abs/2013A%26ARv..21...59I/abstract][Ivanova et al. 2013]], [[https://ui.adsabs.harvard.edu/abs/2023LRCA....9....2R/abstract][Ropke &
+de Marco 2023]], Ivanova et al. 2020.
+
+
+
+* Common envelope evolution
+
+During a common envelope the gas of the envelope of both stars fills
+equipotentials beyond L_{2}, cannot maintain co-rotation, and thus start
+exerting a friction on the orbit of the two cores (or core and star)
+inside this shared envelope.
+
+This results in an inspiral that can end either with:
+ - a stellar merger
+ - the successful ejection of the shared envelope (interrupting the
+   drag), and the formation of a tight period binary
+
+Common envelope evolution, since it's theorization in the 1970s by
+Paczynski, Webbink, Taam, and Ostriker, remains one of the biggest
+open questions in stellar physics that impacts the formation of all
+compact binaries (cataclysmic variables made of a main sequence plus a
+white dwarf, binary white dwarfs, gravitational wave mergers, etc.).

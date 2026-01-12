@@ -169,7 +169,7 @@ What we need to know then is the /volume/ of each Roche lobe, and we can
 then /define/ a sphere that has the same volume and compare the volume
 of the stellar gas to the volume of such sphere. There are multiple
 formulae to fit the Roche volume as a function of the binary
-parameters (e.g., [[https://ui.adsabs.harvard.edu/abs/1971ARA%26A...9..183P/abstract][Paczsynki 1971]]), but probably the most common one is
+parameters (e.g., [[https:/ui.adsabs.harvard.edu/abs/1971ARA%26A...9..183P/abstract][Paczsynki 1971]]), but probably the most common one is
 [[https://ui.adsabs.harvard.edu/abs/1983ApJ...268..368E/abstract][Eggleton 1983]]'s formula, which provides a fit accurate to \sim1% and
 continuous across a large range of mass ratios:
 
@@ -203,27 +203,18 @@ can have important consequences for /both/ stars that will be modified
 by this interaction (see below).
 
 ** Dynamically unstable common envelope
-Sometimes, the orbit and or the evolution of the stars respond to mass
+Sometimes, the orbit and/or the evolution of the stars respond to mass
 transfer increasing the amount of overflow, leading to an unstable
 situation: in this case the system enters in contact first, and then
-ultimately in a /common envelope event/ (see reviews by [[https://ui.adsabs.harvard.edu/abs/2013A%26ARv..21...59I/abstract][Ivanova et al.
-2013]], [[https://ui.adsabs.harvard.edu/abs/2023LRCA....9....2R/abstract][Ropke & de Marco 2023]] and Ivanova et al. 2020s book)
+ultimately in a /common envelope event/ (see [[./notes-lecture-CE.org][next lecture]]).
 
-During a common envelope the gas of the envelope of both stars fills
-equipotentials beyond L_{2}, cannot maintain co-rotation, and thus start
-exerting a friction on the orbit of the two cores (or core and star)
-inside this shared envelope.
-
-This results in an inspiral that can end either with:
- - a stellar merger
- - the successful ejection of the shared envelope (interrupting the
-   drag), and the formation of a tight period binary
-
-Common envelope evolution, since it's theorization in the 1970s by
-Paczynski, Webbink, Taam, and Ostriker, remains one of the biggest
-open questions in stellar physics that impacts the formation of all
-compact binaries (cataclysmic variables made of a main sequence plus a
-white dwarf, binary white dwarfs, gravitational wave mergers, etc.).
+Another case where a binary interaction may be dynamically unstable is
+when the presence of a third companion drives the interaction, for
+example in a triple system. In this case, the instability is triggered
+by the orbital dynamics, and it may occur even in initially stable
+systems as the stars evolve and lose mass through winds, expand in
+radius (implying a larger impact of tides, see [[./notes-lecture-tides.org][the corresponding
+notes]]).
 
 
 ** Nomenclature: Case A, B, and C
