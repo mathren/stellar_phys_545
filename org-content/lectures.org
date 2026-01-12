@@ -157,12 +157,11 @@ Guest lecturer: [[https://www.tomwagg.com/][Dr. Tom Wagg]]
 =MESA-web= models precomputed by the students
 
 [[./notes-in-class-evol.org][Notes]]
-** TODO <2026-03-25 Wed> - Asteroseismology
+** <2026-03-25 Wed> - Asteroseismology
 *Aim*: Introduce helio and asteroseismology concepts. Brunt-Vaiasala
- frequency, p- and g- waves, restoring force, mixed modes.
+frequency, p- and g- waves, restoring force, mixed modes.
 
 [[./notes-lecture-asteroseismology.org][Notes]]
-
 
 ** <2026-03-27 Fri> -
 ** <2026-03-30 Mon> - Interacting binaries and Roche lobe overflow
@@ -170,30 +169,34 @@ Guest lecturer: [[https://www.tomwagg.com/][Dr. Tom Wagg]]
 
 [[./notes-lecture-RLOF.org][Notes]]
 
-** <2026-04-01 Wed> - Tides
+** TODO <2026-04-01 Wed> - Common Envelope
+*Aim*: Introduce mass transfer dynamical stability, the concept of a
+common envelope and its main phases.
+
+[[./notes-lecture-CE.org][Notes]]
+
+** <2026-04-03 Fri> -
+** <2026-04-06 Mon> - Tides
 *Aim*: Introduce the concept of tides in binaries, build physical
 intuition for tidal disruption and orbital evolution
 
 [[./notes-lecture-tides.org][Notes]]
-
-** TODO <2026-04-03 Fri> - Common Envelope
-** <2026-04-06 Mon> -
 ** <2026-04-08 Wed> - Supernovae
 *Aim*: Introduce the nomenclature for supernovae, discuss the physics of
 core-collapse and the formation of compact objects
 
 [[./notes-lecture-SNe.org][Notes]]
-** <2026-04-10 Fri> - Gravitational wave progenitors
+** <2026-04-10 Fri> -
+** TODO <2026-04-13 Mon> - Gravitational wave progenitors
 *Aim*: introduce gravitational wave formation scenario (isolated binary
 and dynamical assembly), discuss some known uncertainties.
 
 [[./notes-lecture-GWprog.org][Notes]]
-** TODO <2026-04-13 Mon> - SNIa
+
+** <2026-04-15 Wed> - SNIa
 *Aim*: discuss SNIa
 
 [[./notes-lecture-SNIa.org][Notes]]
-
-** <2026-04-15 Wed> - Two students presentations
 ** <2026-04-17 Fri> - Two students presentations
 ** <2026-04-20 Mon> - Two students presentations
 ** <2026-04-22 Wed> - Two students presentations
@@ -202,4 +205,4 @@ and dynamical assembly), discuss some known uncertainties.
 ** <2026-04-29 Wed> - Two students presentations
 ** <2026-05-01 Fri> - *No lecture*
 ** <2026-05-04 Mon> - Two students presentations
-** <2026-05-06 Wed> - *Buffer*
+** <2026-05-06 Wed> - Two students presentations

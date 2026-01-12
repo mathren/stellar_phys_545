@@ -1,7 +1,7 @@
 #+Title: ASTR545 - Tides
 #+author: Mathieu Renzo
 #+email: mrenzo@arizona.edu
-#+PREVIOUS_PAGE: notes-lecture-RLOF.org
+#+PREVIOUS_PAGE: notes-lecture-CE.org
 #+NEXT_PAGE: notes-lecture-SNe.org
 
 *Materials:* [[https://ui.adsabs.harvard.edu/abs/1977A%26A....57..383Z/abstract][Zahn 1977]], [[https://ui.adsabs.harvard.edu/abs/1981A%26A....99..126H/abstract][Hut 1981]] [[https://ui.adsabs.harvard.edu/abs/2002MNRAS.329..897H/abstract][Hurley et al. 2002]], Tauris & Van den

@@ -232,7 +232,7 @@ The characteristic frequency of these g-mode oscillations in an ideal
 gas is the Brunt-Väisälä frequency
 #+begin_latex
 \begin{equation}\label{eq:brunt-vaisala}
-N^{2} = \frac{g^{2} \rho}{P}\left(\nabla_{ad}-\nabla+\frac{\varphi}{\delta}\nabla_{\mu}\right) \ \ ,
+N^{2} = \frac{g^{2} \rho}{P}\left(\nabla_{ad}-\nabla+\frac{\varphi}{\delta}\nabla_{\mu}\right) = N^{2}_{\rm struct}+N^{2}_{\rm composition}\ \ ,
 \end{equation}
 #+end_latex
 which depends on dynamical quantities ($P$, $\rho$, the local
