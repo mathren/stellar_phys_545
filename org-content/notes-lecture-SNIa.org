@@ -5,3 +5,7 @@
 #+PREVIOUS_PAGE: projects.org
 
 * TODO Explosion of WDs
+
+* Phillips relation
+
+* D6 stars

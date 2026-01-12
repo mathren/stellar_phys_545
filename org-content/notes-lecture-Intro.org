@@ -48,7 +48,6 @@ background and MESA. We will start the course by going over the
 physical foundations, but I will also ask you to use your own computer
 models too.
 
-
 * Aim of the course
 *To understand the structure and evolution of stars and their
 observational properties using known laws of physics.*
