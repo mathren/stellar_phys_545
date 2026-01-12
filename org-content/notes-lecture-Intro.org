@@ -144,7 +144,7 @@ supergiants and possibly H-free stars).
 
 
 #+CAPTION: Right panel: the arrow points at the Blue supergiant progenitor Sanduleak -69 202 observed \sim one month before the explosion by the Anglo-Australian Telescope. Left panel: SN1987A saturating the same telescope. Zoom in shows the three ring morphology illuminated by the supernova.
-#+ATTR_HTML :width 100%
+#+ATTR_HTML: :width 100%
 [[./images/87a_complete_zoom.png]]
 
 
