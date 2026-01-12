@@ -38,26 +38,26 @@ merge. My research is strongly embedded in the topic of this course
 gravitational waves, etc. I will try to connect the course material to
 all these topics whenever possible!
 
-Also, my research field (and more broadly the scientific topic of this
-course) is /very computationally oriented/. Throughout the course, I
-will try to highlight what is the result of computer models based on
-necessary (but often grossly oversimplifying) approximations and what
-is more solidly grounded in observations. We will do this by having
-computational exercises, hence the questions on your computational
-background and MESA. We will start the course by going over the
-physical foundations, but I will also ask you to use your own computer
-models too.
-
 * Aim of the course
 *To understand the structure and evolution of stars and their
 observational properties using known laws of physics.*
+
+The scientific topic of this course is /very computationally oriented/:
+stellar astrophysics is arguably one of the oldest computational
+astrophysics problems. Throughout the course, I will try to highlight
+what is the result of computer models based on necessary (but often
+grossly oversimplifying) approximations and what is more solidly
+grounded in observations. We will do this by having computational
+exercises, hence the questions on your computational background and
+MESA. We will start the course by going over the physical foundations,
+but I will also ask you to use your own computer models too.
+
 * Expectations
-As graduate students you are *expected* to carry out independent work
-(either in your thesis, in the future as graduate students or highly
-skilled professionals). My idea for this course is to not only provide
-/content/ regarding stellar physics and evolution, but also to help you
-develop skills as independent researchers for your future (whether in
-academia or elsewhere).
+As graduate students you are *expected* to carry out independent work.
+My idea for this course is to not only provide /content/ regarding
+stellar physics and evolution, but also to help you develop skills as
+independent researchers for your future (whether in academia or
+elsewhere).
 
 For this reason also /I will not check your attendance/. However, during
 the lectures I will present things in a way that complements the
