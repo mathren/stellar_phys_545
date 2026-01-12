@@ -267,9 +267,10 @@ The magnitudes measure the energy flux from a point-like source (like
 a distant star) and it is a differential measure relative to some
 standard source. Hipparchus was comparing the visual brightness of
 various stars visible in the sky. This is still the basis of (some)
-magnitude systems. In reality. typically magnitudes are provided
-integrating over a range of frequencies (photometry!) accounting for
-the response of a filter as a function of wavelength T(\lambda):
+magnitude systems (e.g., Vega). In reality, typically magnitudes are
+provided integrating over a range of frequencies (photometry!)
+accounting for the response of a filter as a function of wavelength
+T(\lambda):
 
 #+begin_latex
 \begin{equation}
@@ -370,7 +371,7 @@ the metallicity (i.e., taking X=Fe).
 - *Q*: Any idea why Fe here?
 :end:
 
-** Lifetimes: ~3 Myr to $\gg$ age of the Universe (\simeq 13.7 Gyr)
+** Lifetimes: $\sim$ 3 Myr to $\gg$ age of the Universe (\simeq 13.7 Gyr)
 :Questions:
  - *Q*: How old is the Sun? How long will it live? How do we know?
 :end:
