@@ -101,6 +101,25 @@ may be. We will do this through a project, that we will discuss later.
 
 Link to [[./syllabus.org][syllabus]] and [[./lectures.org][lecture schedule]].
 
+
+* Discuss projects
+
+Link to [[./projects.org][proposed projects page]].
+
+- Projects will cover topics that are important and or timely, but
+  hard to fit in the main body of the course
+- Occasion for you to dig deeper and teach to your peers
+- You should look over the [[file:projects.org::*List of possible projects/presentations][proposed project]], and give us a ranked list
+  of 5 projects you'd like to do (see [[https://d2l.arizona.edu/d2l/home/1701369][D2L]] for updated deadline).
+- After receiving your preferences, we will assign to each a project
+  trying to maximize happiness (though it may not be possible to
+  accommodate everyone), and for each project we will assign two peer
+  referees.
+- Look over also [[file:projects.org::*Grading][how the grading of the project will work]]: in short,
+  we will evaluate your written summary (together with 2 of your
+  classmates!), your oral presentation in class (again, with your
+  peers!), and how you give feedback to others.
+
 * Let's start finally talking about stars!
 
 ** What is a star?
@@ -376,21 +395,6 @@ the metallicity (i.e., taking X=Fe).
  - *Q*: How old is the Sun? How long will it live? How do we know?
 :end:
 
-* Discuss projects
-
-- Projects will cover topics that are important and or timely, but
-  hard to fit in the main body of the course
-- Occasion for you to dig deeper and teach to your peers
-- You should look over the [[file:projects.org::*List of possible projects/presentations][proposed project]], and give us a ranked list
-  of 5 projects you'd like to do (see [[https://d2l.arizona.edu/d2l/home/1701369][D2L]] for updated deadline).
-- After receiving your preferences, we will assign to each a project
-  trying to maximize happiness (though it may not be possible to
-  accommodate everyone), and for each project we will assign two peer
-  referees.
-- Look over also [[file:projects.org::*Grading][how the grading of the project will work]]: in short,
-  we will evaluate your written summary (together with 2 of your
-  classmates!), your oral presentation in class (again, with your
-  peers!), and how you give feedback to others.
 
 * Homework
 
