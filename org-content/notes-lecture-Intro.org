@@ -51,7 +51,6 @@ models too.
 * Aim of the course
 *To understand the structure and evolution of stars and their
 observational properties using known laws of physics.*
-
 * Expectations
 As graduate students you are *expected* to carry out independent work
 (either in your thesis, in the future as graduate students or highly

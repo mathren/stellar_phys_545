@@ -2,4 +2,5 @@
 *.log
 *.bbl
 *.tex
+notes*.pdf
 *.synctex.gz
