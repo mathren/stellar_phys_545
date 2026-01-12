@@ -187,13 +187,13 @@ core-collapse and the formation of compact objects
 
 [[./notes-lecture-SNe.org][Notes]]
 ** <2026-04-10 Fri> -
-** TODO <2026-04-13 Mon> - Gravitational wave progenitors
+** <2026-04-13 Mon> - Gravitational wave progenitors
 *Aim*: introduce gravitational wave formation scenario (isolated binary
 and dynamical assembly), discuss some known uncertainties.
 
 [[./notes-lecture-GWprog.org][Notes]]
 
-** <2026-04-15 Wed> - SNIa
+** TODO <2026-04-15 Wed> - SNIa
 *Aim*: discuss SNIa
 
 [[./notes-lecture-SNIa.org][Notes]]
