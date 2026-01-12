@@ -314,7 +314,7 @@ where now
 \end{equation}
 #+end_latex
 
-In the absence of convection (which we will treat [[https://www.as.arizona.edu/~mrenzo/materials/Convection.pdf][later]]) and neutrinos
+In the absence of convection (which we will treat [[./notes-lecture-convection.org][later]]) and neutrinos
 (which leave the star instantaneously without further interaction,
 unless it's a neutron star), this $F_\mathrm{rad} + F_\mathrm{conv}$
 is the total energy flux.
@@ -449,7 +449,7 @@ outward in mass coordinate: $dL/dm = 0 \Rightarrow L = constant$.
 unknowns. $\varepsilon_\mathrm{grav}$ is fortunately only dependent on the thermodynamics
 of the gas, so with the EOS we can calculate that (the specific
 entropy is also a function of $\rho$ and $T$). The other two terms
-instead are input physics for the star. We will [[https://www.as.arizona.edu/~mrenzo/materials/nuclear_reaction_rates.pdf][later]] unpack more
+instead are input physics for the star. We will [[./notes-lecture-nuclear-cycles.org][later]] unpack more
 $\varepsilon_\mathrm{nuc}$ by discussing nuclear energy generation -- but
 ultimately it will depend on cross sections for nuclear interactions
 which in stellar physics are taken as known input physics (again

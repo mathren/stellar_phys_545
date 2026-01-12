@@ -16,7 +16,7 @@ Arizona (Spring semester 2026).
 * Technical details
 
 The lecture notes are written as emacs =org= files available in
-[[./org-content]] and exported to =html= (available [[https://www.as.arizona.edu/~mrenzo/courses/index.html][online here]], the output
+[[./org-content]] and exported to =html= (available [[https://lavinia.as.arizona.edu/~mrenzo/courses/545/index.html][online here]], the output
 of the export also relies on the =css= and =html= templates in
 [[./html-content]]), and in =pdf= (compiled with =LaTeX=) for printing and
 annotating before I give a lecture.

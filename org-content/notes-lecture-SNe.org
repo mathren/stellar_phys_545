@@ -4,8 +4,8 @@
 #+NEXT_PAGE: notes-lecture-GWprog.org
 #+PREVIOUS_PAGE: notes-lecture-tides.org
 
-*Materials*: [[https://ui.adsabs.harvard.edu/abs/2012ARNPS..62..407J][Janka 2012]], [[https://ui.adsabs.harvard.edu/abs/2024OJAp....7E..31S/abstract][Soker 2023]], [[https://ui.adsabs.harvard.edu/abs/2022MNRAS.510.4689V][Burrows et al. 2023]], see also [[https://www.as.arizona.edu/~mrenzo/materials/cores_of_massive_stars.pdf][my
-guest lecture notes]] and references therein.
+*Materials*: [[https://ui.adsabs.harvard.edu/abs/2012ARNPS..62..407J][Janka 2012]], [[https://ui.adsabs.harvard.edu/abs/2024OJAp....7E..31S/abstract][Soker 2023]], [[https://ui.adsabs.harvard.edu/abs/2022MNRAS.510.4689V][Burrows et al. 2023]], see also
+[[https://lavinia.as.arizona.edu/~mrenzo/materials/cores_of_massive_stars.pdf][my guest lecture notes]] and references therein.
 
 *Disclaimer:* Here, we discuss the collapse and possible explosion of
 massive stars, that is "core collapse supernovae" (CCSNe). These are
@@ -528,7 +528,7 @@ consequently small kicks.
 
 * The supernova zoo
 
-#+CAPTION: Schematic representation of the SN taxonomy, based on spectral features and light curve shape. The dot-dashed line indicates the possible connection between SN events detected in late stages and classified as type Ib/Ic and SNe of type IIb. This figure is from [[https://www.as.arizona.edu/\simmrenzo/materials/Thesis/Renzo_MSc_thesis.pdf][Renzo 2015]] and inspired by  Fig. 2 in [[https://ui.adsabs.harvard.edu/abs/2001ASSL..264..199C/abstract][Cappellaro et al. 2001]].
+#+CAPTION: Schematic representation of the SN taxonomy, based on spectral features and light curve shape. The dot-dashed line indicates the possible connection between SN events detected in late stages and classified as type Ib/Ic and SNe of type IIb. This figure is from [[https://lavinia.as.arizona.edu/~mrenzo/materials/Thesis/Renzo_MSc_thesis.pdf][Renzo 2015]] and inspired by  Fig. 2 in [[https://ui.adsabs.harvard.edu/abs/2001ASSL..264..199C/abstract][Cappellaro et al. 2001]].
 #+ATTR_HTML: :width 100%
 [[./images/SN_taxonomy.png]]
 

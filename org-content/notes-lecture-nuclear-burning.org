@@ -297,7 +297,7 @@ required burning rate may become so high that $\tau_\mathrm{nuc}$ becomes shorte
 than the /global/ thermal timescale (but luckily not of the /local/
 thermal timescale, so all the equations we have derived so far still
 hold, since they are differential equations that describe /local/
-quantities). We will return on this [[https://www.as.arizona.edu/~mrenzo/materials/cores_of_massive_stars.pdf][later]].
+quantities).
 
 *** Q-value
 For any nuclear reaction that may happen $a+X \rightarrow b+Y$ with $a, b, X, Y$

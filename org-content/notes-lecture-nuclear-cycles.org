@@ -551,7 +551,7 @@ so post-helium core burning $\varepsilon_\mathrm{nuc}$ is more and more
 concentrated towards the center, leaving the outer layers unburned and
 allowing for the so called "onion layer" structure of stars:
 
-#+CAPTION: Layer structure for an initially $15M_{\odot}$ star at the end of its nuclear burning lifetime in mass coordinate from [[https://www.as.arizona.edu/\simmrenzo/materials/Thesis/Renzo_MSc_thesis.pdf][Renzo 2015]]. Note the final total mass is /not/ 15M_{\odot} because stars this massive lose mass through radiatively driven winds.
+#+CAPTION: Layer structure for an initially $15M_{\odot}$ star at the end of its nuclear burning lifetime in mass coordinate from [[https://lavinia.as.arizona.edu/~mrenzo/materials/Thesis/Renzo_MSc_thesis.pdf][Renzo 2015]]. Note the final total mass is /not/ 15M_{\odot} because stars this massive lose mass through radiatively driven winds.
 #+ATTR_HTML: :width 100%
 [[./images/onion.png]]
 
@@ -582,7 +582,6 @@ burning ultimately decides the core structure of massive stars at the
 end of their life, and whether they form a neutron star or a black
 hole, in ways that are still poorly understood (see for example
 [[https://ui.adsabs.harvard.edu/abs/2014ApJ...783...10S/abstract][Sukhbold & Woosley 2014]], [[https://ui.adsabs.harvard.edu/abs/2024arXiv240902058L/abstract][Laplace et al. 2024]]).
-
 
 * Duration of each burning phase
 
@@ -662,7 +661,7 @@ rare to observe and thus harder to study.
 For instance, the timescale for the last possible burning phase in
 massive stars, silicon \rightarrow iron only lasts order of /days/.
 
-#+CAPTION: example of durations of burning phases for a few massive stars from [[https://www.as.arizona.edu/\simmrenzo/materials/Thesis/Renzo_MSc_thesis.pdf][Renzo 2015]].
+#+CAPTION: example of durations of burning phases for a few massive stars from [[https://lavinia.as.arizona.edu/~mrenzo/materials/Thesis/Renzo_MSc_thesis.pdf][Renzo 2015]].
 #+ATTR_HTML: :width 100%
 [[./images/durations.png]]
 
