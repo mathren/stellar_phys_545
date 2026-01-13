@@ -142,7 +142,7 @@ Discuss written and oral presentations, and refereeing process.
 
 ** <2026-03-07 Sat> - <2026-03-15 Sun> - SPRING BREAK
 
-[[../mid_term/mid_term.org][Take home midterm exam]]
+[[./mid_term.org][Take home midterm exam]]
 
 ** <2026-03-16 Mon> - *Guest Lecture* (topic TBD)
 Guest lecturer: [[https://www.tomwagg.com/][Dr. Tom Wagg]]
