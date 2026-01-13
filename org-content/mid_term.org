@@ -78,10 +78,10 @@ acceptable to vary parameters other than those specified in the
 exercises if it helps.
 :end:
 
-** TODO Kippenhahn diagram
+**  Kippenhahn diagram
 
-Explain diagram above and star that it represents, walking through its
-past.
+
+
 
 ** TODO Mass loss exercise
 Throughout their evolution, stars can lose a significant amount of mass.

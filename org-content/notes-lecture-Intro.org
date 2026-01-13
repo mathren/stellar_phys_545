@@ -189,7 +189,7 @@ ongoing.
 4. Rotation
 5. Magnetic fields
 
-:Questions:
+:Question:
 - *Q*: what is a star made of? Can you think of a star made of something
   else? Mention [[https://en.wikipedia.org/wiki/Cecilia_Payne-Gaposchkin][Cecilia Payne-Gaposchkin]].
 :end:
@@ -334,7 +334,7 @@ specific (i.e., per unit frequency) radiative energy flux of 3.5\times10^{-20}
 erg cm^{-2} s^{-1} Hz^{-1} corresponding to a photon flux of N_{\lambda} \simeq
 10^{3} photons cm^{-2} s^{-1} Å^{-1} for the visual band.
 
-:Questions:
+:Question:
 - *Q*: why the square within the argument of the logarithm in Eq.
   \ref{eq:abs_magn}?
 :end:
@@ -391,7 +391,7 @@ the metallicity (i.e., taking X=Fe).
 :end:
 
 ** Lifetimes: $\sim$ 3 Myr to $\gg$ age of the Universe (\simeq 13.7 Gyr)
-:Questions:
+:Question:
  - *Q*: How old is the Sun? How long will it live? How do we know?
 :end:
 
