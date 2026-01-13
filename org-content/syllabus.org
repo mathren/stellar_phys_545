@@ -97,7 +97,8 @@ specifically the prohibition against submitting work that is not your
 own. This includes text, code, calculations, or analyses that you have
 not personally verified, understood, and made your own through genuine
 intellectual engagement. If you have questions about appropriate use
-of AI tools for a particular assignment, please ask.
+of AI tools for a particular assignment, please ask before engaging
+with the tool.
 
 * Exams and grading
 The course grade will be based on:

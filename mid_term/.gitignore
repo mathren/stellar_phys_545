@@ -1,0 +1,7 @@
+answers.org
+*.pdf
+*.aux
+*.tex
+*.synctex.gz
+auto/*
+*.py

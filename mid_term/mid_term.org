@@ -1,0 +1,141 @@
+#+Title: ASTR/PYTS 545 Mid-term take-home exam
+#+author: Mathieu Renzo
+#+email: mrenzo@arizona.edu
+#+options: title:nil
+
+* Mid-term exam
+
+This mid-term is a take-home exam due on <2026-03-27 Fri>. All
+assignments can be completed using data generated with =MESA-web=
+([[http://user.astro.wisc.edu/~townsend/static.php?ref=mesa-web-submit][calculation submission page]]) or with your own installation =MESA=.
+Instructions are provided assuming the use of the former, and the
+latter does not guarantees any bonus, but may afford more flexibility
+in performing numerical experiments to answer the questions.
+
+** What physics drives the evolution of the stellar radius?
+
+*** A simple model of the Sun
+Run a model of a $1M_{\odot}$ star until 14Gyr.
+
+:Hint:
+You may want to change the =Detailed profile output frequency= under the
+=General= options
+:end:
+
+Plot as a function of a variable increasing monotonically in time the
+evolution of the radius of the Sun ($R$ or $\log_{10}(R)$).
+
+1. What is the present-day value (assume $t_{\odot}=4.5$ Gyr)?
+2. At what $t$ does the radius equal 1$R_{\odot}$?
+3. Explain which physical ingredients may cause possible mis-matches
+4. *Bonus*: show with varying model parameters an improved agreement
+
+:Hint:
+For the bonus task, you can help yourself searching [[https://ui.adsabs.harvard.edu/][NASA/ADS]] to search
+for papers modeling the Sun with MESA
+:end:
+
+*** Stellar evolution
+The evolution of a star is mostly driven by the thermonuclear
+conversion of fuel in the core, which changes (on a nuclear timescale)
+the composition.
+
+1. Identify in the stellar structure equations all the quantities
+   /explicitly/ dependent on the chemical composition and briefly
+   describe the physics of this dependence.
+
+Let's use numerical models to change some physical ingredients and see
+what would happen to a star. Re-run the previous model, but now three
+times using the =Burning modifiers= option under =Nuclear reactions=.
+
+These will respectively:
+- ignore the changes in chemical composition due to nuclear burning
+- ignore the energy release due to nuclear burning
+- ignore /both/ of the above.
+
+Compare the radial evolution of the four (or five) models at end.
+1. Which physical effect drives the evolution of the radius?
+2. What is the lifetime of the model that has no energy release?
+
+*** Metallicity variations
+Now run models of a 1M_{\odot} star with normal physics assumptions (/not/
+neglecting chemical evolution and/or energy release) varying the
+initial metallicity Z=0.03, (0.02, you have already), 0.01, 0.004,
+0.0001.
+
+Once again, compare the radial evolution and the HR diagram of these
+models.
+
+1. How is the R(Z) trend at a given evolutionary phase?
+2. Explain the physics of the trend, with a theoretically-motivated
+   analytic estimate and confront it quantitatively with your models
+
+:Debugging:
+In case you run into issues with producing the MESA models, first try
+searching the web (specifically the [[http://user.astro.wisc.edu/~townsend/static.php?ref=mesa-web][MESA-web documentation]], [[https://docs.mesastar.org/en/25.12.1/][MESA
+documentation]], and [[https://lists.mesastar.org/pipermail/mesa-users/][MESA mailing list archive]]. It is also
+acceptable to vary parameters other than those specified in the
+exercises if it helps.
+:end:
+
+** TODO Kippenhahn diagram
+
+Explain diagram above and star that it represents, walking through its
+past.
+
+** TODO Mass loss exercise
+Throughout their evolution, stars can lose a significant amount of mass.
+Mass loss channels include:
+- stellar winds ($-14\le\log_{10}(-\dot{M}/[M_{\odot}\ yr^{-1}])\le-5$)
+- some binary interactions (for the donor star)
+- eruptive events (e.g., Luminous blue variable eruptions, flares and
+  coronal mass-ejections, etc.)
+
+Let's consider a star of mass $M$, outermost radius $R$, luminosity
+$L$, and mass-loss rate $\dot{M}$:
+
+1. Define a timescale associated to mass loss.
+2. Discuss which stars are more likely to lose mass (main sequence vs.
+   evolved star).
+3. How high does $\dot{M}$ need to be to break hydrostatic equilibrium
+   globally (give a lower limit as a function of $M$ and $R$)?
+4. How high does it need to be to break thermal equilibrium globally?
+   (*N.B.:* the widely used scaling of the wind mass loss from [[https://ui.adsabs.harvard.edu/abs/1975psae.book..229R/abstract][Reimers
+   1975]] assumes that the actual mass-loss rate has the scaling you
+   should find here times a small pre-factor that keeps the stars in
+   thermal equilibrium)
+5. The observed mass loss rate for the Sun is $\dot{M}_{\odot}\simeq10^{-14}\,M_{\odot}\
+   \mathrm{yr^{-1}}$: does this mass loss drive the Sun out of thermal
+   and dynamical equilibrium?
+
+Although typical stellar mass-loss rates are not that high, to
+obtain mass loss, gas has to be accelerated beyond the escape
+velocity from the star (which provides a lower limit to the
+velocity of the outflow): even if /global/ dynamical equilibrium is
+maintained, the outer-layers have to experience some acceleration!
+Let's think about what sources of acceleration can exist:
+- $dP/dr$: if for some reason the gas pressure density can overcome
+  the gravitational force in the outer-layers, we can have a
+  /pressure-driven/ thermal wind. This is the situation of the Sun,
+  where Alfven waves heat the solar corona to very high $T\gtrsim
+  10^{6}$ K, and leading to a wind (see classical papers by [[https://ui.adsabs.harvard.edu/abs/1958ApJ...128..664P/abstract][Parker 1958]],
+  [[https://ui.adsabs.harvard.edu/abs/1967ApJ...148..217W/abstract][Weber & Davis 1964]]).
+- radiation forces on electrons: this gives the so-called "continuum
+  winds" which may be relevant in the most massive and metal-free stars
+- radiation forces on spectral lines: we expect this to be dominant if
+  $L$ is sufficiently high because of the resonant nature of
+  photon-line interactions. Although the resonances imply that the
+  cross-section for the photon-matter interaction is very peaked in
+  photon frequency $\nu$, the presence of a velocity of the gas (and
+  consequently Doppler shifts) of the lines can spread the effective
+  cross section. This however introduces a dependence on the opacity
+  $\kappa\equiv\kappa(T,\rho)$ (usually parametrized following [[https://ui.adsabs.harvard.edu/abs/1975ApJ...195..157C/abstract][Castor,Abbott, Klein
+  1975]]), and a dependence of the acceleration on the velocity
+  (through the Doppler shift), making the problem of line-driven
+  acceleration of the stellar wind highly non-linear and hard to solve
+  (see recent reviews by [[https://ui.adsabs.harvard.edu/abs/2008A%26ARv..16..209P/abstract][Puls et al. 2008]], [[https://ui.adsabs.harvard.edu/abs/2014ARA%26A..52..487S/abstract][Smith 2014]]).
+
+Let's now consider a very massive star experiencing a brief phase of
+super-Eddington luminosity. Using dimensional analysis and basic
+quantities such as $M, R, L$, determine /maximum/ mass-loss rate that
+can be driven by the excess luminosity:
