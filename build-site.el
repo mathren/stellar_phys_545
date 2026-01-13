@@ -98,6 +98,26 @@ INFO is the export plist."
         (replace-match "☉" nil t)))))
 
 
+;; Custom drawer export for click-to-reveal
+(defun mr/format-drawer-html (drawer contents info)
+  "Export DRAWER as a collapsible HTML element."
+  (let* ((drawer-name (org-element-property :drawer-name drawer))
+         (drawer-id (format "drawer-%s-%d"
+                           (replace-regexp-in-string "[^a-zA-Z0-9]" "-" drawer-name)
+                           (random 10000))))
+    (format "<div class=\"org-drawer-container\">
+  <button class=\"org-drawer-toggle\" onclick=\"toggleDrawer('%s')\">%s ▼</button>
+  <div id=\"%s\" class=\"org-drawer-content\" style=\"display: none;\">%s</div>
+</div>"
+            drawer-id
+            drawer-name
+            drawer-id
+            (or contents ""))))
+
+(advice-add 'org-html-drawer :override #'mr/format-drawer-html)
+
+
+
 (add-hook 'org-export-before-processing-hook 'mr/export-odot-html)
 (add-to-list 'org-export-filter-timestamp-functions
              #'mr/filter-timestamp)

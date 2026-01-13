@@ -1,6 +1,52 @@
 <link rel="stylesheet" href="./css/style.css" />
 <link rel="stylesheet" href="./fontawesome-free-6.7.2-web/css/all.min.css">
 <meta name="keywords" content="Mathieu, Renzo, Mathieu Renzo,
-			       stellar evolution, 400A, University of
+			       stellar evolution, ASTR545, PYTS545, 545, University of
 			       Arizona, Steward Observatory, stars,
 			       theoretical astrophysics">
+
+
+<style>
+.org-drawer-container {
+  margin: 1em 0;
+}
+
+.org-drawer-toggle {
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  padding: 0.5em 1em;
+  cursor: pointer;
+  font-size: 1em;
+  border-radius: 4px;
+  width: 100%;
+  text-align: left;
+  transition: background-color 0.2s;
+}
+
+.org-drawer-toggle:hover {
+  background-color: #e0e0e0;
+}
+
+.org-drawer-content {
+  border: 1px solid #ccc;
+  border-top: none;
+  padding: 1em;
+  background-color: #fafafa;
+  border-radius: 0 0 4px 4px;
+}
+</style>
+
+<script>
+function toggleDrawer(drawerId) {
+  var content = document.getElementById(drawerId);
+  var button = content.previousElementSibling;
+
+  if (content.style.display === "none") {
+    content.style.display = "block";
+    button.innerHTML = button.innerHTML.replace("▼", "▲");
+  } else {
+    content.style.display = "none";
+    button.innerHTML = button.innerHTML.replace("▲", "▼");
+  }
+}
+</script>
