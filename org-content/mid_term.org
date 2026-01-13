@@ -12,6 +12,7 @@ Instructions are provided assuming the use of the former, and the
 latter does not guarantees any bonus, but may afford more flexibility
 in performing numerical experiments to answer the questions.
 
+
 ** What physics drives the evolution of the stellar radius?
 
 *** A simple model of the Sun
@@ -23,7 +24,7 @@ You may want to change the =Detailed profile output frequency= under the
 :end:
 
 Plot as a function of a variable increasing monotonically in time the
-evolution of the radius of the Sun ($R$ or $\log_{10}(R)$).
+evolution of the radius of the Sun.
 
 1. What is the present-day value (assume $t_{\odot}=4.5$ Gyr)?
 2. At what $t$ does the radius equal 1$R_{\odot}$?
@@ -186,3 +187,40 @@ Let's now consider a very massive star experiencing a brief phase of
 super-Eddington luminosity. Using dimensional analysis and basic
 quantities such as $M, R, L$, determine /maximum/ mass-loss rate that
 can be driven by the excess luminosity:
+
+
+* Evaluation rubric
+
++-----------------------+--------------------------------------------------------------------+--------------------+--------------+---------------+
+|                       | Exceptional                                                        | Very good          | Adequate     | Poor          |
++-----------------------+--------------------------------------------------------------------+--------------------+--------------+---------------+
+| Physical correctness  | Clear and concise correct quantitative explanation (with physical  | Quantitative       | Quantitative | Lack of       |
+|                       |           scaling where appropriate) and interpretation            |correct explanation |explanation   |quantitative   |
+|                       |                                                                    |with physical       |are mostly    |or incorrect   |
+|                       |                                                                    |interpretation and  |correct,      |quantitative   |
+|                       |                                                                    |scaling             |interpretation|explanation    |
+|                       |                                                                    |                    |is provided   |and/or         |
+|                       |                                                                    |                    |but could be  |scaling, lack  |
+|                       |                                                                    |                    |clearer       |of             |
+|                       |                                                                    |                    |              |interpretation |
++-----------------------+--------------------------------------------------------------------+--------------------+--------------+---------------+
+| code/reproducibility  | Code to reproduce calculations and figures is provides, with REDME |Code to reproduce   | Code to      |No             |
+|                       |Sources for externally obtained data ae clearly listed and publicly |calculations and    |reproduce     |reproducibility|
+|                       |accessible                                                          |figures provided but|calculations  |package is     |
+|                       |                                                                    |without clear       |and figures is|provided       |
+|                       |                                                                    |instructions        |only partially|               |
+|                       |                                                                    |                    |provided, is  |               |
+|                       |                                                                    |                    |incomplete or |               |
+|                       |                                                                    |                    |not working   |               |
+|                       |                                                                    |                    |because of    |               |
+|                       |                                                                    |                    |minor issues  |               |
++-----------------------+--------------------------------------------------------------------+--------------------+--------------+---------------+
+| Graphics              | publication quality plots with informative annotation              |Plots are readable, | Plots are    | Plots are     |
+|                       |                                                                    |but layering of     |readable but  |unreadable,    |
+|                       |                                                                    |information could be|only minimal  |missing labels |
+|                       |                                                                    |improved            |effort in     |and/or legends,|
+|                       |                                                                    |                    |making them as|the wrong      |
+|                       |                                                                    |                    |informative as|quantities are |
+|                       |                                                                    |                    |possible was  |shown.         |
+|                       |                                                                    |                    |put in        |               |
++-----------------------+--------------------------------------------------------------------+--------------------+--------------+---------------+
