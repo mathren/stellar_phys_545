@@ -66,4 +66,19 @@
       });
   };
 </script>
+
+<script>
+function toggleDrawer(drawerId) {
+  var content = document.getElementById(drawerId);
+  var button = content.previousElementSibling;
+
+  if (content.style.display === "none") {
+    content.style.display = "block";
+    button.innerHTML = button.innerHTML.replace("▼", "▲");
+  } else {
+    content.style.display = "none";
+    button.innerHTML = button.innerHTML.replace("▲", "▼");
+  }
+}
+</script>
 <!-- end scripts-->
