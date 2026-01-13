@@ -78,9 +78,56 @@ acceptable to vary parameters other than those specified in the
 exercises if it helps.
 :end:
 
-**  Kippenhahn diagram
+** Core evolution: $T(\rho)$ diagrams
+We have discussed extensively Hertzsprung-Russel diagrams, which give
+information on the /surface properties/ of a star ($L$,
+$T_\mathrm{eff}$). Another key diagram used in (computational) stellar
+evolution is the $T_{c}(\rho_{c})$ diagram, which shows the /evolution/ of the
+central temperature vs. central density of a star, allowing one to
+visualize the evolution of the innermost center of the star.
+
+*N.B.:* Do /not/ confuse a $T_{c}(\rho_{c})$ evolutionary diagram (showing the
+temporal evolution of the center of the star, fixed position in the
+star varying time), with a $T(\rho)$ profile (showing at fixed time the
+entire spatial dependence of the temperature profile using the density
+as independent coordinate)!
+
+The figure below shows an example of $T_{c}(\rho_{c})$ diagram for a set of
+=MESA= models of stars between 2 and 10 $M_{\odot}$ (see number annotation at
+the beginning of the curves). The assumed $\sim$ solar composition is
+annotated too.
+
+Describe the physical causes of the various features in this figure, specifically:
+1. What do the red dots mark?
+2. In which direction does the evolution proceed?
+3. What causes deviations from linear behavior on this plot? What physical moment
+   in the evolution of the star do these occur?
+4. What are the "final" fate of stars with initial mass $\le8M_{\odot}$
+   based on these calculations?
+5. What is happening for the 8 and 10 $M_{\odot}$ models at the end?
+
+#+CAPTION: Central temperature vs. central density for a grid of =MESA= models.
+#+ATTR_HTML: :width 100%
+[[./images/TcRhoc.png]]
+
+:Hint:
+The figure corresponds to the bottom panel of Fig. 22 in [[https://ui.adsabs.harvard.edu/abs/2011ApJS..192....3P/abstract][Paxton et al.
+2011]]. However, this is a code-release paper describing the
+capabilities of =MESA= circa 2010-2011, and does not focus on the
+physical explanation of the models exhibited.
+:end:
+
+** Kippenhahn diagram
+Another important way to visualize the internal evolution of a star
+are Kippenhahn diagrams. Consider the following:
 
 
+#+CAPTION:
+#+ATTR_HTML: :width 100%
+[./images/Kippenhahn]
+
+Describe the star shown above annotating what drives the convection in
+each convective layer you can see, and dwelling on what happens at
 
 
 ** TODO Mass loss exercise
