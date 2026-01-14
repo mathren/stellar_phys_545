@@ -54,6 +54,9 @@ but I will also ask you to use your own computer models too.
 
 * Expectations
 As graduate students you are *expected* to carry out independent work.
+More importantly, this may be the last time in your career that it is
+relatively "easy" to set time aside to learn new things.
+
 My idea for this course is to not only provide /content/ regarding
 stellar physics and evolution, but also to help you develop skills as
 independent researchers for your future (whether in academia or
@@ -100,7 +103,6 @@ may be. We will do this through a project, that we will discuss later.
 * Discuss syllabus and schedule
 
 Link to [[./syllabus.org][syllabus]] and [[./lectures.org][lecture schedule]].
-
 
 * Discuss projects
 
