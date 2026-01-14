@@ -129,12 +129,16 @@ are Kippenhahn diagrams. Consider the following:
 1. What is the initial mass of the star?
 2. Describe qualitatively the evolution shown in the diagram, clearly
    indicating separate phases
-3. For each burning region, identify the likely fuel.
-
-
-
-Describe the star shown above annotating what drives the convection in
-each convective layer you can see, and dwelling on what happens at
+3. For each burning region, identify the fuel.
+4. What type of star is this model at timestep $\sim 500$?
+5. Describe what happens at timestep $\sim 600$. Specifically, how do you
+   expect the stellar radius to change?
+   :Hint:
+   You don't need to be able to give a physical motivation for
+   point 5.
+   :end:
+6. At what evolutionary stage is the model terminated at timestep 800?
+7. What is the final composition of the core?
 
 
 ** Mass loss exercise
