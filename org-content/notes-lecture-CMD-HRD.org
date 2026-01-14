@@ -80,7 +80,7 @@ These two diagrams plot different, but related, quantities on the
 axes, and they are so complementary that sometimes the name are used
 interchangeably.
 
-#+CAPTION: /Gaia/ [[https://ui.adsabs.harvard.edu/abs/2018A%26A...616A..10G/abstract][DR2]] (second data release) color magnitude diagram, containing about ~1.3 billion Galactic stars. Only ~4.2 millions are plotted here (because of data quality cuts).
+#+CAPTION: /Gaia/ [[https://ui.adsabs.harvard.edu/abs/2018A%26A...616A..10G/abstract][DR2]] (second data release) color magnitude diagram, containing about $\sim$ 1.3 billion Galactic stars. Only $\sim$ 4.2 millions are plotted here (because of data quality cuts).
 #+ATTR_HTML: :width 100%
 #+ATTR_HTML: :alt [[https://sci.esa.int/web/gaia/-/60198-gaia-hertzsprung-russell-diagram][Gaia DR2 CMD]]
 [[./images/Gaia_DR2_HRD_Gaia.png]]
@@ -95,7 +95,7 @@ while the top and right axis show corresponding theoretical quantities
 precision the parallax and proper motion of >1 billion stars in the
 Galaxy. This is a very "classical" astrophysics task, but the
 precision and size of the datasets from this mission are unprecedented
-and are revolutionizing this field (see for example [[https://ui.adsabs.harvard.edu/abs/2024NewAR..9801694E/abstract][El Badry 2024
+and are revolutionizing this field (see, e.g., [[https://ui.adsabs.harvard.edu/abs/2024NewAR..9801694E/abstract][El Badry 2024
 review]]).
 
 The left y-axis is the *absolute* magnitude in the =G= band of the telescope on
@@ -110,8 +110,8 @@ second.
 Each dot in this plot is a different star, but there are so many (\sim1.8
 billions in /Gaia/ DR2), that in the most crowded region what is plotted
 is proportional to the square root of the relative density of stars
-per unit "pixel" on this plot. So what we are looking at is a /"group
-picture" of many different stars, varying in age, composition,
+per unit "pixel" on this plot. So what we are looking at is a "/group
+picture/" of /many different stars, varying in age, composition,
 position in the galaxy/, etc.
 
 :Questions:

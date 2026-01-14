@@ -33,7 +33,8 @@ the basics of spectral formation to introduce spectral types.
 
 [[./notes-lecture-CMD-HRD.org][Notes]]
 
-** <2026-01-19 Mon> - Binaries and mass measurements
+** <2026-01-19 Mon> - *MLK day: No lecture*
+** <2026-01-21 Wed> - Binaries and mass measurements
 *Aim*: Introduce the concept of binarity of stars as something /not/
 exotic. Walk through some classes of binaries based on how we observe
 them (astrometric, visual, spectroscopic, eclipsing) and how they can
@@ -41,14 +42,14 @@ be used for empirical mass determination.
 
 [[./notes-lecture-BIN.org][Notes]]
 
-** <2026-01-21 Wed> - Hydrostatic equilibrium
+** <2026-01-23 Fri> - Hydrostatic equilibrium
 *Aim*: Introduce the mass conservation and hydrostatic equilibrium
 equations of stellar evolution. Re-discuss the assumption of spherical
 symmetry. Introduce the dynamical timescale(s). Brief introduction to
 [[http://user.astro.wisc.edu/~townsend/static.php?ref=mesa-web-submit][MESA-web]].
 
 [[./notes-lecture-HSE.org][Notes]]
-** <2026-01-23 Fri> -
+
 ** <2026-01-26 Mon> - Equation of state 1
 *Aim*: Introduce Polytropic and ideal gas equation of state.
 
