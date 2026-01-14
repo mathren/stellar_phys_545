@@ -131,7 +131,7 @@ Describe the star shown above annotating what drives the convection in
 each convective layer you can see, and dwelling on what happens at
 
 
-** TODO Mass loss exercise
+** Mass loss exercise
 Throughout their evolution, stars can lose a significant amount of mass.
 Mass loss channels include:
 - stellar winds ($-14\le\log_{10}(-\dot{M}/[M_{\odot}\ yr^{-1}])\le-5$)
@@ -184,9 +184,11 @@ Let's think about what sources of acceleration can exist:
   (see recent reviews by [[https://ui.adsabs.harvard.edu/abs/2008A%26ARv..16..209P/abstract][Puls et al. 2008]], [[https://ui.adsabs.harvard.edu/abs/2014ARA%26A..52..487S/abstract][Smith 2014]]).
 
 Let's now consider a very massive star experiencing a brief phase of
-super-Eddington luminosity. Using dimensional analysis and basic
-quantities such as $M, R, L$, determine /maximum/ mass-loss rate that
-can be driven by the excess luminosity:
+super-Eddington luminosity:
+
+6. Using dimensional analysis and basic quantities such as $M, R, L$,
+   determine /maximum/ mass-loss rate that can be driven by the excess
+   luminosity.
 
 
 * Evaluation rubric
