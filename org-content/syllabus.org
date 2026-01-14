@@ -76,8 +76,9 @@ follow these:
 
 We will also use [[http://user.astro.wisc.edu/~townsend/static.php?ref=mesa-web-submit][MESA-web]], a cloud-computing resource to run stellar
 evolution simulations with the open-source, community-developed, code
-[[https://docs.mesastar.org/en/latest/][MESA]]. Students that have the resources and abilities can also directly
-use their own local installation of MESA.
+[[https://docs.mesastar.org/en/latest/][MESA]]. Students that have the
+resources and abilities can also directly use their own local
+installation of =MESA=.
 
 * Statement on Generative AI
 You are welcome to use generative AI tools as part of your learning
@@ -195,7 +196,7 @@ and progress.
 ** Mid-term take-home exam
 
 There will be a mid-term take-home exam consisting of theoretical
-questions, =MESA-web= (and/or MESA) based calculations, analysis and
+questions, =MESA-web= (and/or =MESA=) based calculations, analysis and
 interpretation. Like for the homework, a minimal reproducibility
 package will be required.
 
