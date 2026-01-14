@@ -8,9 +8,9 @@
 
 * Introduction to the course
 
-#+CAPTION: Link to [[https://uarizona.co1.qualtrics.com/jfe/form/SV_br2BJii84cul3bE][Intro survey]]
-#+ATTR_HTML: :width 50%
-[[./images/QR-intro.png]]
+# #+CAPTION: Link to [[https://uarizona.co1.qualtrics.com/jfe/form/SV_br2BJii84cul3bE][Intro survey]]
+# #+ATTR_HTML: :width 50%
+# [[./images/QR-intro.png]]
 
 #+CAPTION: Word cloud of the students' expectations for what they are going to learn in this class (Spring 2026 semester).
 #+ATTR_HTML: :width 100%
