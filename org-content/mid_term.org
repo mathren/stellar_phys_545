@@ -134,8 +134,8 @@ are Kippenhahn diagrams. Consider the following:
 5. Describe what happens at timestep $\sim 600$. Specifically, how do you
    expect the stellar radius to change?
    :Hint:
-   You don't need to be able to give a physical motivation for
-   point 5.
+   You don't need to be able to give a physical motivation here, just
+   a qualitative description.
    :end:
 6. At what evolutionary stage is the model terminated at timestep 800?
 7. What is the final composition of the core?
