@@ -149,10 +149,10 @@ color index is even more clear.
 
 
 
-
-There are also other sub-groups, like the "Giant Branch" and "White
-Dwarfs". We will encounter and explain those later on in the course,
-but basically these correspond to more "evolved" stars.
+In the CMD of Fig. 1, there are also other sub-groups, like the "Giant
+Branch" and "White Dwarfs". We will encounter and explain those later
+on in the course, but basically these correspond to more "evolved"
+stars.
 
 From the density of stars we can also infer where on this diagram
 stars spend most of their time! The "main sequence" is surely much
