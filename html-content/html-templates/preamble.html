@@ -55,7 +55,7 @@
       // Toggle theme on click
       toggleButton.addEventListener("click", () => {
           body.classList.toggle("dark-mode");
-	  html.classList.toggle("dark-mode");
+  html.classList.toggle("dark-mode");
 
           // Save user preference
           if (body.classList.contains("dark-mode")) {
@@ -68,17 +68,17 @@
 </script>
 
 <script>
-function toggleDrawer(drawerId) {
-  var content = document.getElementById(drawerId);
-  var button = content.previousElementSibling;
+  function toggleDrawer(drawerId) {
+      var content = document.getElementById(drawerId);
+      var button = content.previousElementSibling;
 
-  if (content.style.display === "none") {
-    content.style.display = "block";
-    button.innerHTML = button.innerHTML.replace("▼", "▲");
-  } else {
-    content.style.display = "none";
-    button.innerHTML = button.innerHTML.replace("▲", "▼");
+      if (content.style.display === "none") {
+	  content.style.display = "block";
+	  button.innerHTML = button.innerHTML.replace("▼", "▲");
+      } else {
+	  content.style.display = "none";
+	  button.innerHTML = button.innerHTML.replace("▲", "▼");
+      }
   }
-}
 </script>
 <!-- end scripts-->
