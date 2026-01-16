@@ -234,8 +234,8 @@ temperature - from O for the hottest stars to M for the coolest (L and
 T are classes introduced later for are classes introduced later for
 Brown Dwarves). This is because the temperature of the gas determine
 the electron populations in each ion/atom in the stellar atmosphere
-and thus how many and which lines can be seen. This is how this
-OBAFGKM(LTY) order came to be.
+and thus how many and which lines can be seen, and ultimately the
+[[./notes-lecture-kappa.org][opacity]]. This is how this OBAFGKM(LTY) order came to be.
 
 *** A modern view on spectra
 The image above of the solar spectrum is pretty, but that is not how
