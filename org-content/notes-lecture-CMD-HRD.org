@@ -61,12 +61,13 @@ One term that instead is still widely present in the literature is:
 
    Because of the quasi-complete lack of metals, Pop III stars are
    expected to *possibly be more massive* on average (so called
-   top-heavy initial mass function). Although they have not been
-   observed, these are still receiving much theoretical attention
-   because of their *potential role during the epoch of reionization*,
-   as *parents of the super-massive black holes* in the center of
-   Galaxies, and as the *stars that kick started the production of
-   chemical elements*.
+   top-heavy initial mass function) because the lack of metals implies
+   the gas has fewer lines available to radiatively cool. Although
+   they have not been observed, these are still receiving much
+   theoretical attention because of their *potential role during the
+   epoch of reionization*, as *parents of the super-massive black holes*
+   in the center of Galaxies, and as the *stars that kick started the
+   production of chemical elements*.
 
 ** Observational color-magnitude diagram
 
@@ -101,11 +102,11 @@ review]]).
 The left y-axis is the *absolute* magnitude in the =G= band of the telescope on
 board of the /Gaia/ space-craft.
 
-The bottom x-axis is the "color index", obtained as the difference in flux
-between two filters of the /Gaia/ telescope =Bp-Rp=. Other color indexes
-can be as difference between the flux in different bands (i.e.,
-different photometric filters, e.g. B-V): we'll discuss why in a
-second.
+The bottom x-axis is the "color index", obtained as the difference in
+flux between two filters of the /Gaia/ telescope =Bp-Rp=. Other color
+indexes can be defined as difference between the flux in different
+bands (i.e., different photometric filters, e.g. B-V): we'll discuss
+why in a second.
 
 Each dot in this plot is a different star, but there are so many (\sim1.8
 billions in /Gaia/ DR2), that in the most crowded region what is plotted

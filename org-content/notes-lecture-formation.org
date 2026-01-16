@@ -420,3 +420,4 @@ to $τ_{\rm nuc}$.
 * Homework
 - Calculate the minimum mass for a brown dwarf
 - Calculate the minimum mass for a star
+- Jeans mass of pop III stars?
