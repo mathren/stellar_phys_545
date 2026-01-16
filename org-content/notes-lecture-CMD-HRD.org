@@ -4,8 +4,9 @@
 #+PREVIOUS_PAGE: notes-lecture-Intro.org
 #+NEXT_PAGE: notes-lecture-BIN.org
 
-*Materials*: chapter 1 of Onno Pols' lecture notes, Sec. 30.2 of
-Kippehahn book, Sec. 8.2 of Ostie & Carroll book, [[https://ui.adsabs.harvard.edu/abs/1914PA.....22..331R][Russell 1914]]
+*Materials*: chapter 1 of Onno Pols' lecture notes, Ch. 1.5 of Rybicki &
+Lightman, Sec. 30.2 of Kippehahn book, Sec. 8.2 of Ostie & Carroll
+book, [[https://ui.adsabs.harvard.edu/abs/1914PA.....22..331R][Russell 1914]].
 
 * How can we study things that evolve too slow for us to see?
 ** Population studies
