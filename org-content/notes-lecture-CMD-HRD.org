@@ -552,24 +552,32 @@ be using a bleeding-edge dataset! These are publicly available in the
   - Go to [[https://gea.esac.esa.int/archive/]] and select the "Search tab"
   - Select the /Gaia/ query you want to make. Feel free to experiment,
     but keep in mind that you will need to briefly explain what it is
-    you plot. *Hint 1*: if you are having troubles selecting stars to
+    you plot.
+    :Hint:
+    if you are having troubles selecting stars to
     plot based on some (astro)-physical criterion, you can rely on the
     /Gaia/ Catalog of Nearby Stars to plot all the stars within 100pc
     from the Sun described in [[https://www.aanda.org/articles/aa/full_html/2021/05/aa39498-20/aa39498-20.html][this paper]]. The catalog is available for
     download from [[https://cdsarc.cds.unistra.fr/ftp/J/A+A/649/A6/][here]] (see the [[https://cdsarc.cds.unistra.fr/ftp/J/A+A/649/A6/ReadMe][ReadMe]] for the column headers, you
-    probably want to download and plot [[https://cdsarc.cds.unistra.fr/ftp/J/A+A/649/A6/table1c.csv][table1c.csv]]). *Hint 2*: you can
-    find in papers the queries of the /Gaia/ database for specific
+    probably want to download and plot [[https://cdsarc.cds.unistra.fr/ftp/J/A+A/649/A6/table1c.csv][table1c.csv]]).
+    :end:
+    :Hint:
+    you can find in papers the queries of the /Gaia/ database for specific
     clusters! For example the cluster NGC6231 can be found using the
     appendix A of [[https://ui.adsabs.harvard.edu/abs/2021A%26A...655A..31V/abstract][this paper]].
+    :end:
   - Download and, if needed, clean the data (for example removing
     stars that are not part of a cluster based on parallax cuts). Make
     sure you start with a manageable amount -- the full catalog is
     billions of stars, you most likely don't want that.
   - Plot the color-magnitude diagram (suggestion: G-band magnitude on
     the y-axis, BP-RP color on the x-axis, like the plot shown in
-    class). *Hint:* be careful whether you have the *absolute* or the
+    class).
+    :Hint:
+    Be careful whether you have the *absolute* or the
     *relative* magnitude in the data you downloaded, and do the
     appropriate conversion
+    :end:
   - Skim [[https://ui.adsabs.harvard.edu/abs/2016ApJ...823..102C/abstract][Choi et al. 2016]] describing the MIST project (it's ok if you
     don't understand everything, you will have a much better
     understanding by the end of the semester!).
