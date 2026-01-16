@@ -578,8 +578,7 @@ be using a bleeding-edge dataset! These are publicly available in the
     photometry for comparison with /Gaia data./ Note that the file you
     can download has extension =*.iso=, but it is /not/ and =iso= image
     file, just plain text that you can load and plot.
-  - *Optional* Use the [[https://waps.cfa.harvard.edu/MIST/][MIST web interpolator]] to over-plot evolutionary
-    tracks.
+  - Use the [[https://waps.cfa.harvard.edu/MIST/][MIST web interpolator]] to over-plot evolutionary tracks.
   - Make sure to describe what you learn from comparing the model
     tracks with the observations plotted. Do they match? Do they not?
     If so, can you speculate on why?
