@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- 2026-01-13 Tue 14:50 -->
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>ASTR545 - Common Envelope Evolution</title>
+<meta name="author" content="Mathieu Renzo" />
+<meta name="generator" content="Org Mode" />
+<link rel="stylesheet" href="./css/style.css" />
+<link rel="stylesheet" href="./fontawesome-free-6.7.2-web/css/all.min.css">
+<meta name="keywords" content="Mathieu, Renzo, Mathieu Renzo,
+			       stellar evolution, ASTR545, PYTS545, 545, University of
+			       Arizona, Steward Observatory, stars,
+			       theoretical astrophysics">
+
+
+<script>
+function toggleDrawer(drawerId) {
+  var content = document.getElementById(drawerId);
+  var button = content.previousElementSibling;
+
+  if (content.style.display === "none") {
+    content.style.display = "block";
+    button.innerHTML = button.innerHTML.replace("▼", "▲");
+  } else {
+    content.style.display = "none";
+    button.innerHTML = button.innerHTML.replace("▲", "▼");
+  }
+}
+</script>
+</head>
+<body>
+<div id="preamble" class="status">
+<!-- Preamble -->
+<!-- The header -->
+<div class="header">
+
+  <!-- The site name -->
+  <div class="site-name">
+    <a id="top" href="./index.html">Stellar Evolution</a>
+  </div>
+
+  <!-- The hamburger -->
+  <div class="hamburger">
+    <div id="myLinks" class="menu">
+      <a href="./index.html">Home</a>
+      <a href="./syllabus.html">Syllabus</a>
+      <a href="./lectures.html">Lectures</a>
+      <a href="./projects.html">Projects</a>
+    </div>
+    <a  href="javascript:void(0);" class="icon" onclick="HamburgerMenuFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+
+  <div class="navbar">
+    <a href="./syllabus.html">Syllabus</a>
+    <a href="./lectures.html">Lectures</a>
+    <a href="./projects.html">Projects</a>
+  </div>
+</div>
+
+<!-- scripts -->
+<script>
+  function HamburgerMenuFunction() {
+      var x = document.getElementById("myLinks");
+      if (x.style.display === "block") {
+	  x.style.display = "none";
+      } else {
+	  x.style.display = "block";
+      }
+  }
+</script>
+
+<script>
+  window.onload = () => {
+      const toggleButton = document.getElementById("light-dark-toggle");
+      const body = document.body;
+      const html = document.documentElement;
+
+
+      // Check localStorage for user preference
+      if (localStorage.getItem("theme") === "dark") {
+          body.classList.add("dark-mode");
+	  html.classList.toggle("dark-mode");
+      }
+
+      // Toggle theme on click
+      toggleButton.addEventListener("click", () => {
+          body.classList.toggle("dark-mode");
+	  html.classList.toggle("dark-mode");
+
+          // Save user preference
+          if (body.classList.contains("dark-mode")) {
+              localStorage.setItem("theme", "dark");
+          } else {
+              localStorage.setItem("theme", "light");
+          }
+      });
+  };
+</script>
+<!-- end scripts-->
+</div>
+<div id="content" class="content">
+<p>
+<b>Materials</b>: <a href="https://ui.adsabs.harvard.edu/abs/1975PhDT.......165W/abstract">Webbink 1975</a>, <a href="https://ui.adsabs.harvard.edu/abs/1976IAUS...73...75P/abstract">Paczynski 1976</a>, <a href="https://ui.adsabs.harvard.edu/abs/2013A%26ARv..21...59I/abstract">Ivanova et al. 2013</a>, <a href="https://ui.adsabs.harvard.edu/abs/2023LRCA....9....2R/abstract">Ropke &amp;
+de Marco 2023</a>, Ivanova et al. 2020.
+</p>
+
+<div id="outline-container-org04dc01d" class="outline-2">
+<h2 id="org04dc01d"><a href="#org04dc01d">Common envelope evolution</a></h2>
+<div class="outline-text-2" id="text-org04dc01d">
+<p>
+During a common envelope the gas of the envelope of both stars fills
+equipotentials beyond L<sub>2</sub>, cannot maintain co-rotation, and thus start
+exerting a friction on the orbit of the two cores (or core and star)
+inside this shared envelope.
+</p>
+
+<p>
+This results in an inspiral that can end either with:
+</p>
+<ul class="org-ul">
+<li>a stellar merger</li>
+<li>the successful ejection of the shared envelope (interrupting the
+drag), and the formation of a tight period binary</li>
+</ul>
+
+<p>
+Common envelope evolution, since it's theorization in the 1970s by
+Paczynski, Webbink, Taam, and Ostriker, remains one of the biggest
+open questions in stellar physics that impacts the formation of all
+compact binaries (cataclysmic variables made of a main sequence plus a
+white dwarf, binary white dwarfs, gravitational wave mergers, etc.).
+</p>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<div class="footer">
+  <hr>
+  <a href="#light-dark-toggle"><i id="light-dark-toggle"><i class="fa-solid fa-circle-half-stroke"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="notes-in-class-RLOF.html"><i class="fa-solid fa-arrow-left" style="font-size:16px"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="#top"><i class="fa-solid fa-arrow-up" style="font-size:16px"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="notes-lecture-tides.html"><i class="fa-solid fa-arrow-right" style="font-size:16px"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="https://github.com/mathren/stellar_phys_545"><i class="fa-brands fa-github" style="font-size:16px"></i></a><hr>
+  <br>
+  Last updated on 13 January 2026 <br>
+  Made with Emacs 29.2 - Org mode 9.6.15
+  <br>
+</div>
+</div>
+</body>
+</html>

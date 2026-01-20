@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- 2026-01-16 Fri 09:16 -->
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>ASTR545 - Stars &amp; Planet Formation</title>
+<meta name="author" content="Mathieu Renzo" />
+<meta name="generator" content="Org Mode" />
+<link rel="stylesheet" href="./css/style.css" />
+<link rel="stylesheet" href="./fontawesome-free-6.7.2-web/css/all.min.css">
+<meta name="keywords" content="Mathieu, Renzo, Mathieu Renzo,
+			       stellar evolution, ASTR545, PYTS545, 545, University of
+			       Arizona, Steward Observatory, stars,
+			       theoretical astrophysics">
+<script>
+  window.MathJax = {
+    tex: {
+      ams: {
+        multlineWidth: '85%'
+      },
+      tags: 'ams',
+      tagSide: 'right',
+      tagIndent: '.8em'
+    },
+    chtml: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    svg: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    output: {
+      font: 'mathjax-modern',
+      displayOverflow: 'overflow'
+    }
+  };
+</script>
+
+<script
+  id="MathJax-script"
+  async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+</head>
+<body>
+<div id="preamble" class="status">
+<!-- Preamble -->
+<!-- The header -->
+<div class="header">
+
+  <!-- The site name -->
+  <div class="site-name">
+    <a id="top" href="./index.html">Stellar Evolution</a>
+  </div>
+
+  <!-- The hamburger -->
+  <div class="hamburger">
+    <div id="myLinks" class="menu">
+      <a href="./index.html">Home</a>
+      <a href="./syllabus.html">Syllabus</a>
+      <a href="./lectures.html">Lectures</a>
+      <a href="./projects.html">Projects</a>
+    </div>
+    <a  href="javascript:void(0);" class="icon" onclick="HamburgerMenuFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+
+  <div class="navbar">
+    <a href="./syllabus.html">Syllabus</a>
+    <a href="./lectures.html">Lectures</a>
+    <a href="./projects.html">Projects</a>
+  </div>
+</div>
+
+<!-- scripts -->
+<script>
+  function HamburgerMenuFunction() {
+      var x = document.getElementById("myLinks");
+      if (x.style.display === "block") {
+	  x.style.display = "none";
+      } else {
+	  x.style.display = "block";
+      }
+  }
+</script>
+
+<script>
+  window.onload = () => {
+      const toggleButton = document.getElementById("light-dark-toggle");
+      const body = document.body;
+      const html = document.documentElement;
+
+
+      // Check localStorage for user preference
+      if (localStorage.getItem("theme") === "dark") {
+          body.classList.add("dark-mode");
+	  html.classList.toggle("dark-mode");
+      }
+
+      // Toggle theme on click
+      toggleButton.addEventListener("click", () => {
+          body.classList.toggle("dark-mode");
+	  html.classList.toggle("dark-mode");
+
+          // Save user preference
+          if (body.classList.contains("dark-mode")) {
+              localStorage.setItem("theme", "dark");
+          } else {
+              localStorage.setItem("theme", "light");
+          }
+      });
+  };
+</script>
+
+<script>
+function toggleDrawer(drawerId) {
+  var content = document.getElementById(drawerId);
+  var button = content.previousElementSibling;
+
+  if (content.style.display === "none") {
+    content.style.display = "block";
+    button.innerHTML = button.innerHTML.replace("▼", "▲");
+  } else {
+    content.style.display = "none";
+    button.innerHTML = button.innerHTML.replace("▲", "▼");
+  }
+}
+</script>
+<!-- end scripts-->
+</div>
+<div id="content" class="content">
+<p>
+<b>Materials:</b> <a href="https://royalsocietypublishing.org/rsta/article/199/312-320/1/40316/I-The-stability-of-a-spherical-nebula">Jeans 1902</a>, <a href="https://ui.adsabs.harvard.edu/abs/2023ASPC..534..275O/abstract">Offner et al. 2023</a>, <a href="https://ui.adsabs.harvard.edu/abs/2017ASSL..442....1M/abstract">Ch. 1, A dirty window,
+Magnani &amp; Shore</a>, Ch 6.8.1 "Tapestry of Modern Astrophysics" by S. N.
+Shore, Ch. 26 in Kippenhahn's book, Ch. 9 in Onno Pols' lecture notes,
+Ch. Tauris &amp; van den Heuvel 2023 book.
+</p>
+
+<div id="outline-container-orgcca0d89" class="outline-2">
+<h2 id="orgcca0d89"><a href="#orgcca0d89">How do stars (&amp; planets) form?</a></h2>
+<div class="outline-text-2" id="text-orgcca0d89">
+<p>
+We have seen that stellar evolution is the product of the competition
+between self-gravity and the pressure gradient of the hydrostatic
+stellar gas, which requires high temperatures in the innermost
+regions, causing thermonuclear burning and chemical evolution on a
+nuclear timescale. Here, we will look a bit more at how this begins.
+</p>
+
+<p>
+<b>N.B.:</b> The physical processes governing planet formation are the same
+as for stars, especially when considering the formation of multiple
+stellar systems where irradiation from external sources can play a
+role. What can be different is the \(T\) and \(\rho\) regime of matter, which
+impacts the EOS, the opacities, and the astro-chemistry.
+</p>
+
+<p>
+The aim of a <b>comprehensive</b> theory of star formation is to explain the
+<b>distribution</b> of orbital architectures across masses from planets to
+super-massive stars, and metallicities. This aim has not yet been
+achieved by the scientific community, and questions related to star
+formation remain some of the most important unanswered questions of
+astrophysics:
+</p>
+<ul class="org-ul">
+<li>Given initial properties of a gas cloud, what fraction of its mass
+will end up in stars (<i>star formation efficiency</i>)?</li>
+<li>What distribution of stellar-masses (<i>Initial mass function</i>) and
+orbital architectures will come out?</li>
+</ul>
+<p>
+In the absence of a comprehensive predictive theory, these are
+informed by observations.
+</p>
+
+<p>
+<b>N.B.:</b> In general, the rate of formation of stars is a function of both
+the mass of the star \(M\) and the time \(t\), \(\Psi\equiv\Psi(M, t)\). It is a common
+assumption, dating back to <a href="https://ui.adsabs.harvard.edu/abs/1955ApJ...121..161S/abstract">Salpeter 1955</a> to <b>assume</b> that the variables
+are separable, meaning one can write the star formation mass- and
+time-dependent rate as \(\Psi = IMF(M) \times SFR(t)\) defining an initial mass
+function \(IMF\) dependent only on the mass and a star formation rate
+\(SFR\) dependent only on time. Given the success of this heuristic
+hypothesis that simplifies greatly the math, we continue to use it
+without a strong first-principle justification.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgec79203" class="outline-2">
+<h2 id="orgec79203"><a href="#orgec79203">The Beginning: Giant Molecular Clouds</a></h2>
+<div class="outline-text-2" id="text-orgec79203">
+
+<figure id="orgee791b5">
+<img src="./images/Barnard68.png" alt="Barnard68.png" width="100%">
+
+<figcaption><span class="figure-number">Figure 1: </span>The nearby dark cloud Barnard 68, the abscence of foreground stars and high opacity make it completely dark. Credits VLT/ANTU/FORS1, ESO. This is Fig. 1.7 in Magnani &amp; Shore's book.</figcaption>
+</figure>
+
+<p>
+Consider a cold cloud of a given initial homogeneous composition,
+typically \(\sim70\%\) by mass will be hydrogen (H), \(\sim28\%\) helium (He),
+and the rest as metals. At this point, in absence of external energy
+sources (e.g., radiation from a nearby cluster or AGN), the gas will
+be cold (\(T\simeq10-100\,\mathrm{K}\)), and hydrogen atoms will
+collisionally find each other and form molecules of H₂. This is a
+(giant) <b>molecular cloud</b> (GMC).
+</p>
+
+<p>
+<b>N.B.:</b> The notation can be confusing: H₂ is molecular hydrogen, H\({\rm
+II}\) is ionized hydrogen (i.e., just the proton).
+</p>
+
+<p>
+These have typical densities of \(n\gtrsim 100 \mathrm{cm^{-3}}^{}\), that is
+100&times; or more the typical density of the interstellar medium (ISM):
+such a structure could in principle plow through the ISM like a bullet
+through fog. Despite most of the mass being molecular hydrogen, there
+are other tracers (typically CO molecules) used to find these, and
+molecular and atomic H and CO do not necessarily trace each other.
+</p>
+
+<p>
+From a radiative perspective, matter will also contain a small
+fraction of dust, leading to a very high opacity in the optical
+wavelengths (see figure above). However, IR radiation can leak out of
+the cloud, initially allowing for efficient cooling.
+</p>
+
+<div class="org-drawer-container">
+  <button class="org-drawer-toggle" onclick="toggleDrawer('drawer-Question-8781')">Question ▼</button>
+  <div id="drawer-Question-8781" class="org-drawer-content" style="display: none;"><ul class="org-ul">
+<li><b>Q:</b> Give and motivate a physical scaling for lifetime of such a
+cloud.</li>
+<li><b>Q</b>: What do you expect the temperature gradient to be?</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org0e4fab6" class="outline-2">
+<h2 id="org0e4fab6"><a href="#org0e4fab6">Jeans Mass</a></h2>
+<div class="outline-text-2" id="text-org0e4fab6">
+<p>
+Let's assume, following <a href="https://royalsocietypublishing.org/rsta/article/199/312-320/1/40316/I-The-stability-of-a-spherical-nebula">Jeans 1902</a>, an infinite homogeneous cloud that
+is <i>isothermal</i>. This simplification allows us to use a very simple
+polytropic EOS:
+</p>
+<div class="latex" id="orgdc76a75">
+\begin{equation}
+P = c_{s}^{2}\rho \ \ ,
+\end{equation}
+
+</div>
+<p>
+with a constant sound speed \(c_{s}\) to describe the gas pressure, and
+therefore we don't need an energy transport equation to describe the
+cloud (recall <a href="./notes-lecture-EOS1.html">the first lecture on EOS</a>s). Besides the gas pressure,
+the other key player here is gravity. Our aim is to understand how the
+gas in the cloud can respond to small external perturbations.
+</p>
+</div>
+
+<div id="outline-container-org1563b31" class="outline-3">
+<h3 id="org1563b31"><a href="#org1563b31">Intuitive arguments</a></h3>
+<div class="outline-text-3" id="text-org1563b31">
+<p>
+To build intuition, we can compare the free-fall timescale (recall <a href="./notes-lecture-HSE.html#org6cfc95a">the
+hydrostatic equilibrium lecture</a>) to the sound-crossing time across a
+certain length-scale \(\ell\), and find the length-scale \(\ell_{J}\) for which
+the two are the same:
+</p>
+<div class="latex" id="orgd778504">
+\begin{equation}
+\tau_{\rm ff} \stackrel{!}{=} \ell_{J}/c_{s} \Rightarrow \ell_{J} \sim c_{s}/\sqrt{G\rho} \ \ ,
+\end{equation}
+
+</div>
+<p>
+where we neglect factors of order unity coming from the details of the
+geometry. This is the Jeans length \(\ell_{J}\).
+</p>
+
+<p>
+Consider now a small perturbation to the cloud, caused for example by
+a supernova explosion outside the cloud hitting it, or winds from
+massive stars (these are typical <i>triggers</i> of the collapse and
+formation of new stars). Perturbations with longer length scales (or
+wave number \(k\le2\pi/\ell_{J}\)) will involve enough mass that the competition
+between gas pressure and gravity is won by the latter, and a collapse
+will ensue. Viceversa, for perturbations with smaller length scale are
+stable: the increase in gas pressure due to the perturbation will
+restore equilibrium.
+</p>
+
+<p>
+Another intuitive derivation can be obtained comparing the
+gravitational potential energy and the internal energy of the cloud:
+collapse requires a negative total energy, or in other words
+</p>
+
+<div class="latex" id="org6a34b4f">
+\begin{equation}
+ - E_{\rm grav} \ge E_{\rm int} \Rightarrow \frac{GM^{2}}{R} \ge \frac{M}{m_{p}} k_{B}T \ \ ,
+\end{equation}
+
+</div>
+<p>
+where we neglect on the last r.h.s. a factor of numbers of degrees of
+freedom divided by two (so either 3/2 or 5/2 for di-atomic molecules).
+Rearranging and using \(R\propto M^{1/3}/\rho\), we obtain that the collapse
+condition can be expressed in terms of mass as:
+</p>
+<div class="latex" id="org4b2949a">
+\begin{equation}\label{eq:jeans_mass_scaling}
+M \ge M_{J} \propto T^{3/2}\rho^{-1/2} \ \ ,
+\end{equation}
+
+</div>
+<p>
+which says that denser cold gas has a lower minimum mass threshold to
+collapse, as one may expect.
+</p>
+
+<p>
+<b>N.B.:</b> For an ideal gas \(c_{s} \propto\sqrt{T/\mu}\), substituting in the estimate
+for the Jeans length \(\ell_{J}\) we can see that \(M_{J}\sim\rho\ell_{J}^{3}\) gives the
+scaling of Eq. \ref{eq:jeans_mass_scaling}  and only misses factors of order unity which depend on the
+details of the geometry of the mass distribution.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgfd7d49f" class="outline-3">
+<h3 id="orgfd7d49f"><a href="#orgfd7d49f">Formal derivation</a></h3>
+<div class="outline-text-3" id="text-orgfd7d49f">
+<p>
+The cloud is described by the momentum continuity equation (or Euler's
+equation), the mass continuity equation, and its gravitational
+potential \(\Phi\) has to solve the Poisson's equation:
+</p>
+<div class="latex" id="orgc9a6664">
+\begin{equation}\label{eq:cloud}
+\frac{\partial \mathbf{v}}{\partial t} + (\mathbf{v}\cdot\mathbf{\nabla}) \mathbf{v} = -\frac{1}{\rho}\mathbf{\nabla} P -\mathbf{\nabla}\Phi\ \ \ , \ \ \
+\frac{\partial\rho}{\partial t}+\mathbf{\nabla}\cdot(\rho\mathbf{v}) = 0 \ \ \ ,\ \ \
+\nabla^{2}\Phi = 4\pi G \rho \ \ \ .
+\end{equation}
+
+</div>
+<p>
+These equations describe our isothermal patch of gas, where gas is
+allowed to have a velocity \(\mathbf{v}\) and we <i>do not</i> neglect time
+dependencies.
+</p>
+
+<p>
+We can formally introduce a perturbation by substituting in Eq.
+\ref{eq:cloud} \(\rho\rightarrow\rho_{0}+\delta\rho\), \(\Phi\rightarrow\Phi_{0}+\delta\Phi\), \(\mathbf{v}\rightarrow\mathbf{v_{0}}+\delta
+\mathbf{v}\) and keeping only the first-order terms in \(\delta \rho\), \(\delta \Phi\),
+and/or \(\delta \mathbf{v}\). The terms with subscript \(0\) are solutions of
+the unperturbed equations, let's assume to start from a static
+situation with \(\mathbf{v_{0}} \equiv 0\). With the linearized equations one
+obtains, without loss of generality, we can consider perturbations of
+the form
+</p>
+<div class="latex" id="org6e552d9">
+\begin{equation}
+\delta x = x_{0} \exp\left(i\mathbf{k}\cdot\mathbf{x}+i\omega t\right) \ \ ,
+\end{equation}
+
+</div>
+<p>
+for \(x=\{\rho, \Phi,\mathbf{v}\}\), with \(x_{0}\) solution of the unperturbed
+equations. An arbitrary \(\delta x\) can be represented as the linear superposition of
+perturbations of this form (thanks to the fact that we only keep the
+linear order in the perturbation).
+</p>
+
+<p>
+This reduces Eq. \ref{eq:cloud} to, respectively:
+</p>
+<div class="latex" id="orgc373a58">
+\begin{equation}\label{eq:cloud_linearized}
+\omega\delta \mathbf{v} + \frac{\mathbf{k}c_{s}^{2}}{\rho_{0}}\delta\rho +\mathbf{k}\Phi_{0}=0\ \ \ , \ \ \ \omega\delta\rho + \mathbf{k}\rho_{0}\delta\mathbf{v} = 0 \ \ \ , \ \ \ k^{2}\delta\Phi + \Phi_{0}\frac{\delta\rho}{\rho_{0}} = 0 \ ,
+\end{equation}
+
+</div>
+<p>
+which is a system of homogeneous linear equations for \(\delta\rho,
+\delta\mathbf{v}\), and \(\delta\Phi\), which has solution only if the determinant of
+the matrix representing the system is zero. This condition provides
+the dispersion relation:
+</p>
+
+<div class="latex" id="orga9edc73">
+\begin{equation}\label{eq:dispersion_rel}
+\omega^{2} = k^{2}c_{s}^{2}-4\pi G\rho_{0} \ \ .
+\end{equation}
+
+</div>
+<p>
+For large \(k\), corresponding to small length scale perturbations
+(recall \(k=2\pi/\ell\)), the l.h.s. is positive and the cloud of gas is
+stable: this is the situation for small perturbations where the
+increase in gas pressure due to compression counteracts gravity
+effectively. Viceversa, for small \(k\), that is large length scales
+\(\ell\ge\ell_{J} = c_{s}/\sqrt{4\pi G\rho_{0}}\) the pressure increase corresponding to the
+compression is too small to effectively counteract gravity and we have
+a collapse.
+</p>
+
+<p>
+<b>N.B.:</b> The formal derivation got us a factor of \(\sqrt{4\pi}\) in the
+definition of Jeans length.
+</p>
+
+<p>
+Thinking in terms of length scale is useful when doing perturbation
+theory because it can help visualizing the perturbation, but
+astrophysically it is more useful to think in terms of mass involved.
+We can define the Jeans mass as the mass contained within a sphere of
+volume the Jeans length:
+</p>
+<div class="latex" id="org09df81d">
+\begin{equation}
+M_{J} = \frac{4}{3}\pi \rho_{0} \ell_{J}^{3} \ \ .
+\end{equation}
+
+</div>
+<p>
+Substituting \(\ell_{J}\), and recalling that \(c_{s}\propto\sqrt{T_{0}/\mu}\) where \(T_{0}\) is
+the initial gas temperature (only the unperturbed value at linear
+order) and \(\mu\) its mean molecular weight, we have the scaling \(M_{J}\propto
+\rho_{0}^{-1/2} T_{0}^{3/2}\mu^{-3/2}\). Plugging in typical numbers we have:
+</p>
+<div class="latex" id="org2db1ae8">
+\begin{equation}\label{eq:jeans_mass}
+M_{J} = 1.2\times10^{5} M_{☉} \left(\frac{T}{100\,\mathrm{K}}\right)^{3/2}\left(\frac{\rho}{10^{24}\,\mathrm{g\ cm^{-3}}}\right)^{-1/2}\mu^{-3/2} \ \ .
+\end{equation}
+
+</div>
+<p>
+Note how this value is much larger than the typical mass of stars in
+the local universe.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org2835a49" class="outline-2">
+<h2 id="org2835a49"><a href="#org2835a49">Initial collapse and fragmentation</a></h2>
+<div class="outline-text-2" id="text-org2835a49">
+<p>
+We have derived a minimum length scale \(\ell_{J}\) or mass scale \(M_{J}\) for a
+perturbation to drive a runaway gravitational collapse in a
+homogeneous and isothermal gas distribution. How does this collapse
+proceed?
+</p>
+
+<p>
+By construction, we have derived that the collapse initiates when the
+perturbation induces a local increase in gravity that wins over the
+increase in gas pressure, so we expect a dynamical phase. Considering
+the (order of magnitude of the ) free-fall timescale, we have:
+</p>
+<div class="latex" id="orgafb0855">
+\begin{equation}
+\tau_{\rm ff} \simeq (G\rho)^{-1/2} \Rightarrow \tau_{\rm ff, GMC} \simeq \tau_{\rm ff,☉} \times \left(\frac{\langle\rho_{☉}\rangle}{\langle\rho_{\rm GMC}\rangle}\right)^{1/2} \ \ ,
+\end{equation}
+
+</div>
+<p>
+where we know \(\tau_{\rm ff,☉}\simeq 1\) hour. Using \(\langle\rho_{☉}\rangle\sim1\) g cm<sup>-3</sup> and \(\langle\rho_{\rm GMC}\rangle\simeq n\mu
+m_{p}\) and assuming a number density of particles \(n\sim100\) cm<sup>-3</sup> and \(\mu\sim1\),
+this gives the free fall timescale of the giant molecular cloud
+</p>
+<div class="latex" id="org9c89e32">
+\begin{equation}
+\tau_{\rm ff, GMC} \simeq \tau_{\rm ff,☉} \times 10^{12} \simeq 100\,\mathrm{Myr} \ \ .
+\end{equation}
+
+</div>
+<p>
+This is a long timescale because of the low density (as the collapse
+proceeds, the density of the cloud increases and this timescale
+shortens), but how does it compare to the thermal timescale of the
+cloud? This question is central, since so far we have assumed the
+cloud to remain <i>isothermal</i>, so any excess energy has to be
+redistributed much faster than the timescale for the collapse \(\tau_{\rm
+ff, GMC}\).
+</p>
+
+<p>
+To estimate the thermal timescale, consider that the cloud is
+optically thin to infra-red radiation, thus the thermal timescale can
+be estimated as \(\tau_{\rm th, GMC}=E_{\rm int}/\Lambda\) with \(E_{\rm int}\simeq \int dm c_{v}T\)
+the internal thermal energy of the gas, and \(\Lambda\) the radiative energy
+losses, which can be estimated to be \(\Lambda\sim 1\) erg g<sup>-1</sup> s<sup>1</sup>. This typically
+gives \(\tau_{\rm th, GMC} \le 100\) years \(\ll\tau_{\rm ff, GMC}}\), which justifies a
+posteriori our assumption of <i>isothermal</i> collapse.
+</p>
+
+<p>
+<b>N.B.:</b> A proper calculation of the cooling rate \(\Lambda\) requires detailed
+plasma physics consideration, see e.g., Spitzer 1968 book.
+</p>
+
+<p>
+<b>N.B.:</b> During the initial collapse of a GMC, we have a <b>dynamical</b> phase,
+but contrary to the case of a star in gravothermal equilibrium, and
+owing to the low initial densities, in this phase the dynamical
+timescale is much <i>longer</i> than the thermal timescale!
+</p>
+
+<p>
+This initial dynamical (but slow compared to thermal processes) phase
+proceeds until the assumption of being optically-thin to IR radiation
+breaks down (because as the cloud collapses \(\rho\) increases and
+consequently the optical depth \(\tau\) increases). At this point, we can
+assume a "proto-stellar core" is formed.
+</p>
+
+<p>
+From Eq. \ref{eq:jeans_mass}, we have already seen that the Jeans mass
+is much larger than the typical mass of stars. This seems like a
+fundamental problem for this simple model of star formation. However,
+we see that as the density increases, \(M_{J}\propto\rho^{-1/2}\) decreases! As the
+cloud as a whole starts collapsing isothermally, the total mass of the
+cloud in units of \(M_{J}\) increases (since \(M_{J}\) decreases): as the
+collapse proceed, the cloud becomes more and more unstable. In other
+words, we expect the collapse to lead to <i>fragmentation</i> in smaller mass
+chunks. This process will stop at a mass scale that corresponds to
+when the collapse is <i>not</i> isothermal anymore. To properly estimate when
+this occurs, one needs to specify the cooling mechanism of the cloud
+(the one allowing it to maintain a constant \(T\) as \(\rho\) increases) and
+determine when the transition from isothermal collapse to
+approximately adiabatic (no more energy losses) occurs, see for
+example Kippenhahn's book, Ch. 26.3, but it can be shown that with
+simple arguments (each chunk radiates a fraction of a black body with
+the same \(T\)) that this should stop when the chunks have masses
+\(\sim0.1-1M_{☉}\): the fragmentation does <i>not</i> continue all the way down to
+planetary masses or below!
+</p>
+
+<p>
+The fact that we do not understand from first principles in a detailed
+and quantitative manner how the collapse proceeds is one of the
+reasons why we don't have a first principle understanding of the
+stellar initial mass function.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgeb9db5f" class="outline-2">
+<h2 id="orgeb9db5f"><a href="#orgeb9db5f">Limitations of this treatment</a></h2>
+<div class="outline-text-2" id="text-orgeb9db5f">
+<p>
+Defining the initial conditions for the problem of star formation is
+non-trivial. Above, we have assumed an <i>isothermal</i>, initially static
+(\(\mathbf{v}_{0}=0\)) and infinitely extended homogeneous cloud. This is a
+paradoxical initial condition!
+</p>
+
+<div class="org-drawer-container">
+  <button class="org-drawer-toggle" onclick="toggleDrawer('drawer-Question-5891')">Question ▼</button>
+  <div id="drawer-Question-5891" class="org-drawer-content" style="display: none;"><ul class="org-ul">
+<li><b>Q</b>: can you identify the paradox implicit in the assumptions we made?</li>
+</ul>
+</div>
+</div>
+
+<p>
+By the Poisson's equation \(\rho_{0}\propto\nabla^{2}\Phi_{0}\), but the r.h.s. <i>has</i> to be zero by
+symmetry (the spatial derivatives entering in \(\nabla^{2}\) must vanish),
+therefore the only possible realization of this situation is a cloud
+of vacuum with \(\rho_{0}=0\).
+</p>
+
+<p>
+More sophisticated treatments assuming a "plane-parallel"
+stratification (1D problem in the vertical direction) or finite
+spherical clouds with an outer boundary pressure however result in the
+same quantitative results except for geometric pre-factors of order
+unity.
+</p>
+</div>
+
+<div id="outline-container-orgb2a5ece" class="outline-3">
+<h3 id="orgb2a5ece"><a href="#orgb2a5ece">Turbulence, Magnetic Fields, Angular Momentum</a></h3>
+<div class="outline-text-3" id="text-orgb2a5ece">
+<p>
+The simplistic picture of a molecular cloud presented above would
+result in an excessively efficient star formation. Presently, we think
+that molecular clouds are partially supported, likely by magnetic
+fields and/or turbulence, which leads to the formation of over-dense
+cores and filaments. Collapsing parcels of gas may converge on these
+with a impact parameter, implying the presence of angular momentum,
+and thus centrifugal barrier and disk formation. Instabilities (e.g.,
+purely Newtonian gravitational instability) can lead to the formation
+of spiral waves shaping the inflow. Finally, accretion onto cores can
+lead to feedback (jets, disk winds) which create non-linear feedback
+loops between inflows and outflows.
+</p>
+
+<p>
+Planets will form within these accretion flows on proto-stellar cores
+and young stars, in proto-planetary disks. For planets, the impact of
+the irradiation (by the central star and its possible flares) of the
+protoplanetary disk on the ionization structure of the disk and the
+physics and chemistry of the gas, dust, and pebbles play crucial
+roles.
+</p>
+
+<p>
+Understanding the physics of these processes requires comparing
+(radiation-)(magneto-)hydrodynamics simulations with observations
+across scales from ≈100s of parsecs (GMC) down to stellar and
+planetary radii, possibly including environmental effects (such as the
+irradiation of the surrounding stars). These efforts are still ongoing
+(including groups here at Steward Observatory).
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org2545125" class="outline-2">
+<h2 id="org2545125"><a href="#org2545125">Accretion and proto-star phase</a></h2>
+<div class="outline-text-2" id="text-org2545125">
+<p>
+With the caveats mentioned above, we have left our chunk of collapsing
+cloud at the point where it is becoming dense enough to be optically
+thick, and is effectively a protostellar core. This is still embedded
+in gas accreting on it, which provides an <i>accretion luminosity</i>:
+</p>
+
+<div class="latex" id="orgcbdc3ff">
+\begin{equation}
+L_{\rm acc} = \frac{GM\dot{M}_{}}{2R} \ \ .
+\end{equation}
+
+</div>
+
+<p>
+This is roughly the luminosity coming from the release of
+gravitational energy in the accretion, where the factor of 2 in the
+denominator comes from the <a href="./notes-lecture-VirTheo.html">Virial theorem</a> (part of the potential
+energy goes into heating the accretion flow).
+</p>
+
+<p>
+During this phase the proto-stellar core heats up, but adiabatically,
+since the accretion timescale \(\tau=M/\dot{M} \gg \tau_{\rm KH}\).
+</p>
+
+<p>
+At some point, the temperature of the core will increase enough that
+H<sub>2</sub> molecules will start breaking (collisionally), releasing some
+latent heat (the molecular binding energy), and causing the adiabatic
+index of the core to become \(\le4/3\) triggering a second dynamical phase
+of collapse until all the H<sub>2</sub> is broken. Similar phases occur when H
+and then He become ionized.
+</p>
+
+<p>
+Once the accretion phase is over, the proto-star has reached its
+initial mass and becomes a pre-main sequence star.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgff783a2" class="outline-2">
+<h2 id="orgff783a2"><a href="#orgff783a2">Pre-main sequence evolution as initial conditions</a></h2>
+<div class="outline-text-2" id="text-orgff783a2">
+<p>
+We begin with a homogeneous ball of gas in hydrostatic, but not
+necessarily thermal equilibrium: this is a pre-main-sequence star,
+that has already collected all its (initial) mass during the initial
+dynamical phase of the collapse. Such a structure has no energy
+sources inside, and can only contract quasi-statically on a
+Kelvin-Helmholtz timescale. By the virial theorem this will stop when
+degeneracy pressure support changes the EOS (as in the case of
+planets), or the core reaches temperatures sufficient to ignite
+thermonuclear burning. We already know that the total mass sets \(\langle T
+\rangle\) and thus the route the collapsing core will take.
+</p>
+
+<p>
+The loosely bound nucleus of Deuterium may burn first but releases
+little energy and can only slow without halting the collapse. Objects
+sufficiently massive to experience Deuterium burning, but not to
+ignite H are the boundary between planets and stars, and called Brown
+Dwarfs. These are typically very cold and faint bodies, that can be
+found in isolation, or orbiting from the orbit of companions.
+</p>
+
+<p>
+<b>N.B.:</b> Through radio-monitoring of pulsars, several binaries with a
+neutron star (remnant of the evolution of massive stars that have
+exploded) and a brown dwarf have been found.
+</p>
+
+<p>
+After Deuterium burning, gravity continues to compress the gas,
+decreasing R and increasing ⟨T⟩, until the core reaches temperatures
+sufficient to overcome Coulomb barriers and H core burning begins. The
+moment when the stellar luminosity L equals the energy production rate
+in the core \(L_{\rm nuc}\) is usually called <b>zero age main sequence</b> (ZAMS)
+and at this point the evolutionary timescale changes from \(\sim\tau_{\rm KH}\)
+to \(τ_{\rm nuc}\).
+</p>
+</div>
+</div>
+
+<div id="outline-container-org2e85f0a" class="outline-2">
+<h2 id="org2e85f0a"><a href="#org2e85f0a">Homework</a></h2>
+<div class="outline-text-2" id="text-org2e85f0a">
+<ul class="org-ul">
+<li>Calculate the minimum mass for a brown dwarf</li>
+<li>Calculate the minimum mass for a star</li>
+<li>Jeans mass of pop III stars?</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<div class="footer">
+  <hr>
+  <a href="#light-dark-toggle"><i id="light-dark-toggle"><i class="fa-solid fa-circle-half-stroke"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="#"><i class="fa-solid fa-arrow-left" style="font-size:16px"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="#top"><i class="fa-solid fa-arrow-up" style="font-size:16px"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="#"><i class="fa-solid fa-arrow-right" style="font-size:16px"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="https://github.com/mathren/stellar_phys_545"><i class="fa-brands fa-github" style="font-size:16px"></i></a><hr>
+  <br>
+  Last updated on 16 January 2026 <br>
+  Made with Emacs 29.2 - Org mode 9.6.15
+  <br>
+</div>
+</div>
+</body>
+</html>

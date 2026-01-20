@@ -449,7 +449,6 @@ systematic errors in the properties of the stars propagate onto the
 properties of the planets, and often constitute the limiting factor
 for the understanding of the planets!
 
-
 * Homework
 
 ** Exercise 7.4 on Carroll & Ostie

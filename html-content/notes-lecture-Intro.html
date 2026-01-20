@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- 2026-01-14 Wed 12:17 -->
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>ASTR545 - Introduction</title>
+<meta name="author" content="Mathieu Renzo" />
+<meta name="generator" content="Org Mode" />
+<link rel="stylesheet" href="./css/style.css" />
+<link rel="stylesheet" href="./fontawesome-free-6.7.2-web/css/all.min.css">
+<meta name="keywords" content="Mathieu, Renzo, Mathieu Renzo,
+			       stellar evolution, ASTR545, PYTS545, 545, University of
+			       Arizona, Steward Observatory, stars,
+			       theoretical astrophysics">
+<script>
+  window.MathJax = {
+    tex: {
+      ams: {
+        multlineWidth: '85%'
+      },
+      tags: 'ams',
+      tagSide: 'right',
+      tagIndent: '.8em'
+    },
+    chtml: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    svg: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    output: {
+      font: 'mathjax-modern',
+      displayOverflow: 'overflow'
+    }
+  };
+</script>
+
+<script
+  id="MathJax-script"
+  async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+</head>
+<body>
+<div id="preamble" class="status">
+<!-- Preamble -->
+<!-- The header -->
+<div class="header">
+
+  <!-- The site name -->
+  <div class="site-name">
+    <a id="top" href="./index.html">Stellar Evolution</a>
+  </div>
+
+  <!-- The hamburger -->
+  <div class="hamburger">
+    <div id="myLinks" class="menu">
+      <a href="./index.html">Home</a>
+      <a href="./syllabus.html">Syllabus</a>
+      <a href="./lectures.html">Lectures</a>
+      <a href="./projects.html">Projects</a>
+    </div>
+    <a  href="javascript:void(0);" class="icon" onclick="HamburgerMenuFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+
+  <div class="navbar">
+    <a href="./syllabus.html">Syllabus</a>
+    <a href="./lectures.html">Lectures</a>
+    <a href="./projects.html">Projects</a>
+  </div>
+</div>
+
+<!-- scripts -->
+<script>
+  function HamburgerMenuFunction() {
+      var x = document.getElementById("myLinks");
+      if (x.style.display === "block") {
+	  x.style.display = "none";
+      } else {
+	  x.style.display = "block";
+      }
+  }
+</script>
+
+<script>
+  window.onload = () => {
+      const toggleButton = document.getElementById("light-dark-toggle");
+      const body = document.body;
+      const html = document.documentElement;
+
+
+      // Check localStorage for user preference
+      if (localStorage.getItem("theme") === "dark") {
+          body.classList.add("dark-mode");
+	  html.classList.toggle("dark-mode");
+      }
+
+      // Toggle theme on click
+      toggleButton.addEventListener("click", () => {
+          body.classList.toggle("dark-mode");
+	  html.classList.toggle("dark-mode");
+
+          // Save user preference
+          if (body.classList.contains("dark-mode")) {
+              localStorage.setItem("theme", "dark");
+          } else {
+              localStorage.setItem("theme", "light");
+          }
+      });
+  };
+</script>
+
+<script>
+function toggleDrawer(drawerId) {
+  var content = document.getElementById(drawerId);
+  var button = content.previousElementSibling;
+
+  if (content.style.display === "none") {
+    content.style.display = "block";
+    button.innerHTML = button.innerHTML.replace("▼", "▲");
+  } else {
+    content.style.display = "none";
+    button.innerHTML = button.innerHTML.replace("▲", "▼");
+  }
+}
+</script>
+<!-- end scripts-->
+</div>
+<div id="content" class="content">
+<p>
+<b>Materials</b>: chapter 1 of Onno Pols' lecture notes.
+</p>
+
+<div id="outline-container-org136a1f5" class="outline-2">
+<h2 id="org136a1f5"><a href="#org136a1f5">Introduction to the course</a></h2>
+<div class="outline-text-2" id="text-org136a1f5">
+
+<figure id="orgec19011">
+<img src="./images/word_cloud20260114.png" alt="word_cloud20260114.png" width="100%">
+
+<figcaption><span class="figure-number">Figure 1: </span>Word cloud of the students' expectations for what they are going to learn in this class (Spring 2026 semester).</figcaption>
+</figure>
+</div>
+</div>
+
+<div id="outline-container-orgcd27311" class="outline-2">
+<h2 id="orgcd27311"><a href="#orgcd27311">Who am I?</a></h2>
+<div class="outline-text-2" id="text-orgcd27311">
+<p>
+My name is Mathieu Renzo, I have been an assistant professor here at
+Steward Observatory since 2024. Before, I was a postdoc in New York
+city (at the Flatiron institute and Columbia University), and before
+that I did my PhD at the University of Amsterdam in the Netherlands &#x2013;
+but I am originally from none of these places!
+</p>
+
+<p>
+The topic of this course is stellar evolution, which is my research
+field. More specifically, I work on the evolution of massive stars in
+binary systems. These are the stars that end their lives in <i>supernova
+explosions</i>, that can outshine briefly an entire galaxy. During these
+explosions some of the most exotic objects in the universe are formed,
+neutron stars or black holes (especially if the explosion fails!). The
+massive star progenitor of these objects are found most often in
+binary systems, meaning there are two stars orbiting each other, and
+they can, as they evolve, interact and exchange mass and sometimes
+merge. My research is strongly embedded in the topic of this course
+(stellar evolution) and touches on explosion physics, X-ray binaries,
+gravitational waves, etc. I will try to connect the course material to
+all these topics whenever possible!
+</p>
+</div>
+</div>
+
+<div id="outline-container-org5b7b38a" class="outline-2">
+<h2 id="org5b7b38a"><a href="#org5b7b38a">Aim of the course</a></h2>
+<div class="outline-text-2" id="text-org5b7b38a">
+<p>
+<b>To understand the structure and evolution of stars and their
+observational properties using known laws of physics.</b>
+</p>
+
+<p>
+The scientific topic of this course is <i>very computationally oriented</i>:
+stellar astrophysics is arguably one of the oldest computational
+astrophysics problems. Throughout the course, I will try to highlight
+what is the result of computer models based on necessary (but often
+grossly oversimplifying) approximations and what is more solidly
+grounded in observations. We will do this by having computational
+exercises, hence the questions on your computational background and
+MESA. We will start the course by going over the physical foundations,
+but I will also ask you to use your own computer models too.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org4a5949d" class="outline-2">
+<h2 id="org4a5949d"><a href="#org4a5949d">Expectations</a></h2>
+<div class="outline-text-2" id="text-org4a5949d">
+<p>
+As graduate students you are <b>expected</b> to carry out independent work.
+More importantly, this may be the last time in your career that it is
+relatively "easy" to set time aside to learn new things.
+</p>
+
+<p>
+My idea for this course is to not only provide <i>content</i> regarding
+stellar physics and evolution, but also to help you develop skills as
+independent researchers for your future (whether in academia or
+elsewhere).
+</p>
+
+<p>
+For this reason also <i>I will not check your attendance</i>. However, during
+the lectures I will present things in a way that complements the
+textbook(s), and you will more likely have a better understanding if
+you attend. Also, as we'll discuss in a moment, in-class participation
+will count for up to 20% of your final grade, so if you want more than
+a B you should come <b>and actively participate</b>.
+</p>
+
+<p>
+<b>N.B.:</b> Active participation &ne; just presence!
+</p>
+
+<p>
+An important thing to keep in mind as we go through the semester is to
+have a <a href="https://en.wikipedia.org/wiki/Mindset#Fixed_and_growth_mindsets">growth mindset</a>: we are all here to learn and improve ourselves!
+Grading will particularly reward improvement, so a failure at some
+point (of one homework) is just an opportunity for improvement &#x2013; not
+a career stopping tragedy.
+</p>
+
+<p>
+Similarly, I expect everyone in the class to treat each other with
+respect and kindness. We don't all come from the same background, we
+don't all need to be at the same exact level to learn from each other.
+Ultimately, you are here to learn some science and <i>science is a team
+effort</i>. It has been proven many times over that diverse teams achieve
+better results. Start practicing this now: if someone is struggling
+with some material that you think you have under control, help them.
+They are not slowing you down, but giving you an opportunity to verify
+and deepen your knowledge by engaging with them and the difficulties
+they may be experiencing. You may soon be the one in difficulty
+yourself and give them a chance to "pay back". In the end we will all
+be better thanks to this dynamic.
+</p>
+
+<p>
+Stellar evolution is also a very vast topic, and there is too much to
+cover in only one semester, with many bleeding edge developments. So I
+will ask <b>you</b> to teach your peers some of the topics that don't fit
+within the main part of the course. You will also evaluate (and be
+evaluated) by your peers. This is because the ability of giving
+constructive and helpful feedback is important in science and beyond:
+you will work with others and need to help them improve, and you will
+receive feedback yourselves for the rest of your careers whatever they
+may be. We will do this through a project, that we will discuss later.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgb3bd6bb" class="outline-2">
+<h2 id="orgb3bd6bb"><a href="#orgb3bd6bb">Discuss syllabus and schedule</a></h2>
+<div class="outline-text-2" id="text-orgb3bd6bb">
+<p>
+Link to <a href="./syllabus.html">syllabus</a> and <a href="./lectures.html">lecture schedule</a>.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org35b4c7e" class="outline-2">
+<h2 id="org35b4c7e"><a href="#org35b4c7e">Discuss projects</a></h2>
+<div class="outline-text-2" id="text-org35b4c7e">
+<p>
+Link to <a href="./projects.html">proposed projects page</a>.
+</p>
+
+<ul class="org-ul">
+<li>Projects will cover topics that are important and or timely, but
+hard to fit in the main body of the course</li>
+<li>Occasion for you to dig deeper and teach to your peers</li>
+<li>You should look over the <a href="projects.html#org2f5c1ee">proposed project</a>, and give us a ranked list
+of 5 projects you'd like to do (see <a href="https://d2l.arizona.edu/d2l/home/1701369">D2L</a> for updated deadline).</li>
+<li>After receiving your preferences, we will assign to each a project
+trying to maximize happiness (though it may not be possible to
+accommodate everyone), and for each project we will assign two peer
+referees.</li>
+<li>Look over also <a href="projects.html#org677e3ab">how the grading of the project will work</a>: in short,
+we will evaluate your written summary (together with 2 of your
+classmates!), your oral presentation in class (again, with your
+peers!), and how you give feedback to others.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgc5c2703" class="outline-2">
+<h2 id="orgc5c2703"><a href="#orgc5c2703">Let's start finally talking about stars!</a></h2>
+<div class="outline-text-2" id="text-orgc5c2703">
+</div>
+<div id="outline-container-org6437a12" class="outline-3">
+<h3 id="org6437a12"><a href="#org6437a12">What is a star?</a></h3>
+<div class="outline-text-3" id="text-org6437a12">
+<ul class="org-ul">
+<li>Historical definition: <i>flickering light source in the sky with no
+intrinsic motion</i> (where flickering excludes planets, and no
+intrinsic motion excludes planets <i>and</i> other solar system objects
+such as comets and asteroids).</li>
+<li>More modern definition: <i>self-gravitating amount of gas that at some
+point is sufficiently hot for nuclear fusion</i>.</li>
+</ul>
+
+<p>
+Note that the requirement of nuclear fusion is <b>extremely new</b>: only
+about 100 years old! A lot can be learned about stars without knowing
+anything about nuclear fusion, which we will treat, but much later in
+the course.
+</p>
+
+<p>
+<b>N.B.:</b> Definitions often try to "pidgeon-hole" nature into specific
+categories, but often nature is more elusive. In the case of the
+"modern" definition of star above, there is the boundary case of Brown
+Dwarfs, which are self-gravitating amount of gas that early in their
+life may do some nuclear burning of light elements (e.g., deuterium).
+This burning does not release a lot of energy (the deuterium nucleus,
+a proton and a neutron bound together, has very low nuclear binding
+energy), thus these objects sit at the boundary between planets and
+stars.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org3d0a0b2" class="outline-3">
+<h3 id="org3d0a0b2"><a href="#org3d0a0b2">The ongoing "Renaissance" of stellar physics</a></h3>
+<div class="outline-text-3" id="text-org3d0a0b2">
+<p>
+Stellar physics was one of the first problems tackled with computers,
+at the foundations of computational astrophysics since the early 1960s
+(see for instance this <a href="https://repository.aip.org/kippenhahn-rudolf-1978-june-18">interview to R. Kippenhahn</a>). By the 1980s-90s,
+stellar evolution was considered a "solved problem": this was largely
+because of the large number of parameters required to describe all the
+atomic, nuclear, and radiative physics plus the stellar hydrodynamics,
+which would allow in principle one to fit any given observable.
+</p>
+
+<p>
+However, this was largely based on closed-source, non-reproducible
+models of single stars only, and in fact, several cracks in this
+picture were already evident, for example the famous explosion of
+SN1987A, see Fig. 2, whose progenitor was a blue supergiant star
+(while, as we will see, single star evolution only predicts red
+supergiants and possibly H-free stars).
+</p>
+
+
+
+<figure id="org053426d">
+<img src="./images/87a_complete_zoom.png" alt="87a_complete_zoom.png" width="100%">
+
+<figcaption><span class="figure-number">Figure 2: </span>Right panel: the arrow points at the Blue supergiant progenitor Sanduleak -69 202 observed &sim; one month before the explosion by the Anglo-Australian Telescope. Left panel: SN1987A saturating the same telescope. Zoom in shows the three ring morphology illuminated by the supernova.</figcaption>
+</figure>
+
+
+<p>
+The advent of <i>Gaia</i> space-based astrometry, the direct detection of
+gravitational waves, the expanded capabilities (in timing and depth)
+of time-domain surveys and precision of photometry (allowing for
+asteroseismology of large samples) with KEPLER first, TESS now, and
+PLATO in the future have ushered a real renaissance of this field,
+providing data and theoretical questions that require deeper
+understanding of stellar physics. Together with the development of
+<b>open-source</b> and <b>community-driven</b> tools to address these questions,
+this has revived significantly the field of stellar evolution, so much
+so that the <a href="https://www.nationalacademies.org/projects/DEPS-BPA-18-01">Astro2020 decadal survey</a> identified understanding stellar
+evolution and interactions as a key priority! In this course, we will
+cover the basics needed to contribute to this efforts, and in the
+second half, you will review some topics for which active research is
+ongoing.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org6d659fa" class="outline-3">
+<h3 id="org6d659fa"><a href="#org6d659fa">What determines the properties of a (single) star?</a></h3>
+<div class="outline-text-3" id="text-org6d659fa">
+<ol class="org-ol">
+<li><b>Mass</b></li>
+<li>Chemical composition</li>
+<li>Presence of other stellar companion(s)</li>
+<li>Rotation</li>
+<li>Magnetic fields</li>
+</ol>
+
+<div class="org-drawer-container">
+  <button class="org-drawer-toggle" onclick="toggleDrawer('drawer-Question-8500')">Question ▼</button>
+  <div id="drawer-Question-8500" class="org-drawer-content" style="display: none;"><ul class="org-ul">
+<li><b>Q</b>: what is a star made of? Can you think of a star made of something
+else? Mention <a href="https://en.wikipedia.org/wiki/Cecilia_Payne-Gaposchkin">Cecilia Payne-Gaposchkin</a>.</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org37e2dfe" class="outline-3">
+<h3 id="org37e2dfe"><a href="#org37e2dfe">Observations</a></h3>
+<div class="outline-text-3" id="text-org37e2dfe">
+<ul class="org-ul">
+<li>Photometry</li>
+<li>Spectroscopy</li>
+<li>Astrometry</li>
+<li>Asteroseismology (either through photometry or spectroscopy)</li>
+<li>Neutrinos</li>
+</ul>
+</div>
+
+<div id="outline-container-orgba834f4" class="outline-4">
+<h4 id="orgba834f4"><a href="#orgba834f4">Parallax</a></h4>
+<div class="outline-text-4" id="text-orgba834f4">
+<p>
+In astrophysics (and in stellar physics in particular) we still use
+quantities and units that have mostly a historical justification (one
+could say for "backward compatibility" to borrow software development
+language).
+</p>
+
+<p>
+The yearly apparent motion on the sky of stars (w.r.t. to farther
+stars that are too far to exhibit this behavior) due to the orbit of
+the Earth around the Sun is called <i>parallax</i>. A commonly used unit of
+distance in astronomy is the <i>parsec</i> = distance of a star with a
+parallax of one arcsecond:
+</p>
+
+<div class="latex" id="org97d9b13">
+\begin{equation}
+1\,\mathrm{pc} \simeq 3\times10^{18}\,\mathrm{cm} \simeq 2 \times 10^{5}\,{\rm au} \simeq 3\,\mathrm{light\ years} \ \ .
+\end{equation}
+
+</div>
+
+<p>
+This is a measure of distance that can be used for stars
+with relatively small distances to the Solar system.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgc4beff9" class="outline-4">
+<h4 id="orgc4beff9"><a href="#orgc4beff9">Proper motion and radial velocity</a></h4>
+<div class="outline-text-4" id="text-orgc4beff9">
+<p>
+We can also see how stars move in the sky, but we need two different
+techniques to measure the velocity <i>on the plane of the sky</i> (so called
+proper motion), and <i>towards</i> or <i>away</i> from us (so called "radial
+velocity", as in the radial direction in a sphere centered on the
+observer).
+</p>
+
+<p>
+But even before considering those, we need to remove all the apparent
+motions due to the Earth rotation:
+</p>
+
+
+<figure id="orgaf62969">
+<img src="./images/night_rotation.jpg" alt="night_rotation.jpg" width="100%">
+
+<figcaption><span class="figure-number">Figure 3: </span>Long exposure picture showing circular tracks along the north direction. These are just the reflected motion due to the rotation of the Earth. Note the stars have different colors! Credits: G. Inchingolo.</figcaption>
+</figure>
+
+
+<p>
+We also have to remove the apparent motion due to the orbit of the
+Earth around the Sun, and the motion of the Sun and solar system
+across the Galaxy (which includes a component of "peculiar motion",
+that is a deviation from the galactic rotation curve).
+</p>
+
+<p>
+Once all that cleaning is done, we can see the intrinsic projected
+motion of a star on the sky, so called <i>proper motion</i> (sometimes
+indicated with &mu; or pm). All that requires is a long timeline (since &mu;
+&cong; arcsin((v<sub>&parallel;</sub> &times; &Delta; t)/d) with v<sub>&parallel;</sub> transverse
+velocity (i.e., on the plane of the sky), &Delta; t time baseline and d
+distance of the star, and a reference frame.
+</p>
+
+<p>
+<b>N.B.:</b> The proper motion is an <i>angle on the plane of the sky per unit
+time</i>. Converting proper motions to physical velocity requires knowing
+the distance d, which is usually hard! Moreover, d is very large
+typically (d &Gt; 1 pc), so measuring &mu; requires long time baselines and
+very accurate instruments.
+</p>
+
+
+<figure id="orgabe1e0a">
+<img src="./images/Proper_motion.JPG" alt="Proper_motion.JPG" width="50%">
+
+<figcaption><span class="figure-number">Figure 4: </span>Schematic representation of the proper motion</figcaption>
+</figure>
+
+<p>
+For the motion orthogonal to the plane of the sky, that is the motion
+away/towards the observer, that is the so called <i>radial velocity</i> (RV)
+through the Doppler shift of spectral lines (we will talk more about
+these later in the course). These sometimes can be periodic and thus
+caused by either pulsations of the stellar atmosphere or Keplerian
+orbital motion around a (possibly unseen) companion star, or they can
+be constant (on timescales much shorter than the period of the orbit
+of the star around the Galactic center) and thus reveal intrinsic
+motion. In general, one does not look at just one spectral line, but a
+"series" of lines (e.g., the series coming from all the transitions of
+electrons across energy levels of a specific ion).
+</p>
+
+
+<figure id="org45603cd">
+<img src="./images/Halpha_shift.png" alt="Halpha_shift.png" width="50%">
+
+<figcaption><span class="figure-number">Figure 5: </span>Schematic representation of radial velocity shifts. Credits: Y. Gotberg.</figcaption>
+</figure>
+</div>
+</div>
+
+<div id="outline-container-orgcd78439" class="outline-4">
+<h4 id="orgcd78439"><a href="#orgcd78439">Magnitudes</a></h4>
+<div class="outline-text-4" id="text-orgcd78439">
+<p>
+The magnitude scale is a logarithmic scale first introduces by
+<a href="https://en.wikipedia.org/wiki/Hipparchus">Hipparchus</a>, who clearly was only able to do naked-eye observations.
+This explains why a logarithmic scale: the sensory responses are often
+logarithmic (see <a href="https://en.m.wikipedia.org/wiki/Weber%E2%80%93Fechner_law">Weber-Fechner's law</a>). The magnitude scale was
+formalized by <a href="https://ui.adsabs.harvard.edu/abs/1856MNRAS..17...12P/abstract">Pogson 1856</a>.
+</p>
+
+<p>
+The magnitudes measure the energy flux from a point-like source (like
+a distant star) and it is a differential measure relative to some
+standard source. Hipparchus was comparing the visual brightness of
+various stars visible in the sky. This is still the basis of (some)
+magnitude systems (e.g., Vega). In reality, typically magnitudes are
+provided integrating over a range of frequencies (photometry!)
+accounting for the response of a filter as a function of wavelength
+T(&lambda;):
+</p>
+
+<div class="latex" id="org4b2f2d4">
+\begin{equation}
+m = -2.5\log_{10}\left(\frac{\int T(\lambda)F_{\lambda}d\lambda}{\int T(\lambda) d\lambda}\right) + m_{0} \ \ ,
+\end{equation}
+
+</div>
+
+<p>
+where m<sub>0</sub> is the reference magnitude, F<sub>&lambda;</sub> is the monochromatic
+flux of the source, and the factor of -2.5 is chosen so that the
+magnitudes measured this way roughly agree with Hipparchus'.
+<i>An increase of 5 magnitudes corresponds to an increase in flux
+of a factor of 100</i>.
+</p>
+
+<p>
+The <i>bolometric</i> magnitude is the magnitude across all wavelengths for
+an idealized perfect detector (T(&lambda;) = 1 &forall; &lambda;). If the distance of a
+source is known, we can then infer its intrinsic luminosity from this.
+</p>
+
+<p>
+The <i>apparent</i> magnitude m we just defined is a measure of the actual
+photon flux received from a source (e.g., a star) on Earth, but that
+of course depends on how far the source is from Earth (a candle in
+your hand has a higher apparent magnitude than Betelgeuse in the
+sky!). Therefore, astronomer also introduced the <i>absolute</i> magnitude as
+the apparent magnitude a star would have if it were at a distance of
+10pc from the Sun, thus the relation between apparent magnitude m and
+absolute magnitude M is
+</p>
+
+<div class="latex" id="org3933085">
+\begin{equation}\label{eq:abs_magn}
+M - m = -2.5\log_{10}\left[\left(\frac{d}{10\mathrm{pc}}\right)^{2}\right] \ \,
+\end{equation}
+
+</div>
+
+<p>
+where d is the distance, and it is assumed there is no absorption of
+light by the interstellar material.
+</p>
+
+<p>
+For the reference magnitude m<sub>0</sub> there are multiple choices (and there
+are many different magnitude systems because of the T(&lambda;) and m<sub>0</sub>
+choices!). For instance, typically the star Vega (&alpha; Lyrae) is used as
+a standard and by definition its magnitude in U, B, and V band in the
+Vega-based magnitude system is zero. So for magnitude M=0 we have a
+specific (i.e., per unit frequency) radiative energy flux of 3.5&times;10<sup>-20</sup>
+erg cm<sup>-2</sup> s<sup>-1</sup> Hz<sup>-1</sup> corresponding to a photon flux of N<sub>&lambda;</sub> &cong;
+10<sup>3</sup> photons cm<sup>-2</sup> s<sup>-1</sup> Å<sup>-1</sup> for the visual band.
+</p>
+
+<div class="org-drawer-container">
+  <button class="org-drawer-toggle" onclick="toggleDrawer('drawer-Question-9504')">Question ▼</button>
+  <div id="drawer-Question-9504" class="org-drawer-content" style="display: none;"><ul class="org-ul">
+<li><b>Q</b>: why the square within the argument of the logarithm in Eq.
+\ref{eq:abs_magn}?</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org7819336" class="outline-2">
+<h2 id="org7819336"><a href="#org7819336">Relevant physical scales</a></h2>
+<div class="outline-text-2" id="text-org7819336">
+<p>
+The star we can observe best is the closest one, the Sun (☉), so a
+lot of quantities are scaled to those of the Sun in stellar physics
+and in astronomy more generally.
+</p>
+</div>
+
+<div id="outline-container-orgaa7ab73" class="outline-3">
+<h3 id="orgaa7ab73"><a href="#orgaa7ab73">Solar radius: \(R_{☉} = 6.957\times10^{10}\) cm &cong; 7&times;10<sup>10</sup> cm &cong; 10<sup>11</sup> cm</a></h3>
+<div class="outline-text-3" id="text-orgaa7ab73">
+<div class="org-drawer-container">
+  <button class="org-drawer-toggle" onclick="toggleDrawer('drawer-Question-135')">Question ▼</button>
+  <div id="drawer-Question-135" class="org-drawer-content" style="display: none;"><ul class="org-ul">
+<li><b>Q</b>: How many R<sub>☉</sub> are in 1 AU?</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org10edf19" class="outline-3">
+<h3 id="org10edf19"><a href="#org10edf19">Solar mass: \(M_{☉} = 1.98\times10^{33}\) g &cong; 2&times;10<sup>33</sup> g</a></h3>
+</div>
+
+<div id="outline-container-orgeb246e0" class="outline-3">
+<h3 id="orgeb246e0"><a href="#orgeb246e0">Solar luminosity: \(L_{☉} = 3.82\times10^{33}\) erg s<sup>-1</sup> &cong; 2&times; \(M_{☉}\) in cgs units!</a></h3>
+<div class="outline-text-3" id="text-orgeb246e0">
+<p>
+This may be one of the reasons why we still use <code>cgs</code> in astronomy,
+the other one being that the constants in electromagnetism are a
+bit simpler.
+</p>
+</div>
+</div>
+<div id="outline-container-orgd00c6c0" class="outline-3">
+<h3 id="orgd00c6c0"><a href="#orgd00c6c0">Solar effective temperature: \(T_{☉}\) &cong; 5900K &cong; 6000K</a></h3>
+<div class="outline-text-3" id="text-orgd00c6c0">
+<p>
+This is the "effective temperature" of the Sun, which we will discuss
+in the <a href="notes-lecture-CMD-HRD.html">next lecture</a>. It is an approximation for the temperature of the
+surface below which the radiation field is isotropic - that is the
+stellar interior - and above which there is a net radial flux of
+photons - that is the stellar atmosphere (but photons can still move
+around in any direction, it's just on average there are more moving in
+the positive r direction). Stars don't really have a well defined
+"surface" and their spectra form in the atmospheric layers.
+</p>
+</div>
+</div>
+<div id="outline-container-org5ec4a62" class="outline-3">
+<h3 id="org5ec4a62"><a href="#org5ec4a62">Solar metallicity: \(Z_{☉}\) = 0.0146 &cong; 0.02 (older but still widely used value)</a></h3>
+<div class="outline-text-3" id="text-org5ec4a62">
+<p>
+The "metallicity" is the fraction by mass of gas that is <i>not</i> hydrogen
+nor helium. This includes many elements (e.g., C, N, O, Si) that a
+chemist would not call "metals". See <a href="https://webelements.com/">here</a> for an online periodic table
+of elements.
+</p>
+
+<p>
+Often, for lack of better knowledge available, we assume that the
+distribution of metals scales with the Solar distribution, sometimes
+allowing for enhancement of &alpha; particles (e.g., carbon, oxygen, neon,
+and all other elements that can approximately be thought of as N &alpha;
+particles bound together where &alpha; particle = nucleus of helium 4).
+</p>
+
+
+<figure id="org199e47c">
+<img src="./images/solar_abundance_pattern.png" alt="solar_abundance_pattern.png" width="100%">
+
+<figcaption><span class="figure-number">Figure 6: </span>Solar abundance pattern from <a href="https://ui.adsabs.harvard.edu/abs/1989AIPC..183....1G/abstract">Anders &amp; Grevesse 1989</a>. This shows the number of atoms normalized to 10<sup>6</sup> atoms of Silicon as a function of atomic number A. Often, for lack of better knowledge, this (or more recent updates to it) is the abundance pattern that is rescaled when changing the metallicity in a model.</figcaption>
+</figure>
+
+
+<p>
+A common notation is also [X/H] = log<sub>10</sub>[(n<sub>X</sub>/n<sub>H</sub>)/(n<sub>X</sub>/n<sub>H</sub>)<sub>☉</sub>] where n<sub>X</sub>
+is the number of ions of species X and n<sub>H</sub> is the number of protons
+(i.e., hydrogen positive ions!). Often, [Fe/H] can be used as a proxy for
+the metallicity (i.e., taking X=Fe).
+</p>
+
+<div class="org-drawer-container">
+  <button class="org-drawer-toggle" onclick="toggleDrawer('drawer-Question-8499')">Question ▼</button>
+  <div id="drawer-Question-8499" class="org-drawer-content" style="display: none;"><ul class="org-ul">
+<li><b>Q</b>: Any idea why Fe here?</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orge2181a6" class="outline-3">
+<h3 id="orge2181a6"><a href="#orge2181a6">Lifetimes: \(\sim\) 3 Myr to \(\gg\) age of the Universe (&cong; 13.7 Gyr)</a></h3>
+<div class="outline-text-3" id="text-orge2181a6">
+<div class="org-drawer-container">
+  <button class="org-drawer-toggle" onclick="toggleDrawer('drawer-Question-5391')">Question ▼</button>
+  <div id="drawer-Question-5391" class="org-drawer-content" style="display: none;"><ul class="org-ul">
+<li><b>Q</b>: How old is the Sun? How long will it live? How do we know?</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-orgbf3fd53" class="outline-2">
+<h2 id="orgbf3fd53"><a href="#orgbf3fd53">Homework</a></h2>
+<div class="outline-text-2" id="text-orgbf3fd53">
+</div>
+<div id="outline-container-orgeae6a3a" class="outline-3">
+<h3 id="orgeae6a3a"><a href="#orgeae6a3a">General considerations</a></h3>
+<div class="outline-text-3" id="text-orgeae6a3a">
+<ul class="org-ul">
+<li>As per the syllabus, homework should be your own production,
+though you can discuss with your peers. Science is made of
+collaborations, but you are expected to be able to do all the
+homeworks yourself.</li>
+<li>Always consult <a href="https://d2l.arizona.edu/d2l/home/1701369">D2L</a> for official deadlines. If you need an
+extension, it should be agreed upon at least <b>one day before the
+official deadline</b>.</li>
+<li>Throughout the course the typology of exercises and difficulty
+will vary. This is normal also when doing research: not every task
+is as easy/as hard as the next. If you encounter difficulties,
+keep in mind that it's only an opportunity to grow and improve!</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org2e0f021" class="outline-3">
+<h3 id="org2e0f021"><a href="#org2e0f021">Specific assignments for today</a></h3>
+<div class="outline-text-3" id="text-org2e0f021">
+<ul class="org-ul">
+<li>Calculate the average density of the Sun and compare it with the
+density of something familiar on Earth.</li>
+<li>Start looking over the <a href="projects.html#org2f5c1ee">list of final projects</a>, you will need to
+provide a ranked list of 5 preferences. Feel free to search
+the web/literature to decide. Based on this list, I will try to
+assign projects and peer-referees, but it may not be possible to
+satisfy everyone. If you want, feel free to come up with different
+subjects related to stellar physics as well to propose, but you need
+to talk to me to get them approved before they can be on your list!</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<div class="footer">
+  <hr>
+  <a href="#light-dark-toggle"><i id="light-dark-toggle"><i class="fa-solid fa-circle-half-stroke"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="index.html"><i class="fa-solid fa-arrow-left" style="font-size:16px"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="#top"><i class="fa-solid fa-arrow-up" style="font-size:16px"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="notes-lecture-CMD-HRD.html"><i class="fa-solid fa-arrow-right" style="font-size:16px"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="https://github.com/mathren/stellar_phys_545"><i class="fa-brands fa-github" style="font-size:16px"></i></a><hr>
+  <br>
+  Last updated on 14 January 2026 <br>
+  Made with Emacs 29.2 - Org mode 9.6.15
+  <br>
+</div>
+</div>
+</body>
+</html>

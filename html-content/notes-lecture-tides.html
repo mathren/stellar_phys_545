@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- 2026-01-13 Tue 14:50 -->
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>ASTR545 - Tides</title>
+<meta name="author" content="Mathieu Renzo" />
+<meta name="generator" content="Org Mode" />
+<link rel="stylesheet" href="./css/style.css" />
+<link rel="stylesheet" href="./fontawesome-free-6.7.2-web/css/all.min.css">
+<meta name="keywords" content="Mathieu, Renzo, Mathieu Renzo,
+			       stellar evolution, ASTR545, PYTS545, 545, University of
+			       Arizona, Steward Observatory, stars,
+			       theoretical astrophysics">
+
+
+<script>
+function toggleDrawer(drawerId) {
+  var content = document.getElementById(drawerId);
+  var button = content.previousElementSibling;
+
+  if (content.style.display === "none") {
+    content.style.display = "block";
+    button.innerHTML = button.innerHTML.replace("▼", "▲");
+  } else {
+    content.style.display = "none";
+    button.innerHTML = button.innerHTML.replace("▲", "▼");
+  }
+}
+</script>
+<script>
+  window.MathJax = {
+    tex: {
+      ams: {
+        multlineWidth: '85%'
+      },
+      tags: 'ams',
+      tagSide: 'right',
+      tagIndent: '.8em'
+    },
+    chtml: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    svg: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    output: {
+      font: 'mathjax-modern',
+      displayOverflow: 'overflow'
+    }
+  };
+</script>
+
+<script
+  id="MathJax-script"
+  async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+</head>
+<body>
+<div id="preamble" class="status">
+<!-- Preamble -->
+<!-- The header -->
+<div class="header">
+
+  <!-- The site name -->
+  <div class="site-name">
+    <a id="top" href="./index.html">Stellar Evolution</a>
+  </div>
+
+  <!-- The hamburger -->
+  <div class="hamburger">
+    <div id="myLinks" class="menu">
+      <a href="./index.html">Home</a>
+      <a href="./syllabus.html">Syllabus</a>
+      <a href="./lectures.html">Lectures</a>
+      <a href="./projects.html">Projects</a>
+    </div>
+    <a  href="javascript:void(0);" class="icon" onclick="HamburgerMenuFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+
+  <div class="navbar">
+    <a href="./syllabus.html">Syllabus</a>
+    <a href="./lectures.html">Lectures</a>
+    <a href="./projects.html">Projects</a>
+  </div>
+</div>
+
+<!-- scripts -->
+<script>
+  function HamburgerMenuFunction() {
+      var x = document.getElementById("myLinks");
+      if (x.style.display === "block") {
+	  x.style.display = "none";
+      } else {
+	  x.style.display = "block";
+      }
+  }
+</script>
+
+<script>
+  window.onload = () => {
+      const toggleButton = document.getElementById("light-dark-toggle");
+      const body = document.body;
+      const html = document.documentElement;
+
+
+      // Check localStorage for user preference
+      if (localStorage.getItem("theme") === "dark") {
+          body.classList.add("dark-mode");
+	  html.classList.toggle("dark-mode");
+      }
+
+      // Toggle theme on click
+      toggleButton.addEventListener("click", () => {
+          body.classList.toggle("dark-mode");
+	  html.classList.toggle("dark-mode");
+
+          // Save user preference
+          if (body.classList.contains("dark-mode")) {
+              localStorage.setItem("theme", "dark");
+          } else {
+              localStorage.setItem("theme", "light");
+          }
+      });
+  };
+</script>
+<!-- end scripts-->
+</div>
+<div id="content" class="content">
+<p>
+<b>Materials:</b> <a href="https://ui.adsabs.harvard.edu/abs/1977A%26A....57..383Z/abstract">Zahn 1977</a>, <a href="https://ui.adsabs.harvard.edu/abs/1981A%26A....99..126H/abstract">Hut 1981</a> <a href="https://ui.adsabs.harvard.edu/abs/2002MNRAS.329..897H/abstract">Hurley et al. 2002</a>, Tauris &amp; Van den
+Heuvel book, Ch. 5.3.2 of "Tapestry of Modern Astrophysics" by S. N.
+Shore, <a href="https://ui.adsabs.harvard.edu/abs/2018A%26A...616A..28Q/abstract">Qin et al. 2018</a>, <a href="https://ui.adsabs.harvard.edu/abs/2023MNRAS.524.3978M/abstract">Mirouh et al. 2023</a>
+</p>
+
+<div id="outline-container-orgfe9c2fd" class="outline-2">
+<h2 id="orgfe9c2fd"><a href="#orgfe9c2fd">Tides</a></h2>
+<div class="outline-text-2" id="text-orgfe9c2fd">
+<p>
+When considering the effect of a gravitational potential across an
+<i>extended</i> mass (i.e., whose size is not negligible compared to the size
+of the system), we need to consider <b>tides due to the difference in
+gravitational forces across an extended body</b>.
+</p>
+
+<div class="org-drawer-container">
+  <button class="org-drawer-toggle" onclick="toggleDrawer('drawer-Question-2707')">Question ▼</button>
+  <div id="drawer-Question-2707" class="org-drawer-content" style="display: none;"><ul class="org-ul">
+<li><b>Q</b>: for which kind of binaries do we expect tides to be relevant?</li>
+</ul>
+</div>
+</div>
+
+<p>
+Consider the simplest case of a binary system with masses \(M\) and \(m\)
+at a separation \(r\). For simplicity, let's assume \(M\) to be a point
+mass so we don't have to deal with its structure.
+</p>
+
+<p>
+<b>N.B.:</b> This may not be a bad approximation when the star \(M\) is a
+compact object (NS, BH, or WD).
+</p>
+
+<p>
+The gravitational force acting between the two bodies is
+</p>
+<div class="latex" id="org2a93f2a">
+\begin{equation}\label{eq:newtonian_grav}
+\mathbf{F}_{\rm grav} = -\frac{GMm}{r^{2}}\mathbf{\hat{r}} \ \ .
+\end{equation}
+
+</div>
+<p>
+If the star \(m\) has a radius \(R_{\star}\), there is a difference in the
+gravitational force across the side facing the companion and the one
+facing away, hence a tidal field
+</p>
+<div class="latex" id="orgf928bf4">
+\begin{equation}\label{eq:tide_Def}
+\mathbf{T}(\mathbf{r}) = \mathbf{F}_{\rm grav}(\mathbf{r}) - \mathbf{F}_{\rm grav}(\mathbf{r}+R_{\star}\mathbf{\hat{r}}) = -GMm\left(\frac{1}{r^{2}}-\frac{1}{(\mathbf{r}+R_{\star}\mathbf{\hat{r}})^{2}}\right)\mathbf{\hat{r}} \ \ .
+\end{equation}
+
+</div>
+<p>
+If the stellar radius is much smaller than the separation (\(R_{\star}\ll r\) but
+non-negligible), we can Taylor expand the parenthesis to obtain:
+</p>
+<div class="latex" id="org2794e31">
+\begin{equation}
+\left(\frac{1}{r^{2}}-\frac{1}{(\mathbf{r}+R_{\star}\mathbf{\hat{r}})^{2}}\right) \simeq \frac{2R_{\star}}{r^{3}} \ \ ,
+\end{equation}
+
+</div>
+<p>
+and thus:
+</p>
+<div class="latex" id="org0a3f1f3">
+\begin{equation}
+\mathbf{T}(\mathbf{r}) = - \frac{2GMmR_{\star}}{r^{3}}\mathbf{\hat{r}} \propto \frac{1}{r^{3}} \ \ .
+\end{equation}
+
+</div>
+<p>
+To first order in \(R_{\star}/r\), the tidal forces resulting from differences
+in the gravitational field created by a body scale like \(\propto r^{-3}\),
+meaning the tidal field drops <i>faster</i> than the gravitational field \(\propto
+r^{-2}\). For wide systems tides are usually negligible (although this
+depends also on the masses and radii). Viceversa, for very close
+binaries, tides can be an important perturbation.
+</p>
+
+<p>
+Note also how the tidal force is directed along the separation between
+the two bodies.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org6a349a8" class="outline-2">
+<h2 id="org6a349a8"><a href="#org6a349a8">Non-perturbative tides: tidal disruption radius</a></h2>
+<div class="outline-text-2" id="text-org6a349a8">
+<p>
+From the functional dependence on \(r\), we can see that at small
+separation the tidal field can become strong. Could it exceed the
+self-gravity of the star \(m\)?
+</p>
+<div class="latex" id="org87657ba">
+\begin{equation}\label{eq:tidal_dis_radius}
+\lvert \mathbf{T} \rvert \ge \frac{Gm^{2}}{R_{\star}^{2}} \Rightarrow r\le r_{\rm TD} = \left(\frac{2M}{m}\right)^{1/3} R_{\star} \ \ ,
+\end{equation}
+
+</div>
+<p>
+If the separation \(r\) is smaller than the so-called tidal-disruption
+radius \(r_{\rm TD}\), the tidal field generated by \(M\) will tear apart the
+star \(m\), that is we get a <b>tidal disruption event</b>.
+</p>
+
+<p>
+This usually happens with \(M\simeq M_{\rm SMBH} \gtrsim 10^{6}M_{☉}\), i.e., for
+stars forming a binary with a super-massive BH (typically on an
+hyperbolic orbit, if the periastron distance is smaller than \(r_{\rm
+TD}\)). However, the resulting transient can be detected in
+electromagnetic observations only if the tidal disruption occurs
+outside of the event of horizon, that is \(r_{\rm TD} \ge r_{g} = 2GM/c^{2}\),
+which effectively puts a $(m, R<sub>*</sub>)$-dependent upper limit on \(M\) for a
+tidal disruption event to occur.
+</p>
+
+<div class="org-drawer-container">
+  <button class="org-drawer-toggle" onclick="toggleDrawer('drawer-Question-5327')">Question ▼</button>
+  <div id="drawer-Question-5327" class="org-drawer-content" style="display: none;"><ul class="org-ul">
+<li><b>Q</b>: For an intermediate mass BH of \(M=1000\,M_{☉}\), what type of star
+could lead to a tidal disruption event (in terms of \(m\) and \(R_{\star}\))?</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org644c5df" class="outline-2">
+<h2 id="org644c5df"><a href="#org644c5df">Tides as a perturbation</a></h2>
+<div class="outline-text-2" id="text-org644c5df">
+<p>
+Let's now consider the regime \(r\gg r_{\rm TD} (\gg R_{\star})\), in which case (cf. Eq.
+\ref{eq:tidal_dis_radius}), the tidal field \(\mathbf{T}\) is a small
+perturbation over the self-gravity of the stars.
+</p>
+
+<p>
+<b>N.B.:</b> We can already intuitively expect that the tides are sensitive
+to \(R_{\star}/r\).
+</p>
+
+<p>
+The presence of this perturbation will cause deviations from spherical
+symmetry (since the perturbation is <i>not</i> a central force!). This means
+the gas of star \(m\) will have a bulge (more extended than a sphere
+along the separation), and \(\nabla\rho\times\nabla P \ne 0\).
+</p>
+
+<p>
+Consider now the interplay between tides and stellar rotation. If the
+star is rotating non-synchronously with the orbit (i.e., \(\omega_{\rm
+surf}\ne\omega_{\rm orb}\)), then the bulge will lag (if \(\omega_{\rm surf}<\omega_{\rm orb}\)) or
+anticipate the orbit (if \(\omega_{\rm surf}\ge\omega_{\rm orb}\), which is a situation
+observed in nature, cf. <a href="https://ui.adsabs.harvard.edu/abs/2024A%26A...684A..35B/abstract">Britavskiy et al. 2024</a>, <a href="https://ui.adsabs.harvard.edu/abs/2024A%26A...684A..35B/abstract">Naze et al. 2026</a>).
+</p>
+
+<div class="org-drawer-container">
+  <button class="org-drawer-toggle" onclick="toggleDrawer('drawer-Question-3716')">Question ▼</button>
+  <div id="drawer-Question-3716" class="org-drawer-content" style="display: none;"><ul class="org-ul">
+<li><b>Q</b>: Does the deformed non-synchronously rotating star structure match
+equipotential surfaces?</li>
+</ul>
+</div>
+</div>
+
+<p>
+The deformation induced by tides, combined with the lag/anticipation
+make the structure of star \(m\) <i>not</i> match equipotential surfaces: we
+have an "out-of-equilibrium" situation! In the limit of <i>small</i> tides,
+these will generate perturbations on the structure: the bulge is not
+aligned with equipotentials, therefore the gas feels gravitational
+forces (due to the gradient of the potential that is <i>not</i> vanishing)
+that accelerate it and provide it with kinetic energy (taken from the
+orbital energy by means of the tides). Similarly, this force can
+torque the gas, allowing for angular momentum exchanges between the
+orbit and the star.
+</p>
+
+<p>
+This excess kinetic energy (w.r.t. the same star \(m\) in isolation)
+usually manifests itself as waves excited in the star. The key
+question for tidal evolution is <i>how are these waves excited by tides
+dissipated</i>? The dissipation rate determines the coupling between the
+structure of star \(m\) and the orbit, and thus the (poorly known) rate
+at which the system will recover equilibrium.
+</p>
+
+<p>
+For a circular binary, every half-period the situation is identical by
+symmetry, so we can deduce the dominant time-frequency for the effects
+of tides:
+</p>
+<div class="latex" id="org9edf57f">
+\begin{equation}\label{eq:tides_freq}
+\omega_{\rm tides}\simeq 2(\omega_{\rm surf}-\omega_{\rm orb}) \ll \tau_{\rm ff}^{-1} \ \ ,
+\end{equation}
+
+</div>
+<p>
+which implies that tides act much slower than the dynamical timescale:
+the perturbations that they induce can be treated in a "quasi-static"
+approximation (the gas velocity induced by the tidal perturbations are
+very small compared to thermal velocities).
+</p>
+
+<p>
+We have already implicitly defined the equilibrium condition that the
+dissipation of tidal perturbation aims for! If \(\omega_{\rm surf}=\omega_{\rm orb}\)
+there is no lag/anticipation, and star \(m\) fills equipotentials of the
+combined potential of the two bodies \(M\) and \(m\). However, this works
+only if there is no change in orbital velocity across the orbit, so
+only for circular binaries! In the case of an eccentric binary, the
+bulge may not be able to follow the change in equipotential surfaces
+along the orbital period. Therefore, the equilibrium condition (which
+minimizes the orbital energy of the system) is both:
+</p>
+<ol class="org-ol">
+<li>circularization of the orbit (\(e=0\))</li>
+<li>synchronization of rotation and orbital revolution (\(\omega_{\rm surf}=\omega_{\rm orb}\))</li>
+</ol>
+
+<p>
+If an binary fulfills condition 2. with \(e\ne0\), we talk about
+<b>pseudo-synchronization</b>, while both 1. and 2. correspond to a fully
+synchronized orbit.
+</p>
+</div>
+
+<div id="outline-container-org861f893" class="outline-3">
+<h3 id="org861f893"><a href="#org861f893">Tidal evolution for a generic orbit</a></h3>
+<div class="outline-text-3" id="text-org861f893">
+<p>
+For a generic orbit with arbitrary eccentricity and non-synchronized
+rotation rate of \(m\), we expect tides to couple orbital energy and
+angular momentum with the stellar structure (formation and torquing of
+the bulge).
+</p>
+
+<p>
+Since the orbital angular momentum greatly exceed the stellar spins,
+\(J_{\rm orb} \gg J_{\rm spin}\) (think that the orbital separation is a much
+larger lever arm than the stellar radii!), we should expect that
+changing the angular momentum of the stars is easier than changing the
+orbit, that is, we expect <b>pseudo-synchronization</b> of the rotation with
+the orbit before the orbit can <b>circularize</b>.
+</p>
+
+<p>
+The timescales for pseudo-synchronization and circularization are
+determined by the processes by which the tidal perturbations are
+dissipated in the star \(m\) feeling the tides. These are an active area
+of study, and depend on the structure of the envelope of the star
+where the tides are stronger and most perturbing
+</p>
+<ul class="org-ul">
+<li><b>Convective envelopes</b>: the turbulent cascade within the convective
+region pumps the extra energy provided by tides to small scales
+until the gas viscosity dissipates it into heat. This process is
+very efficient, so we can assume the tidal bulge to be <b>hydrostatic</b>
+albeit misaligned, and use this to calculate the torques and
+dissipation timescale. In this case we talk about <b>equilibrium tides</b>.</li>
+<li><b>Radiative envelope</b>: tides excite waves in the stably stratified
+envelope, meaning we need to consider the <b>dynamics</b> of the gas in the
+envelope. These waves can be <i>gravity waves</i> (restoring force is
+buoyancy), <i>pressure waves</i> (restoring force is pressure gradient), or
+<i>inertial wave</i> (restoring force is Coriolis) - see also
+<a href="./notes-lecture-asteroseismology.html">lecture on asteroseismology</a>.</li>
+</ul>
+<p>
+For the latter case, the problem becomes determining which waves (and
+modes) are excited in the star, how they propagate and eventually
+dissipate.
+</p>
+
+<p>
+The dominant paradigm to treat this is the <b>radiative dissipation</b> model
+from <a href="https://ui.adsabs.harvard.edu/abs/1977A%26A....57..383Z/abstract">Zahn 1977</a>: the idea is that as waves travel to the surface at
+lower optical depth, radiation can leak out causing the waves to lose
+energy. Note however that Zahn's calculations of the tidal
+pseudo-synchronization and circularization timescales implemented in
+many codes are based on zero-age main sequence models of massive stars
+with radiative envelopes: because of the core-evolution during the
+main sequence, this in general underestimates the size of the envelope
+(the core shrinks as the star evolve), and can lead to underestimating
+the timescales (i.e., overestimating the impact of tides).
+</p>
+
+<p>
+A key problem is if these waves can hit resonances in the stellar
+structure: resonant waves may <i>not</i> damp at all!
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org038ce0e" class="outline-2">
+<h2 id="org038ce0e"><a href="#org038ce0e">Observational evidence: P(e) diagram</a></h2>
+<div class="outline-text-2" id="text-org038ce0e">
+<p>
+As we have seen above, when the size of the stars is non-negligible
+compared to the size of an orbit, the tides resulting from the
+differences in the gravitational field across the star couple the
+stellar structure (spin and energy profile) with the orbit.
+Modeling this coupling requires in general considering
+out-of-equilibrium stellar structure, wave dissipation, and is an
+active area of research. So how do we know that tides matter?
+Although we cannot directly see the interior structure of stars
+possibly affected by tides, we can see binary orbits!
+</p>
+
+
+<figure id="orgf6aac7d">
+<img src="./images/Pe_M35.png" alt="Fig. 8 in Leiner et al. 2015." width="50%">
+
+<figcaption><span class="figure-number">Figure 1: </span>Eccentricity vs. orbital period (on a logarithmic scale) for binaries in the open cluster M35 from <a href="https://ui.adsabs.harvard.edu/abs/2015AJ....150...10L/abstract">Leiner et al. 2015</a>.</figcaption>
+</figure>
+
+<p>
+The figure above exemplifies the kind of observations that can be used
+to constrain tides. Using multi-epoch spectroscopic campaigns, one can
+measure the orbital properties of binaries (including \(P\leftrightarrow\omega_{\rm orb}\) and
+\(e\)). Focusing on a specific cluster, one can analyze a co-eval
+population of binaries.
+</p>
+
+<p>
+The significant lack of eccentricity for \(P\lesssim 10\) days suggest
+that for such short period the circularization timescale by tides is
+short compared to the lifetime of these binaries. At large \(P\) instead
+any eccentricity is possible, suggesting a certain initial
+distribution of eccentricities and negligible impact of tidal
+interactions.
+</p>
+
+<p>
+<b>N.B.:</b> this example <i>is</i> representative: many clusters show qualitatively
+similar \(e(P)\) distributions with the "circularization period" (i.e.,
+the period below which all binaries are consistent with \(e\approx0\)) mildly
+depending on the age of the cluster, see for example <a href="https://ui.adsabs.harvard.edu/abs/2005ApJ...620..970M/abstract">Meibom &amp; Mathieu
+2005</a>.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgebda196" class="outline-2">
+<h2 id="orgebda196"><a href="#orgebda196">Example of application: the spin of the second born BH</a></h2>
+</div>
+</div>
+<div id="postamble" class="status">
+<div class="footer">
+  <hr>
+  <a href="#light-dark-toggle"><i id="light-dark-toggle"><i class="fa-solid fa-circle-half-stroke"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="notes-lecture-CE.html"><i class="fa-solid fa-arrow-left" style="font-size:16px"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="#top"><i class="fa-solid fa-arrow-up" style="font-size:16px"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="notes-lecture-SNe.html"><i class="fa-solid fa-arrow-right" style="font-size:16px"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="https://github.com/mathren/stellar_phys_545"><i class="fa-brands fa-github" style="font-size:16px"></i></a><hr>
+  <br>
+  Last updated on 13 January 2026 <br>
+  Made with Emacs 29.2 - Org mode 9.6.15
+  <br>
+</div>
+</div>
+</body>
+</html>

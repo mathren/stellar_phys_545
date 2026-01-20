@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- 2026-01-13 Tue 14:50 -->
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>ASTR545 - Stellar Neutrinos</title>
+<meta name="author" content="Mathieu Renzo" />
+<meta name="generator" content="Org Mode" />
+<link rel="stylesheet" href="./css/style.css" />
+<link rel="stylesheet" href="./fontawesome-free-6.7.2-web/css/all.min.css">
+<meta name="keywords" content="Mathieu, Renzo, Mathieu Renzo,
+			       stellar evolution, ASTR545, PYTS545, 545, University of
+			       Arizona, Steward Observatory, stars,
+			       theoretical astrophysics">
+
+
+<script>
+function toggleDrawer(drawerId) {
+  var content = document.getElementById(drawerId);
+  var button = content.previousElementSibling;
+
+  if (content.style.display === "none") {
+    content.style.display = "block";
+    button.innerHTML = button.innerHTML.replace("▼", "▲");
+  } else {
+    content.style.display = "none";
+    button.innerHTML = button.innerHTML.replace("▲", "▼");
+  }
+}
+</script>
+<script>
+  window.MathJax = {
+    tex: {
+      ams: {
+        multlineWidth: '85%'
+      },
+      tags: 'ams',
+      tagSide: 'right',
+      tagIndent: '.8em'
+    },
+    chtml: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    svg: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    output: {
+      font: 'mathjax-modern',
+      displayOverflow: 'overflow'
+    }
+  };
+</script>
+
+<script
+  id="MathJax-script"
+  async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+</head>
+<body>
+<div id="preamble" class="status">
+<!-- Preamble -->
+<!-- The header -->
+<div class="header">
+
+  <!-- The site name -->
+  <div class="site-name">
+    <a id="top" href="./index.html">Stellar Evolution</a>
+  </div>
+
+  <!-- The hamburger -->
+  <div class="hamburger">
+    <div id="myLinks" class="menu">
+      <a href="./index.html">Home</a>
+      <a href="./syllabus.html">Syllabus</a>
+      <a href="./lectures.html">Lectures</a>
+      <a href="./projects.html">Projects</a>
+    </div>
+    <a  href="javascript:void(0);" class="icon" onclick="HamburgerMenuFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+
+  <div class="navbar">
+    <a href="./syllabus.html">Syllabus</a>
+    <a href="./lectures.html">Lectures</a>
+    <a href="./projects.html">Projects</a>
+  </div>
+</div>
+
+<!-- scripts -->
+<script>
+  function HamburgerMenuFunction() {
+      var x = document.getElementById("myLinks");
+      if (x.style.display === "block") {
+	  x.style.display = "none";
+      } else {
+	  x.style.display = "block";
+      }
+  }
+</script>
+
+<script>
+  window.onload = () => {
+      const toggleButton = document.getElementById("light-dark-toggle");
+      const body = document.body;
+      const html = document.documentElement;
+
+
+      // Check localStorage for user preference
+      if (localStorage.getItem("theme") === "dark") {
+          body.classList.add("dark-mode");
+	  html.classList.toggle("dark-mode");
+      }
+
+      // Toggle theme on click
+      toggleButton.addEventListener("click", () => {
+          body.classList.toggle("dark-mode");
+	  html.classList.toggle("dark-mode");
+
+          // Save user preference
+          if (body.classList.contains("dark-mode")) {
+              localStorage.setItem("theme", "dark");
+          } else {
+              localStorage.setItem("theme", "light");
+          }
+      });
+  };
+</script>
+<!-- end scripts-->
+</div>
+<div id="content" class="content">
+<p>
+<b>Materials:</b>  Onno Pols' notes Sec. 6.5 and 12.3.1, Chapter 7, Kippenhahn chapter
+9, 10, 11
+</p>
+
+
+<div id="outline-container-org4cbfeec" class="outline-2">
+<h2 id="org4cbfeec"><a href="#org4cbfeec">Neutrino physics in stars</a></h2>
+<div class="outline-text-2" id="text-org4cbfeec">
+<p>
+We have almost seen all the pieces needed to make a one-dimensional
+hydrostatic model of a star, including the input physics in the
+quantities &kappa; (opacity) and &epsilon;<sub>nuc</sub>. The aim of this lecture is to unpack
+the last input quantities entering in the energy conservation which
+connects stellar physics with neutrino physics: &epsilon;<sub>&nu;.</sub>
+</p>
+</div>
+
+<div id="outline-container-org55b2735" class="outline-3">
+<h3 id="org55b2735"><a href="#org55b2735">Summary of equations we have derived</a></h3>
+<div class="outline-text-3" id="text-org55b2735">
+</div>
+<div id="outline-container-org1585d29" class="outline-4">
+<h4 id="org1585d29"><a href="#org1585d29">Mass conservation</a></h4>
+<div class="outline-text-4" id="text-org1585d29">
+<div class="latex" id="orgc006520">
+\begin{equation}\label{eq:mass_cont}
+\frac{dr}{dm} = \frac{1}{4\pi r^{2}\rho}\ \ .
+\end{equation}
+
+</div>
+</div>
+</div>
+
+<div id="outline-container-org0e7bacb" class="outline-4">
+<h4 id="org0e7bacb"><a href="#org0e7bacb">Hydrostatic equilibrium</a></h4>
+<div class="outline-text-4" id="text-org0e7bacb">
+<div class="latex" id="org6eeff29">
+\begin{equation}\label{eq:HSE}
+\frac{dP}{dm} = -\frac{Gm}{4\pi r^{4}} \ \ ,
+\end{equation}
+
+</div>
+<p>
+which follows from the momentum conservation equation assuming the
+acceleration to be negligible <b>N.B.:</b> this last assumption could be
+relaxed to add an extra term in this equation analogous to ma in F=ma.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org36351c5" class="outline-4">
+<h4 id="org36351c5"><a href="#org36351c5">Equation of state</a></h4>
+<div class="outline-text-4" id="text-org36351c5">
+<div class="latex" id="org697a6c9">
+\begin{equation}
+P_\mathrm{tot} = P_\mathrm{gas} + P_\mathrm{rad} = \frac{\rho}{\mu m_{u}}k_{B}T + P_{QM} + \frac{1}{3}aT^{4}  \ \ .
+\end{equation}
+
+</div>
+</div>
+</div>
+
+<div id="outline-container-org3551e6b" class="outline-4">
+<h4 id="org3551e6b"><a href="#org3551e6b">Energy transport</a></h4>
+<div class="outline-text-4" id="text-org3551e6b">
+<div class="latex" id="orgfabab9d">
+\begin{equation}
+\frac{dT}{dm} = \frac{T}{P}\frac{dP}{dm}\nabla
+\end{equation}
+
+</div>
+<p>
+where &nabla; =&part; log(T)/&part; log(P) is the local temperature gradient, equal to
+the radiative gradient in stably stratified regions:
+</p>
+<div class="latex" id="orgd50bb9b">
+\begin{equation}
+\nabla \equiv \nabla_\mathrm{rad} = \frac{3 P}{14\pi acGm T^{4}}\kappa L
+\end{equation}
+
+</div>
+<p>
+with &kappa; = (1/&kappa;<sub>rad</sub> + 1/&kappa;<sub>cond</sub>)<sup>-1</sup> the combination "in parallel" of the
+radiative and conductive opacity (assumed to be known from atomic
+physics), and &nabla; &equiv; &nabla;<sub>ad</sub> the adiabatic gradient (within &sim;10<sup>-7-8</sup>
+precision) for convective regions. We also have a criterion
+(Schwarzschild criterion) to determine which region is which.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgadb0cf6" class="outline-4">
+<h4 id="orgadb0cf6"><a href="#orgadb0cf6">Energy conservation</a></h4>
+<div class="outline-text-4" id="text-orgadb0cf6">
+<div class="latex" id="org4d4b792">
+\begin{equation}
+\frac{dL}{dm} = \varepsilon_\mathrm{nuc} -\varepsilon_{\nu} + \varepsilon_\mathrm{grav} \ \ .
+\end{equation}
+
+</div>
+
+<p>
+with &epsilon;<sub>grav</sub> = T&part; s/&part; t the change in internal energy and &epsilon;<sub>&nu;</sub>&gt;0
+(&rArr; it is always a <i>loss</i> term during stellar evolution).
+</p>
+</div>
+</div>
+
+<div id="outline-container-org2000884" class="outline-4">
+<h4 id="org2000884"><a href="#org2000884">Composition evolution</a></h4>
+<div class="outline-text-4" id="text-org2000884">
+<div class="latex" id="org25acdf5">
+\begin{equation}
+\frac{dX_{i}}{dt} = A_{i}\frac{m_{u}}{\rho}\left(\sum_{k,l} r_{k,l} - \sum_{i,j} (1+\delta_{ij})r_{ij}\right) + D_\mathrm{mix}\frac{dX_{i}}{dr} \equiv \frac{dX_{i}}{dt}(T,\rho, {X_{j}}) \ \ ,
+\end{equation}
+
+</div>
+
+<p>
+where the first two terms represent production and destruction of the
+i-th isotope by nuclear processes and the third term represent mixing
+by various instabilities treated in diffusion approximation.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org91cc71b" class="outline-3">
+<h3 id="org91cc71b"><a href="#org91cc71b">Two types of neutrinos</a></h3>
+<div class="outline-text-3" id="text-org91cc71b">
+<p>
+For the density typical in stellar interior (think of &lang;&rho;<sub>☉</sub>&rang; and the other
+average densities you estimated in the various homeworks), neutrinos
+can safely be considered as non-interacting. This means we can
+consider neutrinos as ultra-relativistic mass-less particles
+propagating at v &cong; c. The mass less approximation also implies that we
+neglect neutrino oscillations: even if a neutrino changes leptonic
+flavor, it's still going to leave the star carrying away its energy!
+</p>
+
+<p>
+<b>N.B.:</b> recall that the leptonic number is <del>1 for the leptons electron
+e<sup>-</sup>, muon &mu;<sup>-</sup>, tau &tau;<sup>-</sup> and the corresponding neutrinos &nu;<sub>e</sub>, &nu;<sub>&mu;</sub>,
+&nu;<sub>&tau;</sub> and -1 for their antiparticles positron e^{</del>}, positive muon &mu;<sup>+</sup>,
+and positive &tau;<sup>+</sup> and the corresponding antineutrinos.
+</p>
+
+<p>
+Therefore, any neutrino produced in the stellar interior leaves the
+star in the light-crossing time R/c &le; 1000 R<sub>☉</sub>/c &cong; 1000 &times;
+2 sec = 2000 sec which is much shorter than evolutionary timescales
+(and even during shorter evolutionary phases such as silicon shell
+burning, the energy carried by the neutrinos is on its way out and
+nothing is going to stop it from leaving the star).
+</p>
+
+<p>
+These arguments apply to both kinds of neutrinos that we encounter in
+stellar evolution (and are about to introduce), and stop working only
+when densities get extremely high (&rho;&ge;10<sup>10</sup> g cm<sup>-3</sup>): at this point
+neutrinos can and do start interacting with matter. Such densities are
+only encountered in a collapsing core that has exhausted nuclear fuel
+and in neutron stars: neutrino interactions are crucial to the physics
+of the supernova explosions, but can safely be neglected before.
+</p>
+
+<p>
+During the evolution of the star that sets the stage for the
+explosion, we encounter two "classes" of neutrinos.
+</p>
+</div>
+
+<div id="outline-container-org5b8c7bf" class="outline-4">
+<h4 id="org5b8c7bf"><a href="#org5b8c7bf">Nuclear neutrinos</a></h4>
+<div class="outline-text-4" id="text-org5b8c7bf">
+<p>
+We have already encountered processes producing neutrinos occurring in
+stars: <i>weak nuclear reactions</i>! These are needed since the main
+sequence (both in the pp chain and CNO) to convert some protons into
+neutrons for the helium nuclei. On the scale of r<sub>nuc</sub>, the neutrino
+crossing time (that is the light crossing time) is so short that we
+can neglect neutrino oscillations and assume conservation of leptonic
+number (for each flavor, but a star will make mostly electron-flavor
+leptons, since muons and \(\tau\) leptons are short lived) to write down
+the equations.
+</p>
+
+<p>
+These neutrinos do carry away energy as described above, <i>but</i> that is
+just some of the energy that the exo-energetic thermonuclear reaction
+would have released. Effectively, they decrease the energy gain from
+releasing nuclear binding energy but they are not a net energy loss.
+</p>
+
+<p>
+This allows to incorporate them in models by re-writing &epsilon;<sub>nuc</sub>
+&rarr; &epsilon;<sub>nuc</sub> - |&epsilon;<sub>&nu;, nuc</sub>|, where the neutrino term is always negative
+(hence we can write it as minus an absolute value), and needs to be
+calculated from nuclear physics, determining the spectrum of the
+neutrino produced by a given reaction (a non-trivial task which
+stellar physics leaves to neutrinos and nuclear physicists).
+</p>
+
+<p>
+<b>N.B.:</b> The nuclear energy scale is 1-10 MeV, we expect nuclear
+neutrinos energy to be of this order of magnitude too!
+</p>
+
+<p>
+Particularly important for the late evolution of massive stars are
+neutrinos from the so-called <i>URCA processes</i> (named after a casino in
+Rio de Janeiro because when these processes kick in the energy of the
+nuclear reaction goes the same way as the money in the casino!):
+</p>
+<div class="latex" id="orgcc39357">
+\begin{equation}
+ ^{A}Z+e^{-}\rightarrow^{A}(Z-1) + \nu_{e  }\\
+ ^{A}(Z-1)\rightarrow ^{A}Z+ e^{+} +\bar{\nu_{e}}
+\end{equation}
+
+</div>
+
+<p>
+which produce one neutrino and one anti-neutrino without changing the
+composition of the star because of an electron capture followed by a
+&beta;<sup>+</sup> decay. This requires that the nucleus \(^{A}(Z-1)\) is unstable to
+&beta;<sup>-</sup>-decay and the cross section for electron capture on \(^AZ\) is
+non-negligible, which can happen during Si core burning and the
+subsequent gravitational collapse of the core once the nuclear fuel
+runs out.
+</p>
+
+<p>
+The nuclear neutrinos are mostly sensitive to the core temperature for
+the activation of certain thermonuclear reaction chains (except for
+pycno-nuclear reaction at extremely high densities where the electron
+screening effectively makes the Coulomb barrier negligible).
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgd5bc9ad" class="outline-4">
+<h4 id="orgd5bc9ad"><a href="#orgd5bc9ad">Thermal neutrinos</a></h4>
+<div class="outline-text-4" id="text-orgd5bc9ad">
+<p>
+After helium core burning, the density in the stellar cores become
+sufficiently high (because of the gravothermal collapse) that
+non-nuclear processes producing neutrinos start occurring. After
+carbon depletion, the neutrinos produced by these processes can take
+away more energy than is locally lost to photons by each stellar
+layer: <i>evolved massive stars are neutrino stars</i> L<sub>&nu;</sub>
+&Gt; L<sub>rad</sub> (<a href="https://ui.adsabs.harvard.edu/abs/1968Ap%26SS...2...96F/abstract">Fraley 1968</a>).
+</p>
+
+
+<figure id="orge7483e6">
+<img src="./images/neutrino_HRD.png" alt="neutrino_HRD.png" width="100%">
+
+<figcaption><span class="figure-number">Figure 1: </span>Left: evolutionary tracks on a photon HR diagram. Right: corresponding evolutionary tracks on a "neutrino" HR diagram. This is Fig. 2 from <a href="https://ui.adsabs.harvard.edu/abs/2020ApJ...893..133F/abstract">Farag et al. 2020</a>. Note the y-axis scale in both panels.</figcaption>
+</figure>
+
+
+<p>
+This also effectively means that the stellar core of evolved (&sim; during
+and after carbon core burning) massive stars is <i>decoupled</i> from the
+stellar envelope: the <i>gravothermal collapse of the core occurs to
+compensate the neutrino losses from the core itself</i>! The thermal
+timescale of the core becomes &tau;<sub>KH,&nu;</sub>&cong; GM<sub>core</sub><sup>2</sup>/(2R<sub>core</sub> L<sub>&nu;</sub>) and
+the nuclear timescale becomes &tau;<sub>nuc,&nu;</sub> = &phi; f<sub>burn</sub> Mc<sup>2</sup>/L<sub>&nu;</sub> both of which
+are much shorter than the timescales in the low density, photon-cooled
+envelope: in the late stages of stellar evolution the envelope should
+be <i>frozen</i> and the core evolves driven by neutrino losses.
+</p>
+
+<p>
+<b>N.B.:</b> it is still the energy losses driving the gravothermal collapse
+because of the virial theorem that govern the evolution, but the
+envelope does not have time to keep up with the core.
+</p>
+
+<p>
+<b>N.B.:</b> recently, observations of early signals of stellar explosion
+have questioned this picture of <i>frozen</i> envelope: there <i>may</i> be some
+presently unknown phenomena happening on a <i>dynamical</i> timescale of the
+envelope in the final years/months of a massive star evolution that
+affect the envelope. The fact that they <i>need to be dynamical</i> to do
+anything is related to the fact that the evolution of the core is sped
+up by the thermal neutrino losses.
+</p>
+
+<p>
+The neutrinos that do <i>not</i> come from nuclear reactions are a real
+energy <i>loss</i> term for the star that enter in the local energy
+conservation equation &epsilon;<sub>&nu;</sub> (which is also always negative!): dL/dm =
+&epsilon;<sub>nuc</sub> - |&epsilon;<sub>&nu;</sub>| +&epsilon;<sub>grav</sub>.
+</p>
+
+<p>
+The <i>thermal</i> processes producing these neutrinos typically will produce
+a neutrino-antineutrino <i>pair</i> to conserve the leptonic number.
+Typically only electron neutrinos will be relevant: leptons other than
+e<sup>&plusmn;</sup> are unstable and are not commonly found in stars. They fall into
+several categories (here x={e,&mu;, or &tau;} but in stellar conditions it's
+typically e):
+</p>
+<ul class="org-ul">
+<li>plasmon processes: \(\gamma + \tilde{\gamma} \rightarrow \nu_x + \bar{\nu}_x\),</li>
+<li>bremsstrahlung: \(e^{-} + ^{A}Z \rightarrow e^{-} + ^{A}Z + \nu_x + \bar{\nu}_x\),</li>
+<li>pair-production: \(\gamma + \gamma \rightarrow \nu_x + \bar{\nu}_x\),</li>
+<li>pair annihilation:  \(e^{+}+e^{-} \rightarrow \nu_x + \bar{\nu}_x\) ,</li>
+<li>photo-processes: \(\gamma +e^{-} \rightarrow e^{-} + \nu_x + \bar{\nu}_x\),</li>
+</ul>
+
+
+<figure id="org799f8d5">
+<img src="./images/feynman_diagram_neutrinos.png" alt="feynman_diagram_neutrinos.png" width="100%">
+
+<figcaption><span class="figure-number">Figure 2: </span>Feynman diagrams for the dominant neutrino cooling processes. The top row shows the photo-emission processes, the middle row shows the e± annihilation processes, the bottom row shows the plasmon processes. The neutral (charged) current ractions are in the left (right) column. This is Figure 1 from <a href="https://ui.adsabs.harvard.edu/abs/1993ApJ...411..813A/abstract">Aufderheide 1993</a>, and Z and W represent the boson that mediate weak interactions: the left column shows interactions mediated by the neutral boson Z, while the right column shows interactions mediated by the charged boson W<sup>&plusmn;</sup>.</figcaption>
+</figure>
+
+<p>
+<b>N.B.:</b> "plasmons" are collective excitations of the stellar plasma that
+propagate (the analogy is with "solitons" in fluid dynamics), and can
+be quantized and coupled via quantum electrodynamics to e<sup>&plusmn;</sup>.
+</p>
+
+<p>
+<b>N.B.:</b> The Feynman diagrams of some of these processes above are
+illustrating the processes (and the various pieces that contribute in
+the quantum field theory calculation of the cross section), the
+particles that are not "free legs" are mediators and not real
+particles, do not over-interpret these diagrams as physical pictures!
+</p>
+
+<p>
+Neutrino cooling processes are mostly sensitive to the core density &rho;.
+The typical energy carried away per neutrino-antineutrino pair is of
+the order of the thermal energy of the electrons (i.e.,\(\sim k_{B}T\) or
+their Fermi energy if the region from where the neutrinos are emitted
+is partially degenerate). Thus typically thermal neutrinos will have
+lower energies than the nuclear neutrinos.
+</p>
+
+<p>
+Like &kappa; and &epsilon;<sub>nuc</sub>, the energy losses to thermal neutrinos are usually
+tabulated in stellar physics codes (see especially the widely used
+<a href="https://ui.adsabs.harvard.edu/abs/1996ApJS..102..411I/abstract">Itoh et al. 1996</a>), and the figure below shows the |&epsilon;<sub>&nu;</sub>|
+&equiv; |&epsilon;<sub>&nu;</sub>|(T,&rho;) resulting from these tables:
+</p>
+
+
+<figure id="org52adeb3">
+<img src="./images/Trho_neutrinos.png" alt="Trho_neutrinos.png" width="100%">
+
+<figcaption><span class="figure-number">Figure 3: </span>Neutrino energy losses on the T(&rho;) plane. White lines mark the separation between regions where different neutrino emission processes dominate, the colored lines mark the T(&rho;) tracks of helium cores of the labeled masses (in M<sub>☉</sub> units) computed with MESA. Credits: R. Farmer.</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-orge1e62b6" class="outline-2">
+<h2 id="orge1e62b6"><a href="#orge1e62b6">Homework</a></h2>
+<div class="outline-text-2" id="text-orge1e62b6">
+<ul class="org-ul">
+<li>estimate the typical energy of thermal and nuclear neutrinos</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<div class="footer">
+  <hr>
+  <a href="#light-dark-toggle"><i id="light-dark-toggle"><i class="fa-solid fa-circle-half-stroke"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="notes-lecture-nuclear-cycles.html"><i class="fa-solid fa-arrow-left" style="font-size:16px"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="#top"><i class="fa-solid fa-arrow-up" style="font-size:16px"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="notes-lecture-radTrans.html"><i class="fa-solid fa-arrow-right" style="font-size:16px"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="https://github.com/mathren/stellar_phys_545"><i class="fa-brands fa-github" style="font-size:16px"></i></a><hr>
+  <br>
+  Last updated on 13 January 2026 <br>
+  Made with Emacs 29.2 - Org mode 9.6.15
+  <br>
+</div>
+</div>
+</body>
+</html>

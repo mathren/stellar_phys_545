@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- 2026-01-14 Wed 16:39 -->
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>ASTR545 - Lectures topic-by-topic</title>
+<meta name="author" content="Mathieu Renzo" />
+<meta name="generator" content="Org Mode" />
+<link rel="stylesheet" href="./css/style.css" />
+<link rel="stylesheet" href="./fontawesome-free-6.7.2-web/css/all.min.css">
+<meta name="keywords" content="Mathieu, Renzo, Mathieu Renzo,
+			       stellar evolution, ASTR545, PYTS545, 545, University of
+			       Arizona, Steward Observatory, stars,
+			       theoretical astrophysics">
+</head>
+<body>
+<div id="preamble" class="status">
+<!-- Preamble -->
+<!-- The header -->
+<div class="header">
+
+  <!-- The site name -->
+  <div class="site-name">
+    <a id="top" href="./index.html">Stellar Evolution</a>
+  </div>
+
+  <!-- The hamburger -->
+  <div class="hamburger">
+    <div id="myLinks" class="menu">
+      <a href="./index.html">Home</a>
+      <a href="./syllabus.html">Syllabus</a>
+      <a href="./lectures.html">Lectures</a>
+      <a href="./projects.html">Projects</a>
+    </div>
+    <a  href="javascript:void(0);" class="icon" onclick="HamburgerMenuFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+
+  <div class="navbar">
+    <a href="./syllabus.html">Syllabus</a>
+    <a href="./lectures.html">Lectures</a>
+    <a href="./projects.html">Projects</a>
+  </div>
+</div>
+
+<!-- scripts -->
+<script>
+  function HamburgerMenuFunction() {
+      var x = document.getElementById("myLinks");
+      if (x.style.display === "block") {
+	  x.style.display = "none";
+      } else {
+	  x.style.display = "block";
+      }
+  }
+</script>
+
+<script>
+  window.onload = () => {
+      const toggleButton = document.getElementById("light-dark-toggle");
+      const body = document.body;
+      const html = document.documentElement;
+
+
+      // Check localStorage for user preference
+      if (localStorage.getItem("theme") === "dark") {
+          body.classList.add("dark-mode");
+	  html.classList.toggle("dark-mode");
+      }
+
+      // Toggle theme on click
+      toggleButton.addEventListener("click", () => {
+          body.classList.toggle("dark-mode");
+	  html.classList.toggle("dark-mode");
+
+          // Save user preference
+          if (body.classList.contains("dark-mode")) {
+              localStorage.setItem("theme", "dark");
+          } else {
+              localStorage.setItem("theme", "light");
+          }
+      });
+  };
+</script>
+
+<script>
+function toggleDrawer(drawerId) {
+  var content = document.getElementById(drawerId);
+  var button = content.previousElementSibling;
+
+  if (content.style.display === "none") {
+    content.style.display = "block";
+    button.innerHTML = button.innerHTML.replace("▼", "▲");
+  } else {
+    content.style.display = "none";
+    button.innerHTML = button.innerHTML.replace("▲", "▼");
+  }
+}
+</script>
+<!-- end scripts-->
+</div>
+<div id="content" class="content">
+
+<div id="outline-container-orga4066f1" class="outline-2">
+<h2 id="orga4066f1"><a href="#orga4066f1">Lectures topic-by-topic</a></h2>
+<div class="outline-text-2" id="text-orga4066f1">
+<p>
+This is a rough schedule of the topics we will cover. However, we may
+not get to all topics, depending on progress throughout the semester
+and student interests. The order roughly follows the presentation in
+<a href="https://www.astro.ru.nl/~onnop/">Prof. Onno Pols' notes</a>, but it is subject to changes as the course
+progresses.
+</p>
+
+<p>
+<b>N.B.:</b> The notes provided here are intended to complement, <i>not</i>
+substitute other sources. You are <b>strongly encouraged</b> to consult books
+(e.g., Kippenhahn et al. 2012) and Prof. Onno Pols' notes.
+</p>
+</div>
+
+<div id="outline-container-orgbf37440" class="outline-3">
+<h3 id="orgbf37440"><a href="#orgbf37440"><span class="timestamp-wrapper"><span class="timestamp">2026-01-14 Wed </span></span> - Intro</a></h3>
+<div class="outline-text-3" id="text-orgbf37440">
+<p>
+<b>Aim</b>:
+</p>
+<ul class="org-ul">
+<li>Discuss <a href="./syllabus.html">syllabus</a> and learning outcomes</li>
+<li>Intro questionnaire</li>
+<li>Discuss project, show list</li>
+<li>Discuss expectations and grading rubrics for course and project</li>
+<li>Go over some basics (magnitudes, parallaxes, solar quantities: M<sub>☉</sub>, R<sub>☉</sub>, L<sub>☉</sub>, stellar lifetimes)</li>
+</ul>
+
+<p>
+<a href="./notes-lecture-Intro.html">Notes</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgfda998c" class="outline-3">
+<h3 id="orgfda998c"><a href="#orgfda998c"><span class="timestamp-wrapper"><span class="timestamp">2026-01-16 Fri </span></span> - Color-magnitude and Hertzsprung-Russell diagram</a></h3>
+<div class="outline-text-3" id="text-orgfda998c">
+<p>
+<b>Aim</b>: Introduce color-magnitude diagrams, theoretical HR diagram, and
+how they relate to each other. Review some black body radiation and
+the basics of spectral formation to introduce spectral types.
+</p>
+
+<p>
+<a href="./notes-lecture-CMD-HRD.html">Notes</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org89dd867" class="outline-3">
+<h3 id="org89dd867"><a href="#org89dd867"><span class="timestamp-wrapper"><span class="timestamp">2026-01-19 Mon </span></span> - <b>MLK day: No lecture</b></a></h3>
+</div>
+<div id="outline-container-orgb78eb67" class="outline-3">
+<h3 id="orgb78eb67"><a href="#orgb78eb67"><span class="timestamp-wrapper"><span class="timestamp">2026-01-21 Wed </span></span> - Binaries and mass measurements</a></h3>
+<div class="outline-text-3" id="text-orgb78eb67">
+<p>
+<b>Aim</b>: Introduce the concept of binarity of stars as something <i>not</i>
+exotic. Walk through some classes of binaries based on how we observe
+them (astrometric, visual, spectroscopic, eclipsing) and how they can
+be used for empirical mass determination.
+</p>
+
+<p>
+<a href="./notes-lecture-BIN.html">Notes</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgd0e80a4" class="outline-3">
+<h3 id="orgd0e80a4"><a href="#orgd0e80a4"><span class="timestamp-wrapper"><span class="timestamp">2026-01-23 Fri </span></span> - Hydrostatic equilibrium</a></h3>
+<div class="outline-text-3" id="text-orgd0e80a4">
+<p>
+<b>Aim</b>: Introduce the mass conservation and hydrostatic equilibrium
+equations of stellar evolution. Re-discuss the assumption of spherical
+symmetry. Introduce the dynamical timescale(s). Brief introduction to
+<a href="http://user.astro.wisc.edu/~townsend/static.php?ref=mesa-web-submit">MESA-web</a>.
+</p>
+
+<p>
+<a href="./notes-lecture-HSE.html">Notes</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org9533ab8" class="outline-3">
+<h3 id="org9533ab8"><a href="#org9533ab8"><span class="timestamp-wrapper"><span class="timestamp">2026-01-26 Mon </span></span> - Equation of state 1</a></h3>
+<div class="outline-text-3" id="text-org9533ab8">
+<p>
+<b>Aim</b>: Introduce Polytropic and ideal gas equation of state.
+</p>
+
+<p>
+<a href="./notes-lecture-EOS1.html">Notes</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org09f91e5" class="outline-3">
+<h3 id="org09f91e5"><a href="#org09f91e5"><span class="timestamp-wrapper"><span class="timestamp">2026-01-28 Wed </span></span> - Virial theorem</a></h3>
+<div class="outline-text-3" id="text-org09f91e5">
+<p>
+<b>Aim</b>: Introduce the Virial theorem in various forms. Demonstrate that
+stars "become hotter as they lose energy".
+</p>
+
+<p>
+<a href="./notes-lecture-VirTheo.html">Notes</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org0edff4e" class="outline-3">
+<h3 id="org0edff4e"><a href="#org0edff4e"><span class="timestamp-wrapper"><span class="timestamp">2026-01-30 Fri </span></span> -</a></h3>
+</div>
+<div id="outline-container-org927b97c" class="outline-3">
+<h3 id="org927b97c"><a href="#org927b97c"><span class="timestamp-wrapper"><span class="timestamp">2026-02-02 Mon </span></span> - Equation of state 2</a></h3>
+<div class="outline-text-3" id="text-org927b97c">
+<p>
+<b>Aim</b>: Introduce other relevant equations of state
+</p>
+<ul class="org-ul">
+<li>Degenerate and non-relativistic gas</li>
+<li>Degenerate and relativistic gas</li>
+<li>Radiation-dominated EOS</li>
+</ul>
+
+<p>
+<a href="./notes-lecture-EOS2.html">Notes</a>
+</p>
+</div>
+</div>
+<div id="outline-container-orgcb0b2c3" class="outline-3">
+<h3 id="orgcb0b2c3"><a href="#orgcb0b2c3"><span class="timestamp-wrapper"><span class="timestamp">2026-02-04 Wed </span></span> - Radiative energy transport &amp; conduction</a></h3>
+<div class="outline-text-3" id="text-orgcb0b2c3">
+<p>
+<b>Aim</b>: Energy transport in radiative layers, the third stellar structure
+equation for non-polytropic models, and local energy conservation
+</p>
+
+<p>
+<a href="./notes-lecture-ETransport.html">Notes</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org2e966fc" class="outline-3">
+<h3 id="org2e966fc"><a href="#org2e966fc"><span class="timestamp-wrapper"><span class="timestamp">2026-02-06 Fri </span></span> -</a></h3>
+</div>
+<div id="outline-container-org01c8c10" class="outline-3">
+<h3 id="org01c8c10"><a href="#org01c8c10"><span class="timestamp-wrapper"><span class="timestamp">2026-02-09 Mon </span></span> - Opacities</a></h3>
+<div class="outline-text-3" id="text-org01c8c10">
+<p>
+<b>Aim</b>: discuss opacity, Rosseland mean opacities, atomic physics and other
+sources of opacity in a star
+</p>
+
+<p>
+<a href="./notes-lecture-kappa.html">Notes</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org18c5fe5" class="outline-3">
+<h3 id="org18c5fe5"><a href="#org18c5fe5"><span class="timestamp-wrapper"><span class="timestamp">2026-02-11 Wed </span></span> - Convection</a></h3>
+<div class="outline-text-3" id="text-org18c5fe5">
+<p>
+<b>Aim</b>: Introduce convective instability, mixing length theory, and its
+limitations
+</p>
+
+<p>
+<a href="./notes-lecture-convection.html">Notes</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org50836e1" class="outline-3">
+<h3 id="org50836e1"><a href="#org50836e1"><span class="timestamp-wrapper"><span class="timestamp">2026-02-13 Fri </span></span> -</a></h3>
+</div>
+<div id="outline-container-org81a8455" class="outline-3">
+<h3 id="org81a8455"><a href="#org81a8455"><span class="timestamp-wrapper"><span class="timestamp">2026-02-16 Mon </span></span> - Nuclear energy generation</a></h3>
+<div class="outline-text-3" id="text-org81a8455">
+<p>
+<b>Aim</b>: Introduce basics of nuclear energy generation through fusion,
+recall basic quantum mechanics elements, Gamow peak
+</p>
+
+<p>
+<a href="./notes-lecture-nuclear-burning.html">Notes</a>
+</p>
+</div>
+</div>
+<div id="outline-container-org9bbda69" class="outline-3">
+<h3 id="org9bbda69"><a href="#org9bbda69"><span class="timestamp-wrapper"><span class="timestamp">2026-02-18 Wed </span></span> - Nuclear reaction chains</a></h3>
+<div class="outline-text-3" id="text-org9bbda69">
+<p>
+<b>Aim</b>: Introduce pp chain, CN-NO bi-cycle, 3&alpha; burning, and later burning
+phases.
+</p>
+
+<p>
+<a href="./notes-lecture-nuclear-cycles.html">Notes</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org770b377" class="outline-3">
+<h3 id="org770b377"><a href="#org770b377"><span class="timestamp-wrapper"><span class="timestamp">2026-02-20 Fri </span></span> -</a></h3>
+</div>
+<div id="outline-container-org5a94b21" class="outline-3">
+<h3 id="org5a94b21"><a href="#org5a94b21"><span class="timestamp-wrapper"><span class="timestamp">2026-02-23 Mon </span></span> - Neutrino cooling</a></h3>
+<div class="outline-text-3" id="text-org5a94b21">
+<p>
+<b>Aim</b>: discuss neutrino physics relevant to stars, cooling processes and
+thus complete the physics needed for 1D stellar evolution calculation.
+</p>
+
+<p>
+<a href="./notes-lecture-neutrinos.html">Notes</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org3b6fc6b" class="outline-3">
+<h3 id="org3b6fc6b"><a href="#org3b6fc6b"><span class="timestamp-wrapper"><span class="timestamp">2026-02-25 Wed </span></span> - Stellar atmospheres and outer boundary conditions</a></h3>
+<div class="outline-text-3" id="text-org3b6fc6b">
+<p>
+<b>Aims</b>: discuss in more detail the following:
+</p>
+<ul class="org-ul">
+<li>outer boundary conditions</li>
+<li>Saha equation</li>
+<li>line formation region</li>
+<li>line broadening mechanisms</li>
+</ul>
+
+<p>
+<a href="./notes-lecture-radTrans.html">Notes</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgc14ab4e" class="outline-3">
+<h3 id="orgc14ab4e"><a href="#orgc14ab4e"><span class="timestamp-wrapper"><span class="timestamp">2026-02-27 Fri </span></span> - Stellar evolution codes</a></h3>
+<div class="outline-text-3" id="text-orgc14ab4e">
+<p>
+<b>Aim:</b> Introduce general principles of stellar structure and evolution codes
+and population synthesis.
+</p>
+
+<p>
+<a href="./notes-lecture-codes.html">Notes</a>
+</p>
+
+<p>
+Discuss written and oral presentations, and refereeing process.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org0e09bec" class="outline-3">
+<h3 id="org0e09bec"><a href="#org0e09bec"><span class="timestamp-wrapper"><span class="timestamp">2026-03-02 Mon </span></span> - Star (&amp; planet) formation</a></h3>
+<div class="outline-text-3" id="text-org0e09bec">
+<p>
+<b>Aim</b>: Introduce concept of Jeans mass, feedback, YSO.
+</p>
+
+<p>
+<a href="./notes-lecture-formation.html">Notes</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org5d6368a" class="outline-3">
+<h3 id="org5d6368a"><a href="#org5d6368a"><span class="timestamp-wrapper"><span class="timestamp">2026-03-04 Wed </span></span> - In class activity: Evolution 1</a></h3>
+<div class="outline-text-3" id="text-org5d6368a">
+<p>
+<b>Aim</b>: discuss the evolution of stars in an in-class activity based on
+<code>MESA-web</code> models precomputed by the students
+</p>
+
+<p>
+<a href="./notes-in-class-evol.html">Notes</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgb872d5c" class="outline-3">
+<h3 id="orgb872d5c"><a href="#orgb872d5c"><span class="timestamp-wrapper"><span class="timestamp">2026-03-06 Fri </span></span> - In class activity: Evolution 2</a></h3>
+<div class="outline-text-3" id="text-orgb872d5c">
+<p>
+<b>Aim</b>: discuss the evolution of stars in an in-class activity based on
+<code>MESA-web</code> models precomputed by the students
+</p>
+
+<p>
+<a href="./notes-in-class-evol.html">Notes</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgb877bd0" class="outline-3">
+<h3 id="orgb877bd0"><a href="#orgb877bd0"><span class="timestamp-wrapper"><span class="timestamp">2026-03-07 Sat </span></span> - <span class="timestamp-wrapper"><span class="timestamp">2026-03-15 Sun </span></span> - SPRING BREAK</a></h3>
+<div class="outline-text-3" id="text-orgb877bd0">
+<p>
+<a href="./mid_term.html">Take home midterm exam</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orga013df4" class="outline-3">
+<h3 id="orga013df4"><a href="#orga013df4"><span class="timestamp-wrapper"><span class="timestamp">2026-03-16 Mon </span></span> - <b>Guest Lecture</b> (topic TBD)</a></h3>
+<div class="outline-text-3" id="text-orga013df4">
+<p>
+Guest lecturer: <a href="https://www.tomwagg.com/">Dr. Tom Wagg</a>
+</p>
+</div>
+</div>
+<div id="outline-container-org671bf90" class="outline-3">
+<h3 id="org671bf90"><a href="#org671bf90"><span class="timestamp-wrapper"><span class="timestamp">2026-03-18 Wed </span></span> - In class activity: Evolution 3</a></h3>
+<div class="outline-text-3" id="text-org671bf90">
+<p>
+<b>Aim</b>: discuss the evolution of stars in an in-class activity based on
+<code>MESA-web</code> models precomputed by the students
+</p>
+
+<p>
+<a href="./notes-in-class-evol.html">Notes</a>
+</p>
+</div>
+</div>
+<div id="outline-container-org3ec741c" class="outline-3">
+<h3 id="org3ec741c"><a href="#org3ec741c"><span class="timestamp-wrapper"><span class="timestamp">2026-03-20 Fri </span></span> -</a></h3>
+</div>
+<div id="outline-container-org05a6768" class="outline-3">
+<h3 id="org05a6768"><a href="#org05a6768"><span class="timestamp-wrapper"><span class="timestamp">2026-03-23 Mon </span></span> - In class activity: Evolution 4</a></h3>
+<div class="outline-text-3" id="text-org05a6768">
+<p>
+<b>Aim</b>: discuss the evolution of stars in an in-class activity based on
+<code>MESA-web</code> models precomputed by the students
+</p>
+
+<p>
+<a href="./notes-in-class-evol.html">Notes</a>
+</p>
+</div>
+</div>
+<div id="outline-container-org784d79c" class="outline-3">
+<h3 id="org784d79c"><a href="#org784d79c"><span class="timestamp-wrapper"><span class="timestamp">2026-03-25 Wed </span></span> - Asteroseismology</a></h3>
+<div class="outline-text-3" id="text-org784d79c">
+<p>
+<b>Aim</b>: Introduce helio and asteroseismology concepts. Brunt-Vaiasala
+frequency, p- and g- waves, restoring force, mixed modes.
+</p>
+
+<p>
+<a href="./notes-lecture-asteroseismology.html">Notes</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org146f7c2" class="outline-3">
+<h3 id="org146f7c2"><a href="#org146f7c2"><span class="timestamp-wrapper"><span class="timestamp">2026-03-27 Fri </span></span> -</a></h3>
+</div>
+<div id="outline-container-org07f5279" class="outline-3">
+<h3 id="org07f5279"><a href="#org07f5279"><span class="timestamp-wrapper"><span class="timestamp">2026-03-30 Mon </span></span> - Interacting binaries and Roche lobe overflow</a></h3>
+<div class="outline-text-3" id="text-org07f5279">
+<p>
+<b>Aim</b>: Introduce the Roche approximation for interacting binaries.
+</p>
+
+<p>
+<a href="./notes-lecture-RLOF.html">Notes</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org6a75562" class="outline-3">
+<h3 id="org6a75562"><a href="#org6a75562"><span class="todo TODO">TODO</span> <span class="timestamp-wrapper"><span class="timestamp">2026-04-01 Wed </span></span> - Common Envelope</a></h3>
+<div class="outline-text-3" id="text-org6a75562">
+<p>
+<b>Aim</b>: Introduce mass transfer dynamical stability, the concept of a
+common envelope and its main phases.
+</p>
+
+<p>
+<a href="./notes-lecture-CE.html">Notes</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org293a197" class="outline-3">
+<h3 id="org293a197"><a href="#org293a197"><span class="timestamp-wrapper"><span class="timestamp">2026-04-03 Fri </span></span> -</a></h3>
+</div>
+<div id="outline-container-orgdb21bbc" class="outline-3">
+<h3 id="orgdb21bbc"><a href="#orgdb21bbc"><span class="timestamp-wrapper"><span class="timestamp">2026-04-06 Mon </span></span> - Tides</a></h3>
+<div class="outline-text-3" id="text-orgdb21bbc">
+<p>
+<b>Aim</b>: Introduce the concept of tides in binaries, build physical
+intuition for tidal disruption and orbital evolution
+</p>
+
+<p>
+<a href="./notes-lecture-tides.html">Notes</a>
+</p>
+</div>
+</div>
+<div id="outline-container-orga29ef7d" class="outline-3">
+<h3 id="orga29ef7d"><a href="#orga29ef7d"><span class="timestamp-wrapper"><span class="timestamp">2026-04-08 Wed </span></span> - Supernovae</a></h3>
+<div class="outline-text-3" id="text-orga29ef7d">
+<p>
+<b>Aim</b>: Introduce the nomenclature for supernovae, discuss the physics of
+core-collapse and the formation of compact objects
+</p>
+
+<p>
+<a href="./notes-lecture-SNe.html">Notes</a>
+</p>
+</div>
+</div>
+<div id="outline-container-org38086a9" class="outline-3">
+<h3 id="org38086a9"><a href="#org38086a9"><span class="timestamp-wrapper"><span class="timestamp">2026-04-10 Fri </span></span> -</a></h3>
+</div>
+<div id="outline-container-orge165199" class="outline-3">
+<h3 id="orge165199"><a href="#orge165199"><span class="timestamp-wrapper"><span class="timestamp">2026-04-13 Mon </span></span> - Gravitational wave progenitors</a></h3>
+<div class="outline-text-3" id="text-orge165199">
+<p>
+<b>Aim</b>: introduce gravitational wave formation scenario (isolated binary
+and dynamical assembly), discuss some known uncertainties.
+</p>
+
+<p>
+<a href="./notes-lecture-GWprog.html">Notes</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org49a4193" class="outline-3">
+<h3 id="org49a4193"><a href="#org49a4193"><span class="todo TODO">TODO</span> <span class="timestamp-wrapper"><span class="timestamp">2026-04-15 Wed </span></span> - SNIa</a></h3>
+<div class="outline-text-3" id="text-org49a4193">
+<p>
+<b>Aim</b>: discuss SNIa
+</p>
+
+<p>
+<a href="./notes-lecture-SNIa.html">Notes</a>
+</p>
+</div>
+</div>
+<div id="outline-container-org8c8c748" class="outline-3">
+<h3 id="org8c8c748"><a href="#org8c8c748"><span class="timestamp-wrapper"><span class="timestamp">2026-04-17 Fri </span></span> - Two students presentations</a></h3>
+</div>
+<div id="outline-container-org6efbe17" class="outline-3">
+<h3 id="org6efbe17"><a href="#org6efbe17"><span class="timestamp-wrapper"><span class="timestamp">2026-04-20 Mon </span></span> - Two students presentations</a></h3>
+</div>
+<div id="outline-container-org8f1e7d6" class="outline-3">
+<h3 id="org8f1e7d6"><a href="#org8f1e7d6"><span class="timestamp-wrapper"><span class="timestamp">2026-04-22 Wed </span></span> - Two students presentations</a></h3>
+</div>
+<div id="outline-container-orgfa29a5c" class="outline-3">
+<h3 id="orgfa29a5c"><a href="#orgfa29a5c"><span class="timestamp-wrapper"><span class="timestamp">2026-04-24 Fri </span></span> - Two students presentations</a></h3>
+</div>
+<div id="outline-container-org7e0d123" class="outline-3">
+<h3 id="org7e0d123"><a href="#org7e0d123"><span class="timestamp-wrapper"><span class="timestamp">2026-04-27 Mon </span></span> - Two students presentations</a></h3>
+</div>
+<div id="outline-container-org80d5012" class="outline-3">
+<h3 id="org80d5012"><a href="#org80d5012"><span class="timestamp-wrapper"><span class="timestamp">2026-04-29 Wed </span></span> - Two students presentations</a></h3>
+</div>
+<div id="outline-container-orgb4a6fbb" class="outline-3">
+<h3 id="orgb4a6fbb"><a href="#orgb4a6fbb"><span class="timestamp-wrapper"><span class="timestamp">2026-05-01 Fri </span></span> - <b>No lecture</b></a></h3>
+</div>
+<div id="outline-container-org4d1f83f" class="outline-3">
+<h3 id="org4d1f83f"><a href="#org4d1f83f"><span class="timestamp-wrapper"><span class="timestamp">2026-05-04 Mon </span></span> - Two students presentations</a></h3>
+</div>
+<div id="outline-container-orge1c83cc" class="outline-3">
+<h3 id="orge1c83cc"><a href="#orge1c83cc"><span class="timestamp-wrapper"><span class="timestamp">2026-05-06 Wed </span></span> - Two students presentations</a></h3>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<div class="footer">
+  <hr>
+  <a href="#light-dark-toggle"><i id="light-dark-toggle"><i class="fa-solid fa-circle-half-stroke"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="syllabus.html"><i class="fa-solid fa-arrow-left" style="font-size:16px"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="#top"><i class="fa-solid fa-arrow-up" style="font-size:16px"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="notes-lecture-Intro.html"><i class="fa-solid fa-arrow-right" style="font-size:16px"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="https://github.com/mathren/stellar_phys_545"><i class="fa-brands fa-github" style="font-size:16px"></i></a><hr>
+  <br>
+  Last updated on 14 January 2026 <br>
+  Made with Emacs 29.2 - Org mode 9.6.15
+  <br>
+</div>
+</div>
+</body>
+</html>
