@@ -7,16 +7,14 @@ necessarily mean better.
 However, if you have a local installation of =MESA= in 2026, it is
 unlikely to be one of those versions. To facilitate the use of local
 installations for assignments, I have obtained from =MESA-web= the
-inlist used for the cloud-based calculations (which is part of the =zip=
-folder you can download from the link you obtain via email at the end
-of a calculation), and edited it lightly to make it compatible with
-the current MESA release =r24.08.1=.
+inlist used for the cloud-based calculations (which is part of the
+=zip= folder you can download from the link you obtain via email at
+the end of a calculation), and edited it lightly to make it compatible
+with the previous MESA release =r24.08.1= and the current one
+=r25.12.1=.
 
-This folder contains a template folder tested with =r24.08.1=. It should
-produce physically equivalent (albeit possibly numerically different)
-stellar models as those produced by =MESA-web=.
+This folder contains a template folder. It should produce physically
+equivalent (albeit possibly numerically different) stellar models as
+those produced by =MESA-web=.
 
 Feel free to use this as a starting point for your own modeling.
-
-
-** TODO test with =r25.12.1=

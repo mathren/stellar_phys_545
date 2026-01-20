@@ -42,7 +42,7 @@ Zbase                                    = 0.02
 
 ! starting specifications
 
-profile_interval                         = 20      ! edited
+profile_interval                         = 100      ! edited
 history_interval                         = 1
 terminal_interval                        = 100000000
 write_header_frequency                   = 100000000
@@ -389,8 +389,5 @@ Grid1_file_aspect_ratio                  = -1      ! negative means use same val
 
 ! white_on_black flags -- true means white foreground color on black background
 ! file_white_on_black_flag               = .true.
-
-file_device                              = 'vcps'  ! options 'png' and 'vcps' for png and postscript respectively
-file_extension                           = 'eps'   ! common names are 'png' and 'ps'
 
 /                                                  ! end of pgstar namelist
