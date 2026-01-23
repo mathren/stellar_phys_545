@@ -12,7 +12,6 @@ Instructions are provided assuming the use of the former, and the
 latter does not guarantees any bonus, but may afford more flexibility
 in performing numerical experiments to answer the questions.
 
-
 ** What physics drives the evolution of the stellar radius?
 
 *** A simple model of the Sun
@@ -30,6 +29,8 @@ evolution of the radius of the Sun.
 2. At what $t$ does the radius equal 1$R_{\odot}$?
 3. Explain which physical ingredients may cause possible mis-matches
 4. *Bonus*: show with varying model parameters an improved agreement
+5. If there were planets orbiting this star at separations $a$, when
+   would the star engulf them?
 
 :Hint:
 For the bonus task, you can help yourself searching [[https://ui.adsabs.harvard.edu/][NASA/ADS]] to search
@@ -140,7 +141,6 @@ are Kippenhahn diagrams. Consider the following:
 6. At what evolutionary stage is the model terminated at timestep 800?
 7. What is the final composition of the core?
 
-
 ** Mass loss exercise
 Throughout their evolution, stars can lose a significant amount of mass.
 Mass loss channels include:
@@ -152,7 +152,8 @@ Mass loss channels include:
 Let's consider a star of mass $M$, outermost radius $R$, luminosity
 $L$, and mass-loss rate $\dot{M}$:
 
-1. Define a timescale associated to mass loss.
+1. Define a timescale associated to mass loss using dimensional
+   analysis
 2. Discuss which stars are more likely to lose mass (main sequence vs.
    evolved star).
 3. How high does $\dot{M}$ need to be to break hydrostatic equilibrium

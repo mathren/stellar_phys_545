@@ -94,10 +94,12 @@ in 1844 (the detection of photons from Sirius B followed in 1862 by
 Clark). Nowadays, this is a very timely because of the precise
 astrometric measurements by /Gaia/:
 
-- this has been used to find /Gaia/ BH1 ([[https://ui.adsabs.harvard.edu/abs/2023MNRAS.518.1057E/abstract][El Badry et al. 2023a]]), BH2 ([[https://ui.adsabs.harvard.edu/abs/2023MNRAS.521.4323E/abstract][El
-  Badry 2023b]]), and BH3 ([[https://ui.adsabs.harvard.edu/abs/2024A%26A...686L...2G/abstract][Gaia Collaboration, Panuzzo et al. 2024]]):
+- this has been used to find /Gaia/ BH1 ([[https://ui.adsabs.harvard.edu/abs/2023MNRAS.518.1057E/abstract][El Badry et al. 2023a]]), BH2
+  ([[https://ui.adsabs.harvard.edu/abs/2023MNRAS.521.4323E/abstract][El Badry 2023b]]), and BH3 ([[https://ui.adsabs.harvard.edu/abs/2024A%26A...686L...2G/abstract][Gaia Collaboration, Panuzzo et al. 2024]]):
   these systems have stars orbiting around an otherwise undetectable
-  Black Hole!
+  Black Hole! With the upcoming /Gaia/ DR4 data release, possibly 100s
+  of astrometric binaries hosting a BH are expected (see e.g.,
+  [[https://ui.adsabs.harvard.edu/abs/2022ApJ...931..107C/abstract][Chawla et al. 2022]])
 - it can also be used to find stars in wide orbits around NS or other
   faint stars, and possibly even massive planets!
 
