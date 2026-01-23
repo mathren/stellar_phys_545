@@ -406,9 +406,9 @@ structure) later in the course.
 
 A first estimate for the central pressure can be obtained substituting
 the local gradient with the difference from surface to the core across
-the entire mass of the star $dP/dm \rightarrow (P_{surface} - P_{center})/M \simeq
--P_{center}/M$, where we also use $P$ increases inwards and thus it is
-legitimate to expect $P_{center}\gg P_{surface}$. Then, on the l.h.s. of Eq.
+the entire mass of the star $dP/dm \rightarrow (P_{\rm surface} - P_{\rm center})/M \simeq
+-P_{\rm center}/M$, where we also use $P$ increases inwards and thus it is
+legitimate to expect $P_{\rm center}\gg P_{\rm surface}$. Then, on the l.h.s. of Eq.
 \ref{eq:HSE}, we should take as estimates some fraction of the total
 mass M and radius R. For the sake of simplicity, let's take the
 fraction to be 1 and drop the 4\pi:
