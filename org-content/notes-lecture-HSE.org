@@ -449,7 +449,7 @@ estimate how long it takes for the pressure gradient to push the gas
 out to a radius comparable to the radius of the star we can do the
 following rough substitution in the dynamical equation above:
  - $\partial^{2} r \rightarrow R$ (outer radius of the star)
- - $\partial t^{2} \rightarrow \tau_mathrm{expl}^{2}$ (what we want to estimate)
+ - $\partial t^{2} \rightarrow \tau_\mathrm{expl}^{2}$ (what we want to estimate)
  - $dP/dr\rightarrow P_\mathrm{avg}/R$ with $P_\mathrm{avg}$ some averaged pressure in the star
  - $\rho \rightarrow \rho_\mathrm{avg}$ some averaged density of the star
 and we obtain:
