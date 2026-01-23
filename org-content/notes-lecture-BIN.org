@@ -287,10 +287,12 @@ orbit intersect) and the direction of periastron.
 [[./images/bin_orbit.png]]
 
 
-The one can calculate: z= rsin(i) sin(\nu+\omega) with r radius of the orbit
-(which for an elliptical orbit is a function of time), the sin(i)
-factor projects it on the plane of the sky and the sin(\nu+\omega) projects
-on the line of sight. The radial velocity is therefore:
+The one can calculate: z= r sin(i) sin(\nu+\omega) with r radius of the orbit
+(which for an elliptical orbit is a function of time). The factor r
+sin(\nu+\omega) gives the length of the segment OS in the figure (which lies
+on the plane of the orbit which intersects the plane of the sky along
+the direction AB), and the factor sin(i) projects it onto the line of
+sight. The radial velocity is therefore:
 
 #+begin_latex
 \begin{equation}\label{dzdt}
