@@ -132,6 +132,17 @@ These are spectroscopic binaries where both stars are contributing
 light to the spectrum, meaning there will be two sets of spectral
 lines that are periodically Doppler shifted in couter-phase.
 
+Recently, "spectral disentanglement" has become an important technique
+to reveal the presence of light from a companion in systems initially
+interpreted as SB1 binaries, effectively turning SB1 binaries into an
+SB2. The idea is to take a best-fit single-star spectrum for the
+signal, and look for periodic variations in the residuals, indicating
+contribution to the spectrum from a star /not/ fitted (see for example
+[[https://github.com/TomerShenar/Disentangling_Shift_And_Add][this code]] and references listed there). This technique has been used
+to "kill claimed BHs" in SB1 binaries revealing light coming from the
+hypothesized BH, which usually has been reinterpreted as a star which
+has lost its hydrogen-rich envelope to binary interactions.
+
 *** Eclipsing binaries
 These are binaries when at some point in the orbit one star passes in
 front of the other. This blocks some of the light from one of the two
