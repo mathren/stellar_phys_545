@@ -130,7 +130,7 @@ and pressure is isotropic. Therefore at zeroth order, we expect stars
 to be well approximated as /spheres/. This mathematically means that we
 can express all the variables that characterize the structure of a
 star as a function of a single variable, for example the radius from
-the center of the star. This allows for the calculation of
+the center of the star.
 
 :Question:
  - *Q*: can you think of cases where a star  may not be spherical?
@@ -236,7 +236,7 @@ the forces that we think are important for an *isolated*, *non-rotating*,
 *** Gravity
 Since by definition a star is a self-gravitating body (*N.B.:* so is a
 planet, that's not the whole definition of a star!), we want to
-include the gravitational force on the l.h.s. of our f=\rho a equation.
+include the gravitational force on the l.h.s. of our $f=\rho a$ equation.
 This can be obtained as the gradient of the gravitational potential \Phi
 which is a solution of the Poisson equation:
 
