@@ -30,6 +30,11 @@ In fact, in this case we have two stars presumably born at roughly the
 same time, presumably with the same initial composition, and we can
 derive physical properties comparing them to each other.
 
+*N.B.:* At zeroth order of approximation (neglecting the impact of
+irradiation), from the dynamical perspective, a planet+star system is
+also a binary, and many of the classical techniques used to find
+planets come from the study of binary systems!
+
 The figure below shows as a function of stellar mass (bottom x-axis)
 or as a function of stellar spectroscopic type (top x-axis, we will
 see that these are related soon!) the fraction of stars that have at
