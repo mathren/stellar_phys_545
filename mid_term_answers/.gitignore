@@ -5,3 +5,4 @@ answers.org
 *.synctex.gz
 auto/*
 *.py
+*.tar.xz
