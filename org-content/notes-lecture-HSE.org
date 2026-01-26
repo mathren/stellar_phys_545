@@ -251,7 +251,7 @@ this equation does not make the problem worse: we have a new variable
 $\Phi$ but the r.h.s. only depends on the density $\rho$ which is already
 appearing in Eq. \ref{eq:mass_conservation}.
 
-We can introduce the gravitational acceleration $g = - \nabla\Phi$, which in
+We can introduce the gravitational acceleration $\mathbf{g} = - \mathbf{\nabla}\Phi$, which in
 spherical symmetry only has a non-zero radial component \Rightarrow $g = - d\Phi/dr$
 which from Newton's theory of gravity we know to be
 
