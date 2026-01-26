@@ -235,7 +235,7 @@ much small than their kinetic energy (due to their thermal motion)
 \end{equation}
 #+end_latex
 
-and other than these interaction between particles, they are free to
+and other than these interactions between particles, they are free to
 move (no external potential).
 
 To obtain the pressure of such gas, we need to consider the
