@@ -496,6 +496,19 @@ strategies for solving the stellar structure equations, and what goes
 on in MESA/MESA-web. For now I just want to introduce this tool and
 show you how you can obtain numerical stellar models.
 
+:Hint:
+For this and all future =MESA_web= exercises, *if* you prefer, you can use
+your own =MESA= installation. This is likely a different (newer) =MESA=
+version than what =MESA-web= can offer, and will give you more
+flexibility to experiment and test ideas. To simplify this task, I
+have taken the =MESA-web= input files (known as =inlists=) and converted
+them to a template that can run in newer =MESA= versions for you to have
+a working starting point. This template is available [[https://github.com/mathren/stellar_phys_545/tree/main/MESA_files/modernized_MESA_web][here]].
+
+*N.B.:* Using your own =MESA= installation doesn't guarantee any extra
+ points on assignments.
+:end:
+
 - [[http://user.astro.wisc.edu/~townsend/static.php?ref=mesa-web-input][Description of Input]]
 - [[http://user.astro.wisc.edu/~townsend/static.php?ref=mesa-web-submit][Submission website]]
 - Example output:
