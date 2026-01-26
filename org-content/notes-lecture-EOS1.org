@@ -47,7 +47,7 @@ between the pressure and the density - a so-called /equation of state/
 In general, this is a relation between the /local/ value of pressure $P$,
 density $\rho$, and temperature $T$, which may also depend on the
 composition, that is the ensemble of fraction by mass of elements ($X_{i}$
-= mass of $i$-th element/total mass):
+= mass of i-th element/total mass):
 
 #+begin_latex
 \begin{equation}\label{eq:general_EOS}

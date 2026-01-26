@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 2026-01-26 Mon 09:47 -->
+<!-- 2026-01-26 Mon 10:21 -->
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>ASTR545 - Hydrostatic equilibrium</title>
@@ -209,7 +209,7 @@ position, describing the variables at that specific position.
 </p>
 
 
-<figure id="org498bcfc">
+<figure id="orgdf5f469">
 <img src="./images/Eulerian-bridge.jpg" alt="https://www.flinilckr.com/photos/frixan/114822407/" width="75%">
 
 <figcaption><span class="figure-number">Figure 1: </span>Eulerian description is like putting many bridges over a fluid and describing the properties as a function of what goes on just below the bridge.</figcaption>
@@ -239,7 +239,7 @@ describing the properties of the fluid as the boat moves with it.
 </p>
 
 
-<figure id="org824657a">
+<figure id="org196a52e">
 <img src="./images/Lagrangian_kayak.jpg" alt="https://www.snowaddiction.org/2015/10/the-zen-of-kayaking-i-photograph-the-fjords-of-norway-from-the-kayak-seat.html?m=1" width="75%">
 
 <figcaption><span class="figure-number">Figure 2: </span>Lagrangian description is like following the fluid on a boat and describe what goes on as a function of the fluid particle being followed.</figcaption>
@@ -250,7 +250,7 @@ In a Lagrangian system of coordinates, the total time derivative can
 be written using the "chain rule" as:
 </p>
 
-<div class="latex" id="org0b6dbe8">
+<div class="latex" id="org0fb6b7b">
 \begin{equation}
  \frac{d}{dt} = \frac{\partial}{\partial t} + \frac{\partial x}{\partial t}\frac{\partial}{\partial x} + \frac{\partial y}{\partial t}\frac{\partial}{\partial y} +\frac{\partial z}{\partial t}\frac{\partial}{\partial z} \equiv \frac{\partial}{\partial t} + v\cdot\nabla \ \,
 \end{equation}
@@ -278,7 +278,7 @@ given radius m&equiv; m(r), thus express &Psi;(r,t) =&Psi;(r(m), t)&rarr; &Psi;(
 <p>
 Derivatives can then be expressed with the chain rule:
 </p>
-<div class="latex" id="orgfae1cc8">
+<div class="latex" id="org940039b">
 \begin{equation}
  \frac{\partial}{\partial m} = \frac{\partial r}{\partial m} \frac{\partial}{\partial r} \ \ .
 \end{equation}
@@ -328,8 +328,8 @@ the center of the star.
 </p>
 
 <div class="org-drawer-container">
-  <button class="org-drawer-toggle" onclick="toggleDrawer('drawer-Question-8811')">Question ▼</button>
-  <div id="drawer-Question-8811" class="org-drawer-content" style="display: none;"><ul class="org-ul">
+  <button class="org-drawer-toggle" onclick="toggleDrawer('drawer-Question-6222')">Question ▼</button>
+  <div id="drawer-Question-6222" class="org-drawer-content" style="display: none;"><ul class="org-ul">
 <li><b>Q</b>: can you think of cases where a star  may not be spherical?</li>
 </ul>
 </div>
@@ -346,7 +346,7 @@ depend on the local gas density \(\rho(r, t)\) (or equivalently in the
 Lagrangian formalism \(\rho(m, t)\)!) and the amount of volume in the shell
 </p>
 
-<div class="latex" id="org6ac2a0d">
+<div class="latex" id="orgaabb626">
 \begin{equation}
 dm = \rho dAdr
 \end{equation}
@@ -358,7 +358,7 @@ where dA is the element base area, and dr its radial thickness. We can
 integrate over the base to get the parcel to be a spherical shell
 </p>
 
-<div class="latex" id="org7c87ac5">
+<div class="latex" id="org0f13052">
 \begin{equation}
 \int dA = 4\pi r^{2}
 \end{equation}
@@ -369,7 +369,7 @@ integrate over the base to get the parcel to be a spherical shell
 where r is the radius of the shell, therefore
 </p>
 
-<div class="latex" id="orga84f0f8">
+<div class="latex" id="orgd2a063c">
 \begin{equation}
 dm = 4\pi \rho r^{2} dr \ \ .
 \end{equation}
@@ -383,7 +383,7 @@ dt an amount \(-\rho v dA dt\) flows out (for \(v>0\), the quantity is negative)
 or in (\(v<0\)). Again integrating over \(dA\):
 </p>
 
-<div class="latex" id="org15c2113">
+<div class="latex" id="orgff707d5">
 \begin{equation}
 \label{eq:mass_continuity}
 dm = 4\pi \rho r^{2} dr - 4\pi r^{2} \rho v dt \ \ .
@@ -397,7 +397,7 @@ From this complete form we can take the partial derivatives w.r.t. \(r\)
 (at fixed \(t\)) and \(t\) (at fixed \(r\)):
 </p>
 
-<div class="latex" id="org2606bc2">
+<div class="latex" id="org8eec828">
 \begin{equation}\label{eq:mass_continuity_rt}
  \frac{\partial m}{\partial r} = 4\pi r^{2} \rho \ \ , \\
  \frac{\partial m}{\partial t} = - 4\pi r^{2} \rho v \ \ .
@@ -411,7 +411,7 @@ w.r.t \(r\), and demand the two forms are the same. Since \(r\) and \(t\) are th
 independent variables here (i.e., \(\partial r/\partial t = 0\)) we obtain:
 </p>
 
-<div class="latex" id="org40d0376">
+<div class="latex" id="org28e843c">
 \begin{equation}
 \frac{\partial \rho}{\partial t} = - \frac{1}{r^{2}}\frac{\partial (r^{2}\rho v)}{\partial r} \Leftrightarrow \frac{\partial \rho}{\partial t} + \nabla\cdot(\rho v) = 0 \ \ ,
 \end{equation}
@@ -429,7 +429,7 @@ structure, just take the first equation in \ref{eq:mass_continuity_rt}
 and express it with \(m\) as independent variable:
 </p>
 
-<div class="latex" id="org1da55ef">
+<div class="latex" id="org1d16bdc">
 \begin{equation}\label{eq:mass_conservation}
 \frac{\partial r}{\partial m} = \frac{1}{4\pi r^{2} \rho} \ \ ,
 \end{equation}
@@ -472,7 +472,7 @@ This can be obtained as the gradient of the gravitational potential &Phi;
 which is a solution of the Poisson equation:
 </p>
 
-<div class="latex" id="orgce03dda">
+<div class="latex" id="org2fd9ac8">
 \begin{equation}
 \nabla^{2} \Phi = 4\pi G\rho \Rightarrow \frac{1}{r^{2}}\frac{\partial}{\partial r}\left(r^{2}\frac{\partial \Phi}{\partial r} \right) = 4\pi G\rho \ \ ,
 \end{equation}
@@ -492,7 +492,7 @@ spherical symmetry only has a non-zero radial component &rArr; \(g = - d\Phi/dr\
 which from Newton's theory of gravity we know to be
 </p>
 
-<div class="latex" id="org3bf693f">
+<div class="latex" id="org75ae3f4">
 \begin{equation}
 - \nabla \Phi = g \equiv g(m(r))= \frac{Gm(r)}{r^{2}} \ \ ,
 \end{equation}
@@ -520,7 +520,7 @@ from the pressure. We could already use dimensional analysis to guess
 in what form pressure can enter the l.h.s. of the equation:
 </p>
 
-<div class="latex" id="org027d74c">
+<div class="latex" id="org3d97302">
 \begin{equation}
 [P] = [\mathrm{force}]/[\mathrm{area}] \Rightarrow [P]/[\mathrm{length}] = [\mathrm{force}]/[\mathrm{volume}] \equiv [f]
 \end{equation}
@@ -535,7 +535,7 @@ turn suggests that maybe what we need is the pressure <i>gradient</i>!
 
 
 
-<figure id="org245d12a">
+<figure id="org0b48aed">
 <img src="./images/HSE-sketch.png" alt="HSE-sketch.png" width="50%">
 
 <figcaption><span class="figure-number">Figure 3: </span>Sketch of the force balance for an internal layer of a spherically symmetric star. Modified from Onno Pols' lecture notes Fig. 2.1</figcaption>
@@ -577,7 +577,7 @@ cases, that is \(a=0\). <i>Stars are generally in hydrostatic equilibrium</i>. I
 this case the conservation of momentum becomes
 </p>
 
-<div class="latex" id="orgfbf7aba">
+<div class="latex" id="org7f96d67">
 \begin{equation}
 \frac{dP}{dr} = -g\rho = -\frac{Gm}{r^{2}}\rho \ \ ,
 \end{equation}
@@ -589,7 +589,7 @@ or changing to have \(m\) has the independent variable, to have a
 Lagrangian treatment:
 </p>
 
-<div class="latex" id="orgb843f3a">
+<div class="latex" id="orgef52e48">
 \begin{equation}
 \frac{dP}{dr} = \frac{dP}{dm}\frac{dm}{dr} = \frac{dP}{dm}4\pi r^{2}\rho
 \end{equation}
@@ -600,7 +600,7 @@ Lagrangian treatment:
 and thus
 </p>
 
-<div class="latex" id="org74bea18">
+<div class="latex" id="org7837761">
 \begin{equation}\label{eq:HSE}
 \frac{dP}{dm} = -\frac{Gm}{4\pi r^{4}} \ \ ,
 \end{equation}
@@ -702,7 +702,7 @@ mass M and radius R. For the sake of simplicity, let's take the
 fraction to be 1 and drop the 4&pi;:
 </p>
 
-<div class="latex" id="org07bbefc">
+<div class="latex" id="org38c6c60">
 \begin{equation}
 P_\mathrm{center} = \frac{GM^{2}}{R^{4}}\ \ ,
 \end{equation}
@@ -729,7 +729,7 @@ spherically symmetric. Returning to the general form for the momentum
 conservation \(f = \rho a \equiv \rho \partial^{2}r/\partial t^{2}\) we have
 </p>
 
-<div class="latex" id="orga04bcc5">
+<div class="latex" id="orgc3d8c9a">
 \begin{equation}\label{eq:dyn}
 \rho \frac{\partial^{2} r}{\partial t^{2}} = -\frac{dP}{dr} -\frac{Gm}{r^{2}}\rho \ \ ,
 \end{equation}
@@ -767,7 +767,7 @@ following rough substitution in the dynamical equation above:
 and we obtain:
 </p>
 
-<div class="latex" id="org956ee6e">
+<div class="latex" id="orgde83b7a">
 \begin{equation}
 \tau_\mathrm{expl} \simeq \frac{R}{\sqrt{\frac{P_{avg}}{\rho_{avg}}_{}}} \simeq \frac{R}{c_{s}}\ \ .
 \end{equation}
@@ -800,7 +800,7 @@ gradient \(dP/dr\rightarrow0\). Then, as above:
 we get:
 </p>
 
-<div class="latex" id="org82e67f0">
+<div class="latex" id="orge78dde1">
 \begin{equation}
 \tau_\mathrm{ff} \simeq \sqrt{\frac{R^{3}}{GM}} \simeq \sqrt{\frac{1}{G\rho_\mathrm{avg}}}\ \ ,
 \end{equation}
@@ -812,8 +812,8 @@ have been very loose with the &pi; factors and averages.
 </p>
 
 <div class="org-drawer-container">
-  <button class="org-drawer-toggle" onclick="toggleDrawer('drawer-Question-3598')">Question ▼</button>
-  <div id="drawer-Question-3598" class="org-drawer-content" style="display: none;"><ul class="org-ul">
+  <button class="org-drawer-toggle" onclick="toggleDrawer('drawer-Question-861')">Question ▼</button>
+  <div id="drawer-Question-861" class="org-drawer-content" style="display: none;"><ul class="org-ul">
 <li><b>Q</b>: you all have estimated the Sun's mean density, calculate the Sun
 free fall time now. Does the Sun vary on this timescale? Do you
 think this justifies our assumption of hydrostatic equilibrium?</li>
@@ -835,25 +835,6 @@ strategies for solving the stellar structure equations, and what goes
 on in MESA/MESA-web. For now I just want to introduce this tool and
 show you how you can obtain numerical stellar models.
 </p>
-
-<div class="org-drawer-container">
-  <button class="org-drawer-toggle" onclick="toggleDrawer('drawer-Hint-8151')">Hint ▼</button>
-  <div id="drawer-Hint-8151" class="org-drawer-content" style="display: none;"><p>
-For this and all future <code>MESA_web</code> exercises, <b>if</b> you prefer, you can use
-your own <code>MESA</code> installation. This is likely a different (newer) <code>MESA</code>
-version than what <code>MESA-web</code> can offer, and will give you more
-flexibility to experiment and test ideas. To simplify this task, I
-have taken the <code>MESA-web</code> input files (known as <code>inlists</code>) and converted
-them to a template that can run in newer <code>MESA</code> versions for you to have
-a working starting point. This template is available <a href="https://github.com/mathren/stellar_phys_545/tree/main/MESA_files/modernized_MESA_web">here</a>.
-</p>
-
-<p>
-<b>N.B.:</b> Using your own <code>MESA</code> installation doesn't guarantee any extra
- points on assignments.
-</p>
-</div>
-</div>
 
 <ul class="org-ul">
 <li><a href="http://user.astro.wisc.edu/~townsend/static.php?ref=mesa-web-input">Description of Input</a></li>
@@ -902,9 +883,30 @@ output.
 just plain text, so you can also write your own.</li>
 </ol></li>
 </ul>
+
+
+<div class="org-drawer-container">
+  <button class="org-drawer-toggle" onclick="toggleDrawer('drawer-Hint-7245')">Hint ▼</button>
+  <div id="drawer-Hint-7245" class="org-drawer-content" style="display: none;"><p>
+For this and all future <code>MESA_web</code> exercises, <b>if</b> you prefer, you can use
+your own <code>MESA</code> installation. This is likely a different (newer) <code>MESA</code>
+version than what <code>MESA-web</code> can offer, and will give you more
+flexibility to experiment and test ideas. To simplify this task, I
+have taken the <code>MESA-web</code> input files (known as <code>inlists</code>) and converted
+them to a template that can run in newer <code>MESA</code> versions for you to have
+a working starting point. This template is available <a href="https://github.com/mathren/stellar_phys_545/tree/main/MESA_files/modernized_MESA_web">here</a>.
+</p>
+
+<p>
+<b>N.B.:</b> Using your own <code>MESA</code> installation doesn't guarantee any extra
+ points on assignments.
+</p>
 </div>
 </div>
 </div>
+</div>
+</div>
+
 
 <div id="outline-container-org99144fc" class="outline-2">
 <h2 id="org99144fc"><a href="#org99144fc">Homework</a></h2>
