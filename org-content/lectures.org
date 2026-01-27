@@ -135,18 +135,18 @@ Discuss written and oral presentations, and refereeing process.
 
 [[./notes-in-class-evol.org][Notes]]
 
-** <2026-03-06 Fri> - In class activity: Evolution 2
+** <2026-03-06 Fri> - *Guest Lecture* (topic TBD)
+Guest lecturer: [[https://www.tomwagg.com/][Dr. Tom Wagg]]
+** <2026-03-16 Sat> - <2026-03-15 Sun> - SPRING BREAK
+
+[[./mid_term.org][Take home midterm exam]]
+
+** <2026-03-16 Mon> - In class activity: Evolution 2
 *Aim*: discuss the evolution of stars in an in-class activity based on
 =MESA-web= models precomputed by the students
 
 [[./notes-in-class-evol.org][Notes]]
 
-** <2026-03-07 Sat> - <2026-03-15 Sun> - SPRING BREAK
-
-[[./mid_term.org][Take home midterm exam]]
-
-** <2026-03-16 Mon> - *Guest Lecture* (topic TBD)
-Guest lecturer: [[https://www.tomwagg.com/][Dr. Tom Wagg]]
 ** <2026-03-18 Wed> - In class activity: Evolution 3
 *Aim*: discuss the evolution of stars in an in-class activity based on
 =MESA-web= models precomputed by the students
