@@ -21,6 +21,11 @@ body {
     /* box-sizing: border-box; */
 }
 
+
+* {
+    color: var(--color);
+}
+
 html, body {
     background: var(--background);
     color: var(--color);
