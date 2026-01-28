@@ -40,7 +40,7 @@ momentum is equal to the total force they are subject to:
 #+end_latex
 
 Note that here $\mathbf{r}_{i}$ and $\mathbf{F}_{i}$ are vector quantities.
-We take the /first-order spatial moment of this distribution/, which
+We take the /first-order spatial moment of this equation/, which
 means we take the dot product of each term by the position of the
 particles and sum over all the particles. Why? The reason is to make
 /something like the work done by forces (and thus the potential energy)
