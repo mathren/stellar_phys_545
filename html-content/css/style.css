@@ -252,6 +252,12 @@ span.todo.TODO {
   overflow: visible !important;
 }
 
+mjx-container {
+  overflow-x: visible !important;
+  overflow-y: visible !important;
+  max-width: none !important;
+}
+
 /* Ensure MathJax spans allow proper rendering */
 .MathJax {
   overflow: visible !important;
