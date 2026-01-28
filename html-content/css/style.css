@@ -12,7 +12,7 @@
     --hover-color: gray;
 }
 
-* {
+body {
     /* margin: 0; */
     background: var(--background);
     color: var(--color);
@@ -249,16 +249,6 @@ span.todo.TODO {
 
 /* Ensure all MathJax containers do not clip content */
 .mathjax-container {
-  overflow: visible !important;
-}
-
-mjx-container {
-  overflow-x: visible !important;
-  overflow-y: visible !important;
-  max-width: none !important;
-}
-
-mjx-container svg {
   overflow: visible !important;
 }
 
