@@ -258,6 +258,10 @@ mjx-container {
   max-width: none !important;
 }
 
+mjx-container svg {
+  overflow: visible !important;
+}
+
 /* Ensure MathJax spans allow proper rendering */
 .MathJax {
   overflow: visible !important;
