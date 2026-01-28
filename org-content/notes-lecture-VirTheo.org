@@ -122,7 +122,7 @@ E_\mathrm{tot} = \mathrm{E_\mathrm{kin}}_{1} + \mathrm{E_\mathrm{kin}}_{2} + \ma
 #+end_latex
 where in the last term we are using Kepler's laws. The gravitational
 potential energy is $E_\mathrm{pot} = -GM_{1}M_{2}/a$, thus making it
-explicit we obtain: $E_{kin} = |E_{pot}|/2$. Since Keplerian orbits in
+explicit we obtain: $E_\mathrm{kin} = |E_\mathrm{pot}|/2$. Since Keplerian orbits in
 Newtonian gravity are stable (energy losses through gravitational
 waves make this statement not physically true, but this is only
 relevant for close binaries of compact objects), this implies that the
