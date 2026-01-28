@@ -320,7 +320,10 @@ But we can assume that the motion of the particles is isotropic
 dP = vp\cos^{2}(\theta)n(p)\sin(\theta)d\theta dp \Rightarrow P = \frac{1}{3}\int_{0}^{+\infty} n(p)p v dp \ \ ,
 \end{equation}
 #+end_latex
-where we integrated over $\theta$. Combining Eq. \ref{eq:P_statistic} with Eq. \ref{eq:Maxwellian} gives the pressure.
+where we integrated over $\theta$. This gives the relationship between the
+pressure $P$ and the distribution of particles in momentum space $p$.
+Combining Eq. \ref{eq:P_statistic} with Eq. \ref{eq:Maxwellian} gives
+the pressure.
 
 *** Non-relativistic, classical gas
 Let's consider a non-relativistic gas of classical particles (no
