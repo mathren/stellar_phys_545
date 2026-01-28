@@ -256,6 +256,7 @@ span.todo.TODO {
 .MathJax {
   overflow: visible !important;
   display: inline-block; /* Prevent constraints */
+  vertical-align: middle; /* Add this single line */
 }
 
 
