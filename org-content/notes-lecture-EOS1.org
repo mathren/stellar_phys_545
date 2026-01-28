@@ -443,8 +443,15 @@ metallicity, respectively.
 
 ** Relation between pressure and internal density
 
-Eq. \ref{eq:P_statistic} can be used to relate $P$ to the internal
-energy density of a gas. This can be defined as:
+By dimensional analysis, the pressure is a force per unit area, that
+is an energy density:
+
+#+BEGIN_latex
+$$ [P] = [F]/L^{2} = ML/t^{2} \times 1/L^{2} = M L^{2}/t^{2} \times 1/L^{3} = [E]/L^{3}$$
+#+END_latex
+
+Therefore, Eq. \ref{eq:P_statistic} can be used to relate $P$ to the
+internal energy density of a gas. This can be defined as:
 
 #+begin_latex
 \begin{equation}\label{eq:E_statistic}
