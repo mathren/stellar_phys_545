@@ -256,7 +256,6 @@ span.todo.TODO {
 .MathJax {
   overflow: visible !important;
   display: inline-block; /* Prevent constraints */
-  vertical-align: middle; /* Add this single line */
 }
 
 
@@ -294,7 +293,7 @@ hr {
     padding-bottom: 10px;
     padding-left: var(--padding-horizontal);
     padding-right: var(--padding-horizontal);
-    overflow: scroll;
+    overflow: visible; /* scroll; */
 }
 
 table {
