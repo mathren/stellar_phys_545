@@ -242,7 +242,7 @@ equilibrium Eq. \ref{eq:vir} equation we have:
 
 Assuming that $\Gamma$ is constant throughout the star, we can take the
 parenthesis out of the integral. We can define $E_\mathrm{int} = \int_{0}^{M} u dm$
-and rewrite the above as $3(\Gamma-1)E-\mathrm{int}$, and thus
+and rewrite the above as $3(\Gamma-1)E_\mathrm{int}$, and thus
 
 #+begin_latex
 \begin{equation}\label{eq:virial_star}
