@@ -69,7 +69,7 @@ time-derivative:
 #+end_latex
 
 And now we have on the right hand side (assuming the mass of the
-particles to be constant) twice the second time derivative of the
+particles to be constant) half the second time derivative of the
 moment of inertia $I = \sum_{i} m_{i} r_{i}^{2}$ and twice the kinetic energy
 $E_\mathrm{kin} = \sum_{i }m_{i} v_{i}^{2}/2$ (because of course $v_{i} = \dot{r_{i}}$).
 So putting the r.h.s. of this last equation in the first spatial
