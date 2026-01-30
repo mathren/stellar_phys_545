@@ -24,7 +24,7 @@ of point masses interacting through long-range forces, and thus allows
 one to *connect thermodynamics and gravitational physics*. It is a
 statistical statement on mutually interacting particles (e.g., because
 of their mutual gravity!), and thus it is very general. The etymology
-of the name comes from "vir" which is latin for "forces".
+of the name comes from "vis" which is latin for "forces".
 
 ** (Almost fully) General derivation
 Let's start with a very general derivation (see for example
