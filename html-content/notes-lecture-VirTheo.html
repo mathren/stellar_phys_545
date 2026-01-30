@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 2026-01-30 Fri 09:43 -->
+<!-- 2026-01-30 Fri 09:45 -->
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>545 - Virial Theorem</title>
@@ -176,7 +176,7 @@ mass \(m_{i}\), Netwon's second law states that the change in their
 momentum is equal to the total force they are subject to:
 </p>
 
-<div class="latex" id="orga6d4df9">
+<div class="latex" id="org265046d">
 \begin{equation}
  m_{i} \ddot{\mathbf{r_{}}_{i}} = \mathbf{F}_{i} \ \, .
 \end{equation}
@@ -192,7 +192,7 @@ particles and sum over all the particles. Why? The reason is to make
 appear in the second term</i>:
 </p>
 
-<div class="latex" id="orge2bd10b">
+<div class="latex" id="org8db9e24">
 \begin{equation}\label{eq:first_moment_second_law}
 \sum_{i} m_{i}\ddot{\mathbf{r}_{i}} \cdot \mathbf{r}_{i} = \sum_{i} \mathbf{F}_{i} \cdot \mathbf{r}_{i} \ \ .
 \end{equation}
@@ -213,7 +213,7 @@ The l.h.s. can be re-written using the chain rule for the second
 time-derivative:
 </p>
 
-<div class="latex" id="orgbf1a6a4">
+<div class="latex" id="orgf29c97c">
 \begin{equation}
 \sum_{i} m_{i}\ddot{\mathbf{r}_{i}} \cdot \mathbf{r}_{i}  = \sum_{i} \frac{1}{2} m_{i} \frac{d^{2}}{dt^{2}}r_{i}^{2} - \sum_{i} m_{i} \cdot \dot{r_{i}}^{2}
 \end{equation}
@@ -230,7 +230,7 @@ moment of Newton's second law (Eq. \ref{eq:first_moment_second_law})
 we obtain:
 </p>
 
-<div class="latex" id="org44e5dc2">
+<div class="latex" id="orga1e2b7c">
 \begin{equation}
  2\mathrm{E}_\mathrm{kin}+\mathrm{E}_\mathrm{pot} = \frac{1}{2}\ddot{I}
 \end{equation}
@@ -238,7 +238,7 @@ we obtain:
 </div>
 
 <p>
-This is the general form of the Virial theorem derived by Clausius. In
+This is the general form of the Virial theorem derived by <a href="https://en.wikipedia.org/wiki/Rudolf_Clausius">Clausius</a>. In
 general, in the virial theorem there is a second derivative of the
 moment of inertia on the r.h.s., which is often forgotten. We did not
 specify almost anything about the system (see Goldstein for a
@@ -283,7 +283,7 @@ point-mass stars on a Keplerian orbit!
 One can write the total energy of the binary as:
 </p>
 
-<div class="latex" id="org8cc607e">
+<div class="latex" id="orgdc5601c">
 \begin{equation}
 E_\mathrm{tot} = \mathrm{E_\mathrm{kin}}_{1} + \mathrm{E_\mathrm{kin}}_{2} + \mathrm{E}_\mathrm{pot} \equiv \mathrm{E_\mathrm{kin}} + \mathrm{E}_\mathrm{pot}  \equiv -\frac{GM_{1}M_{2}}{2a}  \ \ ,
 \end{equation}
@@ -323,7 +323,7 @@ spherical symmetry, and write explicitly the forces acting on each
 shell \(dr\) of gas (cf. hydrostatic momentum balance <a href="notes-lecture-HSE.html#orgf1d40c2">seen before</a>):
 </p>
 
-<div class="latex" id="orgbd80ede">
+<div class="latex" id="org5cdb86e">
 \begin{equation}\label{eq:HSE}
 \frac{dP}{dm} = -\frac{Gm}{4\pi r^{4}}
 \end{equation}
@@ -337,7 +337,7 @@ done by multiplying by \(4\pi r^{3}\) and integrating in \(dm\) over the entire
 mass of the star (from \(0\) to \(M\)).
 </p>
 
-<div class="latex" id="orgeecf257">
+<div class="latex" id="org5dcea32">
 \begin{equation}\label{eq:pot}
 \int_{0}^{M} -\frac{Gm}{4\pi r^{4}} \times 4\pi r^{3} dm  = \int_{0}^{M} -\frac{Gm}{r}dm \equiv - \mathrm{E}_\mathrm{pot} \ \ .
 \end{equation}
@@ -347,7 +347,7 @@ mass of the star (from \(0\) to \(M\)).
 (so that \(E_{_\mathrm{pot}}=|\int_{0}^{M} -Gm/r dm| >0\)). The l.h.s. becomes integrating per parts
 </p>
 
-<div class="latex" id="orgdbb847a">
+<div class="latex" id="org700cacc">
 \begin{equation}
 \int_{0}^{M} \frac{dP}{dm} 4\pi r^{3} dm = \left[ 4\pi r^{3}P \right]^{M}_{0}- 3\int_{0}^{M}4\pi r^{2} \frac{\partial r}{\partial m} Pdm \ \ ,
 \end{equation}
@@ -360,7 +360,7 @@ the mass continuity equation and obtain \(-3\int_{0}^{M} P/\rho dm\), thus, putt
 back the pieces together:
 </p>
 
-<div class="latex" id="org473ae48">
+<div class="latex" id="org3040995">
 \begin{equation}\label{eq:vir}
 \int_{0}^{M }\frac{Gmdm}{r} = 3\int_{0}^{M} \frac{P}{\rho} dm \ \ .
 \end{equation}
@@ -396,7 +396,7 @@ specific entropy \(s\), and also re-write this in terms of density instead
 of specific volume $v$=(1 mass unit)/&rho; &rArr; \(dv = -d\rho/\rho^{2}\):
 </p>
 
-<div class="latex" id="org2a56a36">
+<div class="latex" id="org43fd9e6">
 \begin{equation}\label{eq:second_thermodynamics_law}
 dq = Tds = du + Pdv = du -\frac{P}{\rho^{2}}d\rho \ \ ,
 \end{equation}
@@ -423,7 +423,7 @@ constant entropy, so that is by definition the first adiabatic index
 \(\Gamma_{1}\). Ultimately, we can put all this together and write
 </p>
 
-<div class="latex" id="org06abd15">
+<div class="latex" id="orgb590328">
 \begin{equation}
 \frac{P}{\rho} = (\Gamma-1)u \ \ ,
 \end{equation}
@@ -439,7 +439,7 @@ Finally, substituting in the first-order moment of the hydrostatic
 equilibrium Eq. \ref{eq:vir} equation we have:
 </p>
 
-<div class="latex" id="orgb4a6ed4">
+<div class="latex" id="org03bb61a">
 \begin{equation}
 3\int_{0}^{M} \frac{P}{\rho} dm = 3\int_{0}^{M} (\Gamma-1)u dm \ \ .
 \end{equation}
@@ -452,7 +452,7 @@ parenthesis out of the integral. We can define \(E_\mathrm{int} = \int_{0}^{M} u
 and rewrite the above as \(3(\Gamma-1)E_\mathrm{int}\), and thus
 </p>
 
-<div class="latex" id="org5b2e2b3">
+<div class="latex" id="org4ef61db">
 \begin{equation}\label{eq:virial_star}
 - E_\mathrm{pot} = 3(\Gamma-1)E_\mathrm{int}
 \end{equation}
@@ -475,7 +475,7 @@ E_\mathrm{pot} + E_\mathrm{int}\). For a star to be bound,
 \ref{eq:virial_star}, we can rewrite this as
 </p>
 
-<div class="latex" id="org87e2da6">
+<div class="latex" id="org73e3031">
 \begin{equation}
 \mathrm{E}_\mathrm{tot} = \mathrm{E}_\mathrm{pot}\frac{3\Gamma-4}{3(\Gamma-1)} \equiv -(3\Gamma-4)\mathrm{E}_\mathrm{int}\ \ .
 \end{equation}
@@ -518,8 +518,8 @@ behind no black hole.
 </p>
 
 <div class="org-drawer-container">
-  <button class="org-drawer-toggle" onclick="toggleDrawer('drawer-Question-1314')">Question ▼</button>
-  <div id="drawer-Question-1314" class="org-drawer-content" style="display: none;"><ul class="org-ul">
+  <button class="org-drawer-toggle" onclick="toggleDrawer('drawer-Question-7824')">Question ▼</button>
+  <div id="drawer-Question-7824" class="org-drawer-content" style="display: none;"><ul class="org-ul">
 <li><b>Q</b>: for a star made only of photons, what is \(\Gamma\)? <b>Hint</b>: think of the
 \(P\equiv P(u_{})\) relation!</li>
 </ul>
@@ -555,7 +555,7 @@ extracted set by the virial theorem mentioned above.
 For an ideal  gas, the internal energy is related to the
 mean temperature by
 </p>
-<div class="latex" id="orgbf7eb00">
+<div class="latex" id="org3d2ba9f">
 \begin{equation}
 E_\mathrm{int} = \frac{\# \mathrm{degrees\ of\ freedom}}{2}Nk_{B}\langle T \rangle
 \end{equation}
@@ -568,7 +568,7 @@ average temperature in the star, and the number of degrees of freedom
 is 3 for a monoatomic gas. From the Virial theorem it follows that:
 </p>
 
-<div class="latex" id="org334ace8">
+<div class="latex" id="org3e16128">
 \begin{equation}
 E_\mathrm{int} = - \frac{E_\mathrm{pot}}{2} \Rightarrow \frac{3}{2} \frac{M}{\mu m_{u}} k_{B}\langle T \rangle = C \frac{GM^{2}}{R} \ \ ,
 \end{equation}
@@ -578,7 +578,7 @@ E_\mathrm{int} = - \frac{E_\mathrm{pot}}{2} \Rightarrow \frac{3}{2} \frac{M}{\mu
 where \(C = \{\int_{0}^{M} Gmdm/r\}/\{GM^{2}/R\}\) is a constant of \(\mathcal{O}(1)\)
 that depends on the mass distribution in the star. Thus:
 </p>
-<div class="latex" id="org4e1d890">
+<div class="latex" id="org3994a76">
 \begin{equation}
 \langle T \rangle = \frac{2\mu m_{u}}{3 k_{B}} C \frac{GM^{}}{R} \propto \frac{\mu M}{R} \ \ .
 \end{equation}
@@ -663,7 +663,7 @@ L has the units of power [L] = [E]/[t].
 <p>
 Then by definition:
 </p>
-<div class="latex" id="orgb6514ec">
+<div class="latex" id="orgc73468a">
 \begin{equation}\label{eq:tau_KH}
 \tau_\mathrm{KH} = \frac{\mathrm{E}_\mathrm{int}}{L} \equiv
 \frac{\mathrm{E}_\mathrm{pot}}{2L} \simeq \frac{GM^{2}}{2RL} \ \ ,
@@ -674,7 +674,7 @@ Then by definition:
 where we have used the virial theorem and set \(C\simeq1\). We can scale all
 the quantities to Solar values and obtain:
 </p>
-<div class="latex" id="org59e29e6">
+<div class="latex" id="org2465160">
 \begin{equation}\label{eq:KH_timescale_scaling}
 \tau_{KH} \simeq 1.57 \times 10^{7} \mathrm{years} \times \left(\frac{M}{M_{☉}}\right)^{2} \left(\frac{R}{R_{☉}}\right)^{-1 }\left(\frac{L}{L_{☉}}\right)^{-1} \ \ .
 \end{equation}
@@ -695,8 +695,8 @@ Shaviv "Life of stars" for a detailed discussion.
 </p>
 
 <div class="org-drawer-container">
-  <button class="org-drawer-toggle" onclick="toggleDrawer('drawer-Question-4769')">Question ▼</button>
-  <div id="drawer-Question-4769" class="org-drawer-content" style="display: none;"><ul class="org-ul">
+  <button class="org-drawer-toggle" onclick="toggleDrawer('drawer-Question-804')">Question ▼</button>
+  <div id="drawer-Question-804" class="org-drawer-content" style="display: none;"><ul class="org-ul">
 <li><b>Q</b>: A star may lose energy also by means other than photons,
 especially neutrinos. If such energy losses are important, how can
 we modify Eq. \ref{eq:tau_KH}?</li>

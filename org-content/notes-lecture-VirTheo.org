@@ -82,7 +82,7 @@ we obtain:
 \end{equation}
 #+end_latex
 
-This is the general form of the Virial theorem derived by Clausius. In
+This is the general form of the Virial theorem derived by [[https://en.wikipedia.org/wiki/Rudolf_Clausius][Clausius]]. In
 general, in the virial theorem there is a second derivative of the
 moment of inertia on the r.h.s., which is often forgotten. We did not
 specify almost anything about the system (see Goldstein for a
