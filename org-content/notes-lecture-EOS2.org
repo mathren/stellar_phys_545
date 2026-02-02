@@ -357,7 +357,7 @@ p\leq p_{F}  \ \  \mathrm{otherwise} \ \ 0 \ \ ,
   that be important?
 :end:
 
-/Ionization is the process of removal of an electron from an ion/, which
+/Ionization is the process of unbinding of an electron from an ion/, which
 can be *collisional* (e.g., molecules/atoms bumping into each other in
 the atmosphere charging a cloud and preparing it for lightning
 discharge) or *radiative* (e.g., photoionization in the photoelectric
