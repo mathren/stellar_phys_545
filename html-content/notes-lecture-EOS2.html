@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 2026-01-13 Tue 14:50 -->
+<!-- 2026-02-02 Mon 09:08 -->
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>ASTR545 - EOS (QM effects)</title>
@@ -13,22 +13,6 @@
 			       stellar evolution, ASTR545, PYTS545, 545, University of
 			       Arizona, Steward Observatory, stars,
 			       theoretical astrophysics">
-
-
-<script>
-function toggleDrawer(drawerId) {
-  var content = document.getElementById(drawerId);
-  var button = content.previousElementSibling;
-
-  if (content.style.display === "none") {
-    content.style.display = "block";
-    button.innerHTML = button.innerHTML.replace("▼", "▲");
-  } else {
-    content.style.display = "none";
-    button.innerHTML = button.innerHTML.replace("▲", "▼");
-  }
-}
-</script>
 <script>
   window.MathJax = {
     tex: {
@@ -121,7 +105,7 @@ function toggleDrawer(drawerId) {
       // Toggle theme on click
       toggleButton.addEventListener("click", () => {
           body.classList.toggle("dark-mode");
-	  html.classList.toggle("dark-mode");
+  html.classList.toggle("dark-mode");
 
           // Save user preference
           if (body.classList.contains("dark-mode")) {
@@ -131,6 +115,21 @@ function toggleDrawer(drawerId) {
           }
       });
   };
+</script>
+
+<script>
+  function toggleDrawer(drawerId) {
+      var content = document.getElementById(drawerId);
+      var button = content.previousElementSibling;
+
+      if (content.style.display === "none") {
+	  content.style.display = "block";
+	  button.innerHTML = button.innerHTML.replace("▼", "▲");
+      } else {
+	  content.style.display = "none";
+	  button.innerHTML = button.innerHTML.replace("▲", "▼");
+      }
+  }
 </script>
 <!-- end scripts-->
 </div>
@@ -147,7 +146,12 @@ function toggleDrawer(drawerId) {
 In the <a href="./notes-lecture-EOS1.html">previous lecture on EOS</a>, we have discussed polytropic EOS and
 classical, non-relativistic, ideal gas. The latter is an accurate
 description of the stellar gas in most, but importantly not <i>all</i> the
-astrophysical cases.
+astrophysical cases. Moreover, the <a href="./notes-lecture-VirTheo.html">virial theorem</a> describes the
+gravothermal collapse of a collection of particles interacting through
+long-range forces (e.g., the <i>self</i>-gravitating gas of a star) which
+goes on until either (i) an energy source intervenes to cancel out the
+surface energy losses to photons (and neutrinos), or (ii) the EOS
+deviates from an ideal gas.
 </p>
 
 <p>
@@ -173,7 +177,7 @@ principle"): \(\Delta x \Delta p \ge h\) with \(h\) Planck's constant. This natu
 translates in three spatial dimension to
 </p>
 
-<div class="latex" id="org5e09b06">
+<div class="latex" id="org9e5b843">
 \begin{equation}
 \Delta x \Delta y \Delta z \Delta p_{x} \Delta p_{y} \Delta p_{z} \ge h^{3} \ \,
 \end{equation}
@@ -186,7 +190,7 @@ available number of quantized states with momentum between \(p+dp\) within
 a volume \(dV = dxdydz \equiv d^{3}x\) is
 </p>
 
-<div class="latex" id="org11d7921">
+<div class="latex" id="orgc5bf490">
 \begin{equation}
 g(p)d^{3}pd^{3}x = g_{s} \frac{4\pi p^{2} dp dV}{h^{3}} \ \mathrm{with}\ p=\sqrt{p_{x}^{2} +p_{y}^{2} +p_{z}^{2}} .
 \end{equation}
@@ -213,7 +217,7 @@ From the <a href="notes-lecture-EOS1.html#org51962a8">previous lecture on EOS</a
 Maxwell-Boltzmann distribution
 </p>
 
-<div class="latex" id="orgaa87f49">
+<div class="latex" id="orgc0962e3">
 \begin{equation}
 n(p)\propto \frac{n}{(mT)^{3/2}} \exp\left(\frac{-p^{2}}{2mk_{B} T}\right)p^{2 }\ \ ,
 \end{equation}
@@ -225,7 +229,7 @@ where \(n\) is the number density, \(T\) the temperature, and \(m\) the mass of
 the particles. Therefore:
 </p>
 
-<div class="latex" id="orgb26084c">
+<div class="latex" id="org7ae2535">
 \begin{equation}\label{eq:momentum_ratios}
 \frac{n(p)}{g(p)}\propto n (mT)^{-3/2}\exp(\frac{-p^{2}}{2mk_{B}T}) \ \ .
 \end{equation}
@@ -269,7 +273,7 @@ states of energy between \(\varepsilon\equiv\varepsilon(p)\) and \(\varepsilon+d
 distribution:
 </p>
 
-<div class="latex" id="orgdf0aa3d">
+<div class="latex" id="org89b547b">
 \begin{equation}\label{eq:Fermi-Dirac}
  f_{FD}(\varepsilon) = \frac{1}{e^{(\varepsilon/k_{B}T - \eta)}+1} \le 1 \ \,
 \end{equation}
@@ -293,7 +297,7 @@ at most one fermion.
 case the relevant distribution is the Bose-Einstein's distribution:
 </p>
 
-<div class="latex" id="org1ee174e">
+<div class="latex" id="orgde6f3fc">
 \begin{equation}\label{eq:Bose-Einstein}
  f_{BE}(\varepsilon) = \frac{1}{e^{(\varepsilon/k_{B}T-\eta)}-1} \ \,
 \end{equation}
@@ -315,7 +319,7 @@ depending on the particle considered (\(f=f_\mathrm{FD}\) or
 \(f=f_\mathrm{BE}\)). To determine the chemical potential &mu; one can
 impose the normalization following from:
 </p>
-<div class="latex" id="org9519d11">
+<div class="latex" id="orgd16d962">
 \begin{equation}
 n = \int_{0}^{+\infty} f(\varepsilon(p))g(p)dp \ \ ,
 \end{equation}
@@ -383,7 +387,7 @@ the electrons occupy a sphere in momentum space with a radius p<sub>F</sub>
 called the "Fermi" momentum:
 </p>
 
-<div class="latex" id="org020599e">
+<div class="latex" id="org1723ced">
   \begin{equation}
   g_{e}(p)dp = q_{s}\frac{4\pi p^{2}}{h^{3}}dp \equiv \frac{8\pi p^{2}}{h^{3}}dp \ \  \mathrm{for} \ \
 p\leq p_{F}  \ \  \mathrm{otherwise} \ \ 0 \ \ ,
@@ -395,7 +399,7 @@ and we used q<sub>s</sub>=2 for electrons. To find the value of p<sub>F</sub> we
 the normalization coming from the total number density of electrons
 </p>
 
-<div class="latex" id="orgf474528">
+<div class="latex" id="orga7a8d55">
 \begin{equation}
 n_{e} = \int_{0}^{+\infty} g_{e}(p)dp = \frac{8\pi}{3h^{3}}p_{F}^{3} \Rightarrow p_{F} = h\left(\frac{3}{8\pi}n_{e}\right)^{1/3} \ \ .
 \end{equation}
@@ -420,7 +424,7 @@ need the appropriate p&equiv; p(&epsilon;) relaton
 In this case \(\varepsilon = p^{2}/2m\) is the energy of the electrons (still ideal
 gas) and \(v=p/m\), thus from the previous lecture on EOS we have:
 </p>
-<div class="latex" id="orgd4a2f73">
+<div class="latex" id="orgda2556d">
 \begin{equation}
 P_{e} = \frac{1}{3}\int_{0}^{p_{F}} \frac{8\pi}{h^{3}}p^{2}\frac{p}{m_{e}} p  dp = \frac{8\pi}{15 h^{3} m_{e}}p_{F}^{5} \equiv \frac{h^2}{20m_{e}}\left(\frac{3}{\pi}\right)^{2/3} n_{e}^{5/3} \Rightarrow P_{e} \propto \rho^{5/3}\ \ .
 \end{equation}
@@ -458,7 +462,7 @@ with exponent now</i> \(\Gamma=4/3\).
 <p>
 Specifically the calculation yields:
 </p>
-<div class="latex" id="org577c5b9">
+<div class="latex" id="org13e5f6d">
 \begin{equation}
 P_{e} = \frac{1}{3}\int_{0}^{p_{F}} \frac{8\pi}{h^{3}}p^{2}c p  dp = \frac{hc}{8}\left(\frac{3}{\pi}\right)^{1/3} n_{e}^{4/3} \Rightarrow P_{e} \propto \rho^{4/3} \ \ .
 \end{equation}
@@ -479,7 +483,7 @@ One can estimate the density at the transition with the
 condition \(p_{F} \simeq m_{e} c\):
 </p>
 
-<div class="latex" id="org1e9cbb2">
+<div class="latex" id="orgebe6970">
 \begin{equation}
  \rho_{NR \rightarrow UR} \simeq \mu_{e} m_{u} \frac{8\pi}{3} \left(\frac{m_{e}c}{h}\right)^{3} \ \ .
 \end{equation}
@@ -574,7 +578,7 @@ We can then calculate the internal energy density of the photon gas
 as \(u_{int} = a T^{4}\) with a the radiation constant:
 </p>
 
-<div class="latex" id="orga59b5ec">
+<div class="latex" id="org64ceea6">
 \begin{equation}
 a = \frac{8\pi^{5} k_{B}^4}{15h^{3}c^{3}} = 7.56\times10^{-15} \mathrm{erg} \ \mathrm{cm}^{-3} \ \mathrm{K}^{-4} \ \ ,
 \end{equation}
@@ -590,7 +594,7 @@ Relying again on the ultra-relativistic nature of photons, we know
 that \(P=u_{int}/3\) and therefore the radiation pressure is:
 </p>
 
-<div class="latex" id="orgbd844e0">
+<div class="latex" id="org133ae17">
 \begin{equation}
 P_\mathrm{rad} =\frac{1}{3}aT^{4} \ \ .
 \end{equation}
@@ -603,8 +607,8 @@ P_\mathrm{rad} =\frac{1}{3}aT^{4} \ \ .
 <h3 id="org71b0373"><a href="#org71b0373">Partial ionization effects</a></h3>
 <div class="outline-text-3" id="text-org71b0373">
 <div class="org-drawer-container">
-  <button class="org-drawer-toggle" onclick="toggleDrawer('drawer-Question-9904')">Question ▼</button>
-  <div id="drawer-Question-9904" class="org-drawer-content" style="display: none;"><ul class="org-ul">
+  <button class="org-drawer-toggle" onclick="toggleDrawer('drawer-Question-5971')">Question ▼</button>
+  <div id="drawer-Question-5971" class="org-drawer-content" style="display: none;"><ul class="org-ul">
 <li><b>Q</b>: So far we have assumed full ionization of the gas. What do you
 think may change if we account for partial ionization? And where may
 that be important?</li>
@@ -658,7 +662,7 @@ can define \(\mu_{0}\) as the mean molecular weight per nucleus, and \(\mu_{e}\)
 mean molecular weight per electron, and thus
 </p>
 
-<div class="latex" id="org99302fd">
+<div class="latex" id="org4632ecf">
 \begin{equation}
 \rho = (n+n_{e})\mu m_{u}\equiv n\mu_{o}m_{u} \equiv n_{e}\mu_{e} m_{u} \ \ .
 \end{equation}
@@ -672,7 +676,7 @@ density of massive ions regarless of their ionization state), and thus
 rewrite the above as
 </p>
 
-<div class="latex" id="orgae64de4">
+<div class="latex" id="org905166c">
 \begin{equation}
 \mu = \frac{\rho}{m_{u}n}\frac{1}{1+E} \equiv \frac{\mu_{0}}{1+E} \equiv \mu_{e}\frac{E}{1+E} \ \ .
 \end{equation}
@@ -695,7 +699,7 @@ calculate \(E\) as a function of \(T\), and \(\rho\).
 Putting all things together:
 </p>
 
-<div class="latex" id="orgd1afdbe">
+<div class="latex" id="org90cc135">
 \begin{equation}
 P_\mathrm{tot} = P_\mathrm{gas} + P_\mathrm{rad} = \frac{\rho}{\mu m_{u}}k_{B}T +
 P_\mathrm{QM} + \frac{1}{3}aT^{4}  \ \ ,
@@ -718,7 +722,7 @@ mechanics:
 </p>
 
 
-<figure id="orgefb35e3">
+<figure id="org221febd">
 <img src="./images/EOS_blend_paxton18.png" alt="EOS_blend_paxton18.png" width="100%">
 
 <figcaption><span class="figure-number">Figure 1: </span>Blend of tabulated EOS on the T(&rho;) plane used in MESA (Fig. 50 in <a href="https://ui.adsabs.harvard.edu/abs/2018ApJS..234...34P/abstract">Paxton et al. 2018</a>), see also <a href="https://ui.adsabs.harvard.edu/abs/2021ApJ...913...72J/abstract">Jermyn et al. 2021</a> for updates relevant to large portions of this plane. The blue and purple tracks correspond to evolved stellar models of the mass labeled.</figcaption>
@@ -779,7 +783,7 @@ mass?</li>
   <hr>
   <a href="#light-dark-toggle"><i id="light-dark-toggle"><i class="fa-solid fa-circle-half-stroke"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="notes-lecture-VirTheo.html"><i class="fa-solid fa-arrow-left" style="font-size:16px"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="#top"><i class="fa-solid fa-arrow-up" style="font-size:16px"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="notes-lecture-ETransport.html"><i class="fa-solid fa-arrow-right" style="font-size:16px"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="https://github.com/mathren/stellar_phys_545"><i class="fa-brands fa-github" style="font-size:16px"></i></a><hr>
   <br>
-  Last updated on 13 January 2026 <br>
+  Last updated on 2 February 2026 <br>
   Made with Emacs 29.2 - Org mode 9.6.15
   <br>
 </div>

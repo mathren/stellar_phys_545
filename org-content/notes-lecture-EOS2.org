@@ -11,7 +11,12 @@
 In the [[./notes-lecture-EOS1.org][previous lecture on EOS]], we have discussed polytropic EOS and
 classical, non-relativistic, ideal gas. The latter is an accurate
 description of the stellar gas in most, but importantly not /all/ the
-astrophysical cases.
+astrophysical cases. Moreover, the [[./notes-lecture-VirTheo.org][virial theorem]] describes the
+gravothermal collapse of a collection of particles interacting through
+long-range forces (e.g., the /self/-gravitating gas of a star) which
+goes on until either (i) an energy source intervenes to cancel out the
+surface energy losses to photons (and neutrinos), or (ii) the EOS
+deviates from an ideal gas.
 
 Now, we will consider cases that don't verify the hypothesis we took
 previously and discuss briefly some stars for which we need to go
