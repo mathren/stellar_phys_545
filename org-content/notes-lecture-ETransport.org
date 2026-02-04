@@ -219,15 +219,8 @@ in the photon field at the location r):
 
 This is, for the case of radiative energy transport only, the extra
 differential equation relating T and \rho, but unfortunately it also
-brings in a new variable, the local radiative luminosity $L_\mathrm{rad}$.
-
-*N.B.:* If radiative energy transport is the *only* energy transport
-mechanism at radius $r$ (that is no convection, no neutrino emission
-and no electron conduction), then $L_\mathrm{rad}(r)\equiv L(r)$ where
-$L(r)$ is the /total/ luminosity at that location in the star. This is
-in general not true because of the contribution by neutrinos and
-convection: $L(r) = L_\mathrm{rad} (r)+ L_\mathrm{cond} (r) + L_{\nu}
-(r)+L_\mathrm{conv}(r)$.
+brings in a new variable, the local radiative luminosity
+$L_\mathrm{rad}$.
 
 *N.B.:* Yes, we are introducing yet two other variables, $L_\mathrm{rad}$ and
 $\kappa_\mathrm{rad}$ here. We will have to write an equation for the former, but
@@ -237,6 +230,14 @@ topic of research (including classified research for military
 purposes...), for stellar physics application we have lookup tables
 for $\kappa_\mathrm{rad}\equiv\kappa_\mathrm{rad}(T,\rho)$, and thus we will not count it as a
 new variable after discussing the physics it represents.
+
+*N.B.:* If radiative energy transport is the *only* energy transport
+mechanism at radius $r$ (that is no convection, no neutrino emission
+and no electron conduction), then $L_\mathrm{rad}(r)\equiv L(r)$ where
+$L(r)$ is the /total/ luminosity at that location in the star. This is
+in general not true because of the contribution by neutrinos and
+convection: $L(r) = L_\mathrm{rad} (r)+ L_\mathrm{cond} (r) + L_{\nu}
+(r)+L_\mathrm{conv}(r)$.
 
 Because of the assumption underpinning the diffusion approximation,
 this is /not/ the right equation whenever $\ell_{\gamma}$ is not negligible
