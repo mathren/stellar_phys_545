@@ -275,7 +275,7 @@ $\ell = 1/(n_{e}\sigma) \ll \ell_{\gamma}$ . Thus, since $v\le c$ and
 $\ell\ll\ell_{\gamma}$ for most stars energy conduction by particle (electron)
 collisions is sub-dominant compared to radiative energy.
 
-Things are different though for degenerate electron gas (so inside
+Things are different though for degenerate gas (so inside
 white dwarfs and neutron stars, but also evolved stellar cores that
 are dense enough for degeneracy to occur). In the case of degeneracy,
 the thermal velocities increase (up to $v \simeq c$ for an degenerate gas
