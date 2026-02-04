@@ -497,7 +497,7 @@ assuming that $\kappa \equiv \kappa_{es} = 0.2(1+X)$ g cm^{-2}. In this derivati
 not need to assume anything for $\kappa$: the expression you derived is
 sometimes referred to as "modified Eddington Luminosity". Because of
 its dependence on $\kappa$, which we will see can vary throughout the star,
-it can occasionally occur that $L_\mathrm{Edd} <L$. In this case
+it can occasionally occur that $L_\mathrm{Edd} \le L$. In this case
 radiative energy transport and hydrostatic equilibrium cannot be
 simultaneously satisfied - and this occurs in the envelope of massive
 stars for example. For an (optically thick) accretion flow, this
