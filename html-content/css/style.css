@@ -260,7 +260,7 @@ span.todo.TODO {
 /* Ensure MathJax spans allow proper rendering */
 .MathJax {
   overflow: visible !important;
-  display: inline-block; /* Prevent constraints */
+  display: inline !important; /*-block; /* Prevent constraints */
 }
 
 
