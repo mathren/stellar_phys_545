@@ -305,6 +305,7 @@ mjx-mtext {
 .MathJax_Preview + .MathJax_Display {
   user-select: text !important;
 }
+
 /* Footer */
 hr {
     width: 100%;
