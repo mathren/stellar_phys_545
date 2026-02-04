@@ -252,24 +252,59 @@ span.todo.TODO {
   overflow: visible; /* Prevents content clipping */
 }
 
-/* Ensure all MathJax containers do not clip content */
-.mathjax-container {
-  overflow: visible !important;
-}
+/* /\* Ensure all MathJax containers do not clip content *\/ */
+/* .mathjax-container { */
+/*   overflow: visible !important; */
+/* } */
 
-/* Ensure MathJax spans allow proper rendering */
-.MathJax {
-  overflow: visible !important;
-  display: inline !important; /* Prevent constraints */
-}
+/* /\* Ensure MathJax spans allow proper rendering *\/ */
+/* .MathJax { */
+/*   overflow: visible !important; */
+/*   display: inline-block; /\* Prevent constraints *\/ */
 
-.MathJax * {
+/* } */
+
+/* Enable text selection and copying in MathJax elements */
+.MathJax,
+.MathJax_Display,
+.MathJax_Preview,
+.MathJax_SVG,
+.MathJax_MathML {
   user-select: text !important;
   -webkit-user-select: text !important;
   -moz-user-select: text !important;
   -ms-user-select: text !important;
 }
 
+/* Ensure MathJax containers don't block selection */
+.MathJax_Display {
+  cursor: text;
+}
+
+/* For MathJax v3 (CHTML and SVG output) */
+mjx-container,
+mjx-math,
+mjx-mtext {
+  user-select: text !important;
+  -webkit-user-select: text !important;
+}
+
+/* Prevent MathJax from being treated as an image */
+.MathJax_SVG svg {
+  user-select: text !important;
+  pointer-events: all;
+}
+
+/* Optional: Style for hover feedback */
+.MathJax:hover {
+  background-color: rgba(173, 216, 230, 0.1);
+  cursor: text;
+}
+
+/* For inline math */
+.MathJax_Preview + .MathJax_Display {
+  user-select: text !important;
+}
 /* Footer */
 hr {
     width: 100%;
