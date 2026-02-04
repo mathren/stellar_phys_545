@@ -133,6 +133,9 @@ positive one, and we just want to count the latter, and the factor of
 1/3 in front of their average velocity comes from the fact that the
 motion is isotropic (see [[file:notes-lecture-EOS1.org::*Ideal gas][derivation of the pressure]]).
 
+*N.B.:* in this one-dimensional derivation the number density $n$ is per
+unit length ([$n$] = 1/L).
+
 If there is a gradient $\partial n /\partial z$ of particles along the $z$ direction,
 the particles moving with positive $\delta z$  come from $n(z-\ell)$
 while those moving with the negative $\delta z$  come from $n(z+\ell)$, so the net
