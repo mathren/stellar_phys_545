@@ -260,9 +260,12 @@ span.todo.TODO {
 /* Ensure MathJax spans allow proper rendering */
 .MathJax {
   overflow: visible !important;
-  display: inline !important; /*-block; /* Prevent constraints */
+  display: inline-block; /* Prevent constraints */
 }
 
+.MathJax * {
+  user-select: text !important;
+}
 
 /* Footer */
 hr {
