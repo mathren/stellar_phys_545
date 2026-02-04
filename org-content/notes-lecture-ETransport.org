@@ -510,6 +510,7 @@ brings in the in-falling material in the first place.
 luminosity here is that the photons are a black body, that is an
 optically thick environment is necessary.
 
+
 ** Exercise 5.3 in Onno Pols' lecture notes
 Without solving the stellar structure equations, we can already derive
 useful scaling relations. In this question you will use the equation
