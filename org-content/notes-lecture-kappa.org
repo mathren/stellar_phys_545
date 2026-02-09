@@ -22,14 +22,15 @@ combination of the radiative opacity and conductive opacity
 \end{equation}
 #+end_latex
 
-Since we also saw that $dT/dr \propto \kappa F$, it is clear that the opacity $\kappa$ is
-an extremely important parameter for the structure of the star.
-Effectively, what that proportionality means is that given an opacity
-profile $\kappa\equiv\kappa(r(m)$), the stellar structure will adjust in such a way
-that the temperature gradient $dT/dr$ is sufficient to carry out the
-flux $F$ that is necessary to maintain energy conservation
-layer-by-layer (accounting for the energy losses at the surface and
-throughout because of e.g., neutrinos)!
+Since we also saw that, in a stably stratified radiative region,
+$dT/dr \propto \kappa F$, it is clear that the opacity $\kappa$ is an extremely
+important parameter for the structure of the star. Effectively, what
+that proportionality means is that given an opacity profile
+$\kappa\equiv\kappa(r(m)$), the stellar structure will adjust in such a way that the
+temperature gradient $dT/dr$ is sufficient to carry out the flux $F$
+that is necessary to maintain energy conservation layer-by-layer
+(accounting for the energy losses at the surface and throughout
+because of e.g., neutrinos)!
 
 *N.B.:* The structure of each layer of the star is determined by (i) the
 microscopic properties of matter (e.g., $\kappa_\mathrm{rad}$) and, more importantly,
@@ -160,6 +161,7 @@ summed /before/ taking the average over frequencies: first we need to
 calculate $\kappa_{\nu}^\mathrm{tot} = \sum_\mathrm{i} \kappa_{\nu,i}X_{i}$ as a sum
 weighted with the mass fraction $X_{i}$ of each species and then plug
 $\kappa_{\nu}^\mathrm{tot}$ into the Rosseland mean.
+
 
 * Sources of radiative opacity
 
