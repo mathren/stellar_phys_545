@@ -33,9 +33,10 @@ that is necessary to maintain energy conservation layer-by-layer
 because of e.g., neutrinos)!
 
 *N.B.:* The structure of each layer of the star is determined by (i) the
-microscopic properties of matter (e.g., $\kappa_\mathrm{rad}$) and, more importantly,
-(ii) the energy losses by the outward flux $F$. The latter is the way
-the star compensates for the energy losses (its luminosity $L$).
+microscopic properties of matter (e.g., $\kappa_\mathrm{rad}$) and, more
+importantly, (ii) the energy losses by the outward flux $F$. The
+latter has to occur as a consequence of the energy losses (its /total/
+luminosity $L$).
 
 The purpose of this lecture is to focus on $\kappa_\mathrm{rad}$ and understand what
 physically determines it, and understand how $\kappa_\mathrm{rad}\equiv\kappa_\mathrm{rad}(T,
