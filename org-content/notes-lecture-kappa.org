@@ -266,8 +266,9 @@ the $\mu_{e}m_{u}$ gives the corresponding opacity. Therefore, for $T\geq10^{6}$
 \end{equation}
 #+end_latex
 which does /not/ depend on $T$ or $\rho$, but only on the mass fraction of
-Hydrogen $X$ (recall that $\mu_{e} = 2/(1+X)$ for fully ionized gas). If
-the gas is not fully ionized the expression here does not old.
+Hydrogen $X$ (recall that $\mu_{e} = 2/(1+X)$ for fully ionized and
+metal-free gas). If the gas is not fully ionized the expression here
+does not old.
 
 Note that this opacity does /not/ depend on the electromagnetic
 wave/photon frequency $\nu$, so in the Rosseland mean, it comes out of the
