@@ -366,7 +366,7 @@ levels, and thus the bound-bound and bound-free). The solid black line
 represents the $T(\rho)$ profile of a stellar model.
 
 Opacity "bumps" in the stellar interior and surface can lead to a
-steepening of the radiative gradient (recall $dT/dr \prop \kappa \times F$), and
+steepening of the radiative gradient (recall $dT/dr \propto \kappa \times F$), and
 cause the onset of other energy transport mechanisms and possibly
 stellar eruptions.
 
