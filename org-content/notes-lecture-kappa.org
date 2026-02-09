@@ -271,8 +271,8 @@ metal-free gas). If the gas is not fully ionized the expression here
 does not old.
 
 Note that this opacity does /not/ depend on the electromagnetic
-wave/photon frequency $\nu$, so in the Rosseland mean, it comes out of the
-integral!
+wave/photon frequency $\nu$, so in the Rosseland mean, it comes out of
+the integral!
 
 For very high energy, one needs to account also for the momentum
 exchange between radiation and the electron (Thomson \rightarrow Compton
@@ -293,7 +293,7 @@ roto-vibrational molecular bands).
 astrophysics, when the relevant molecules can be synthesized and kept
 at the relevant $T$ and $\rho$ one can experimentally measure their
 $\kappa_\mathrm{rad}$ which is extremely complicated to calculate from
-first principles.
+first principles (see for example [[https://sites.arizona.edu/ziurys-lab/][work by Prof. Ziurys]]).
 
 ** H^{-}
 At low temperature hydrogen may capture an extra electron forming an
