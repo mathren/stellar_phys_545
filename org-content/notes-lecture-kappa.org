@@ -259,7 +259,7 @@ bound electrons), which greatly simplifies the $\kappa_\mathrm{rad}(T,\rho)$ dep
 The scattering of a classical electromagnetic wave off-an electron can
 be described by the Thomson scattering cross section, which divided by
 the $\mu_{e}m_{u}$ gives the corresponding opacity. Therefore, for $T\geq10^{6}$ K, $\kappa_\mathrm{rad}
-\equiv \kappa_{es}$:
+\equiv \kappa_{\rm es}$:
 #+begin_latex
 \begin{equation}
 \kappa_\mathrm{es} = 0.2(1+X) \ \ \mathrm{cm^{2} \ g} \ \ ,
