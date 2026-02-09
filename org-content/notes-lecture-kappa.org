@@ -163,6 +163,15 @@ calculate $\kappa_{\nu}^\mathrm{tot} = \sum_\mathrm{i} \kappa_{\nu,i}X_{i}$ as a
 weighted with the mass fraction $X_{i}$ of each species and then plug
 $\kappa_{\nu}^\mathrm{tot}$ into the Rosseland mean.
 
+*N.B.:* Other mean opacities can be defined in radiation hydrodynamics,
+for instance the Planck opacity, which is the black-body weighted mean
+of the specific opacities:
+#+begin_latex
+\begin{equation}
+\kappa_{\rm Planck} = \frac{\int_{0}^{+\infty} \kappa_{\nu}B(\nu, T)d\nu}{\int_{0}^{+\infty} B(\nu T)d\nu}\ \ ,
+\end{equation}
+#+end_latex
+
 
 * Sources of radiative opacity
 
