@@ -343,8 +343,8 @@ high density degenerate cores to become effectively isothermal
 
 * Combining all these sources together
 
-*N.B.:* Ultimately in stellar evolution we use tabulated $\kappa_\mathrm{rad} \equiv
-\kappa_\mathrm{rad}(\rho, T)$ that (try to) account for all these effects without
+*N.B.:* Ultimately in stellar evolution we use tabulated $\kappa \equiv
+\kappa(\rho, T)$ that (try to) account for all these effects without
 needing to calculate them on the fly while dealing with the star.
 
 
