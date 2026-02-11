@@ -98,8 +98,8 @@ motion for the nearest red supergiant to Earth!
 
 This is a 2D simulation of convection developing during a nova
 explosion using the [[https://flash.rochester.edu/site/][FLASH]] code. The movie shows the (log_{10}) mass
-fraction of $^{20}\mathrm{Ne}$, and is taken from [[http://www.fen.upc.edu/users/jjose/][J. Jordi's personal webpage]]
-(one of the co-authors).
+fraction of $^{20}\mathrm{Ne}$, and is taken from [[http://www.fen.upc.edu/users/jjose/][J. Jordi's personal
+webpage]] (one of the co-authors).
 
 #+HTML: <video  controls width="600" height="400" src="./images/125M-ONe-3.mp4" </video>
 #  [[./images/125M-ONe-3.mp4]]
