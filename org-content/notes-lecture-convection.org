@@ -692,14 +692,14 @@ the convective velocities are much smaller than the /local/ sound speed
 (which guarantees that hydrostatic equilibrium is verified along the
 path $\ell$), and, equivalently, the local /thermal/ velocity.
 
-Nevertheless, even a velocity of $v_\mathrm{conv} \simeq 10^{-4} c_\mathrm{sound}$ is
-sufficient to mix material very efficiently over the evolutionary
-timescales (*N.B.:* the sound crossing time of a star is $\sim \tau_{ff} \ll$
-evolutionary timescales by a factor smaller than 10^{-4}. For the Sun
-it's hours/billions of years - for now we are using geological
-evidence on Earth to estimate the age of the Sun). Therefore,
-/convection not only carries energy flux, but can also mix the
-chemical composition/!
+Nevertheless, even a velocity of $v_\mathrm{conv} \simeq 10^{-4}
+c_\mathrm{sound}$ is sufficient to mix material very efficiently over
+the evolutionary timescales (*N.B.:* the sound crossing time of a star
+is $\sim \tau_{ff} \ll$ evolutionary timescales by a factor smaller than 10^{-4}.
+For the Sun it's hours/billions of years - for now we are using
+geological evidence on Earth to estimate the age of the Sun).
+Therefore, /convection not only carries energy flux, but can also mix
+(very efficienly) the chemical composition/!
 
 Similar argument apply to semiconvection and thermohaline mixing (and
 even the kitchen experiment can clearly show that thermohaline mixing
