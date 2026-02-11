@@ -483,7 +483,7 @@ approximation for the temperature changes.
 
 To put this in the form of the gradients that we have defined above
 for the stability, we notice that $dT/dr = T \times d \log(T)/ d \log(P) \times
-d \log(P)/dr$, and assume that $T_\mathrm{bubble} \simeq T_{env} \equiv T$,
+d \log(P)/dr$, and assume that $T_\mathrm{bubble} \simeq T_{\rm env} \equiv T$,
 that is effectively consider only the zeroth order of the Taylor
 series in temperature, and rewrite for the temperature difference:
 
