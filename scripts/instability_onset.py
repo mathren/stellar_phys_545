@@ -81,7 +81,7 @@ if __name__ == "__main__":
 
     # Labels and title
     ax.set_xlabel('Time (t)')
-    ax.set_ylabel('Quantity')
+    ax.set_ylabel('Quantity (Q)')
     # ax.set_title('Onset of Instability: Transition from Stable to Unstable Growth',
     #              fontsize=16, fontweight='bold', pad=20)
 
@@ -92,11 +92,11 @@ if __name__ == "__main__":
                 arrowprops=dict(arrowstyle='->', color='black', lw=1.5))
 
     ax.annotate('Exponential\ngrowth', xy=(t_onset + 1.5, 1.2),
-                xytext=(t_onset + 1.5, 3 - 1.2),
+                xytext=(t_onset + 1.5, 3.5),
                 fontsize=20, ha='center',
                 arrowprops=dict(arrowstyle='->', color='black', lw=1.5))
 
-    ax.annotate('New\nsteady state', xy=(t_saturation + 2, y_final),
+    ax.annotate('New saturated\nsteady state', xy=(t_saturation + 2, y_final),
                 xytext=(t_saturation + 2, y_final - 2),
                 fontsize=20, ha='center',
                 arrowprops=dict(arrowstyle='->', color='black', lw=1.5))
