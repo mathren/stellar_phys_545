@@ -43,7 +43,9 @@ gas), although it results in /local/ motion of gas/plasma (dynamics).
 However, the resulting velocities are very small compared to thermal
 velocities and the /net/ flux of matter is zero. This regime straddling
 across /thermal/ and /dynamical/ scales makes convection particularly
-challenging to model directly across stellar scales. Moreover, it is
+challenging to model directly across stellar scales.
+
+Finally, convection (much like radiative diffusion and conduction) is
 /not/ unique to stars: the monsoon clouds in Tucson's summer are also
 manifestation of convection in the Earth atmosphere!
 
