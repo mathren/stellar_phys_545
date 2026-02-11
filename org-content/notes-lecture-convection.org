@@ -477,7 +477,9 @@ w.r.t. the surrounding environment:
 
 *N.B.*: Earlier we have considered an infinitesimal radial displacement
 $\Delta$ to perform a linear stability analysis and obtain a stability
-criterion. Now $\Delta\rightarrow\ell$ does not need to be small a priori.
+criterion. Now $\Delta\rightarrow\ell$ does not need to be infinitesimal anymore, just
+small compared to the size of the star to allow for a linear
+approximation for the temperature changes.
 
 To put this in the form of the gradients that we have defined above
 for the stability, we notice that $dT/dr = T \times d \log(T)/ d \log(P) \times
