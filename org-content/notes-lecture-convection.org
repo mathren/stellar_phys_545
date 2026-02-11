@@ -36,11 +36,15 @@ physics), and is because of this inherently multi-dimensional. Because
 of this, convection is usually one of the most approximate ingredients
 in stellar calculations, and often the root of many open problems.
 
-Convection is a /thermal/ instability (as we will see it kicks in if the
-temperature gradient is steeper than some threshold condition),
-although it results in /local/ motion of gas/plasma: as we will see the
-velocities are very small compared to thermal velocities. Moreover, it
-is /not/ unique to stars: the monsoon clouds in Tucson's summer are also
+Convection is at the boundary between a /dynamical/ and a /thermal/
+instability: as we will see it kicks in if the temperature gradient is
+steeper than some threshold condition (so thermal properties of the
+gas), although it results in /local/ motion of gas/plasma (dynamics).
+However, the resulting velocities are very small compared to thermal
+velocities and the /net/ flux of matter is zero. This regime straddling
+across /thermal/ and /dynamical/ scales makes convection particularly
+challenging to model directly across stellar scales. Moreover, it is
+/not/ unique to stars: the monsoon clouds in Tucson's summer are also
 manifestation of convection in the Earth atmosphere!
 
 Before discussing the details of the physics of convection by using
