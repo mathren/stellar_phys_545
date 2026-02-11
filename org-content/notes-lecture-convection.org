@@ -447,16 +447,16 @@ as a self-sustaining flame:
 
 MLT is meant to describe the spatial and temporal average of the gas
 flow in the convective region driven by the (chemical) energy release
-from the flame. Intuitively, it's like taking a picture (assuming any
-snapshot in time is statistically equivalent to any other), and then
-averaging across the horizontal cross section of this flame to obtain
-an approximation to the time- and space- averaged vertical flow of
-energy and temperature. With all the limitations that this entails,
-MLT is a very successful theory that is sufficient for /most/ stellar
-evolution applications since those typically are concerned with
-timescales that are very long w.r.t. the convective turnover timescale
-(i.e., in the fire analogy, very long compared to the "flickering" of
-the flames).
+from the flame. Intuitively, it's like taking a picture (assuming
+ergodicity, that is any snapshot in time is statistically equivalent
+to any other), and then averaging across the horizontal cross section
+of this flame to obtain an approximation to the time- and space-
+averaged vertical flow of energy and temperature. With all the
+limitations that this entails, MLT is a very successful theory that is
+sufficient for /most/ stellar evolution applications since those
+typically are concerned with timescales that are very long w.r.t. the
+convective turnover timescale (i.e., in the fire analogy, very long
+compared to the "flickering" of the flames).
 
 :Question:
  - *Q*: based on this, can you guess where/when MLT will be an
