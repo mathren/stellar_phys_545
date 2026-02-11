@@ -383,7 +383,7 @@ of the donor star, putting helium rich higher \mu gas on top of the lower \mu
 envelope.
 
 *** Which instability criterion should one use?
-Naively, one may think that the Ledoux convection is more physically
+Naively, one may think that the Ledoux criterion is more physically
 accurate, since it requires one less hypothesis (which we know to not
 always be correct inside a star). However, when calculating stellar
 models, what we are interested in is the /long-term/ evolution of the
