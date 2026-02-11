@@ -129,6 +129,11 @@ stability of the matter stratification and transport of energy by the
 other mechanisms we have already discussed breaks down: /convection
 occurs if energy diffusion is insufficient to carry the flux/.
 
+#+CAPTION: Schematic representation of an instability. A generic quantity starts from an initial steady state, when the instability kicks in, it leads to an exponential growth, until the instability saturates to a new steady state. The assumed functional behavior is $Q = Q_{\rm initial}+(Q_{\rm final}-Q_{\rm initial}) (e^{\gamma t}-1)/(e^{\gamma (t_{\rm saturation}-t_{\rm onset})}-1)$.
+#+ATTR_HTML: :width 50%
+[[./images/instability_onset.png]]
+
+
 How convection exactly turns on/off and especially how to treat this
 in stellar evolution models is still a debated issue - but we can
 construct a [[*Convective stability criterion: Schwarzschild & Ledoux criterion][stability criterion]]: when this is violated, convection
