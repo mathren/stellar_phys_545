@@ -536,6 +536,9 @@ the sinking bubbles.
 
 To estimate the convective velocity $v_\mathrm{conv}$ we can consider
 the work done by the buoyancy forces (per unit volume) on the bubble.
+This should be related to the kinetic energy of the convective flow,
+since buoyancy is what drives the convective instability, and thus to
+the average velocity (in space and time) $v_{\mathrm{conv}}$.
 
 :Question:
 - *Q*: before we even do this calculation, can you imagine an
