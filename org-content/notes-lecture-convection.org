@@ -519,7 +519,7 @@ F_\mathrm{conv} = c_{p} \rho \frac{\ell}{H_{p}} T \left(\nabla_\mathrm{rad} - \n
 :end:
 
 Here there are two things we don't know yet: how far the bubble goes $\ell$
-and the convective velocity.
+and the convective velocity $v_{\rm conv}$.
 
 *N.B.:* In general, to maintain the net-zero mass flux, for each bubble
 of mass $\delta m$ raising there is one of the same mass sinking. The raising
