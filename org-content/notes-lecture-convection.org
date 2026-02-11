@@ -325,9 +325,8 @@ We can then rewrite \ref{eq:instability_crit} as
 \mathrm{Instability\ if:} \nabla_\mathrm{rad} \geq \nabla_\mathrm{ad} + \frac{\varphi}{\delta} \nabla_{\mu} \ \ ,
 \end{equation}
 #+end_latex
-with $\nabla_{\mu} = \partial log(\mu)/\partial\log(P)$. Eq.
-\ref{eq:ledoux_crit} is usually referred to as the Ledoux criterion
-([[https://ui.adsabs.harvard.edu/abs/1947ApJ...105..305L/abstract][Ledoux 1947]]).
+with $\nabla_{\mu} = \partial\log(\mu)/\partial\log(P)$. Eq. \ref{eq:ledoux_crit} is usually
+referred to as the Ledoux criterion ([[https://ui.adsabs.harvard.edu/abs/1947ApJ...105..305L/abstract][Ledoux 1947]]).
 
 *** Secular mixing processes: semiconvection and thermohaline mixing
 For stellar layers that are stable according to the Ledoux criterion
