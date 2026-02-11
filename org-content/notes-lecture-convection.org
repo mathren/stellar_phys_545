@@ -539,9 +539,10 @@ the work done by the buoyancy forces (per unit volume) on the bubble.
 
 :Question:
 - *Q*: before we even do this calculation, can you imagine an
-  upper-limit for v_\mathrm{conv} in the approximated picture we are developing?
-  (*Hint*: we have assumed that any pressure imbalance between the
-  bubble and the environment would be quickly be washed out)
+  upper-limit for $v_\mathrm{conv}$ in the approximated picture we are
+  developing? (*Hint*: we have assumed that any pressure imbalance
+  between the bubble and the environment would be quickly be washed
+  out)
 :end:
 
 The buoyancy force per unit volume acts in the direction opposite of
