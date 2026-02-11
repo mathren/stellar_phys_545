@@ -130,7 +130,7 @@ other mechanisms we have already discussed breaks down: /convection
 occurs if energy diffusion is insufficient to carry the flux/.
 
 #+CAPTION: Schematic representation of an instability. A generic quantity starts from an initial steady state, when the instability kicks in, it leads to an exponential growth, until the instability saturates to a new steady state. The assumed functional behavior is $\small Q = Q_{\rm initial}+(Q_{\rm final}-Q_{\rm initial}) (e^{\gamma t}-1)/(e^{\gamma (t_{\rm saturation}-t_{\rm onset})}-1)$ with $\gamma$ growth rate of the instability $\small \gamma\sim i\omega$ with $\small \omega^{2}<0$. See generating script [[https://github.com/mathren/stellar_phys_545/tree/main/scripts][here]].
-#+ATTR_HTML: :width 50%
+#+ATTR_HTML: :width 100%
 [[./images/instability_onset.png]]
 
 
