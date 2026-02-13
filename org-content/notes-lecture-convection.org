@@ -850,3 +850,5 @@ timescales much longer than the convective turnover timescale.
 * Homework
 - Using the definition of pressure scale height and the hydrostatic
   equilibrium equation, show that $P/\rho = 1/(g H_{p}) \Rightarrow c_\mathrm{sound}^{2}  \simeq gH_{p}$
+- See [[https://ui.adsabs.harvard.edu/abs/1973ApJ...181..429J/abstract][Joss et al. 1973]], and [[https://ui.adsabs.harvard.edu/abs/2013ApJS..208....4P/abstract][Paxton et al. 2013, section 7.2]] on
+  inefficient envelope convection for layers with $L \gtrsim L_{\rm Edd}$.
