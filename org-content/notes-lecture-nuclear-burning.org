@@ -98,7 +98,7 @@ The star has a finite temperature, thus it radiates away thermal
 energy at the surface in the form of a luminosity $L$. This means the
 gravitational potential energy is decreasing (because of the virial
 theorem!), thus it must contract leading to an increase in $T$. For
-the Sun this would go on for \sim 15 Myrs before it runs out of all of
+the Sun this would go on for $\tau_{\rm KH}\simeq 15$ Myrs before it runs out of all of
 its internal energy, which is way too short a timescale to explain
 many Earthly observables.
 
