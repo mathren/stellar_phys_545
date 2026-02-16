@@ -41,8 +41,8 @@ P_\mathrm{tot} = P_\mathrm{gas} + P_\mathrm{rad} = \frac{\rho}{\mu m_{u}}k_{B}T 
 \frac{dT}{dm} = \frac{T}{P}\frac{dP}{dm}\nabla
 \end{equation}
 #+end_latex
-where $\nabla =\partial log(T)/\partial log(P)$ is the local temperature gradient, equal to
-the radiative gradient in stably stratified regions:
+where $\nabla =\partial \log(T)/\partial \log(P)$ is the local temperature gradient,
+equal to the radiative gradient in stably stratified regions:
 #+begin_latex
 \begin{equation}
 \nabla \equiv \nabla_\mathrm{rad} = \frac{3 P}{16\pi acGm T^{4}}\kappa L
