@@ -276,8 +276,8 @@ which is a positive quantity precisely because the strong interaction
 between protons and neutrons keeps them bound. In the second step, we
 approximate the proton mass with the hydrogen atom mass, making a
 mistake of the order of \sim 10 eV by neglecting the binding energy of
-the electron (which is acceptable since we are dealing with MeV =
-10^{6}eV as the relevant nuclear scale).
+the electron (which is acceptable since we are dealing with 10 MeV =
+10\times 10^{6}eV as the relevant nuclear scale).
 
 Because of the apparent peaks in the $B/A$ vs. $A$ curve, stars will
 tend to produce more of the elements with the most tight nuclei, whose
