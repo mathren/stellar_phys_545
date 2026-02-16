@@ -312,7 +312,7 @@ Q = \left((m_{a} + m_{X}) -(m_{b} + m_{Y}) \right)c^{2} = \Delta\left(\frac{B}{A
 which, if $Q>0$ is the energy /released/ by the reaction which is thus
 /exoenergetic/ - of the kind that stars need to generate energy and
 sustain themselves against gravity, or if $Q<0$ is the energy input
-needed to get the /endoenergetic/ reaction going (e.g. thermonuclear
+needed to get the /endoenergetic/ reaction going (e.g., thermonuclear
 fusion of iron).
 
 *N.B.:* In exoenergetic nuclear reactions, the energy release comes from
@@ -351,7 +351,8 @@ reactions.
 *** Charged-particles reactions
 When $X$ and $a$ are charged nuclei, then the reaction can only occur
 if something allows them to overcome the Coulomb repulsion. These can
-be resonant or not (the distinction will come back later).
+be resonant or not depending on the relative energy of the incoming
+particles (the distinction will come back later).
 
 Example:
 #+begin_latex
