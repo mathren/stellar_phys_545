@@ -428,7 +428,10 @@ where the positrons need to be there to conserve electric charge
 throughout the process, and the neutrinos need to be there for
 conserving the leptonic number (+1 for the leptons electron $e^{-}$, muon
 $\mu^{-}$, tau $\tau^{-}$ and the corresponding neutrinos $\nu_{e}$, $\nu_{\mu}$, $\nu_{\tau}$ and -1
-for their antiparticles positron $e^{+}$, positive muon $\mu^{+}$, and positive
+for their antiparticles positron $e^{+}$,
+positive muon
+$\mu^{+}$,
+and positive
 $\tau^{+}$ and the corresponding antineutrinos).
 
 *N.B.:* because of the phenomenon of neutrino oscillations (i.e., the
