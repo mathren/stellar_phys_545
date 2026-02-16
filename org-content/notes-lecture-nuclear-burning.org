@@ -729,7 +729,7 @@ that would change significantly the rate.
 
 ** Thermonuclear reaction rates
 Now that we have discussed how a charged particle nuclear reaction is
-possible through quantum tunneling through the Coulomb barrier, to
+possible via quantum tunneling through the Coulomb barrier, to
 complete our quest for $\varepsilon_\mathrm{nuc}$ we need to obtain the rate per
 unit volume and time of each possible nuclear reaction.
 
