@@ -165,21 +165,23 @@ frequency, p- and g- waves, restoring force, mixed modes.
 [[./notes-lecture-asteroseismology.org][Notes]]
 
 ** <2026-03-27 Fri> -
-** <2026-03-30 Mon> - Interacting binaries and Roche lobe overflow
+
+** <2026-03-30 Mon> - Tides
+*Aim*: Introduce the concept of tides in binaries, build physical
+intuition for tidal disruption and orbital evolution
+
+** <2026-04-01 Wed> - Interacting binaries and Roche lobe overflow
 *Aim*: Introduce the Roche approximation for interacting binaries.
 
 [[./notes-lecture-RLOF.org][Notes]]
 
-** TODO <2026-04-01 Wed> - Common Envelope
+** <2026-04-03 Fri> -
+
+** TODO <2026-04-06 Mon> - Common Envelope
 *Aim*: Introduce mass transfer dynamical stability, the concept of a
 common envelope and its main phases.
 
 [[./notes-lecture-CE.org][Notes]]
-
-** <2026-04-03 Fri> -
-** <2026-04-06 Mon> - Tides
-*Aim*: Introduce the concept of tides in binaries, build physical
-intuition for tidal disruption and orbital evolution
 
 [[./notes-lecture-tides.org][Notes]]
 ** <2026-04-08 Wed> - Supernovae
