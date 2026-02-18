@@ -708,8 +708,8 @@ Conversely, for non-resonant reactions, since the thermal energies are
 of order of 100 of eV while the nuclear scale is at \sim10MeV we can
 neglect the energy dependence of $\sigma_\mathrm{nuc}$.
 
-Finally, actually carrying out the calculation give a probability of tunneling
-
+Finally, actually carrying out the calculation give a probability of
+tunneling ([[https://ui.adsabs.harvard.edu/abs/1928ZPhy...51..204G/abstract][Gamow 1928]])
 #+begin_latex
 \begin{equation}
 P\propto \exp\left(-\int_{r_{n}}^{r_c} \frac{\sqrt{2m_{aX} (V(r) - E)}}{\hbar} dr \right) \equiv P_{0} \exp\left(-\frac{b}{\sqrt{E}}\right) \ \ ,
