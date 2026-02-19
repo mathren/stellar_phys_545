@@ -2,7 +2,7 @@
 #+author: Mathieu Renzo
 #+email: mrenzo@arizona.edu
 #+PREVIOUS_PAGE: notes-in-class-RLOF.org
-#+NEXT_PAGE: notes-lecture-tides.org
+#+NEXT_PAGE: notes-lecture-SNe.org
 
 *Materials*: [[https://ui.adsabs.harvard.edu/abs/1975PhDT.......165W/abstract][Webbink 1975]], [[https://ui.adsabs.harvard.edu/abs/1976IAUS...73...75P/abstract][Paczynski 1976]], [[https://ui.adsabs.harvard.edu/abs/2013A%26ARv..21...59I/abstract][Ivanova et al. 2013]], [[https://ui.adsabs.harvard.edu/abs/2023LRCA....9....2R/abstract][Ropke &
 de Marco 2023]], Ivanova et al. 2020.

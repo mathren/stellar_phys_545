@@ -2,7 +2,7 @@
 #+author: Mathieu Renzo
 #+email: mrenzo@arizona.edu
 #+PREVIOUS_PAGE: notes-in-class-evol.org
-#+NEXT_PAGE: notes-lecture-RLOF.org
+#+NEXT_PAGE: notes-lecture-tides.org
 
 *Materials*: [[https://ui.adsabs.harvard.edu/abs/1980ApJS...43..469T/abstract][Tassoul 1980]], [[https://adsabs.harvard.edu/full/1984srps.conf...11C][Christensen-Dalsgaard 1984]], [[https://ui.adsabs.harvard.edu/abs/1990ApJ...358..313T/abstract][Tassoul 1990]], [[https://doi.org/10.1007/978-1-4020-5803-5][Aerts,
 Christensen-Dalsgaard, Kurtz 2010]], [[https://doi.org/10.1103/RevModPhys.93.015001][Aerts 2021]].

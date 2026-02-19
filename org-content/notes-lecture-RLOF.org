@@ -1,7 +1,7 @@
 #+Title: ASTR545 - Mass transfer
 #+author: Mathieu Renzo
 #+email: mrenzo@arizona.edu
-#+PREVIOUS_PAGE: notes-lecture-asteroseismology.org
+#+PREVIOUS_PAGE: notes-lecture-tides.org
 #+NEXT_PAGE: notes-lecture-CE.org
 
 *Materials*: Onno Pols' lecture notes Chapter 7,8, Tauris & van den

@@ -170,6 +170,8 @@ frequency, p- and g- waves, restoring force, mixed modes.
 *Aim*: Introduce the concept of tides in binaries, build physical
 intuition for tidal disruption and orbital evolution
 
+[[./notes-lecture-tides.org][Notes]]
+
 ** <2026-04-01 Wed> - Interacting binaries and Roche lobe overflow
 *Aim*: Introduce the Roche approximation for interacting binaries.
 
@@ -182,8 +184,6 @@ intuition for tidal disruption and orbital evolution
 common envelope and its main phases.
 
 [[./notes-lecture-CE.org][Notes]]
-
-[[./notes-lecture-tides.org][Notes]]
 ** <2026-04-08 Wed> - Supernovae
 *Aim*: Introduce the nomenclature for supernovae, discuss the physics of
 core-collapse and the formation of compact objects
