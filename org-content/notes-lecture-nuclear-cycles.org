@@ -333,8 +333,11 @@ This reaction ultimately regulates the composition of the most common
 white dwarfs, and also the masses of the most massive black holes, and
 it is actively studied in laboratories /and/ in stellar context (see for
 example [[https://iopscience.iop.org/article/10.3847/0004-637X/823/1/46][Fields et al. 2016]] on the structure and composition of white
-dwarfs, [[https://ui.adsabs.harvard.edu/abs/2020ApJ...902L..36F/abstract][Farmer et al. 2020]] on black hole masses, [[https://ui.adsabs.harvard.edu/abs/2023ApJ...945...41S/abstract][Shen et al. 2023]] for
-the most recent lab measurements).
+dwarfs, [[https://ui.adsabs.harvard.edu/abs/2020ApJ...902L..36F/abstract][Farmer et al. 2020]], [[https://ui.adsabs.harvard.edu/abs/2021ApJ...912L..31W/abstract][Woosley \& Heger 2021]], [[https://ui.adsabs.harvard.edu/abs/2022ApJ...924...39M/abstract][Mehta et al. 2022]]
+and [[https://ui.adsabs.harvard.edu/abs/2022ApJ...937..112F/abstract][Farag et al. 2022]] on black hole masses and most recently claims --
+still under review -- from gravitational-wave detections by [[https://ui.adsabs.harvard.edu/abs/2025arXiv250904151T/abstract][Tong et
+al. 2025]], [[https://ui.adsabs.harvard.edu/abs/2025arXiv250904637A/abstract][Antonini et al. 2025]] and references therein. Finally, see
+also [[https://ui.adsabs.harvard.edu/abs/2023ApJ...945...41S/abstract][Shen et al. 2023]] for recent lab measurements).
 
 ** Heavier burning
 Once helium fuel is exhausted, helium core burning cannot provide the
