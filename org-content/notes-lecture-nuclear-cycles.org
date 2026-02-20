@@ -443,12 +443,13 @@ $^{16}\mathrm{O}+^{16}\mathrm{O} \rightarrow^{31}\mathrm{P}+p$ (Q\sim7.676MeV)\\
 present mixture at this temperature!
 
 *** Silicon core burning
-Finally, if a star has reached this point, gravity will compress its core
-until it burns all the way to the most bound nucleus (iron/nickel):
-stopping somehow the gravothermal collapse at this point would require
-extreme fine-tuning, and by now the core density is so high that the
-gravothermal collapse (of the core) is driven by neutrino emission (as we
-will discuss in the [[./notes-lecture-neutrinos.org][next lecture]]) rather than photon losses at the surface.
+Finally, if a star has reached Oxygen burning, gravity will compress
+its core until it burns all the way to the most bound nucleus
+(iron/nickel): stopping somehow the gravothermal collapse at this
+point would require extreme fine-tuning, and by now the core density
+is so high that the gravothermal collapse (of the core) is driven by
+neutrino emission (as we will discuss in the [[./notes-lecture-neutrinos.org][next lecture]]) rather than
+photon losses at the surface.
 
 Post core oxygen burning, the core is made of a mixture of silicon and
 sulfur (*N.B.:* this is now very hard to probe directly observationally
