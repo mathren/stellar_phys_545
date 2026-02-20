@@ -216,8 +216,8 @@ barriers more easily.
 *** pp \rightarrow CNO transition
 
 Because of the higher Coulomb barriers involved in the CNO cycle (i.e.
-the higher charge of $^{12}\mathrm{C}$), it has a more sensitive
-temperature dependence:
+the higher charge of $^{12}\mathrm{C}$, $^{14}\mathrm{N}$, and
+$^{16}\mathrm{O}$), it has a more sensitive temperature dependence:
  - $\varepsilon_\mathrm{nuc, pp} \propto T^{4}$
  - $\varepsilon_\mathrm{nuc, CNO} \propto T^{16}$
 However, the proportionality constant is larger for the pp cycle (see
