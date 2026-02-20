@@ -179,9 +179,7 @@ Important things to notice:
   oxygen, which has a higher $Z$ and slightly higher Coulomb barriers,
   so it kicks in at slightly higher temperatures, but typically a star
   sustaining itself through the CN cycle will also do the NO cycle,
-  and they are often referred to jointly as CNO cycle (*N.B.*: from the
-  /spectrum/ of Solar neutrinos we know the CN cycle is happening in the
-  Sun, although it is not dominating the energy generation).
+  and they are often referred to jointly as CNO cycle.
 - $^{14}\mathrm{N}$ is a stable isotope ($N=Z=A/2$), and the
   $^{14}\mathrm{N}+p$ reaction is the bottleneck of the bi-cycle: since
   at equilibrium all these reactions occur at the same rate set by the
@@ -546,10 +544,10 @@ lecture]].
 
 *N.B.:* The central temperature of the Sun correspond to the higher
 range where the pp chain dominates the energy production. This means
-that in the Sun we expect some CNO burning at a sub-dominant level,
-and indeed $\nu_{e}$ from the decay of $^{13}N$ have been experimentally
-detected (one can recognize them from their spectrum), see [[https://www.nature.com/articles/s41586-020-2934-0][Borexino
-collaboration 2020]].
+that in the Sun we expect some CN burning at a sub-dominant level
+(while NO may not be active), and indeed $\nu_{e}$ from the decay of $^{13}N$
+have been experimentally detected (one can recognize them from their
+spectrum), see [[https://www.nature.com/articles/s41586-020-2934-0][Borexino collaboration 2020]].
 
 Because of the higher and higher Coulomb barriers, the temperature
 dependence of $\varepsilon_\mathrm{nuc}$ gets steeper for heavier nuclear fuel,
@@ -563,15 +561,22 @@ allowing for the so called "onion layer" structure of stars:
 
 How much burns, that is, how "thick" in mass coordinate is each layer
 of the onion, depends on the mixing processes connecting the burning
-layer with the fuel reservoir. At the outer edge of each shell of the
-"onion" there can be (and typically there is) an off-center burning
-region, so called "shell burning". The outer layer of the He
-core/inner layer of the H envelope (the exact boundary depends on the
-definition one adopts) is sufficiently hot to burn the remaining fuel
-there, and this burning sustains the outer layer above it. Because of
-the presence of burning shells, the core burning only needs to sustain
-the matter inside the shell, which slightly complicates the
-/gravothermal/ argument we have used.
+layer with the fuel reservoir.
+
+At the outer edge of each shell of the "onion" there can be (and
+typically there is) an off-center burning region, so called "shell
+burning". The outer layer of the He core/inner layer of the H envelope
+(the exact boundary depends on the definition one adopts) is
+sufficiently hot to burn the remaining fuel there, and this burning
+sustains the outer layer above it. Because of the presence of burning
+shells, the core burning only needs to sustain the matter inside the
+shell, which slightly complicates the /gravothermal/ argument we have
+used. Note also that the location of the shell is determined by the
+core structure (i.e., where there is available fuel): the $T$ in the
+shell is determined by the stellar structure too and the shell burning
+does not need to self-regulate. Conversely, the stellar structure
+above the shell will have to adapt to the energy output of the shell
+itself!
 
 Each layer of heavier material requires a higher $T$ to burn (to have
 a non-zero tunneling probability), so it is more centralized in mass
