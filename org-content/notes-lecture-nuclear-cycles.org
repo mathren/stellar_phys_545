@@ -246,7 +246,7 @@ determined with stellar models and is around $M_{pp \rightarrow CNO} \sim
 1.1-1.3M_{\odot}$, where the imprecision comes from the systematic
 uncertainties in stellar models (in terms of input physics and
 algorithmic representation of the processes in the code, that we will
-discuss in more detail in the [[./notes-lecture-neutrinos.org][next lecture]]). To some extent, this is a
+discuss in more [[./notes-lecture-codes.org][later]]). To some extent, this is a
 physically motivated threshold to /define/ what a "massive" star is (for
 example this is typical in asteroseismology context), though other
 meaningful threshold exist: the term "massive star" is typically
