@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 2026-01-13 Tue 14:50 -->
+<!-- 2026-02-20 Fri 09:43 -->
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>ASTR545 - Tides</title>
@@ -13,22 +13,6 @@
 			       stellar evolution, ASTR545, PYTS545, 545, University of
 			       Arizona, Steward Observatory, stars,
 			       theoretical astrophysics">
-
-
-<script>
-function toggleDrawer(drawerId) {
-  var content = document.getElementById(drawerId);
-  var button = content.previousElementSibling;
-
-  if (content.style.display === "none") {
-    content.style.display = "block";
-    button.innerHTML = button.innerHTML.replace("▼", "▲");
-  } else {
-    content.style.display = "none";
-    button.innerHTML = button.innerHTML.replace("▲", "▼");
-  }
-}
-</script>
 <script>
   window.MathJax = {
     tex: {
@@ -121,7 +105,7 @@ function toggleDrawer(drawerId) {
       // Toggle theme on click
       toggleButton.addEventListener("click", () => {
           body.classList.toggle("dark-mode");
-	  html.classList.toggle("dark-mode");
+  html.classList.toggle("dark-mode");
 
           // Save user preference
           if (body.classList.contains("dark-mode")) {
@@ -131,6 +115,21 @@ function toggleDrawer(drawerId) {
           }
       });
   };
+</script>
+
+<script>
+  function toggleDrawer(drawerId) {
+      var content = document.getElementById(drawerId);
+      var button = content.previousElementSibling;
+
+      if (content.style.display === "none") {
+	  content.style.display = "block";
+	  button.innerHTML = button.innerHTML.replace("▼", "▲");
+      } else {
+	  content.style.display = "none";
+	  button.innerHTML = button.innerHTML.replace("▲", "▼");
+      }
+  }
 </script>
 <!-- end scripts-->
 </div>
@@ -152,8 +151,8 @@ gravitational forces across an extended body</b>.
 </p>
 
 <div class="org-drawer-container">
-  <button class="org-drawer-toggle" onclick="toggleDrawer('drawer-Question-2707')">Question ▼</button>
-  <div id="drawer-Question-2707" class="org-drawer-content" style="display: none;"><ul class="org-ul">
+  <button class="org-drawer-toggle" onclick="toggleDrawer('drawer-Question-8706')">Question ▼</button>
+  <div id="drawer-Question-8706" class="org-drawer-content" style="display: none;"><ul class="org-ul">
 <li><b>Q</b>: for which kind of binaries do we expect tides to be relevant?</li>
 </ul>
 </div>
@@ -173,7 +172,7 @@ compact object (NS, BH, or WD).
 <p>
 The gravitational force acting between the two bodies is
 </p>
-<div class="latex" id="org2a93f2a">
+<div class="latex" id="orgddc7e28">
 \begin{equation}\label{eq:newtonian_grav}
 \mathbf{F}_{\rm grav} = -\frac{GMm}{r^{2}}\mathbf{\hat{r}} \ \ .
 \end{equation}
@@ -184,7 +183,7 @@ If the star \(m\) has a radius \(R_{\star}\), there is a difference in the
 gravitational force across the side facing the companion and the one
 facing away, hence a tidal field
 </p>
-<div class="latex" id="orgf928bf4">
+<div class="latex" id="org1948f92">
 \begin{equation}\label{eq:tide_Def}
 \mathbf{T}(\mathbf{r}) = \mathbf{F}_{\rm grav}(\mathbf{r}) - \mathbf{F}_{\rm grav}(\mathbf{r}+R_{\star}\mathbf{\hat{r}}) = -GMm\left(\frac{1}{r^{2}}-\frac{1}{(\mathbf{r}+R_{\star}\mathbf{\hat{r}})^{2}}\right)\mathbf{\hat{r}} \ \ .
 \end{equation}
@@ -194,7 +193,7 @@ facing away, hence a tidal field
 If the stellar radius is much smaller than the separation (\(R_{\star}\ll r\) but
 non-negligible), we can Taylor expand the parenthesis to obtain:
 </p>
-<div class="latex" id="org2794e31">
+<div class="latex" id="orga9bcab2">
 \begin{equation}
 \left(\frac{1}{r^{2}}-\frac{1}{(\mathbf{r}+R_{\star}\mathbf{\hat{r}})^{2}}\right) \simeq \frac{2R_{\star}}{r^{3}} \ \ ,
 \end{equation}
@@ -203,7 +202,7 @@ non-negligible), we can Taylor expand the parenthesis to obtain:
 <p>
 and thus:
 </p>
-<div class="latex" id="org0a3f1f3">
+<div class="latex" id="org0796a2d">
 \begin{equation}
 \mathbf{T}(\mathbf{r}) = - \frac{2GMmR_{\star}}{r^{3}}\mathbf{\hat{r}} \propto \frac{1}{r^{3}} \ \ .
 \end{equation}
@@ -233,7 +232,7 @@ From the functional dependence on \(r\), we can see that at small
 separation the tidal field can become strong. Could it exceed the
 self-gravity of the star \(m\)?
 </p>
-<div class="latex" id="org87657ba">
+<div class="latex" id="org2991f9c">
 \begin{equation}\label{eq:tidal_dis_radius}
 \lvert \mathbf{T} \rvert \ge \frac{Gm^{2}}{R_{\star}^{2}} \Rightarrow r\le r_{\rm TD} = \left(\frac{2M}{m}\right)^{1/3} R_{\star} \ \ ,
 \end{equation}
@@ -257,8 +256,8 @@ tidal disruption event to occur.
 </p>
 
 <div class="org-drawer-container">
-  <button class="org-drawer-toggle" onclick="toggleDrawer('drawer-Question-5327')">Question ▼</button>
-  <div id="drawer-Question-5327" class="org-drawer-content" style="display: none;"><ul class="org-ul">
+  <button class="org-drawer-toggle" onclick="toggleDrawer('drawer-Question-8541')">Question ▼</button>
+  <div id="drawer-Question-8541" class="org-drawer-content" style="display: none;"><ul class="org-ul">
 <li><b>Q</b>: For an intermediate mass BH of \(M=1000\,M_{☉}\), what type of star
 could lead to a tidal disruption event (in terms of \(m\) and \(R_{\star}\))?</li>
 </ul>
@@ -297,8 +296,8 @@ observed in nature, cf. <a href="https://ui.adsabs.harvard.edu/abs/2024A%26A...6
 </p>
 
 <div class="org-drawer-container">
-  <button class="org-drawer-toggle" onclick="toggleDrawer('drawer-Question-3716')">Question ▼</button>
-  <div id="drawer-Question-3716" class="org-drawer-content" style="display: none;"><ul class="org-ul">
+  <button class="org-drawer-toggle" onclick="toggleDrawer('drawer-Question-6521')">Question ▼</button>
+  <div id="drawer-Question-6521" class="org-drawer-content" style="display: none;"><ul class="org-ul">
 <li><b>Q</b>: Does the deformed non-synchronously rotating star structure match
 equipotential surfaces?</li>
 </ul>
@@ -332,7 +331,7 @@ For a circular binary, every half-period the situation is identical by
 symmetry, so we can deduce the dominant time-frequency for the effects
 of tides:
 </p>
-<div class="latex" id="org9edf57f">
+<div class="latex" id="org509958a">
 \begin{equation}\label{eq:tides_freq}
 \omega_{\rm tides}\simeq 2(\omega_{\rm surf}-\omega_{\rm orb}) \ll \tau_{\rm ff}^{-1} \ \ ,
 \end{equation}
@@ -451,7 +450,7 @@ possibly affected by tides, we can see binary orbits!
 </p>
 
 
-<figure id="orgf6aac7d">
+<figure id="orgd5c138d">
 <img src="./images/Pe_M35.png" alt="Fig. 8 in Leiner et al. 2015." width="50%">
 
 <figcaption><span class="figure-number">Figure 1: </span>Eccentricity vs. orbital period (on a logarithmic scale) for binaries in the open cluster M35 from <a href="https://ui.adsabs.harvard.edu/abs/2015AJ....150...10L/abstract">Leiner et al. 2015</a>.</figcaption>
@@ -491,9 +490,9 @@ depending on the age of the cluster, see for example <a href="https://ui.adsabs.
 <div id="postamble" class="status">
 <div class="footer">
   <hr>
-  <a href="#light-dark-toggle"><i id="light-dark-toggle"><i class="fa-solid fa-circle-half-stroke"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="notes-lecture-CE.html"><i class="fa-solid fa-arrow-left" style="font-size:16px"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="#top"><i class="fa-solid fa-arrow-up" style="font-size:16px"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="notes-lecture-SNe.html"><i class="fa-solid fa-arrow-right" style="font-size:16px"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="https://github.com/mathren/stellar_phys_545"><i class="fa-brands fa-github" style="font-size:16px"></i></a><hr>
+  <a href="#light-dark-toggle"><i id="light-dark-toggle"><i class="fa-solid fa-circle-half-stroke"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="notes-lecture-asteroseismology.html"><i class="fa-solid fa-arrow-left" style="font-size:16px"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="#top"><i class="fa-solid fa-arrow-up" style="font-size:16px"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="notes-lecture-RLOF.html"><i class="fa-solid fa-arrow-right" style="font-size:16px"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="https://github.com/mathren/stellar_phys_545"><i class="fa-brands fa-github" style="font-size:16px"></i></a><hr>
   <br>
-  Last updated on 13 January 2026 <br>
+  Last updated on 20 February 2026 <br>
   Made with Emacs 29.2 - Org mode 9.6.15
   <br>
 </div>

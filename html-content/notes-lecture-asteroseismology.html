@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 2026-01-13 Tue 14:50 -->
+<!-- 2026-02-20 Fri 09:43 -->
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>ASTR545 - Asteroseismology</title>
@@ -13,22 +13,6 @@
 			       stellar evolution, ASTR545, PYTS545, 545, University of
 			       Arizona, Steward Observatory, stars,
 			       theoretical astrophysics">
-
-
-<script>
-function toggleDrawer(drawerId) {
-  var content = document.getElementById(drawerId);
-  var button = content.previousElementSibling;
-
-  if (content.style.display === "none") {
-    content.style.display = "block";
-    button.innerHTML = button.innerHTML.replace("▼", "▲");
-  } else {
-    content.style.display = "none";
-    button.innerHTML = button.innerHTML.replace("▲", "▼");
-  }
-}
-</script>
 <script>
   window.MathJax = {
     tex: {
@@ -121,7 +105,7 @@ function toggleDrawer(drawerId) {
       // Toggle theme on click
       toggleButton.addEventListener("click", () => {
           body.classList.toggle("dark-mode");
-	  html.classList.toggle("dark-mode");
+  html.classList.toggle("dark-mode");
 
           // Save user preference
           if (body.classList.contains("dark-mode")) {
@@ -131,6 +115,21 @@ function toggleDrawer(drawerId) {
           }
       });
   };
+</script>
+
+<script>
+  function toggleDrawer(drawerId) {
+      var content = document.getElementById(drawerId);
+      var button = content.previousElementSibling;
+
+      if (content.style.display === "none") {
+	  content.style.display = "block";
+	  button.innerHTML = button.innerHTML.replace("▼", "▲");
+      } else {
+	  content.style.display = "none";
+	  button.innerHTML = button.innerHTML.replace("▲", "▼");
+      }
+  }
 </script>
 <!-- end scripts-->
 </div>
@@ -240,7 +239,7 @@ variability.
 </p>
 
 
-<figure id="orgf524d08">
+<figure id="org8df6f30">
 <img src="./images/HRD_asteroseismology.png" alt="HRD_asteroseismology.png" width="100%">
 
 <figcaption><span class="figure-number">Figure 1: </span>HR diagram with stellar evolution tracks (black) and marked regions (blue/red) of observed photometric stellar variability, labeled according to the acronyms for each observational class of pulsators defined in <a href="https://doi.org/10.1007/978-1-4020-5803-5">Aerts, Christensen-Dalsgaard, Kurtz 2010</a>. This is Fig. 1 from <a href="https://doi.org/10.1103/RevModPhys.93.015001">Aerts 2021</a>.</figcaption>
@@ -284,7 +283,7 @@ At linear order, solutions will be
 expressed in general as the linear superposition of modes with
 functional form:
 </p>
-<div class="latex" id="org8f63755">
+<div class="latex" id="orga913477">
 \begin{equation}
 \delta\mathrm{x} \sim \sum_{l,n,m} \delta_{n,l,m}\ \ \mathrm{with}  \ \ \delta_{n,l,m} \sim F_{n}(r)Y_{l}^{m}(\theta,\varphi) \ \ ,
 \end{equation}
@@ -298,7 +297,7 @@ radial direction for the perturbation, and \(m\) the number of zeros
 along the equator. \(l\) is related to the wavelength \(\lambda\) of the
 perturbation and the radius of the star by
 </p>
-<div class="latex" id="org1aae24c">
+<div class="latex" id="org0a70fde">
 \begin{equation}
 \lambda = \frac{2\pi R}{\sqrt{l(l+1)}} \ \ .
 \end{equation}
@@ -358,7 +357,7 @@ and the success of asymptotic theory are remarkable.
 In this approximation the solution for the perturbation \(\mathbf{\delta x}\)
 is written as an asymptotic series:
 </p>
-<div class="latex" id="org42370b6">
+<div class="latex" id="orgcd8845f">
 \begin{equation}
 \mathbf{\delta x} = \exp\left(\frac{1}{\varepsilon} \sum_{k}\varepsilon^{k}S_{k}(x)\right) \ \ ,
 \end{equation}
@@ -408,7 +407,7 @@ star.
 <a href="https://ui.adsabs.harvard.edu/abs/1980ApJS...43..469T/abstract">Tassoul 1980</a> and <a href="https://ui.adsabs.harvard.edu/abs/1990ApJ...358..313T/abstract">1990</a> calculated the asymptotic period spacing for
 p-modes as:
 </p>
-<div class="latex" id="org97a2dbe">
+<div class="latex" id="org8591482">
 \begin{equation}\label{eq:p-spacing}
 \nu_{n,l} \simeq \Delta\nu \left(n+\frac{l}{2}+\tilde{\alpha}\right)+\delta\nu_{n,l}\ \ ,
 \end{equation}
@@ -419,7 +418,7 @@ where \(\tilde{\alpha}\) is a constant of \(\mathcal{O}(1)\), \(\delta\nu_{n,l}\
 corrections, and \(\Delta \nu\) is the <i>large separation</i> related to the sound
 travel time through the star:
 </p>
-<div class="latex" id="orga7cc84a">
+<div class="latex" id="org04970e5">
 \begin{equation}\label{eq:delta_nu}
 \Delta\nu = \frac{1}{2\int_{0}^{R}\frac{dr}{c_{\rm sound}(r)}} \ \ .
 \end{equation}
@@ -427,7 +426,7 @@ travel time through the star:
 </div>
 
 
-<figure id="org529f6fb">
+<figure id="orgeaf1557">
 <img src="./images/Sun_powerspectrum.png" alt="Sun_powerspectrum.png" width="100%">
 
 <figcaption><span class="figure-number">Figure 2: </span>Power spectrum of the Sun-like star from CoRoT. The vertical axis shows how much power there is in modes of the corresponding frequency on the x-axis (in Hz), in arbitrary units. The frequency separation between the large peaks correspond to \(\Delta\nu(n+l/2+\tilde{\alpha})\) and the distances between small peaks arises because of the \(\delta\nu_{n,l}\). From <a href="https://sci.esa.int/web/corot/-/40955-frequency-power-spectrum-of-stellar-light-variations">ESA's CoRoT webpage</a>.</figcaption>
@@ -470,7 +469,7 @@ the study of neutron stars
 The characteristic frequency of these g-mode oscillations in an ideal
 gas is the Brunt-Väisälä frequency
 </p>
-<div class="latex" id="org3c8706a">
+<div class="latex" id="orge49edd8">
 \begin{equation}\label{eq:brunt-vaisala}
 N^{2} = \frac{g^{2} \rho}{P}\left(\nabla_{ad}-\nabla+\frac{\varphi}{\delta}\nabla_{\mu}\right) = N^{2}_{\rm struct}+N^{2}_{\rm composition}\ \ ,
 \end{equation}
@@ -495,7 +494,7 @@ by convection settles.
 The asymptotic period spacing for g-modes is (e.g., <a href="https://doi.org/10.1007/978-1-4020-5803-5">Aerts,
 Christensen-Dalsgaard, Kurtz 2010</a>):
 </p>
-<div class="latex" id="orgb55244e">
+<div class="latex" id="org79db87e">
 \begin{equation}\label{eq:g-spacing}
 \Pi_{n,l} = \frac{\Pi_{0}}{\sqrt{l(l+1)}}(n+\varepsilon) \ \ ,
 \end{equation}
@@ -537,7 +536,7 @@ oscillations, p- and g-modes.
 </p>
 
 
-<figure id="orga2f7cca">
+<figure id="orgde3ded5">
 <img src="./images/rays_pulsation.png" alt="rays_pulsation.png" width="75%">
 
 <figcaption><span class="figure-number">Figure 3: </span>Ray-tracing of p-modes (right) and g-modes (left) in a Sun-like star with a convective envelope and radiative core. The left panel shows sound waves with \(\nu=3000\) &mu; Hz and, in increasing depth of penetration, modes with \(l=75, 25, 20, 2\): sound waves are deflected as they penetrate inwards, until they turn around, lower \(l\) stay shallower. The right panel shows g-modes of \(\nu=190\) &mu; Hz and \(l=5\) trapped in the radiative core. From <a href="https://ui.adsabs.harvard.edu/abs/2007A%26ARv..14..217C/abstract">Cuhna et al. 2007</a>.</figcaption>
@@ -553,7 +552,7 @@ frequencies.
 </p>
 
 
-<figure id="org1e2fb79">
+<figure id="org382c43e">
 <img src="./images/propagation_diagram.png" alt="propagation_diagram.png" width="75%">
 
 <figcaption><span class="figure-number">Figure 4: </span>Relevant frequencies as a function of stellar radius for a \(15M_{☉}\) star during O core burning. This consider the propagation of a wave of frequency \(\omega_{\rm wave}\) comparing it to the Bunt-Väisälä frequency \(N\) and the frequency of the \(l=1\) p-mode (\(L_{1}\)). From <a href="https://ui.adsabs.harvard.edu/abs/2017MNRAS.470.1642F/abstract">Fuller 2017</a>.</figcaption>
@@ -576,7 +575,7 @@ wave}\ge L_{1}(r)\) with \(L_{1}\) the frequency of sound waves with \(l=1\), so
 called Lamb frequency:
 </p>
 
-<div class="latex" id="org1cc5a3a">
+<div class="latex" id="org466ff1d">
 \begin{equation}\label{eq:lamb}
 L_{1} = \sqrt{2}\frac{c_{s}}{r} \ \ .
 \end{equation}
@@ -610,7 +609,7 @@ on this plane:
 </p>
 
 
-<figure id="orga4d106c">
+<figure id="org082ead5">
 <img src="./images/pg-modes_l.png" alt="pg-modes_l.png" width="70%">
 
 <figcaption><span class="figure-number">Figure 5: </span>Frequency (in \(\mu\) Hz) versus order \(l\) of g-modes (conventionally labeled with \(n<0\)), p-modes in a Sun-like star. The right x-axis labels the \(n\) of corresponding p-modes. Note that \(l\in\mathbb{Z}\) is an integer even if the curves are continuous. From <a href="https://doi.org/10.1007/978-1-4020-5803-5">Aerts, Christensen-Dalsgaard, Kurtz 2010</a>.</figcaption>
@@ -754,9 +753,9 @@ each frequency bin.
 <div id="postamble" class="status">
 <div class="footer">
   <hr>
-  <a href="#light-dark-toggle"><i id="light-dark-toggle"><i class="fa-solid fa-circle-half-stroke"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="notes-in-class-evol.html"><i class="fa-solid fa-arrow-left" style="font-size:16px"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="#top"><i class="fa-solid fa-arrow-up" style="font-size:16px"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="notes-lecture-RLOF.html"><i class="fa-solid fa-arrow-right" style="font-size:16px"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="https://github.com/mathren/stellar_phys_545"><i class="fa-brands fa-github" style="font-size:16px"></i></a><hr>
+  <a href="#light-dark-toggle"><i id="light-dark-toggle"><i class="fa-solid fa-circle-half-stroke"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="notes-in-class-evol.html"><i class="fa-solid fa-arrow-left" style="font-size:16px"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="#top"><i class="fa-solid fa-arrow-up" style="font-size:16px"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="notes-lecture-tides.html"><i class="fa-solid fa-arrow-right" style="font-size:16px"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="https://github.com/mathren/stellar_phys_545"><i class="fa-brands fa-github" style="font-size:16px"></i></a><hr>
   <br>
-  Last updated on 13 January 2026 <br>
+  Last updated on 20 February 2026 <br>
   Made with Emacs 29.2 - Org mode 9.6.15
   <br>
 </div>

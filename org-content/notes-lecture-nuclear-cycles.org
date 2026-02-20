@@ -174,12 +174,14 @@ Important things to notice:
   unstable isotope of a metal and having that decay: in a sense /massive
   stars hack nuclear physics/ to make the weak reaction not happen in an
   isolated proton+proton reaction which is hard, but within nuclei.
-- There are really two main cycles, the CN cycle and the NO (the figure
-  shows also minor branching out points). The second involves oxygen, which
-  has a higher $Z$ and slightly higher Coulomb barriers, so it kicks in at
-  slightly higher temperatures, but typically a star going through the CN
-  cycle will also do the NO cycle, and they are often referred to jointly
-  as CNO cycle.
+- There are really two main cycles, the CN cycle and the NO (the
+  figure shows also minor branching out points). The second involves
+  oxygen, which has a higher $Z$ and slightly higher Coulomb barriers,
+  so it kicks in at slightly higher temperatures, but typically a star
+  sustaining itself through the CN cycle will also do the NO cycle,
+  and they are often referred to jointly as CNO cycle (*N.B.*: from the
+  /spectrum/ of Solar neutrinos we know the CN cycle is happening in the
+  Sun, although it is not dominating the energy generation).
 - $^{14}\mathrm{N}$ is a stable isotope ($N=Z=A/2$), and the
   $^{14}\mathrm{N}+p$ reaction is the bottleneck of the bi-cycle: since
   at equilibrium all these reactions occur at the same rate set by the
