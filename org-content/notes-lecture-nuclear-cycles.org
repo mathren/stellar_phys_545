@@ -238,8 +238,8 @@ while if $M$ is sufficiently low that the pp chain dominates, the core
 is stable against convection and remains radiative. This is something
 that is /indirectly/ confirmed by studying the eigenfrequencies of stars
 that can be observed as pulsational frequencies (i.e.,
-asteroseismology - see also guest lecture by Prof. Conny Aerts),
-stellar lifetimes inferred from population analyses, etc.
+asteroseismology, see also [[./notes-lecture-asteroseismology.org][future lecture]]), stellar lifetimes inferred
+from population analyses, etc.
 
 The initial mass $M$ at which the transition happens needs to be
 determined with stellar models and is around $M_{pp \rightarrow CNO} \sim
