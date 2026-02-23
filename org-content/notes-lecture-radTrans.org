@@ -649,3 +649,8 @@ collisional excitation of atoms/ions is possible followed by radiative
 de-excitation producing an /excess/ of photons at the specific frequency
 of the atom/ion and transition considered, resulting in the emission
 line.
+
+
+#+CAPTION: Spectrum of WR137c normalized, from [[https://ui.adsabs.harvard.edu/abs/2012A%26A...540A.144S/abstract][Sander et al. 2012]].
+#+ATTR_HTML: :width 100%
+[[./images/WR137.png]]
