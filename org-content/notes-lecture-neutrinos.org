@@ -95,7 +95,7 @@ flavor, it's still going to leave the star carrying away its energy!
 
 *N.B.:* recall that the leptonic number is +1 for the leptons electron
 e^{-}, muon \mu^{-}, tau \tau^{-} and the corresponding neutrinos \nu_{e}, \nu_{\mu},
-\nu_{\tau} and -1 for their antiparticles positron e^{+}, positive muon \mu^{+},
+\nu_{\tau} and -1 for their antiparticles positron e^{+} positive muon \mu^{+},
 and positive \tau^{+} and the corresponding antineutrinos.
 
 Therefore, any neutrino produced in the stellar interior leaves the
@@ -157,9 +157,9 @@ which produce one neutrino and one anti-neutrino without changing the
 composition of the star because of an electron capture followed by a
 \beta^{+} decay. This requires that the nucleus $^{A}(Z-1)$ is unstable to
 \beta^{-}-decay and the cross section for electron capture on $^AZ$ is
-non-negligible, which can happen during Si core burning and the
-subsequent gravitational collapse of the core once the nuclear fuel
-runs out.
+non-negligible, which can happen at very high $\rho$ encountered in
+degenerate WDs, during Si core burning, and the subsequent
+gravitational collapse of the core once the nuclear fuel runs out.
 
 The nuclear neutrinos are mostly sensitive to the core temperature for
 the activation of certain thermonuclear reaction chains (except for
