@@ -477,8 +477,9 @@ rates:
 
 This produces also a variety of light particles (protons, neutrons,
 and $\alpha$ particles), which can be captured on the silicon group
-elements to form heavier "iron group nuclei" (which are also
-photodisintegrated and recreated constantly):
+elements to form heavier "iron group nuclei", that is nuclei with
+$50\lesssim A \lesssim 70$ (which are also photodisintegrated and
+recreated constantly):
 
 #+begin_latex
 \begin{equation}
@@ -564,7 +565,7 @@ of the onion, depends on the mixing processes connecting the burning
 layer with the fuel reservoir.
 
 At the outer edge of each shell of the "onion" there can be (and
-typically there is) an off-center burning region, so called "shell
+typically there is) an off-center burning region, so caled "shell
 burning". The outer layer of the He core/inner layer of the H envelope
 (the exact boundary depends on the definition one adopts) is
 sufficiently hot to burn the remaining fuel there, and this burning
