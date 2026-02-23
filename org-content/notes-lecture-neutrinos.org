@@ -212,7 +212,7 @@ The /thermal/ processes producing these neutrinos typically will produce
 a neutrino-antineutrino /pair/ to conserve the leptonic number.
 Typically only electron neutrinos will be relevant: leptons other than
 e^{\pm} are unstable and are not commonly found in stars. They fall into
-several categories (here x={e,\mu, or \tau} but in stellar conditions it's
+several categories (here x={e, \mu, or \tau} but in stellar conditions it's
 typically e):
   - plasmon processes: $\gamma + \tilde{\gamma} \rightarrow \nu_x + \bar{\nu}_x$,
   - bremsstrahlung: $e^{-} + ^{A}Z \rightarrow e^{-} + ^{A}Z + \nu_x + \bar{\nu}_x$,
@@ -220,7 +220,7 @@ typically e):
   - pair annihilation:  $e^{+}+e^{-} \rightarrow \nu_x + \bar{\nu}_x$ ,
   - photo-processes: $\gamma +e^{-} \rightarrow e^{-} + \nu_x + \bar{\nu}_x$,
 
-#+CAPTION: Feynman diagrams for the dominant neutrino cooling processes. The top row shows the photo-emission processes, the middle row shows the e± annihilation processes, the bottom row shows the plasmon processes. The neutral (charged) current ractions are in the left (right) column. This is Figure 1 from [[https://ui.adsabs.harvard.edu/abs/1993ApJ...411..813A/abstract][Aufderheide 1993]], and Z and W represent the boson that mediate weak interactions: the left column shows interactions mediated by the neutral boson Z, while the right column shows interactions mediated by the charged boson W^{\pm}.
+#+CAPTION: Feynman diagrams for the dominant neutrino cooling processes. The top row shows the photo-emission processes, the middle row shows the e^{±} annihilation processes, the bottom row shows the plasmon processes. The neutral (charged) current ractions are in the left (right) column. This is Figure 1 from [[https://ui.adsabs.harvard.edu/abs/1993ApJ...411..813A/abstract][Aufderheide 1993]], and Z and W represent the boson that mediate weak interactions: the left column shows interactions mediated by the neutral boson Z, while the right column shows interactions mediated by the charged boson W^{\pm}. *N.B.:* Feynman diagrams are not physical representation of the process itself, rather they are a visual representation of the terms in the integrals that come out calculating transition aplitudes: the virtual particles that "appear" and "disappear" may not respect the mass-shell and do not necessarily represent physical intermediate steps in a process.
 #+ATTR_HTML: :width 100%
 [[./images/feynman_diagram_neutrinos.png]]
 
