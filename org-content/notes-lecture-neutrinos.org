@@ -73,7 +73,7 @@ with \varepsilon_{grav} = T\partial s/\partial t the change in internal energy a
 *** Composition evolution
 #+begin_latex
 \begin{equation}
-\frac{dX_{i}}{dt} = A_{i}\frac{m_{u}}{\rho}\left(\sum_{k,l} r_{k,l} - \sum_{i,j} (1+\delta_{ij})r_{ij}\right) + D_\mathrm{mix}\frac{dX_{i}}{dr} \equiv \frac{dX_{i}}{dt}(T,\rho, {X_{j}}) \ \ ,
+\frac{dX_{i}}{dt} = \frac{dX_{i}}{dt}_{\rm burn}+\frac{dX_{i}}{dt}_{\rm mix} = A_{i}\frac{m_{u}}{\rho}\left(\sum_{k,l} r_{k,l} - \sum_{i,j} (1+\delta_{ij})r_{ij}\right) + D_{\rm mix}\frac{X_{i}}{dr} \equiv \frac{dX_{i}}{dt}(T,\rho, {X_{j}}) \ \ ,
 \end{equation}
 #+end_latex
 
