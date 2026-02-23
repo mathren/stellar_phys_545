@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 2026-01-13 Tue 14:50 -->
+<!-- 2026-02-23 Mon 09:53 -->
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>ASTR545 - Stellar Neutrinos</title>
@@ -13,22 +13,6 @@
 			       stellar evolution, ASTR545, PYTS545, 545, University of
 			       Arizona, Steward Observatory, stars,
 			       theoretical astrophysics">
-
-
-<script>
-function toggleDrawer(drawerId) {
-  var content = document.getElementById(drawerId);
-  var button = content.previousElementSibling;
-
-  if (content.style.display === "none") {
-    content.style.display = "block";
-    button.innerHTML = button.innerHTML.replace("▼", "▲");
-  } else {
-    content.style.display = "none";
-    button.innerHTML = button.innerHTML.replace("▲", "▼");
-  }
-}
-</script>
 <script>
   window.MathJax = {
     tex: {
@@ -121,7 +105,7 @@ function toggleDrawer(drawerId) {
       // Toggle theme on click
       toggleButton.addEventListener("click", () => {
           body.classList.toggle("dark-mode");
-	  html.classList.toggle("dark-mode");
+  html.classList.toggle("dark-mode");
 
           // Save user preference
           if (body.classList.contains("dark-mode")) {
@@ -131,6 +115,21 @@ function toggleDrawer(drawerId) {
           }
       });
   };
+</script>
+
+<script>
+  function toggleDrawer(drawerId) {
+      var content = document.getElementById(drawerId);
+      var button = content.previousElementSibling;
+
+      if (content.style.display === "none") {
+	  content.style.display = "block";
+	  button.innerHTML = button.innerHTML.replace("▼", "▲");
+      } else {
+	  content.style.display = "none";
+	  button.innerHTML = button.innerHTML.replace("▲", "▼");
+      }
+  }
 </script>
 <!-- end scripts-->
 </div>
@@ -160,7 +159,7 @@ connects stellar physics with neutrino physics: &epsilon;<sub>&nu;.</sub>
 <div id="outline-container-org1585d29" class="outline-4">
 <h4 id="org1585d29"><a href="#org1585d29">Mass conservation</a></h4>
 <div class="outline-text-4" id="text-org1585d29">
-<div class="latex" id="orgc006520">
+<div class="latex" id="orge996c6b">
 \begin{equation}\label{eq:mass_cont}
 \frac{dr}{dm} = \frac{1}{4\pi r^{2}\rho}\ \ .
 \end{equation}
@@ -172,7 +171,7 @@ connects stellar physics with neutrino physics: &epsilon;<sub>&nu;.</sub>
 <div id="outline-container-org0e7bacb" class="outline-4">
 <h4 id="org0e7bacb"><a href="#org0e7bacb">Hydrostatic equilibrium</a></h4>
 <div class="outline-text-4" id="text-org0e7bacb">
-<div class="latex" id="org6eeff29">
+<div class="latex" id="orge06f4c0">
 \begin{equation}\label{eq:HSE}
 \frac{dP}{dm} = -\frac{Gm}{4\pi r^{4}} \ \ ,
 \end{equation}
@@ -181,7 +180,8 @@ connects stellar physics with neutrino physics: &epsilon;<sub>&nu;.</sub>
 <p>
 which follows from the momentum conservation equation assuming the
 acceleration to be negligible <b>N.B.:</b> this last assumption could be
-relaxed to add an extra term in this equation analogous to ma in F=ma.
+relaxed to add an extra term in this equation analogous to \(ma\) in
+\(F=ma=md^2r/dt^2\).
 </p>
 </div>
 </div>
@@ -189,7 +189,7 @@ relaxed to add an extra term in this equation analogous to ma in F=ma.
 <div id="outline-container-org36351c5" class="outline-4">
 <h4 id="org36351c5"><a href="#org36351c5">Equation of state</a></h4>
 <div class="outline-text-4" id="text-org36351c5">
-<div class="latex" id="org697a6c9">
+<div class="latex" id="org15a9c6f">
 \begin{equation}
 P_\mathrm{tot} = P_\mathrm{gas} + P_\mathrm{rad} = \frac{\rho}{\mu m_{u}}k_{B}T + P_{QM} + \frac{1}{3}aT^{4}  \ \ .
 \end{equation}
@@ -201,7 +201,7 @@ P_\mathrm{tot} = P_\mathrm{gas} + P_\mathrm{rad} = \frac{\rho}{\mu m_{u}}k_{B}T 
 <div id="outline-container-org3551e6b" class="outline-4">
 <h4 id="org3551e6b"><a href="#org3551e6b">Energy transport</a></h4>
 <div class="outline-text-4" id="text-org3551e6b">
-<div class="latex" id="orgfabab9d">
+<div class="latex" id="orgc7a0c4f">
 \begin{equation}
 \frac{dT}{dm} = \frac{T}{P}\frac{dP}{dm}\nabla
 \end{equation}
@@ -211,7 +211,7 @@ P_\mathrm{tot} = P_\mathrm{gas} + P_\mathrm{rad} = \frac{\rho}{\mu m_{u}}k_{B}T 
 where &nabla; =&part; log(T)/&part; log(P) is the local temperature gradient, equal to
 the radiative gradient in stably stratified regions:
 </p>
-<div class="latex" id="orgd50bb9b">
+<div class="latex" id="org2f6c641">
 \begin{equation}
 \nabla \equiv \nabla_\mathrm{rad} = \frac{3 P}{14\pi acGm T^{4}}\kappa L
 \end{equation}
@@ -230,7 +230,7 @@ precision) for convective regions. We also have a criterion
 <div id="outline-container-orgadb0cf6" class="outline-4">
 <h4 id="orgadb0cf6"><a href="#orgadb0cf6">Energy conservation</a></h4>
 <div class="outline-text-4" id="text-orgadb0cf6">
-<div class="latex" id="org4d4b792">
+<div class="latex" id="orgdef788a">
 \begin{equation}
 \frac{dL}{dm} = \varepsilon_\mathrm{nuc} -\varepsilon_{\nu} + \varepsilon_\mathrm{grav} \ \ .
 \end{equation}
@@ -247,7 +247,7 @@ with &epsilon;<sub>grav</sub> = T&part; s/&part; t the change in internal energy
 <div id="outline-container-org2000884" class="outline-4">
 <h4 id="org2000884"><a href="#org2000884">Composition evolution</a></h4>
 <div class="outline-text-4" id="text-org2000884">
-<div class="latex" id="org25acdf5">
+<div class="latex" id="org9fea598">
 \begin{equation}
 \frac{dX_{i}}{dt} = A_{i}\frac{m_{u}}{\rho}\left(\sum_{k,l} r_{k,l} - \sum_{i,j} (1+\delta_{ij})r_{ij}\right) + D_\mathrm{mix}\frac{dX_{i}}{dr} \equiv \frac{dX_{i}}{dt}(T,\rho, {X_{j}}) \ \ ,
 \end{equation}
@@ -350,7 +350,7 @@ neutrinos from the so-called <i>URCA processes</i> (named after a casino in
 Rio de Janeiro because when these processes kick in the energy of the
 nuclear reaction goes the same way as the money in the casino!):
 </p>
-<div class="latex" id="orgcc39357">
+<div class="latex" id="org7946e03">
 \begin{equation}
  ^{A}Z+e^{-}\rightarrow^{A}(Z-1) + \nu_{e  }\\
  ^{A}(Z-1)\rightarrow ^{A}Z+ e^{+} +\bar{\nu_{e}}
@@ -391,7 +391,7 @@ layer: <i>evolved massive stars are neutrino stars</i> L<sub>&nu;</sub>
 </p>
 
 
-<figure id="orge7483e6">
+<figure id="org8bde300">
 <img src="./images/neutrino_HRD.png" alt="neutrino_HRD.png" width="100%">
 
 <figcaption><span class="figure-number">Figure 1: </span>Left: evolutionary tracks on a photon HR diagram. Right: corresponding evolutionary tracks on a "neutrino" HR diagram. This is Fig. 2 from <a href="https://ui.adsabs.harvard.edu/abs/2020ApJ...893..133F/abstract">Farag et al. 2020</a>. Note the y-axis scale in both panels.</figcaption>
@@ -450,7 +450,7 @@ typically e):
 </ul>
 
 
-<figure id="org799f8d5">
+<figure id="org2f72115">
 <img src="./images/feynman_diagram_neutrinos.png" alt="feynman_diagram_neutrinos.png" width="100%">
 
 <figcaption><span class="figure-number">Figure 2: </span>Feynman diagrams for the dominant neutrino cooling processes. The top row shows the photo-emission processes, the middle row shows the e± annihilation processes, the bottom row shows the plasmon processes. The neutral (charged) current ractions are in the left (right) column. This is Figure 1 from <a href="https://ui.adsabs.harvard.edu/abs/1993ApJ...411..813A/abstract">Aufderheide 1993</a>, and Z and W represent the boson that mediate weak interactions: the left column shows interactions mediated by the neutral boson Z, while the right column shows interactions mediated by the charged boson W<sup>&plusmn;</sup>.</figcaption>
@@ -487,7 +487,7 @@ tabulated in stellar physics codes (see especially the widely used
 </p>
 
 
-<figure id="org52adeb3">
+<figure id="org11c812f">
 <img src="./images/Trho_neutrinos.png" alt="Trho_neutrinos.png" width="100%">
 
 <figcaption><span class="figure-number">Figure 3: </span>Neutrino energy losses on the T(&rho;) plane. White lines mark the separation between regions where different neutrino emission processes dominate, the colored lines mark the T(&rho;) tracks of helium cores of the labeled masses (in M<sub>☉</sub> units) computed with MESA. Credits: R. Farmer.</figcaption>
@@ -496,7 +496,6 @@ tabulated in stellar physics codes (see especially the widely used
 </div>
 </div>
 </div>
-
 
 <div id="outline-container-orge1e62b6" class="outline-2">
 <h2 id="orge1e62b6"><a href="#orge1e62b6">Homework</a></h2>
@@ -512,7 +511,7 @@ tabulated in stellar physics codes (see especially the widely used
   <hr>
   <a href="#light-dark-toggle"><i id="light-dark-toggle"><i class="fa-solid fa-circle-half-stroke"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="notes-lecture-nuclear-cycles.html"><i class="fa-solid fa-arrow-left" style="font-size:16px"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="#top"><i class="fa-solid fa-arrow-up" style="font-size:16px"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="notes-lecture-radTrans.html"><i class="fa-solid fa-arrow-right" style="font-size:16px"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="https://github.com/mathren/stellar_phys_545"><i class="fa-brands fa-github" style="font-size:16px"></i></a><hr>
   <br>
-  Last updated on 13 January 2026 <br>
+  Last updated on 23 February 2026 <br>
   Made with Emacs 29.2 - Org mode 9.6.15
   <br>
 </div>

@@ -32,7 +32,8 @@ connects stellar physics with neutrino physics: \varepsilon_{\nu.}
 #+end_latex
 which follows from the momentum conservation equation assuming the
 acceleration to be negligible *N.B.:* this last assumption could be
-relaxed to add an extra term in this equation analogous to ma in F=ma.
+relaxed to add an extra term in this equation analogous to $ma$ in
+$F=ma=md^2r/dt^2$.
 
 *** Equation of state
 #+begin_latex
@@ -246,7 +247,6 @@ tabulated in stellar physics codes (see especially the widely used
 #+CAPTION: Neutrino energy losses on the T(\rho) plane. White lines mark the separation between regions where different neutrino emission processes dominate, the colored lines mark the T(\rho) tracks of helium cores of the labeled masses (in M_{\odot} units) computed with MESA. Credits: R. Farmer.
 #+ATTR_HTML: :width 100%
 [[./images/Trho_neutrinos.png]]
-
 
 * Homework
 - estimate the typical energy of thermal and nuclear neutrinos
