@@ -662,11 +662,11 @@ lifetime! Although they are /crucial/ for the chemical evolution of the
 Universe, they are only a "blip" in the lifetime of the stars, because
 $B/A$ vs. $A$ roughly flattens (and $f_\mathrm{burn}$ also decreases
 because of the steeper and steeper $T$ dependence of the nuclear rate
-as the Coulomb barriers increase, cf. "onion structure"): each
-subsequent fuel produces less and less energy per barion, thus the
-burning must be faster and faster to compensate for the surface losses
-(and $L$ also typically increases). This also makes these phases more
-rare to observe and thus harder to study.
+as the Coulomb barriers increase, cf. "onion structure", and $L$ tends
+to increase): each subsequent fuel produces less and less energy per
+barion, thus the burning must be faster and faster to compensate for
+the surface losses (and $L$ also typically increases). This also makes
+these phases more rare to observe and thus harder to study.
 
 For instance, the timescale for the last possible burning phase in
 massive stars, silicon \rightarrow iron only lasts order of /days/.
