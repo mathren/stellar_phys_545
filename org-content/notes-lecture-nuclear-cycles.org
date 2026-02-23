@@ -665,8 +665,8 @@ because of the steeper and steeper $T$ dependence of the nuclear rate
 as the Coulomb barriers increase, cf. "onion structure", and $L$ tends
 to increase): each subsequent fuel produces less and less energy per
 barion, thus the burning must be faster and faster to compensate for
-the surface losses (and $L$ also typically increases). This also makes
-these phases more rare to observe and thus harder to study.
+the surface This. losses also makes these phases more rare to observe
+and thus harder to study.
 
 For instance, the timescale for the last possible burning phase in
 massive stars, silicon \rightarrow iron only lasts order of /days/.
