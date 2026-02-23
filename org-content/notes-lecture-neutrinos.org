@@ -77,9 +77,11 @@ with \varepsilon_{grav} = T\partial s/\partial t the change in internal energy a
 \end{equation}
 #+end_latex
 
-where the first two terms represent production and destruction of the
-i-th isotope by nuclear processes and the third term represent mixing
-by various instabilities treated in diffusion approximation.
+determined by the combined effect of thermonuclear burning and mixing,
+where in the third equation, the first two terms represent production
+and destruction of the i-th isotope by nuclear processes and the third
+term represent mixing by various instabilities treated in diffusion
+approximation.
 
 ** Two types of neutrinos
 
