@@ -164,10 +164,11 @@ gravitational collapse of the core once the nuclear fuel runs out.
 The nuclear neutrinos are mostly sensitive to the core temperature for
 the activation of certain thermonuclear reaction chains (except for
 pycno-nuclear reaction at extremely high densities where the electron
-screening effectively makes the Coulomb barrier negligible).
+screening effectively makes the Coulomb barrier negligible, see for
+example [[https://ui.adsabs.harvard.edu/abs/2020MNRAS.497.4357C/abstract][Caplan 2020]]).
 
 *** Thermal neutrinos
-After helium core burning, the density in the stellar cores become
+After the end of helium core burning, the density in the stellar cores become
 sufficiently high (because of the gravothermal collapse) that
 non-nuclear processes producing neutrinos start occurring. After
 carbon depletion, the neutrinos produced by these processes can take
