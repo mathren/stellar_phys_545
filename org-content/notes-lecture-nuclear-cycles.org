@@ -461,7 +461,7 @@ all the burning phases we have seen so far.
 It typically requires $T\sim2-5\times10^{9}$ K and densities $\rho\sim10^{7}-10^{10}$ g cm^{-3}
 and only lasts order of $\tau_\mathrm{nuc, Si}$ \sim days-weeks since the
 energy release per nucleon is /only/ $0.1$ MeV/nucleon (cf. \sim
-$Q_\mathrm{H-burn}$/4\simeq6.6 MeV/nucleon for H burning!).
+$Q_{\rm H-burn}$/4\simeq6.6 MeV/nucleon for H burning!).
 
 At such temperatures, we reach a "quasi statistical equilibrium"
 between nuclei: the silicon, sulfur, and other elements (referred to
@@ -493,7 +493,7 @@ particles captures are neutron or proton rich, therefore a lot of
 weak reaction such as \beta^{\pm}-decays and electron captures happen too (while
 positron captures are always negligible for stars with M \leq 40 M_{\odot,} and
 positrons prefer to annihilate with an electron producing \gamma rays that
-quickly thermalize in the plasma see [[https://ui.adsabs.harvard.edu/abs/1977ApJS...35..145A/abstract][Arnett et al. 1977]]).
+quickly thermalize in the plasma, see [[https://ui.adsabs.harvard.edu/abs/1977ApJS...35..145A/abstract][Arnett et al. 1977]]).
 
 
 #+CAPTION:  Schematic representation of quasi statistical equilibrium on the nuclear chart. The two filled circle represent the Si (red) and Fe (blue) groups. The abundance of nuclei within each group reach NSE. The links connecting specific isotopes within each group represent the few reactions out of equilibrium, which progressively result in the depletion of the number of isotopes in the Si group in favor of those in the Fe group.
@@ -550,11 +550,18 @@ that in the Sun we expect some CN burning at a sub-dominant level
 have been experimentally detected (one can recognize them from their
 spectrum), see [[https://www.nature.com/articles/s41586-020-2934-0][Borexino collaboration 2020]].
 
-Because of the higher and higher Coulomb barriers, the temperature
-dependence of $\varepsilon_\mathrm{nuc}$ gets steeper for heavier nuclear fuel,
-so post-helium core burning $\varepsilon_\mathrm{nuc}$ is more and more
-concentrated towards the center, leaving the outer layers unburned and
-allowing for the so called "onion layer" structure of stars:
+Because of the increasing Coulomb barrier with $Z$ and $A=Z+N$ of the
+heavier fuels, each heavier element requires a higher $T$ to burn (to
+have a non-zero tunneling probability), so it is more centralized in
+mass and radius. Moreover, moving inward $\varepsilon_\mathrm{nuc}$ depends more
+steeply on $T$, which implies the $dT/dr$ becomes steeper, and thus we
+have convection, the extent of which determines where fuel is
+depleted. At high masses ($M\geq20M_{\odot}$), the inner layers start cooling
+through neutrinos, which may take away enough energy to prevent
+convection from occurring (*N.B.:* convection kicks in only if needed to
+transport the energy flux). Conversely, the outer layers remain
+unburned which allows for the so called "onion layer" structure of
+stars:
 
 #+CAPTION: Layer structure for an initially $15M_{\odot}$ star at the end of its nuclear burning lifetime in mass coordinate from [[https://lavinia.as.arizona.edu/~mrenzo/materials/Thesis/Renzo_MSc_thesis.pdf][Renzo 2015]]. Note the final total mass is /not/ 15M_{\odot} because stars this massive lose mass through radiatively driven winds.
 #+ATTR_HTML: :width 100%
@@ -579,15 +586,6 @@ does not need to self-regulate. Conversely, the stellar structure
 above the shell will have to adapt to the energy output of the shell
 itself!
 
-Each layer of heavier material requires a higher $T$ to burn (to have
-a non-zero tunneling probability), so it is more centralized in mass
-and radius. However, moving inward $\varepsilon_\mathrm{nuc}$ depends more
-steeply on $T$, which implies the $dT/dr$ becomes steeper, and thus we
-have convection, the extent of which determines where fuel is
-depleted. At high masses ($M\geq20M_{\odot}$), the inner layers start
-cooling through neutrinos, which may take away enough energy to
-prevent convection from occurring (*N.B.:* convection kicks in only if
-needed to transport the energy flux).
 
 The interplay between convection, neutrino cooling, and nuclear
 burning ultimately decides the core structure of massive stars at the
