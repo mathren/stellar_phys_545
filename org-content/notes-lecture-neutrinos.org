@@ -220,7 +220,7 @@ typically e):
   - pair annihilation:  $e^{+}+e^{-} \rightarrow \nu_x + \bar{\nu}_x$ ,
   - photo-processes: $\gamma +e^{-} \rightarrow e^{-} + \nu_x + \bar{\nu}_x$,
 
-#+CAPTION: Feynman diagrams for the dominant neutrino cooling processes. The top row shows the photo-emission processes, the middle row shows the e^{±} annihilation processes, the bottom row shows the plasmon processes. The neutral (charged) current ractions are in the left (right) column. This is Figure 1 from [[https://ui.adsabs.harvard.edu/abs/1993ApJ...411..813A/abstract][Aufderheide 1993]], and Z and W represent the boson that mediate weak interactions: the left column shows interactions mediated by the neutral boson Z, while the right column shows interactions mediated by the charged boson W^{\pm}. *N.B.:* Feynman diagrams are not physical representation of the process itself, rather they are a visual representation of the terms in the integrals that come out calculating transition aplitudes: the virtual particles that "appear" and "disappear" may not respect the mass-shell and do not necessarily represent physical intermediate steps in a process.
+#+CAPTION: Feynman diagrams for the dominant neutrino cooling processes. The top row shows the photo-emission processes, the middle row shows the e^{±} annihilation processes, the bottom row shows the plasmon processes. The neutral (charged) current ractions are in the left (right) column. This is Figure 1 from [[https://ui.adsabs.harvard.edu/abs/1993ApJ...411..813A/abstract][Aufderheide 1993]], and Z and W represent the boson that mediate weak interactions: the left column shows interactions mediated by the neutral boson Z, while the right column shows interactions mediated by the charged boson W^{\pm}.
 #+ATTR_HTML: :width 100%
 [[./images/feynman_diagram_neutrinos.png]]
 
@@ -228,17 +228,19 @@ typically e):
 propagate (the analogy is with "solitons" in fluid dynamics), and can
 be quantized and coupled via quantum electrodynamics to e^{\pm}.
 
-*N.B.:* The Feynman diagrams of some of these processes above are
-illustrating the processes (and the various pieces that contribute in
-the quantum field theory calculation of the cross section), the
-particles that are not "free legs" are mediators and not real
-particles, do not over-interpret these diagrams as physical pictures!
+*N.B.:* Feynman diagrams are not physically accurate representation of
+the process itself, rather they are a visual representation of the
+terms in the integrals to calculate transition amplitudes: the virtual
+particles (or mediators) with no "free legs" that "appear" and
+"disappear" may not respect the mass-shell and do not necessarily
+represent physical intermediate steps in a process. Do not
+over-interpret these diagrams as physical pictures!
 
 Neutrino cooling processes are mostly sensitive to the core density \rho.
 The typical energy carried away per neutrino-antineutrino pair is of
 the order of the thermal energy of the electrons (i.e.,$\sim k_{B}T$ or
 their Fermi energy if the region from where the neutrinos are emitted
-is partially degenerate). Thus typically thermal neutrinos will have
+is partially degenerate). Thus, typically thermal neutrinos will have
 lower energies than the nuclear neutrinos.
 
 Like \kappa and \varepsilon_{nuc}, the energy losses to thermal neutrinos are usually
