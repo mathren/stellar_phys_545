@@ -44,7 +44,7 @@ if [ $? -eq 0 ]; then
 	pulled=false
 	read -p "rsync to remote server?" yn
 	if [ "$yn" = "y" ] || [ "$yn" = "Y" ]; then
-	    rsync -rz --exclude="*~" html-content/* lavinia:~/public_html/courses/545/
+	    rsync -arz --exclude="*~" html-content/* lavinia:~/public_html/courses/545/
 	    if [ $? -eq 0 ]; then
 		pulled=true
 	    fi
