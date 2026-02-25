@@ -443,8 +443,7 @@ generic class of gray atmospheres where the constant of integration is
 *** Inner boundary condition
 To completely specify the problem, we need two other boundary
 conditions for the structure equations, which are readily obtained
-requiring the central density $\rho$ and energy generation rate $\epsilon_{\rm
-nuc}-\varepsilon_{\nu}+\varepsilon_{\rm grav}$ to be finite as we go to the center of the star.
+requiring the central density $\rho$ and energy generation rate $\epsilon_{\rm nuc}-\varepsilon_{\nu}+\varepsilon_{\rm grav}$ to be finite as we go to the center of the star.
 #+begin_latex
 \begin{equation}
 m(r=0)   = 0 \ \ ,\\
@@ -452,7 +451,7 @@ L(r=0)   = 0 \ \ ,
 \end{equation}
 #+end_latex
 and finally we need to know the initial composition of the star at the
-beginning $\{X_{i}_{}\}(t=0)$. This completely specifies the boundary
+beginning $X_{i}_{}(t=0)$. This completely specifies the boundary
 conditions for the structure at every snapshot in time, and the
 initial conditions for the composition equations. Note how the
 boundary conditions for the stellar structure equations are specified
