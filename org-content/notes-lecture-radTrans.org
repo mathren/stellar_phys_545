@@ -357,14 +357,6 @@ J = S =  \frac{3F}{4\pi}\left(\tau+\frac{2}{3}\right)  \ \ ,
 \end{equation}
 #+end_latex
 
-# The Eddington approximation further breaks down the intensity into two
-# components, one upwards I_{up} and one downwards I_{down} such that the
-# average intensity is J = (I_{up} + I_{down})/2. With this approximation,
-# from the integrals in Eq. \ref{eq:momenta_rad} we have: F
-# =\pi(I_{up}-I_{down}) and P =2\pi/(3c) \times (I_{up}-I_{down}), and thus a relation
-# between P and J. Putting all these together with the Stefan-Boltzmann
-# law F=\sigma T^{4} we get:
-
 but also, assuming that the atmosphere is also in LTE (including
 radiation!), $J=S=B(\nu,T)=\sigma T^{4}/\pi$, so using that $F=\sigma T_\mathrm{eff}^{4}$ we
 obtain:
@@ -376,8 +368,8 @@ T^{4} = \frac{3}{4}T_\mathrm{eff}^{4}(\tau+\frac{2}{3}) \ \ ,
 #+end_latex
 
 which is the Eddington $T(\tau)$ relation which connects the effective
-temperature of the black body to the outer temperature $T(\tau)$ under the
-approximations for the atmosphere:
+temperature of the black body to the outer temperature profile $T(\tau)$
+under the approximations for the atmosphere:
 1. plane parallel
 2. gray (i.e., independent on frequency \nu)
 3. radiation dominated
