@@ -451,11 +451,11 @@ L(r=0)   = 0 \ \ ,
 \end{equation}
 #+end_latex
 and finally we need to know the initial composition of the star at the
-beginning $X_{i}_{}(t=0)$. This completely specifies the boundary
-conditions for the structure at every snapshot in time, and the
-initial conditions for the composition equations. Note how the
-boundary conditions for the stellar structure equations are specified
-two at the photosphere ($\tau=2/3$) and two in the center ($r=0$).
+beginning $X_{i}(t=0)$. This completely specifies the boundary conditions
+for the structure at every snapshot in time, and the initial
+conditions for the composition equations. Note how the boundary
+conditions for the stellar structure equations are specified two at
+the photosphere ($\tau=2/3$) and two in the center ($r=0$).
 
 * Saha equation
 
