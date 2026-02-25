@@ -370,11 +370,11 @@ T^{4} = \frac{3}{4}T_\mathrm{eff}^{4}(\tau+\frac{2}{3}) \ \ ,
 which is the Eddington $T(\tau)$ relation which connects the effective
 temperature of the black body to the outer temperature profile $T(\tau)$
 under the approximations for the atmosphere:
-1. plane parallel
-2. gray (i.e., independent on frequency \nu)
-3. radiation dominated
-4. Local thermal equilibrium.
-
+1. plane parallel (to make it a one-dimensional problem)
+2. static ($\partial_{t} =0$)
+3. gray (i.e., independent on frequency \nu)
+4. radiation dominated
+5. Local thermal equilibrium.
 
 *N.B.:* In the stellar atmosphere, $T$ is a steep function of $\tau$ in this
 approximation!
