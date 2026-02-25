@@ -148,7 +148,7 @@ emission coefficient $j_{\nu}$.
 [$I_{\nu}$]/[L], this equation describes how the intensity changes along
 its path. The fact that photons propagate at the speed of light c make
 the leftmost factor of $1/c$ appear: $d/ds = c\partial_{t} + \mathbf{n}\cdot\nabla$. The
-density $\rho$ on the l.h.s. expresses that the more matter there is (per
+density $\rho$ on the rx.h.s. expresses that the more matter there is (per
 unit volume), the more likely there will be absorption and emission.
 
 The specific intensity at the bottom of the atmosphere is related to
@@ -160,10 +160,10 @@ F \equiv \int_{0}^{+\infty} d\nu F_{\nu} \equiv \sigma T_\mathrm{eff}^{4} =  \in
 \end{equation}
 #+end_latex
 
-that is the black body flux $F$ is obtained by integrating the specific
-intensity over the solid angles. Note the factor $\cos(\theta)$ that arises
-because $I_{\nu}$ is a vector and we only want the component normal to the
-surface element $dA$.
+that is the black body flux $F$ is obtained by integrating the
+specific intensity over frequency $\nu$ solid angle $\Omega$. Note the factor
+$\cos(\theta)$ that arises because $I_{\nu}$ is a vector and we only want the
+component normal to the surface element $dA$.
 
 This last expression is going to be useful to connect the physics in
 the atmosphere with the interior, since we /define/ the photosphere to
