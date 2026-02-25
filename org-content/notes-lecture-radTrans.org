@@ -341,12 +341,12 @@ F = 2\pi\int_{-1}^{1}I\cos(\theta)d\cos(\theta) = \frac{3F}{2}\int_{-1}^{1}\left
  \Rightarrow \mathrm{constant} = \frac{2}{3} \ \ .
 \end{equation}
 #+end_latex
-We obtained this constant imposing the flux to come from \tau=0 \Rightarrow \kappa = 0,
-so from the layer after which there is nothing impeding the photons
-anymore (*N.B.:* the only other option is \rho=0, so there is nothing, or
-ds=0, so the photons have not moved!). With this constant, we
-completely specified the source function S \equiv S(\tau) and we can obtain I\equiv
-I(\tau) and use it to calculate the pressure!
+We obtained this constant imposing the flux to come from $\tau=0 \Rightarrow \kappa =
+0$, so from the layer after which there is nothing impeding the
+photons anymore (*N.B.:* the only other option is $\rho=0$, so there is
+nothing, or $ds=0$, so the photons have not moved!). With this
+constant, we completely specified the source function $S \equiv S(\tau)$ and
+we can obtain $I\equiv I(\tau)$ and use it to calculate the pressure!
 
 *** Outer boundary conditions of the stellar problem: T_{eff} and P
 From Eq. \ref{eq:J_S} and \ref{eq:sol_S} we now have:
