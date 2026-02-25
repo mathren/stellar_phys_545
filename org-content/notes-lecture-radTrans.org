@@ -427,17 +427,8 @@ mass $M$ and composition, with boundary conditions:
 \begin{equation}
 P(\tau=2/3) =  \frac{2}{3}\frac{GM}{R^{2}\kappa}\ \ ,\\
 T(\tau=2/3) = T_{\rm eff}\ \ , \\
-\{X_{i}_{}\}(t=0) \ \mathrm{known} \ \ ,\\
-m(r=0)   = 0 \ \ ,\\
-L(r=0)   = 0 \ \ ,
 \end{equation}
 #+end_latex
-where the third just says we know the initial composition, and the
-last two just come from requiring the density $\rho$ and the energy
-generation rate $\epsilon_{\rm nuc}-\varepsilon_{\nu}+\varepsilon_{\rm grav}$ to be finite as we go to the
-center of the star. Note how the boundary conditions for the stellar
-structure equations are specified two at the photosphere ($\tau=2/3$) and
-two in the center ($r=0$).
 
 *N.B.:* While Eddington atmosphere are the simplest non-trivial case, it
 is still on approximations which can (and sometimes are) relaxed in
@@ -448,6 +439,24 @@ atmosphere!
 *N.B.:* A "classic" generalization of this atmospheric model is the
 generic class of gray atmospheres where the constant of integration is
 /not/ a constant, but a function of $\tau$ itself.
+
+*** Inner boundary condition
+To completely specify the problem, we need two other boundary
+conditions for the structure equations, which are readily obtained
+requiring the central density $\rho$ and energy generation rate $\epsilon_{\rm
+nuc}-\varepsilon_{\nu}+\varepsilon_{\rm grav}$ to be finite as we go to the center of the star.
+#+begin_latex
+\begin{equation}
+m(r=0)   = 0 \ \ ,\\
+L(r=0)   = 0 \ \ ,
+\end{equation}
+#+end_latex
+and finally we need to know the initial composition of the star at the
+beginning $\{X_{i}_{}\}(t=0)$. This completely specifies the boundary
+conditions for the structure at every snapshot in time, and the
+initial conditions for the composition equations. Note how the
+boundary conditions for the stellar structure equations are specified
+two at the photosphere ($\tau=2/3$) and two in the center ($r=0$).
 
 * Saha equation
 
