@@ -21,8 +21,9 @@ shines. This loss of internal energy translates into a loss of
 gravitational potential because of the virial theorem relating the
 two, and consequently the temperature in the center increases. This
 continues until nuclear burning ignites to compensate for the energy
-losses: /stars don't shine because they burn, stars burn _because_ they
-shine/.
+losses (or until the EOS deviates from an ideal gas because of the
+contribution of degeneracy pressure): /stars don't shine because they
+burn, stars burn _because_ they shine/.
 
 The nuclear burning can be seen just as an attempt by the star to
 /delay/ its gravitational collapse: as nuclear fuel is depleted the star
