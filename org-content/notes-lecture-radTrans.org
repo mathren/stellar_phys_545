@@ -614,10 +614,12 @@ thus the nature of these objects (see [[http://basebe.obspm.fr/basebe/][BeSS cat
 professionally taken and amateur spectra of many bright Be stars!).
 
 These stars are interpreted as being /fast rotating/
-($\omega\ge0.7\omega_\mathrm{crit}$) which shed a "decretion disk": the emission
-lines are not from the star directly, but from the disk of the star! A
-clear indication of the presence of the disk is the "double peaked"
-morphology of the H\alpha emission:
+($\omega\ge0.7\omega_\mathrm{crit}$ where $\omega_{\rm crit}= \sqrt{(1-L/L_{\rm Edd})GM/R^{3}^{}$
+is the rotation rate at which self-gravity is balanced by radiation
+pressure + centrifugal forces) which shed a "decretion disk": the
+emission lines are not from the star directly, but from the disk of
+the star! A clear indication of the presence of the disk is the
+"double peaked" morphology of the H\alpha emission:
 
 #+CAPTION: Spectrum of Alcyone (\eta Tau) on March 18^{th} 2019 centered around H\alpha (\lambda\sim6562 Angstrom) showing the typical double peaked emission suggesting the presence of a disk, obtained by the amateur astronomer [[https://www.astronomie.be/erik.bryssinck/aboutme.html][E. Bryssinck]].
 #+ATTR_HTML: :width 100%
