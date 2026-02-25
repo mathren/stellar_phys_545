@@ -243,7 +243,7 @@ and rewrite the steady state ($\partial_{t} = 0$) radiative transfer equation as
 \end{equation}
 #+end_latex
 
-*N.B.:* we define ds and $dz$ to be antiparallel (introducing a minus
+*N.B.:* we define $ds$ and $dz$ to be antiparallel (introducing a minus
 sign), because we want $d\tau$ to be positive moving inwards toward
 negative $z$.
 
