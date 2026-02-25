@@ -107,7 +107,7 @@ thus complete the physics needed for 1D stellar evolution calculation.
 
 [[./notes-lecture-neutrinos.org][Notes]]
 
-** <2026-02-25 Wed> - Stellar atmospheres and outer boundary conditions
+** <2026-02-25 Wed> - Stellar atmospheres and boundary conditions
 *Aims*: discuss in more detail the following:
 - outer boundary conditions
 - Saha equation
