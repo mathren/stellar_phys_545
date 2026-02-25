@@ -70,7 +70,8 @@ stratifies, determining the outer boundary pressure and temperature.
 *N.B.:* real stars are even more complicated: in the photosphere
 radiative and (magneto)-hydrodynamical processes can launch stellar
 winds that remove mass from the star and connect smoothly the stellar
-material with the interstellar material!
+material with the interstellar material! In other words, the stellar
+atmosphere is not /necessarily/ in hydro-/static/ equilibrium!
 
 By definition, the bottom layer of the atmosphere is the /photosphere/,
 that is this fictional surface that has T_{eff} such that a black body of
