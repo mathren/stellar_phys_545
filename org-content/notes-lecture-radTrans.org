@@ -621,7 +621,7 @@ emission lines are not from the star directly, but from the disk of
 the star! A clear indication of the presence of the disk is the
 "double peaked" morphology of the H\alpha emission:
 
-#+CAPTION: Spectrum of Alcyone (\eta Tau) on March 18^{th} 2019 centered around H\alpha (\lambda\sim6562 Angstrom) showing the typical double peaked emission suggesting the presence of a disk, obtained by the amateur astronomer [[https://www.astronomie.be/erik.bryssinck/aboutme.html][E. Bryssinck]].
+#+CAPTION: Spectrum of Alcyone (\eta Tau) on March 18^{th} 2019 centered around H\alpha (\lambda\sim6562.8 Angstrom) showing the typical double peaked emission suggesting the presence of a disk, obtained by the amateur astronomer [[https://www.astronomie.be/erik.bryssinck/aboutme.html][E. Bryssinck]].
 #+ATTR_HTML: :width 100%
 [[./images/Alcyone_Halpha.png]]
 

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 2026-02-25 Wed 10:26 -->
+<!-- 2026-02-25 Wed 10:28 -->
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>ASTR545 - Radiative transfer</title>
@@ -181,8 +181,8 @@ to calculate a stellar model.
 </p>
 
 <div class="org-drawer-container">
-  <button class="org-drawer-toggle" onclick="toggleDrawer('drawer-Question-3858')">Question ▼</button>
-  <div id="drawer-Question-3858" class="org-drawer-content" style="display: none;"><ul class="org-ul">
+  <button class="org-drawer-toggle" onclick="toggleDrawer('drawer-Question-8289')">Question ▼</button>
+  <div id="drawer-Question-8289" class="org-drawer-content" style="display: none;"><ul class="org-ul">
 <li><b>Q</b>: which assumptions that hold in the stellar interior don't apply
 to the atmosphere?</li>
 </ul>
@@ -281,7 +281,7 @@ element \(dA\) in a time interval \(dt\) and coming within a solid angle
 between \(\nu\) and \(\nu+d\nu\):
 </p>
 
-<div class="latex" id="org675b7bd">
+<div class="latex" id="orgeb5f4c6">
 \begin{equation}
 I_{\nu} \equiv I_{\nu}(\theta) = \frac{dI}{d\nu} = \frac{dE_{\nu}}{d\nu dt dA d\Omega} \mathbf{n} \ \ ,
 \end{equation}
@@ -311,7 +311,7 @@ this is not the case for stellar atmosphere), so we can write down the
 equation of radiative transfer as
 </p>
 
-<div class="latex" id="org2341e39">
+<div class="latex" id="org9ac4508">
 \begin{equation}\label{eq:radTrans}
 \frac{dI_{\nu}}{ds} = \frac{1}{c}\frac{\partial I_{\nu}}{\partial t} + \mathbf{n}\cdot\nabla I_{\nu} = -\kappa_{\nu}\rho I_{\nu} + j_{\nu}\rho \ \ ,
 \end{equation}
@@ -345,7 +345,7 @@ The specific intensity at the bottom of the atmosphere is related to
 the photospheric emission by:
 </p>
 
-<div class="latex" id="orgb79a94c">
+<div class="latex" id="org46616ce">
 \begin{equation}\label{eq:flux_BB}
 F \equiv \int_{0}^{+\infty} d\nu F_{\nu} \equiv \sigma T_\mathrm{eff}^{4} =  \int_{0}^{+\infty} d\nu \int d \Omega \cos(\theta) I_{\nu} \ \ ,
 \end{equation}
@@ -387,7 +387,7 @@ length element along the direction \(\mathbf{n}\) so that \(\mathbf{n}\cdot\nabl
 \equiv d/ds\), and the solution becomes:
 </p>
 
-<div class="latex" id="org64c160f">
+<div class="latex" id="orgdb32155">
 \begin{equation}
 I_{\nu} = I_{\nu,0} e^{-\kappa_{\nu}\rho s} =  I_{\nu,0} e^{-\tau_{\nu}} \ \ ,
 \end{equation}
@@ -413,7 +413,7 @@ With the definition of \(d\tau_{\nu}\), we can re-write Eq. \ref{eq:radTrans}
 (still assuming no explicit time dependence, \(\partial_{t}I_{\nu} = 0\)) as:
 </p>
 
-<div class="latex" id="orgbc55f3e">
+<div class="latex" id="org1ca0b89">
 \begin{equation}\label{eq:rad_trans_tau}
 \frac{dI_{\nu}}{d\tau_{\nu}} = \frac{j_{\nu}}{\kappa_{\nu}} - I_{\nu} \equiv S_{\nu} - I_{\nu} \ \ ,
 \end{equation}
@@ -462,7 +462,7 @@ one-dimensional problem along the vertical direction, and \(ds =
 and rewrite the steady state (\(\partial_{t} = 0\)) radiative transfer equation as:
 </p>
 
-<div class="latex" id="orgeac0569">
+<div class="latex" id="org0f5b38d">
 \begin{equation}
 \cos(\theta)\frac{d I_{\nu}}{d\tau_{\nu}} = - (S_{\nu}-I_{\nu}) \ \ .
 \end{equation}
@@ -484,7 +484,7 @@ dependence of the source term \(S_{\nu}\). With these hypotheses we can now
 integrate this in \(d\nu\) from 0 to +&infin; and obtain:
 </p>
 
-<div class="latex" id="org7a9ba8d">
+<div class="latex" id="orgdc27f2d">
 \begin{equation}\label{eq:gray_eq}
 \cos(\theta) \frac{dI}{d\tau} = - (S-I) \ \ ,
 \end{equation}
@@ -496,7 +496,7 @@ rewrite the l.h.s. as a total derivative and integrate in \(d\tau\))
 getting
 </p>
 
-<div class="latex" id="orgee4217c">
+<div class="latex" id="org9cdee69">
 \begin{equation}\label{eq:I_Edd}
 I(\tau,\theta) = \frac{\exp(\tau/\cos(\theta))}{\cos(\theta)} \int_{\tau}^{+\infty} S\exp(-\tau/\cos(\theta))d\tau \ \ ,
 \end{equation}
@@ -515,7 +515,7 @@ w.r.t. \(\cos(\theta)\) (since \(\theta\) always appears in a cosine, it is usua
 change variable to \(\cos(\theta)=\mu\) in radiative transfer calculations):
 </p>
 
-<div class="latex" id="orgec00af8">
+<div class="latex" id="orge5c6669">
 \begin{equation}\label{eq:momenta_rad}
 u \equiv u(\tau) = \frac{2\pi}{c} \int_{-1}^{1} I(\tau, \theta)d\cos(\theta) \ \ ,\\
 F \equiv F(\tau) = 2\pi\int_{-1}^{1} I(\tau, \theta)\cos(\theta)d\cos(\theta) \ \ , \\
@@ -531,7 +531,7 @@ I(\tau)d\Omega \equiv 0.5\int_{-1}^{+1} I(\tau)dcos(\theta)\), so that \(J=c u/4
 have
 </p>
 
-<div class="latex" id="org2f65910">
+<div class="latex" id="org4889150">
 \begin{equation}\label{eq:J_S}
 \frac{1}{4\pi}\frac{d F}{d\tau} = J-S \ \ .
 \end{equation}
@@ -549,7 +549,7 @@ We can also take Eq. \ref{eq:gray_eq} and multiply it by \(\cos^{2}(\theta)\)
 and integrate between -1 and 1 in \(\cos(\theta)\) to obtain:
 </p>
 
-<div class="latex" id="org3a2126e">
+<div class="latex" id="org0144ab4">
 \begin{equation}\label{eq:sol_S}
 \frac{dP_\mathrm{rad}}{d\tau} = \frac{F}{c} \ \ .
 \end{equation}
@@ -567,7 +567,7 @@ its relation with the radiation energy density \(u\)). Putting all these
 findings together:
 </p>
 
-<div class="latex" id="org7fe25e0">
+<div class="latex" id="org3c15c89">
 \begin{equation}
 S = J = \frac{3 P c}{4\pi} = \frac{3F}{4\pi}\left(\tau + \mathrm{constant}\right) \ \ ,
 \end{equation}
@@ -577,7 +577,7 @@ S = J = \frac{3 P c}{4\pi} = \frac{3F}{4\pi}\left(\tau + \mathrm{constant}\right
 that is we have an expression for the source function!
 Substituting for S in the solution for I (Eq. \ref{eq:I_Edd}) we get:
 </p>
-<div class="latex" id="orgaacec4a">
+<div class="latex" id="org96a9740">
 \begin{equation}
 I(\tau, \cos(\theta)) = \frac{3F}{4\pi}\frac{\exp(\tau/\cos(\theta))}{\cos(\theta)}\int_{\tau}^{+\infty} \left(\tau+\mathrm{constant}\right) \exp\left(-\frac{\tau}{\cos(\theta)}\right)d\tau \Rightarrow I(0,\cos(\theta)) = \frac{3F}{4\pi}(\cos(\theta)+\mathrm{constant}) \ \ .
 \end{equation}
@@ -590,7 +590,7 @@ Eq. \ref{eq:momenta_rad} which defines F using the solution for
 I(&tau;=0,cos(&theta;)) in the integral:
 </p>
 
-<div class="latex" id="org00a9910">
+<div class="latex" id="org6098d44">
 \begin{equation}
 F = 2\pi\int_{-1}^{1}I\cos(\theta)d\cos(\theta) = \frac{3F}{2}\int_{-1}^{1}\left(\cos^{2}(\theta)+\mathrm{constant}\cos(\theta)\right)d\cos(\theta) = \frac{3F}{2}(\frac{1}{3}+\frac{\mathrm{constant}}{2})\\
  \Rightarrow \mathrm{constant} = \frac{2}{3} \ \ .
@@ -614,7 +614,7 @@ we can obtain \(I\equiv I(\tau)\) and use it to calculate the pressure!
 From Eq. \ref{eq:J_S} and \ref{eq:sol_S} we now have:
 </p>
 
-<div class="latex" id="orge0ee843">
+<div class="latex" id="org4cbc79b">
 \begin{equation}
 J = S =  \frac{3F}{4\pi}\left(\tau+\frac{2}{3}\right)  \ \ ,
 \end{equation}
@@ -627,7 +627,7 @@ radiation!), \(J=S=B(\nu,T)=\sigma T^{4}/\pi\), so using that \(F=\sigma T_\math
 obtain:
 </p>
 
-<div class="latex" id="orge287b4b">
+<div class="latex" id="org504bec6">
 \begin{equation}
 T^{4} = \frac{3}{4}T_\mathrm{eff}^{4}(\tau+\frac{2}{3}) \ \ ,
 \end{equation}
@@ -682,7 +682,7 @@ throughout the atmosphere, an oversimplification that allows for an
 analytic calculation which yields:
 </p>
 
-<div class="latex" id="org06adca1">
+<div class="latex" id="org9912539">
 \begin{equation}
 P(\tau) = \frac{GM}{R^{2}\kappa}\tau \Rightarrow P(\tau=2/3) = \frac{2}{3}\frac{GM}{R^{2}\kappa}\ \ ,
 \end{equation}
@@ -705,7 +705,7 @@ a single, non-rotating, non-magnetic star of known total (initial)
 mass \(M\) and composition, with boundary conditions:
 </p>
 
-<div class="latex" id="org93b59d5">
+<div class="latex" id="orgfdd24ba">
 \begin{equation}
 P(\tau=2/3) =  \frac{2}{3}\frac{GM}{R^{2}\kappa}\ \ ,\\
 T(\tau=2/3) = T_{\rm eff}\ \ , \\
@@ -737,7 +737,7 @@ To completely specify the problem, we need two other boundary
 conditions for the structure equations, which are readily obtained
 requiring the central density \(\rho\) and energy generation rate \(\epsilon_{\rm nuc}-\varepsilon_{\nu}+\varepsilon_{\rm grav}\) to be finite as we go to the center of the star.
 </p>
-<div class="latex" id="org1574e46">
+<div class="latex" id="orgbde2bb2">
 \begin{equation}
 m(r=0)   = 0 \ \ ,\\
 L(r=0)   = 0 \ \ ,
@@ -770,7 +770,7 @@ the rate at which there are recombinations \(R\) (principle of detailed
 balance). Therefore:
 </p>
 
-<div class="latex" id="org62f0a1a">
+<div class="latex" id="orgf44015e">
 \begin{equation}
  n_{e} n_{+} R = n_{0} I \Rightarrow \frac{n_{e} n_{+}}{n_{0}} = \frac{I}{R}\ \ ,
 \end{equation}
@@ -786,7 +786,7 @@ terms of the ions and neutral atoms cancel each other in the ratio
 (neglecting the small mass difference between these 2), and we are
 left with
 </p>
-<div class="latex" id="org43c3d6b">
+<div class="latex" id="org7bcf4e4">
 \begin{equation}
 \frac{n_{e} n_{+}}{n_{0}} = 2\frac{(2\pi m_{e} k_{B}T)^{3/2}}{h^{3}} \exp\left(-\frac{\chi}{k_{B}T}\right) \ \ ,
 \end{equation}
@@ -954,7 +954,7 @@ a specific shape of the line:
 </p>
 
 
-<figure id="orgabd9a71">
+<figure id="orgf11cacf">
 <img src="./images/P_Cygni.png" alt="P_Cygni.png">
 
 </figure>
@@ -1003,17 +1003,17 @@ the star! A clear indication of the presence of the disk is the
 </p>
 
 
-<figure id="org0dcfd56">
+<figure id="orga15bf4c">
 <img src="./images/Alcyone_Halpha.png" alt="Alcyone_Halpha.png" width="100%">
 
-<figcaption><span class="figure-number">Figure 1: </span>Spectrum of Alcyone (&eta; Tau) on March 18<sup>th</sup> 2019 centered around H&alpha; (&lambda;&sim;6562 Angstrom) showing the typical double peaked emission suggesting the presence of a disk, obtained by the amateur astronomer <a href="https://www.astronomie.be/erik.bryssinck/aboutme.html">E. Bryssinck</a>.</figcaption>
+<figcaption><span class="figure-number">Figure 1: </span>Spectrum of Alcyone (&eta; Tau) on March 18<sup>th</sup> 2019 centered around H&alpha; (&lambda;&sim;6562.8 Angstrom) showing the typical double peaked emission suggesting the presence of a disk, obtained by the amateur astronomer <a href="https://www.astronomie.be/erik.bryssinck/aboutme.html">E. Bryssinck</a>.</figcaption>
 </figure>
 
 
 
 <div class="org-drawer-container">
-  <button class="org-drawer-toggle" onclick="toggleDrawer('drawer-Question-867')">Question ▼</button>
-  <div id="drawer-Question-867" class="org-drawer-content" style="display: none;"><ul class="org-ul">
+  <button class="org-drawer-toggle" onclick="toggleDrawer('drawer-Question-7961')">Question ▼</button>
+  <div id="drawer-Question-7961" class="org-drawer-content" style="display: none;"><ul class="org-ul">
 <li><b>Q</b>: can you infer why the double peaked morphology suggests a disk?</li>
 </ul>
 </div>
@@ -1080,7 +1080,7 @@ line.
 
 
 
-<figure id="org9741514">
+<figure id="org7017576">
 <img src="./images/WR137.png" alt="WR137.png" width="100%">
 
 <figcaption><span class="figure-number">Figure 2: </span>Spectrum of WR137c normalized, from <a href="https://ui.adsabs.harvard.edu/abs/2012A%26A...540A.144S/abstract">Sander et al. 2012</a>.</figcaption>
