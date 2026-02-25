@@ -247,12 +247,12 @@ and rewrite the steady state ($\partial_{t} = 0$) radiative transfer equation as
 sign), because we want $d\tau$ to be positive moving inwards toward
 negative $z$.
 
-The second approximation of the Eddington atmosphere is that we assume
-a "gray" radiative transfer, meaning the opacity is /independent of
-frequency/ $\kappa_{\nu}\rightarrow\kappa$, thus $\tau_{\nu}\rightarrow\tau$.
-We also neglect the frequency dependence of the source term $S_{\nu}$.
-With these hypotheses we can now integrate this in $d\nu$ from 0 to +\infty
-and obtain:
+The third approximation (after the geometry being plane parallel and
+the steady state) of the Eddington atmosphere is that we assume a
+"gray" radiative transfer, meaning the opacity is /independent of
+frequency/ $\kappa_{\nu}\rightarrow\kappa$, thus $\tau_{\nu}\rightarrow\tau$. We also neglect the frequency
+dependence of the source term $S_{\nu}$. With these hypotheses we can now
+integrate this in $d\nu$ from 0 to +\infty and obtain:
 
 #+begin_latex
 \begin{equation}\label{eq:gray_eq}
@@ -264,7 +264,7 @@ rewrite the l.h.s. as a total derivative and integrate in $d\tau$)
 getting
 
 #+begin_latex
-\begin{equation}
+\begin{equation}\label{eq:I_Edd}
 I(\tau,\theta) = \frac{\exp(\tau/\cos(\theta))}{\cos(\theta)} \int_{\tau}^{+\infty} S\exp(-\tau/\cos(\theta))d\tau \ \ ,
 \end{equation}
 #+end_latex
@@ -324,7 +324,7 @@ S = J = \frac{3 P c}{4\pi} = \frac{3F}{4\pi}\left(\tau + \mathrm{constant}\right
 \end{equation}
 #+end_latex
 that is we have an expression for the source function!
-Substituting for S in the solution for I we get:
+Substituting for S in the solution for I (Eq. \ref{eq:I_Edd}) we get:
 #+begin_latex
 \begin{equation}
 I(\tau, \cos(\theta)) = \frac{3F}{4\pi}\frac{\exp(\tau/\cos(\theta))}{\cos(\theta)}\int_{\tau}^{+\infty} \left(\tau+\mathrm{constant}\right) \exp\left(-\frac{\tau}{\cos(\theta)}\right)d\tau \Rightarrow I(0,\cos(\theta)) = \frac{3F}{4\pi}(\cos(\theta)+\mathrm{constant}) \ \ .
