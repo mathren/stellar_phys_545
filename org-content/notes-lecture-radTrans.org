@@ -458,10 +458,13 @@ conditions for the stellar structure equations are specified two at
 the photosphere ($\tau=2/3$) and two in the center ($r=0$).
 
 * Saha equation
-
-Let's also assume that LTE holds in the stellar atmosphere, therefore,
-the rate at which atoms are ionized $I$ matches the rate at which there
-are recombinations $R$ (principle of detailed balance). Therefore:
+In general, for the gas in the stellar atmosphere, we need to
+calculate the (specific) opacity $\kappa_{\nu}$, which depends sensitively on
+the populations of electrons at each energy level of each ion present.
+In the simplest case, we can assume that LTE holds also in the stellar
+atmosphere, therefore, the rate at which atoms are ionized $I$ matches
+the rate at which there are recombinations $R$ (principle of detailed
+balance). Therefore:
 
 #+begin_latex
 \begin{equation}
