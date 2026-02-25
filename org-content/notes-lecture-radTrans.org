@@ -188,13 +188,13 @@ length element along the direction $\mathbf{n}$ so that $\mathbf{n}\cdot\nabla
 I_{\nu} = I_{\nu,0} e^{-\kappa_{\nu}\rho s} =  I_{\nu,0} e^{-\tau_{\nu}} \ \ ,
 \end{equation}
 #+end_latex
-where we introduce the definition of specific optical depth $d\tau_{\nu} =
-\kappa_{\nu}\rho ds$. This variable is useful because it gives the
-scale-length of the problem as depending on $\kappa_{\nu}\rho =
-1/\ell_{\gamma,\nu}$ with $\ell_{\gamma,\nu}$ the mean free path for a photon
-of frequency between $\nu$ and $\nu+d\nu$. Effectively, this allows us to
-use $\tau_{\nu}$ as the independent coordinate for the propagation of photons
-of frequency between $\nu$ and $\nu+d\nu$.
+where we introduce the definition of specific (per unit frequency $\nu$)
+optical depth $d\tau_{\nu} = \kappa_{\nu}\rho ds$. This variable is useful because it gives
+the scale-length of the problem as depending on $\kappa_{\nu}\rho = 1/\ell_{\gamma,\nu}$ with
+$\ell_{\gamma,\nu}$ the mean free path for a photon of frequency between $\nu$ and
+$\nu+d\nu$. Effectively, this allows us to use $\tau_{\nu}$ as the independent
+coordinate for the propagation of photons of frequency between $\nu$ and
+$\nu+d\nu$.
 
 *** Steady state with emission and absorption canceling each other
 
