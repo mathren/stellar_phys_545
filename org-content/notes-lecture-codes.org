@@ -476,7 +476,7 @@ Below is an (incomplete, biased) list of some of these codes.
  these models that we will discuss in class. Each student will have
  one (randomly assigned) mass to run with MESA web, you will need to
  download and unzip on your laptop and have it ready by
- <2024-10-22 Tue>.
+ <2026-03-04 Wed>.
 
  In class, you will gather in groups based on the masses you have run,
  and be discuss among yourselves why the evolution proceeds the way it
