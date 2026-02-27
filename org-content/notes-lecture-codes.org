@@ -221,8 +221,8 @@ P\equiv P(\rho,\mu,T)  \Leftrightarrow  P\equiv P(\rho,\mu,T)
 \end{equation}
 \begin{equation}
 \Updownarrow
-\begin{equation}
 \end{equation}
+\begin{equation}
    X_{i,k}(t_n+\Delta t_{n+1}) = X_{i,k}(t_n) + \Delta
     t_{n+1}\left(\frac{dX_{i,k}}{dt}\right)_\mathrm{nuc} +
     \frac{\left(X_{i,k}-X_{i,k-1} \right)D_{k}\Delta t_{n+1}}{0.5(dm_{k-1} - dm_k)}
