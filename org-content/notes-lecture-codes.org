@@ -101,7 +101,7 @@ accounting for the gravity of a companion star, e.g., [[https://ui.adsabs.harvar
 insist with this limited approximation?
 
 The main reason is /necessity/ (see for example [[https://ui.adsabs.harvard.edu/abs/2022ApJS..262...19J/abstract][Jermyn et al. 2022
-section 5.4]]) *the contrast of scale in both space and time* required to
+section 5.4]]): *the contrast of scale in both space and time* required to
 follow the /evolution/ of a star from birth to death (or to the current
 age of the Universe, whichever comes first!) *is just too large* to be
 manageable with present day /and/ with foreseeable computational
@@ -117,14 +117,14 @@ contrast in a 3D simulation we would need this number of cells /in
 each direction/, meaning \sim10^{27} points.
 
 *** Temporal scale limitations
-Consider again the Sun. The free fall timescale is generously
-\tau_{ff}\sim1h, and its thermal timescale is \tau_{KH}\sim1.5\times10^{7} years,
-and current age is \sim 5\times10^{9} years \simeq \tau_{nuc}. In 3D we would need to
-resolve the dynamics of the gas, with timesteps \Delta t \leq \tau_{ff}. Even
-considering an equal sign \Delta t=\tau_{ff} (certainly insufficient to /resolve/
-the dynamics of the stellar plasma), it would take \sim \tau_{Kh} / \tau_{ff} = 10^{10}
-timesteps to calculate a thermal timescale and \sim \tau_{nuc} / \tau_{ff} = 10^{12}
-timesteps for a nuclear timescale.
+Consider again the Sun. The free fall timescale is \tau_{ff}\sim1h, and its
+thermal timescale is \tau_{KH}\sim1.5\times10^{7} years, and current age is \sim 5\times10^{9}
+years \simeq \tau_{nuc}. In 3D we would need to resolve the dynamics of the gas,
+with timesteps \Delta t \leq \tau_{ff}. Even considering an equal sign \Delta t=\tau_{ff}
+(certainly insufficient to /resolve/ the dynamics of the stellar
+plasma), it would take \sim \tau_{Kh} / \tau_{ff} = 10^{10} timesteps to calculate a
+thermal timescale and \sim \tau_{nuc} / \tau_{ff} = 10^{12} timesteps for a nuclear
+timescale.
 
 *** Present day and future prospects
 
