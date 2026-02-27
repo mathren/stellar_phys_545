@@ -478,9 +478,12 @@ guest lecture by Dr. Tom Wagg on <2026-03-06 Fri>.
 
  This preparation homework is not graded, I just ask you to gather
  these models that we will discuss in class. Each student will have
- one (randomly assigned) mass to run with MESA web, you will need to
- download and unzip on your laptop and have it ready by
- <2026-03-04 Wed>.
+ three masses (randomly assigned, one "low", "intermediate", and
+ "high" ) to run with =MESA-web= (or your own MESA installation, see
+ [[https://github.com/mathren/stellar_phys_545/tree/main/MESA_files/modernized_MESA_web][here]] for a setup based on =MESA-web= running with a recent MESA
+ version). You will need to download and unzip on your laptop and
+ have it ready by <2026-03-04 Wed>. I strongly suggest a quick visual
+ inspection of the results before hand.
 
  In class, you will gather in groups based on the masses you have run,
  and be discuss among yourselves why the evolution proceeds the way it
@@ -502,10 +505,11 @@ guest lecture by Dr. Tom Wagg on <2026-03-06 Fri>.
 
  *N.B.:* if the models below do not reach the desired stopping
  condition, feel free to try again with different parameters
- (especially "Variance Control Target" and "Mesh Delta Coefficient"
- which control the temporal and spatial resolution, lower means higher
- resolution for both). Please keep the first model around too for the
- in class activity.
+ (especially "=Variance Control Target=" and "=Mesh Delta Coefficient="
+ which control the temporal and spatial discretization, lower means
+ higher resolution for both). Please keep the first model around too
+ for the in class activity. Feel also free to change mass values and
+ gather more stars if you want.
 
 ** Initial mass M\le 7M_{\odot}
     - *Nuclear Reaction Network*: =approx21=
