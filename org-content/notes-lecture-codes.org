@@ -150,67 +150,12 @@ stellar explosions - e.g., [[https://ui.adsabs.harvard.edu/abs/2021ApJ...921...2
 stellar /structure/ simulations in 2D are also at the forefront of
 possibilities (see e.g., [[https://ui.adsabs.harvard.edu/abs/2023A%26A...677L...5M/abstract][Mombarag et al. 2023]]).
 
-** Boundary conditions
-So, for the foreseeable future we will need 1D stellar structure and
-evolution calculation using the set of equations we derived. To solve
-them, we need boundary conditions. These are crucial in determining
-the solution of the structure at each timestep!
-
-For the stellar problem, we need to specify boundary conditions at two
-locations.
-
-*** Center
-
-These are fairly intuitive:
- - r(m=0) = 0. This is necessary to keep the local density \rho \sim m/r^{3} finite.
- - L(m=0) = 0. This is necessary to keep the energy generation per
-   unit volume finite (as the volume goes to zero)
-
-However, we have 4 ODEs (plus the equations for the composition where
-with the initial values of the mass fractions $X_{i}$) and these are only
-two boundary conditions, so the system is still undetermined. The
-central pressure and density are not a priori known (we can estimate
-them, but that is not precise enough!).
-
-*** Surface
-
-We need to turn to the surface to get observationally informed
-boundary conditions. Remember that from the point of view of a
-detailed stellar evolution code, which assumes LTE to solve for the
-internal structure, the "surface" (meaning: the outer boundary) is
-usually defined at the photosphere. This is by definition the
-"idealized" surface where T=T_{eff} which corresponds to the location
-outside of which LTE is not a good assumption anymore, the radiation
-field is /not/ isotropic, and the problem becomes the calculation of a
-stellar /atmosphere/.
-
-Accepting to externalize the problem of stellar atmosphere (which we
-will treat in more detail [[./notes-lecture-radTrans.org][in a future lecture]]), we already have
-written one of the missing outer boundary conditions at mass
-coordinate equal to the total mass of the star (m=M):
- - T(m=M) = T_{eff}, where T_{eff} is /defined/ as the temperature of a black
-   body producing the same luminosity as the star: L=4\pi R^{2}\sigma T_{eff}
-   with R=r(M).
-
-For the final missing boundary condition, we need to specify the outer
-pressure P(r=R) at R=r(M). This typically comes from imposing a /smooth/
-transition from the stellar interior (inside, T \ge T_{eff}) and the
-stellar atmosphere (outside, T \le T_{edd}), which requires calculating the
-pressure in the stellar atmosphere where the assumptions we made so
-far, and consequently the equations we wrote do not hold.
-
-:Question:
-- *Q*: Why should P be smooth? (*Hint:* think of dP/dr!)
-:end:
-
 ** Solving strategies
-Let's assume we have a way to specify P(r=R), and postpone the
-discussion of stellar atmosphere to a [[./notes-lecture-radTrans.org][future lecture]]. We then have 4
-coupled non-linear ODEs with 4 boundary conditions (2 at the center
-and 2 at the surface), and the EOS as a closure condition. We also
-have a set of equations for the composition with initial values
-assumed to be known $X_{i}(t=0)$. How can we solve this coupled
-non-linear system numerically?
+For the /structure/ of the star, we have 4 coupled non-linear ODEs with
+4 [[./notes-lecture-radTrans.org::*Boundary conditions for the stellar problem][boundary conditions]] (2 at the center and 2 at the surface), and the
+EOS as a closure condition. We also have a set of equations for the
+composition with initial values assumed to be known $X_{i}(t=0)$. How can
+we solve this coupled non-linear system numerically?
 
 *** Discretization
 First, to represent the system of equations in a computer we want to
@@ -224,8 +169,8 @@ discretization of the form:
 \frac{df}{dx} \rightarrow \frac{f(x_{k+1})-f(x_{k})}{x_{k+1}-x_{k}} \ \ ,
 \end{equation}
 #+end_latex
-where f and x are a generic function and variable, and the index k
-labels the discretized points.
+where $f$ and $x$ are a generic function and variable, and the index
+$k$ labels the discretized points.
 
 For example, if x=m, the index k will label which cell of the
 mass-coordinate "mesh" we are considering and m_{k+1} - m_{k} = \Delta m_{k} is the

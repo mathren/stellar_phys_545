@@ -348,6 +348,7 @@ nothing, or $ds=0$, so the photons have not moved!). With this
 constant, we completely specified the source function $S \equiv S(\tau)$ and
 we can obtain $I\equiv I(\tau)$ and use it to calculate the pressure!
 
+* Boundary conditions for the stellar problem
 *** Outer boundary conditions of the stellar problem: T_{eff} and P
 From Eq. \ref{eq:J_S} and \ref{eq:sol_S} we now have:
 
@@ -443,7 +444,7 @@ generic class of gray atmospheres where the constant of integration is
 *** Inner boundary condition
 To completely specify the problem, we need two other boundary
 conditions for the structure equations, which are readily obtained
-requiring the central density $\rho$ and energy generation rate $\epsilon_{\rm nuc}-\varepsilon_{\nu}+\varepsilon_{\rm grav}$ to be finite as we go to the center of the star.
+requiring the central density $\rho\sim m/r^{3}$ and energy generation rate $\epsilon_{\rm nuc}-\varepsilon_{\nu}+\varepsilon_{\rm grav}$ to be finite as we go to the center of the star.
 #+begin_latex
 \begin{equation}
 m(r=0)   = 0 \ \ ,\\
@@ -676,3 +677,57 @@ line.
 #+CAPTION: Spectrum of WR137c normalized, from [[https://ui.adsabs.harvard.edu/abs/2012A%26A...540A.144S/abstract][Sander et al. 2012]].
 #+ATTR_HTML: :width 100%
 [[./images/WR137.png]]
+
+
+# ** Boundary conditions
+# So, for the foreseeable future we will need 1D stellar structure and
+# evolution calculation using the set of equations we derived. To solve
+# them, we need boundary conditions. These are crucial in determining
+# the solution of the structure at each timestep!
+
+# For the stellar problem, we need to specify boundary conditions at two
+# locations.
+
+# *** Center
+
+# These are fairly intuitive:
+#  - r(m=0) = 0. This is necessary to keep the local density \rho \sim m/r^{3} finite.
+#  - L(m=0) = 0. This is necessary to keep the energy generation per
+#    unit volume finite (as the volume goes to zero)
+
+# However, we have 4 ODEs (plus the equations for the composition where
+# with the initial values of the mass fractions $X_{i}$) and these are only
+# two boundary conditions, so the system is still undetermined. The
+# central pressure and density are not a priori known (we can estimate
+# them, but that is not precise enough!).
+
+# *** Surface
+
+# We need to turn to the surface to get observationally informed
+# boundary conditions. Remember that from the point of view of a
+# detailed stellar evolution code, which assumes LTE to solve for the
+# internal structure, the "surface" (meaning: the outer boundary) is
+# usually defined at the photosphere. This is by definition the
+# "idealized" surface where $T=T_{\rm eff}$ which corresponds to the
+# location outside of which LTE is not a good assumption anymore, the
+# radiation field is /not/ isotropic, and the problem becomes the
+# calculation of a stellar /atmosphere/.
+
+# Accepting to externalize the problem of stellar atmosphere (which we
+# will treat in more detail [[./notes-lecture-radTrans.org][in a future lecture]]), we already have
+# written one of the missing outer boundary conditions at mass
+# coordinate equal to the total mass of the star (m=M):
+#  - T(m=M) = T_{eff}, where T_{eff} is /defined/ as the temperature of a black
+#    body producing the same luminosity as the star: L=4\pi R^{2}\sigma T_{eff}
+#    with R=r(M).
+
+# For the final missing boundary condition, we need to specify the outer
+# pressure P(r=R) at R=r(M). This typically comes from imposing a /smooth/
+# transition from the stellar interior (inside, T \ge T_{eff}) and the
+# stellar atmosphere (outside, T \le T_{edd}), which requires calculating the
+# pressure in the stellar atmosphere where the assumptions we made so
+# far, and consequently the equations we wrote do not hold.
+
+# :Question:
+# - *Q*: Why should P be smooth? (*Hint:* think of dP/dr!)
+# :end:
