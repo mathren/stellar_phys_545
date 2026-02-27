@@ -463,7 +463,7 @@ guest lecture by Dr. Tom Wagg on <2026-03-06 Fri>.
  - ...
 
 * Homework: preparation for in class activity
- In two weeks from now we are going to do a class activity to piece
+ Next week, we are going to do a class activity to piece
  together all the things we have learned so far and describe the
  evolution of single, non-rotating stars with /your/ =MESA-web=-produced
  models! Although we will stay close to the textbook stellar
