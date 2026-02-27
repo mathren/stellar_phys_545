@@ -445,7 +445,9 @@ guest lecture by Dr. Tom Wagg on <2026-03-06 Fri>.
 
 ** Semi-analytic approach to population synthesis
 
- - BSE: the forefather of many, see [[https://ui.adsabs.harvard.edu/abs/2002MNRAS.329..897H/abstract][Hurley 2002]] and references therein (*N.B.:* not /all/ rapid population synthesis codes)
+ - BSE: the forefather of many, see [[https://ui.adsabs.harvard.edu/abs/2002MNRAS.329..897H/abstract][Hurley 2002]] and references therein
+   (*N.B.:* not /all/ rapid population synthesis codes derive from this,
+   but many!)
  - [[https://cosmic-popsynth.github.io/][COSMIC]]: Open source and open development, =pip= installable
  - [[https://compas.science/][COMPAS]]: Open source
  - [[https://binary_c.gitlab.io/][=binary_c=]]: Open source, python front-end available, can be [[https://r-izzard.surrey.ac.uk/cgi-bin/binary5.cgi][run on online]] (similar to =MESA-web=)
