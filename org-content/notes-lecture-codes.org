@@ -440,7 +440,8 @@ those tables, which allows to track more details (and more easily
 update the stellar models) for a small computational price that is now
 affordable.
 
-Below is an (incomplete, biased) list of some of these codes.
+Below is an (incomplete, biased) list of some of these codes, see also
+guest lecture by Dr. Tom Wagg on <2026-03-06 Fri>.
 
 ** Semi-analytic approach to population synthesis
 

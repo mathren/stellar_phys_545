@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 2026-02-27 Fri 10:17 -->
+<!-- 2026-02-27 Fri 10:23 -->
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>ASTR545 - Computational stellar physics</title>
@@ -139,8 +139,8 @@
 <h2 id="orgcae96cb"><a href="#orgcae96cb">Principles of computational stellar evolution</a></h2>
 <div class="outline-text-2" id="text-orgcae96cb">
 <div class="org-drawer-container">
-  <button class="org-drawer-toggle" onclick="toggleDrawer('drawer-Quote-3253')">Quote ▼</button>
-  <div id="drawer-Quote-3253" class="org-drawer-content" style="display: none;"><p>
+  <button class="org-drawer-toggle" onclick="toggleDrawer('drawer-Quote-9824')">Quote ▼</button>
+  <div id="drawer-Quote-9824" class="org-drawer-content" style="display: none;"><p>
 "<i>Traditional scientific knowledge has generally taken the form of</i>
 <i>either theory or experimental data. However, where theory and</i>
 <i>experiment stumble, simulations may offer a third way.</i>" - Simulation,
@@ -221,8 +221,8 @@ important to not fool ourselves!
 </p>
 
 <div class="org-drawer-container">
-  <button class="org-drawer-toggle" onclick="toggleDrawer('drawer-Quote-3533')">Quote ▼</button>
-  <div id="drawer-Quote-3533" class="org-drawer-content" style="display: none;"><p>
+  <button class="org-drawer-toggle" onclick="toggleDrawer('drawer-Quote-5000')">Quote ▼</button>
+  <div id="drawer-Quote-5000" class="org-drawer-content" style="display: none;"><p>
 "<i>All models are wrong, but some are useful!</i>" - G. Box
 </p>
 </div>
@@ -363,7 +363,7 @@ advantages and disadvantages. The simplest is a first-order forward
 discretization of the form:
 </p>
 
-<div class="latex" id="orgce593b0">
+<div class="latex" id="orgcff85d2">
 \begin{equation}
 \frac{df}{dx} \rightarrow \frac{f(x_{k+1})-f(x_{k})}{x_{k+1}-x_{k}} \ \ ,
 \end{equation}
@@ -396,7 +396,7 @@ this!
 </p>
 
 
-<figure id="org7855290">
+<figure id="org565657c">
 <img src="./images/mesh.png" alt="mesh.png" width="100%">
 
 <figcaption><span class="figure-number">Figure 1: </span>Schematic representation of the spatial mesh in MESA. Intensive quantities (T, &rho;, P) that do not depend on the amount matter are defined at the cell "center", while extensive quantities (m, L) are defined at the cell "boundaries". This is Figure 9 in <a href="https://ui.adsabs.harvard.edu/abs/2011ApJS..192....3P/abstract">Paxton et al. 2011</a>.</figcaption>
@@ -406,7 +406,7 @@ this!
 By discretizing the ODEs we can rewrite them as algebraic equations:
 </p>
 
-<div class="latex" id="orga158a16">
+<div class="latex" id="org59ef67d">
 \begin{equation}
 \frac{dm}{dr}=4\pi r^2\rho   \Leftrightarrow   \ln(r_k) = \frac{1}{3}\ln\left( r_{k+1}^{3} +\frac{3}{4\pi}\frac{dm_k}{\rho_k}\right)
 \end{equation}
@@ -464,7 +464,7 @@ solving a matrix equation:
 </p>
 
 
-<figure id="orgd67c671">
+<figure id="org4ff0758">
 <img src="./images/matrix_mesa.png" alt="matrix_mesa.png" width="100%">
 
 <figcaption><span class="figure-number">Figure 2: </span>Section of an example of the matrix to solve. Black dots are non-zero entries, meaning the variables are coupled by an equation. Vertical dashed lines denote blocks of the matrix for cell <code>k-1</code>, <code>k</code>, and <code>k+1</code> respectively, red dotted lines separate structural variables and compositional variables. This is Fig. 47 of <a href="https://ui.adsabs.harvard.edu/abs/2013ApJS..208....4P/abstract">Paxton et al. 2013</a>.</figcaption>
@@ -509,7 +509,7 @@ create a better second guess:
 </p>
 
 
-<figure id="orgf871d17">
+<figure id="org97b3e54">
 <img src="https://upload.wikimedia.org/wikipedia/commons/e/e0/NewtonIteration_Ani.gif" alt="NewtonIteration_Ani.gif" width="100%">
 
 <figcaption><span class="figure-number">Figure 3: </span>Animation of the Newton-Raphson method to find the zero of a function y=f(x) in one dimension through tangent approximations (from <a href="https://en.wikipedia.org/wiki/Newton's_method">Wikipedia</a>).</figcaption>
@@ -587,8 +587,8 @@ problem and can make it more tractable.
 <h3 id="orge7caa2e"><a href="#orge7caa2e">Open science: <a href="https://docs.mesastar.org/en/latest/">MESA</a> and <code>MESA-web</code></a></h3>
 <div class="outline-text-3" id="text-orge7caa2e">
 <div class="org-drawer-container">
-  <button class="org-drawer-toggle" onclick="toggleDrawer('drawer-Quote-7663')">Quote ▼</button>
-  <div id="drawer-Quote-7663" class="org-drawer-content" style="display: none;"><p>
+  <button class="org-drawer-toggle" onclick="toggleDrawer('drawer-Quote-4416')">Quote ▼</button>
+  <div id="drawer-Quote-4416" class="org-drawer-content" style="display: none;"><p>
 "<i>An algorithm must be seen to be believed</i>" - D. Knuth
 </p>
 </div>
@@ -744,7 +744,8 @@ affordable.
 </p>
 
 <p>
-Below is an (incomplete, biased) list of some of these codes.
+Below is an (incomplete, biased) list of some of these codes, see also
+guest lecture by Dr. Tom Wagg on <span class="timestamp-wrapper"><span class="timestamp">2026-03-06 Fri</span></span>.
 </p>
 </div>
 
