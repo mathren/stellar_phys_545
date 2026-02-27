@@ -337,8 +337,9 @@ if the group leaders may have been willing to share their codes upon
 request, all the algorithmic details would typically be hidden from
 the scientific community, and considered as technicalities. Many of
 the people actually /writing/ the code and /implementing the algorithms/
-were women, and their contribution has been under-appreciated because
-of this attitude of considering algorithms as technicalities.
+were women, and their contribution has been under-appreciated also (in
+part) because of the predominant culture of considering algorithms as
+technicalities.
 
 Still today, the algorithmic details of many codes are only known to
 the inner circle of the group owning the code. In 2011, an
