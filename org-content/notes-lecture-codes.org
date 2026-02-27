@@ -227,9 +227,10 @@ P\equiv P(\rho,\mu,T)  \Leftrightarrow  P\equiv P(\rho,\mu,T)
 
 Where, when going from the physical model to the
 numerical implementation:
-- we use m rather than r as independent coordinate [[./notes-lecture-HSE.org::*Lagrangian and Eulerian coordinates][as expected]];
+- we use $m$ rather than $r$ as independent coordinate [[./notes-lecture-HSE.org::*Lagrangian and Eulerian coordinates][as expected]] to
+  have a Lagrangian description of the stellar fluid;
 - the mass continuity is re-formulated in terms of natural logarithm
-  or r instead or r itself (to keep numbers smaller);
+  or $r$ instead or $r$ itself (to keep numbers smaller);
 - the EOS, \kappa, \varepsilon_{nuc,}, and \varepsilon_{\nu} represent input physics that we borrow
   from other fields, and typically are /tabulated/ as a function of T,
   \rho or equivalent pairs of variables.
@@ -242,17 +243,19 @@ solving a matrix equation:
 #+ATTR_HTML: :width 100%
 [[./images/matrix_mesa.png]]
 
-Writing this in a symbolic compact form we an array of quantities X(t)
-of length equal to the number of mesh points for our spatial
-discretization times the number of variables, and a matrix A which
-represents how all the entries of X are coupled to each other in the
-algebraic form of the equations: AX(t_{k}) = X(t_{k+1}).
+To write this in a symbolic compact form, we define an array of
+quantities $\mathcal{X}(t)$ of length equal to the number of mesh
+points for our spatial discretization times the number of variables,
+and a matrix $A$ which represents how all the entries of $\mathcal{X}$
+are coupled to each other in the algebraic form of the equations:
+$A\mathcal{X}(t_{k}) = \mathcal{X}(t_{k+1})$.
 
 To solve this we could consider two approaches:
-- *Explicit methods*: in this case X(t_{k+1}) is expressed as a function of
-  X(t_{k}). This however will require resolving the /local/ dynamics (and
-  be limited by the sound crossing time), making it impossible to perform a
-  calculation for the /evolution/ of the star
+- *Explicit methods*: in this case $\mathcal{X}(t_{k+1})$ is expressed as a
+  function of $\mathcal{X}(t_{k})$. This however will require resolving
+  the /local/ dynamics (and be limited by the sound crossing time),
+  making it impossible to perform a calculation for the /evolution/ of
+  the star
 - *Implicit methods:* in this case we write a function F(X(t_{k}), X(t_{k+1}))
   = 0 (e.g., F(X(t_{k}), X(t_{k+1})) \equiv AX(t_{k}) - X(t_{k+1}) = 0), and by solving the homogeneous
   equation we have obtained we derive X(t_{k+1}). Implicit methods are
