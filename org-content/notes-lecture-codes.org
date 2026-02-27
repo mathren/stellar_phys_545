@@ -60,11 +60,12 @@ provides. I emphasize this as a person who spends most of his time
 making numerical simulations! Note also how this is more general than
 /just/ stellar physics: this applies to /any/ computational physics field.
 
-Because of these, it is always crucially important to /do resolution
-tests/: when performing a simulation of a physical phenomenon, you
-should always test that the scientific results you obtain do not
-depend on how you discretize your equations in time and space and on how
-you numerically solve them. This is often a painful task, but very
+Because of this, it is always crucially important to /do tests/: when
+performing a simulation of a physical phenomenon, you should always
+test that the scientific results you obtain do not depend on the
+numerical approximations needed (e.g., how you discretize your
+equations in time and space should not matter, which you can verify
+doing /resolution tests/). This is often a painful task, but very
 important to not fool ourselves!
 
 :Quote:
