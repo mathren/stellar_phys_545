@@ -217,8 +217,8 @@ P\equiv P(\rho,\mu,T)  \Leftrightarrow  P\equiv P(\rho,\mu,T)
 \begin{equation}
 \frac{dX_i}{dt}\bigg|_{r} = \left[ \sum\limits_{j,k} \mathcal{P}_{j,k \rightarrow i}(T,\rho)
     -\sum\limits_{k} \mathcal{D}_{i,k}(T,\rho)\right] + \left( D_i
-    \nabla^2X_i\phantom{\bigg|} \right)\\
-\Updownarrow \\
+    \nabla^2X_i\phantom{\bigg|} \right)\newline
+\Updownarrow \newline
    X_{i,k}(t_n+\Delta t_{n+1}) = X_{i,k}(t_n) + \Delta
     t_{n+1}\left(\frac{dX_{i,k}}{dt}\right)_\mathrm{nuc} +
     \frac{\left(X_{i,k}-X_{i,k-1} \right)D_{k}\Delta t_{n+1}}{0.5(dm_{k-1} - dm_k)}
@@ -256,9 +256,9 @@ To solve this we could consider two approaches:
   the /local/ dynamics (and be limited by the sound crossing time),
   making it impossible to perform a calculation for the /evolution/ of
   the star
-- *Implicit methods:* in this case we write a function F(X(t_{k}), X(t_{k+1}))
-  = 0 (e.g., F(X(t_{k}), X(t_{k+1})) \equiv AX(t_{k}) - X(t_{k+1}) = 0), and by solving the homogeneous
-  equation we have obtained we derive X(t_{k+1}). Implicit methods are
+- *Implicit methods:* in this case we write a function F(\mathcal{X}(t_{k}), \mathcal{X}(t_{k+1}))
+  = 0 (e.g., F(\mathcal{X}(t_{k}), \mathcal{X}(t_{k+1})) \equiv A\mathcal{X}(t_{k}) - \mathcal{X}(t_{k+1}) = 0), and by solving the homogeneous
+  equation we have obtained we derive \mathcal{X}(t_{k+1}). Implicit methods are
   preferred in stellar evolution as they are not limited by the sound
   crossing time.
 
