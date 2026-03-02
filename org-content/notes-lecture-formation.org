@@ -47,18 +47,77 @@ astrophysics:
   will end up in stars (/star formation efficiency/)?
 - What distribution of stellar-masses (/Initial mass function/) and
   orbital architectures will come out?
+
+* Initial distributions
 In the absence of a comprehensive predictive theory, these are
 informed by observations.
 
-*N.B.:* In general, the rate of formation of stars is a function of both
-the mass of the star $M$ and the time $t$, $\Psi\equiv\Psi(M, t)$. It is a common
-assumption, dating back to [[https://ui.adsabs.harvard.edu/abs/1955ApJ...121..161S/abstract][Salpeter 1955]] to *assume* that the variables
-are separable, meaning one can write the star formation mass- and
-time-dependent rate as $\Psi = IMF(M) \times SFR(t)$ defining an initial mass
-function $IMF$ dependent only on the mass and a star formation rate
-$SFR$ dependent only on time. Given the success of this heuristic
-hypothesis that simplifies greatly the math, we continue to use it
-without a strong first-principle justification.
+In general, the rate of formation of stars (per unit mass and time) is
+a function of both the mass of the star $M$ and the time $t$, $\Psi\equiv\Psi(M,
+t)$, and possibly composition. It is a common assumption, dating back
+to [[https://ui.adsabs.harvard.edu/abs/1955ApJ...121..161S/abstract][Salpeter 1955]] to *assume* that the variables are separable, meaning
+one can write the star formation mass- and time-dependent rate as
+
+#+begin_latex
+\begin{equation}
+\Psi = IMF(M) \times SFR(t) \ \ ,
+\end{equation}
+#+end_latex
+
+defining an initial mass function $IMF$ dependent only on the mass $M$
+and a star formation rate $SFR$ dependent only on time $t$. Given the
+success of this heuristic hypothesis that simplifies greatly the math,
+we continue to use it without a strong first-principle justification.
+
+** Initial mass function
+
+Based on a sample of nearby stars, Salpeter derived a powerlaw $IMF$
+which has been since then refined, but the typical exponent seems
+common in many places in the Universe:
+
+#+begin_latex
+\begin{equation}
+\mathrm{Salpeter}\ IMF(M) = \frac{dN_{\star}}{dM} \propto M^{-1.3} \ \ .
+\end{equation}
+#+end_latex
+
+Why does nature produce this functional form is still an active topic
+of debate (see, e.g., [[https://ui.adsabs.harvard.edu/abs/2026enap....2..173K/abstract][Kroupa et al. 2026]]). More recent determination
+of the $IMF$ can be found, for example, in [[https://scixplorer.org/abs/1979ApJS...41..513M/abstract][Miller & Scalo 1979]], [[/https://scixplorer.org/abs/2001MNRAS.322..231K/abstract][Kroupa
+et al. 2001]], and especially [[https://scixplorer.org/abs/2018Sci...359...69S/abstract][Schneider et al. 2018]] (whose sample
+includes for the first time a significant amount of O and B-type
+stars, that is probing the higher mass regime).
+
+** Star formation rate
+
+While the $IMF$ empirically appears rather uniform, the star formation
+rate $SFR$ is specific to each population and environment. As we will
+hint below, star formation is triggered by perturbations (usually some
+external process such as a supernova explosion far away, or momentum
+input in a gas cloud by the wind of a population of massive stars).
+Moreover, the formation of stars themselves leads to perturbations
+(outflows from accreting stars, explosions, etc.) that may
+self-regulate the formation. In a galaxy, the merger with another
+galaxy can lead to large perturbations in cold gas leading to star
+formation (as demonstrated by the post-merger high number of young
+stars observed in many systems).
+
+Two simple models of $SFR(t)$ are worth highlighting: *constant* and
+*starburst*.
+
+The former is simply assuming $SFR(t) = \mathrm{const.}$:
+after a sufficiently long time (compared to the evolution of stars),
+the population of stars will reach a steady state: for each star
+evolving and dying, a new one will be born to replace it.
+
+A *starburst* instead assumes an instantaneous formation of all the
+stars in a population (e.g., one specific cluster, although real
+clusters show a small spread in ages): $SFR(t) = \delta(t-t_{0})$. This simple
+model is useful to study how one well defined population evolves in
+time.
+
+Of course, real $SFR(t)$ informed by observations (primarily of
+stellar ages), can be arbitrarily more complicated.
 
 * The Beginning: Giant Molecular Clouds
 
@@ -244,10 +303,12 @@ the local universe.
 
 * Initial collapse and fragmentation
 
-We have derived a minimum length scale $\ell_{J}$ or mass scale $M_{J}$ for a
-perturbation to drive a runaway gravitational collapse in a
-homogeneous and isothermal gas distribution. How does this collapse
-proceed?
+We have derived a minimum length scale $\ell_{J}$, or equivalently a mass
+scale $M_{J}$, for a perturbation to drive a runaway gravitational
+collapse in a homogeneous and isothermal gas distribution. However, we
+found this scale to be much larger than typical stellar masses: how
+does this collapse proceed? How do we get to the observed distribution
+of masses?
 
 By construction, we have derived that the collapse initiates when the
 perturbation induces a local increase in gravity that wins over the
