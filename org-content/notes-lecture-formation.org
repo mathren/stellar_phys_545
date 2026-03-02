@@ -71,7 +71,7 @@ typically (in the Milky Way) $\sim70\%$ by mass will be hydrogen (H),
 $\sim28\%$ helium (He), and the rest as metals. At this point, in absence
 of external energy sources (e.g., radiation from a nearby cluster or
 AGN), the gas will be cold ($T\simeq10-100\,\mathrm{K}$), and hydrogen
-atoms will collisionally find each other and form molecules of H₂.
+atoms will collisionally find each other and form molecules of H_{2}.
 This is a (giant) *molecular cloud* (GMC).
 
 *N.B.:* The notation can be confusing: H₂ is molecular hydrogen, H${\rm
@@ -144,7 +144,7 @@ collapse requires a negative total energy, or in other words
 #+end_latex
 where we neglect on the last r.h.s. a factor of numbers of degrees of
 freedom divided by two (so either 3/2 or 5/2 for di-atomic molecules).
-Rearranging and using $R\propto M^{1/3}/\rho$, we obtain that the collapse
+Rearranging and using $R\propto (M/\rho)^{1/3}$, we obtain that the collapse
 condition can be expressed in terms of mass as:
 #+begin_latex
 \begin{equation}\label{eq:jeans_mass_scaling}

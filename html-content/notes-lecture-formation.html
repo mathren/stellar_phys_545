@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 2026-03-02 Mon 09:29 -->
+<!-- 2026-03-02 Mon 09:42 -->
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>ASTR545 - Stars &amp; Planet Formation</title>
@@ -215,7 +215,7 @@ without a strong first-principle justification.
 <h2 id="orgec79203"><a href="#orgec79203">The Beginning: Giant Molecular Clouds</a></h2>
 <div class="outline-text-2" id="text-orgec79203">
 
-<figure id="org75dc59b">
+<figure id="orga35c9e8">
 <img src="./images/Barnard68.png" alt="Barnard68.png" width="100%">
 
 <figcaption><span class="figure-number">Figure 1: </span>The nearby dark cloud Barnard 68, the abscence of foreground stars and high opacity make it completely dark. Credits VLT/ANTU/FORS1, ESO. This is Fig. 1.7 in Magnani &amp; Shore's book.</figcaption>
@@ -227,7 +227,7 @@ typically (in the Milky Way) \(\sim70\%\) by mass will be hydrogen (H),
 \(\sim28\%\) helium (He), and the rest as metals. At this point, in absence
 of external energy sources (e.g., radiation from a nearby cluster or
 AGN), the gas will be cold (\(T\simeq10-100\,\mathrm{K}\)), and hydrogen
-atoms will collisionally find each other and form molecules of H₂.
+atoms will collisionally find each other and form molecules of H<sub>2</sub>.
 This is a (giant) <b>molecular cloud</b> (GMC).
 </p>
 
@@ -253,8 +253,8 @@ the cloud, initially allowing for efficient cooling.
 </p>
 
 <div class="org-drawer-container">
-  <button class="org-drawer-toggle" onclick="toggleDrawer('drawer-Question-983')">Question ▼</button>
-  <div id="drawer-Question-983" class="org-drawer-content" style="display: none;"><ul class="org-ul">
+  <button class="org-drawer-toggle" onclick="toggleDrawer('drawer-Question-3100')">Question ▼</button>
+  <div id="drawer-Question-3100" class="org-drawer-content" style="display: none;"><ul class="org-ul">
 <li><b>Q:</b> Give and motivate a physical scaling for lifetime of such a
 cloud.</li>
 <li><b>Q</b>: What do you expect the temperature gradient to be?</li>
@@ -272,7 +272,7 @@ Let's assume, following <a href="https://royalsocietypublishing.org/rsta/article
 is <i>isothermal</i>. This simplification allows us to use a very simple
 polytropic EOS:
 </p>
-<div class="latex" id="org1855b6c">
+<div class="latex" id="org98571e1">
 \begin{equation}
 P = c_{s}^{2}\rho \ \ ,
 \end{equation}
@@ -296,7 +296,7 @@ hydrostatic equilibrium lecture</a>) to the sound-crossing time across a
 certain length-scale \(\ell\), and find the length-scale \(\ell_{J}\) for which
 the two are the same:
 </p>
-<div class="latex" id="org4e278ca">
+<div class="latex" id="orgae7e966">
 \begin{equation}
 \tau_{\rm ff} \stackrel{!}{=} \ell_{J}/c_{s} \Rightarrow \ell_{J} \sim c_{s}/\sqrt{G\rho} \ \ ,
 \end{equation}
@@ -325,7 +325,7 @@ gravitational potential energy and the internal energy of the cloud:
 collapse requires a negative total energy, or in other words
 </p>
 
-<div class="latex" id="orgf48ad02">
+<div class="latex" id="orgfb345cd">
 \begin{equation}
  - E_{\rm grav} \ge E_{\rm int} \Rightarrow \frac{GM^{2}}{R} \ge \frac{M}{m_{p}} k_{B}T \ \ ,
 \end{equation}
@@ -334,10 +334,10 @@ collapse requires a negative total energy, or in other words
 <p>
 where we neglect on the last r.h.s. a factor of numbers of degrees of
 freedom divided by two (so either 3/2 or 5/2 for di-atomic molecules).
-Rearranging and using \(R\propto M^{1/3}/\rho\), we obtain that the collapse
+Rearranging and using \(R\propto (M/\rho)^{1/3}\), we obtain that the collapse
 condition can be expressed in terms of mass as:
 </p>
-<div class="latex" id="org62a2405">
+<div class="latex" id="org670cafc">
 \begin{equation}\label{eq:jeans_mass_scaling}
 M \ge M_{J} \propto T^{3/2}\rho^{-1/2} \ \ ,
 \end{equation}
@@ -365,7 +365,7 @@ The cloud is described by the momentum continuity equation (or Euler's
 equation), the mass continuity equation, and its gravitational
 potential \(\Phi\) has to solve the Poisson's equation:
 </p>
-<div class="latex" id="org356c3e3">
+<div class="latex" id="org1e2ed20">
 \begin{equation}\label{eq:cloud}
 \frac{\partial \mathbf{v}}{\partial t} + (\mathbf{v}\cdot\mathbf{\nabla}) \mathbf{v} = -\frac{1}{\rho}\mathbf{\nabla} P -\mathbf{\nabla}\Phi\ \ \ , \ \ \
 \frac{\partial\rho}{\partial t}+\mathbf{\nabla}\cdot(\rho\mathbf{v}) = 0 \ \ \ ,\ \ \
@@ -389,7 +389,7 @@ situation with \(\mathbf{v_{0}} \equiv 0\). With the linearized equations one
 obtains, without loss of generality, we can consider perturbations of
 the form
 </p>
-<div class="latex" id="orge22d942">
+<div class="latex" id="org31c6fcd">
 \begin{equation}
 \delta x = x_{0} \exp\left(i\mathbf{k}\cdot\mathbf{x}+i\omega t\right) \ \ ,
 \end{equation}
@@ -405,7 +405,7 @@ linear order in the perturbation).
 <p>
 This reduces Eq. \ref{eq:cloud} to, respectively:
 </p>
-<div class="latex" id="org9cecd87">
+<div class="latex" id="org55bad41">
 \begin{equation}\label{eq:cloud_linearized}
 \omega\delta \mathbf{v} + \frac{\mathbf{k}c_{s}^{2}}{\rho_{0}}\delta\rho +\mathbf{k}\Phi_{0}=0\ \ \ , \ \ \ \omega\delta\rho + \mathbf{k}\rho_{0}\delta\mathbf{v} = 0 \ \ \ , \ \ \ k^{2}\delta\Phi + \Phi_{0}\frac{\delta\rho}{\rho_{0}} = 0 \ ,
 \end{equation}
@@ -418,7 +418,7 @@ the matrix representing the system is zero. This condition provides
 the dispersion relation:
 </p>
 
-<div class="latex" id="org3504130">
+<div class="latex" id="orge99c6cd">
 \begin{equation}\label{eq:dispersion_rel}
 \omega^{2} = k^{2}c_{s}^{2}-4\pi G\rho_{0} \ \ .
 \end{equation}
@@ -447,7 +447,7 @@ astrophysically it is more useful to think in terms of mass involved.
 We can define the Jeans mass as the mass contained within a sphere of
 volume the Jeans length:
 </p>
-<div class="latex" id="orgdf214d9">
+<div class="latex" id="org27c0c40">
 \begin{equation}
 M_{J} = \frac{4}{3}\pi \rho_{0} \ell_{J}^{3} \ \ .
 \end{equation}
@@ -459,7 +459,7 @@ the initial gas temperature (only the unperturbed value at linear
 order) and \(\mu\) its mean molecular weight, we have the scaling \(M_{J}\propto
 \rho_{0}^{-1/2} T_{0}^{3/2}\mu^{-3/2}\). Plugging in typical numbers we have:
 </p>
-<div class="latex" id="org2f86f90">
+<div class="latex" id="org51820f8">
 \begin{equation}\label{eq:jeans_mass}
 M_{J} = 1.2\times10^{5} M_{☉} \left(\frac{T}{100\,\mathrm{K}}\right)^{3/2}\left(\frac{\rho}{10^{24}\,\mathrm{g\ cm^{-3}}}\right)^{-1/2}\mu^{-3/2} \ \ .
 \end{equation}
@@ -489,7 +489,7 @@ perturbation induces a local increase in gravity that wins over the
 increase in gas pressure, so we expect a dynamical phase. Considering
 the (order of magnitude of the ) free-fall timescale, we have:
 </p>
-<div class="latex" id="orgc966df0">
+<div class="latex" id="org724215a">
 \begin{equation}
 \tau_{\rm ff} \simeq (G\rho)^{-1/2} \Rightarrow \tau_{\rm ff, GMC} \simeq \tau_{\rm ff,☉} \times \left(\frac{\langle\rho_{☉}\rangle}{\langle\rho_{\rm GMC}\rangle}\right)^{1/2} \ \ ,
 \end{equation}
@@ -500,7 +500,7 @@ where we know \(\tau_{\rm ff,☉}\simeq 1\) hour. Using \(\langle\rho_{☉}\rang
 m_{p}\) and assuming a number density of particles \(n\sim100\) cm<sup>-3</sup> and \(\mu\sim1\),
 this gives the free fall timescale of the giant molecular cloud
 </p>
-<div class="latex" id="orgbeb184e">
+<div class="latex" id="org6980bfc">
 \begin{equation}
 \tau_{\rm ff, GMC} \simeq \tau_{\rm ff,☉} \times 10^{12} \simeq 100\,\mathrm{Myr} \ \ .
 \end{equation}
@@ -588,8 +588,8 @@ paradoxical initial condition!
 </p>
 
 <div class="org-drawer-container">
-  <button class="org-drawer-toggle" onclick="toggleDrawer('drawer-Question-8505')">Question ▼</button>
-  <div id="drawer-Question-8505" class="org-drawer-content" style="display: none;"><ul class="org-ul">
+  <button class="org-drawer-toggle" onclick="toggleDrawer('drawer-Question-1522')">Question ▼</button>
+  <div id="drawer-Question-1522" class="org-drawer-content" style="display: none;"><ul class="org-ul">
 <li><b>Q</b>: can you identify the paradox implicit in the assumptions we made?</li>
 </ul>
 </div>
@@ -659,7 +659,7 @@ thick, and is effectively a protostellar core. This is still embedded
 in gas accreting on it, which provides an <i>accretion luminosity</i>:
 </p>
 
-<div class="latex" id="org59482f0">
+<div class="latex" id="orge1ffa30">
 \begin{equation}
 L_{\rm acc} = \frac{GM\dot{M}_{}}{2R} \ \ .
 \end{equation}
