@@ -279,7 +279,7 @@ optically thin to infra-red radiation, thus the thermal timescale can
 be estimated as $\tau_{\rm th, GMC}=E_{\rm int}/\Lambda$ with $E_{\rm int}\simeq \int dm c_{v}T$
 the internal thermal energy of the gas, and $\Lambda$ the radiative energy
 losses, which can be estimated to be $\Lambda\sim 1$ erg g^{-1} s^{1}. This typically
-gives $\tau_{\rm th, GMC} \le 100$ years $\ll\tau_{\rm ff, GMC}}$, which justifies a
+gives $\tau_{\rm th, GMC} \le 100$ years $\ll\tau_{\rm ff, GMC}$, which justifies a
 posteriori our assumption of /isothermal/ collapse.
 
 *N.B.:* A proper calculation of the cooling rate $\Lambda$ requires detailed
