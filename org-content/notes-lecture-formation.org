@@ -484,12 +484,12 @@ neutron star (remnant of the evolution of massive stars that have
 exploded) and a brown dwarf have been found.
 
 After Deuterium burning, gravity continues to compress the gas,
-decreasing R and increasing ⟨T⟩, until the core reaches temperatures
-sufficient to overcome Coulomb barriers and H core burning begins. The
-moment when the stellar luminosity L equals the energy production rate
-in the core $L_{\rm nuc}$ is usually called *zero age main sequence* (ZAMS)
-and at this point the evolutionary timescale changes from $\sim\tau_{\rm KH}$
-to $τ_{\rm nuc}$.
+decreasing $R$ and increasing $⟨T⟩$, until the core reaches
+temperatures sufficient to overcome Coulomb barriers and H core
+burning begins. The moment when the stellar luminosity $L$ equals the
+energy production rate in the core $L_{\rm nuc}$ is usually called *zero
+age main sequence* (ZAMS) and at this point the evolutionary timescale
+changes from $\sim\tau_{\rm KH}$ to $\sim\tau_{\rm nuc}$.
 
 * Homework
 - Calculate the minimum mass for a brown dwarf
