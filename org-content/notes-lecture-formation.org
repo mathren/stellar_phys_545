@@ -289,7 +289,7 @@ order) and $\mu$ its mean molecular weight, we have the scaling $M_{J}\propto
 \rho_{0}^{-1/2} T_{0}^{3/2}\mu^{-3/2}$. Plugging in typical numbers we have:
 #+BEGIN_latex
 \begin{equation}\label{eq:jeans_mass}
-M_{J} = 1.2\times10^{5} M_{\odot} \left(\frac{T}{100\,\mathrm{K}}\right)^{3/2}\left(\frac{\rho}{10^{24}\,\mathrm{g\ cm^{-3}}}\right)^{-1/2}\mu^{-3/2} \ \ .
+M_{J} = 1.2\times10^{5} M_{\odot} \left(\frac{T}{100\,\mathrm{K}}\right)^{3/2}\left(\frac{\rho}{10^{-24}\,\mathrm{g\ cm^{-3}}}\right)^{-1/2}\mu^{-3/2} \ \ .
 \end{equation}
 #+END_latex
 Note how this value is much larger than the typical mass of stars in
