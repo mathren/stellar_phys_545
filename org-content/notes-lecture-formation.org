@@ -9,17 +9,33 @@ Ch. Tauris & van den Heuvel 2023 book.
 
 * How do stars (& planets) form?
 
+We have derived a physical model for a spherically symmetric ($\Rightarrow$
+non-rotating, non-magnetic, single) star described by 4 non-linear
+coupled ODEs for the /structure/ and a set of $N$ equations describing
+the /evolution/ of the composition (where $N$ is the number of isotopes
+included in the nuclear reaction network of the model). We have also
+briefly discussed the numerical strategies to solve this system of
+equations accounting for the boundary condition provided partially in
+the center and at the photosphere. In the coming lectures, we will try
+to understand the qualitative and quantitative evolution of stars
+based on solutions of this model.
+
 We have seen that stellar evolution is the product of the competition
 between self-gravity and the pressure gradient of the hydrostatic
 stellar gas, which requires high temperatures in the innermost
 regions, causing thermonuclear burning and chemical evolution on a
-nuclear timescale. Here, we will look a bit more at how this begins.
+nuclear timescale. Here, we will look a bit more at how this begins:
+how do stars form and reach the equilibrium condition $L=L_{\rm nuc}$
+which delays the gravothermal collapse until the nuclear fuel is
+exhausted?
 
 *N.B.:* The physical processes governing planet formation are the same
 as for stars, especially when considering the formation of multiple
 stellar systems where irradiation from external sources can play a
 role. What can be different is the $T$ and $\rho$ regime of matter, which
-impacts the EOS, the opacities, and the astro-chemistry.
+impacts the EOS, the opacities, and the astro-chemistry. And the end
+of the gravothermal collapse is /not/ caused by energy generation in the
+interior of the planet, but by deviation from the ideal gas EOS.
 
 The aim of a *comprehensive* theory of star formation is to explain the
 *distribution* of orbital architectures across masses from planets to

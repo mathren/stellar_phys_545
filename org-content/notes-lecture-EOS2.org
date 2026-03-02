@@ -450,8 +450,8 @@ the T(\rho) plane ([[https://ui.adsabs.harvard.edu/abs/2021ApJ...913...72J/abstr
 * Homework
 
 - Using the virial theorem, discuss which pressure term is more
-  important in the total pressure as a function of the mass (and
-  radius) of stars.
+  important in the total pressure as a function of the mass of the
+  stars.
 - Derive an upper limit for the temperature T as a function of the
   density \rho for a star supported by fully degenerate
   (non-relativistic) electrons, and plot this relation on a T(\rho)
