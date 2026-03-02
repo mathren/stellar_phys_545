@@ -1,7 +1,7 @@
 #+Title: ASTR545 - Evolution of stars
 #+author: Mathieu Renzo
 #+email: mrenzo@arizona.edu
-#+PREVIOUS_PAGE: notes-lecture-radTrans.org
+#+PREVIOUS_PAGE: notes-lecture-formation.org
 #+NEXT_PAGE: notes-lecture-asteroseismology.org
 
 *Materials*: Onno Pols' lecture notes Chapters 7-9-11, Kippenhahn's book

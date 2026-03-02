@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 2026-03-02 Mon 12:35 -->
+<!-- 2026-03-02 Mon 12:59 -->
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>ASTR545 - Stars &amp; Planet Formation</title>
@@ -211,7 +211,7 @@ to <a href="https://ui.adsabs.harvard.edu/abs/1955ApJ...121..161S/abstract">Salp
 one can write the star formation mass- and time-dependent rate as
 </p>
 
-<div class="latex" id="org82cec2c">
+<div class="latex" id="orga7a00cc">
 \begin{equation}
 \Psi = IMF(M) \times SFR(t) \ \ ,
 \end{equation}
@@ -235,7 +235,7 @@ which has been since then refined, but the typical exponent seems
 common in many places in the Universe:
 </p>
 
-<div class="latex" id="orge688fad">
+<div class="latex" id="orgbea1869">
 \begin{equation}
 \mathrm{Salpeter}\ IMF(M) = \frac{dN_{\star}}{dM} \propto M^{-1.3} \ \ .
 \end{equation}
@@ -302,7 +302,7 @@ stellar ages), can be arbitrarily more complicated.
 <h2 id="orgec79203"><a href="#orgec79203">The Beginning: Giant Molecular Clouds</a></h2>
 <div class="outline-text-2" id="text-orgec79203">
 
-<figure id="org39ff694">
+<figure id="orgb024355">
 <img src="./images/Barnard68.png" alt="Barnard68.png" width="100%">
 
 <figcaption><span class="figure-number">Figure 1: </span>The nearby dark cloud Barnard 68, the abscence of foreground stars and high opacity make it completely dark. Credits VLT/ANTU/FORS1, ESO. This is Fig. 1.7 in Magnani &amp; Shore's book.</figcaption>
@@ -349,7 +349,7 @@ Let's assume, following <a href="https://royalsocietypublishing.org/rsta/article
 is <i>isothermal</i>. This simplification allows us to use a very simple
 polytropic EOS:
 </p>
-<div class="latex" id="orge4ec63a">
+<div class="latex" id="org05582a4">
 \begin{equation}
 P = c_{s}^{2}\rho \ \ ,
 \end{equation}
@@ -373,7 +373,7 @@ hydrostatic equilibrium lecture</a>) to the sound-crossing time across a
 certain length-scale \(\ell\), and find the length-scale \(\ell_{J}\) for which
 the two are the same:
 </p>
-<div class="latex" id="orgf76346b">
+<div class="latex" id="orgca4b74d">
 \begin{equation}
 \tau_{\rm ff} \stackrel{!}{=} \ell_{J}/c_{s} \Rightarrow \ell_{J} \sim c_{s}/\sqrt{G\rho} \ \ ,
 \end{equation}
@@ -402,7 +402,7 @@ gravitational potential energy and the internal energy of the cloud:
 collapse requires a negative total energy, or in other words
 </p>
 
-<div class="latex" id="org35b9400">
+<div class="latex" id="org6b7c1f4">
 \begin{equation}
  - E_{\rm grav} \ge E_{\rm int} \Rightarrow \frac{GM^{2}}{R} \ge \frac{M}{m_{p}} k_{B}T \ \ ,
 \end{equation}
@@ -414,7 +414,7 @@ freedom divided by two (so either 3/2 or 5/2 for di-atomic molecules).
 Rearranging and using \(R\propto (M/\rho)^{1/3}\), we obtain that the collapse
 condition can be expressed in terms of mass as:
 </p>
-<div class="latex" id="orgb1186df">
+<div class="latex" id="orgde11e9f">
 \begin{equation}\label{eq:jeans_mass_scaling}
 M \ge M_{J} \propto T^{3/2}\rho^{-1/2} \ \ ,
 \end{equation}
@@ -442,7 +442,7 @@ The cloud is described by the momentum continuity equation (or Euler's
 equation), the mass continuity equation, and its gravitational
 potential \(\Phi\) has to solve the Poisson's equation:
 </p>
-<div class="latex" id="orgd30d451">
+<div class="latex" id="orgbfa74dd">
 \begin{equation}\label{eq:cloud}
 \frac{\partial \mathbf{v}}{\partial t} + (\mathbf{v}\cdot\mathbf{\nabla}) \mathbf{v} = -\frac{1}{\rho}\mathbf{\nabla} P -\mathbf{\nabla}\Phi\ \ \ , \ \ \
 \frac{\partial\rho}{\partial t}+\mathbf{\nabla}\cdot(\rho\mathbf{v}) = 0 \ \ \ ,\ \ \
@@ -466,7 +466,7 @@ situation with \(\mathbf{v_{0}} \equiv 0\). With the linearized equations one
 obtains, without loss of generality, we can consider perturbations of
 the form
 </p>
-<div class="latex" id="orga5185dc">
+<div class="latex" id="orgb0a997e">
 \begin{equation}
 \delta x = x_{0} \exp\left(i\mathbf{k}\cdot\mathbf{x}+i\omega t\right) \ \ ,
 \end{equation}
@@ -482,7 +482,7 @@ linear order in the perturbation).
 <p>
 This reduces Eq. \ref{eq:cloud} to, respectively:
 </p>
-<div class="latex" id="orgec31224">
+<div class="latex" id="orgcc74d69">
 \begin{equation}\label{eq:cloud_linearized}
 \omega\delta \mathbf{v} + \frac{\mathbf{k}c_{s}^{2}}{\rho_{0}}\delta\rho +\mathbf{k}\Phi_{0}=0\ \ \ , \ \ \ \omega\delta\rho + \mathbf{k}\rho_{0}\delta\mathbf{v} = 0 \ \ \ , \ \ \ k^{2}\delta\Phi + \Phi_{0}\frac{\delta\rho}{\rho_{0}} = 0 \ ,
 \end{equation}
@@ -495,7 +495,7 @@ the matrix representing the system is zero. This condition provides
 the dispersion relation:
 </p>
 
-<div class="latex" id="org4bb8045">
+<div class="latex" id="org5f77d54">
 \begin{equation}\label{eq:dispersion_rel}
 \omega^{2} = k^{2}c_{s}^{2}-4\pi G\rho_{0} \ \ .
 \end{equation}
@@ -524,7 +524,7 @@ astrophysically it is more useful to think in terms of mass involved.
 We can define the Jeans mass as the mass contained within a sphere of
 volume the Jeans length:
 </p>
-<div class="latex" id="orgefd1cef">
+<div class="latex" id="org0f5158b">
 \begin{equation}
 M_{J} = \frac{4}{3}\pi \rho_{0} \ell_{J}^{3} \ \ .
 \end{equation}
@@ -536,7 +536,7 @@ the initial gas temperature (only the unperturbed value at linear
 order) and \(\mu\) its mean molecular weight, we have the scaling \(M_{J}\propto
 \rho_{0}^{-1/2} T_{0}^{3/2}\mu^{-3/2}\). Plugging in typical numbers we have:
 </p>
-<div class="latex" id="orgf21c94e">
+<div class="latex" id="orgdde6d37">
 \begin{equation}\label{eq:jeans_mass}
 M_{J} = 1.2\times10^{5} M_{☉} \left(\frac{T}{100\,\mathrm{K}}\right)^{3/2}\left(\frac{\rho}{10^{-24}\,\mathrm{g\ cm^{-3}}}\right)^{-1/2}\mu^{-3/2} \ \ .
 \end{equation}
@@ -568,7 +568,7 @@ perturbation induces a local increase in gravity that wins over the
 increase in gas pressure, so we expect a dynamical phase. Considering
 the (order of magnitude of the) free-fall timescale, we have:
 </p>
-<div class="latex" id="org008a981">
+<div class="latex" id="orgb064ad1">
 \begin{equation}
 \tau_{\rm ff} \simeq (G\rho)^{-1/2} \Rightarrow \tau_{\rm ff, GMC} \simeq \tau_{\rm ff,☉} \times \left(\frac{\langle\rho_{☉}\rangle}{\langle\rho_{\rm GMC}\rangle}\right)^{1/2} \ \ ,
 \end{equation}
@@ -579,7 +579,7 @@ where we know \(\tau_{\rm ff,☉}\simeq 1\) hour. Using \(\langle\rho_{☉}\rang
 m_{p}\) and assuming a number density of particles \(n\sim100\) cm<sup>-3</sup> and \(\mu\sim1\),
 this gives the free fall timescale of the giant molecular cloud
 </p>
-<div class="latex" id="orga708f50">
+<div class="latex" id="org848dad1">
 \begin{equation}
 \tau_{\rm ff, GMC} \simeq \tau_{\rm ff,☉} \times 10^{12} \simeq 100\,\mathrm{Myr} \ \ .
 \end{equation}
@@ -667,8 +667,8 @@ paradoxical initial condition!
 </p>
 
 <div class="org-drawer-container">
-  <button class="org-drawer-toggle" onclick="toggleDrawer('drawer-Question-2423')">Question ▼</button>
-  <div id="drawer-Question-2423" class="org-drawer-content" style="display: none;"><ul class="org-ul">
+  <button class="org-drawer-toggle" onclick="toggleDrawer('drawer-Question-5354')">Question ▼</button>
+  <div id="drawer-Question-5354" class="org-drawer-content" style="display: none;"><ul class="org-ul">
 <li><b>Q</b>: can you identify the paradox implicit in the assumptions we made?</li>
 </ul>
 </div>
@@ -739,7 +739,7 @@ thick, and is effectively a protostellar core. This is still embedded
 in gas accreting on it, which provides an <i>accretion luminosity</i>:
 </p>
 
-<div class="latex" id="org5f20928">
+<div class="latex" id="orgd8cf597">
 \begin{equation}
 L_{\rm acc} = \frac{GM\dot{M}_{}}{2R} \ \ .
 \end{equation}
@@ -833,7 +833,7 @@ changes from \(\sim\tau_{\rm KH}\) to \(\sim\tau_{\rm nuc}\).
 <div id="postamble" class="status">
 <div class="footer">
   <hr>
-  <a href="#light-dark-toggle"><i id="light-dark-toggle"><i class="fa-solid fa-circle-half-stroke"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="#"><i class="fa-solid fa-arrow-left" style="font-size:16px"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="#top"><i class="fa-solid fa-arrow-up" style="font-size:16px"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="#"><i class="fa-solid fa-arrow-right" style="font-size:16px"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="https://github.com/mathren/stellar_phys_545"><i class="fa-brands fa-github" style="font-size:16px"></i></a><hr>
+  <a href="#light-dark-toggle"><i id="light-dark-toggle"><i class="fa-solid fa-circle-half-stroke"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="notes-lecture-codes.html"><i class="fa-solid fa-arrow-left" style="font-size:16px"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="#top"><i class="fa-solid fa-arrow-up" style="font-size:16px"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="notes-in-class-evol.html"><i class="fa-solid fa-arrow-right" style="font-size:16px"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="https://github.com/mathren/stellar_phys_545"><i class="fa-brands fa-github" style="font-size:16px"></i></a><hr>
   <br>
   Last updated on 2 March 2026 <br>
   Made with Emacs 29.2 - Org mode 9.6.15

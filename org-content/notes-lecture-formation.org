@@ -1,6 +1,8 @@
 #+title: ASTR545 - Stars & Planet Formation
 #+author: Mathieu Renzo
 #+email: mrenzo@arizona.edu
+#+PREVIOUS_PAGE: notes-lecture-codes.org
+#+NEXT_PAGE: notes-in-class-evol.org
 
 *Materials:* [[https://royalsocietypublishing.org/rsta/article/199/312-320/1/40316/I-The-stability-of-a-spherical-nebula][Jeans 1902]], [[https://ui.adsabs.harvard.edu/abs/2023ASPC..534..275O/abstract][Offner et al. 2023]], [[https://ui.adsabs.harvard.edu/abs/2017ASSL..442....1M/abstract][Ch. 1, A dirty window,
 Magnani & Shore]], Ch 6.8.1 "Tapestry of Modern Astrophysics" by S. N.
