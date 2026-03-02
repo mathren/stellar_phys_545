@@ -313,7 +313,7 @@ of masses?
 By construction, we have derived that the collapse initiates when the
 perturbation induces a local increase in gravity that wins over the
 increase in gas pressure, so we expect a dynamical phase. Considering
-the (order of magnitude of the ) free-fall timescale, we have:
+the (order of magnitude of the) free-fall timescale, we have:
 #+begin_latex
 \begin{equation}
 \tau_{\rm ff} \simeq (G\rho)^{-1/2} \Rightarrow \tau_{\rm ff, GMC} \simeq \tau_{\rm ff,\odot} \times \left(\frac{\langle\rho_{\odot}\rangle}{\langle\rho_{\rm GMC}\rangle}\right)^{1/2} \ \ ,
@@ -429,7 +429,8 @@ Understanding the physics of these processes requires comparing
 across scales from ≈100s of parsecs (GMC) down to stellar and
 planetary radii, possibly including environmental effects (such as the
 irradiation of the surrounding stars). These efforts are still ongoing
-(including groups here at Steward Observatory).
+(including groups here at Steward Observatory, e.g., [[https://uatsk.github.io/][Prof. Shuo Kong's
+group]]).
 
 * Accretion and proto-star phase
 
@@ -450,7 +451,7 @@ denominator comes from the [[./notes-lecture-VirTheo.org][Virial theorem]] (part
 energy goes into heating the accretion flow).
 
 During this phase the proto-stellar core heats up, but adiabatically,
-since the accretion timescale $\tau=M/\dot{M} \gg \tau_{\rm KH}$.
+since the accretion timescale $\tau=M/\dot{M} \ll \tau_{\rm KH}$.
 
 At some point, the temperature of the core will increase enough that
 H_{2} molecules will start breaking (collisionally), releasing some
