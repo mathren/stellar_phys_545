@@ -148,12 +148,6 @@ fraction of dust, leading to a very high opacity in the optical
 wavelengths (see figure above). However, IR radiation can leak out of
 the cloud, initially allowing for efficient cooling.
 
-:Question:
-- *Q:* Give and motivate a physical scaling for lifetime of such a
-  cloud.
-- *Q*: What do you expect the temperature gradient to be?
-:end:
-
 * Jeans Mass
 Let's assume, following [[https://royalsocietypublishing.org/rsta/article/199/312-320/1/40316/I-The-stability-of-a-spherical-nebula][Jeans 1902]], an infinite homogeneous cloud that
 is /isothermal/. This simplification allows us to use a very simple
