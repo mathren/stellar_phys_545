@@ -474,8 +474,10 @@ The loosely bound nucleus of Deuterium may burn first but releases
 little energy and can only slow without halting the collapse. Objects
 sufficiently massive to experience Deuterium burning, but not to
 ignite H are the boundary between planets and stars, and called Brown
-Dwarfs. These are typically very cold and faint bodies, that can be
-found in isolation, or orbiting from the orbit of companions.
+Dwarfs (see also the research of [[https://bemiles.github.io/][Prof. Brittany Miles]] here at the
+University of Arizona). Brown dwarfs are typically very cold and faint
+bodies, that can be found in isolation, or orbiting from the orbit of
+companions.
 
 *N.B.:* Through radio-monitoring of pulsars, several binaries with a
 neutron star (remnant of the evolution of massive stars that have
