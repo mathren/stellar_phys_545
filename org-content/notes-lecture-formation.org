@@ -67,12 +67,12 @@ without a strong first-principle justification.
 [[./images/Barnard68.png]]
 
 Consider a cold cloud of a given initial homogeneous composition,
-typically $\sim70\%$ by mass will be hydrogen (H), $\sim28\%$ helium (He),
-and the rest as metals. At this point, in absence of external energy
-sources (e.g., radiation from a nearby cluster or AGN), the gas will
-be cold ($T\simeq10-100\,\mathrm{K}$), and hydrogen atoms will
-collisionally find each other and form molecules of H₂. This is a
-(giant) *molecular cloud* (GMC).
+typically (in the Milky Way) $\sim70\%$ by mass will be hydrogen (H),
+$\sim28\%$ helium (He), and the rest as metals. At this point, in absence
+of external energy sources (e.g., radiation from a nearby cluster or
+AGN), the gas will be cold ($T\simeq10-100\,\mathrm{K}$), and hydrogen
+atoms will collisionally find each other and form molecules of H₂.
+This is a (giant) *molecular cloud* (GMC).
 
 *N.B.:* The notation can be confusing: H₂ is molecular hydrogen, H${\rm
 II}$ is ionized hydrogen (i.e., just the proton).
