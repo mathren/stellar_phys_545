@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 2026-03-02 Mon 12:59 -->
+<!-- 2026-03-04 Wed 09:09 -->
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>ASTR545 - Evolution of stars</title>
@@ -187,7 +187,7 @@ produces for you.
 </p>
 
 
-<figure id="org9844674">
+<figure id="org9368988">
 <img src="./images/MESA-web_pgstar.png" alt="MESA-web_pgstar.png" width="100%">
 
 <figcaption><span class="figure-number">Figure 1: </span>snapshot of a <code>MESA-web</code> generated movie for the evolution of a 1M<sub>☉</sub> star.</figcaption>
@@ -208,7 +208,10 @@ very top left, and the number of timestep marked on the top right.
 <b>N.B.:</b> large excursions on a plot can take a very short physical time
 (but a long computational time and many timesteps), viceversa
 long-duration phases may take few large timesteps and <i>not</i> produce
-large variations on these plots!
+large variations on these plots! This is a manifestation of the fact
+that timesteps are <i>adaptive</i> and the code always tries to take the
+biggest timestep possible within the numerical constraints set by the
+user.
 </p>
 </div>
 
@@ -305,9 +308,9 @@ if we can understand why if they don't!
 </p>
 
 <p>
-Find the "beginning of the main sequence" of your star, as in the
-point where gravothermal equilibrium is achieved and \(L_\mathrm{nuc} =
-L\) thanks to hydrogen core burning and report on <a href="https://docs.google.com/spreadsheets/d/17HdroCGDeq5wl5l60erJ_-Vstz5JTujuxsz1BQhns0M/edit?gid=0#gid=0">this spreadsheet</a> your
+Find the zero age main sequence (ZAMS) of your stars, as in the point
+where gravothermal equilibrium is achieved and \(L_\mathrm{nuc} = L\)
+thanks to hydrogen core burning and report on <a href="https://docs.google.com/spreadsheets/d/17HdroCGDeq5wl5l60erJ_-Vstz5JTujuxsz1BQhns0M/edit?gid=0#gid=0">this spreadsheet</a> your
 mass and luminosity at that point.
 </p>
 
@@ -322,7 +325,7 @@ initial stellar structure. You can find the variable <code>center_h1</code> in y
 
 
 
-<figure id="orgbe5dbd9">
+<figure id="orga19fc9e">
 <img src="./images/LM_crowdsourced.png" alt="LM_crowdsourced.png" width="100%">
 
 <figcaption><span class="figure-number">Figure 2: </span>\(L(M)\) relation obtained in class. The red points assume homogeneous stars in hydrostatic equilibrium and fully radiative, the orange points are the results reported by the students based on <code>MESA-web</code> results. Deviations at large and small masses (related to violations of the theoretical assumptions) are expected.</figcaption>
@@ -429,7 +432,7 @@ stars of various mass.
   <hr>
   <a href="#light-dark-toggle"><i id="light-dark-toggle"><i class="fa-solid fa-circle-half-stroke"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="notes-lecture-formation.html"><i class="fa-solid fa-arrow-left" style="font-size:16px"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="#top"><i class="fa-solid fa-arrow-up" style="font-size:16px"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="notes-lecture-asteroseismology.html"><i class="fa-solid fa-arrow-right" style="font-size:16px"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="https://github.com/mathren/stellar_phys_545"><i class="fa-brands fa-github" style="font-size:16px"></i></a><hr>
   <br>
-  Last updated on 2 March 2026 <br>
+  Last updated on 4 March 2026 <br>
   Made with Emacs 29.2 - Org mode 9.6.15
   <br>
 </div>

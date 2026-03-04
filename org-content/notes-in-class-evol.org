@@ -50,7 +50,10 @@ very top left, and the number of timestep marked on the top right.
 *N.B.:* large excursions on a plot can take a very short physical time
 (but a long computational time and many timesteps), viceversa
 long-duration phases may take few large timesteps and /not/ produce
-large variations on these plots!
+large variations on these plots! This is a manifestation of the fact
+that timesteps are /adaptive/ and the code always tries to take the
+biggest timestep possible within the numerical constraints set by the
+user.
 
 *** Top right panel: abundance panel
 This shows $\log_{10}(X_{i})$ with $X_{i}$ the mass fraction of the $i$-th isotope as
@@ -103,9 +106,9 @@ derived an analytic relation for fully radiative stars (see [[file:notes-lecture
 on radiative energy transport]]). Let's now see if our models agree and
 if we can understand why if they don't!
 
-Find the "beginning of the main sequence" of your star, as in the
-point where gravothermal equilibrium is achieved and $L_\mathrm{nuc} =
-L$ thanks to hydrogen core burning and report on [[https://docs.google.com/spreadsheets/d/17HdroCGDeq5wl5l60erJ_-Vstz5JTujuxsz1BQhns0M/edit?gid=0#gid=0][this spreadsheet]] your
+Find the zero age main sequence (ZAMS) of your stars, as in the point
+where gravothermal equilibrium is achieved and $L_\mathrm{nuc} = L$
+thanks to hydrogen core burning and report on [[https://docs.google.com/spreadsheets/d/17HdroCGDeq5wl5l60erJ_-Vstz5JTujuxsz1BQhns0M/edit?gid=0#gid=0][this spreadsheet]] your
 mass and luminosity at that point.
 
 *Hint*: A very simple approximate criterion we can adopt here is
