@@ -229,7 +229,7 @@ means that convective mixing makes a larger mass of hydrogen available
 to the very central burning zone. At the same time, higher $M$ \Rightarrow
 higher $T_\mathrm{eff}$ and the envelope becomes radiative.
 
-#+CAPTION: The "initial" gravothermal equilibrium structure of a star is determined only by mass $M$ and composition. The figure (Fig. 9.8 in Onno Pols' notes, modified from Kippenhahn & Weigert) shows in gray the region in mass coordinate $y=m/M$ that are convective as a function of the total mass $M=\int dm$ for $Z=0.02$ models. Red lines indicate where 50 and 90 % of the luminosity $L$ is generated (the "burning region") and the blue dashed lines show $r(m)=0.25M$ and $r(m)=0.5M$.
+#+CAPTION: The gravothermal equilibrium structure of a star at ZAMS is determined only by mass $M$ and composition. The figure (Fig. 9.8 in Onno Pols' notes, modified from Kippenhahn & Weigert) shows in gray the region in mass coordinate $y=m/M$ that are convective as a function of the total mass $M=\int dm$ for $Z=0.02$ models. Red lines indicate where 50 and 90 % of the luminosity $L$ is generated (the "burning region") and the blue dashed lines show $r(m)=0.25M$ and $r(m)=0.5M$.
 #+ATTR_HTML: :width 100%
 [[./images/conv_ZAMS.png]]
 
