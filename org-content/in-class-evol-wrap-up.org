@@ -83,6 +83,11 @@ status solving the structure equations.
 
 ** Pre-main sequence stellar structure
 
+#+CAPTION: Examples of pre-main sequence evolution along the Hayashi track for stellar models of varying metallicity. Credits: S. Cassisi.
+#+ATTR_HTML: :width 100%
+[[./images/Hayashi_composition.png]]
+
+
 If the gravothermal collapse of the mass of gas considered ends with
 the ignition of nuclear fuel (option 2. above), that is, if we make a
 star (recall $\langle T \rangle \propto \mu M/R$, so the mass determines whether we get
