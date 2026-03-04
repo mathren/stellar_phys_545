@@ -135,8 +135,9 @@ Discuss written and oral presentations, and refereeing process.
 
 [[./notes-in-class-evol.org][Notes]]
 
-** <2026-03-06 Fri> - *Guest Lecture* (topic TBD)
+** <2026-03-06 Fri> - *Guest Lecture*: Coupling rapid binary evolution and galactic dynamics
 Guest lecturer: [[https://www.tomwagg.com/][Dr. Tom Wagg]]
+
 ** <2026-03-07 Sat> - <2026-03-15 Sun> - SPRING BREAK
 
 [[./mid_term.org][Take home midterm exam]]
