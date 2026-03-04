@@ -338,7 +338,7 @@ connects the innermost burning region with a larger fuel reservoir.
 The progressive burning of hydrogen changes the center opacity (well
 approximated by electron scattering only in the hot, fully ionized
 interior) $\kappa\simeq\kappa_\mathrm{es}=0.2(1+X)$ cm^{2} g^{-1}. Specifically, as $X$
-decreases, so does $\kappa$, and since $\nabla = \partial ln(T)/\partial ln(\rho) \propto \kappa L$, the
+decreases, so does $\kappa$, and since $\nabla = \partial \ln(T)/\partial \ln(\rho) \propto \kappa L$, the
 temperature gradient becomes "less steep", meaning there is less need
 for convection: /during the main sequence of massive stars, the
 convective core receeds in mass coordinate/.
