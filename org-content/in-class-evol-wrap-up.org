@@ -84,7 +84,7 @@ status solving the structure equations.
 ** Pre-main sequence stellar structure
 
 #+CAPTION: Examples of pre-main sequence evolution along the Hayashi track for stellar models of varying metallicity. Credits: S. Cassisi.
-#+ATTR_HTML: :width 100%
+#+ATTR_HTML: :width 75%
 [[./images/Hayashi_composition.png]]
 
 
