@@ -112,7 +112,7 @@ thanks to hydrogen core burning and report on [[https://docs.google.com/spreadsh
 mass and luminosity at that point.
 
 *Hint*: A very simple approximate criterion we can adopt here is
-=center_h1= \le 99% =center_h1= at the beginning of the evolution: this
+=center_h1= (t) \le 99% =center_h1= (t=0) at the beginning of the evolution: this
 imposes that a small amount of hydrogen has burned, enough to
 establish equilibrium, but we are still very close to a homogeneous
 initial stellar structure. You can find the variable =center_h1= in your
