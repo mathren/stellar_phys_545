@@ -171,7 +171,9 @@ As the gravothermal collapse continues and $\langle T \rangle$ increases, at som
 point, if we are making a star, by /definition/ nuclear burning turns on
 (option 2. above). This is when the central temperature (which at this
 stage is the highest temperature in the star), is sufficiently high to
-obtain enough tunneling through the Coulomb barriers.
+obtain enough tunneling through the Coulomb barriers such that the
+nuclear reaction energy generation rate is sufficient to release
+enough energy to compensate for the surface losses.
 
 Because it is abundant, and its burning releases a lot of energy per
 nucleon (\sim 6.5MeV/nucleon) because it produces the double-magic
