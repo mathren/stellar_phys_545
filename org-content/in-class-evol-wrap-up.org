@@ -308,7 +308,7 @@ matter for the details.
 
 *N.B.:* The relative role of $\mu$ and $\kappa$ is slightly sensitive to
 metallicity too (because at lower $Z$ the approximation
-$\kappa\simeq\kappa-\mathrm{es}$ is progressively better since fewer bound-bound and
+$\kappa\simeq\kappa_\mathrm{es}$ is progressively better since fewer bound-bound and
 bound-free transitions are available, see also [[https://ui.adsabs.harvard.edu/abs/2022MNRAS.516.5816X/abstract][Xin et al. 2022]]). The
 opacity $\kappa$ is dominant in determining the $L$ and $R$ at ZAMS for
 $Z\simeq0.02$, but the change in $\mu$ is determining their /evolution/ along
