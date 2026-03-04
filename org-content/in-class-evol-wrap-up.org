@@ -329,7 +329,7 @@ For low mass stars with radiative cores and high $\rho_\mathrm{center}$
 equilibrium + EOS), partial degeneracy already plays a role in
 sustaining the structure during the main sequence, and as the central
 burning region converts hydrogen into helium, the helium core becomes
-hot and degenerate - thus sustaining itself against gravitational
+partially degenerate - thus sustaining itself against gravitational
 collapse with the quantum effects due to the Fermi-Dirac statistics of
 electrons.
 
