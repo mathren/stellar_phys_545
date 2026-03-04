@@ -44,15 +44,17 @@ losing energy ($L$ goes down) and contracting -- picture lines of
 constant $R=(L/(4\pi\sigma T_\mathrm{eff}^{4)}))^{1/2}$! This /is/ the gravothermal
 Kelvin-Helmholtz contraction which leads to the increase in average $\langle
 T \rangle$ by the virial theorem, and it goes on until either:
-1. *degeneracy pressure stops this process by changing the EOS, tapping
-   into quantum mechanical effects to provide extra pressure*: this
-   should not happen to any of your models, but it is how you form a
-   *Brown Dwarfs* (BD) and a planets. The distinction between these is
-   whether some minor nuclear burning, energetically unimportant but
-   still affecting the composition happens before the object sets on
-   gravothermal equilibrium: BD experience deuterium burning, but
-   deuterium is a loosely bound nucleus and its burning doesn't release
-   a lot of energy.
+1. *The EOS changes*, either because of phase transition from gas to
+   liquid, and later solid (crystallization) in the formation of a
+   rocky planet, or because into quantum mechanical effects (electron
+   degeneracy) to *provide extra pressure*: this should not happen to
+   any of your models, but it is how you form a *Brown Dwarfs* (BD) and
+   a planets. The distinction between these is whether some minor
+   nuclear burning, energetically unimportant but still affecting the
+   composition happens before the object sets on gravothermal
+   equilibrium: BD experience deuterium burning, but deuterium is a
+   loosely bound nucleus and its burning doesn't release a lot of
+   energy.
 2. *an energy source (namely nuclear burning) stops the collapse*. This
    is what happens to your stars, where H burning (as the lightest and
    most energy-releasing fuel) starts. The point where
@@ -69,16 +71,15 @@ from [[https://www.aanda.org/10.1051/0004-6361/201833433][Schneider et al. 2018]
 
 From the ignition of H in the core onwards, for timescales $t \ll
 \tau_\mathrm{nuc}$, once the composition is decided (i.e., for fixed mass
-fractions ${X_{i}}$) the structure is determined by those 4 ODEs+EOS.
+fractions ${X_{i}}$) the structure is determined by those 4 ODEs + EOS.
 This means that the /initial/ structure of the star is /not/ sensitive to
 the (complex, not-yet-fully understood) star formation process, and
-the ZAMS structure is fully determined by the composition! This is
-why, although the star formation process does not proceed starting
-with a ball of known composition $\{X_{i}\}$ and fixed total mass $M$, we
-can make stellar models starting from this idealized conditions, and
-let them relax to a thermal equilibrium status solving the structure
-equations.
-
+the ZAMS structure is fully determined by the composition and total
+mass! This is why, although the star formation process does not
+proceed starting with a ball of known composition $\{X_{i}\}$ and fixed
+total mass $M$, we can make stellar models starting from this
+idealized conditions, and let them relax to a thermal equilibrium
+status solving the structure equations.
 
 ** Pre-main sequence stellar structure
 
@@ -87,6 +88,13 @@ the ignition of nuclear fuel (option 2. above), that is, if we make a
 star (recall $\langle T \rangle \propto \mu M/R$, so the mass determines whether we get
 here), then the phase from the beginning of the simulation until ZAMS
 is called /pre-main-sequence/ (pre-MS).
+
+*N.B.:* The "beginning of the numerical simulation" here represents the
+moment when the proto-stellar core, which has stopped contracting
+isothermally because $\rho$ has risen enough that $\kappa$ in the IR
+wavelength region is high, and transition to an adiabatic contraction,
+also stops accreting mass ($\dot{M}=0$) and reached the total initial
+mass $M$ that we initialize the runs with.
 
 During this phase the models start from the top-right of the diagram
 at high $L$, large $R$ (\Rightarrow low $\langle T \rangle$), and progressively contract and heat
