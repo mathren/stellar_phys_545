@@ -203,11 +203,36 @@ and dynamical assembly), discuss some known uncertainties.
 
 [[./notes-lecture-SNIa.org][Notes]]
 ** <2026-04-17 Fri> - Two students presentations
+*** M dwarfs & Brown dwarfs
+*** Flares
+
 ** <2026-04-20 Mon> - Two students presentations
+*** Gaia mission
+*** Gaia compact objects
+
 ** <2026-04-22 Wed> - Two students presentations
-** <2026-04-24 Fri> - Two students presentations
-** <2026-04-27 Mon> - Two students presentations
-** <2026-04-29 Wed> - Two students presentations
+*** Conv Boundary Mixing
+*** Kozai-Lidov
+
+** <2026-04-24 Wed> - Two students presentations
+*** Stellar winds
+*** chemical evolution
+
+** <2026-04-27 Fri> - Two students presentations
+*** r-process
+*** Supernovae
+
+** <2026-04-29 Mon> - Two students presentations
+*** Failed SNe
+*** GRB-progenitors (AM transport)
+
 ** <2026-05-01 Fri> - *No lecture*
+Y
 ** <2026-05-04 Mon> - Two students presentations
+*** Betelgeuse
+*** Stellar rotation observations
+
 ** <2026-05-06 Wed> - Two students presentations
+
+*** Clusters GC/Open
+*** Magnetic braking
