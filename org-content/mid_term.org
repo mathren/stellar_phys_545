@@ -5,7 +5,7 @@
 
 * Mid-term exam
 
-This mid-term is a take-home exam due on *<2026-03-27 Fri>*. All
+This mid-term is a take-home exam due on *<2026-03-30 Mon>*. All
 assignments can be completed using data generated with =MESA-web=
 ([[http://user.astro.wisc.edu/~townsend/static.php?ref=mesa-web-submit][calculation submission page]]) or with your own installation =MESA= (see
 [[https://github.com/mathren/stellar_phys_545/tree/main/MESA_files/modernized_MESA_web][here]] for input files working with the two most recent versions of the
