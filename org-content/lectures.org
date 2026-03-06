@@ -227,7 +227,7 @@ and dynamical assembly), discuss some known uncertainties.
 *** GRB-progenitors (AM transport)
 
 ** <2026-05-01 Fri> - *No lecture*
-Y
+
 ** <2026-05-04 Mon> - Two students presentations
 *** Betelgeuse
 *** Stellar rotation observations

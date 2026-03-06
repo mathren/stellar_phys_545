@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 2026-02-23 Mon 10:49 -->
+<!-- 2026-03-06 Fri 15:43 -->
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>ASTR/PYTS 545 Mid-term take-home exam</title>
@@ -141,7 +141,12 @@
 <p>
 This mid-term is a take-home exam due on <b><span class="timestamp-wrapper"><span class="timestamp">2026-03-27 Fri</span></span></b>. All
 assignments can be completed using data generated with <code>MESA-web</code>
-(<a href="http://user.astro.wisc.edu/~townsend/static.php?ref=mesa-web-submit">calculation submission page</a>) or with your own installation <code>MESA</code>.
+(<a href="http://user.astro.wisc.edu/~townsend/static.php?ref=mesa-web-submit">calculation submission page</a>) or with your own installation <code>MESA</code> (see
+<a href="https://github.com/mathren/stellar_phys_545/tree/main/MESA_files/modernized_MESA_web">here</a> for input files working with the two most recent versions of the
+code adapted from the <code>MESA-web</code> inputs).
+</p>
+
+<p>
 Instructions are provided assuming the use of the former, and the
 latter does not guarantees any bonus, but may afford more flexibility
 in performing numerical experiments to answer the questions.
@@ -160,8 +165,8 @@ Run a model of a \(1M_{☉}\) star until 14Gyr.
 </p>
 
 <div class="org-drawer-container">
-  <button class="org-drawer-toggle" onclick="toggleDrawer('drawer-Hint-1840')">Hint ▼</button>
-  <div id="drawer-Hint-1840" class="org-drawer-content" style="display: none;"><p>
+  <button class="org-drawer-toggle" onclick="toggleDrawer('drawer-Hint-6836')">Hint ▼</button>
+  <div id="drawer-Hint-6836" class="org-drawer-content" style="display: none;"><p>
 You may want to change the <code>Detailed profile output frequency</code> under the
 <code>General</code> options to get enough snapshots of the internal structure of
 your stellar model.
@@ -177,7 +182,7 @@ evolution of the radius of the Sun.
 <ol class="org-ol">
 <li>What is the present-day value (assume \(t_{☉}=4.5\) Gyr)?</li>
 <li>At what \(t\) does the radius equal 1\(R_{☉}\)?</li>
-<li>Explain which physical ingredients may cause possible mis-matches</li>
+<li>Hypothesize which physical ingredients may cause possible mis-matches</li>
 <li>If there were planets orbiting this star at separations \(a=1\) au,
 when would the star engulf them (and at which evolutionary stage in
 terms of nuclear fuel)?</li>
@@ -186,8 +191,8 @@ with the Sun today.</li>
 </ol>
 
 <div class="org-drawer-container">
-  <button class="org-drawer-toggle" onclick="toggleDrawer('drawer-Hint-5921')">Hint ▼</button>
-  <div id="drawer-Hint-5921" class="org-drawer-content" style="display: none;"><p>
+  <button class="org-drawer-toggle" onclick="toggleDrawer('drawer-Hint-1313')">Hint ▼</button>
+  <div id="drawer-Hint-1313" class="org-drawer-content" style="display: none;"><p>
 For the bonus task, you can help yourself searching <a href="https://ui.adsabs.harvard.edu/">NASA/ADS</a> to search
 for papers modeling the Sun with MESA.
 </p>
@@ -258,13 +263,13 @@ analytic estimate and confront it quantitatively with your models</li>
 </ol>
 
 <div class="org-drawer-container">
-  <button class="org-drawer-toggle" onclick="toggleDrawer('drawer-Debugging-9064')">Debugging ▼</button>
-  <div id="drawer-Debugging-9064" class="org-drawer-content" style="display: none;"><p>
+  <button class="org-drawer-toggle" onclick="toggleDrawer('drawer-Debugging-8488')">Debugging ▼</button>
+  <div id="drawer-Debugging-8488" class="org-drawer-content" style="display: none;"><p>
 In case you run into issues with producing the MESA models, first try
 searching the web (specifically the <a href="http://user.astro.wisc.edu/~townsend/static.php?ref=mesa-web">MESA-web documentation</a>, <a href="https://docs.mesastar.org/en/25.12.1/">MESA
 documentation</a>, and <a href="https://lists.mesastar.org/pipermail/mesa-users/">MESA mailing list archive</a>). It is also acceptable
 to vary parameters other than those specified in the exercises if it
-helps.
+helps - just describe it in your answers!
 </p>
 </div>
 </div>
@@ -287,15 +292,16 @@ visualize the evolution of the innermost center of the star.
 <p>
 <b>N.B.:</b> Do <i>not</i> confuse a \(T_{c}(\rho_{c})\) evolutionary diagram (showing the
 temporal evolution of the center of the star, fixed position in the
-star varying time), with a \(T(\rho)\) profile (showing at fixed time the
-entire spatial dependence of the temperature profile using the density
-as independent coordinate)!
+star varying time), with a \(T(\rho)\) profile (e.g., the ones in the
+<code>MESA-web</code> movies which show at fixed time the entire spatial dependence
+of the temperature profile using the density as independent
+coordinate)!
 </p>
 
 <p>
 The figure below shows an example of \(T_{c}(\rho_{c})\) diagram for a set of
 <code>MESA</code> models of stars between 2 and 10 \(M_{☉}\) (see number annotation at
-the beginning of the curves). The assumed \(\sim\) solar composition is
+the extremes of the curves). The assumed \(\sim\) solar composition is
 annotated too.
 </p>
 
@@ -309,23 +315,36 @@ Describe the physical causes of the various features in this figure, specificall
 in the evolution of the star do these occur?</li>
 <li>What are the "final" fate of stars with initial mass \(\le8M_{☉}\)
 based on these calculations?</li>
-<li>What is happening for the 8 and 10 \(M_{☉}\) models at the end?</li>
+<li><b>Bonus</b>: What is happening for the 8 and 10 \(M_{☉}\) models at the end?</li>
+<li>What is the "final" fate of those two models?</li>
 </ol>
 
 
-<figure id="org515f43b">
+<figure id="org0264725">
 <img src="./images/TcRhoc.png" alt="TcRhoc.png" width="100%">
 
 <figcaption><span class="figure-number">Figure 1: </span>Central temperature vs. central density for a grid of <code>MESA</code> models.</figcaption>
 </figure>
 
 <div class="org-drawer-container">
-  <button class="org-drawer-toggle" onclick="toggleDrawer('drawer-Hint-207')">Hint ▼</button>
-  <div id="drawer-Hint-207" class="org-drawer-content" style="display: none;"><p>
+  <button class="org-drawer-toggle" onclick="toggleDrawer('drawer-Hint-2919')">Hint ▼</button>
+  <div id="drawer-Hint-2919" class="org-drawer-content" style="display: none;"><p>
 The figure corresponds to the bottom panel of Fig. 22 in <a href="https://ui.adsabs.harvard.edu/abs/2011ApJS..192....3P/abstract">Paxton et al.
 2011</a>. However, this is a code-release paper describing the
 capabilities of <code>MESA</code> circa 2010-2011, and does not focus on the
 physical explanation of the models exhibited.
+</p>
+</div>
+</div>
+
+<div class="org-drawer-container">
+  <button class="org-drawer-toggle" onclick="toggleDrawer('drawer-Hint-2929')">Hint ▼</button>
+  <div id="drawer-Hint-2929" class="org-drawer-content" style="display: none;"><p>
+You may want to run your own model of certain masses (e.g., with
+<code>MESA-web</code>), confirm the qualitative behavior is similar to the tracks
+shown above, and use your own model to investigate the answers to the
+questions above. In other words: feel free to design your own
+numerical experiment to answer.
 </p>
 </div>
 </div>
@@ -341,10 +360,10 @@ are Kippenhahn diagrams. Consider the following:
 </p>
 
 
-<figure id="org1041faa">
+<figure id="org6094079">
 <img src="./images/conv_000800.png" alt="conv_000800.png" width="100%">
 
-<figcaption><span class="figure-number">Figure 2: </span>Kippenhahn diagram auto-generated by <code>MESA</code> (see <a href="https://github.com/mathren/stellar_phys_545/blob/main/MESA_files/mid_term_star.tar.xz">setup for MESA r24.08.1</a>). Labels in between the x axis and its label indicate the meaning of the colors: light blue indicates convection, white is for overshooting, dark blue indicates energy losses by cooling \(\varepsilon<0\), red indicates energy generation \(\varepsilon>0\) on a logarithmic scale . The thick green line marks the He core mass. The x-axis is in <code>model_number</code>, <i>not</i> a physical quantity.</figcaption>
+<figcaption><span class="figure-number">Figure 2: </span>Kippenhahn diagram auto-generated by <code>MESA</code> (see <a href="https://github.com/mathren/stellar_phys_545/blob/main/MESA_files/mid_term_star.tar.xz">setup for MESA r24.08.1</a>). Labels in between the x axis and its label indicate the meaning of the colors: light blue indicates convection, white is for overshooting, dark blue indicates energy losses by cooling \(\varepsilon<0\), red indicates energy generation \(\varepsilon>0\) on a logarithmic scale. The thick green line marks the He core mass. The x-axis is in <code>model_number</code>, <i>not</i> a physical quantity.</figcaption>
 </figure>
 
 <ol class="org-ol">
@@ -353,13 +372,14 @@ are Kippenhahn diagrams. Consider the following:
 indicating separate phases.</li>
 <li>For each burning region, identify the fuel.</li>
 <li>What type of star is this model at timestep \(\sim 500\)?</li>
+<li>What type of star is it at model \(\sim 600\)?</li>
 <li><p>
-Describe what happens at timestep \(\sim 600\). Specifically, how do you
-expect the stellar radius to change?
+Describe qualitatively what happens at timestep \(\sim 600\).
+Specifically, how do you expect the stellar radius to change?
 </p>
 <div class="org-drawer-container">
-  <button class="org-drawer-toggle" onclick="toggleDrawer('drawer-Hint-5755')">Hint ▼</button>
-  <div id="drawer-Hint-5755" class="org-drawer-content" style="display: none;"><p>
+  <button class="org-drawer-toggle" onclick="toggleDrawer('drawer-Hint-4745')">Hint ▼</button>
+  <div id="drawer-Hint-4745" class="org-drawer-content" style="display: none;"><p>
 You don't need to be able to give a physical motivation here, just
 a qualitative description.
 </p>
@@ -396,22 +416,30 @@ Let's consider a star of mass \(M\), outermost radius \(R\), luminosity
 analysis</li>
 <li><p>
 Discuss which stars are more likely to lose mass (main sequence vs.
-evolved star).
+evolved star) using physical arguments.
 </p>
 <div class="org-drawer-container">
-  <button class="org-drawer-toggle" onclick="toggleDrawer('drawer-Hint-1338')">Hint ▼</button>
-  <div id="drawer-Hint-1338" class="org-drawer-content" style="display: none;"><p>
+  <button class="org-drawer-toggle" onclick="toggleDrawer('drawer-Hint-3441')">Hint ▼</button>
+  <div id="drawer-Hint-3441" class="org-drawer-content" style="display: none;"><p>
 Energetic arguments may be helpful to answer here.
 </p>
 </div>
 </div></li>
 <li>How high does \(\dot{M}\) need to be to break hydrostatic equilibrium
 globally (give a lower limit as a function of \(M\) and \(R\))?</li>
-<li>How high does it need to be to break thermal equilibrium globally?
-(<b>N.B.:</b> the widely used scaling of the wind mass loss from <a href="https://ui.adsabs.harvard.edu/abs/1975psae.book..229R/abstract">Reimers
+<li><p>
+How high does it need to be to break thermal equilibrium globally?
+</p>
+<div class="org-drawer-container">
+  <button class="org-drawer-toggle" onclick="toggleDrawer('drawer-Hint-1463')">Hint ▼</button>
+  <div id="drawer-Hint-1463" class="org-drawer-content" style="display: none;"><p>
+The widely used scaling of the wind mass loss from <a href="https://ui.adsabs.harvard.edu/abs/1975psae.book..229R/abstract">Reimers
 1975</a> assumes that the actual mass-loss rate has the scaling you
 should find here times a small pre-factor that keeps the stars in
-thermal equilibrium)</li>
+thermal equilibrium
+</p>
+</div>
+</div></li>
 <li>The observed mass loss rate for the Sun is \(\dot{M}_{☉}\simeq10^{-14}\,M_{☉}\
    \mathrm{yr^{-1}}\): does this mass loss drive the Sun out of thermal
 and dynamical equilibrium?</li>
@@ -501,7 +529,7 @@ luminosity.</li>
     </td>
     <td align="left" valign="top">
       &nbsp;Clear&nbsp;and&nbsp;concise&nbsp;correct&nbsp;quantitative&nbsp;explanation&nbsp;(with&nbsp;physical&nbsp;&nbsp;<br />
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;scaling&nbsp;where&nbsp;appropriate)&nbsp;and&nbsp;interpretation&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br />
+      &nbsp;scaling&nbsp;where&nbsp;appropriate)&nbsp;and&nbsp;interpretation&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br />
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br />
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br />
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br />
@@ -546,7 +574,7 @@ luminosity.</li>
   </tr>
   <tr>
     <td align="left" valign="top">
-      &nbsp;code/reproducibility&nbsp;&nbsp;<br />
+      &nbsp;Code/Reproducibility&nbsp;&nbsp;<br />
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br />
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br />
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br />
@@ -558,7 +586,7 @@ luminosity.</li>
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     </td>
     <td align="left" valign="top">
-      &nbsp;Code&nbsp;to&nbsp;reproduce&nbsp;calculations&nbsp;and&nbsp;figures&nbsp;is&nbsp;provides,&nbsp;with&nbsp;REDME&nbsp;<br />
+      Code&nbsp;to&nbsp;reproduce&nbsp;calculations&nbsp;and&nbsp;figures&nbsp;is&nbsp;provides,&nbsp;with&nbsp;README.<br />
       Sources&nbsp;for&nbsp;externally&nbsp;obtained&nbsp;data&nbsp;ae&nbsp;clearly&nbsp;listed&nbsp;and&nbsp;publicly&nbsp;<br />
       accessible&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br />
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br />
@@ -618,10 +646,10 @@ luminosity.</li>
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     </td>
     <td align="left" valign="top">
-      &nbsp;publication&nbsp;quality&nbsp;plots&nbsp;with&nbsp;informative&nbsp;annotation&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br />
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br />
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br />
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br />
+      &nbsp;publication&nbsp;quality&nbsp;plots&nbsp;with&nbsp;informative&nbsp;annotations,&nbsp;layered&nbsp;&nbsp;&nbsp;&nbsp;<br />
+      &nbsp;secondary&nbsp;information&nbsp;that&nbsp;does&nbsp;not&nbsp;get&nbsp;in&nbsp;the&nbsp;way&nbsp;of&nbsp;a&nbsp;quick&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br />
+      &nbsp;interpretation&nbsp;and&nbsp;add&nbsp;to&nbsp;the&nbsp;reader's&nbsp;understanding&nbsp;as&nbsp;they&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br />
+      &nbsp;stare&nbsp;at&nbsp;the&nbsp;figure&nbsp;longer.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br />
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br />
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br />
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br />
@@ -667,7 +695,7 @@ luminosity.</li>
   <hr>
   <a href="#light-dark-toggle"><i id="light-dark-toggle"><i class="fa-solid fa-circle-half-stroke"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="#"><i class="fa-solid fa-arrow-left" style="font-size:16px"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="#top"><i class="fa-solid fa-arrow-up" style="font-size:16px"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="#"><i class="fa-solid fa-arrow-right" style="font-size:16px"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="https://github.com/mathren/stellar_phys_545"><i class="fa-brands fa-github" style="font-size:16px"></i></a><hr>
   <br>
-  Last updated on 23 February 2026 <br>
+  Last updated on 6 March 2026 <br>
   Made with Emacs 29.2 - Org mode 9.6.15
   <br>
 </div>
