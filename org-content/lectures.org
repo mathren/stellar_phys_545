@@ -125,7 +125,7 @@ and population synthesis.
 Discuss written and oral presentations, and refereeing process.
 
 ** <2026-03-02 Mon> - Star (& planet) formation
-*Aim*: Introduce concept of Jeans mass, feedback, YSO.
+*Aim*: Introduce concept of Jeans mass.
 
 [[./notes-lecture-formation.org][Notes]]
 
