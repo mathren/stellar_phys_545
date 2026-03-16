@@ -10,6 +10,17 @@ contains_all_flag() {
     return 1  # all not found
 }
 
+# check if we want to bypass read prompts
+contains_y_flag() {
+    for arg in "$@"; do
+        if [ "$arg" == "-y" ]; then
+            return 0  # -y found
+        fi
+    done
+    return 1  # -y not found
+}
+
+
 # Wrapper to call emacs with no customized configuration (-Q) and run build-site.el
 if contains_all_flag "$@"; then
     emacs -Q --script build-site.el -- all
@@ -23,7 +34,11 @@ if [ $? -eq 0 ]; then
     git status
     echo ""
 
-    read -p "Push everything to repo? [Y/n] " yn
+    if contains_y_flag "$@"; then
+	yn="Y";
+    else
+	read -p "Push everything to repo? [Y/n] " yn
+    fi
     if [ "$yn" = "y" ] || [ "$yn" = "Y" ]; then
 	if [ -z "$1" ]; then # if $1 is a null string
 	    # make up a commit message
@@ -42,7 +57,11 @@ if [ $? -eq 0 ]; then
 
     if [ "$pushed" == true ] ; then
 	pulled=false
-	read -p "rsync to remote server?" yn
+	if contains_y_flag "$@"; then
+	    yn="Y";
+	else
+	    read -p "rsync to remote server?" yn
+	fi
 	if [ "$yn" = "y" ] || [ "$yn" = "Y" ]; then
 	    rsync -arz --exclude="*~" html-content/* lavinia:~/public_html/courses/545/
 	    if [ $? -eq 0 ]; then
@@ -50,7 +69,11 @@ if [ $? -eq 0 ]; then
 	    fi
 	fi
     else
-	read -p "Open website home locally?" yn
+	if contains_y_flag "$@"; then
+	    yn="Y";
+	else
+	    read -p "Open website home locally?" yn
+	fi
 	if [ "$yn" = "y" ] || [ "$yn" = "Y" ]; then
 	    # open in browser and quit
 	    pulled=false
