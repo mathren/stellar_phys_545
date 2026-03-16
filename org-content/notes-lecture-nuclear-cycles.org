@@ -539,7 +539,7 @@ lecture]].
 
 * Summary of energy scaling
 
-#+CAPTION: $\varepsilon_\mathrm{nuc} \equiv \varepsilon_\mathrm{nuc}(T)$ dependence on a log-log plot for the burning cycles that cover \ge99% of the stellar lifetime (H and He core burning). From [[https://commons.wikimedia.org/wiki/File:Nuclear_energy_generation.svg][wikipedia]].
+#+CAPTION: $\varepsilon_\mathrm{nuc} \equiv \varepsilon_\mathrm{nuc}(T)$ at fixed $\rho$ and metallicity $Z$ on a log-log plot for the burning cycles that cover \ge99% of the stellar lifetime (H and He core burning). Credits: Frank Timmes, sourced from [[https://cococubed.com/code_pages/burn_hydrogen.shtml][cocodubed.com]].
 #+ATTR_HTML: :width 100%
 [[./images/Nuclear_energy_generation.png]]
 
