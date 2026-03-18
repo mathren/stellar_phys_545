@@ -559,8 +559,7 @@ horizontal line (they all have roughly the same luminosity set by the
 core mass) of stars in the HR diagram for low mass core-He burning
 stars whose coolest end is the red clump.
 
-
-#+CAPTION: /Gaia/ color-magnitude diagrams for various globular clusters of varying chemical composition indicated by [Fe/H]. The red clump and horizontal branch are visible at $M_{G}\sim1$. This is Fig. 3 from [[https://ui.adsabs.harvard.edu/abs/2018A%2526A...616A..10G/abstrac][Gaia collaboration 2018]].
+#+CAPTION: /Gaia/ color-magnitude diagrams for various globular clusters of varying chemical composition indicated by [Fe/H]. The red clump and horizontal branch are visible at $M_{G}\sim1$ and spanning a range of colors (i.e., $T_{\rm eff}$). This is Fig. 3 from [[https://ui.adsabs.harvard.edu/abs/2018A%2526A...616A..10G/abstrac][Gaia collaboration 2018]].
 #+ATTR_HTML: :width 100%
 [[./images/Gaia_HRD_GC.png]]
 
