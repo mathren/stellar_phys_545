@@ -420,7 +420,7 @@ reaction, driving core convection!
 revealing relentlessly the faults of calculations of earlier phases/" -
 Kippenhahn.
 
-** Low mass star "flashes"
+** "Low mass" star with radiative main-sequence cores
 
 For low mass stars the He core is sufficiently small to be
 electron-degeneracy supported, and there is H-rich fuel available
@@ -494,7 +494,7 @@ not occur as described here, but the H-shell will also move outwards
 towards more H-rich fuel causing a $3\times$ crossing of a certain
 luminosity.
 
-*** He flash
+*** He ignition in degenerate conditions: flash
 
 #+HTML: <iframe width="560" height="315" src="https://www.youtube.com/embed/2_Km4RTdkPw?si=ZkacE_zcP7g67kIN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 # https://www.youtube.com/embed/2_Km4RTdkPw?si=ZkacE_zcP7g67kIN
@@ -526,7 +526,7 @@ before the flashes is determining the total luminosity of the red
 giant, this means that pre-flash there is a "standardizable" maximum
 luminosity of red giants, the so called "tip of the red giant branch",
 which is nowadays used as an alternative method to measure distances
-for cosmological applications.
+for cosmological applications (see e.g., [[https://ui.adsabs.harvard.edu/abs/1993ApJ...417..553L/abstract][Lee et al. 1993]]).
 
 The occurrence of neutrino cooling in the core can cause the burning
 during the He flash to be initially off-center. Moreover, the star can
@@ -558,6 +558,12 @@ the flash): from the red clump a there is a continuous almost
 horizontal line (they all have roughly the same luminosity set by the
 core mass) of stars in the HR diagram for low mass core-He burning
 stars whose coolest end is the red clump.
+
+
+#+CAPTION: /Gaia/ color-magnitude diagrams for various globular clusters of varying chemical composition indicated by [Fe/H]. The red clump and horizontal branch are visible at $M_{G}\sim1$. This is Fig. 3 from [[https://ui.adsabs.harvard.edu/abs/2018A%2526A...616A..10G/abstrac][Gaia collaboration 2018]].
+#+ATTR_HTML: :width 100%
+[[./images/Gaia_HRD_GC.png]]
+
 
 (continuing reading about the evolution of low mass stars [[*Low mass stars: AGB thermal pulses and WD cooling][here]])
 

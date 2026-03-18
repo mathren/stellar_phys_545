@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 2026-03-04 Wed 10:22 -->
+<!-- 2026-03-18 Wed 09:49 -->
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>ASTR545 - Qualitative evolution</title>
@@ -154,7 +154,7 @@ mixing (see for example <a href="./notes-lecture-neutrinos.html#org55b2735">this
 <p>
 We have also worked out the ordering of timescales of the problem:
 </p>
-<div class="latex" id="org0b11a87">
+<div class="latex" id="orgc3b5fb1">
 \begin{equation}
 \tau_\mathrm{nuc} \gg \tau_\mathrm{KH} \gg \tau_\mathrm{free\ fall} \ \ ,
 \end{equation}
@@ -241,7 +241,7 @@ status solving the structure equations.
 <h3 id="org328f49d"><a href="#org328f49d">Pre-main sequence stellar structure</a></h3>
 <div class="outline-text-3" id="text-org328f49d">
 
-<figure id="org208aa33">
+<figure id="org9871f0d">
 <img src="./images/Hayashi_composition.png" alt="Hayashi_composition.png" width="50%">
 
 <figcaption><span class="figure-number">Figure 1: </span>Examples of pre-main sequence evolution along the Hayashi track for stellar models of varying metallicity. Credits: S. Cassisi.</figcaption>
@@ -443,7 +443,7 @@ higher \(T_\mathrm{eff}\) and the envelope becomes radiative.
 </p>
 
 
-<figure id="org4f79669">
+<figure id="orgc147e27">
 <img src="./images/conv_ZAMS.png" alt="conv_ZAMS.png" width="100%">
 
 <figcaption><span class="figure-number">Figure 2: </span>The gravothermal equilibrium structure of a star at ZAMS is determined only by mass \(M\) and composition. The figure (Fig. 9.8 in Onno Pols' notes, modified from Kippenhahn &amp; Weigert) shows in gray the region in mass coordinate \(y=m/M\) that are convective as a function of the total mass \(M=\int dm\) for \(Z=0.02\) models. Red lines indicate where 50 and 90 % of the luminosity \(L\) is generated (the "burning region") and the blue dashed lines show \(r(m)=0.25M\) and \(r(m)=0.5M\).</figcaption>
@@ -456,8 +456,8 @@ assumptions.
 </p>
 
 <div class="org-drawer-container">
-  <button class="org-drawer-toggle" onclick="toggleDrawer('drawer-Question-9421')">Question ▼</button>
-  <div id="drawer-Question-9421" class="org-drawer-content" style="display: none;"><ul class="org-ul">
+  <button class="org-drawer-toggle" onclick="toggleDrawer('drawer-Question-6656')">Question ▼</button>
+  <div id="drawer-Question-6656" class="org-drawer-content" style="display: none;"><ul class="org-ul">
 <li><b>Q</b>: for your <code>MESA-web</code> models, what is the highest mass with a
 radiative main sequence core, and the lowest with convective main
 sequence core?</li>
@@ -476,7 +476,7 @@ This is because the conversion of hydrogen into helium decreases \(X\)
 (and increases \(Y\)), which enter in two key quantities, mean molecular
 weight and electron scattering opacity:
 </p>
-<div class="latex" id="orgdd0aaa1">
+<div class="latex" id="org184e76e">
 \begin{equation}\label{eq:microphysics_XY}
 \mu \simeq \frac{1}{2X+\frac{3}{4}Y+\frac{Z}{2}} \ \ , \\
 \kappa_\mathrm{es} = 0.2(1+X) \ \ \mathrm{cm^{2}\ g^{-1}} \ \ \ .
@@ -488,7 +488,7 @@ Assuming a star to be in gravothermal equilibrium and assuming
 radiative energy transport (which we have just seen is not verified
 everywhere by <code>MESA-web</code> models!), we know that:
 </p>
-<div class="latex" id="org6052599">
+<div class="latex" id="orgb78d980">
 \begin{equation}\label{eq:L_scaling}
 L\propto \frac{\mu^{4} M^{3}}{\kappa} \ \ ,
 \end{equation}
@@ -515,7 +515,7 @@ years for \(M_\mathrm{ZAMS}\le2M_{☉}\).</li>
 </ul>
 
 
-<figure id="orga4f1cf4">
+<figure id="org9e0b9cb">
 <img src="./images/stellar_lifetimes.png" alt="stellar_lifetimes.png" width="100%">
 
 <figcaption><span class="figure-number">Figure 3: </span>Stellar lifetime as a function of initial masses from <a href="https://ui.adsabs.harvard.edu/abs/2017A%26A...601A..29Z/abstract">Zapartas et al. 2017</a>. <code>MESA</code> and <code>GENEC</code> models are shown, focusing on masses that result in a final core-collapse event. The bottom panel shows the deviations between the analytic fit and the numerical models.</figcaption>
@@ -562,8 +562,8 @@ the main sequence.
 </p>
 
 <div class="org-drawer-container">
-  <button class="org-drawer-toggle" onclick="toggleDrawer('drawer-Question-5172')">Question ▼</button>
-  <div id="drawer-Question-5172" class="org-drawer-content" style="display: none;"><ul class="org-ul">
+  <button class="org-drawer-toggle" onclick="toggleDrawer('drawer-Question-5919')">Question ▼</button>
+  <div id="drawer-Question-5919" class="org-drawer-content" style="display: none;"><ul class="org-ul">
 <li><b>Q</b>: based on the scaling in Eq. \ref{eq:L_scaling}, how does the
 luminosity of two identical stars differing only in \(Z\) compare?
 Which star has the highest \(L\)? (<b>Hint</b>: you can compute more <code>MESA-web</code>
@@ -599,7 +599,7 @@ convective core receeds in mass coordinate</i>.
 </p>
 
 
-<figure id="org014d639">
+<figure id="org670002b">
 <img src="./images/1Msun_X_M.png" alt="1Msun_X_M.png" width="100%">
 
 <figcaption><span class="figure-number">Figure 4: </span>Hydrogen mass fraction \(X\) as a function of mass coordinate \(m\) for a single, non-rotating, \(1M_{☉}\), \(Z=0.02\) <code>MESA</code> model across its main sequence evolution. The color go from dark (&sim; ZAMS) to light (&sim; TAMS).</figcaption>
@@ -607,7 +607,7 @@ convective core receeds in mass coordinate</i>.
 
 
 
-<figure id="org8126d71">
+<figure id="org1d9cbae">
 <img src="./images/20Msun_H_profile.png" alt="20Msun_H_profile.png" width="100%">
 
 <figcaption><span class="figure-number">Figure 5: </span>Hydrogen mass fraction \(X\) as a function of mass coordinate \(m\) for a single, non-rotating, \(20M_{☉}\), \(Z=0.001\) <code>MESA</code> model across its main sequence evolution. The color go from dark (&sim; ZAMS) to light (&sim; TAMS), and as time passes the core recedes because of the change in \(\kappa\).</figcaption>
@@ -630,7 +630,7 @@ outlines of the track you can see where the nuclear burning moves.
 </p>
 
 
-<figure id="org9cb3652">
+<figure id="org55d3dde">
 <img src="./images/1Msun_TAMS.png" alt="1Msun_TAMS.png" width="100%">
 
 <figcaption><span class="figure-number">Figure 6: </span>Screenshot of a <code>MESA-web</code> calculation of a \(1M_{☉}\) star shortly after the main sequence. The HRD (bottom left) shows a smooth end of the main sequence, and the Kippenhahn diagram and \(T(\rho)\) tracks (middle) show that all the burning is in a shell surrounding the inert He core. The bottom right panel shows that the inner region as a flattening \(T\) profile because of conduction efficiently transporting energy and erasing the \(dT/dr\).</figcaption>
@@ -675,7 +675,7 @@ morphology of the end of the main sequence changes.
 </p>
 
 
-<figure id="orgfe022b7">
+<figure id="org0ef8653">
 <img src="./images/30Msun_TAMS.png" alt="30Msun_TAMS.png" width="100%">
 
 <figcaption><span class="figure-number">Figure 7: </span>Screenshot of a <code>MESA-web</code> calculation of a \(30M_{☉}\) star shortly after the main sequence. The HRD (bottom left) shows the "Henyey hook" feature, the Kippenhahn diagram and \(T(\rho)\) track shows that there is an off-center H-burning shell but the He in the core ignites promptly too. The core is not degenerate, but convective again, and maintains a nearly adiabatic temperature gradient.</figcaption>
@@ -717,9 +717,9 @@ Kippenhahn.
 </p>
 </div>
 
-<div id="outline-container-orgcb1db4b" class="outline-3">
-<h3 id="orgcb1db4b"><a href="#orgcb1db4b">Low mass star "flashes"</a></h3>
-<div class="outline-text-3" id="text-orgcb1db4b">
+<div id="outline-container-org8709211" class="outline-3">
+<h3 id="org8709211"><a href="#org8709211">"Low mass" star with radiative main-sequence cores</a></h3>
+<div class="outline-text-3" id="text-org8709211">
 <p>
 For low mass stars the He core is sufficiently small to be
 electron-degeneracy supported, and there is H-rich fuel available
@@ -809,9 +809,9 @@ luminosity.
 </p>
 </div>
 
-<div id="outline-container-org52715f6" class="outline-4">
-<h4 id="org52715f6"><a href="#org52715f6">He flash</a></h4>
-<div class="outline-text-4" id="text-org52715f6">
+<div id="outline-container-orgdbc75fe" class="outline-4">
+<h4 id="orgdbc75fe"><a href="#orgdbc75fe">He ignition in degenerate conditions: flash</a></h4>
+<div class="outline-text-4" id="text-orgdbc75fe">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/2_Km4RTdkPw?si=ZkacE_zcP7g67kIN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 <p>
@@ -848,7 +848,7 @@ before the flashes is determining the total luminosity of the red
 giant, this means that pre-flash there is a "standardizable" maximum
 luminosity of red giants, the so called "tip of the red giant branch",
 which is nowadays used as an alternative method to measure distances
-for cosmological applications.
+for cosmological applications (see e.g., <a href="https://ui.adsabs.harvard.edu/abs/1993ApJ...417..553L/abstract">Lee et al. 1993</a>).
 </p>
 
 <p>
@@ -890,6 +890,15 @@ horizontal line (they all have roughly the same luminosity set by the
 core mass) of stars in the HR diagram for low mass core-He burning
 stars whose coolest end is the red clump.
 </p>
+
+
+
+<figure id="org4598d48">
+<img src="./images/Gaia_HRD_GC.png" alt="Gaia_HRD_GC.png" width="100%">
+
+<figcaption><span class="figure-number">Figure 8: </span><i>Gaia</i> color-magnitude diagrams for various globular clusters of varying chemical composition indicated by [Fe/H]. The red clump and horizontal branch are visible at \(M_{G}\sim1\). This is Fig. 3 from <a href="https://ui.adsabs.harvard.edu/abs/2018A%2526A...616A..10G/abstrac">Gaia collaboration 2018</a>.</figcaption>
+</figure>
+
 
 <p>
 (continuing reading about the evolution of low mass stars <a href="#org940be74">here</a>)
@@ -1040,10 +1049,10 @@ massive stars!
 </p>
 
 
-<figure id="orgecb4e7b">
+<figure id="org2772b61">
 <img src="./images/Trho_TPAGB.png" alt="Trho_TPAGB.png" width="100%">
 
-<figcaption><span class="figure-number">Figure 8: </span>T(&rho;) diagram of a 1M<sub>☉</sub> <code>MESA-web</code> model during an AGB thermal pulse. Note the temperature inversion in the core, the presence of 2 burning shells in this snapshot (the He shell marked by the orange outline and the H shell marked by the yellow outline).</figcaption>
+<figcaption><span class="figure-number">Figure 9: </span>T(&rho;) diagram of a 1M<sub>☉</sub> <code>MESA-web</code> model during an AGB thermal pulse. Note the temperature inversion in the core, the presence of 2 burning shells in this snapshot (the He shell marked by the orange outline and the H shell marked by the yellow outline).</figcaption>
 </figure>
 
 
@@ -1059,10 +1068,10 @@ and the figure below shows an example.
 </p>
 
 
-<figure id="orgfe47558">
+<figure id="org06df15b">
 <img src="./images/catseye.jpg" alt="catseye.jpg" width="100%">
 
-<figcaption><span class="figure-number">Figure 9: </span>Example of an <i>HST</i> image of a planetary nebula: NGC6543 (aka Cat's eye nebula). In the center is a young WD star, and the shape of the nebula depends on the mass ejection process and the propagation of these ejecta (e.g., interacting with a planetary system around the star).</figcaption>
+<figcaption><span class="figure-number">Figure 10: </span>Example of an <i>HST</i> image of a planetary nebula: NGC6543 (aka Cat's eye nebula). In the center is a young WD star, and the shape of the nebula depends on the mass ejection process and the propagation of these ejecta (e.g., interacting with a planetary system around the star).</figcaption>
 </figure>
 
 
@@ -1111,10 +1120,10 @@ the <i>Gaia</i> DR2 dataset for WDs within 100pc from Earth (<a href="https://ui
 </p>
 
 
-<figure id="org96a0668">
+<figure id="orgdfcb59c">
 <img src="./images/Gaia_spur.png" alt="Gaia_spur.png">
 
-<figcaption><span class="figure-number">Figure 10: </span>HR diagram for a complete volume-limited sample of WDs within 100pc from <i>Gaia</i> DR2. The color of points indicates spectroscopically determined masses based on <a href="https://www.sdss.org/">SDSS</a>, red dots mark magnetized WD (again from their spectra), and dotted orange lines enclose the predicted region where crystallization of the WD covers between 20% (top) and 80% of the total mass, and contains an overabundance of stars as predicted by the release of latent heat. This is Fig. 2 from <a href="https://ui.adsabs.harvard.edu/abs/2019Natur.565..202T/abstract">Tremblay et al. 2019</a>.</figcaption>
+<figcaption><span class="figure-number">Figure 11: </span>HR diagram for a complete volume-limited sample of WDs within 100pc from <i>Gaia</i> DR2. The color of points indicates spectroscopically determined masses based on <a href="https://www.sdss.org/">SDSS</a>, red dots mark magnetized WD (again from their spectra), and dotted orange lines enclose the predicted region where crystallization of the WD covers between 20% (top) and 80% of the total mass, and contains an overabundance of stars as predicted by the release of latent heat. This is Fig. 2 from <a href="https://ui.adsabs.harvard.edu/abs/2019Natur.565..202T/abstract">Tremblay et al. 2019</a>.</figcaption>
 </figure>
 
 
@@ -1133,8 +1142,8 @@ pushed upwards by radiation.
 </p>
 
 <div class="org-drawer-container">
-  <button class="org-drawer-toggle" onclick="toggleDrawer('drawer-Question-5329')">Question ▼</button>
-  <div id="drawer-Question-5329" class="org-drawer-content" style="display: none;"><ul class="org-ul">
+  <button class="org-drawer-toggle" onclick="toggleDrawer('drawer-Question-51')">Question ▼</button>
+  <div id="drawer-Question-51" class="org-drawer-content" style="display: none;"><ul class="org-ul">
 <li><b>Q</b>: Based on the energy transport mechanism that can occur in stars,
 what do you expect the \(T(m)\) or \(T(r)\) structure of the WD core to
 be? (<b>hint</b>: think of what provides the pressure support of a WD)</li>
@@ -1231,7 +1240,7 @@ SN initiated by a degenerate ONeMg core rather than a Fe core).
   <hr>
   <a href="#light-dark-toggle"><i id="light-dark-toggle"><i class="fa-solid fa-circle-half-stroke"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="notes-in-class-evol.html"><i class="fa-solid fa-arrow-left" style="font-size:16px"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="#top"><i class="fa-solid fa-arrow-up" style="font-size:16px"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="notes-lecture-asteroseismology.html"><i class="fa-solid fa-arrow-right" style="font-size:16px"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="https://github.com/mathren/stellar_phys_545"><i class="fa-brands fa-github" style="font-size:16px"></i></a><hr>
   <br>
-  Last updated on 4 March 2026 <br>
+  Last updated on 18 March 2026 <br>
   Made with Emacs 29.2 - Org mode 9.6.15
   <br>
 </div>
