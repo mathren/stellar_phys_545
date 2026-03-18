@@ -576,7 +576,7 @@ pressure to sustain it and after the main sequence it continues
 contracting until the 3\alpha reaction activates and He burns. The prompt
 post "Henyey hook" appearance of two nuclear energy sources (He core
 and H shell) drives the star towards the cool side of the HR diagram
-very quickly ($\sim \tau_\mathrm{KH}$), becoming red supergiants (RSG)
+very quickly ($\sim \tau_\mathrm{KH}$), becoming red supergiants (RSG).
 
 Thus, in the HRD of a coeval stellar population, there will be many
 stars on the main sequence ($\tau\sim\tau_\mathrm{nuc,H}$) and close to the
@@ -592,6 +592,11 @@ numerical approximations and make solid predictions hard, but their
 physical nature in some cases is supported by observations. Depending
 on metallicity, some stars may even spend most of their He core
 burning time in a blue loop appearing hotter than a typical RSG.
+
+#+CAPTION: /Gaia/ color-magnitude diagrams for the open cluster NGC7419, showing a gap between the colors of the main sequence and red supergiants. This is Fig. 4 from [[https://ui.adsabs.harvard.edu/abs/2025MNRAS.541.1866C/abstract][Chakrabhorty et al. 2025]].
+#+ATTR_HTML: :width 100%
+[[./images/NGC7419.png]]
+
 
 *** Mass loss and single-star evolution path to Wolf-Rayet
 As $M$ increases (and consequently even more so $L$), mass loss
