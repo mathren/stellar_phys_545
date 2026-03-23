@@ -159,13 +159,12 @@ Guest lecturer: [[https://www.tomwagg.com/][Dr. Tom Wagg]]
 =MESA-web= models precomputed by the students
 
 [[./notes-in-class-evol.org][Notes]]
-** <2026-03-25 Wed> - Asteroseismology
+** <2026-03-25 Wed> - *No lecture*
+** <2026-03-27 Fri> - Asteroseismology
 *Aim*: Introduce helio and asteroseismology concepts. Brunt-Vaiasala
 frequency, p- and g- waves, restoring force, mixed modes.
 
 [[./notes-lecture-asteroseismology.org][Notes]]
-
-** <2026-03-27 Fri> -
 
 ** <2026-03-30 Mon> - Tides
 *Aim*: Introduce the concept of tides in binaries, build physical
