@@ -189,7 +189,7 @@ envelope:
 \end{equation}
 #+end_latex
 where we implicitly assume that the mass of the envelope to be ejected
-is $M_{}_{\rm env} = M_{1} - M_{\rm 1, core}$, that the secondary star $M_{2}$ does
+is $M_{\rm env} = M_{1} - M_{\rm 1, core}$, that the secondary star $M_{2}$ does
 not change mass, and $a_{i}$, $a_{f}$ are the pre- and post-CE separation.
 
 The binding energy of the envelope is almost always calculated based on the
@@ -221,8 +221,11 @@ picture remains opaque. However, several issues exist:
   consider the moment of the onset of mass transfer, or when the mass
   transfer becomes dynamical? For simplicity, often the former is
   assumed without justification
-- The efficiency of the energy deposition is presently unknown.
-
+- The core/envelope boundary (determining $M_{\rm env}$ and $\lambda_{CE}$) is
+  also poorly understood
+- The efficiency of the energy deposition is presently unknown, and
+  this approach neglects the impact of dynamical phenomena during the
+  CE itself that affect the envelope structure.
 
 
 * Luminous red novae
