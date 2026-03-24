@@ -227,8 +227,46 @@ picture remains opaque. However, several issues exist:
   this approach neglects the impact of dynamical phenomena during the
   CE itself that affect the envelope structure.
 
+* Electromagnetic counterparts: luminous red novae
 
-* Luminous red novae
+CE is crucial in the formation of most close-binary systems and thus
+the vast astrophysical phenomenology that they can produce (double WDs
+in planetary nebuale, X-ray binaries, to GW, planetary engulfments,
+etc.): we have many indirect constraints from observing these systems
+and their pre-CE analogs.
 
-- V1309Sco (Pejcha & Metzger 2015)
-- V838Mon
+However, the ejection of a CE (and/or the merger) should also produce
+a transient signal, and we have seen at least a few binaries with
+measured negative $\dot{P}$ causing an outburst. The first and maybe
+most famous one was V1309Sco for which pre-outburst characterization
+of a shrinking binary is available.
+
+#+CAPTION: Pre- and outburst lightcuve for the LRN V1309Sco, from [[https://ui.adsabs.harvard.edu/abs/2017ApJ...850...59P/abstract][Pejcha et al. 2017]].
+#+ATTR_HTML: :width 100%
+[[./images/v1309Sco.png]]
+
+This /Galactic/ event was a prototypical "Luminous Red Nova" (LRN), a type of
+transient with intermediate luminosity between "Novae" and
+"Supernovae" that had been detected but not interpreted before.
+V1309Sco exhibited the pre-outburst orbital shrinking connecting LRN
+with dynamically unstable binary interactions.
+
+Another Galactic event occurred among massive stars, V838Mon, which
+has a nice light-echo image from /HST/:
+
+#+CAPTION: Light echos of the LRN V838Mon, By Lasunncty https://commons.wikimedia.org/w/index.php?curid=83852409
+#+ATTR_HTML: :width 50%
+[[./images/V838_Mon_1989-2006.gif]]
+
+
+The rate of these LRN is also compatible with expectations if this is
+related to unstable mass-transfer, and is very roughly \sim
+1/decade/Milky-way like galaxy.
+
+The detailed understanding of the LRN light curves, the role of
+recombination and other non-orbital energy sources, etc. are still
+actively debated 50 years after the seminal conference proceeding by
+Paczynski, and determining the final separations for all possible
+cases (as a function of evolutionary stages of both stars) remains one
+of the most pressing open problems in stellar astrophysics and
+time-domain astrophysics.
