@@ -1,7 +1,7 @@
 #+title: ASTR545 - Common Envelope Evolution
 #+author: Mathieu Renzo
 #+email: mrenzo@arizona.edu
-#+PREVIOUS_PAGE: notes-in-class-RLOF.org
+#+PREVIOUS_PAGE: notes-lecture-RLOF.org
 #+NEXT_PAGE: notes-lecture-SNe.org
 
 *Materials*: [[https://ui.adsabs.harvard.edu/abs/1975PhDT.......165W/abstract][Webbink 1975]], [[https://ui.adsabs.harvard.edu/abs/1976IAUS...73...75P/abstract][Paczynski 1976]], [[https://ui.adsabs.harvard.edu/abs/2013A%26ARv..21...59I/abstract][Ivanova et al. 2013]], [[https://ui.adsabs.harvard.edu/abs/2021ApJ...919..128R/abstract][Renzo et
@@ -73,7 +73,7 @@ overflow increases triggering a runaway process.
 However, calculating the $\zeta$ parameters requires having out-of-thermal
 equilibrium stellar models and prescribing a rate of mass-transfer.
 Therefore, it is also common to rephrase this criterion in an
-equivalent form based on the mass-ratio $q=M_{}_{\rm accretor}/M_{\rm donor}$:
+equivalent form based on the mass-ratio $q=M_{\rm accretor}/M_{\rm donor}$:
 if this mass ratio is more extreme than a certain threshold $q_{crit}$
 then the evolutionary timescales of the two stars will be too
 different, the donor will try to donate on its timescale, the accretor
@@ -102,6 +102,16 @@ numerical simulations and/or observations.
 
 * Common envelope evolution
 
+#+CAPTION: Schematic representation of the phases of a common envelope, with possible outcomes ejection of the envelope or stellar merger. Not every phase need to happen in every CE. This is Fig. 1 from [[https://ui.adsabs.harvard.edu/abs/2021ApJ...919..128R/abstract][Renzo et al. 2021]].
+#+ATTR_HTML: :width 50%
+[[./images/CE_evol.png]]
+
+If mass transfer does become unstable in a binary system, at some
+point the gas will fill the equipotentials surfaces of the Roche
+geometry around both stars.
+
+
+
 During a common envelope the gas of the envelope of both stars fills
 equipotentials beyond L_{2}, cannot maintain co-rotation, and thus start
 exerting a friction on the orbit of the two cores (or core and star)
@@ -117,3 +127,10 @@ Paczynski, Webbink, Taam, and Ostriker, remains one of the biggest
 open questions in stellar physics that impacts the formation of all
 compact binaries (cataclysmic variables made of a main sequence plus a
 white dwarf, binary white dwarfs, gravitational wave sources, etc.).
+
+
+
+* Luminous red novae
+
+- V1309Sco (Pejcha & Metzger 2015)
+- V838Mon
