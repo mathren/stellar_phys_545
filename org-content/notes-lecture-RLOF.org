@@ -216,7 +216,6 @@ systems as the stars evolve and lose mass through winds, expand in
 radius (implying a larger impact of tides, see [[./notes-lecture-tides.org][the corresponding
 notes]]).
 
-
 ** Nomenclature: Case A, B, and C
 Depending on when mass transfer starts, we can have three different
 categories (defined by [[https://ui.adsabs.harvard.edu/abs/1967ZA.....66...58K/abstract][Kippenhahn et al. 1967]] and [[https://ui.adsabs.harvard.edu/abs/1970A%26A.....7..150L/abstract][Lauterborn 1970]]):

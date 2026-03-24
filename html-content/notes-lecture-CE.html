@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 2026-02-20 Fri 09:43 -->
+<!-- 2026-03-24 Tue 13:25 -->
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>ASTR545 - Common Envelope Evolution</title>
@@ -13,6 +13,38 @@
 			       stellar evolution, ASTR545, PYTS545, 545, University of
 			       Arizona, Steward Observatory, stars,
 			       theoretical astrophysics">
+<script>
+  window.MathJax = {
+    tex: {
+      ams: {
+        multlineWidth: '85%'
+      },
+      tags: 'ams',
+      tagSide: 'right',
+      tagIndent: '.8em'
+    },
+    chtml: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    svg: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    output: {
+      font: 'mathjax-modern',
+      displayOverflow: 'overflow'
+    }
+  };
+</script>
+
+<script
+  id="MathJax-script"
+  async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
 </head>
 <body>
 <div id="preamble" class="status">
@@ -103,9 +135,141 @@
 </div>
 <div id="content" class="content">
 <p>
-<b>Materials</b>: <a href="https://ui.adsabs.harvard.edu/abs/1975PhDT.......165W/abstract">Webbink 1975</a>, <a href="https://ui.adsabs.harvard.edu/abs/1976IAUS...73...75P/abstract">Paczynski 1976</a>, <a href="https://ui.adsabs.harvard.edu/abs/2013A%26ARv..21...59I/abstract">Ivanova et al. 2013</a>, <a href="https://ui.adsabs.harvard.edu/abs/2023LRCA....9....2R/abstract">Ropke &amp;
-de Marco 2023</a>, Ivanova et al. 2020.
+<b>Materials</b>: <a href="https://ui.adsabs.harvard.edu/abs/1975PhDT.......165W/abstract">Webbink 1975</a>, <a href="https://ui.adsabs.harvard.edu/abs/1976IAUS...73...75P/abstract">Paczynski 1976</a>, <a href="https://ui.adsabs.harvard.edu/abs/2013A%26ARv..21...59I/abstract">Ivanova et al. 2013</a>, <a href="https://ui.adsabs.harvard.edu/abs/2021ApJ...919..128R/abstract">Renzo et
+al. 2021</a>, <a href="https://ui.adsabs.harvard.edu/abs/2023LRCA....9....2R/abstract">Ropke &amp; de Marco 2023</a>, Ivanova et al. 2020.
 </p>
+
+<div id="outline-container-org77a6649" class="outline-2">
+<h2 id="org77a6649"><a href="#org77a6649">Dynamically unstable mass-transfer</a></h2>
+<div class="outline-text-2" id="text-org77a6649">
+<p>
+As stars evolve, their radius tends to overall increase. We have <a href="./notes-lecture-RLOF.html">seen</a>
+that in a binary system, this can lead the more massive and faster
+evolving star to fill its Roche lobe and initiate mass transfer.
+</p>
+
+<p>
+Depending on the <b>orbital response</b>, mass transfer can be <b>dynamically
+stable</b> (often only referred to just as Roche lobe overflow RLOF, although
+the Roche lobe is filled in both cases), or <b>dynamically unstable</b>
+(often referred to as "common envelope", CE).
+</p>
+
+<p>
+<b>N.B.:</b> CE is <i>not</i> the only possible dynamically unstable mass-transfer,
+for example in a triple system, the secular perturbations on the inner
+orbit by the third body, plus the evolutionary changes of the stars
+(radius, wind mass loss, etc.) can lead to dynamical instabilities of
+the orbit.
+</p>
+
+
+<figure id="orgbbd8cca">
+<img src="./images/RLOFCE.png" alt="RLOFCE.png" width="100%">
+
+<figcaption><span class="figure-number">Figure 1: </span>Schematic division between modes of mass-transfer based on the response of the orbital separation.</figcaption>
+</figure>
+
+<p>
+The stability of mass-transfer is an important bifurcation point in
+the evolution of a binary system, since typically conservation of
+angular momentum dictates that stable RLOF leads to an overall
+widening of the binary (assuming the mass-ratio gets reversed during
+the mass-transfer), while CE leads to a shrinking of the orbit.
+</p>
+
+<p>
+<b>N.B.:</b> The details of the orbital evolution depend on the accretion
+flow, whether it occurs through a disk or a direct impact, how
+conservative mass-transfer is, and how much angular momentum is
+carried away by the non-accreted material.
+</p>
+
+<p>
+In fact, the original idea of a CE (<a href="https://ui.adsabs.harvard.edu/abs/1975PhDT.......165W/abstract">Webbink 1975</a>, <a href="https://ui.adsabs.harvard.edu/abs/1976IAUS...73...75P/abstract">Paczynski 1976</a>)
+comes from trying to explain cataclismic variables, which are binaries
+with a main-sequence star and a WD, with orbital separation much
+smaller than the expected maximum radius of the WD progenitor. It was
+therefore designed as a process resulting in the decrease of the
+orbital separation.
+</p>
+
+<p>
+Unfortunately, the boundary between the two modes of mass transfer
+remains elusive, and semi-analytic criteria are still common to decide
+the outcome in rapid binary population synthesis calculations.
+</p>
+</div>
+
+<div id="outline-container-orgf1141c7" class="outline-3">
+<h3 id="orgf1141c7"><a href="#orgf1141c7">Stability criteria</a></h3>
+<div class="outline-text-3" id="text-orgf1141c7">
+<p>
+<a href="https://ui.adsabs.harvard.edu/abs/1997A%26A...327..620S/abstract">Soberman et al. 1997</a> formalized analytically a stability criterion
+for mass transfer, based on the response of the donor star radius to
+the change of mass caused by the transfer of mass. Their criterion is
+still widely adopted.
+</p>
+
+<p>
+The defined parameters \(\zeta=d\ln R/d\ln M_{\rm donor}\) with \(R=R_{\rm donor}\)
+donor radius and \(R=R_{\rm RL,1}\) Roche lobe of the donor. As mass is
+being transferred, \(M_{\rm donor}\) decreases and its radius changes, at
+the same time, the redistribution of mass (and angular momentum) in
+the binary can change the orbit and the size of the Roche lobe of the
+donor.
+</p>
+
+<p>
+If during mass-transfer \(\zeta_{\rm donor} < \zeta_{\rm RL,1}\), then the
+readjustment of the donor is too "slow" compared to the readjustment
+of the orbit and this will lead to a dynamical phase: the orbit
+shrinks faster than the donor star, therefore the amount of Roche lobe
+overflow increases triggering a runaway process.
+</p>
+
+<p>
+However, calculating the \(\zeta\) parameters requires having out-of-thermal
+equilibrium stellar models and prescribing a rate of mass-transfer.
+Therefore, it is also common to rephrase this criterion in an
+equivalent form based on the mass-ratio \(q=M_{}_{\rm accretor}/M_{\rm donor}\):
+if this mass ratio is more extreme than a certain threshold \(q_{crit}\)
+then the evolutionary timescales of the two stars will be too
+different, the donor will try to donate on its timescale, the accretor
+will not be able to accrete the mass and inflate because of the excess
+thermal energy in the outer layers, leading anyways to a CE.
+</p>
+
+<p>
+<b>N.B.:</b> In practice there can be different values of \(q_{crit}\) for each
+evolutionary phase of the donor (whether it is a case A mass transfer
+with a main sequence donor or a later mass transfer can influence the
+stability!)
+</p>
+
+<p>
+These stability criteria are widely used, but also widely debated. In
+nature there may be more than one way to initiate the common envelope:
+</p>
+
+<ol class="org-ol">
+<li>Donor's Roche lobe overflow runaway increase</li>
+<li>The binary loses mass from the L<sub>2</sub> Lagrangian point, leading to
+large angular momentum losses and inspiral</li>
+<li>Accretor's cannot accept mass fast enough and swell until <i>both</i>
+stars fill their Roche lobe</li>
+<li>Darwin instability</li>
+</ol>
+
+<p>
+Many of these processes occur on a (relatively long) thermal timescale
+of the donor star, which makes it hard to study directly with
+numerical simulations and/or observations.
+</p>
+</div>
+</div>
+</div>
+
 
 <div id="outline-container-org04dc01d" class="outline-2">
 <h2 id="org04dc01d"><a href="#org04dc01d">Common envelope evolution</a></h2>
@@ -131,7 +295,7 @@ Common envelope evolution, since it's theorization in the 1970s by
 Paczynski, Webbink, Taam, and Ostriker, remains one of the biggest
 open questions in stellar physics that impacts the formation of all
 compact binaries (cataclysmic variables made of a main sequence plus a
-white dwarf, binary white dwarfs, gravitational wave mergers, etc.).
+white dwarf, binary white dwarfs, gravitational wave sources, etc.).
 </p>
 </div>
 </div>
@@ -141,7 +305,7 @@ white dwarf, binary white dwarfs, gravitational wave mergers, etc.).
   <hr>
   <a href="#light-dark-toggle"><i id="light-dark-toggle"><i class="fa-solid fa-circle-half-stroke"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="notes-in-class-RLOF.html"><i class="fa-solid fa-arrow-left" style="font-size:16px"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="#top"><i class="fa-solid fa-arrow-up" style="font-size:16px"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="notes-lecture-SNe.html"><i class="fa-solid fa-arrow-right" style="font-size:16px"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="https://github.com/mathren/stellar_phys_545"><i class="fa-brands fa-github" style="font-size:16px"></i></a><hr>
   <br>
-  Last updated on 20 February 2026 <br>
+  Last updated on 24 March 2026 <br>
   Made with Emacs 29.2 - Org mode 9.6.15
   <br>
 </div>

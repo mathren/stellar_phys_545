@@ -4,8 +4,101 @@
 #+PREVIOUS_PAGE: notes-in-class-RLOF.org
 #+NEXT_PAGE: notes-lecture-SNe.org
 
-*Materials*: [[https://ui.adsabs.harvard.edu/abs/1975PhDT.......165W/abstract][Webbink 1975]], [[https://ui.adsabs.harvard.edu/abs/1976IAUS...73...75P/abstract][Paczynski 1976]], [[https://ui.adsabs.harvard.edu/abs/2013A%26ARv..21...59I/abstract][Ivanova et al. 2013]], [[https://ui.adsabs.harvard.edu/abs/2023LRCA....9....2R/abstract][Ropke &
-de Marco 2023]], Ivanova et al. 2020.
+*Materials*: [[https://ui.adsabs.harvard.edu/abs/1975PhDT.......165W/abstract][Webbink 1975]], [[https://ui.adsabs.harvard.edu/abs/1976IAUS...73...75P/abstract][Paczynski 1976]], [[https://ui.adsabs.harvard.edu/abs/2013A%26ARv..21...59I/abstract][Ivanova et al. 2013]], [[https://ui.adsabs.harvard.edu/abs/2021ApJ...919..128R/abstract][Renzo et
+al. 2021]], [[https://ui.adsabs.harvard.edu/abs/2023LRCA....9....2R/abstract][Ropke & de Marco 2023]], Ivanova et al. 2020.
+
+* Dynamically unstable mass-transfer
+
+As stars evolve, their radius tends to overall increase. We have [[./notes-lecture-RLOF.org][seen]]
+that in a binary system, this can lead the more massive and faster
+evolving star to fill its Roche lobe and initiate mass transfer.
+
+Depending on the *orbital response*, mass transfer can be *dynamically
+stable* (often only referred to just as Roche lobe overflow RLOF, although
+the Roche lobe is filled in both cases), or *dynamically unstable*
+(often referred to as "common envelope", CE).
+
+*N.B.:* CE is /not/ the only possible dynamically unstable mass-transfer,
+for example in a triple system, the secular perturbations on the inner
+orbit by the third body, plus the evolutionary changes of the stars
+(radius, wind mass loss, etc.) can lead to dynamical instabilities of
+the orbit.
+
+#+CAPTION: Schematic division between modes of mass-transfer based on the response of the orbital separation.
+#+ATTR_HTML: :width 100%
+[[./images/RLOFCE.png]]
+
+The stability of mass-transfer is an important bifurcation point in
+the evolution of a binary system, since typically conservation of
+angular momentum dictates that stable RLOF leads to an overall
+widening of the binary (assuming the mass-ratio gets reversed during
+the mass-transfer), while CE leads to a shrinking of the orbit.
+
+*N.B.:* The details of the orbital evolution depend on the accretion
+flow, whether it occurs through a disk or a direct impact, how
+conservative mass-transfer is, and how much angular momentum is
+carried away by the non-accreted material.
+
+In fact, the original idea of a CE ([[https://ui.adsabs.harvard.edu/abs/1975PhDT.......165W/abstract][Webbink 1975]], [[https://ui.adsabs.harvard.edu/abs/1976IAUS...73...75P/abstract][Paczynski 1976]])
+comes from trying to explain cataclismic variables, which are binaries
+with a main-sequence star and a WD, with orbital separation much
+smaller than the expected maximum radius of the WD progenitor. It was
+therefore designed as a process resulting in the decrease of the
+orbital separation.
+
+Unfortunately, the boundary between the two modes of mass transfer
+remains elusive, and semi-analytic criteria are still common to decide
+the outcome in rapid binary population synthesis calculations.
+
+** Stability criteria
+
+[[https://ui.adsabs.harvard.edu/abs/1997A%26A...327..620S/abstract][Soberman et al. 1997]] formalized analytically a stability criterion
+for mass transfer, based on the response of the donor star radius to
+the change of mass caused by the transfer of mass. Their criterion is
+still widely adopted.
+
+The defined parameters $\zeta=d\ln R/d\ln M_{\rm donor}$ with $R=R_{\rm donor}$
+donor radius and $R=R_{\rm RL,1}$ Roche lobe of the donor. As mass is
+being transferred, $M_{\rm donor}$ decreases and its radius changes, at
+the same time, the redistribution of mass (and angular momentum) in
+the binary can change the orbit and the size of the Roche lobe of the
+donor.
+
+If during mass-transfer $\zeta_{\rm donor} < \zeta_{\rm RL,1}$, then the
+readjustment of the donor is too "slow" compared to the readjustment
+of the orbit and this will lead to a dynamical phase: the orbit
+shrinks faster than the donor star, therefore the amount of Roche lobe
+overflow increases triggering a runaway process.
+
+However, calculating the $\zeta$ parameters requires having out-of-thermal
+equilibrium stellar models and prescribing a rate of mass-transfer.
+Therefore, it is also common to rephrase this criterion in an
+equivalent form based on the mass-ratio $q=M_{}_{\rm accretor}/M_{\rm donor}$:
+if this mass ratio is more extreme than a certain threshold $q_{crit}$
+then the evolutionary timescales of the two stars will be too
+different, the donor will try to donate on its timescale, the accretor
+will not be able to accrete the mass and inflate because of the excess
+thermal energy in the outer layers, leading anyways to a CE.
+
+*N.B.:* In practice there can be different values of $q_{crit}$ for each
+evolutionary phase of the donor (whether it is a case A mass transfer
+with a main sequence donor or a later mass transfer can influence the
+stability!)
+
+These stability criteria are widely used, but also widely debated. In
+nature there may be more than one way to initiate the common envelope:
+
+1. Donor's Roche lobe overflow runaway increase
+2. The binary loses mass from the L_{2} Lagrangian point, leading to
+   large angular momentum losses and inspiral
+3. Accretor's cannot accept mass fast enough and swell until /both/
+   stars fill their Roche lobe
+4. Darwin instability
+
+Many of these processes occur on a (relatively long) thermal timescale
+of the donor star, which makes it hard to study directly with
+numerical simulations and/or observations.
+
 
 * Common envelope evolution
 
@@ -23,4 +116,4 @@ Common envelope evolution, since it's theorization in the 1970s by
 Paczynski, Webbink, Taam, and Ostriker, remains one of the biggest
 open questions in stellar physics that impacts the formation of all
 compact binaries (cataclysmic variables made of a main sequence plus a
-white dwarf, binary white dwarfs, gravitational wave mergers, etc.).
+white dwarf, binary white dwarfs, gravitational wave sources, etc.).
