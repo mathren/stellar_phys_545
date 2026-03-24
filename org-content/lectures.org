@@ -179,7 +179,7 @@ intuition for tidal disruption and orbital evolution
 
 ** <2026-04-03 Fri> -
 
-** TODO <2026-04-06 Mon> - Common Envelope
+** <2026-04-06 Mon> - Common Envelope
 *Aim*: Introduce mass transfer dynamical stability, the concept of a
 common envelope and its main phases.
 
