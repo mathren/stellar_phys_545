@@ -178,34 +178,36 @@ region.
 In lack of a viable first-principle approach to CE, we often rely on
 simple conservation laws arguments to try to map the pre-CE to the
 post-CE state. This was originally proposed by [[https://ui.adsabs.harvard.edu/abs/1984ApJ...277..355W/abstract][Webbink 1984]] where the
-/infamous/ parameter $\alpha_{CE}$ was introduced.
+/infamous/ parameter $\alpha_{\rm CE}$ was introduced.
 
-The core idea is to relate a fraction $\alpha_{CE}$ of the change in orbital
+The core idea is to relate a fraction $\alpha_{\rm CE}$ of the change in orbital
 energy as the binary spirals in, to the binding energy of the (pre-CE)
 envelope:
 #+begin_latex
 \begin{equation}
- \alpha_{CE} \Delta E_{\rm orb} = E_{\rm bind} \Rightarrow \alpha_{CE}\left(-\frac{GM_{1}M_{2}}{2a_{i}} + \frac{GM_{\rm 1,core} M_{2}}{2a_{f}} \right) = E_{\rm bind} \ \ ,
+ \alpha_{\rm CE} \Delta E_{\rm orb} = E_{\rm bind} \Rightarrow \alpha_{\rm CE}\left(-\frac{GM_{1}M_{2}}{2a_{i}} + \frac{GM_{\rm 1,core} M_{2}}{2a_{f}} \right) = E_{\rm bind} \ \ ,
 \end{equation}
 #+end_latex
 where we implicitly assume that the mass of the envelope to be ejected
 is $M_{\rm env} = M_{1} - M_{\rm 1, core}$, that the secondary star $M_{2}$ does
 not change mass, and $a_{i}$, $a_{f}$ are the pre- and post-CE separation.
+Thus, $\alpha_{\rm CE}$ represents the efficiency with which orbital energy of the
+inner binary is pumped into the gas of the shared envelope.
 
-The binding energy of the envelope is almost always calculated based on the
-structure of the donor star envelope before the onset of mass
-transfer:
+The binding energy of the envelope is almost always calculated based
+on the structure of the donor star before the onset of mass transfer:
 #+begin_latex
 \begin{equation}
 E_{\rm bind} = \frac{GM_{1} M_{\rm env}}{\lambda_{CE}R_{1}} \ \,
 \end{equation}
 #+end_latex
 where $\lambda_{CE}$ is a dimensionless parameter that encapsulate the details
-of the mass distribution in the donor introduced by [[https://ui.adsabs.harvard.edu/abs/1990ApJ...358..189D/abstract][de Kool 1990]].
+of the mass distribution in the donor introduced by [[https://ui.adsabs.harvard.edu/abs/1990ApJ...358..189D/abstract][de Kool 1990]]. This
+is usually obtained from stellar evolution models.
 
 Within this framework, for a given donor (i.e., a given $\lambda_{CE}$, $M_{1}$
-and $M_{env}$), accretor, initial separation $a_{i}$ and assumed
-"efficiency" $\alpha_{CE}$, we can solve for the final separation $a_{f}$. If
+and $M_{\rm env}$), accretor, initial separation $a_{i}$ and assumed
+"efficiency" $\alpha_{\rm CE}$, we can solve for the final separation $a_{f}$. If
 $a_{f}$ is such that the core would fill its Roche lobe at the end of the
 CE, it is often assumed the CE results in a merger. Otherwise, this
 energy balance argument gives the final post-CE separation.
@@ -213,19 +215,26 @@ energy balance argument gives the final post-CE separation.
 This simple picture was designed as an order of magnitude argument,
 but has become a standard algorithmic practice, because the detailed
 picture remains opaque. However, several issues exist:
-- $\alpha_{CE}>1$ have been invoked to explain systems, while this apparently
+- $\alpha_{\rm CE}>1$ have been invoked to explain systems, while this apparently
   violates conservation of energy, in reality energy sources /other/
   than the orbit may play a role, such as accretion (e.g., if one of
   the stars is a compact object), recombination of gas, etc.
 - The initial conditions are often not well defined: should we
   consider the moment of the onset of mass transfer, or when the mass
   transfer becomes dynamical? For simplicity, often the former is
-  assumed without justification
+  assumed.
 - The core/envelope boundary (determining $M_{\rm env}$ and $\lambda_{CE}$) is
-  also poorly understood
+  also poorly understood, and possibly sensitive to the evolutionary
+  phase, convective boundary mixing, opacity profiles, etc.
+  Definitions adopted vary from study to study.
 - The efficiency of the energy deposition is presently unknown, and
   this approach neglects the impact of dynamical phenomena during the
   CE itself that affect the envelope structure.
+
+:Question:
+- *Q*: How would you constrain observationally $\alpha_{\rm CE}$ using observed populations?
+:end:
+
 
 * Electromagnetic counterparts: luminous red novae
 
@@ -233,15 +242,15 @@ CE is crucial in the formation of most close-binary systems and thus
 the vast astrophysical phenomenology that they can produce (double WDs
 in planetary nebuale, X-ray binaries, to GW, planetary engulfments,
 etc.): we have many indirect constraints from observing these systems
-and their pre-CE analogs.
+and their pre-CE analogs!
 
 However, the ejection of a CE (and/or the merger) should also produce
 a transient signal, and we have seen at least a few binaries with
-measured negative $\dot{P}$ causing an outburst. The first and maybe
-most famous one was V1309Sco for which pre-outburst characterization
-of a shrinking binary is available.
+measured negative $\dot{P}$ causing an outburst, named "Luminous red
+novae". The first and maybe most famous one was V1309Sco for which
+pre-outburst characterization of a shrinking binary is available:
 
-#+CAPTION: Pre- and outburst lightcuve for the LRN V1309Sco, from [[https://ui.adsabs.harvard.edu/abs/2017ApJ...850...59P/abstract][Pejcha et al. 2017]].
+#+CAPTION: Pre-outburst evolution of the period of the binary V1309Sco and pre- and post outburst light curve, from [[https://ui.adsabs.harvard.edu/abs/2011A%26A...528A.114T/abstract][Tylenda et al. 2011]].
 #+ATTR_HTML: :width 100%
 [[./images/v1309Sco.png]]
 

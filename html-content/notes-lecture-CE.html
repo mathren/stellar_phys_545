@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 2026-03-24 Tue 14:52 -->
+<!-- 2026-03-25 Wed 15:15 -->
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>ASTR545 - Common Envelope Evolution</title>
@@ -164,7 +164,7 @@ the orbit.
 </p>
 
 
-<figure id="orgde2ca4d">
+<figure id="org489874a">
 <img src="./images/RLOFCE.png" alt="RLOFCE.png" width="100%">
 
 <figcaption><span class="figure-number">Figure 1: </span>Schematic division between modes of mass-transfer based on the response of the orbital separation.</figcaption>
@@ -275,7 +275,7 @@ numerical simulations and/or observations.
 <h2 id="org04dc01d"><a href="#org04dc01d">Common envelope evolution</a></h2>
 <div class="outline-text-2" id="text-org04dc01d">
 
-<figure id="org8897106">
+<figure id="orgd49c6c0">
 <img src="./images/CE_evol.png" alt="CE_evol.png" width="50%">
 
 <figcaption><span class="figure-number">Figure 2: </span>Schematic representation of the phases of a common envelope, with possible outcomes ejection of the envelope or stellar merger. Not every phase need to happen in every CE. This is Fig. 1 from <a href="https://ui.adsabs.harvard.edu/abs/2021ApJ...919..128R/abstract">Renzo et al. 2021</a>.</figcaption>
@@ -382,17 +382,17 @@ region.
 In lack of a viable first-principle approach to CE, we often rely on
 simple conservation laws arguments to try to map the pre-CE to the
 post-CE state. This was originally proposed by <a href="https://ui.adsabs.harvard.edu/abs/1984ApJ...277..355W/abstract">Webbink 1984</a> where the
-<i>infamous</i> parameter \(\alpha_{CE}\) was introduced.
+<i>infamous</i> parameter \(\alpha_{\rm CE}\) was introduced.
 </p>
 
 <p>
-The core idea is to relate a fraction \(\alpha_{CE}\) of the change in orbital
+The core idea is to relate a fraction \(\alpha_{\rm CE}\) of the change in orbital
 energy as the binary spirals in, to the binding energy of the (pre-CE)
 envelope:
 </p>
-<div class="latex" id="orgb340042">
+<div class="latex" id="orgb0b1658">
 \begin{equation}
- \alpha_{CE} \Delta E_{\rm orb} = E_{\rm bind} \Rightarrow \alpha_{CE}\left(-\frac{GM_{1}M_{2}}{2a_{i}} + \frac{GM_{\rm 1,core} M_{2}}{2a_{f}} \right) = E_{\rm bind} \ \ ,
+ \alpha_{\rm CE} \Delta E_{\rm orb} = E_{\rm bind} \Rightarrow \alpha_{\rm CE}\left(-\frac{GM_{1}M_{2}}{2a_{i}} + \frac{GM_{\rm 1,core} M_{2}}{2a_{f}} \right) = E_{\rm bind} \ \ ,
 \end{equation}
 
 </div>
@@ -400,14 +400,15 @@ envelope:
 where we implicitly assume that the mass of the envelope to be ejected
 is \(M_{\rm env} = M_{1} - M_{\rm 1, core}\), that the secondary star \(M_{2}\) does
 not change mass, and \(a_{i}\), \(a_{f}\) are the pre- and post-CE separation.
+Thus, \(\alpha_{\rm CE}\) represents the efficiency with which orbital energy of the
+inner binary is pumped into the gas of the shared envelope.
 </p>
 
 <p>
-The binding energy of the envelope is almost always calculated based on the
-structure of the donor star envelope before the onset of mass
-transfer:
+The binding energy of the envelope is almost always calculated based
+on the structure of the donor star before the onset of mass transfer:
 </p>
-<div class="latex" id="orgdf1cc5e">
+<div class="latex" id="orgcb99985">
 \begin{equation}
 E_{\rm bind} = \frac{GM_{1} M_{\rm env}}{\lambda_{CE}R_{1}} \ \,
 \end{equation}
@@ -415,13 +416,14 @@ E_{\rm bind} = \frac{GM_{1} M_{\rm env}}{\lambda_{CE}R_{1}} \ \,
 </div>
 <p>
 where \(\lambda_{CE}\) is a dimensionless parameter that encapsulate the details
-of the mass distribution in the donor introduced by <a href="https://ui.adsabs.harvard.edu/abs/1990ApJ...358..189D/abstract">de Kool 1990</a>.
+of the mass distribution in the donor introduced by <a href="https://ui.adsabs.harvard.edu/abs/1990ApJ...358..189D/abstract">de Kool 1990</a>. This
+is usually obtained from stellar evolution models.
 </p>
 
 <p>
 Within this framework, for a given donor (i.e., a given \(\lambda_{CE}\), \(M_{1}\)
-and \(M_{env}\)), accretor, initial separation \(a_{i}\) and assumed
-"efficiency" \(\alpha_{CE}\), we can solve for the final separation \(a_{f}\). If
+and \(M_{\rm env}\)), accretor, initial separation \(a_{i}\) and assumed
+"efficiency" \(\alpha_{\rm CE}\), we can solve for the final separation \(a_{f}\). If
 \(a_{f}\) is such that the core would fill its Roche lobe at the end of the
 CE, it is often assumed the CE results in a merger. Otherwise, this
 energy balance argument gives the final post-CE separation.
@@ -433,23 +435,34 @@ but has become a standard algorithmic practice, because the detailed
 picture remains opaque. However, several issues exist:
 </p>
 <ul class="org-ul">
-<li>\(\alpha_{CE}>1\) have been invoked to explain systems, while this apparently
+<li>\(\alpha_{\rm CE}>1\) have been invoked to explain systems, while this apparently
 violates conservation of energy, in reality energy sources <i>other</i>
 than the orbit may play a role, such as accretion (e.g., if one of
 the stars is a compact object), recombination of gas, etc.</li>
 <li>The initial conditions are often not well defined: should we
 consider the moment of the onset of mass transfer, or when the mass
 transfer becomes dynamical? For simplicity, often the former is
-assumed without justification</li>
+assumed.</li>
 <li>The core/envelope boundary (determining \(M_{\rm env}\) and \(\lambda_{CE}\)) is
-also poorly understood</li>
+also poorly understood, and possibly sensitive to the evolutionary
+phase, convective boundary mixing, opacity profiles, etc.
+Definitions adopted vary from study to study.</li>
 <li>The efficiency of the energy deposition is presently unknown, and
 this approach neglects the impact of dynamical phenomena during the
 CE itself that affect the envelope structure.</li>
 </ul>
+
+<div class="org-drawer-container">
+  <button class="org-drawer-toggle" onclick="toggleDrawer('drawer-Question-1168')">Question ▼</button>
+  <div id="drawer-Question-1168" class="org-drawer-content" style="display: none;"><ul class="org-ul">
+<li><b>Q</b>: How would you constrain observationally \(\alpha_{\rm CE}\) using observed populations?</li>
+</ul>
 </div>
 </div>
 </div>
+</div>
+</div>
+
 
 <div id="outline-container-orga89b8c4" class="outline-2">
 <h2 id="orga89b8c4"><a href="#orga89b8c4">Electromagnetic counterparts: luminous red novae</a></h2>
@@ -459,22 +472,22 @@ CE is crucial in the formation of most close-binary systems and thus
 the vast astrophysical phenomenology that they can produce (double WDs
 in planetary nebuale, X-ray binaries, to GW, planetary engulfments,
 etc.): we have many indirect constraints from observing these systems
-and their pre-CE analogs.
+and their pre-CE analogs!
 </p>
 
 <p>
 However, the ejection of a CE (and/or the merger) should also produce
 a transient signal, and we have seen at least a few binaries with
-measured negative \(\dot{P}\) causing an outburst. The first and maybe
-most famous one was V1309Sco for which pre-outburst characterization
-of a shrinking binary is available.
+measured negative \(\dot{P}\) causing an outburst, named "Luminous red
+novae". The first and maybe most famous one was V1309Sco for which
+pre-outburst characterization of a shrinking binary is available:
 </p>
 
 
-<figure id="org85d4d2e">
+<figure id="org53e6d70">
 <img src="./images/v1309Sco.png" alt="v1309Sco.png" width="100%">
 
-<figcaption><span class="figure-number">Figure 3: </span>Pre- and outburst lightcuve for the LRN V1309Sco, from <a href="https://ui.adsabs.harvard.edu/abs/2017ApJ...850...59P/abstract">Pejcha et al. 2017</a>.</figcaption>
+<figcaption><span class="figure-number">Figure 3: </span>Pre-outburst evolution of the period of the binary V1309Sco and pre- and post outburst light curve, from <a href="https://ui.adsabs.harvard.edu/abs/2011A%26A...528A.114T/abstract">Tylenda et al. 2011</a>.</figcaption>
 </figure>
 
 <p>
@@ -491,7 +504,7 @@ has a nice light-echo image from <i>HST</i>:
 </p>
 
 
-<figure id="org4bfd8fb">
+<figure id="orgad3620a">
 <img src="./images/V838_Mon_1989-2006.gif" alt="V838_Mon_1989-2006.gif" width="50%">
 
 <figcaption><span class="figure-number">Figure 4: </span>Light echos of the LRN V838Mon, By Lasunncty <a href="https://commons.wikimedia.org/w/index.php?curid=83852409">https://commons.wikimedia.org/w/index.php?curid=83852409</a></figcaption>
@@ -521,7 +534,7 @@ time-domain astrophysics.
   <hr>
   <a href="#light-dark-toggle"><i id="light-dark-toggle"><i class="fa-solid fa-circle-half-stroke"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="notes-lecture-RLOF.html"><i class="fa-solid fa-arrow-left" style="font-size:16px"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="#top"><i class="fa-solid fa-arrow-up" style="font-size:16px"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="notes-lecture-SNe.html"><i class="fa-solid fa-arrow-right" style="font-size:16px"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="https://github.com/mathren/stellar_phys_545"><i class="fa-brands fa-github" style="font-size:16px"></i></a><hr>
   <br>
-  Last updated on 24 March 2026 <br>
+  Last updated on 25 March 2026 <br>
   Made with Emacs 29.2 - Org mode 9.6.15
   <br>
 </div>

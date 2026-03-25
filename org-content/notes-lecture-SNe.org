@@ -33,7 +33,7 @@ companions, which is the rule rather than the exception ([[http://adsabs.harvard
 *N.B.:* At the lower mass end, super-AGB supernova progenitors may reach
 the onset of core collapse because of electron captures in the oxygen,
 neon, magnesium degenerate core producing a so-called "electron
-capture SN" (cf. [[file:in-class-evol-wrap-up.org::*super-AGB stars][sAGB evolution]]) instead of because electron captures
+capture SN" (cf. [[file:in-class-evol-wrap-up.org::*super-AGB stars and off-center C ignition][super-AGB evolution]]) instead of because electron captures
 in the iron core. In reality, al CCSNe /are/ electron-capture SNe
 because electron captures always play a role in accelerating the
 collapse (see below).
@@ -597,8 +597,8 @@ models exist:
    also [[https://ui.adsabs.harvard.edu/abs/2024arXiv240504259D/abstract][Dessart et al. 2024]].
  - Magnetar engine: if the NS formed by the collapsing inner core is
    highly magnetized and fast spinning, the explosion can tap into
-   these energy sources and be over-powered. See for example [[https://ui.adsabs.harvard.edu/abs/2015MNRAS.454.3311M/abstract][Metzger
-   et al. 2015]].
+   these energy sources and be over-powered. See for example
+   [[https://ui.adsabs.harvard.edu/abs/2015MNRAS.454.3311M/abstract][Metzger et al. 2015]].
 
 ** Supernova rates
 
@@ -825,3 +825,14 @@ Key open questions actively debated today include:
  - Does a given star form a  neutron star or black hole?
  - If black hole, with or without explosion?
  - Do BHs receive natal kicks? And what is the distribution of NS kicks?
+
+
+* Time domain astrophysics is much more than SNe
+The transient zoology is bigger than just SNe. With the expansion of observational capabilities in cadence, depth,
+wavelength ranges and availability of progenitor catalogs and star
+formation maps for host galaxies, we now can detect a wide variety of
+transients:
+
+#+CAPTION: Distribution of transient classes in terms of peak brightness and typical timescale (note how both scales are logarithmic), from [[https://www.mdpi.com/2218-1997/8/10/493][Cai et al. 2022]].
+#+ATTR_HTML: :width 100%
+[[./images/transients_phase_space.jpg]]
