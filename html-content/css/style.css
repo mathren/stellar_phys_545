@@ -427,3 +427,10 @@ tfoot {
     --color: #909090;
     --hover-color: #7b7b7b;
 }
+
+/* Center images */
+.content img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}

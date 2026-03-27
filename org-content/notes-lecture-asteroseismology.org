@@ -221,8 +221,10 @@ especially useful to probe the inner regions of the envelope (where
 $\rho$ is higher and thus most of the mass is), and thus the size of the
 core.
 
-The animation below shows a (greatly exaggerated) g-mode oscillation:
-#+HTML:  <video  controls loop autostart width="600" height="400" src="./images/g_mode.mp4" </video>
+#+CAPTION: This animation shows a (greatly exaggerated) g-mode oscillation (credits: R. Townsend).
+#+ATTR_HTML: :width 50%
+[[./images/g_mode.gif]]
+
 
 The g-modes include also the so-called f-modes, i.e. the "fundamental"
 gravity mode, confined to the surface of stars, typically relevant in
