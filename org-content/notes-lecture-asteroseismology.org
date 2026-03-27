@@ -365,7 +365,7 @@ above, seeding g-modes.
 
 *N.B.:* [[https://ui.adsabs.harvard.edu/abs/2017MNRAS.470.1642F/abstract][Fuller 2017]] uses this idea to propose "wave-driven" late
 injection of energy in the envelope of pre-supernova star, to explain
-the circumstellar material around SNe
+the circumstellar material around SNe.
 
 ** \varepsilon-mechanism
 If a portion of the star (e.g., a spherical shell for a radial
