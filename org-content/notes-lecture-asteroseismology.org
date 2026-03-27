@@ -357,7 +357,7 @@ presence of a continuous driving mechanism (analogous to a player that
 keeps plucking guitar strings).
 
 ** Stochastic excitation
-When there is a convective layer (core or shell), convective bubbles
+When there is a convective layer (core or shell), convective plumes
 are going to stochastically overshoot, "banging" on the
 convective/radiative boundary. We have discussed this in the context
 of [[./notes-lecture-convection.org::*Convective boundary mixing (a.k.a. "overshooting")][overshooting]], but this process can also perturb the stable layer
