@@ -321,7 +321,7 @@ L_{1} = \sqrt{2}\frac{c_{s}}{r} \ \ .
 #+end_latex
 
 * Mode recognition
-In the limit of high-order ($l\gg1$), using asymptotic theory to treat
+In the limit of high-order ($n\gg1$), using asymptotic theory to treat
 the solutions to the linearly-perturbed stellar structure equations,
 we can predict distribution of oscillations frequencies.
 
