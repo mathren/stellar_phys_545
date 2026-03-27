@@ -79,9 +79,8 @@ information on the core mass, rotation rate, etc. can be inferred.
 Other examples of the stellar properties that have been derived from
 asteroseismology include the internal sound speed of the Sun, the
 presence of a strong gradient at a core-envelope interface and thus
-core masses, the core rotation rate, the sound speed profiles, etc.
-All this from the time-variability of stars revealing their eigen
-modes.
+core masses, the core rotation rate, etc. All this from the
+time-variability of stars revealing their eigen modes.
 
 ** Stellar variability
 Stochastic processes (e.g., stellar flares for magnetic and convective
