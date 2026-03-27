@@ -25,7 +25,13 @@ How can we /directly/ see inside the stars?
   nature removes by some means their envelope (e.g., binary mass
   transfer!): this effectively moves the photosphere inwards, but only
   to a single new location, and the process may induce changes in the
-  structure in response, muddying the interpretation.
+  structure in response, muddying the interpretation. For massive
+  stripped stars with optically thick winds that hide the photosphere
+  (i.e., WR stars), we still wouldn't see the star, but only its wind.
+  But lower luminosity objects such as sdO/sdB stars and recently
+  discovered intermediate mass stripped stars (e.g., [[https://ui.adsabs.harvard.edu/abs/2023Sci...382.1287D/abstract][Droutet al. 2023]],
+  [[https://ui.adsabs.harvard.edu/abs/2023ApJ...959..125G/abstract][Gotberg et al. 2023]]) with weak winds have opened up this possibility
+  observationally.
 - *Supernova light curves*: We will discuss these in more detail [[./notes-lecture-SNe.org][later]],
   but /if/ a star explodes, as the density (and thus $\tau\sim \kappa\rho\Delta r$)
   decreases, the photosphere moves inward in mass-coordinate within
