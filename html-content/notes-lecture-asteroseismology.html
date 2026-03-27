@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 2026-03-27 Fri 09:11 -->
+<!-- 2026-03-27 Fri 09:26 -->
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>ASTR545 - Asteroseismology</title>
@@ -244,10 +244,10 @@ variability.
 </p>
 
 
-<figure id="org3212ab1">
+<figure id="org99dad33">
 <img src="./images/HRD_asteroseismology.png" alt="HRD_asteroseismology.png" width="100%">
 
-<figcaption><span class="figure-number">Figure 1: </span>HR diagram with stellar evolution tracks (black) and marked regions (blue/red) of observed photometric stellar variability, labeled according to the acronyms for each observational class of pulsators defined in <a href="https://doi.org/10.1007/978-1-4020-5803-5">Aerts, Christensen-Dalsgaard, Kurtz 2010</a>. This is Fig. 1 from <a href="https://doi.org/10.1103/RevModPhys.93.015001">Aerts 2021</a>.</figcaption>
+<figcaption><span class="figure-number">Figure 1: </span>HR diagram with stellar evolution tracks (black) and marked regions (blue/red) of observed periodic photometric stellar variability, labeled according to the acronyms for each observational class of pulsators defined in <a href="https://doi.org/10.1007/978-1-4020-5803-5">Aerts, Christensen-Dalsgaard, Kurtz 2010</a>. This is Fig. 1 from <a href="https://doi.org/10.1103/RevModPhys.93.015001">Aerts 2021</a>.</figcaption>
 </figure>
 
 <p>
@@ -288,7 +288,7 @@ At linear order, solutions will be
 expressed in general as the linear superposition of modes with
 functional form:
 </p>
-<div class="latex" id="org1fa1158">
+<div class="latex" id="org0dc5f69">
 \begin{equation}
 \delta\mathrm{x} \sim \sum_{l,n,m} \delta_{n,l,m}\ \ \mathrm{with}  \ \ \delta_{n,l,m} \sim F_{n}(r)Y_{l}^{m}(\theta,\varphi) \ \ ,
 \end{equation}
@@ -302,7 +302,7 @@ radial direction for the perturbation, and \(m\) the number of zeros
 along the equator. \(l\) is related to the wavelength \(\lambda\) of the
 perturbation and the radius of the star by
 </p>
-<div class="latex" id="org6c7c48d">
+<div class="latex" id="org088a7d0">
 \begin{equation}
 \lambda = \frac{2\pi R}{\sqrt{l(l+1)}} \ \ .
 \end{equation}
@@ -340,6 +340,10 @@ This allows to use a simple polytropic equation \(P\propto \rho^{\Gamma_{1}}\) a
 the system of stellar equations with conservation of mass and momentum
 without introducing a temperature variable.
 </p>
+
+<p>
+<b>N.B.:</b> Nevertheless, non-adiabatic oscillation calculations exist!
+</p>
 </div>
 </div>
 
@@ -362,7 +366,7 @@ and the success of asymptotic theory are remarkable.
 In this approximation the solution for the perturbation \(\mathbf{\delta x}\)
 is written as an asymptotic series:
 </p>
-<div class="latex" id="orgabd705b">
+<div class="latex" id="org660b3b0">
 \begin{equation}
 \mathbf{\delta x} = \exp\left(\frac{1}{\varepsilon} \sum_{k}\varepsilon^{k}S_{k}(x)\right) \ \ ,
 \end{equation}
@@ -412,7 +416,7 @@ star.
 <a href="https://ui.adsabs.harvard.edu/abs/1980ApJS...43..469T/abstract">Tassoul 1980</a> and <a href="https://ui.adsabs.harvard.edu/abs/1990ApJ...358..313T/abstract">1990</a> calculated the asymptotic period spacing for
 p-modes as:
 </p>
-<div class="latex" id="orgcdd7b41">
+<div class="latex" id="org938cfa7">
 \begin{equation}\label{eq:p-spacing}
 \nu_{n,l} \simeq \Delta\nu \left(n+\frac{l}{2}+\tilde{\alpha}\right)+\delta\nu_{n,l}\ \ ,
 \end{equation}
@@ -423,7 +427,7 @@ where \(\tilde{\alpha}\) is a constant of \(\mathcal{O}(1)\), \(\delta\nu_{n,l}\
 corrections, and \(\Delta \nu\) is the <i>large separation</i> related to the sound
 travel time through the star:
 </p>
-<div class="latex" id="orgb796e03">
+<div class="latex" id="org1a7c511">
 \begin{equation}\label{eq:delta_nu}
 \Delta\nu = \frac{1}{2\int_{0}^{R}\frac{dr}{c_{\rm sound}(r)}} \ \ .
 \end{equation}
@@ -431,7 +435,7 @@ travel time through the star:
 </div>
 
 
-<figure id="org6220000">
+<figure id="org847dc6d">
 <img src="./images/Sun_powerspectrum.png" alt="Sun_powerspectrum.png" width="100%">
 
 <figcaption><span class="figure-number">Figure 2: </span>Power spectrum of the Sun-like star from CoRoT. The vertical axis shows how much power there is in modes of the corresponding frequency on the x-axis (in Hz), in arbitrary units. The frequency separation between the large peaks correspond to \(\Delta\nu(n+l/2+\tilde{\alpha})\) and the distances between small peaks arises because of the \(\delta\nu_{n,l}\). From <a href="https://sci.esa.int/web/corot/-/40955-frequency-power-spectrum-of-stellar-light-variations">ESA's CoRoT webpage</a>.</figcaption>
@@ -460,7 +464,7 @@ core.
 </p>
 
 
-<figure id="org4ebf678">
+<figure id="org992e447">
 <img src="./images/g_mode.gif" alt="g_mode.gif" width="50%">
 
 <figcaption><span class="figure-number">Figure 3: </span>This animation shows a (greatly exaggerated) g-mode oscillation (credits: R. Townsend).</figcaption>
@@ -477,9 +481,9 @@ the study of neutron stars
 The characteristic frequency of these g-mode oscillations in an ideal
 gas is the Brunt-Väisälä frequency
 </p>
-<div class="latex" id="org4c42087">
+<div class="latex" id="org6658843">
 \begin{equation}\label{eq:brunt-vaisala}
-N^{2} = \frac{g^{2} \rho}{P}\left(\nabla_{ad}-\nabla+\frac{\varphi}{\delta}\nabla_{\mu}\right) = N^{2}_{\rm struct}+N^{2}_{\rm composition}\ \ ,
+N^{2} = \frac{g^{2} \rho}{P}\left(\nabla_{\rm ad}-\nabla+\frac{\varphi}{\delta}\nabla_{\mu}\right) = N^{2}_{\rm struct}+N^{2}_{\rm composition}\ \ ,
 \end{equation}
 
 </div>
@@ -502,7 +506,7 @@ by convection settles.
 The asymptotic period spacing for g-modes is (e.g., <a href="https://doi.org/10.1007/978-1-4020-5803-5">Aerts,
 Christensen-Dalsgaard, Kurtz 2010</a>):
 </p>
-<div class="latex" id="orgba68166">
+<div class="latex" id="orge228603">
 \begin{equation}\label{eq:g-spacing}
 \Pi_{n,l} = \frac{\Pi_{0}}{\sqrt{l(l+1)}}(n+\varepsilon) \ \ ,
 \end{equation}
@@ -544,7 +548,7 @@ oscillations, p- and g-modes.
 </p>
 
 
-<figure id="orga022122">
+<figure id="org8d2f1aa">
 <img src="./images/rays_pulsation.png" alt="rays_pulsation.png" width="75%">
 
 <figcaption><span class="figure-number">Figure 4: </span>Ray-tracing of p-modes (right) and g-modes (left) in a Sun-like star with a convective envelope and radiative core. The left panel shows sound waves with \(\nu=3000\) &mu; Hz and, in increasing depth of penetration, modes with \(l=75, 25, 20, 2\): sound waves are deflected as they penetrate inwards, until they turn around, lower \(l\) stay shallower. The right panel shows g-modes of \(\nu=190\) &mu; Hz and \(l=5\) trapped in the radiative core. From <a href="https://ui.adsabs.harvard.edu/abs/2007A%26ARv..14..217C/abstract">Cuhna et al. 2007</a>.</figcaption>
@@ -560,7 +564,7 @@ frequencies.
 </p>
 
 
-<figure id="org6d400f4">
+<figure id="orgf8511b8">
 <img src="./images/propagation_diagram.png" alt="propagation_diagram.png" width="75%">
 
 <figcaption><span class="figure-number">Figure 5: </span>Relevant frequencies as a function of stellar radius for a \(15M_{☉}\) star during O core burning. This consider the propagation of a wave of frequency \(\omega_{\rm wave}\) comparing it to the Bunt-Väisälä frequency \(N\) and the frequency of the \(l=1\) p-mode (\(L_{1}\)). From <a href="https://ui.adsabs.harvard.edu/abs/2017MNRAS.470.1642F/abstract">Fuller 2017</a>.</figcaption>
@@ -583,7 +587,7 @@ wave}\ge L_{1}(r)\) with \(L_{1}\) the frequency of sound waves with \(l=1\), so
 called Lamb frequency:
 </p>
 
-<div class="latex" id="orgdb07c16">
+<div class="latex" id="orgf4d3c4f">
 \begin{equation}\label{eq:lamb}
 L_{1} = \sqrt{2}\frac{c_{s}}{r} \ \ .
 \end{equation}
@@ -617,7 +621,7 @@ on this plane:
 </p>
 
 
-<figure id="org3fe0cff">
+<figure id="org3a07893">
 <img src="./images/pg-modes_l.png" alt="pg-modes_l.png" width="70%">
 
 <figcaption><span class="figure-number">Figure 6: </span>Frequency (in \(\mu\) Hz) versus order \(l\) of g-modes (conventionally labeled with \(n<0\)), p-modes in a Sun-like star. The right x-axis labels the \(n\) of corresponding p-modes. Note that \(l\in\mathbb{Z}\) is an integer even if the curves are continuous. From <a href="https://doi.org/10.1007/978-1-4020-5803-5">Aerts, Christensen-Dalsgaard, Kurtz 2010</a>.</figcaption>

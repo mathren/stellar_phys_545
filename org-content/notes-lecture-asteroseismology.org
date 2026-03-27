@@ -88,7 +88,7 @@ stars such as M dwarfs, or the Sun) can contribute to the stellar
 variability, but asteroseismology is mostly concerned with /periodic/
 variability.
 
-#+CAPTION: HR diagram with stellar evolution tracks (black) and marked regions (blue/red) of observed photometric stellar variability, labeled according to the acronyms for each observational class of pulsators defined in [[https://doi.org/10.1007/978-1-4020-5803-5][Aerts, Christensen-Dalsgaard, Kurtz 2010]]. This is Fig. 1 from [[https://doi.org/10.1103/RevModPhys.93.015001][Aerts 2021]].
+#+CAPTION: HR diagram with stellar evolution tracks (black) and marked regions (blue/red) of observed periodic photometric stellar variability, labeled according to the acronyms for each observational class of pulsators defined in [[https://doi.org/10.1007/978-1-4020-5803-5][Aerts, Christensen-Dalsgaard, Kurtz 2010]]. This is Fig. 1 from [[https://doi.org/10.1103/RevModPhys.93.015001][Aerts 2021]].
 #+ATTR_HTML: :width 100%
 [[./images/HRD_asteroseismology.png]]
 
@@ -153,6 +153,8 @@ adiabatically.
 This allows to use a simple polytropic equation $P\propto \rho^{\Gamma_{1}}$ and close
 the system of stellar equations with conservation of mass and momentum
 without introducing a temperature variable.
+
+*N.B.:* Nevertheless, non-adiabatic oscillation calculations exist!
 
 *** Asymptotic theory
 Restricting the analysis to high-order radial modes (that is high
@@ -239,7 +241,7 @@ The characteristic frequency of these g-mode oscillations in an ideal
 gas is the Brunt-Väisälä frequency
 #+begin_latex
 \begin{equation}\label{eq:brunt-vaisala}
-N^{2} = \frac{g^{2} \rho}{P}\left(\nabla_{ad}-\nabla+\frac{\varphi}{\delta}\nabla_{\mu}\right) = N^{2}_{\rm struct}+N^{2}_{\rm composition}\ \ ,
+N^{2} = \frac{g^{2} \rho}{P}\left(\nabla_{\rm ad}-\nabla+\frac{\varphi}{\delta}\nabla_{\mu}\right) = N^{2}_{\rm struct}+N^{2}_{\rm composition}\ \ ,
 \end{equation}
 #+end_latex
 which depends on dynamical quantities ($P$, $\rho$, the local
