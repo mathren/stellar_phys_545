@@ -268,7 +268,7 @@ Brunt-Väisälä frequency.
 *** Other modes
 - *Mixed modes:* Oscillation modes with different restoring forces can
   be coupled to each other if the stellar structure allows it (think
-  of quantum mechanics solution of the Schr\"odinger equation imposing
+  of quantum mechanics solution of the Schrodinger equation imposing
   continuity at the points where $E=V$). These "mixed" modes can allow
   to probe different regions of the star, for example they are what is
   used to infer the core rotation rate of red giants, where the
