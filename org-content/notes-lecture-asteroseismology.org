@@ -334,7 +334,7 @@ Usually, one tries to use the relation between frequency $\nu$ and order
 of the modes $l$: high-order p- and g-modes tend to separate cleanly
 on this plane:
 
-#+CAPTION: Frequency (in $\mu$ Hz) versus order $l$ of g-modes (conventionally labeled with $n<0$), p-modes in a Sun-like star. The right x-axis labels the $n$ of corresponding p-modes. Note that $l\in\mathbb{Z}$ is an integer even if the curves are continuous. From [[https://doi.org/10.1007/978-1-4020-5803-5][Aerts, Christensen-Dalsgaard, Kurtz 2010]].
+#+CAPTION: Frequency (in $\mu$ Hz) versus order $l$ of g-modes (conventionally labeled with $n<0$), p-modes in a Sun-like star. The right x-axis labels the $n$ of corresponding p-modes. Note that $l\in\mathbb{Z}$ is an integer even if the curves are continuous. Modified from [[https://doi.org/10.1007/978-1-4020-5803-5][Aerts, Christensen-Dalsgaard, Kurtz 2010]].
 #+ATTR_HTML: :width 70%
 [[./images/pg-modes_l.png]]
 
