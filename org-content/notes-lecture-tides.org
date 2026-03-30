@@ -28,7 +28,8 @@ at a separation $r$. For simplicity, let's assume $M$ to be a point
 mass so we don't have to deal with its structure.
 
 *N.B.:* This may not be a bad approximation when the star $M$ is a
-compact object (NS, BH, or WD).
+compact object (WD, NS, or BH with radii $\sim10^{6},\sim10,\sim3$ km
+respectively, assuming a BH of $\sim 1M_{\odot}$).
 
 The gravitational force acting between the two bodies is
 #+begin_latex
