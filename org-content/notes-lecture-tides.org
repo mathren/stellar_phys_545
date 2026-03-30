@@ -244,7 +244,7 @@ Although we cannot directly see the interior structure of stars
 possibly affected by tides, we can see binary orbits and stellar
 rotation rates!
 
-#+CAPTION: Eccentricity vs. orbital period (on a logarithmic scale) for binaries in the open cluster M35 from [[https://ui.adsabs.harvard.edu/abs/2015AJ....150...10L/abstract][Leiner et al. 2015]].
+#+CAPTION: Eccentricity vs. orbital period (on a logarithmic scale) for binaries in the open cluster M35 from [[https://ui.adsabs.harvard.edu/abs/2015AJ....150...10L/abstract][Leiner et al. 2015]]. For $P<10$ days, all binaries appear circularized ($e=0$), meaning the circularization timescale at those periods or orbital separations is shorter than the cluster age. For $P>10$ days instead a distribution of $e$ is found, indicating that tides are less important.
 #+ATTR_HTML: :width 50%
 #+ATTR_HTML: :alt Fig. 8 in Leiner et al. 2015.
 [[./images/Pe_M35.png]]
