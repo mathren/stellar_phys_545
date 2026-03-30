@@ -45,8 +45,9 @@ facing away, hence a tidal field
 \mathbf{T}(\mathbf{r}) = \mathbf{F}_{\rm grav}(\mathbf{r}) - \mathbf{F}_{\rm grav}(\mathbf{r}+R_{\star}\mathbf{\hat{r}}) = -GMm\left(\frac{1}{r^{2}}-\frac{1}{(\mathbf{r}+R_{\star}\mathbf{\hat{r}})^{2}}\right)\mathbf{\hat{r}} \ \ .
 \end{equation}
 #+end_latex
-If the stellar radius is much smaller than the separation ($R_{\star}\ll r$ but
-non-negligible), we can Taylor expand the parenthesis to obtain:
+If the stellar radius is much smaller than the separation ($R_{\star}\ll r$,
+but still non-negligible), we can Taylor expand the parenthesis to
+obtain:
 #+begin_latex
 \begin{equation}
 \left(\frac{1}{r^{2}}-\frac{1}{(\mathbf{r}+R_{\star}\mathbf{\hat{r}})^{2}}\right) \simeq \frac{2R_{\star}}{r^{3}} \ \ ,
@@ -59,7 +60,7 @@ and thus:
 \end{equation}
 #+end_latex
 To first order in $R_{\star}/r$, the tidal forces resulting from differences
-in the gravitational field created by a body scale like $\propto r^{-3}$,
+in the gravitational field scale like $\propto r^{-3}$,
 meaning the tidal field drops /faster/ than the gravitational field $\propto
 r^{-2}$. For wide systems tides are usually negligible (although this
 depends also on the masses and radii). Viceversa, for very close
