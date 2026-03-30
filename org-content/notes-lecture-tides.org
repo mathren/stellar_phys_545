@@ -15,6 +15,10 @@ When considering the effect of a gravitational potential across an
 of the system), we need to consider *tides due to the difference in
 gravitational forces across an extended body*.
 
+*N.B.:* Tides are /not/ another fundamental force, but a manifestation of
+the (vectorial) difference between the gravitational field across
+points of an extended object.
+
 :Question:
 - *Q*: for which kind of binaries do we expect tides to be relevant?
 :end:
