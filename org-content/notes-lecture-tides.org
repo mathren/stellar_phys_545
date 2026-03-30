@@ -99,11 +99,12 @@ tidal disruption event to occur.
 The videos below shows a 3D GRMHD simulation of a tidal disruption
 event with the AREPO code by [[http://taehoryu.com/movies/][Prof. T. Ryu]]. The yellow dot marks the
 SMBH, and the blue-white-red colorbar shows the density of the stellar material.
-The first video zooms in around the pericenter passage, while the
-second shows the formation of an accretion disk:
+The first video zooms in around the pericenter passage:
 
 #+HTML: <iframe width="600" height="400" src="https://www.youtube.com/embed/MrgSBM9gyOc?si=WXhuJB5t6GlAsoNM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 # https://www.youtube.com/embed/MrgSBM9gyOc?si=WXhuJB5t6GlAsoNM
+
+This second video shows the formation of an accretion disk with a wind producing ejecta:
 
 #+HTML: <iframe width="600" height="400" src="https://www.youtube.com/embed/BerBVHa42Fo?si=gAcJFoqKHcnzH3bE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 # https://www.youtube.com/embed/BerBVHa42Fo?si=gAcJFoqKHcnzH3bE
