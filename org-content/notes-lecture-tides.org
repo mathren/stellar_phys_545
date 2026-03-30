@@ -178,10 +178,10 @@ only for circular binaries! In the case of an eccentric binary, the
 bulge may not be able to follow the change in equipotential surfaces
 along the orbital period. Therefore, the equilibrium condition (which
 minimizes the orbital energy of the system) is both:
-1. circularization of the orbit ($e=0$)
-2. synchronization of rotation and orbital revolution ($\omega_{\rm surf}=\omega_{\rm orb}$)
+1. synchronization of rotation and orbital revolution ($\omega_{\rm surf}=\omega_{\rm orb}$)
+2. circularization of the orbit ($e=0$)
 
-If an binary fulfills condition 2. with $e\ne0$, we talk about
+If an binary fulfills condition 1. with $e\ne0$, we talk about
 *pseudo-synchronization*, while both 1. and 2. correspond to a fully
 synchronized orbit.
 
