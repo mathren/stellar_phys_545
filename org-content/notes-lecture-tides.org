@@ -268,7 +268,9 @@ the period below which all binaries are consistent with $e\approx0$) mildly
 depending on the age of the cluster, see for example [[https://ui.adsabs.harvard.edu/abs/2005ApJ...620..970M/abstract][Meibom & Mathieu
 2005]].
 
-* Example of application: the spin of the second born BH
+* Examples of applications/implications
+
+** BH spins misteries
 
 Current models of angular momentum transport in stars invoke
 turbulence in convective regions and magnetic torques in radiative
@@ -289,3 +291,20 @@ by tides ([[https://ui.adsabs.harvard.edu/abs/2020A%26A...635A..97B/abstract][Ba
 stars (if the star has an envelope, it would be too big to be close
 enough to the first born BH), which should also produce copious
 amounts of X-rays ([[https://ui.adsabs.harvard.edu/abs/2026ApJ..1000....2S/abstract][Sen et al. 2026]]).
+
+** Tidal heating
+For a binary with a significant eccentricity $e$, the tidal field
+$\mathbf{T}\equiv\mathbf{T}(\nu)$ will depend on the binary phase $\nu$, since
+it depends on the instantaneous $R_{\star}/r$ with:
+
+#+begin_latex
+\begin{equation}
+r = \frac{a(1-e^{2})}{1+e\cos(\nu)} \ \ ,
+\end{equation}
+#+end_latex
+
+Therefore, tides will act as a periodic pump injecting energy in the
+star (or planet!) through the work they do on the gas (moving around
+the bulge). This *tidal heating* can be an important factor in
+explaining observed phenomenology of exoplanet atmospheres on
+eccentric orbits.
