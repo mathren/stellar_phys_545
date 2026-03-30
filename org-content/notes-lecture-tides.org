@@ -108,6 +108,12 @@ second shows the formation of an accretion disk:
 #+HTML: <iframe width="600" height="400" src="https://www.youtube.com/embed/BerBVHa42Fo?si=gAcJFoqKHcnzH3bE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 # https://www.youtube.com/embed/BerBVHa42Fo?si=gAcJFoqKHcnzH3bE
 
+TDEs appear as blue transients in the optical (and they can be
+distinguished from a core-collapse SN by their color evolution
+remaining bluer because of the hot accretion disk formed after the
+tidal disruption), and are one of the few ways we have to probe SMBH
+otherwise silent.
+
 * Tides as a perturbation
 Let's now consider the regime $r\gg r_{\rm TD} (\gg R_{\star})$, in which case (cf. Eq.
 \ref{eq:tidal_dis_radius}), the tidal field $\mathbf{T}$ is a small
@@ -150,9 +156,9 @@ dissipated/? The dissipation rate determines the coupling between the
 structure of star $m$ and the orbit, and thus the (poorly known) rate
 at which the system will recover equilibrium.
 
-For a circular binary, every half-period the situation is identical by
-symmetry, so we can deduce the dominant time-frequency for the effects
-of tides:
+For a circular binary with equal mass-ratio, every half-period the
+situation is identical by symmetry, so we can deduce the dominant
+time-frequency for the effects of tides:
 #+begin_latex
 \begin{equation}\label{eq:tides_freq}
 \omega_{\rm tides}\simeq 2(\omega_{\rm surf}-\omega_{\rm orb}) \ll \tau_{\rm ff}^{-1} \ \ ,
