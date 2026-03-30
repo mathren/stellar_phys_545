@@ -191,9 +191,8 @@ rotation rate of $m$, we expect tides to couple orbital energy and
 angular momentum with the stellar structure (formation and torquing of
 the bulge).
 
-Since the orbital angular momentum greatly exceed the stellar spins,
-$J_{\rm orb} \gg J_{\rm spin}$ (think that the orbital separation is a much
-larger lever arm than the stellar radii!), we should expect that
+Since the moment of inertia of the orbit greatly exceed the one of
+star $m$, $I_{\rm orb} \gg I_{\rm spin} \Leftrightarrow r \gg R_{\star}$ , we should expect that
 changing the angular momentum of the stars is easier than changing the
 orbit, that is, we expect *pseudo-synchronization* of the rotation with
 the orbit before the orbit can *circularize*.
