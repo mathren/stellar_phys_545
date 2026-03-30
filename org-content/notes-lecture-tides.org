@@ -241,7 +241,8 @@ Modeling this coupling requires in general considering
 out-of-equilibrium stellar structure, wave dissipation, and is an
 active area of research. So how do we know that tides matter?
 Although we cannot directly see the interior structure of stars
-possibly affected by tides, we can see binary orbits!
+possibly affected by tides, we can see binary orbits and stellar
+rotation rates!
 
 #+CAPTION: Eccentricity vs. orbital period (on a logarithmic scale) for binaries in the open cluster M35 from [[https://ui.adsabs.harvard.edu/abs/2015AJ....150...10L/abstract][Leiner et al. 2015]].
 #+ATTR_HTML: :width 50%
