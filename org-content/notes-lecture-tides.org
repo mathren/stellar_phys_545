@@ -269,3 +269,23 @@ depending on the age of the cluster, see for example [[https://ui.adsabs.harvard
 2005]].
 
 * Example of application: the spin of the second born BH
+
+Current models of angular momentum transport in stars invoke
+turbulence in convective regions and magnetic torques in radiative
+regions (see, e.g., [[https://ui.adsabs.harvard.edu/abs/1999A%26A...349..189S/abstract][Spruit 1999]], [[https://ui.adsabs.harvard.edu/abs/2002A%26A...381..923S/abstract][Spruit 2002]], [[https://ui.adsabs.harvard.edu/abs/2005ApJ...626..350H/abstract][Heger et al. 2005]],
+[[https://ui.adsabs.harvard.edu/abs/2019MNRAS.485.3661F/abstract][Fuller et al. 2019]]), resulting in efficient angular momentum
+extraction from a contracting stellar core. The angular momentum is
+transferred to the stellar envelope and consequently lost to either
+stellar winds (or binary interactions).
+
+A consequence of strong angular momentum transport is the prediction
+that BH should be born with negligible spin [[https://ui.adsabs.harvard.edu/abs/2019ApJ...881L...1F/abstract][Fuller & Ma 2019]]. However,
+both in X-ray binaries ($a\gtrsim 0.6$ is common) and gravitational
+wave populations ($\Chi_{\rm eff}\gtrsim 0.1$) we detect spinning BHs.
+
+A currently debated solution to this apparent paradox is that maybe
+the "second" BH involved in a gravitational wave merger can be spun up
+by tides ([[https://ui.adsabs.harvard.edu/abs/2020A%26A...635A..97B/abstract][Bavera et al. 2020]]): this requires very short period BH+WR
+stars (if the star has an envelope, it would be too big to be close
+enough to the first born BH), which should also produce copious
+amounts of X-rays ([[https://ui.adsabs.harvard.edu/abs/2026ApJ..1000....2S/abstract][Sen et al. 2026]]).
