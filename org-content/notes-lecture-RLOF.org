@@ -16,8 +16,16 @@ et al. 2023]]). Historically, this fact has been leveraged to design
 empirical /dynamical mass measurement/ which rely only on Kepler's laws
 to obtain masses.
 
-However, often enough, stars in binaries are so close to each other
+Any exoplanet orbiting a host star is also a binary system from the
+dynamical point of view, and several effects occurring in stellar
+binaries (e.g., irradiation from a companion, tides, secular evolution
+of the orbit, etc.) apply similarly to star-planets systems, albeit
+typically with much more unequal mass-ratios between the orbiting
+bodies.
+
+Often enough, stars in binaries are so close to each other
 than as they evolve, they will "touch" each other and exchange mass.
+
 For O-type stars, we expect between 50-70% to experience some form of
 binary mass transfer before their final collapse (regardless of their
 metallicity at least down to SMC values, [[https://ui.adsabs.harvard.edu/abs/2025NatAs...9.1337S/abstract][Sana et al. 2025]]), implying
@@ -92,7 +100,6 @@ tidal term due to the finite size of the stars in the potential (this
 again works because most of the mass of the star is in it's core,
 saving the Roche model, and the tides are a relatively small
 perturbation on top of this):
-
 
 #+CAPTION: Visualization of the Roche potential (grid) and the equipotential surfaces intersecting the orbital plane for a binary with q=M_{2}/M_{1}=0.5. The three Lagrangian points L_{1}, L_{2}, and L_{3} are marked. From [[https://en.wikipedia.org/wiki/Roche_lobe#/media/File:RochePotential.jpg][wikipedia]].
 #+ATTR_HTML: :width 100%
