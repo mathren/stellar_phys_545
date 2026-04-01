@@ -98,10 +98,10 @@ perturbation on top of this):
 #+ATTR_HTML: :width 100%
 [[./images/RochePotential.jpeg]]
 
-On the line connecting the two binaries, this potential has three
-zeros, meaning points where there is no net
-(gravitational+centrifugal) force. All three are /saddle points/ and
-they are called Lagrangian points:
+On the line connecting the two binaries, $d\Phi/dr$ has three zeros,
+meaning points where there is no net (gravitational+centrifugal)
+force. All three are /saddle points/ and they are called Lagrangian
+points:
 - L_{1} sits in between the two stars, and it is the point where the
   gravitational pull from each star cancel each other
 - L_{2} is the point behind star 2 (many telescopes, including for
