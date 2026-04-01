@@ -123,10 +123,7 @@ centrifugal forces). The two don't coincide in general.
 
 The equipotential shapes are close to spheres for r_{1} and/or r_{2} \ll
 r_{L_{1}}, then they get progressively elongated along the axis connecting
-the stars, and flattened by the centrifugal potential. Therefore, most
-of the mass of the stars is still distributed quite spherically, and
-only the outer layers with lower density deviate significantly from
-this shape.
+the stars, and flattened by the centrifugal potential.
 
 For short period binaries, P<10 days (though the exact value depends
 on many things, especially mass M_{1}, mass ratio q=M_{2}/M_{1}, metallicity,
@@ -147,11 +144,6 @@ these surfaces: equipotential, isobaric and iso-density surfaces coincide!
 Therefore, for a tidally synchronized binary the stellar gas will be
 shaped like equipotential surfaces in the Roche potential, producing
 non-axisymmetric, tear-drop-shaped stars.
-
-For larger periods, tidal synchronization may not occur (tides are a
-steep function of R/a with R stellar radius and a orbital separation),
-and in that case the rotational bulge may lag behind the orbit, adding
-an extra deformation.
 
 On top of the necessary hypothesis (e=0, M_{1 }\ge M_{2} \gg m, point masses
 and in co-rotation) to derive the Roche approximation, it is worth
