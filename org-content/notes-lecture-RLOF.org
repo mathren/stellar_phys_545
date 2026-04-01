@@ -142,7 +142,7 @@ $\mathbf{v}=0$, and the momentum conservation (Eq. \ref{eq:momentum}) reduces to
 #+end_latex
 that is equipotential surfaces are also isobaric surfaces (\nabla\Phi = 0 \Leftrightarrow \nabla
 P=0), and since \rho \sim dP/d\Phi has to remain finite, it is also constant on
-these surfaces!
+these surfaces: equipotential, isobaric and iso-density surfaces coincide!
 
 Therefore, for a tidally synchronized binary the stellar gas will be
 shaped like equipotential surfaces in the Roche potential, producing
