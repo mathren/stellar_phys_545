@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 2026-04-01 Wed 10:00 -->
+<!-- 2026-04-01 Wed 10:23 -->
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>ASTR545 - Mass transfer</title>
@@ -181,8 +181,8 @@ stars in the system, starting with the Roche model of the potential.
 </p>
 
 <div class="org-drawer-container">
-  <button class="org-drawer-toggle" onclick="toggleDrawer('drawer-Question-7302')">Question ▼</button>
-  <div id="drawer-Question-7302" class="org-drawer-content" style="display: none;"><ul class="org-ul">
+  <button class="org-drawer-toggle" onclick="toggleDrawer('drawer-Question-4932')">Question ▼</button>
+  <div id="drawer-Question-4932" class="org-drawer-content" style="display: none;"><ul class="org-ul">
 <li><b>Q</b>: What happens to the stellar radius as a typical star evolves?</li>
 <li><b>Q</b>: Which stars evolve faster: higher or lower mass?</li>
 </ul>
@@ -236,7 +236,7 @@ at frequency n=2&pi;/P. Since it is a rotating frame, it is non-inertial,
 but the gravitational potential of the two stars can be written as:
 </p>
 
-<div class="latex" id="org2011e96">
+<div class="latex" id="org7494ddd">
 \begin{equation}
 \Phi(\mathbf{r}) = -\frac{GM_{1}}{\lvert \mathbf{r}-\mathbf{r}_{1}\rvert}-\frac{GM_{2}}{\lvert \mathbf{r}-\mathbf{r}_{2}\rvert}-\frac{1}{2}(\mathbf{n}\times\mathbf{r})^{2} \ \ ,
 \end{equation}
@@ -257,7 +257,7 @@ depends on the velocity of the test mass m: the Coriolis force &prop;
 2n&times; v. Per unit volume the momentum conservation is thus
 </p>
 
-<div class="latex" id="org70dd4eb">
+<div class="latex" id="orga1ef91b">
 \begin{equation}\label{eq:momentum}
 \partial_{t} v + (v\cdot\nabla )v = -\nabla \Phi-\frac{\nabla P}{\rho}-2\mathbf{n}\times \mathbf{v} \ \ .
 \end{equation}
@@ -273,7 +273,7 @@ perturbation on top of this):
 </p>
 
 
-<figure id="org3418317">
+<figure id="org289ea97">
 <img src="./images/RochePotential.jpeg" alt="RochePotential.jpeg" width="100%">
 
 <figcaption><span class="figure-number">Figure 1: </span>Visualization of the Roche potential (grid) and the equipotential surfaces intersecting the orbital plane for a binary with q=M<sub>2</sub>/M<sub>1</sub>=0.5. The three Lagrangian points L<sub>1</sub>, L<sub>2</sub>, and L<sub>3</sub> are marked. From <a href="https://en.wikipedia.org/wiki/Roche_lobe#/media/File:RochePotential.jpg">wikipedia</a>.</figcaption>
@@ -316,7 +316,7 @@ case, in the co-rotating frame, the gas of both stars is still,
 \(\mathbf{v}=0\), and the momentum conservation (Eq. \ref{eq:momentum}) reduces to
 </p>
 
-<div class="latex" id="org8ed9a75">
+<div class="latex" id="org9386b67">
 \begin{equation}
 - \rho \nabla\Phi = \nabla P \ \ ,
 \end{equation}
@@ -346,7 +346,7 @@ only "see" the inner binary as a point mass with total mass M<sub>1</sub>+M<sub>
 
 
 
-<figure id="orgcc494f9">
+<figure id="org0965820">
 <img src="./images/potential_Roche.png" alt="potential_Roche.png" width="100%">
 
 <figcaption><span class="figure-number">Figure 2: </span>cross section of the potential on a plane perpendicular to the orbit and passing through the three Lagrangian points. The dotted line outside of L<sub>2</sub> mark where co-rotation is not achievable and the Roche approximations don't hold anymore. The dark gray binary with both stars within their Roche lobes is a <i>detached</i> binary, the intermediate gray one, where M<sub>1</sub> fills its Roche lobe is a <i>semidetached</i> binary, and the lightest gray where both stars fill their lobes is a contact binary. This is Figure 6.1 of Onno Pols' lecture notes.</figcaption>
@@ -383,7 +383,7 @@ parameters (e.g., <a href="https:/ui.adsabs.harvard.edu/abs/1971ARA%26A...9..183
 continuous across a large range of mass ratios:
 </p>
 
-<div class="latex" id="org5d675ba">
+<div class="latex" id="orga59be47">
 \begin{equation}
 R_{RL,i}= a \frac{0.49 q_{i}^{2/3}}{0.6q_{i}^{2/3}+\ln(1+q_{i}^{2/3})} \ \ ,
 \end{equation}
@@ -466,7 +466,7 @@ in the tightest (smaller separation a) binaries when the stars are
 still relatively small in radius.</li>
 <li>case B RLOF: the donor has a helium core (possibly inert and
 sustained by electron degeneracy or burning), typically this is a
-faster mass, although this may also depend on the metallicity and
+faster mass-transfer, although this may also depend on the metallicity and
 its impact on where on the HR diagram Helium ignites (see e.g.,
 <a href="https://ui.adsabs.harvard.edu/abs/2022A%26A...662A..56K/abstract">Klencki et al. 2022</a>). Since stars typically expand after they run
 out of hydrogen-rich fuel in the core, this mode of mass transfer
@@ -534,7 +534,7 @@ To study the evolution of the orbit, it is useful to consider the
 total orbital angular momentum of the binary:
 </p>
 
-<div class="latex" id="org4269434">
+<div class="latex" id="org3223c9a">
 \begin{equation}
 J_\mathrm{tot} = J_\mathrm{orb}+J_{1}+J_{2} \ \ ,
 \end{equation}
@@ -545,7 +545,7 @@ with J<sub>i</sub> = I<sub>i</sub> &omega;<sub>i</sub> spin angular momentum of 
 orbital angular momentum. A simple order of magnitude calculation can
 show that
 </p>
-<div class="latex" id="org4f6d4b0">
+<div class="latex" id="org67e88c7">
 \begin{equation}\label{eq:J_ordering}
 J_{i} \simeq M_{i} R_{i}^{2} \omega_{i} \ll J_\mathrm{orb} \simeq \frac{M_{1}M_{2}}{M_{1}+M_{2}} a^{2} n \ \ ,
 \end{equation}
@@ -569,7 +569,7 @@ compared to the orbital angular momentum</i>.
 For the orbital term, using Kepler's 3<sup>rd</sup> law and a<sub>1</sub>M<sub>1</sub>
 = a<sub>2</sub>M<sub>2</sub> = a M<sub>1</sub>M<sub>2</sub>/(M<sub>1</sub>+M<sub>2</sub>) we can write:
 </p>
-<div class="latex" id="org80cb3f2">
+<div class="latex" id="org89f09b4">
 \begin{equation}
 J_\mathrm{orb} = M_{1} a_{1}^{2} v_{1} + M_{2} a_{2}^{2} v_{2} = \sqrt{\frac{GM_{1}^{2}M_{2}^{2} a(1-e^{2})}{M_{1}+M_{2}}} \ \ .
 \end{equation}
@@ -578,7 +578,7 @@ J_\mathrm{orb} = M_{1} a_{1}^{2} v_{1} + M_{2} a_{2}^{2} v_{2} = \sqrt{\frac{GM_
 <p>
 and thus taking a logarithmic derivative obtain:
 </p>
-<div class="latex" id="org3c04339">
+<div class="latex" id="orgfb6d22d">
 \begin{equation}\label{eq:am_balance}
 \frac{\dot{a}}{a} = 2 \frac{\dot{J_\mathrm{orb}}}{J_\mathrm{orb}}-2\frac{\dot{M_{1}}}{M_{1}}-2\frac{\dot{M_{2}}}{M_{2}}+\frac{\dot{M_{1}}+\dot{M_{2}}}{M_{1}+M_{2}} +2\frac{e\dot{e}}{1-e^{2}} \ \ ,
 \end{equation}
@@ -656,7 +656,7 @@ The winds have velocity v<sub>wind,i </sub>&ge; v<sub>esc,i</sub> &sim;(2GM<sub>
 star, while the orbital velocity of the binary is set by Kepler's 3<sup>rd</sup>
 law, and each individual star has
 </p>
-<div class="latex" id="org992a35a">
+<div class="latex" id="org1739d18">
 \begin{equation}
 v_{1} = \frac{M_{2}}{M_{1}+M_{2}}\sqrt{\frac{G(M_{1}+M_{2})}{a}} \ \ ,\\
 v_{2} = \frac{M_{1}}{M_{1}+M_{2}}\sqrt{\frac{G(M_{1}+M_{2})}{a}} \ \ ,\\
@@ -672,7 +672,7 @@ come from momentum balance in the center of mass frame of the system.
 <p>
 Thus, taking the ratio, we see that:
 </p>
-<div class="latex" id="orge4be210">
+<div class="latex" id="org94701f9">
 \begin{equation}
 \frac{v_\mathrm{wind, 1}}{v_\mathrm{orb,1}} \geq \frac{v_\mathrm{esc, 1}}{v_\mathrm{orb, 1}} = \sqrt{2\frac{M_{1}(M_{1}+M_{2})}{M_{2}^{2}}\frac{a}{R_{1}}} \gg 1 \ \ , \\
 \frac{v_\mathrm{wind, 2}}{v_\mathrm{orb,2}} \geq \frac{v_\mathrm{esc, 2}}{v_\mathrm{orb, 2}} = \sqrt{2\frac{M_{2}(M_{1}+M_{2})}{M_{1}^{2}}\frac{a}{R_{2}}} \gg 1 \ \ , \\
@@ -687,7 +687,7 @@ In this case, the material lost to winds will carry the specific
 angular momentum (per unit mass) of the wind-losing star moving on its
 orbit:
 </p>
-<div class="latex" id="org434bdd2">
+<div class="latex" id="orgc9d5f6b">
 \begin{equation}
 dJ_\mathrm{orb} = \frac{J_\mathrm{orb, 1}}{M_{1}}dM_{1} + \frac{J_\mathrm{orb, 2}}{M_{2}}dM_{2} \equiv \frac{M_{1} J_\mathrm{orb}}{M_{2} (M_{1}+M_{2})}dM_{1} + \frac{M_{2} J_\mathrm{orb}}{M_{1}(M_{1}+M_{2})}dM_{2} \ \ ,
 \end{equation}
@@ -698,7 +698,7 @@ where in the last we used J<sub>orb, i</sub> M<sub>i</sub> = J<sub>orb</sub> M<s
 momentum conservation in the center of mass frame) and dM<sub>i</sub>&lt;0 in both
 cases. The Eq. \ref{eq:am_balance} reduces to
 </p>
-<div class="latex" id="org1488c8e">
+<div class="latex" id="orgeed350c">
 \begin{equation}
 \frac{\dot{a}}{a} = - \frac{\dot{M_{1}}+\dot{M_{2}}}{M_{1}+M_{2}} \ \ ,
 \end{equation}
@@ -724,7 +724,7 @@ as "Jeans mode".
 Another case that allows for analytic consideration is the case of
 <i>conservative</i> mass transfer, that is
 </p>
-<div class="latex" id="org46f6727">
+<div class="latex" id="org2b2361c">
 \begin{equation}
 \dot{M_{1}} = - \dot{M_{2}} \ \ \mathrm{and}\ \  \dot{J_\mathrm{orb}}=0 \ \,
 \end{equation}
@@ -739,7 +739,7 @@ lost.
 <p>
 In this case Eq. \ref{eq:am_balance} becomes:
 </p>
-<div class="latex" id="orgf545dd0">
+<div class="latex" id="org303e60e">
 \begin{equation}
 \frac{\dot{a}}{a} = 2\left(\frac{M_{1}}{M_{2}}-1\right)\frac{\dot{M_{1}}}{M_{1}} \ \ ,
 \end{equation}
@@ -773,7 +773,7 @@ by the poorly known parameter &beta;<sub>ROLF</sub>) and angular momentum losses
 (represented by &gamma;<sub>RLOF</sub>) we can re-write Eq. \ref{eq:am_balance} for a
 circular system (e=0) as:
 </p>
-<div class="latex" id="org46fe019">
+<div class="latex" id="orgc7f739e">
 \begin{equation}
 \frac{\dot{a}}{a} =-2\frac{\dot{M_{1}}}{M_{1}}\left[1-\beta_{RLOF}\frac{M_{1}}{M_{2}}-(1-\beta_{RLOF})\left(\gamma_{RLOF}+\frac{1}{2}\right)\frac{M_{1}}{M_{1}+M_{2}}\right] \ \ ,
 \end{equation}
@@ -793,6 +793,144 @@ around the initially less massive star (as opposed to direct impact of
 the stream of matter with the star), and possibly of a circumbinary
 disk (see for example <a href="https://ui.adsabs.harvard.edu/abs/1975ApJ...198..383L/abstract">Lubow &amp; Shu 1975</a>).
 </p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org387e6d4" class="outline-2">
+<h2 id="org387e6d4"><a href="#org387e6d4">Mass transfer rate calculation</a></h2>
+<div class="outline-text-2" id="text-org387e6d4">
+<p>
+Say we have a binary that is starting to transfer mass through the L<sub>1</sub>
+Lagrangian point: how can we decide the mass transfer <i>rate</i> per unit
+time? This is a crucial question, since the response of both stars to
+mass transfer will depend on the \(dM_{i}/dt\) of both stars (or in other
+words on how the mass-change timescale \(M_{i}/\dot{M_{i}}\) compares to the
+<i>local</i> timescales of the stellar surfaces), and thus whether it remains
+dynamically stable or devolves into a common envelope!
+</p>
+
+<p>
+The classic approach is to <i>postulate</i> that the mass transfer rate is a
+function of the amount of overflow in radius. If the donor is star 1:
+</p>
+
+<div class="latex" id="orgf6a6169">
+\begin{equation}
+\dot{M_{1}} \equiv \dot{M_{1}}(\Delta R_{1}/R_{RL,1}) \equiv \dot{M_{1}}(\frac{R_{1}-R_{RL,1}}{R_{RL,1}}) \ \ .
+\end{equation}
+
+</div>
+
+<p>
+By dimensional analysis we can infer that the mass loss rate by the
+donor is related to the gas density and velocity at L<sub>1</sub> (the point
+where it becomes gravitationally unbound) times the cross section of
+the nozzle of gas across the plane perpendicular to the axis
+connecting the two stars and going through L<sub>1</sub>
+</p>
+
+<div class="latex" id="orgc630127">
+\begin{equation}
+\dot{M_{1}} = \rho_{L_{1}} v_{L_{1}} A_{L_{1}} \ \ .
+\end{equation}
+
+</div>
+
+<p>
+<b>N.B.:</b> this is reminiscent of the time-dependent mass-conservation term
+we obtained during the <a href="./notes-lecture-HSE.html">lecture on hydrostatic equilibrium</a>, not by
+accident!
+</p>
+
+<p>
+Each term needs to be estimate based on thermo- and hydro-dynamical
+considerations on the flow of the gas, but typically v<sub>L<sub>1</sub></sub>&ge;
+v<sub>esc,1</sub>&cong; c<sub>sound,1</sub> because the gas has to leave the gravitational
+potential well of star 1 and the last step is a consequence of the
+Virial theorem, &rho;<sub>L<sub>1</sub></sub> can be estimated using an EOS and mass
+continuity from the stellar surface to L<sub>1</sub>, and to estimate A<sub>L<sub>1</sub></sub> we
+consider that the Roche potential has a saddle point in L<sub>1</sub>, therefore
+we can do a Taylor approximation along the y-direction the plane of
+interest and get:
+</p>
+
+<div class="latex" id="orga8eb6c3">
+\begin{equation}
+\Delta \Phi \simeq \frac{\partial \Phi}{\partial y}\rvert_{L_{1}} y + \frac{1}{2}\frac{\partial^{2} \Phi}{\partial y^{2}}\rvert_{L_{1}}y^{2} \ \ ,
+\end{equation}
+
+</div>
+<p>
+where &part;<sub>x</sub>&Phi;(L<sub>1</sub>)=0 along the line connecting the stars, and using the
+Roche potential plus Kepler's 3<sup>rd</sup> law this gives:
+</p>
+<div class="latex" id="org9e4aeaa">
+\begin{equation}
+\Delta \Phi \simeq \frac{1}{2}{n^{2}}y^{2} \ \ ,
+\end{equation}
+
+</div>
+<p>
+with n= 2&pi;/P the orbital frequency. A<sub>L<sub>1</sub></sub>&cong; y<sup>2</sup> for y determined
+by how much outside of its Roche lobe the donor star is. This can be
+related by looking at a point far from L<sub>1</sub>'s direction where the
+gravity of the companion does not distort the equipotential surfaces
+too much, resulting in &Phi; &sim; GM<sub>1</sub>/(R<sub>1</sub>), and thus:
+</p>
+<div class="latex" id="org8b96c53">
+\begin{equation}
+\Delta \Phi \simeq \frac{GM_{1}}{R_{1}}\frac{\Delta R}{R} \ \ ,
+\end{equation}
+
+</div>
+<p>
+and putting things together:
+</p>
+<div class="latex" id="org92f5fcb">
+\begin{equation}
+A_{L_{1}} \simeq y^{2}(\Delta R) = \frac{2GM_{1}}{n^{2}R_{1}}\frac{\Delta R}{R_{1}} \ \ ,
+\end{equation}
+
+</div>
+
+<p>
+More detailed calculations use the Bernoulli principle applied to the
+gas streaming from the outer layers of the donor star to the L<sub>1</sub> point,
+and differ in whether the inner point is in the stellar atmosphere
+(which is optically thin, likely non-isothermal) or inside the
+photosphere (optically thick), see for instance <a href="https://ui.adsabs.harvard.edu/abs/1988A%26A...202...93R/abstract">Ritter 1988</a>, <a href="https://ui.adsabs.harvard.edu/abs/1990A%26A...236..385K/abstract">Kolb &amp;
+Ritter 1990</a>, <a href="https://ui.adsabs.harvard.edu/abs/2021A%26A...650A.107M/abstract">Marchant et al. 2021</a>, <a href="https://ui.adsabs.harvard.edu/abs/2023MNRAS.524..471C/abstract">Cehula &amp; Pejcha 2023</a>, <a href="https://ui.adsabs.harvard.edu/abs/2024ApJ...971...64I/abstract">Ivanova et
+al. 2024</a>.
+</p>
+
+<p>
+Once the mass loss rate from the donor is determined, several
+processes occurring during the travel of the gas in between the stars
+(does it form a disk or not? does the gas have time to cool and change
+its entropy?) and when it reaches the accretor (what is the shear and
+entropy contrast with the accretor's outer layers? Is the composition
+the same?) will determine the mass accretion rate of the accretor, and
+enter in the parameters &beta;<sub>RLOF</sub>, and &gamma;<sub>RLOF</sub> we introduced above while
+determining the orbital evolution in the general case.
+</p>
+
+<p>
+Note that a lot of the physics at play here may happen while the stars
+are <i>not</i> in gravothermal equilibrium, something that is neglected in
+<i>rapid</i> binary population synthesis calculations based on pre-computed
+single star models (where the single stars were always in gravothermal
+equilibrium themselves), cf. <a href="./notes-lecture-codes.html#org59b2181">notes on stellar evolution codes</a>.
+</p>
+
+
+<div class="org-drawer-container">
+  <button class="org-drawer-toggle" onclick="toggleDrawer('drawer-Question-7331')">Question ▼</button>
+  <div id="drawer-Question-7331" class="org-drawer-content" style="display: none;"><ul class="org-ul">
+<li>if there is matter flowing through L<sub>1</sub>, can it be convective at that
+location (<b>Hint</b>: think of what force drives the instability)?</li>
+</ul>
+</div>
 </div>
 </div>
 </div>
@@ -864,144 +1002,6 @@ takes Hydrogen of the accretor that would <i>not</i> have burned had the star
 been single, and mixes it in the burning region itself, elongating the
 lifetime of the star.
 </p>
-</div>
-</div>
-</div>
-
-<div id="outline-container-org387e6d4" class="outline-2">
-<h2 id="org387e6d4"><a href="#org387e6d4">Mass transfer rate calculation</a></h2>
-<div class="outline-text-2" id="text-org387e6d4">
-<p>
-Say we have a binary that is starting to transfer mass through the L<sub>1</sub>
-Lagrangian point: how can we decide the mass transfer <i>rate</i> per unit
-time? This is a crucial question, since the response of both stars to
-mass transfer will depend on the \(dM_{i}/dt\) of both stars (or in other
-words on how the mass-change timescale \(M_{i}/\dot{M_{i}}\) compares to the
-<i>local</i> timescales of the stellar surfaces), and thus whether it remains
-dynamically stable or devolves into a common envelope!
-</p>
-
-<p>
-The classic approach is to <i>postulate</i> that the mass transfer rate is a
-function of the amount of overflow in radius. If the donor is star 1:
-</p>
-
-<div class="latex" id="org7edb953">
-\begin{equation}
-\dot{M_{1}} \equiv \dot{M_{1}}(\Delta R_{1}/R_{RL,1}) \equiv \dot{M_{1}}(\frac{R_{1}-R_{RL,1}}{R_{RL,1}}) \ \ .
-\end{equation}
-
-</div>
-
-<p>
-By dimensional analysis we can infer that the mass loss rate by the
-donor is related to the gas density and velocity at L<sub>1</sub> (the point
-where it becomes gravitationally unbound) times the cross section of
-the nozzle of gas across the plane perpendicular to the axis
-connecting the two stars and going through L<sub>1</sub>
-</p>
-
-<div class="latex" id="org6de544b">
-\begin{equation}
-\dot{M_{1}} = \rho_{L_{1}} v_{L_{1}} A_{L_{1}} \ \ .
-\end{equation}
-
-</div>
-
-<p>
-<b>N.B.:</b> this is reminiscent of the time-dependent mass-conservation term
-we obtained during the <a href="./notes-lecture-HSE.html">lecture on hydrostatic equilibrium</a>, not by
-accident!
-</p>
-
-<p>
-Each term needs to be estimate based on thermo- and hydro-dynamical
-considerations on the flow of the gas, but typically v<sub>L<sub>1</sub></sub>&ge;
-v<sub>esc,1</sub>&cong; c<sub>sound,1</sub> because the gas has to leave the gravitational
-potential well of star 1 and the last step is a consequence of the
-Virial theorem, &rho;<sub>L<sub>1</sub></sub> can be estimated using an EOS and mass
-continuity from the stellar surface to L<sub>1</sub>, and to estimate A<sub>L<sub>1</sub></sub> we
-consider that the Roche potential has a saddle point in L<sub>1</sub>, therefore
-we can do a Taylor approximation along the y-direction the plane of
-interest and get:
-</p>
-
-<div class="latex" id="org883c4cd">
-\begin{equation}
-\Delta \Phi \simeq \frac{\partial \Phi}{\partial y}\rvert_{L_{1}} y + \frac{1}{2}\frac{\partial^{2} \Phi}{\partial y^{2}}\rvert_{L_{1}}y^{2} \ \ ,
-\end{equation}
-
-</div>
-<p>
-where &part;<sub>x</sub>&Phi;(L<sub>1</sub>)=&part;<sub>y</sub>&Phi;(L<sub>1</sub>)0, and using the Roche potential plus Kepler's 3<sup>rd</sup>
-law this gives:
-</p>
-<div class="latex" id="orgcd17896">
-\begin{equation}
-\Delta \Phi \simeq \frac{1}{2}{n^{2}}y^{2} \ \ ,
-\end{equation}
-
-</div>
-<p>
-with n= 2&pi;/P the orbital frequency. A<sub>L<sub>1</sub></sub>&cong; y<sup>2</sup> for y determined
-by how much outside of its Roche lobe the donor star is. This can be
-related by looking at a point far from L<sub>1</sub>'s direction where the
-gravity of the companion does not distort the equipotential surfaces
-too much, resulting in &Phi; &sim; GM<sub>1</sub>/(R<sub>1</sub>), and thus:
-</p>
-<div class="latex" id="orgf621d5a">
-\begin{equation}
-\Delta \Phi \simeq \frac{GM_{1}}{R_{1}}\frac{\Delta R}{R} \ \ ,
-\end{equation}
-
-</div>
-<p>
-and putting things together:
-</p>
-<div class="latex" id="orgf3b74eb">
-\begin{equation}
-A_{L_{1}} \simeq y^{2}(\Delta R) = \frac{2GM_{1}}{n^{2}R_{1}}\frac{\Delta R}{R_{1}} \ \ ,
-\end{equation}
-
-</div>
-
-<p>
-More detailed calculations use the Bernoulli principle applied to the
-gas streaming from the outer layers of the donor star to the L<sub>1</sub> point,
-and differ in whether the inner point is in the stellar atmosphere
-(which is optically thin, likely non-isothermal) or inside the
-photosphere (optically thick), see for instance <a href="https://ui.adsabs.harvard.edu/abs/1988A%26A...202...93R/abstract">Ritter 1988</a>, <a href="https://ui.adsabs.harvard.edu/abs/1990A%26A...236..385K/abstract">Kolb &amp;
-Ritter 1990</a>, <a href="https://ui.adsabs.harvard.edu/abs/2021A%26A...650A.107M/abstract">Marchant et al. 2021</a>, <a href="https://ui.adsabs.harvard.edu/abs/2023MNRAS.524..471C/abstract">Cehula &amp; Pejcha 2023</a>, <a href="https://ui.adsabs.harvard.edu/abs/2024ApJ...971...64I/abstract">Ivanova et
-al. 2024</a>.
-</p>
-
-<p>
-Once the mass loss rate from the donor is determined, several
-processes occurring during the travel of the gas in between the stars
-(does it form a disk or not? does the gas have time to cool and change
-its entropy?) and when it reaches the accretor (what is the shear and
-entropy contrast with the accretor's outer layers? Is the composition
-the same?) will determine the mass accretion rate of the accretor, and
-enter in the parameters &beta;<sub>RLOF</sub>, and &gamma;<sub>RLOF</sub> we introduced above while
-determining the orbital evolution in the general case.
-</p>
-
-<p>
-Note that a lot of the physics at play here may happen while the stars
-are <i>not</i> in gravothermal equilibrium, something that is neglected in
-<i>rapid</i> binary population synthesis calculations based on pre-computed
-single star models (where the single stars were always in gravothermal
-equilibrium themselves), cf. <a href="./notes-lecture-codes.html#org59b2181">notes on stellar evolution codes</a>.
-</p>
-
-
-<div class="org-drawer-container">
-  <button class="org-drawer-toggle" onclick="toggleDrawer('drawer-Question-4656')">Question ▼</button>
-  <div id="drawer-Question-4656" class="org-drawer-content" style="display: none;"><ul class="org-ul">
-<li>if there is matter flowing through L<sub>1</sub>, can it be convective at that
-location (<b>Hint</b>: think of what force drives the instability)?</li>
-</ul>
-</div>
 </div>
 </div>
 </div>

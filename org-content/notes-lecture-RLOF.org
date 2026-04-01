@@ -229,7 +229,7 @@ categories (defined by [[https://ui.adsabs.harvard.edu/abs/1967ZA.....66...58K/a
    still relatively small in radius.
  - case B RLOF: the donor has a helium core (possibly inert and
    sustained by electron degeneracy or burning), typically this is a
-   faster mass, although this may also depend on the metallicity and
+   faster mass-transfer, although this may also depend on the metallicity and
    its impact on where on the HR diagram Helium ignites (see e.g.,
    [[https://ui.adsabs.harvard.edu/abs/2022A%26A...662A..56K/abstract][Klencki et al. 2022]]). Since stars typically expand after they run
    out of hydrogen-rich fuel in the core, this mode of mass transfer
@@ -470,55 +470,6 @@ around the initially less massive star (as opposed to direct impact of
 the stream of matter with the star), and possibly of a circumbinary
 disk (see for example [[https://ui.adsabs.harvard.edu/abs/1975ApJ...198..383L/abstract][Lubow & Shu 1975]]).
 
-* Modifications to the structure of stars because of mass transfer
-
-#+HTML: <iframe width="600" height="400" src="https://www.youtube.com/embed/Zn1E23saY-A?si=w0m_yOw7DRnEqX7s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-The artist impression in the video above shows a /conservative/ (no
-spill over), dynamically stable mass transfer between a 20M_{\odot} and a
-15M_{\odot} star producing a direct impact of the L_{1} stream with the
-accretor. Although this is an artist impression (as you can tell from
-the fact that the stars are resolved), it illustrates several
-important modifications that will occur in /both/ stars as they go
-through mass transfer.
-
-** Donor: loss of the envelope, revealing the core
-The donor will lose (most of) its hydrogen rich envelope, becoming a
-low opacity, high temperature, small in radius, helium enriched star.
-This is something that only very massive stars may do if single (and
-how massive they need to be is a matter of debate because of wind
-uncertainties).
-
-This means that post-mass transfer, the donor star is the /exposed/ core
-of the star, which allows a unique opportunity to directly see (with
-photons!) the interior of a star.
-
-** Accretor: Spin up, pollution, rejuvenation
-
-The mass transferred comes with angular momentum and will easily spin
-up the accretor star, making it fast rotating up to the point where at
-the equator centrifugal force and radiation pressure balance the
-gravitational pull. This is what is invoked to explain Be stars in
-Be-X-ray binaries for example.
-
-Secondly, the matter from the donor may be chemically enriched by
-nuclear processes in /the donor's core/. For example, if the star
-transfers matter from the outermost layers of the core, it may be
-CNO-processed! This can change the chemical composition in the
-accretor structure, and thus its spectrum.
-
-Finally, for massive stars, there is a /rejuvenation/ effect. Since they
-burn through the CN-NO cycle, \varepsilon_{CNO}\prop T^{16} releases a lot of energy
-in a small hot-enough volume, leading to a steep temperature gradient
-and thus convection. As the mass of the accretor increases because of
-accretion itself, \langle T \rangle \propto M by the virial theorem means that the
-average (and central) temperature have to increase to sustain the
-increased mass. This leads to a steepening of the temperature gradient
-in the core, and drives further /convection/. This "extra" convection
-takes Hydrogen of the accretor that would /not/ have burned had the star
-been single, and mixes it in the burning region itself, elongating the
-lifetime of the star.
-
 * Mass transfer rate calculation
 
 Say we have a binary that is starting to transfer mass through the L_{1}
@@ -569,8 +520,8 @@ interest and get:
 \Delta \Phi \simeq \frac{\partial \Phi}{\partial y}\rvert_{L_{1}} y + \frac{1}{2}\frac{\partial^{2} \Phi}{\partial y^{2}}\rvert_{L_{1}}y^{2} \ \ ,
 \end{equation}
 #+end_latex
-where \partial_{x}\Phi(L_{1})=\partial_{y}\Phi(L_{1})0, and using the Roche potential plus Kepler's 3^{rd}
-law this gives:
+where \partial_{x}\Phi(L_{1})=0 along the line connecting the stars, and using the
+Roche potential plus Kepler's 3^{rd} law this gives:
 #+begin_latex
 \begin{equation}
 \Delta \Phi \simeq \frac{1}{2}{n^{2}}y^{2} \ \ ,
@@ -621,6 +572,55 @@ equilibrium themselves), cf. [[./notes-lecture-codes.org::*Population synthesis]
 - if there is matter flowing through L_{1}, can it be convective at that
   location (*Hint*: think of what force drives the instability)?
 :end:
+
+* Modifications to the structure of stars because of mass transfer
+
+#+HTML: <iframe width="600" height="400" src="https://www.youtube.com/embed/Zn1E23saY-A?si=w0m_yOw7DRnEqX7s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+The artist impression in the video above shows a /conservative/ (no
+spill over), dynamically stable mass transfer between a 20M_{\odot} and a
+15M_{\odot} star producing a direct impact of the L_{1} stream with the
+accretor. Although this is an artist impression (as you can tell from
+the fact that the stars are resolved), it illustrates several
+important modifications that will occur in /both/ stars as they go
+through mass transfer.
+
+** Donor: loss of the envelope, revealing the core
+The donor will lose (most of) its hydrogen rich envelope, becoming a
+low opacity, high temperature, small in radius, helium enriched star.
+This is something that only very massive stars may do if single (and
+how massive they need to be is a matter of debate because of wind
+uncertainties).
+
+This means that post-mass transfer, the donor star is the /exposed/ core
+of the star, which allows a unique opportunity to directly see (with
+photons!) the interior of a star.
+
+** Accretor: Spin up, pollution, rejuvenation
+
+The mass transferred comes with angular momentum and will easily spin
+up the accretor star, making it fast rotating up to the point where at
+the equator centrifugal force and radiation pressure balance the
+gravitational pull. This is what is invoked to explain Be stars in
+Be-X-ray binaries for example.
+
+Secondly, the matter from the donor may be chemically enriched by
+nuclear processes in /the donor's core/. For example, if the star
+transfers matter from the outermost layers of the core, it may be
+CNO-processed! This can change the chemical composition in the
+accretor structure, and thus its spectrum.
+
+Finally, for massive stars, there is a /rejuvenation/ effect. Since they
+burn through the CN-NO cycle, \varepsilon_{CNO}\prop T^{16} releases a lot of energy
+in a small hot-enough volume, leading to a steep temperature gradient
+and thus convection. As the mass of the accretor increases because of
+accretion itself, \langle T \rangle \propto M by the virial theorem means that the
+average (and central) temperature have to increase to sustain the
+increased mass. This leads to a steepening of the temperature gradient
+in the core, and drives further /convection/. This "extra" convection
+takes Hydrogen of the accretor that would /not/ have burned had the star
+been single, and mixes it in the burning region itself, elongating the
+lifetime of the star.
 
 * Homework
 
