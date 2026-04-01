@@ -158,7 +158,6 @@ only "see" the inner binary as a point mass with total mass M_{1}+M_{2}.
 #+ATTR_HTML: :width 100%
 [[./images/potential_Roche.png]]
 
-
 *** Spherical approximation
 
 The Roche potential is /clearly/ not spherically symmetric: how can we
@@ -191,24 +190,22 @@ where a is the orbital separation, q_{i} = M_{i}/M_{j}, and 4\pi R_{RL,i}^{3}/3 
 volume of star i.
 
 * Type of binary interactions
-As we will see in the next in class activity, stars tend to grow
-bigger as the evolve: even a binary system that stars as detached may
-come into contact as the stars evolve, triggering the onset of mass
-transfer between the stars in the binary system. In fact, gas reaching
-L_{1} will be equally bound to either stars, and it can easily be
-perturbed to fall into the other star (see also review by [[https://ui.adsabs.harvard.edu/abs/2024ARA%26A..62...21M/abstract][Marchant &
-Bodensteiner 2024]]).
+Stars tend to grow bigger (in radius) as they evolve: even a binary system that
+stars as detached may come into contact as the stars evolve,
+triggering the onset of mass transfer between the stars in the binary
+system. In fact, gas reaching L_{1} will be equally bound to either
+stars, and it can easily be perturbed to fall into the other star (see
+also review by [[https://ui.adsabs.harvard.edu/abs/2024ARA%26A..62...21M/abstract][Marchant & Bodensteiner 2024]]).
 
 Depending on the stability of the /orbital response/ to the
 transfer of mass, we distinguish two cases: /stable Roche lobe overflow/
 or /dynamically unstable common envelope/.
 
 ** Dynamically stable mass-transfer
-If Roche lobe overflow does not hit a runaway response of the orbit
-(causing more and more overflow), then it is dynamically stable.
+If Roche lobe overflow does not cause a runaway response of the orbit
+(resulting in more and more overflow), then it is dynamically stable.
 
-This will occur in the majority (50-70%) of massive stars, and it
-can have important consequences for /both/ stars that will be modified
+This can have important consequences for /both/ stars that will be modified
 by this interaction (see below).
 
 ** Dynamically unstable common envelope
@@ -222,8 +219,7 @@ when the presence of a third companion drives the interaction, for
 example in a triple system. In this case, the instability is triggered
 by the orbital dynamics, and it may occur even in initially stable
 systems as the stars evolve and lose mass through winds, expand in
-radius (implying a larger impact of tides, see [[./notes-lecture-tides.org][the corresponding
-notes]]).
+radius (implying a larger impact of tides, see [[./notes-lecture-tides.org][previous lecture]]).
 
 ** Nomenclature: Case A, B, and C
 Depending on when mass transfer starts, we can have three different
@@ -250,6 +246,10 @@ divergent evolution of the binaries and the outcome: case A typically
 has a short thermal timescale phase, followed by a much longer nuclear
 timescale phase. Case B and C tend to be faster (thermal timescale or
 shorter), though this may also be metallicity dependent .
+
+*N.B.:* To remember this nomenclature, always think of the evolutionary
+phase of the donor star at the onset of mass-transfer!
+
 
 * Orbital evolution during mass transfer
 
