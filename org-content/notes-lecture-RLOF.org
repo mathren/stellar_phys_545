@@ -119,11 +119,14 @@ points:
 *N.B.:* The position of the center of mass depends on the mass
 distribution (here the masses are assumed to be point like), while the
 position of the Lagrangian points depends on the dynamics (gravity and
-centrifugal forces)
+centrifugal forces). The two don't coincide in general.
 
 The equipotential shapes are close to spheres for r_{1} and/or r_{2} \ll
 r_{L_{1}}, then they get progressively elongated along the axis connecting
-the stars, and flattened by the centrifugal potential.
+the stars, and flattened by the centrifugal potential. Therefore, most
+of the mass of the stars is still distributed quite spherically, and
+only the outer layers with lower density deviate significantly from
+this shape.
 
 For short period binaries, P<10 days (though the exact value depends
 on many things, especially mass M_{1}, mass ratio q=M_{2}/M_{1}, metallicity,
