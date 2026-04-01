@@ -90,7 +90,7 @@ depends on the velocity of the test mass m: the Coriolis force \prop
 2n\times v. Per unit volume the momentum conservation is thus
 
 #+begin_latex
-\begin{equation}
+\begin{equation}\label{eq:momentum}
 \partial_{t} v + (v\cdot\nabla )v = -\nabla \Phi-\frac{\nabla P}{\rho}-2\mathbf{n}\times \mathbf{v} \ \ .
 \end{equation}
 #+end_latex
@@ -131,9 +131,9 @@ this shape.
 For short period binaries, P<10 days (though the exact value depends
 on many things, especially mass M_{1}, mass ratio q=M_{2}/M_{1}, metallicity,
 etc.), we observe that the stars co-rotate with the orbit, that is
-there is complete /tidal synchronization/. In that case, in the
-co-rotating frame, the gas of both stars is still, $\mathbf{v}=0$, and
-the momentum conservation reduces to
+there is complete /tidal synchronization/ (see [[./notes-lecture-tides.org][previous lecture]]) In that
+case, in the co-rotating frame, the gas of both stars is still,
+$\mathbf{v}=0$, and the momentum conservation (Eq. \ref{eq:momentum}) reduces to
 
 #+begin_latex
 \begin{equation}
