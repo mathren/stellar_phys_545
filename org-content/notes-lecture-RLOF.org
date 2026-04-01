@@ -52,11 +52,13 @@ assumptions:
 These defined the /restricted circular three body problem/. Of these
 assumptions the most restrictive is perhaps the first: binaries can be
 eccentric, and updates to this model to account for that are actively
-being developed (e.g., [[https://ui.adsabs.harvard.edu/abs/2009ApJ...702.1387S/abstract][Sepinsky 2009]]). The second assumption is not
-critical, since the density increases steeply moving inwards in the
-star: /most of the mass is in the center/. The last assumption is
-typically easily verified as long as one considers small parcels of
-gas.
+being developed (e.g., [[https://ui.adsabs.harvard.edu/abs/2009ApJ...702.1387S/abstract][Sepinsky et al. 2009]], [[https://ui.adsabs.harvard.edu/abs/2025ApJ...983...39R/abstract][Rocha et al. 2025]]).
+
+The second assumption is not critical, since the density increases
+steeply moving inwards in the star: /most of the mass is in the center/.
+
+The last assumption is typically easily verified as long as one
+considers small parcels of gas.
 
 With these three assumptions, one can put themselves in a *frame
 centered in the binary center of mass and co-rotating with the binary*
