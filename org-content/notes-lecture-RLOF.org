@@ -9,7 +9,7 @@ Heuvel book chapter 4.
 
 * Mass transfer in binary systems
 
-We have already seen in the [[./notes-lecture-BIN.org::*Binaries are common][second lecture]] that, in the Universe,
+We have already seen in the [[./notes-lecture-BIN.org::*Binaries are common][third lecture]] that, in the Universe,
 binary systems composed of two stars orbiting each other are common,
 the higher the mass of the stars the more so (see for example [[https://ui.adsabs.harvard.edu/abs/2023ASPC..534..275O/abstract][Offner
 et al. 2023]]). Historically, this fact has been leveraged to design
@@ -18,14 +18,19 @@ to obtain masses.
 
 However, often enough, stars in binaries are so close to each other
 than as they evolve, they will "touch" each other and exchange mass.
+For O-type stars, we expect between 50-70% to experience some form of
+binary mass transfer before their final collapse (regardless of their
+metallicity at least down to SMC values, [[https://ui.adsabs.harvard.edu/abs/2025NatAs...9.1337S/abstract][Sana et al. 2025]]), implying
+that binary interactions are the rule rather than the exception for
+massive stars (e.g., [[https://ui.adsabs.harvard.edu/abs/2012Sci...337..444S/abstract][Sana et al. 2012]], [[https://ui.adsabs.harvard.edu/abs/2013A%26A...550A.107S/abstract][Sana et al. 2013]], but
+references go back to [[https://ui.adsabs.harvard.edu/abs/1983ARA%26A..21..343A/abstract][Abt 1983]] and earlier all the way to [[https://ui.adsabs.harvard.edu/abs/1767RSPT...57..234M/abstract][Mitchell 1767]]!).
+
 In today's lecture we will discuss in more detail how being in a
 binary can lead to dramatic consequences for the evolution of /both/
 stars in the system, starting with the Roche model of the potential.
 
 :Question:
-- *Q*: We will see this in more detail in the coming in class activity,
-  but you can already answer based on your 1M_{\odot} stellar models:
-  what happens to the stellar radius as a typical star evolves?
+- *Q*: What happens to the stellar radius as a typical star evolves?
 - *Q*: Which stars evolve faster: higher or lower mass?
 :end:
 

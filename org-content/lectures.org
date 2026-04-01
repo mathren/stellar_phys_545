@@ -216,7 +216,6 @@ and dynamical assembly), discuss some known uncertainties.
 *** Stellar winds
 *** chemical evolution
 
-
 ** <2026-04-27 Fri> - Two students presentations
 *** r-process
 *** Supernovae
