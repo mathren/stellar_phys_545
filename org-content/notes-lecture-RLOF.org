@@ -643,10 +643,14 @@ space is still an ongoing research topic.
 
 ** Main-sequence + main-sequence mergers
 
-[[https://ui.adsabs.harvard.edu/abs/2019Natur.574..211S/abstract][Schneider et al. 2019]] performed the first MHD simulation (with the
-moving-mesh code AREPO) of a main-sequence + main-sequence stellar
-merger, and evolved the resulting stellar structure post-merger.
-The movie below shows the density on the equatorial plane:
+[[https://ui.adsabs.harvard.edu/abs/2002ApJ...568..939L/abstract][Lombardi 2002]], [[https://ui.adsabs.harvard.edu/abs/2013MNRAS.434.3497G/abstract][Gleebek et al. 2013]] studied the hydrodynamics (no
+radiation) of head on collisions and mergers driven by dynamics (e.g.,
+in a cluster). [[https://ui.adsabs.harvard.edu/abs/2019Natur.574..211S/abstract][Schneider et al. 2019]] performed the first MHD
+simulation of a binary merger with initially negative orbital binding
+energy (with the moving-mesh code AREPO) of a main-sequence +
+main-sequence stellar merger, and evolved the resulting stellar
+structure post-merger. The movie below shows the density on the
+equatorial plane:
 
 #+HTML: <iframe width="600" height="400" src="https://player.vimeo.com/video/365050032" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
 # [[https://vimeo.com/365050032]]
@@ -685,7 +689,34 @@ after it has relaxed for a thermal timescale
 
 ** Post-main sequence + main sequence
 
-Chatzopoulos et al. 2020+ and SN87A
+Assuming a flat (or flat in log) initial period distribution of
+binaries, mergers between a main-sequence (unevolved, initially less
+massive star) and a post-main sequence (initially more massive and
+thus more evolved star) should be more common than main-sequence +
+main-sequence mergers based on the large post-main sequence radial
+expansion of the stars.
+
+These have also been explored (e.g., [[https://ui.adsabs.harvard.edu/abs/2007Sci...315.1103M/abstract][Morris & Podsiadlowski 2007]],
+[[https://ui.adsabs.harvard.edu/abs/2020ApJ...896...50C/abstract][Chatzopoulos et al. 2020]]) but the parameter space is rather vast, and
+results from different groups are not always in agreement.
+
+For instance, [[https://ui.adsabs.harvard.edu/abs/2020ApJ...896...50C/abstract][Chatzopoulos et al. 2020]] used their simulations to argue
+that a main-sequence + RSG merger with tidal disruption of the
+main-sequence in the RSG envelope results in a "fast" rotating RSG
+($v\sin(i)\sim 5-15\,\mathrm{km s^{-1}}$) and applied it to Betelgeuse
+(although see also [[https://ui.adsabs.harvard.edu/abs/2024ApJ...962L..36M/abstract][Ma et al. 2024]] on the interpretation of
+Betelgeuse's $v\sin(i)$).
+
+Conversely, the even later merger model of [[https://ui.adsabs.harvard.edu/abs/2007Sci...315.1103M/abstract][Morris & Podsiadlowski 2007]]
+was designed to explain the circumstellar material and blue progenitor
+of SN1987A: by focusing on case C (post-He core burning) mergers where
+the secondary can penetrate in the He core of the donor, they produce
+a star with a small $M_{\rm He}/M_{\rm tot}$ that naturally evolves blueward
+post-merger (see also, e.g., [[https://ui.adsabs.harvard.edu/abs/2014ApJ...796..121J/abstract][Justham et al. 2014]]).
+
+#+CAPTION: Cartoon of the pre-merger and merger evolution, with corresponding HR diagram with both pre-merger stars and the re-constructed 1D post-merger evolution, this is Fig. 1 in [[https://ui.adsabs.harvard.edu/abs/2014ApJ...796..121J/abstract][Justham et al. 2014]].
+#+ATTR_HTML: :width 75%
+[[./images/merger_justham.jpg]]
 
 
 
