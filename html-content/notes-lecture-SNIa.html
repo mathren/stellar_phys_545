@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 2026-01-13 Tue 14:50 -->
+<!-- 2026-04-03 Fri 09:37 -->
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>ASTR545 - SNIa</title>
@@ -13,22 +13,6 @@
 			       stellar evolution, ASTR545, PYTS545, 545, University of
 			       Arizona, Steward Observatory, stars,
 			       theoretical astrophysics">
-
-
-<script>
-function toggleDrawer(drawerId) {
-  var content = document.getElementById(drawerId);
-  var button = content.previousElementSibling;
-
-  if (content.style.display === "none") {
-    content.style.display = "block";
-    button.innerHTML = button.innerHTML.replace("▼", "▲");
-  } else {
-    content.style.display = "none";
-    button.innerHTML = button.innerHTML.replace("▲", "▼");
-  }
-}
-</script>
 </head>
 <body>
 <div id="preamble" class="status">
@@ -89,7 +73,7 @@ function toggleDrawer(drawerId) {
       // Toggle theme on click
       toggleButton.addEventListener("click", () => {
           body.classList.toggle("dark-mode");
-	  html.classList.toggle("dark-mode");
+  html.classList.toggle("dark-mode");
 
           // Save user preference
           if (body.classList.contains("dark-mode")) {
@@ -100,13 +84,69 @@ function toggleDrawer(drawerId) {
       });
   };
 </script>
+
+<script>
+  function toggleDrawer(drawerId) {
+      var content = document.getElementById(drawerId);
+      var button = content.previousElementSibling;
+
+      if (content.style.display === "none") {
+	  content.style.display = "block";
+	  button.innerHTML = button.innerHTML.replace("▼", "▲");
+      } else {
+	  content.style.display = "none";
+	  button.innerHTML = button.innerHTML.replace("▲", "▼");
+      }
+  }
+</script>
 <!-- end scripts-->
 </div>
 <div id="content" class="content">
+<p>
+<b>Materials:</b> Hansen &amp; Kawaler book Sec. 2.6.3,
+</p>
 
 <div id="outline-container-org23dd281" class="outline-2">
-<h2 id="org23dd281"><a href="#org23dd281"><span class="todo TODO">TODO</span> Explosion of WDs</a></h2>
+<h2 id="org23dd281"><a href="#org23dd281">Explosion of WDs</a></h2>
+<div class="outline-text-2" id="text-org23dd281">
+<p>
+We have discussed in the <a href="./notes-lecture-SNe.html">core-collapse lecture</a> the collapse of an iron
+(or in some cases ONeMg) core and how it can trigger th core-collapse
+SN explosion of a massive star. Here, we will instead discuss
+explosions of low-mass stars ending their life as WDs.
+</p>
+
+<p>
+In isolation, a WD can only cool down, possibly crystallize releasing
+some latent heat to slow down the cooling, and continue cooling
+further afterwards, until it becomes too faint and cold to be
+detected. Ultimately this should produce a "black dwarf" (in a time
+longer than the age of the Universe).
+</p>
+
+<p>
+While in a hypothetical "black dwarf" the density may be so high that
+density-driven nuclear reactions (pico-nuclear reactions) could occur
+and start a dynamical phase of evolution (e.g., <a href="https://ui.adsabs.harvard.edu/abs/2020MNRAS.497.4357C/abstract">Caplan 2020</a>), the fact
+that the Universe is too young to have formed black dwarfs guarantees
+that this is <i>not</i> part of the transients we <i>do</i> observe.
+</p>
+
+<p>
+A WD that is <i>not</i> in isolation, but instead is part of a binary system,
+may be perturbed by the companion (e.g. during a mass-transfer phase),
+which can <i>also</i> lead to dynamical and explosive consequences. Here, we
+focus on these explosions, and more specifically the ones that will
+result in a full destruction of the WD &#x2013; so called SNIa.
+</p>
 </div>
+
+<div id="outline-container-orgde3cbdc" class="outline-3">
+<h3 id="orgde3cbdc"><a href="#orgde3cbdc">A zoo within a zoo: WD explosions landscape</a></h3>
+</div>
+</div>
+
+
 
 <div id="outline-container-org9b051a3" class="outline-2">
 <h2 id="org9b051a3"><a href="#org9b051a3">Phillips relation</a></h2>
@@ -121,7 +161,7 @@ function toggleDrawer(drawerId) {
   <hr>
   <a href="#light-dark-toggle"><i id="light-dark-toggle"><i class="fa-solid fa-circle-half-stroke"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="projects.html"><i class="fa-solid fa-arrow-left" style="font-size:16px"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="#top"><i class="fa-solid fa-arrow-up" style="font-size:16px"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="notes-lecture-GWprog.html"><i class="fa-solid fa-arrow-right" style="font-size:16px"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="https://github.com/mathren/stellar_phys_545"><i class="fa-brands fa-github" style="font-size:16px"></i></a><hr>
   <br>
-  Last updated on 13 January 2026 <br>
+  Last updated on 3 April 2026 <br>
   Made with Emacs 29.2 - Org mode 9.6.15
   <br>
 </div>

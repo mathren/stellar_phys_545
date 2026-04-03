@@ -250,7 +250,6 @@ shorter), though this may also be metallicity dependent .
 *N.B.:* To remember this nomenclature, always think of the evolutionary
 phase of the donor star at the onset of mass-transfer!
 
-
 * Orbital evolution during mass transfer
 
 Because of the evolution of the stellar radius R(t), many stellar
@@ -621,6 +620,74 @@ in the core, and drives further /convection/. This "extra" convection
 takes Hydrogen of the accretor that would /not/ have burned had the star
 been single, and mixes it in the burning region itself, elongating the
 lifetime of the star.
+
+* Stellar mergers
+
+Sometimes mass-transfer becomes dynamically unstable (see [[./notes-lecture-CE.org][see also
+next lecture]]), and will ultimately result in the merger of two
+stars. This process is quite common, about 20-40% of *massive* ($M_{\rm
+ZAMS}\ge 7.5M_{\odot}$) *binaries* will merge, depending on assumptions on the
+initial orbital distributions and treatment of mass transfer ([[https://ui.adsabs.harvard.edu/abs/2019A%26A...624A..66R/abstract][Renzo et
+al. 2019b]]). The zeroth order effect of the presence of more
+companions in a triple(, quadruple, etc...) is to enhance the number
+of binary interactions (and also mergers) compared to a population of
+binaries (e.g., [[https://ui.adsabs.harvard.edu/abs/2025A%26A...703A.123K/abstract][Kummer et al. 2025]]).
+
+Merger products can differ significantly from the structure of a star
+evolving as single. How different may depend on the evolutionary phase
+of the progenitor binary at the onset of the merger, in other words,
+whether it was a merger between two main sequence stars, one main
+sequence and one post-main-sequence, red (super) giant, AGB, or
+whether compact objects were involved. Exploring the full parameter
+space is still an ongoing research topic.
+
+** Main-sequence + main-sequence mergers
+
+[[https://ui.adsabs.harvard.edu/abs/2019Natur.574..211S/abstract][Schneider et al. 2019]] performed the first MHD simulation (with the
+moving-mesh code AREPO) of a main-sequence + main-sequence stellar
+merger, and evolved the resulting stellar structure post-merger.
+The movie below shows the density on the equatorial plane:
+
+#+HTML: <iframe width="600" height="400" src="https://player.vimeo.com/video/365050032" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
+# [[https://vimeo.com/365050032]]
+
+:Question:
+- *Q*: where does the orbital angular momentum go during a merger?
+:end:
+
+A key result from these simulations is that the merger product can be
+(i) *magnetized* and (2) *slow rotating*.
+
+The magnetic field is seeded by the turbulent energy during the merger
+process -- the amount of turbulent energy converted by dynamos in
+magnetic energy is large, but it remains unclear whether the
+configuration can be stable for long terms. This prediction fits well
+with the observation of only $\sim$10% of OB-type stars exhibiting large
+magnetic fields which could all be main-sequence + main-sequence
+merger products.
+
+The slow rotation may be more puzzling, since at the beginning of the
+merger process, there is a lot of orbital angular momentum in the
+system, which presumably needs to be conserved. Based on this
+argument, for a long time the merger products were expected to be fast
+rotating.
+
+However, Schneider et al. found that during the *dynamical* phase of the
+merger, the core of the more massive star (which has a higher $\langlt
+T \rangle$ by the virial theorem and lower $\rho$ consequently for a given
+$P$), which remains "frozen" on the timescale of the merger. *After* the
+merger, on a thermal timescale, the core will adapt to the new
+increased mass, and the density in the core has to decrease, leading
+to expansion that "swallows" a large amount of angular momentum from
+the surface. This together with the angular momentum losses from the
+ejecta of the merger product leave a post-merger slowly spinning star
+after it has relaxed for a thermal timescale
+
+** Post-main sequence + main sequence
+
+Chatzopoulos et al. 2020+ and SN87A
+
+
 
 * Homework
 
