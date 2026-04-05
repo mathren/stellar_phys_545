@@ -637,8 +637,14 @@ are dominant in this problem space!
 ** Shock breakout
 
 If a successful shock is launched by the collapse and bounce of the
-core, it will propagate as a radiation mediated shock throughout the
+core, it will propagate as a radiation-mediated shock throughout the
 star, effectively "whipping the star" and injecting throughout energy.
+
+
+#+CAPTION: First day of a weak explosion: as time progresses (colors get lighter) we see the discontinuity in the $v(m)$ profile moving outward in mass coordinate: this is the SN shock traveling through the star and energizing each layer to (possibly) drive an explosion. By the end of this simulation, a lot ot the material has a positive velocity, with the outermost layers being fasters, indicating ejection. But matter below $m\sim5\,M_{\odot}$ has a negative velocity, indicating late ($\sim$1 day post-collapse) fallback. This is a =SNEC= spherically symmetric artificially driven (/thermal bomb) explosion of of the $30\,M_{\odot}$ solar metallicity donor star in a binary, which reaches the onset of core-collapse as a $12\,M_{\odot}$ stripped He core from [[https://ui.adsabs.harvard.edu/abs/2023ApJ...948..111F/abstract][Farmer et al. 2023]].
+#+HTML_ATTR: :width 75%
+[[./images/Shock_whip.png]]
+
 
 This shock propagation /starts/ within hundreds of millisecond after the
 initiation of the collapse, and lasts a timescale of the order of the
