@@ -4,7 +4,37 @@
 #+options: title:nil
 #+PREVIOUS_PAGE: syllabus.org
 #+NEXT_PAGE: notes-lecture-Intro.org
+#+BEGIN_EXPORT html
+<!-- jump to nearest date in lectures.html -->
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+ const headers = [...document.querySelectorAll("h1, h2, h3, h4, h5, h6")];
+ const today = new Date();
+ today.setHours(0, 0, 0, 0);
 
+ let closest = null;
+ let closestDiff = Infinity;
+
+ for (const h of headers) {
+    const ts = h.querySelector("span.timestamp");
+    if (!ts) continue;
+
+    const match = ts.textContent.match(/(\d{4}-\d{2}-\d{2})/);
+    if (!match) continue;
+
+    const parsed = new Date(match[1] + "T00:00:00");
+    const diff = Math.abs(parsed - today);
+
+    if (diff < closestDiff) {
+      closestDiff = diff;
+      closest = h;
+    }
+  }
+
+  if (closest) closest.scrollIntoView({ behavior: "smooth", block: "start" });
+});
+</script>
+#+END_EXPORT
 * Lectures topic-by-topic
 This is a rough schedule of the topics we will cover. However, we may
 not get to all topics, depending on progress throughout the semester

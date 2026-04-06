@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 2026-04-06 Mon 12:15 -->
+<!-- 2026-04-06 Mon 12:18 -->
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>ASTR545 - Lectures topic-by-topic</title>
@@ -120,7 +120,35 @@ document.addEventListener("DOMContentLoaded", () => {
 <!-- end scripts-->
 </div>
 <div id="content" class="content">
+<!-- jump to nearest date in lectures.html -->
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+ const headers = [...document.querySelectorAll("h1, h2, h3, h4, h5, h6")];
+ const today = new Date();
+ today.setHours(0, 0, 0, 0);
 
+ let closest = null;
+ let closestDiff = Infinity;
+
+ for (const h of headers) {
+    const ts = h.querySelector("span.timestamp");
+    if (!ts) continue;
+
+    const match = ts.textContent.match(/(\d{4}-\d{2}-\d{2})/);
+    if (!match) continue;
+
+    const parsed = new Date(match[1] + "T00:00:00");
+    const diff = Math.abs(parsed - today);
+
+    if (diff < closestDiff) {
+      closestDiff = diff;
+      closest = h;
+    }
+  }
+
+  if (closest) closest.scrollIntoView({ behavior: "smooth", block: "start" });
+});
+</script>
 <div id="outline-container-org148f972" class="outline-2">
 <h2 id="org148f972"><a href="#org148f972">Lectures topic-by-topic</a></h2>
 <div class="outline-text-2" id="text-org148f972">
