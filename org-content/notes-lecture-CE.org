@@ -5,11 +5,12 @@
 #+NEXT_PAGE: notes-lecture-SNe.org
 
 *Materials*: [[https://ui.adsabs.harvard.edu/abs/1975PhDT.......165W/abstract][Webbink 1975]], [[https://ui.adsabs.harvard.edu/abs/1976IAUS...73...75P/abstract][Paczynski 1976]], [[https://ui.adsabs.harvard.edu/abs/2013A%26ARv..21...59I/abstract][Ivanova et al. 2013]], [[https://ui.adsabs.harvard.edu/abs/2021ApJ...919..128R/abstract][Renzo et
-al. 2021]], [[https://ui.adsabs.harvard.edu/abs/2023LRCA....9....2R/abstract][Ropke & de Marco 2023]], Ivanova et al. 2020.
+al. 2021]], [[https://ui.adsabs.harvard.edu/abs/2023LRCA....9....2R/abstract][Ropke & de Marco 2023]], [[https://ui.adsabs.harvard.edu/abs/2020ApJ...904L..13R/abstract][Renzo et al. 2020c]], Ivanova et
+al. 2020.
 
 * Dynamically unstable mass-transfer
 
-As stars evolve, their radius tends to overall increase. We have [[./notes-lecture-RLOF.org][seen]]
+As stars evolve, their radius tends to increase. We have [[./notes-lecture-RLOF.org][seen]]
 that in a binary system, this can lead the more massive and faster
 evolving star to fill its Roche lobe and initiate mass transfer.
 
@@ -22,7 +23,7 @@ the Roche lobe is filled in both cases), or *dynamically unstable*
 for example in a triple system, the secular perturbations on the inner
 orbit by the third body, plus the evolutionary changes of the stars
 (radius, wind mass loss, etc.) can lead to dynamical instabilities of
-the orbit.
+the orbit (e.g., [[https://ui.adsabs.harvard.edu/abs/2012ApJ...760...99P/abstract][Perets & Kratter 2012]]).
 
 #+CAPTION: Schematic division between modes of mass-transfer based on the response of the orbital separation.
 #+ATTR_HTML: :width 100%
@@ -74,15 +75,16 @@ However, calculating the $\zeta$ parameters requires having out-of-thermal
 equilibrium stellar models and prescribing a rate of mass-transfer.
 Therefore, it is also common to rephrase this criterion in an
 equivalent form based on the mass-ratio $q=M_{\rm accretor}/M_{\rm donor}$:
-if this mass ratio is more extreme than a certain threshold $q_{crit}$
+if this mass ratio is more extreme than a certain threshold $q_{\rm crit}$
 then the evolutionary timescales of the two stars will be too
 different, the donor will try to donate on its timescale, the accretor
 will not be able to accrete the mass and inflate because of the excess
 thermal energy in the outer layers, leading anyways to a CE.
 
-*N.B.:* In practice there can be different values of $q_{crit}$ for each
+*N.B.:* In practice there can be different values of $q_{\rm crit}$ for each
 evolutionary phase of the donor (whether it is a case A mass transfer
-with a main sequence donor or a later mass transfer can influence the
+with a main sequence donor or a later mass transfer changes the
+donor's envelope structure and thus can influence the dynamical
 stability!)
 
 These stability criteria are widely used, but also widely debated. In
@@ -93,7 +95,12 @@ nature there may be more than one way to initiate the common envelope:
    large angular momentum losses and inspiral
 3. Accretor's cannot accept mass fast enough and swell until /both/
    stars fill their Roche lobe
-4. Darwin instability
+4. Darwin instability: tides try to synchronize the orbit and spin
+   rotations, but if $M_{2}\ll M_{1}$ they can never provide enough angular
+   momentum to the secondary star. This leads to a runaway transfer of
+   the orbital angular momentum to the stellar spins which drives the
+   binary inward until unstable mass transfer ensues (see [[https://ui.adsabs.harvard.edu/abs/1880RSPT..171..713D/abstract][Darwin
+   1880]]).
 
 Many of these processes occur on a (relatively long) thermal timescale
 of the donor star, which makes it hard to study directly with
@@ -108,16 +115,17 @@ numerical simulations and/or observations.
 
 Mass-transfer initiates and it is likely that for order of a thermal
 timescale, the two object in the binary still remain distinct (see
-e.g., [[https://ui.adsabs.harvard.edu/abs/2021A%26A...653A.134B/abstract][Blagorodnova et al. 2021]]). Modifications to the mass-budget and
-structures during this phase are often neglected in the study of CE.
+e.g., [[https://ui.adsabs.harvard.edu/abs/2021A%26A...653A.134B/abstract][Blagorodnova et al. 2021]] for observational evidence).
+Modifications to the mass-budget and structures during this phase are
+often neglected in the study of CE.
 
 If mass transfer does become dynamically unstable, at some point the
 gas will fill the equipotentials surfaces of the Roche geometry around
 both stars (those in between L_{1} and L_{2} at least). At this point we
 have either two stellar cores in the shared envelope, or the accretor
-star entering the envelope of the donor. These bodies cannot maintain
-co-rotation with the envelope because of either envelope expansion
-changing its rotational frequency, gas drag, or Darwin instability.
+star entering the envelope of the donor. Even if initially tidally
+synchronized, these bodies cannot maintain
+co-rotation with the envelope anymore.
 
 Therefore, the lack or loss of co-rotation (if it was initially
 present) necessarily leads to friction between the stars and the
@@ -127,19 +135,20 @@ the orbital energy released by the plunge in is given to the envelope.
 The efficiency of this process is still very debated (see below).
 
 During the plunge-in, the quadrupole moment of the binary will be
-changing with a non-zero second derivative: there should be GW
-emission!
+changing with a non-zero second derivative: there should be
+gravitational wave (GW) emission!
 
 The deposition of orbital energy into the envelope leads to its
 expansion, decreasing the density and consequently the drag on the
-inner binary: the plunge in /can/ stall.
+inner binary: the plunge in /can/ stall ([[https://ui.adsabs.harvard.edu/abs/1979A%26A....78..167M/abstract][Meyer & Meyer-Hoffmeister 1975]]).
 
 If a stalled phase occurs, then the evolutionary timescale will
 increase from dynamical (during the plunge-in) to thermal: the minimal
 drag still drives an inspiral but on a long timescale. During this
 phase (if present), GW emission from the inner binary may reach the
 LISA band, and if observed, it would passively trace what is occurring
-inside the shared (and opaque to photons) envelope.
+inside the shared (and opaque to photons) envelope ([[https://ui.adsabs.harvard.edu/abs/2021ApJ...919..128R/abstract][Renzo et al.
+2021]]).
 
 *N.B.:* GW do not drive the inspiral, but trace how it occurs!
 
@@ -154,24 +163,30 @@ At the very end, we expect another dynamical phase that can either:
 Common envelope evolution, since it's theorization in the 1970s by
 Paczynski, Webbink, Taam, and Ostriker, remains one of the biggest
 open questions in stellar physics that impacts the formation of all
-compact binaries (cataclysmic variables made of a main sequence plus a
-white dwarf, binary white dwarfs, gravitational wave sources, etc.)
-and most stellar mergers.
+compact binaries and most stellar mergers.
 
 Hydrodynamical simulations (possibly including radiation and/or
 magnetic fields) of the problem are possible and actively done, but
 typically they can only capture the plunge-in (dynamical timescale)
 and the resolution is most of the time insufficient to capture the
-inner core. The example below shows the density of a CE simulation
-with the code FLASH from [[https://ui.adsabs.harvard.edu/abs/2025ApJ...979...57L/abstract][Landri et al. 2025]] ending in a merger:
+inner core. In other words, the contrast in time-scales (from thermal
+to dynamical and possibly back) and spatial scales (from the expanded
+shared envelope to deep into the core), plus the intervention of
+several physical ingredients (thermodynamics, atomic physics,
+hydrodynamics), make the CE problem hard to treat from first principles.
+
+The example below shows the density of a CE simulation
+with the code FLASH from [[https://ui.adsabs.harvard.edu/abs/2025ApJ...979...57L/abstract][Landri et al. 2025]] ending in a merger.
+
+*N.B.:* Because of the insufficient spatial resolution in the core, with
+these simulation we can only say that the pure hydrodynamics does not
+manage to eject the gas before the companion reaches the central
+unresolved region.
+
 
 #+HTML: <video  controls width="600" height="400" src="./images/CSNR12-10.0_xydens.mp4" </video>
 #  [[./images/CSNR12-10.0_xydens.mp4]]
 
-Because of the insufficient resolution in the core, with these
-simulation we can only say that the pure hydrodynamics does not manage
-to eject the gas before the companion reaches the central unresolved
-region.
 
 ** Energetic considerations for CE outcome
 
@@ -195,7 +210,9 @@ Thus, $\alpha_{\rm CE}$ represents the efficiency with which orbital energy of t
 inner binary is pumped into the gas of the shared envelope.
 
 The binding energy of the envelope is almost always calculated based
-on the structure of the donor star before the onset of mass transfer:
+on the structure of the donor star before the onset of mass transfer
+(i.e., neglecting modifications introduced in the initial RLOF phase
+lasting possibly $\sim{}\tau_{\rm thermal}$):
 #+begin_latex
 \begin{equation}
 E_{\rm bind} = \frac{GM_{1} M_{\rm env}}{\lambda_{CE}R_{1}} \ \,
@@ -231,10 +248,13 @@ picture remains opaque. However, several issues exist:
   this approach neglects the impact of dynamical phenomena during the
   CE itself that affect the envelope structure.
 
+Finally, a major conceptual problem is that during a CE, the binary is
+/not/ a closed system: conservation of energy between the gas remaining
+bound and the ejecta may not apply if losses from the system are significant!
+
 :Question:
 - *Q*: How would you constrain observationally $\alpha_{\rm CE}$ using observed populations?
 :end:
-
 
 * Electromagnetic counterparts: luminous red novae
 
@@ -280,7 +300,7 @@ cases (as a function of evolutionary stages of both stars) remains one
 of the most pressing open problems in stellar astrophysics and
 time-domain astrophysics.
 
-* Stellar mergers
+* Stellar mergers are common
 
 Sometimes, dynamically unstable mass-transfer ultimately result in the
 merger of two stars (if the temporarily shared envelope cannot be
@@ -298,18 +318,32 @@ of the progenitor binary at the onset of the merger, in other words,
 whether it was a merger between two main sequence stars, one main
 sequence and one post-main-sequence, red (super) giant, AGB, or
 whether compact objects were involved. Exploring the full parameter
-space is still an ongoing research topic.
+space is still an ongoing research topic (see e.g., [[https://ui.adsabs.harvard.edu/abs/2019Natur.574..211S/abstract][Schneider et
+al. 2019]], [[https://ui.adsabs.harvard.edu/abs/2020ApJ...896...50C/abstract][Chatzopoulos et al. 2020]], [[https://ui.adsabs.harvard.edu/abs/2025Ap%26SS.370...11G/abstract][Grichener 2025]]).
 
 *** Main-sequence + main-sequence mergers
 
 [[https://ui.adsabs.harvard.edu/abs/2002ApJ...568..939L/abstract][Lombardi 2002]], [[https://ui.adsabs.harvard.edu/abs/2013MNRAS.434.3497G/abstract][Gleebek et al. 2013]] studied the hydrodynamics (no
 radiation) of head on collisions and mergers driven by dynamics (e.g.,
-in a cluster). [[https://ui.adsabs.harvard.edu/abs/2019Natur.574..211S/abstract][Schneider et al. 2019]] performed the first MHD
-simulation of a binary merger with initially negative orbital binding
-energy (with the moving-mesh code AREPO) of a main-sequence +
-main-sequence stellar merger, and evolved the resulting stellar
-structure post-merger. The movie below shows the density on the
-equatorial plane:
+in a cluster), and they find that these head-on collisions can eject
+up to $\sim12\%$ of the pre-merger total mass.
+
+*N.B.:* (Close-to) head-on collisions have initial orbital energy $E>0$
+(or equivalently their Keplerian pre-merger orbit are parabolic or
+hyperbolic). This is fundamentally a different situation than an
+initially bound binary with $E<0$ and an elliptic orbit ($0\le e<1$).
+
+#+CAPTION: Fractional amount of mass loss in smoothed particle hydrodynamics simulations of dynamical mergers as a function of the impact parameter $b$ between the colliding stars in units of the sum of their radii.
+#+ATTR_HTML: :width 50%
+[[./images/lombardi02.png]]
+
+
+[[https://ui.adsabs.harvard.edu/abs/2019Natur.574..211S/abstract][Schneider et al. 2019]]
+performed the first MHD simulation of a binary merger with initially
+negative orbital binding energy (with the moving-mesh code AREPO) of a
+main-sequence + main-sequence stellar merger, and evolved the
+resulting stellar structure post-merger. The movie below shows the
+density on the equatorial plane:
 
 #+HTML: <iframe width="600" height="400" src="https://player.vimeo.com/video/365050032" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
 # [[https://vimeo.com/365050032]]
@@ -319,15 +353,15 @@ equatorial plane:
 :end:
 
 A key result from these simulations is that the merger product can be
-(i) *magnetized* and (2) *slow rotating*.
+(i) *magnetized* and (ii) *slow rotating*.
 
 The magnetic field is seeded by the turbulent energy during the merger
 process -- the amount of turbulent energy converted by dynamos in
 magnetic energy is large, but it remains unclear whether the
 configuration can be stable for long terms. This prediction fits well
-with the observation of only $\sim$10% of OB-type stars exhibiting large
+with the observation of only $\sim10\%$ of OB-type stars exhibiting large
 magnetic fields which could all be main-sequence + main-sequence
-merger products.
+merger products (e.g., [[https://ui.adsabs.harvard.edu/abs/2009ARA%26A..47..333D/abstract][Donati et al. 2009]]).
 
 The slow rotation may be more puzzling, since at the beginning of the
 merger process, there is a lot of orbital angular momentum in the
@@ -336,8 +370,8 @@ argument, for a long time the merger products were expected to be fast
 rotating.
 
 However, Schneider et al. found that during the *dynamical* phase of the
-merger, the core of the more massive star (which has a higher $\langlt
-T \rangle$ by the virial theorem and lower $\rho$ consequently for a given
+merger, the core of the more massive star (which has a higher
+$\langle T \rangle$ by the virial theorem and lower $\rho$ consequently for a given
 $P$), which remains "frozen" on the timescale of the merger. *After* the
 merger, on a thermal timescale, the core will adapt to the new
 increased mass, and the density in the core has to decrease, leading
@@ -371,17 +405,31 @@ was designed to explain the circumstellar material and blue progenitor
 of SN1987A: by focusing on case C (post-He core burning) mergers where
 the secondary can penetrate in the He core of the donor, they produce
 a star with a small $M_{\rm He}/M_{\rm tot}$ that naturally evolves blueward
-post-merger (see also, e.g., [[https://ui.adsabs.harvard.edu/abs/2014ApJ...796..121J/abstract][Justham et al. 2014]]).
+post-merger (see also, e.g., [[https://ui.adsabs.harvard.edu/abs/2014ApJ...796..121J/abstract][Justham et al. 2014]]). and circumstellar
+ejecta that result in the "hourglass" morphology of SN1987A's remnant
+(see Fig. 4 in the [[./notes-lecture-SNe.org][next lecture]]).
 
 #+CAPTION: Cartoon of the pre-merger and merger evolution, with corresponding HR diagram with both pre-merger stars and the re-constructed 1D post-merger evolution, this is Fig. 1 in [[https://ui.adsabs.harvard.edu/abs/2014ApJ...796..121J/abstract][Justham et al. 2014]].
 #+ATTR_HTML: :width 75%
 [[./images/merger_justham.jpg]]
 
-So across the binary parameter space $(M_{1}, M_{2} = q \times M_{1}, P, e, Z, \cdots)$
-there can be a variety of interactions (mass transfer and possibly
-mergers, that are /common/ and can produce stellar structures impossible
-for single star evolution. These populate observed samples and need to
-be understood to be able to meaningfully compare stellar evolution
-theory with observations (of all kind) and a large amount of work is
-presently ongoing to explore and chart the binary parameter space (+
-parameter space of uncertain stellar physics).
+More recently, [[https://ui.adsabs.harvard.edu/abs/2020MNRAS.497.1043D/abstract][di Carlo et al. 2020]], [[https://ui.adsabs.harvard.edu/abs/2020ApJ...904L..13R/abstract][Renzo et al. 2020c]], and [[https://ui.adsabs.harvard.edu/abs/2023MNRAS.519.5191B/abstract ][Costa et
+al. 2022]] proposed mergers between a main-sequence and an evolved
+very massive star to create structures that could avoid (pulsational)
+pair-instability supernovae producing BH remnants forbidden in single
+star evolution. [[https://ui.adsabs.harvard.edu/abs/2023MNRAS.519.5191B/abstract][Ballone et al. 2023]] performed hydrodynamical
+simulations for this scenario: collectively, we have just begun
+exploring mergers for $M_{\rm tot}\gtrsim 100\,M_{\odot}$ thanks to GW providing
+new observational insight on the progenitors of the most massive
+stellar mass BHs.
+
+In conclusion, across the binary parameter space $(M_{1}, M_{2} = q \times M_{1}, P,
+e, Z, ...)$ there can be a variety of interactions (mass transfer and
+possibly mergers, that are /common/ and can produce stellar structures
+impossible for single star evolution. These non-single stellar
+structure populate observed samples and need to be understood to be
+able to meaningfully compare stellar evolution theory with
+observations (photometric, spectroscopic, across wavelength, and in
+GWs) and a large amount of work is presently ongoing to explore and
+chart the binary parameter space (+ parameter space of uncertain
+stellar physics).

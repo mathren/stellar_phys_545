@@ -4,7 +4,7 @@
 #+PREVIOUS_PAGE: notes-lecture-tides.org
 #+NEXT_PAGE: notes-lecture-CE.org
 
-*Materials*: Onno Pols' lecture notes Chapter 7,8, Tauris & van den
+*Materials*: Onno Pols' lecture notes Chapter 7, 8, Tauris & van den
 Heuvel book chapter 4.
 
 * Mass transfer in binary systems
@@ -52,9 +52,9 @@ A useful approximation often used is the [[https://en.wikipedia.org/wiki/%C3%89d
 gravitational potential. This is based on the following key
 assumptions:
 
-1. e=0: the mutual orbit of M_{1} and M_{2} is circular;
-2. M_{1} and M_{2} are treated as point masses;
-3. M_{1} \geq M_{2} \gg m: the masses of the two stars are much larger than
+1. $e=0$: the mutual orbit of $M_{1}$ and $M_{2}$ is circular;
+2. $M_{1}$ and $M_{2}$ are treated as point masses;
+3. $M_{1} \geq M_{2} \gg m$: the masses of the two stars are much larger than
    the test mass m we consider to map the potential;
 
 These defined the /restricted circular three body problem/. Of these

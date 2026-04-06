@@ -184,9 +184,9 @@ intuition for tidal disruption and orbital evolution
 common envelope and its main phases.
 
 [[./notes-lecture-CE.org][Notes]]
-** <2026-04-08 Wed> - Supernovae
+** <2026-04-08 Wed> - Core-collapse Supernovae
 *Aim*: Introduce the nomenclature for supernovae, discuss the physics of
-core-collapse and the formation of compact objects
+core-collapse and the formation of compact objects.
 
 [[./notes-lecture-SNe.org][Notes]]
 ** <2026-04-10 Fri> - *Guest Lecture* (topic TBD)
