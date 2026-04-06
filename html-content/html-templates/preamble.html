@@ -28,6 +28,7 @@
 </div>
 
 <!-- scripts -->
+<!-- menu  -->
 <script>
   function HamburgerMenuFunction() {
       var x = document.getElementById("myLinks");
@@ -39,6 +40,7 @@
   }
 </script>
 
+<!-- toggle drawers -->
 <script>
   window.onload = () => {
       const toggleButton = document.getElementById("light-dark-toggle");
@@ -67,18 +69,34 @@
   };
 </script>
 
+<!-- jump to nearest date in lectures.html -->
 <script>
-  function toggleDrawer(drawerId) {
-      var content = document.getElementById(drawerId);
-      var button = content.previousElementSibling;
+document.addEventListener("DOMContentLoaded", () => {
+  const headers = [...document.querySelectorAll("h1, h2, h3, h4, h5, h6")];
+  const today = new Date();
+  today.setHours(0, 0, 0, 0);
 
-      if (content.style.display === "none") {
-	  content.style.display = "block";
-	  button.innerHTML = button.innerHTML.replace("▼", "▲");
-      } else {
-	  content.style.display = "none";
-	  button.innerHTML = button.innerHTML.replace("▲", "▼");
-      }
+  let closest = null;
+  let closestDiff = Infinity;
+
+  for (const h of headers) {
+    const ts = h.querySelector("span.timestamp");
+    if (!ts) continue;
+
+    // Extract "2026-01-21" from "2026-01-21 Wed "
+    const match = ts.textContent.match(/(\d{4}-\d{2}-\d{2})/);
+    if (!match) continue;
+
+    const parsed = new Date(match[1] + "T00:00:00"); // force local time, avoid UTC shift
+    const diff = Math.abs(parsed - today);
+
+    if (diff < closestDiff) {
+      closestDiff = diff;
+      closest = h;
+    }
   }
+
+  if (closest) closest.scrollIntoView({ behavior: "smooth", block: "start" });
+});
 </script>
 <!-- end scripts-->
