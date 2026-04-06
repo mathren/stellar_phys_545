@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 2026-01-14 Wed 12:17 -->
+<!-- 2026-04-06 Mon 12:15 -->
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>ASTR/PTYS 545 Projects</title>
@@ -46,6 +46,7 @@
 </div>
 
 <!-- scripts -->
+<!-- menu  -->
 <script>
   function HamburgerMenuFunction() {
       var x = document.getElementById("myLinks");
@@ -57,6 +58,7 @@
   }
 </script>
 
+<!-- toggle drawers -->
 <script>
   window.onload = () => {
       const toggleButton = document.getElementById("light-dark-toggle");
@@ -73,7 +75,7 @@
       // Toggle theme on click
       toggleButton.addEventListener("click", () => {
           body.classList.toggle("dark-mode");
-	  html.classList.toggle("dark-mode");
+  html.classList.toggle("dark-mode");
 
           // Save user preference
           if (body.classList.contains("dark-mode")) {
@@ -85,27 +87,43 @@
   };
 </script>
 
+<!-- jump to nearest date in lectures.html -->
 <script>
-function toggleDrawer(drawerId) {
-  var content = document.getElementById(drawerId);
-  var button = content.previousElementSibling;
+document.addEventListener("DOMContentLoaded", () => {
+  const headers = [...document.querySelectorAll("h1, h2, h3, h4, h5, h6")];
+  const today = new Date();
+  today.setHours(0, 0, 0, 0);
 
-  if (content.style.display === "none") {
-    content.style.display = "block";
-    button.innerHTML = button.innerHTML.replace("▼", "▲");
-  } else {
-    content.style.display = "none";
-    button.innerHTML = button.innerHTML.replace("▲", "▼");
+  let closest = null;
+  let closestDiff = Infinity;
+
+  for (const h of headers) {
+    const ts = h.querySelector("span.timestamp");
+    if (!ts) continue;
+
+    const match = ts.textContent.match(/(\d{4}-\d{2}-\d{2})/);
+    if (!match) continue;
+
+    const parsed = new Date(match[1] + "T00:00:00");
+    const diff = Math.abs(parsed - today);
+
+    if (diff < closestDiff) {
+      closestDiff = diff;
+      closest = h;
+    }
   }
-}
+
+  if (closest) closest.scrollIntoView({ behavior: "smooth", block: "start" });
+});
 </script>
+
 <!-- end scripts-->
 </div>
 <div id="content" class="content">
 
-<div id="outline-container-org78482c4" class="outline-2">
-<h2 id="org78482c4"><a href="#org78482c4">Final Project: Literature review and presentation</a></h2>
-<div class="outline-text-2" id="text-org78482c4">
+<div id="outline-container-org6f48b9a" class="outline-2">
+<h2 id="org6f48b9a"><a href="#org6f48b9a">Final Project: Literature review and presentation</a></h2>
+<div class="outline-text-2" id="text-org6f48b9a">
 <p>
 The aim of this literature review project is for each student to
 engage in a bit more depth with an important topic in modern stellar
@@ -142,9 +160,9 @@ presentation.
 </p>
 </div>
 
-<div id="outline-container-org7259b50" class="outline-3">
-<h3 id="org7259b50"><a href="#org7259b50">Timeline</a></h3>
-<div class="outline-text-3" id="text-org7259b50">
+<div id="outline-container-orgb945629" class="outline-3">
+<h3 id="orgb945629"><a href="#orgb945629">Timeline</a></h3>
+<div class="outline-text-3" id="text-orgb945629">
 <ul class="org-ul">
 <li><b>Presentation day minus two weeks</b>: submission of manuscript to peer-referees</li>
 <li><b>Presentation day minus one week</b>: referees submit feedback</li>
@@ -162,9 +180,9 @@ this timeline. Any deviations need to be agreed upon by all parties
 </div>
 </div>
 
-<div id="outline-container-org03923ed" class="outline-3">
-<h3 id="org03923ed"><a href="#org03923ed">Procedure to assign projects</a></h3>
-<div class="outline-text-3" id="text-org03923ed">
+<div id="outline-container-org4bed413" class="outline-3">
+<h3 id="org4bed413"><a href="#org4bed413">Procedure to assign projects</a></h3>
+<div class="outline-text-3" id="text-org4bed413">
 <p>
 Each student will be asked identify 5 topics of interest from the list
 below, and I will assign the research topic and the peer referees from
@@ -173,9 +191,9 @@ preferences.
 </p>
 </div>
 
-<div id="outline-container-org2f5c1ee" class="outline-4">
-<h4 id="org2f5c1ee"><a href="#org2f5c1ee">List of possible projects/presentations</a></h4>
-<div class="outline-text-4" id="text-org2f5c1ee">
+<div id="outline-container-org7b0c06e" class="outline-4">
+<h4 id="org7b0c06e"><a href="#org7b0c06e">List of possible projects/presentations</a></h4>
+<div class="outline-text-4" id="text-org7b0c06e">
 <p>
 If you have some other topic <i>within the scope of the course</i> in mind,
 please come talk to me early on, as we may be able to accommodate it.
@@ -226,9 +244,9 @@ please come talk to me early on, as we may be able to accommodate it.
 </div>
 </div>
 
-<div id="outline-container-org774ef5c" class="outline-3">
-<h3 id="org774ef5c"><a href="#org774ef5c">Recommended sources</a></h3>
-<div class="outline-text-3" id="text-org774ef5c">
+<div id="outline-container-orgcc8f363" class="outline-3">
+<h3 id="orgcc8f363"><a href="#orgcc8f363">Recommended sources</a></h3>
+<div class="outline-text-3" id="text-orgcc8f363">
 <p>
 You are encouraged to do your own research, but in the final
 manuscript (and when appropriate in the oral presentation) you need to
@@ -241,9 +259,9 @@ source from Wikipedia, and so on&#x2026;).
 </p>
 </div>
 </div>
-<div id="outline-container-org677e3ab" class="outline-3">
-<h3 id="org677e3ab"><a href="#org677e3ab">Grading</a></h3>
-<div class="outline-text-3" id="text-org677e3ab">
+<div id="outline-container-org8add6cd" class="outline-3">
+<h3 id="org8add6cd"><a href="#org8add6cd">Grading</a></h3>
+<div class="outline-text-3" id="text-org8add6cd">
 <p>
 <i>This part is worth 30% of your final grade &#x2013; as much as all the
 homework combined, so you want to do it well!</i>
@@ -287,9 +305,9 @@ The breakdown of the  project/presentation grade is as follows:
 </p>
 </div>
 
-<div id="outline-container-orgf6cde47" class="outline-4">
-<h4 id="orgf6cde47"><a href="#orgf6cde47">Evaluation rubric</a></h4>
-<div class="outline-text-4" id="text-orgf6cde47">
+<div id="outline-container-orgf5b9093" class="outline-4">
+<h4 id="orgf5b9093"><a href="#orgf5b9093">Evaluation rubric</a></h4>
+<div class="outline-text-4" id="text-orgf5b9093">
 <p>
 Remember to appreciate the time and effort others have put in their
 work and be kind and constructive in providing feedback. The aim is to
@@ -300,8 +318,8 @@ something that can be improved!
 </div>
 
 <ul class="org-ul">
-<li><a id="org9906d5e"></a><a href="#org9906d5e">Written summary</a><br>
-<div class="outline-text-5" id="text-org9906d5e">
+<li><a id="org93d4d00"></a><a href="#org93d4d00">Written summary</a><br>
+<div class="outline-text-5" id="text-org93d4d00">
 <p>
 This counts for 40% of this assignment, corresponding to 12% of the
 total grade.
@@ -473,8 +491,8 @@ total grade.
 </div>
 </li>
 
-<li><a id="orgc6b9135"></a><a href="#orgc6b9135">Oral presentation</a><br>
-<div class="outline-text-5" id="text-orgc6b9135">
+<li><a id="org66f91e4"></a><a href="#org66f91e4">Oral presentation</a><br>
+<div class="outline-text-5" id="text-org66f91e4">
 <p>
 This counts for 50% of this assignment, corresponding to 15% of the
 total grade.
@@ -668,8 +686,8 @@ topic.
 </div>
 </li>
 
-<li><a id="orgb1dd871"></a><a href="#orgb1dd871">Providing feedback</a><br>
-<div class="outline-text-5" id="text-orgb1dd871">
+<li><a id="orge4d7494"></a><a href="#orge4d7494">Providing feedback</a><br>
+<div class="outline-text-5" id="text-orge4d7494">
 <p>
 This counts for 10% of this assignment, corresponding to 3% of total grade.
 </p>
@@ -759,7 +777,7 @@ errors and imprecision.
   <hr>
   <a href="#light-dark-toggle"><i id="light-dark-toggle"><i class="fa-solid fa-circle-half-stroke"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="syllabus.html"><i class="fa-solid fa-arrow-left" style="font-size:16px"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="#top"><i class="fa-solid fa-arrow-up" style="font-size:16px"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="lectures.html"><i class="fa-solid fa-arrow-right" style="font-size:16px"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="https://github.com/mathren/stellar_phys_545"><i class="fa-brands fa-github" style="font-size:16px"></i></a><hr>
   <br>
-  Last updated on 14 January 2026 <br>
+  Last updated on 6 April 2026 <br>
   Made with Emacs 29.2 - Org mode 9.6.15
   <br>
 </div>

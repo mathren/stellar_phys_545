@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 2026-01-13 Tue 14:50 -->
+<!-- 2026-04-06 Mon 12:15 -->
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>ASTR545 - GW progenitors</title>
@@ -13,22 +13,6 @@
 			       stellar evolution, ASTR545, PYTS545, 545, University of
 			       Arizona, Steward Observatory, stars,
 			       theoretical astrophysics">
-
-
-<script>
-function toggleDrawer(drawerId) {
-  var content = document.getElementById(drawerId);
-  var button = content.previousElementSibling;
-
-  if (content.style.display === "none") {
-    content.style.display = "block";
-    button.innerHTML = button.innerHTML.replace("▼", "▲");
-  } else {
-    content.style.display = "none";
-    button.innerHTML = button.innerHTML.replace("▲", "▼");
-  }
-}
-</script>
 <script>
   window.MathJax = {
     tex: {
@@ -94,6 +78,7 @@ function toggleDrawer(drawerId) {
 </div>
 
 <!-- scripts -->
+<!-- menu  -->
 <script>
   function HamburgerMenuFunction() {
       var x = document.getElementById("myLinks");
@@ -105,6 +90,7 @@ function toggleDrawer(drawerId) {
   }
 </script>
 
+<!-- toggle drawers -->
 <script>
   window.onload = () => {
       const toggleButton = document.getElementById("light-dark-toggle");
@@ -121,7 +107,7 @@ function toggleDrawer(drawerId) {
       // Toggle theme on click
       toggleButton.addEventListener("click", () => {
           body.classList.toggle("dark-mode");
-	  html.classList.toggle("dark-mode");
+  html.classList.toggle("dark-mode");
 
           // Save user preference
           if (body.classList.contains("dark-mode")) {
@@ -132,6 +118,37 @@ function toggleDrawer(drawerId) {
       });
   };
 </script>
+
+<!-- jump to nearest date in lectures.html -->
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const headers = [...document.querySelectorAll("h1, h2, h3, h4, h5, h6")];
+  const today = new Date();
+  today.setHours(0, 0, 0, 0);
+
+  let closest = null;
+  let closestDiff = Infinity;
+
+  for (const h of headers) {
+    const ts = h.querySelector("span.timestamp");
+    if (!ts) continue;
+
+    const match = ts.textContent.match(/(\d{4}-\d{2}-\d{2})/);
+    if (!match) continue;
+
+    const parsed = new Date(match[1] + "T00:00:00");
+    const diff = Math.abs(parsed - today);
+
+    if (diff < closestDiff) {
+      closestDiff = diff;
+      closest = h;
+    }
+  }
+
+  if (closest) closest.scrollIntoView({ behavior: "smooth", block: "start" });
+});
+</script>
+
 <!-- end scripts-->
 </div>
 <div id="content" class="content">
@@ -141,9 +158,9 @@ function toggleDrawer(drawerId) {
 2017</a>, <a href="https://astrobites.org/2023/11/08/guide-to-gravitational-waves/">Astrobites post on GW</a> (and references therein!).
 </p>
 
-<div id="outline-container-org08ac8cc" class="outline-2">
-<h2 id="org08ac8cc"><a href="#org08ac8cc">Photons, neutrinos, and gravitational-wave astronomy</a></h2>
-<div class="outline-text-2" id="text-org08ac8cc">
+<div id="outline-container-orgaa0a061" class="outline-2">
+<h2 id="orgaa0a061"><a href="#orgaa0a061">Photons, neutrinos, and gravitational-wave astronomy</a></h2>
+<div class="outline-text-2" id="text-orgaa0a061">
 <p>
 Astronomy since its inception lost in history is based on observations
 of (visible) light from sources in the Sky. As mentioned in <a href="./notes-lecture-CMD-HRD.html">at the
@@ -190,9 +207,9 @@ formation of (stellar-mass) GW sources for ground and space-based detectors.
 </div>
 </div>
 
-<div id="outline-container-org9417039" class="outline-2">
-<h2 id="org9417039"><a href="#org9417039">GR and GW basics</a></h2>
-<div class="outline-text-2" id="text-org9417039">
+<div id="outline-container-org772759a" class="outline-2">
+<h2 id="org772759a"><a href="#org772759a">GR and GW basics</a></h2>
+<div class="outline-text-2" id="text-org772759a">
 <p>
 General relativity is a <i>geometric</i> theory of gravity that treats
 space-time as <i>dynamical</i> entity described by a tensor, the metric
@@ -206,7 +223,7 @@ curvature of space time. In turn, that curvature determines the
 <p>
 This is formally described by Einstein's field equation:
 </p>
-<div class="latex" id="org7165fc7">
+<div class="latex" id="org85697e5">
 \begin{equation}\label{eq:EFE}
 G_{\mu\nu} + \Lambda g_{\mu\nu} = T_{\mu\nu} \ \ ,
 \end{equation}
@@ -248,7 +265,7 @@ apply a small perturbation to it substituting \(g_{\mu\nu}\rightarrow
 g_{\mu\nu} + h_{\mu\nu}\). Keeping only terms linear in \(h_{\mu\nu}\) (which is
 our new functional variable) we can rewrite Eq. \ref{eq:EFE} as:
 </p>
-<div class="latex" id="org6822c58">
+<div class="latex" id="orgc5eae81">
 \begin{equation}\label{eq:GW_wave}
 \left( \nabla^{2} - \frac{\partial^{2}}{c\partial t^{2}}\right) h_{\mu\nu} \propto T_{\mu\nu} \ \ .
 \end{equation}
@@ -264,9 +281,9 @@ space-time in general relativity) as GWs are often described.
 </p>
 </div>
 
-<div id="outline-container-orgde6f908" class="outline-3">
-<h3 id="orgde6f908"><a href="#orgde6f908">Sources of GWs</a></h3>
-<div class="outline-text-3" id="text-orgde6f908">
+<div id="outline-container-org910952e" class="outline-3">
+<h3 id="org910952e"><a href="#org910952e">Sources of GWs</a></h3>
+<div class="outline-text-3" id="text-org910952e">
 <p>
 Before narrowing down what could be (mathematically and
 astrophysically) the sources of GWs, let's consider when are GR
@@ -307,8 +324,8 @@ tensor \(T_{\mu\nu}\)).
 </p>
 
 <div class="org-drawer-container">
-  <button class="org-drawer-toggle" onclick="toggleDrawer('drawer-Question-250')">Question ▼</button>
-  <div id="drawer-Question-250" class="org-drawer-content" style="display: none;"><ul class="org-ul">
+  <button class="org-drawer-toggle" onclick="toggleDrawer('drawer-Question-4785')">Question ▼</button>
+  <div id="drawer-Question-4785" class="org-drawer-content" style="display: none;"><ul class="org-ul">
 <li><b>Q</b>: what is the lowest order source term for electromagnetic
 radiation?</li>
 </ul>
@@ -337,7 +354,7 @@ leading order.
 <p>
 One can obtain, at leading order, the so called quadrupole formula:
 </p>
-<div class="latex" id="org86a5838">
+<div class="latex" id="org29e5fe4">
 \begin{equation}\label{eq:quad}
 h_{\mu\nu}(r) = \frac{2}{c^{4}}\frac{G}{r}\frac{d^{2} Q_{\mu\nu}}{d t^{2}} \ \ ,
 \end{equation}
@@ -346,7 +363,7 @@ h_{\mu\nu}(r) = \frac{2}{c^{4}}\frac{G}{r}\frac{d^{2} Q_{\mu\nu}}{d t^{2}} \ \ ,
 <p>
 where \(r\) is the luminosity distance and
 </p>
-<div class="latex" id="org155590d">
+<div class="latex" id="orga8e31c5">
 \begin{equation} \label{eq:quadrupole_def}
 Q_{\mu\nu} = \int d^{3} x T_{00}x_{\mu}x_{\nu} \ \ ,
 \end{equation}
@@ -384,9 +401,9 @@ pulsar timing arrays and beyond the scope of this course).
 </div>
 </div>
 
-<div id="outline-container-orgdbaefe2" class="outline-3">
-<h3 id="orgdbaefe2"><a href="#orgdbaefe2">Indirect detection of GWs</a></h3>
-<div class="outline-text-3" id="text-orgdbaefe2">
+<div id="outline-container-orgba2d87b" class="outline-3">
+<h3 id="orgba2d87b"><a href="#orgba2d87b">Indirect detection of GWs</a></h3>
+<div class="outline-text-3" id="text-orgba2d87b">
 <p>
 Pulsars are astrophysical radio sources repeating with very high
 precision interpreted physically as a neutron star rotating fast with
@@ -413,7 +430,7 @@ orbit!
 </p>
 
 
-<figure id="org7b18515">
+<figure id="orgfa4c198">
 <img src="./images/GW-decay.jpg" alt="GW-decay.jpg" width="100%">
 
 <figcaption><span class="figure-number">Figure 1: </span>Dots are the measured cumulative time shift in periastron passage w.r.t. a Keplerian orbit with constant period for PSR B1913+16. The solid line is the prediction assuming the period is changing due to GW emission as predicted by general relativity. Note that this is <b>not</b> a fit! From <a href="https://ui.adsabs.harvard.edu/abs/2016ApJ...829...55W/abstract">Weisberg &amp; Huang 2016</a></figcaption>
@@ -435,9 +452,9 @@ decaying in time because of the emission of GWs!
 </div>
 </div>
 
-<div id="outline-container-orgca2115d" class="outline-3">
-<h3 id="orgca2115d"><a href="#orgca2115d">Minimum orbital separation for significant GW emission</a></h3>
-<div class="outline-text-3" id="text-orgca2115d">
+<div id="outline-container-orgac7b1a6" class="outline-3">
+<h3 id="orgac7b1a6"><a href="#orgac7b1a6">Minimum orbital separation for significant GW emission</a></h3>
+<div class="outline-text-3" id="text-orgac7b1a6">
 <p>
 Besides its historical importance, the "Hulse-Taylor pulsar" allows
 for the introduction of an other important thing which requires GR to
@@ -459,7 +476,7 @@ For the Hulse-Taylor pulsar, we have:
 <li>\(M_{1} = 1.441M_{☉}\) for the mass of the detectable radio-pulsar</li>
 <li>\(M_{2} = 1.387M_{☉}\) for the mass of the unseen object</li>
 <li>\(P=0.323\) days for the orbit</li>
-<li>\(e = 0.61\) for the orbit (likely a product of the <a href="notes-lecture-SNe.html#orgcf80ec1">natal kick</a> of the
+<li>\(e = 0.61\) for the orbit (likely a product of the <a href="notes-lecture-SNe.html#org140658f">natal kick</a> of the
 second-born NS)</li>
 </ul>
 
@@ -498,8 +515,8 @@ within the age of the Universe.
 </p>
 
 <div class="org-drawer-container">
-  <button class="org-drawer-toggle" onclick="toggleDrawer('drawer-Question-2330')">Question ▼</button>
-  <div id="drawer-Question-2330" class="org-drawer-content" style="display: none;"><ul class="org-ul">
+  <button class="org-drawer-toggle" onclick="toggleDrawer('drawer-Question-6302')">Question ▼</button>
+  <div id="drawer-Question-6302" class="org-drawer-content" style="display: none;"><ul class="org-ul">
 <li><b>Q</b>: How big do the stellar progenitors of these compact objects get
 during their evolution? How does that compare to the loose
 requirement we have derived above?</li>
@@ -510,9 +527,9 @@ requirement we have derived above?</li>
 </div>
 </div>
 
-<div id="outline-container-orgc71a833" class="outline-2">
-<h2 id="orgc71a833"><a href="#orgc71a833">Direct detection</a></h2>
-<div class="outline-text-2" id="text-orgc71a833">
+<div id="outline-container-org484e492" class="outline-2">
+<h2 id="org484e492"><a href="#org484e492">Direct detection</a></h2>
+<div class="outline-text-2" id="text-org484e492">
 <p>
 Although impressive, the observations of the Hulse-Taylor pulsar (and
 other systems since then, see for example Table 3 in <a href="https://ui.adsabs.harvard.edu/abs/2016ApJ...829...55W/abstract">Weisberg &amp; Huang
@@ -550,7 +567,7 @@ on Earth faster.
 </p>
 
 
-<figure id="org7959418">
+<figure id="orgea04b0f">
 <img src="./images/GW150914.png" alt="GW150914.png" width="100%">
 
 <figcaption><span class="figure-number">Figure 2: </span>Detection of the first GW signal from the inspiral and merger of two BHs from <a href="https://ui.adsabs.harvard.edu/abs/2016PhRvL.116f1102A/abstract">LVK collaboration 2016</a>. Each column corresponds to a separate and independent detector (one in Washington and one in Louisiana): two are needed to make sure the signal is not a fluke, but appears in both at the same time modulo the light-travel time from one detector to the other. The top panels show the strain \(h=\Delta L/L\), that is the relative change in size of the detector caused by the passage of the GW. Note the scale! For LIGO \(L\simeq4\) km, corresponding to \(\Delta L\sim 10^{-16}\) cm, smaller than a nucleus! The second row show the prediction from numerical relativity calculations (i.e., the solutions of Eq. \ref{eq:EFE} obtained on a computer), the third row shows the residuals between the observation and the models in the second row. The third panel shows how the frequency of the signal changes in time, showing the characteristic "chirping" behavior (as time passes, the signal increases in frequency and becomes louder). Note also that we observe the final half-second of the life ot the system (how long the signal is within the detector band depends also on the masses involved, it is up to &sim;10 seconds for a BNS)</figcaption>
@@ -577,7 +594,7 @@ signature!
 </p>
 
 
-<figure id="orgd481d9a">
+<figure id="orgb31bf23">
 <img src="./images/GWTC-3_stellar-graveyard.jpg" alt="GWTC-3_stellar-graveyard.jpg" width="100%">
 
 <figcaption><span class="figure-number">Figure 3: </span>"Stellar graveyard" as of the publication of the third Gravitational wave catalog (GWTC3), see <a href="https://ui.adsabs.harvard.edu/abs/2023PhRvX..13a1048A/abstract">LVK collaboration 2023</a> and <a href="https://ui.adsabs.harvard.edu/abs/2023PhRvX..13d1039A/abstract">LVK Collaboration 2023b</a>. The spread in the horizontal direction is just for clarity but contains no information, while the vertical position indicates the mass in \(M_{☉}\) units. Red points are known BHs in X-ray binaries, yellow points are (an incomplete) census of NS known as pulsars or accretors in X-ray binaries, orange points are NS detected in GW-driven inspiral and mergers, and blue dots are BBH mergers (two dots for the pre-merger BHs in the binary and one dot for the resulting BH).</figcaption>
@@ -603,7 +620,7 @@ within the age of the Universe</li>
 background, unique constraints on GR in strong gravity (e.g., from the
 "ring-down" phase just after the merger, when the new formed BH
 "shakes away its hairs"), and nuclear physics (GW170817 confirmed that
-BNS mergers are one site for <a href="notes-lecture-nuclear-burning.html#orgcb820dc">r-process</a> nucleosynthesis and formation
+BNS mergers are one site for <a href="notes-lecture-nuclear-burning.html#orgf633210">r-process</a> nucleosynthesis and formation
 of element heavier than iron). Ultimately, GW astronomy is a
 completely new way to explore the Universe. The discussion here is far
 from complete and focused on the aspects related to stellar physics
@@ -612,9 +629,9 @@ only.
 </div>
 </div>
 
-<div id="outline-container-orgef0c6ce" class="outline-2">
-<h2 id="orgef0c6ce"><a href="#orgef0c6ce">The problem: how do compact objects get so close to each other?</a></h2>
-<div class="outline-text-2" id="text-orgef0c6ce">
+<div id="outline-container-org50568b4" class="outline-2">
+<h2 id="org50568b4"><a href="#org50568b4">The problem: how do compact objects get so close to each other?</a></h2>
+<div class="outline-text-2" id="text-org50568b4">
 <p>
 With the indirect <i>and</i> direct detection of <i>multiple</i> GW, we now know
 that compact objects (WD, NS, BHs) exist in binaries with separations
@@ -664,9 +681,9 @@ below.
 </p>
 </div>
 
-<div id="outline-container-org6cba201" class="outline-3">
-<h3 id="org6cba201"><a href="#org6cba201">Isolated evolution channels</a></h3>
-<div class="outline-text-3" id="text-org6cba201">
+<div id="outline-container-org1ea48c1" class="outline-3">
+<h3 id="org1ea48c1"><a href="#org1ea48c1">Isolated evolution channels</a></h3>
+<div class="outline-text-3" id="text-org1ea48c1">
 <p>
 For isolated evolution channels of GW progenitors, the idea is that
 binary interactions (possibly triggered, or enhanced by the presence
@@ -695,7 +712,7 @@ have been proposed.
 </p>
 
 
-<figure id="org5a98fda">
+<figure id="org2611655">
 <img src="./images/Tauris17.png" alt="Tauris17.png" width="100%">
 
 <figcaption><span class="figure-number">Figure 4: </span>Cartoon of the various steps in the evolution of a massive binary system evolving to be a GW-driven BNS merger, from <a href="https://iopscience.iop.org/article/10.3847/1538-4357/aa7e89">Tauris et al. 2017</a>. Many qualitative variations (e.g., NS &harr; BH, SN explosion &harr; failed explosion, RLOF &harr; Common envelope) have been proposed to explain BNS and BBH with various properties, see also review by <a href="https://ui.adsabs.harvard.edu/abs/2024ARA%26A..62...21M/abstract">Marchant &amp; Bodensteiner 2024</a>.</figcaption>
@@ -765,9 +782,9 @@ to occur (see for example <a href="https://ui.adsabs.harvard.edu/abs/2023A%26A..
 </div>
 </div>
 
-<div id="outline-container-orgf679f42" class="outline-3">
-<h3 id="orgf679f42"><a href="#orgf679f42">Dynamical channels</a></h3>
-<div class="outline-text-3" id="text-orgf679f42">
+<div id="outline-container-org68e2014" class="outline-3">
+<h3 id="org68e2014"><a href="#org68e2014">Dynamical channels</a></h3>
+<div class="outline-text-3" id="text-org68e2014">
 <p>
 Alternatively, another way to solve the issue of two compact objects
 needing to be closer than their parent stars are large to get
@@ -844,9 +861,9 @@ comprehensive summary there would be much more to summarize already!
 </div>
 </div>
 
-<div id="outline-container-org63438e6" class="outline-2">
-<h2 id="org63438e6"><a href="#org63438e6">The present and future of GW astronomy</a></h2>
-<div class="outline-text-2" id="text-org63438e6">
+<div id="outline-container-org861ffc1" class="outline-2">
+<h2 id="org861ffc1"><a href="#org861ffc1">The present and future of GW astronomy</a></h2>
+<div class="outline-text-2" id="text-org861ffc1">
 <p>
 Despite the first direct detection having occurred 10 years ago, the
 field of GW astronomy is only in its infancy: many new detectors
@@ -854,9 +871,9 @@ probing different GW frequencies are being planned.
 </p>
 </div>
 
-<div id="outline-container-org6056067" class="outline-3">
-<h3 id="org6056067"><a href="#org6056067">Ground-based detectors</a></h3>
-<div class="outline-text-3" id="text-org6056067">
+<div id="outline-container-orgd1c96a7" class="outline-3">
+<h3 id="orgd1c96a7"><a href="#orgd1c96a7">Ground-based detectors</a></h3>
+<div class="outline-text-3" id="text-orgd1c96a7">
 <p>
 Multiple ground-based detectors exist and all collaborate under the
 umbrella of the "LIGO Virgo KAGRA scientific collaboration". The
@@ -865,7 +882,7 @@ existing ground based detectors:
 </p>
 
 
-<figure id="org6612110">
+<figure id="orgf038fea">
 <img src="./images/GW_timeline.png" alt="GW_timeline.png" width="100%">
 
 <figcaption><span class="figure-number">Figure 5: </span>LIGO, VIRGO, and KAGRA are three ground-based GW observatories. This figure shows the predicted uptime for each detector with the horizon out to which they are predicted to be able to detect a BNS merger. From <a href="https://observing.docs.ligo.org/plan/">https://observing.docs.ligo.org/plan/</a>.</figcaption>
@@ -880,7 +897,7 @@ sky localization.
 </p>
 
 
-<figure id="org642bbd5">
+<figure id="org5dbb6a1">
 <img src="./images/Skymap.jpg" alt="Skymap.jpg" width="100%">
 
 <figcaption><span class="figure-number">Figure 6: </span>Visualization of the uncertainty regions for the localization on the plane of the sky for selected GW merger events. The size of these contours depends on the amplitude of the signal (and thus the masses involved), its polarization, and importantly how many detectors could catch the signal and the delay times.</figcaption>
@@ -912,9 +929,9 @@ before the formation of the first stars!
 </div>
 </div>
 
-<div id="outline-container-orgf1ee182" class="outline-3">
-<h3 id="orgf1ee182"><a href="#orgf1ee182">Space-based detectors</a></h3>
-<div class="outline-text-3" id="text-orgf1ee182">
+<div id="outline-container-org4a6466c" class="outline-3">
+<h3 id="org4a6466c"><a href="#org4a6466c">Space-based detectors</a></h3>
+<div class="outline-text-3" id="text-org4a6466c">
 <iframe width="600" height="400" src="https://www.youtube.com/embed/QjeO64Wf3fU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 <p>
@@ -996,7 +1013,7 @@ black dashed and green line diverge in the plot below).
 </p>
 
 
-<figure id="org7968add">
+<figure id="orgb24b8b2">
 <img src="./images/lisa_sense.png" alt="lisa_sense.png" width="100%">
 
 <figcaption><span class="figure-number">Figure 7: </span>Predicted sensitivity curve for LISA from <a href="https://arxiv.org/abs/1702.00786">Amaro-Seoane et al. 2017</a> with annotated expected sources. The black dashed line marks the sensitivity, while other colors mark the \(f_\mathrm{GW}, \dot{f}_\mathrm{GW}\) evolution of various sources: inspiraling and merging super-massive BHs in red/black, EMRIs in red thin lines, stellar mass BBH inspiral (but the last phase of the inspiral and merger occur in the LIGO band), DWD which have no change in \(\dot{f}_\mathrm{GW}\) and \(f_\mathrm{GW} = 2 f_\mathrm{orb}\) as light blue dots.</figcaption>
@@ -1005,18 +1022,18 @@ black dashed and green line diverge in the plot below).
 </div>
 
 
-<div id="outline-container-org49aa4de" class="outline-3">
-<h3 id="org49aa4de"><a href="#org49aa4de">Galaxy-wide detectors: Pulsar Timing Arrays</a></h3>
-<div class="outline-text-3" id="text-org49aa4de">
+<div id="outline-container-orgb524bd1" class="outline-3">
+<h3 id="orgb524bd1"><a href="#orgb524bd1">Galaxy-wide detectors: Pulsar Timing Arrays</a></h3>
+<div class="outline-text-3" id="text-orgb524bd1">
 <p>
-We have already mentioned <a href="#orgdbaefe2">above</a> pulsars as very precisely repeating
+We have already mentioned <a href="#orgba2d87b">above</a> pulsars as very precisely repeating
 radio sources in the sky interpreted as neutron stars. By monitoring a <i>network</i>
 of sufficiently precise pulsars, one can envision a <b>Galactic scale GW
 detector</b>: this is what pulsar timing arrays (PTA) experiments are.
 </p>
 
 
-<figure id="org18715d5">
+<figure id="orga4a6f62">
 <img src="./images/PTAs-1024x768.gif" alt="PTAs-1024x768.gif" width="100%">
 
 <figcaption><span class="figure-number">Figure 8: </span>Skematic representation of PTA: each pulsar (represented as a black dot with cones marking the magnetic field axis). As a GW passes through the space between Earth where the radio telescopes are and the pulsars it introduces delays (the light from the pulsar has to travel a longer/shorter space!). Correlating the signal from multiple pulsars one can thus infer if the delay is coherent across the galaxy and interpretable as a GW.</figcaption>
@@ -1050,9 +1067,9 @@ see for example <a href="https://link.springer.com/article/10.1007/s12036-020-96
 </div>
 
 
-<div id="outline-container-orgc3580fe" class="outline-3">
-<h3 id="orgc3580fe"><a href="#orgc3580fe">The future is <del>bright</del> loud</a></h3>
-<div class="outline-text-3" id="text-orgc3580fe">
+<div id="outline-container-org44ca0fb" class="outline-3">
+<h3 id="org44ca0fb"><a href="#org44ca0fb">The future is <del>bright</del> loud</a></h3>
+<div class="outline-text-3" id="text-org44ca0fb">
 <p>
 The figure below sketches the sensitivity in terms of strain \(h=\Delta L/L\)
 as a function of the GW frequency (\(h\equiv h(f_\mathrm{GW})\)). The
@@ -1066,7 +1083,7 @@ scale of the x-axis) that one can attempt to detect.
 </p>
 
 
-<figure id="org7cebe30">
+<figure id="org4721817">
 <img src="./images/GWdetectors.png" alt="GWdetectors.png" width="100%">
 
 <figcaption><span class="figure-number">Figure 9: </span>Sensitivity curves of present and planned GW detectors: Ground based detectors are on the right (highest frequencies), space-based in the middle, and galaxy-size pulsar-timing based on the left. Resonances in the detectors can make them "blind" to specific narrow frequencies: this can cause narrow "spikes" in the black curves at specific frequencies, which are removed here for clarity. From <a href="https://ui.adsabs.harvard.edu/abs/2015CQGra..32a5014M/abstract">Moore et al. 2015</a>.</figcaption>
@@ -1080,7 +1097,7 @@ scale of the x-axis) that one can attempt to detect.
   <hr>
   <a href="#light-dark-toggle"><i id="light-dark-toggle"><i class="fa-solid fa-circle-half-stroke"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="notes-lecture-SNe.html"><i class="fa-solid fa-arrow-left" style="font-size:16px"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="#top"><i class="fa-solid fa-arrow-up" style="font-size:16px"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="notes-lecture-SNIa.html"><i class="fa-solid fa-arrow-right" style="font-size:16px"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="https://github.com/mathren/stellar_phys_545"><i class="fa-brands fa-github" style="font-size:16px"></i></a><hr>
   <br>
-  Last updated on 13 January 2026 <br>
+  Last updated on 6 April 2026 <br>
   Made with Emacs 29.2 - Org mode 9.6.15
   <br>
 </div>

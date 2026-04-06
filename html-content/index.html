@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 2026-01-13 Tue 14:50 -->
+<!-- 2026-04-06 Mon 12:15 -->
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>ASTR/PTYS 545 Stellar Evolution</title>
@@ -13,22 +13,6 @@
 			       stellar evolution, ASTR545, PYTS545, 545, University of
 			       Arizona, Steward Observatory, stars,
 			       theoretical astrophysics">
-
-
-<script>
-function toggleDrawer(drawerId) {
-  var content = document.getElementById(drawerId);
-  var button = content.previousElementSibling;
-
-  if (content.style.display === "none") {
-    content.style.display = "block";
-    button.innerHTML = button.innerHTML.replace("▼", "▲");
-  } else {
-    content.style.display = "none";
-    button.innerHTML = button.innerHTML.replace("▲", "▼");
-  }
-}
-</script>
 </head>
 <body>
 <div id="preamble" class="status">
@@ -62,6 +46,7 @@ function toggleDrawer(drawerId) {
 </div>
 
 <!-- scripts -->
+<!-- menu  -->
 <script>
   function HamburgerMenuFunction() {
       var x = document.getElementById("myLinks");
@@ -73,6 +58,7 @@ function toggleDrawer(drawerId) {
   }
 </script>
 
+<!-- toggle drawers -->
 <script>
   window.onload = () => {
       const toggleButton = document.getElementById("light-dark-toggle");
@@ -89,7 +75,7 @@ function toggleDrawer(drawerId) {
       // Toggle theme on click
       toggleButton.addEventListener("click", () => {
           body.classList.toggle("dark-mode");
-	  html.classList.toggle("dark-mode");
+  html.classList.toggle("dark-mode");
 
           // Save user preference
           if (body.classList.contains("dark-mode")) {
@@ -100,13 +86,44 @@ function toggleDrawer(drawerId) {
       });
   };
 </script>
+
+<!-- jump to nearest date in lectures.html -->
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const headers = [...document.querySelectorAll("h1, h2, h3, h4, h5, h6")];
+  const today = new Date();
+  today.setHours(0, 0, 0, 0);
+
+  let closest = null;
+  let closestDiff = Infinity;
+
+  for (const h of headers) {
+    const ts = h.querySelector("span.timestamp");
+    if (!ts) continue;
+
+    const match = ts.textContent.match(/(\d{4}-\d{2}-\d{2})/);
+    if (!match) continue;
+
+    const parsed = new Date(match[1] + "T00:00:00");
+    const diff = Math.abs(parsed - today);
+
+    if (diff < closestDiff) {
+      closestDiff = diff;
+      closest = h;
+    }
+  }
+
+  if (closest) closest.scrollIntoView({ behavior: "smooth", block: "start" });
+});
+</script>
+
 <!-- end scripts-->
 </div>
 <div id="content" class="content">
 
-<div id="outline-container-orgb3d93c6" class="outline-2">
-<h2 id="orgb3d93c6"><a href="#orgb3d93c6">ASTR/PTYS 545 Theoretical Astrophysics - Stellar Evolution</a></h2>
-<div class="outline-text-2" id="text-orgb3d93c6">
+<div id="outline-container-org276bd99" class="outline-2">
+<h2 id="org276bd99"><a href="#org276bd99">ASTR/PTYS 545 Theoretical Astrophysics - Stellar Evolution</a></h2>
+<div class="outline-text-2" id="text-org276bd99">
 <p>
 Material developed for a one-semester graduate-level course at the
 Department of Astronomy and Steward Observatory of the University of
@@ -130,9 +147,9 @@ parsecs!</i>"
 </div>
 </div>
 
-<div id="outline-container-org9b675e0" class="outline-3">
-<h3 id="org9b675e0"><a href="#org9b675e0">Disclaimer</a></h3>
-<div class="outline-text-3" id="text-org9b675e0">
+<div id="outline-container-orgf2f4b31" class="outline-3">
+<h3 id="orgf2f4b31"><a href="#orgf2f4b31">Disclaimer</a></h3>
+<div class="outline-text-3" id="text-orgf2f4b31">
 <p>
 All the pages of this website are under active construction, may
 contain errors and/or change without notice. If you find an error
@@ -141,12 +158,12 @@ please let me know and feel free to open an issue/PR on <a href="https://github.
 </div>
 </div>
 
-<div id="outline-container-org6d19fb4" class="outline-3">
-<h3 id="org6d19fb4"><a href="#org6d19fb4">How to use this website</a></h3>
-<div class="outline-text-3" id="text-org6d19fb4">
+<div id="outline-container-orga6e43e0" class="outline-3">
+<h3 id="orga6e43e0"><a href="#orga6e43e0">How to use this website</a></h3>
+<div class="outline-text-3" id="text-orga6e43e0">
 <p>
 This are my notes for lectures, and are intended to <b>complement</b> (not
-substitute!) <a href="./syllabus.html#org4ee06bf">other resources</a>.
+substitute!) <a href="./syllabus.html#orgc16b9ca">other resources</a>.
 </p>
 
 <p>
@@ -166,9 +183,9 @@ the repository of this website.
 </p>
 </div>
 
-<div id="outline-container-org19959c6" class="outline-4">
-<h4 id="org19959c6"><a href="#org19959c6">Only for students at University of Arizona</a></h4>
-<div class="outline-text-4" id="text-org19959c6">
+<div id="outline-container-orgcb46930" class="outline-4">
+<h4 id="orgcb46930"><a href="#orgcb46930">Only for students at University of Arizona</a></h4>
+<div class="outline-text-4" id="text-orgcb46930">
 <p>
 Homework assignments and other official communications will be on <a href="https://d2l.arizona.edu/d2l/home/1701369">D2L</a>.
 </p>
@@ -182,7 +199,7 @@ Homework assignments and other official communications will be on <a href="https
   <hr>
   <a href="#light-dark-toggle"><i id="light-dark-toggle"><i class="fa-solid fa-circle-half-stroke"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="index.html"><i class="fa-solid fa-arrow-left" style="font-size:16px"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="#top"><i class="fa-solid fa-arrow-up" style="font-size:16px"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="syllabus.html"><i class="fa-solid fa-arrow-right" style="font-size:16px"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="https://github.com/mathren/stellar_phys_545"><i class="fa-brands fa-github" style="font-size:16px"></i></a><hr>
   <br>
-  Last updated on 13 January 2026 <br>
+  Last updated on 6 April 2026 <br>
   Made with Emacs 29.2 - Org mode 9.6.15
   <br>
 </div>
