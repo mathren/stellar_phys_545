@@ -47,7 +47,7 @@ if [ $? -eq 0 ]; then
 	    git push
 	else
 	    git add .
-	    git commit -am "$1"
+	    git commit -am "$@"
 	    git push
 	fi
 	pushed=true
