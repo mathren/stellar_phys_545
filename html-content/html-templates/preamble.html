@@ -83,11 +83,10 @@ document.addEventListener("DOMContentLoaded", () => {
     const ts = h.querySelector("span.timestamp");
     if (!ts) continue;
 
-    // Extract "2026-01-21" from "2026-01-21 Wed "
     const match = ts.textContent.match(/(\d{4}-\d{2}-\d{2})/);
     if (!match) continue;
 
-    const parsed = new Date(match[1] + "T00:00:00"); // force local time, avoid UTC shift
+    const parsed = new Date(match[1] + "T00:00:00");
     const diff = Math.abs(parsed - today);
 
     if (diff < closestDiff) {
@@ -99,4 +98,5 @@ document.addEventListener("DOMContentLoaded", () => {
   if (closest) closest.scrollIntoView({ behavior: "smooth", block: "start" });
 });
 </script>
+
 <!-- end scripts-->
