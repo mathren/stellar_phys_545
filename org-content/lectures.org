@@ -5,17 +5,16 @@
 #+PREVIOUS_PAGE: syllabus.org
 #+NEXT_PAGE: notes-lecture-Intro.org
 #+BEGIN_EXPORT html
-<!-- jump to nearest date in lectures.html -->
 <script>
-document.addEventListener("DOMContentLoaded", () => {
- const headers = [...document.querySelectorAll("h1, h2, h3, h4, h5, h6")];
- const today = new Date();
- today.setHours(0, 0, 0, 0);
+function jumpToNearestDate() {
+  const headers = [...document.querySelectorAll("h1, h2, h3, h4, h5, h6")];
+  const today = new Date();
+  today.setHours(0, 0, 0, 0);
 
- let closest = null;
- let closestDiff = Infinity;
+  let closest = null;
+  let closestDiff = Infinity;
 
- for (const h of headers) {
+  for (const h of headers) {
     const ts = h.querySelector("span.timestamp");
     if (!ts) continue;
 
@@ -32,9 +31,10 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   if (closest) closest.scrollIntoView({ behavior: "smooth", block: "start" });
-});
+}
 </script>
 #+END_EXPORT
+
 * Lectures topic-by-topic
 This is a rough schedule of the topics we will cover. However, we may
 not get to all topics, depending on progress throughout the semester
@@ -45,6 +45,18 @@ progresses.
 *N.B.:* The notes provided here are intended to complement, /not/
 substitute other sources. You are *strongly encouraged* to consult books
 (e.g., Kippenhahn et al. 2012) and Prof. Onno Pols' notes.
+
+#+BEGIN_EXPORT html
+<div style="text-align: center;">
+<button onclick="jumpToNearestDate()" title="Jump to today">
+  <a href="javascript:void(0);" title="Jump to today">
+    <i class="fa-solid fa-calendar-day"> Jump to today </i> <i class="fa-solid fa-calendar-day"></i>
+  </a>
+</button>
+</div>
+#+END_EXPORT
+
+
 
 ** <2026-01-14 Wed> - Intro
 *Aim*:
