@@ -9,13 +9,22 @@
 
 *Disclaimer:* Here, we discuss the collapse and possible explosion of
 massive stars, that is "core collapse supernovae" (CCSNe). These are
-/not/ the only kind of supernova transient that can be observed, and our
-focus here excludes SNIa, pair-instability supernovae, luminous red
-novae, tidal disruption events, etc. (see also [[./projects.org][projects]]).
+/not/ the only kind of supernova and/or transient that can be observed,
+and our focus here excludes SNIa, pair-instability supernovae,
+luminous red novae, tidal disruption events, gravitational-waves
+mergers, etc. (see also [[./projects.org][projects]] and upcoming lectures on
+[[./notes-lecture-GWprog.org][gravitational-wave merger progenitors]] and [[./notes-lecture-SNIa.org][SNIa]]).
 
 * Gravity's victory over nuclear energy release
 
-"Massive stars" can be defined as those that will end their life
+We have described the entire evolution of a star in terms of the
+"gravothermal collapse" caused by the virial theorem $\langle T \rangle\propto M\mu/R$
+temporarily delayed by energy release by thermonuclear nuclear burning
+until either non-ideal-gas pressure terms stop the collapse (WD
+formation) or the ultimate victory of gravity over the gas pressure
+gradient.
+
+Massive stars" can be defined as those that will end their life
 collapsing either into a neutron star (NS) or a black hole (BH). This
 requires them to consume (at least partially) the oxygen-rich core,
 that is, for the widest range of initial masses, to build a
@@ -30,14 +39,6 @@ companions, which is the rule rather than the exception ([[http://adsabs.harvard
 2012]]), can also change this threshold ([[http://adsabs.harvard.edu/abs/2017A%26A...601A..29Z][Zapartas et al. 2017]],
 [[https://ui.adsabs.harvard.edu/abs/2017ApJ...850..197P/abstract][Poelarends et al. 2017]]).
 
-*N.B.:* At the lower mass end, super-AGB supernova progenitors may reach
-the onset of core collapse because of electron captures in the oxygen,
-neon, magnesium degenerate core producing a so-called "electron
-capture SN" (cf. [[file:in-class-evol-wrap-up.org::*super-AGB stars and off-center C ignition][super-AGB evolution]]) instead of because electron captures
-in the iron core. In reality, al CCSNe /are/ electron-capture SNe
-because electron captures always play a role in accelerating the
-collapse (see below).
-
 *N.B.:* In other subfields, for example asteroseismology or exoplanets,
 "massive" may just mean "with a convective main sequence core",
 meaning a much lower threshold $M_\mathrm{ZAMS} \ge 1.2-1.3M_{\odot}$.
@@ -49,20 +50,14 @@ density ($\rho\geq10^{14}$ g cm^{-3}), bounces due to the repulsive core of the
 nuclear force (cf. [[./notes-lecture-nuclear-burning.org][lecture on microphysics of nuclear reactions]]) and
 this triggers a shock-wave.
 
-*N.B.:* The collapse of the exhausted core takes a /dynamical/ timescale,
-which for the densities reached at the end of the nuclear life of the
-star ($\rho\ge10^{10}$ g cm^{-3}) is extremely short, $\tau_\mathrm{free fall}$ is
-of order $\sim0.1$ sec \leq blink of an eye! Therefore, while the inner core
-collapses, the outer layer barely notice that something is happening:
-the collapse, bounce and reversal of the velocity therefore has to
-trigger a shock (discontinuity in the velocity of the gas)!
 
-*N.B.:* Such discontinuity has to propagate faster than the local sound
-speed to not be washed out by sound waves in the gas: shocks are by
-definition discontinuity of the velocity field of a fluid propagating
-faster than the sound speed. Physically, there is never a true
-discontinuity but a thin layer over which there is a large and abrupt
-change in velocity.
+*N.B.:* At the lower mass end, super-AGB supernova progenitors may reach
+the onset of core collapse because of electron captures in the oxygen,
+neon, magnesium degenerate core producing a so-called "electron
+capture SN" (cf. [[file:in-class-evol-wrap-up.org::*super-AGB stars and off-center C ignition][super-AGB evolution]]) instead of because electron captures
+in the iron core. In reality, al CCSNe /are/ electron-capture SNe
+because electron captures always play a role in accelerating the
+collapse (see below).
 
 The shock wave launched is thought to explode the star, unbinding the
 stellar envelope. However, historically until very recently
@@ -644,6 +639,24 @@ star, effectively "whipping the star" and injecting energy throughout.
 #+CAPTION: First day of a weak explosion: as time progresses (colors get lighter) we see the discontinuity in the $v(m)$ profile moving outward in mass coordinate: this is the SN shock traveling through the star and energizing each layer to (possibly) drive an explosion. By the end of this simulation, a lot ot the material has a positive velocity, with the outermost layers being fasters, indicating ejection. But matter below $m\sim5\,M_{\odot}$ has a negative velocity, indicating late ($\sim$1 day post-collapse) fallback. This is a =SNEC= spherically symmetric artificially driven (/thermal bomb) explosion of of the $30\,M_{\odot}$ solar metallicity donor star in a binary, which reaches the onset of core-collapse as a $12\,M_{\odot}$ stripped He core from [[https://ui.adsabs.harvard.edu/abs/2023ApJ...948..111F/abstract][Farmer et al. 2023]]. The cyan dotted line in the color bar marks the time of shock breakout.
 #+ATTR_HTML: :width 75%
 [[./images/Shock_whip.png]]
+
+
+
+
+*N.B.:* The shock propagates faster than the local sound
+speed to not be washed out by sound waves in the gas: shocks are by
+definition discontinuity of the velocity field of a fluid propagating
+faster than the sound speed. Physically, there is never a true
+discontinuity but a thin layer over which there is a large and abrupt
+change in velocity.
+
+*N.B.:* The collapse of the exhausted core takes a /dynamical/ timescale,
+which for the densities reached at the end of the nuclear life of the
+star ($\rho\ge10^{10}$ g cm^{-3}) is extremely short, $\tau_\mathrm{free fall}$ is
+of order $\sim0.1$ sec \leq blink of an eye! Therefore, while the inner core
+collapses, the outer layer barely notice that something is happening:
+the collapse, bounce and reversal of the velocity therefore has to
+trigger a shock (discontinuity in the velocity of the gas)!
 
 
 This shock propagation /starts/ within hundreds of millisecond after the
