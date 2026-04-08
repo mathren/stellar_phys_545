@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 2026-04-08 Wed 08:58 -->
+<!-- 2026-04-08 Wed 09:01 -->
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>ASTR545 - CCSNe and compact object formation</title>
@@ -206,9 +206,9 @@ The dynamics of the collapse, and therefore the success or failure of
 the explosion, depend on the structure (temperature, density, etc.)
 and details of the composition of the core (see also <a href="https://ui.adsabs.harvard.edu/abs/2014ApJ...783...10S/abstract">Sukhbold &amp;
 Woosley 2014</a>, <a href="https://ui.adsabs.harvard.edu/abs/2016ApJS..227...22F/abstract">Farmer et al. 2016</a>, <a href="https://ui.adsabs.harvard.edu/abs/2024RNAAS...8..152R/abstract">Renzo et al. 2024</a>, <a href="https://ui.adsabs.harvard.edu/abs/2024arXiv240902058L/abstract">Laplace et al.
-2024</a>). But the details of the stellar structure depend on the late
-burning stages (namely, <a href="./notes-lecture-nuclear-cycles.html#org970a9d4">Silicon burning</a>) of the star, and on the
-mixing processes during these phases.
+2024</a>, <a href="https://ui.adsabs.harvard.edu/abs/2025ApJ...987..164B/abstract">Burrows et al. 2025</a>). But the details of the stellar structure
+depend on the late burning stages (namely, <a href="./notes-lecture-nuclear-cycles.html#org970a9d4">Silicon burning</a>) of the
+star, and on the mixing processes during these phases.
 </p>
 
 <p>
@@ -232,7 +232,7 @@ successful explosion, or not). As an example, the amount of free
 electrons in the core, which is quantified by \(Y_e=1/\mu_{e}\):
 </p>
 
-<div class="latex" id="orgaeb0288">
+<div class="latex" id="orgca4dd5a">
 \begin{equation}
   Y_e=\ \sum_i \frac{Z_i}{A_i}X_i \ \ ,
 \end{equation}
@@ -244,7 +244,7 @@ enters quadratically in the effective Chandrasekhar
 mass,
 </p>
 
-<div class="latex" id="org49e6b80">
+<div class="latex" id="org8244599">
 \begin{equation}\label{eq:Mcha}
   M_\mathrm{Fe} \geq M_\mathrm{Ch}^\mathrm{eff} \simeq (5.80 M_☉) Y_e^2\left[1 +
     \left(\frac{s_e}{\pi Y_e}\right)^2\right]%1.44M_☉(2 Y_e)^2 \ \ ,
@@ -278,7 +278,7 @@ the energy loss of the star, and the core is doomed to collapse. The
 conventional definition for the onset of collapse is
 </p>
 
-<div class="latex" id="org877d249">
+<div class="latex" id="org068e8f2">
 \begin{equation}\label{eq:onset_cc}
   \mathrm{max}\{ |v| \} \geq 10^3 \ \mathrm{km \ s^{-1}} \ \ ,
 \end{equation}
@@ -305,7 +305,7 @@ collapse.
 During collapse, electron capture reactions, e.g.,
 </p>
 
-<div class="latex" id="org0dd621d">
+<div class="latex" id="orgee60bca">
 \begin{equation}
   \label{eq:ecap}
   p+e^-\rightarrow n+\nu_e \ \ , \ \ ^AZ+e^-\rightarrow ^A(Z-1)+ \nu_e \ \ ,
@@ -339,7 +339,7 @@ two separate parts (<a href="http://adsabs.harvard.edu/abs/2002RvMP...74.1015W">
 <b>Inner Core</b>: in sonic contact and collapsing self-similarly (i.e.,
 the infall velocity \(|v| \propto r\)). Its mass is given by:
 </p>
-<div class="latex" id="org52fa206">
+<div class="latex" id="org05dff4d">
  \begin{equation}
   \label{eq:InnerCoreMass} M_\mathrm{i.c.}=\int_{|v(r)|\leq c_s(r)}4\pi\rho(r) r^2 dr \ \ ,
 \end{equation}
@@ -382,7 +382,7 @@ core reaching super-nuclear densities.
 </p>
 
 
-<figure id="org0d69edb">
+<figure id="orgf5b6071">
 <img src="./images/v_profile_core_bounce.png" alt="v_profile_core_bounce.png" width="100%">
 
 <figcaption><span class="figure-number">Figure 1: </span>Velocity profile for the core of an initially \(15 M_{☉}\) star at the onset of core-collapse (left panel) at core bounce (right panel). Note the linear behavior of the infall in the inner core on the left panel. Note also the scales on the two panels: at the onset of core collapse, the infall velocity is still subsonic and directed inward (\(v<0\)) everywhere. The  data in the right panel are obtained using the open-source code GR1D (<a href="http://adsabs.harvard.edu/abs/2010CQGra..27k4103O">O'connor &amp; Ott 2010</a>), with the data at the onset of core collapse (left panel) as input. The energy source to drive the explosion is the gravitational binding energy released by the collapse of \(\sim1.4 M_{☉}\) of Fe-rich material with radius of almost \(\sim1000\) km to a proto-NS with radius of \(\sim10\) km. This figure is modified from <a href="https://etd.adm.unipi.it/theses/available/etd-05062015-125630/unrestricted/Thesis_colored_10052015.pdf">Renzo 2015</a>.</figcaption>
@@ -392,7 +392,7 @@ core reaching super-nuclear densities.
 The collapse of the core releases gravitational binding energy, which
 ultimately is the energy source of the possible SN explosion:
 </p>
-<div class="latex" id="org95d0cb3">
+<div class="latex" id="org72a6e5d">
 \begin{equation}
   \label{eq:3}
   \Delta E_\mathrm{bind} \simeq \frac{G M_\mathrm{Fe}^2}{R_{\rm NS}} - \frac{G
@@ -418,7 +418,7 @@ non-spherically-symmetric physical ingredients.
 </p>
 
 
-<figure id="org17eec9e">
+<figure id="org2e2054e">
 <img src="./images/couch13.jpg" alt="couch13.jpg" width="100%">
 
 <figcaption><span class="figure-number">Figure 2: </span>Asymmetries are key to the explosion. The legend indicates the neutrino luminosity input in units of \(10^{52}\) ergs assumed. 2D simulations (solid lines) always explode faster than 3D simulations (dashed lines). Higher resolution 2D explodes slower than low resolution 2D simulations (comparing blue and cyan). The 1D simulation has the higherst energy input and still barely explodes. This is Fig. 2 from <a href="https://iopscience.iop.org/article/10.1088/0004-637X/775/1/35#apj482201f2">Couch 2013</a>.</figcaption>
@@ -427,7 +427,7 @@ non-spherically-symmetric physical ingredients.
 
 
 
-<figure id="org634fc52">
+<figure id="org019ed01">
 <img src="./images/shockR.png" alt="shockR.png" width="100%">
 
 <figcaption><span class="figure-number">Figure 3: </span>Asymmetries matter even before the collapse and core bounce. This figure shows the evolution of the minimum, maximum (solid lines), and average shock radius (dashed lines) for 3D explosion simulations of an \(18 M_{☉}\) stellar model. Red curves are computed assuming a 1D progenitor, while black compute the last few minutes of the progenitor evolution in 3D letting seed asymmetries (e.g., because of convection in the Si shell) arise naturally: with a spherically symmetric progenitor the shock stalls (even in 3D) and its radius stays roughly constant. This is Fig. 5 of <a href="http://adsabs.harvard.edu/abs/2016PASA...33...48M">Mueller 2016</a>.</figcaption>
@@ -468,7 +468,7 @@ negligible anymore.
 
 
 
-<figure id="org792eff8">
+<figure id="org6db7fbe">
 <img src="./images/87A.jpeg" alt="87A.jpeg" width="100%">
 
 <figcaption><span class="figure-number">Figure 4: </span>Strong empirical evidence for the crucial involvement of neutrinos in CCSNe came from the direct detection of &sim;12 high energy neutrinos coincident with SN1987A which went off in the LMC, the latest supernova within &sim;50kpc (see <a href="https://ui.adsabs.harvard.edu/abs/1989ARA%26A..27..629A/abstract">Arnett 1989</a> review).</figcaption>
@@ -486,7 +486,7 @@ emission lines (i.e., very large ejecta velocities).
 </p>
 
 
-<figure id="org6ba957b">
+<figure id="orgc9bbc26">
 <img src="./images/sketch_mechanism.png" alt="sketch_mechanism.png" width="100%">
 
 <figcaption><span class="figure-number">Figure 5: </span>Sketch of the key ingredients for a successful explosion in the neutrino driven paradigm, from <a href="https://ui.adsabs.harvard.edu/%5C#abs/2017IAUS..329...17M">Muller 2017</a></figcaption>
@@ -559,7 +559,7 @@ artificially helps the explosion.
 
 
 
-<figure id="org1516d9e">
+<figure id="org9dfbcdc">
 <img src="./images/2v3dCCSN.png" alt="2v3dCCSN.png" width="100%">
 
 <figcaption><span class="figure-number">Figure 6: </span>Visualization of the shock morphology in 3D (left) and 2D(right): clearly the artificial imposition of a symmetry by running at lower dimensionality changes the dynamics of the explosion.</figcaption>
@@ -641,7 +641,7 @@ through the galaxy (\(\le10\) km s<sup>-1</sup> for the bulk of the population).
 </p>
 
 
-<figure id="orge1d5841">
+<figure id="org10937ba">
 <img src="./images/guitar_nebula.png" alt="guitar_nebula.png" width="100%">
 
 <figcaption><span class="figure-number">Figure 7: </span>Guitar nebula formed by the bow shock of a NS travelling at \(\sim1000\) km s<sup>-1</sup> \(\gg v_{OB} \sim 10\) km s<sup>-1</sup>. From <a href="https://ui.adsabs.harvard.edu/abs/2004ApJ...600L..51C/abstract">Chatterjee &amp; Cordes 2003</a>.</figcaption>
@@ -661,7 +661,7 @@ flows.
 
 
 
-<figure id="org7837a4c">
+<figure id="orgb1e0996">
 <img src="./images/sketch_perturbations.png" alt="sketch_perturbations.png" width="100%">
 
 <figcaption><span class="figure-number">Figure 8: </span>Schematic of the development of a large asymmetry in a 3D CCSN simulation resulting in a large natal kick. From \cite{muller:17}.</figcaption>
@@ -704,7 +704,7 @@ kinetic energy of the compact object is greatly increased, and this
 can lead to an increase of the total (orbital) energy of a putative
 binary system:
 </p>
-<div class="latex" id="org0173816">
+<div class="latex" id="org7e7a40e">
 \begin{equation}
   \label{eq:1}
   E_\mathrm{orb} =
@@ -732,7 +732,7 @@ star.
 point of reduced mass \(M_{1}M_{2}/(M_{1}+M_{2})\) orbiting around the center of
 mass of the binary, and not the velocity of a physical object!
 </p>
-<div class="latex" id="org4c33eea">
+<div class="latex" id="org4091225">
 \begin{equation}
   \label{eq:2}
   v_2 = \frac{M_1}{M_1+M_2}v_\mathrm{orb}\equiv\frac{M_1}{M_1+M_2}\sqrt{\frac{G(M_1+M_2)}{a}} \ \ .
@@ -800,7 +800,7 @@ consequently small kicks.
 <h2 id="org0b223bf"><a href="#org0b223bf">The supernova zoo</a></h2>
 <div class="outline-text-2" id="text-org0b223bf">
 
-<figure id="org11ca31f">
+<figure id="org0268d9f">
 <img src="./images/SN_taxonomy.png" alt="SN_taxonomy.png" width="100%">
 
 <figcaption><span class="figure-number">Figure 9: </span>Schematic representation of the SN taxonomy, based on spectral features and light curve shape. The dot-dashed line indicates the possible connection between SN events detected in late stages and classified as type Ib/Ic and SNe of type IIb. This figure is from <a href="https://lavinia.as.arizona.edu/~mrenzo/materials/Thesis/Renzo_MSc_thesis.pdf">Renzo 2015</a> and inspired by  Fig. 2 in <a href="https://ui.adsabs.harvard.edu/abs/2001ASSL..264..199C/abstract">Cappellaro et al. 2001</a>.</figcaption>
@@ -913,7 +913,7 @@ The figure below shows a breakdown per SN type:
 </p>
 
 
-<figure id="orgfd27b75">
+<figure id="org53189c3">
 <img src="./images/smith11.png" alt="smith11.png" width="50%">
 
 <figcaption><span class="figure-number">Figure 10: </span><a href="https://academic.oup.com/mnras/article-lookup/doi/10.1111/j.1365-2966.2011.17229.x">Smith et al. 2011</a> break down of CCSN by type in a  volume limited sample.</figcaption>
@@ -963,13 +963,11 @@ star, effectively "whipping the star" and injecting energy throughout.
 
 
 
-<figure id="org5e81a86">
+<figure id="org4fd7c23">
 <img src="./images/Shock_whip.png" alt="Shock_whip.png" width="75%">
 
 <figcaption><span class="figure-number">Figure 11: </span>First day of a weak explosion: as time progresses (colors get lighter) we see the discontinuity in the \(v(m)\) profile moving outward in mass coordinate: this is the SN shock traveling through the star and energizing each layer to (possibly) drive an explosion. By the end of this simulation, a lot ot the material has a positive velocity, with the outermost layers being fasters, indicating ejection. But matter below \(m\sim5\,M_{☉}\) has a negative velocity, indicating late ($&sim;$1 day post-collapse) fallback. This is a <code>SNEC</code> spherically symmetric artificially driven (/thermal bomb) explosion of of the \(30\,M_{☉}\) solar metallicity donor star in a binary, which reaches the onset of core-collapse as a \(12\,M_{☉}\) stripped He core from <a href="https://ui.adsabs.harvard.edu/abs/2023ApJ...948..111F/abstract">Farmer et al. 2023</a>. The cyan dotted line in the color bar marks the time of shock breakout.</figcaption>
 </figure>
-
-
 
 
 <p>
@@ -1063,7 +1061,7 @@ of radioactive material, especially \(^{56}\mathrm{Ni}\), which is an
 unstable nucleus that initiates the following decay cascade:
 </p>
 
-<div class="latex" id="org3ad0108">
+<div class="latex" id="org00f1385">
 \begin{equation}
 ^{56}\mathrm{Ni} \rightarrow e^{+} + \nu_{e} + ^{56}\mathrm{CO} \\
 ^{56}\mathrm{CO} \rightarrow e^{+} + \nu_{e} + ^{56}\mathrm{Fe} \ \ ,
@@ -1181,7 +1179,7 @@ the sky for 1000-10000 years.
 
 
 
-<figure id="orgcc92ca4">
+<figure id="orgde6b823">
 <img src="./images/LC.png" alt="LC.png" width="100%">
 
 <figcaption><span class="figure-number">Figure 12: </span>Light curve \(L(t)\) of the type IIP SN1999em (blue dots). The dash-dotted line shows the power from radioactive decay, the colored lines are modeled light curves with two different codes (SNEC and the code by <a href="https://ui.adsabs.harvard.edu/abs/2011ApJ...729...61B/abstract">Bersten et al. 2011</a>). This is part of Fig. 14 in <a href="https://ui.adsabs.harvard.edu/abs/2015ApJ...814...63M/abstract">Morozova et al. 2015</a>.</figcaption>
@@ -1267,7 +1265,7 @@ transients:
 </p>
 
 
-<figure id="orgfb2eca6">
+<figure id="org93dba7b">
 <img src="./images/transients_phase_space.jpg" alt="transients_phase_space.jpg" width="100%">
 
 <figcaption><span class="figure-number">Figure 13: </span>Distribution of transient classes in terms of peak brightness and typical timescale (note how both scales are logarithmic), from <a href="https://www.mdpi.com/2218-1997/8/10/493">Cai et al. 2022</a>.</figcaption>

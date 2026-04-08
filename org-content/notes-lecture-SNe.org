@@ -71,9 +71,9 @@ The dynamics of the collapse, and therefore the success or failure of
 the explosion, depend on the structure (temperature, density, etc.)
 and details of the composition of the core (see also [[https://ui.adsabs.harvard.edu/abs/2014ApJ...783...10S/abstract][Sukhbold &
 Woosley 2014]], [[https://ui.adsabs.harvard.edu/abs/2016ApJS..227...22F/abstract][Farmer et al. 2016]], [[https://ui.adsabs.harvard.edu/abs/2024RNAAS...8..152R/abstract][Renzo et al. 2024]], [[https://ui.adsabs.harvard.edu/abs/2024arXiv240902058L/abstract][Laplace et al.
-2024]]). But the details of the stellar structure depend on the late
-burning stages (namely, [[./notes-lecture-nuclear-cycles.org::*Silicon core burning][Silicon burning]]) of the star, and on the
-mixing processes during these phases.
+2024]], [[https://ui.adsabs.harvard.edu/abs/2025ApJ...987..164B/abstract][Burrows et al. 2025]]). But the details of the stellar structure
+depend on the late burning stages (namely, [[./notes-lecture-nuclear-cycles.org::*Silicon core burning][Silicon burning]]) of the
+star, and on the mixing processes during these phases.
 
 Several attempts to define a (small set of) parameter(s) describing
 the pre-collapse core structure that could predict the outcome of the
@@ -639,8 +639,6 @@ star, effectively "whipping the star" and injecting energy throughout.
 #+CAPTION: First day of a weak explosion: as time progresses (colors get lighter) we see the discontinuity in the $v(m)$ profile moving outward in mass coordinate: this is the SN shock traveling through the star and energizing each layer to (possibly) drive an explosion. By the end of this simulation, a lot ot the material has a positive velocity, with the outermost layers being fasters, indicating ejection. But matter below $m\sim5\,M_{\odot}$ has a negative velocity, indicating late ($\sim$1 day post-collapse) fallback. This is a =SNEC= spherically symmetric artificially driven (/thermal bomb) explosion of of the $30\,M_{\odot}$ solar metallicity donor star in a binary, which reaches the onset of core-collapse as a $12\,M_{\odot}$ stripped He core from [[https://ui.adsabs.harvard.edu/abs/2023ApJ...948..111F/abstract][Farmer et al. 2023]]. The cyan dotted line in the color bar marks the time of shock breakout.
 #+ATTR_HTML: :width 75%
 [[./images/Shock_whip.png]]
-
-
 
 
 *N.B.:* The shock propagates faster than the local sound
