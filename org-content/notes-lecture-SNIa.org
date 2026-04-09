@@ -50,7 +50,7 @@ consequences. Here, we focus on these explosions, and more
 specifically the ones that will result in a full destruction of the WD
 -- so called SNIa.
 
-** Accreting WDs: a zoo within a zoo
+** Accreting WDs: a zoo within the transients zoo
 
 Recall that a WD is "cold" from the point of view of the structure
 (because the electron degeneracy pressure dominates and is independent
@@ -108,7 +108,6 @@ Recently, novae studies have become a hot topic because of the
 detection of $\gamma$-rays in these events. For a recent review on novae,
 see [[https://www.annualreviews.org/content/journals/10.1146/annurev-astro-112420-114502][Chomiuk, Metzger, and Shen 2021]].
 
-
 *** Highest accretion rates: Rebuilding a red-giant
 For accretion rates /above/ the upper red line in Fig. 1, the matter
 comes in too fast to burn, and will pile up at the surface of the WD,
@@ -141,12 +140,15 @@ the overall rate of SNIa and CCSN have similar orders of magnitude, of
 order of 0.1-1/century per Milky-way-like galaxy.
 
 From their location in their host galaxies, we know that these
-transients are /not/ associated to young stellar populations: they occur
-often in elliptical galaxies with no ongoing star formation, or in
-between spiral arms (once again, far from star formation), implying
-long-lived progenitors such as WDs and unlike short-lived massive
-stars.
-
+transients (unlike CCSNe) are /not/ associated to young stellar
+populations: they occur often in elliptical galaxies with no ongoing
+star formation, or in between spiral arms (once again, far from star
+formation), implying long-lived progenitors such as WDs and unlike
+short-lived massive stars. Studying the age distribution of the
+surrounding population can also corroborate this, provided the
+surrounding population is related to the transient (which may not be
+true if the progenitor moves a lot during its lifetime, e.g., runaway
+stars).
 
 #+CAPTION: Composite image of the SN remnant of SN1604, a type Ia SN observed by J. Kepler (among others).  Credits: NASA/ESA/JHU/R.Sankrit & W.Blair.
 #+ATTR_HTML: :width 75%
@@ -279,7 +281,7 @@ Flames that never accelerate into a super-sonic regime (and which
 consequently may fail at igniting further nuclear burning) may be
 involved in SNIax.
 
-*** Supersonic flame: *detonation* & *double detonation*
+*** Supersonic flame: detonation, double detonation, and delayed detonation
 
 In the case the flame propagates super-sonically, meaning as a shock,
 it can compress the underlying CO layer, increasing its $T$ and
@@ -296,16 +298,25 @@ detonation*.
 ** Summary of theoretical SNIa model classes
 
 +------------------+----------------------+---------------------------+
-|  Companion donor | Mass of exploding WD | Burning front propagation |
+| Companion donor  | Mass of exploding WD | Burning front propagation |
 +------------------+----------------------+---------------------------+
-| Single-degenerate| sub-Chandrasekhar    | Deflagration+Detonation   |
-|       or         |        or            |        or		      |
-| Double-degenerate| super-Chandrasekhar  | Double detonation	      |
++------------------+----------------------+---------------------------+
+| Single-degenerate|   sub-Chandrasekhar  | Deflagration+Detonation   |
+|        or        |        or            |             or            |
+| Double-degenerate|  super-Chandrasekhar |    Double detonation      |
+|                  |                      |             or            |
+|                  |                      |  Delayed detonation       |
 +------------------+----------------------+---------------------------+
 
-* Phillips relation
+*N.B.:* In principle each entry in a column can be combined with any
+other element in the other columns unless proven otherwise.
 
-** SNIa and dark energy
+* Light curve properties
+
+
+** Phillips relation
+
+*** SNIa and dark energy
 Using the Phillips relation, SNIa can be *empirically* calibrated
 (stepping aside the theoretical debates on the explosion mechanism and
 parent systems) to create a step in the distance ladder that uses
@@ -319,24 +330,6 @@ of dark energy. This discovery was awarded the [[https://www.nobelprize.org/priz
 prize]] (including a former Steward Observatory undergraduate
 student!).
 
-* D6 stars
-
-* Host galaxies
-
-Another way to empirically infer the physical origin of an observed
-transient, is to look at the surrounding stellar population. The
-initial distinction between type Ia and CCSNe was based on the former
-occurring typically in elliptical galaxies with old stellar
-populations or in between star forming regions in spiral galaxies (so
-far from the star forming region itself): this suggests these events
-have long delays and are /not/ associated to young and short-lived
-stars, and instead related to longer-lived objects, perhaps low-mass
-stars.
-
-Studying the age distribution of the surrounding population can also
-corroborate this, provided the surrounding population is related to
-the transient (which may not be true if the progenitor moves a lot
-during its lifetime, e.g., runaway stars).
 
 * Homework
  - Make a hydrostatic sphere of radioactive $^{56}\mathrm{Ni}$ in MESA,
