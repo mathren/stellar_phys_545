@@ -5,8 +5,8 @@
 #+PREVIOUS_PAGE: projects.org
 
 *Materials:* Hansen & Kawaler book Sec. 2.6.3, [[http://www.annualreviews.org/doi/10.1146/annurev.astro.35.1.309][Filippenko 1997]], [[https://ui.adsabs.harvard.edu/abs/2007ApJ...660.1444S/abstract][Shen &
-Bildsten 2007]], [[https://ui.adsabs.harvard.edu/abs/2010NewAR..54..201H/abstract][Hillebrand & Roepke 2011]], [[https://ui.adsabs.harvard.edu/abs/2012PASA...29..447M/abstract][Maoz & Mannuci 2012]], [[https://ui.adsabs.harvard.edu/abs/2013ApJ...777..136W/abstract][Wolf
-et al. 2013]], [[https://www.aanda.org/articles/aa/ref/2025/02/aa51852-24/aa51852-24.html][Dimitriadis 2026]], [[https://ui.adsabs.harvard.edu/abs/2026arXiv260200223D/abstract][Desai et al. 2026]]
+Bildsten 2007]], [[https://ui.adsabs.harvard.edu/abs/2000ARA%26A..38..191H/abstract][Hillebrandt & Niemeyer 2000]] , [[https://ui.adsabs.harvard.edu/abs/2012PASA...29..447M/abstract][Maoz & Mannuci 2012]],
+[[https://ui.adsabs.harvard.edu/abs/2013ApJ...777..136W/abstract][Wolf et al. 2013]], [[https://www.aanda.org/articles/aa/ref/2025/02/aa51852-24/aa51852-24.html][Dimitriadis 2026]], [[https://ui.adsabs.harvard.edu/abs/2026arXiv260200223D/abstract][Desai et al. 2026]]
 
 * Time domain astrophysics is much more than just CCSNe
 
@@ -181,9 +181,9 @@ CSM suggests that the WD and its companion (whatever it may be) were
 brought close together by non-conservative binary evolution processes
 shortly before the explosion.
 
-*N.B.:* Other sub-classes based on energetics, WD compositions,
-connection to theoretical models, and spectral properties exist, the
-list here covers only the main subtypes.
+*N.B.:* Other sub-classes based on energetics, WD compositions, connection to theoretical
+models, and spectral properties exist, the list here covers only the
+main subtypes.
 
 * Classes of theoretical models for WD explosions
 
@@ -241,6 +241,17 @@ hypervelocity weird-looking stars in /Gaia/ samples have been claimed
 
 
 
+
+
+** Summary of theoretical SNIa model classes
+
++------------------+----------------------+---------------------------+
+|  Companion donor | Mass of exploding WD | Burning front propagation |
++------------------+----------------------+---------------------------+
+| Single-degenerate| sub-Chandrasekhar    | Deflagration+Detonation   |
+|       or         |        or            |        or		      |
+| Double-degenerate| super-Chandrasekhar  | Double detonation	      |
++------------------+----------------------+---------------------------+
 
 * Phillips relation
 
