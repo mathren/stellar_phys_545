@@ -50,7 +50,6 @@ density ($\rho\geq10^{14}$ g cm^{-3}), bounces due to the repulsive core of the
 nuclear force (cf. [[./notes-lecture-nuclear-burning.org][lecture on microphysics of nuclear reactions]]) and
 this triggers a shock-wave.
 
-
 *N.B.:* At the lower mass end, super-AGB supernova progenitors may reach
 the onset of core collapse because of electron captures in the oxygen,
 neon, magnesium degenerate core producing a so-called "electron
@@ -73,7 +72,12 @@ and details of the composition of the core (see also [[https://ui.adsabs.harvard
 Woosley 2014]], [[https://ui.adsabs.harvard.edu/abs/2016ApJS..227...22F/abstract][Farmer et al. 2016]], [[https://ui.adsabs.harvard.edu/abs/2024RNAAS...8..152R/abstract][Renzo et al. 2024]], [[https://ui.adsabs.harvard.edu/abs/2024arXiv240902058L/abstract][Laplace et al.
 2024]], [[https://ui.adsabs.harvard.edu/abs/2025ApJ...987..164B/abstract][Burrows et al. 2025]]). But the details of the stellar structure
 depend on the late burning stages (namely, [[./notes-lecture-nuclear-cycles.org::*Silicon core burning][Silicon burning]]) of the
-star, and on the mixing processes during these phases.
+star, and on the mixing processes during these phases:
+
+#+CAPTION: Density profiles in the innermost $m\le3\,M_{\odot}$ of (single, solar-metallicity) CCSN progenitors at the onset of collapse (see below), from [[https://ui.adsabs.harvard.edu/abs/2016ApJ...821...38S/abstract][Sukhbold et al. 2016]] as plotted by [[https://ui.adsabs.harvard.edu/abs/2025ApJ...987..164B/abstract][Burrows et al. 2025]]. The details of the inner density profile, encountered first by the shock, will determine the SN outcome.
+#+ATTR_HTML: :width 75%
+[[./images/rho.png]]
+
 
 Several attempts to define a (small set of) parameter(s) describing
 the pre-collapse core structure that could predict the outcome of the
@@ -116,12 +120,12 @@ $k_{B}T\ll\varepsilon_\mathrm{Fermi}$.
 
 * Physics of core collapse
 ** Core Bounce
-Since the nuclei of the iron group are the most tightly bound (cf.
-[[./notes-lecture-nuclear-burning.org][lecture on microphysics of nuclear reactions]]), the fusion of two of
-them would require energy input greater than the energy released.
-Therefore, inside the iron core, fusion reactions cannot compensate
-the energy loss of the star, and the core is doomed to collapse. The
-conventional definition for the onset of collapse is
+Since the nuclei of the iron group ($50\lesssim A\lesssim 70$) are the
+most tightly bound (cf. [[./notes-lecture-nuclear-burning.org][lecture on microphysics of nuclear reactions]]),
+the fusion of two of them would require energy input greater than the
+energy released. Therefore, inside the iron core, fusion reactions
+cannot compensate the energy loss of the star, and the core is doomed
+to collapse. The conventional definition for the onset of collapse is
 
 #+begin_latex
 \begin{equation}\label{eq:onset_cc}
@@ -131,7 +135,7 @@ conventional definition for the onset of collapse is
 where $v$ is the radial infall velocity. This is the very latest point
 to which a stellar evolution model can be computed with a stellar
 evolution code (e.g., =MESA= and/or =MESA-web=), but it is just an
-arbitrary threshold set by Eq. \ref{eq:onset_cc} is motivated by the
+arbitrary threshold! Eq. \ref{eq:onset_cc} is motivated by the
 fact that, at this point, the star is a few tenths of seconds (roughly
 a dynamical timescale) away from ``core bounce'' (see below). The
 central density is so high ($\rho \gtrsim 10^{10}$ g cm^{-3}) that stellar
@@ -158,11 +162,17 @@ positron capture reactions, electron capture reactions form the
 so-called [[./notes-lecture-neutrinos.org::*Nuclear neutrinos][URCA process]], responsible for the lion's share of the
 cooling (provided by neutrinos) during the collapse phase.
 
-Moreover, as the stellar core collapses and the density increases, the
+As the stellar core collapses and the density increases, the
 core still has a "negative heat capacity" and increases its
 temperature. Matter becomes so hot that iron photodisintegration can
 occur too, causing internal energy losses that also accelerate the
 collapse.
+
+*N.B.:* An old idea was that photodisintegration of Fe would be the main
+energy loss, but that energy is still "trapped" in the core. The
+neutrinos from electron captures can instead leak out causing real
+losses and dominate the infall dynamics.
+
 
 As the infall velocity progressively increases, the core divides into
 two separate parts ([[http://adsabs.harvard.edu/abs/2002RvMP...74.1015W][Woosley et al. 2002]]):
@@ -183,8 +193,13 @@ two separate parts ([[http://adsabs.harvard.edu/abs/2002RvMP...74.1015W][Woosley
   sound speed $c_{s}$ decreases, so no information about the inner core
   can reach into the outer core.
 
+#+CAPTION: Velocity profile for the core of an initially $15 M_{\odot}$ star at the onset of core-collapse (left panel) at core bounce (right panel). Note the linear behavior of the infall in the inner core on the left panel. Note also the scales on the two panels: at the onset of core collapse, the infall velocity is still subsonic and directed inward ($v<0$) everywhere. The  data in the right panel are obtained using the open-source code GR1D ([[http://adsabs.harvard.edu/abs/2010CQGra..27k4103O][O'connor & Ott 2010]]), with the data at the onset of core collapse (left panel) as input. The energy source to drive the explosion is the gravitational binding energy released by the collapse of $\sim1.4 M_{\odot}$ of Fe-rich material with radius of almost $\sim1000$ km to a proto-NS with radius of $\sim10$ km. This figure is modified from [[https://etd.adm.unipi.it/theses/available/etd-05062015-125630/unrestricted/Thesis_colored_10052015.pdf][Renzo 2015]].
+#+ATTR_HTML: :width 100%
+[[./images/v_profile_core_bounce.png]]
+
+
 The collapse goes on until the central density is so high
-($\rho_{c}\sim10^{14}$ g cm^{-3} $\simeq \rho_{n} =2\times10^{14} \times A$ g cm^{-3}) that
+($\rho_{c}\sim10^{14}\,\mathrm{g\ cm^{-3}} \simeq \rho_{n} =2\times10^{14}\,\mathrm{g\ cm^{-3}}$) that
 the repulsive core of the nuclear force becomes relevant. This
 repulsive contribution causes a sudden stiffening of the EOS, and
 triggers the so-called core bounce, which is conventionally defined by
@@ -203,9 +218,10 @@ the direction perpendicular to the wall progressively across the ball
 volume. In this analogy, for a collapsing star, the wall is the inner
 core reaching super-nuclear densities.
 
-#+CAPTION: Velocity profile for the core of an initially $15 M_{\odot}$ star at the onset of core-collapse (left panel) at core bounce (right panel). Note the linear behavior of the infall in the inner core on the left panel. Note also the scales on the two panels: at the onset of core collapse, the infall velocity is still subsonic and directed inward ($v<0$) everywhere. The  data in the right panel are obtained using the open-source code GR1D ([[http://adsabs.harvard.edu/abs/2010CQGra..27k4103O][O'connor & Ott 2010]]), with the data at the onset of core collapse (left panel) as input. The energy source to drive the explosion is the gravitational binding energy released by the collapse of $\sim1.4 M_{\odot}$ of Fe-rich material with radius of almost $\sim1000$ km to a proto-NS with radius of $\sim10$ km. This figure is modified from [[https://etd.adm.unipi.it/theses/available/etd-05062015-125630/unrestricted/Thesis_colored_10052015.pdf][Renzo 2015]].
-#+ATTR_HTML: :width 100%
-[[./images/v_profile_core_bounce.png]]
+#+CAPTION: Golf ball bouncing: the shock wave created by the impact with the wall (analogous to the "core-bounce" reverting the infall velocity of the inner core) propagates through the ball changing the sign of momentum of all the parts of the ball.
+#+ATTR_HTML: :width 20%
+[[./images/ball.gif]]
+
 
 The collapse of the core releases gravitational binding energy, which
 ultimately is the energy source of the possible SN explosion:
@@ -217,27 +233,21 @@ ultimately is the energy source of the possible SN explosion:
 \end{equation}
 #+end_latex
 This largely exceeds the total binding energy of the stellar envelope,
-and roughly speaking 100 times more that the typical kinetic energy
+and roughly speaking 100 times more that the typical explosion energy
 of a SN explosions (1 Bethe \equiv 1 f.o.e. \equiv 10^{51} erg). Note that the
 energy radiated away by a SN is typically a small fraction of the
-kinetic energy ($\int L_\mathrm{SN}(t)\,dt \simeq10^{49}\,\mathrm{erg}$).
+explosion energy ($\int L_\mathrm{SN}(t)\,dt \simeq10^{49}\,\mathrm{erg}$).
 Thus, the CCSN explosion problem is about how this energy can be
 harvested by the shock to explode the star.
 
-*N.B.:* A SN shock successful in exploding the star needs to harvest \sim1%
-of the gravitational binding energy released by the collapse of the
-core (mostly in the form of neutrinos), and this requires
-non-spherically-symmetric physical ingredients.
+Therefore, a SN shock successful in exploding the star needs to
+harvest \sim1% of the gravitational binding energy released by the
+collapse of the core (mostly in the form of neutrinos).
 
-#+CAPTION: Asymmetries are key to the explosion. The legend indicates the neutrino luminosity input in units of $10^{52}$ ergs assumed. 2D simulations (solid lines) always explode faster than 3D simulations (dashed lines). Higher resolution 2D explodes slower than low resolution 2D simulations (comparing blue and cyan). The 1D simulation has the higherst energy input and still barely explodes. This is Fig. 2 from [[https://iopscience.iop.org/article/10.1088/0004-637X/775/1/35#apj482201f2][Couch 2013]].
+#+CAPTION: Sketch of the key ingredients for a successful explosion in the neutrino driven paradigm, from [[https://ui.adsabs.harvard.edu/\#abs/2017IAUS..329...17M][Muller 2017]]
 #+ATTR_HTML: :width 100%
-[[./images/couch13.jpg]]
+[[./images/sketch_mechanism.png]]
 
-
-
-#+CAPTION: Asymmetries matter even before the collapse and core bounce. This figure shows the evolution of the minimum, maximum (solid lines), and average shock radius (dashed lines) for 3D explosion simulations of an $18 M_{\odot}$ stellar model. Red curves are computed assuming a 1D progenitor, while black compute the last few minutes of the progenitor evolution in 3D letting seed asymmetries (e.g., because of convection in the Si shell) arise naturally: with a spherically symmetric progenitor the shock stalls (even in 3D) and its radius stays roughly constant. This is Fig. 5 of [[http://adsabs.harvard.edu/abs/2016PASA...33...48M][Mueller 2016]].
-#+ATTR_HTML: :width 100%
-[[./images/shockR.png]]
 
 As the shock wave propagates in the outer core, it loses energy by
 /heating and photodisintegrating the infalling material/, and overcoming
@@ -257,23 +267,19 @@ restart its radial expansion allowing it to unbind the stellar
 envelope and produce a SN explosion.
 
 In the /neutrino-driven paradigm/ (for reviews see [[https://ui.adsabs.harvard.edu/abs/2012ARNPS..62..407J][Janka 2012]], [[https://ui.adsabs.harvard.edu/abs/2022MNRAS.510.4689V][Vartanyan
-et al. 2022]]), the shock is pushed by the large neutrino emission from
-the hot proto-NS formed in the inner part of the bouncing inner core.
-These neutrinos are mostly produced by electron captures to
-"neutronize" the Fe core (in the innermost ``cooling-region'' where
-the proto-NS is), cf. Eq. \ref{eq:ecap} and from [[./notes-lecture-neutrinos.org::*Thermal neutrinos][cooling processes]]. A
-small fraction of these neutrinos will interact in a region behind the
-shock (the so-called "gain-region"). This is because the stellar
-plasma has now densities and temperatures higher than during core Si
-burning, and the cross section for neutrino absorption is not
-negligible anymore.
-
+et al. 2022]]), the shock is pushed by the large neutrino emission
+from the innermost proto-NS region. These neutrinos are mostly
+produced by electron captures to "neutronize" the Fe core (in the
+innermost ``cooling-region'' where the proto-NS is), cf. Eq.
+\ref{eq:ecap} and from [[./notes-lecture-neutrinos.org::*Thermal neutrinos][cooling processes]]. A small fraction of these
+neutrinos will interact in a region behind the shock (the so-called
+"gain-region"). This is because the stellar plasma has now densities
+and temperatures higher than during core Si burning, and the cross
+section for neutrino absorption is not negligible anymore.
 
 #+CAPTION: Strong empirical evidence for the crucial involvement of neutrinos in CCSNe came from the direct detection of \sim12 high energy neutrinos coincident with SN1987A which went off in the LMC, the latest supernova within \sim50kpc (see [[https://ui.adsabs.harvard.edu/abs/1989ARA%26A..27..629A/abstract][Arnett 1989]] review).
 #+ATTR_HTML: :width 100%
 [[./images/87A.jpeg]]
-
-
 
 Note, however, that other explosion mechanism relying less heavily on
 the neutrino flux have been proposed. For instance, accretion on the
@@ -282,29 +288,33 @@ that might help pushing the shock, and this might be the dominant
 explosion mechanism for long gamma ray bursts and SNIc showing broad
 emission lines (i.e., very large ejecta velocities).
 
-#+CAPTION: Sketch of the key ingredients for a successful explosion in the neutrino driven paradigm, from [[https://ui.adsabs.harvard.edu/\#abs/2017IAUS..329...17M][Muller 2017]]
-#+ATTR_HTML: :width 100%
-[[./images/sketch_mechanism.png]]
-
 ** Shock revival mechanisms
-As mentioned above, historically, numerical simulations of
-core-collapse SNe would always find stalling and ultimately receding
-shocks, that is failed explosions. This lead to the realization that
-the /asymmetries/ in the flow are a key ingredient to achieve a
+As mentioned above, historically, spherically-symmetric numerical
+simulations of core-collapse SNe would always find stalling and
+ultimately receding shocks, that is failed explosions. This lead to
+the realization that the /asymmetries/ in the flow (possibly seeded
+before the onset of collapse) are a key ingredient to achieve a
 successful explosion.
 
-Several sources of asymmetry (both local and global) exist in the
-collapsing core of a massive star:
-- The neutrino heat the bottom of the gain region, driving convection
+#+CAPTION: Asymmetries matter even before the collapse and core bounce. This figure shows the evolution of the minimum, maximum (solid lines), and average shock radius (dashed lines) for 3D explosion simulations of an $18 M_{\odot}$ stellar model. Red curves are computed assuming a 1D progenitor, while black compute the last few minutes of the progenitor evolution in 3D letting seed asymmetries (e.g., because of convection in the Si shell) arise naturally: with a spherically symmetric progenitor the shock stalls (even in 3D) and its radius stays roughly constant. This is Fig. 5 of [[http://adsabs.harvard.edu/abs/2016PASA...33...48M][Mueller 2016]].
+#+ATTR_HTML: :width 100%
+[[./images/shockR.png]]
+
+Several sources of asymmetry (both local and global) exist before and
+during the collapse of the core of a massive star:
+- *before*: convective layers (e.g., Si shell burning) with local
+  inhomogeneities caused by the convective flow can seed initial
+  perturbations amplified by the collapse (see also [[https://ui.adsabs.harvard.edu/abs/2022ApJ...924L..15F/abstract][Fields 2022]]);
+- *during*:The neutrino heat the bottom of the gain region, driving convection
   (a steep temperature and entropy gradient can develop because of the
   neutrino heating);
-- Convection implies the presence of turbulent flow and an associated
+- *during*:Convection implies the presence of turbulent flow and an associated
   turbulent pressure ($P_\mathrm{turb}\simeq \rho v_\mathrm{turb}^{2}$) that can
   help pushing the shock ([[https://ui.adsabs.harvard.edu/\#abs/2018ApJ...865...81O][O'Connor et al. 2018]]). Moreover, non-radial
   motion in a convective region extends the time spent by matter in
   the gain region behind the shock, allowing for more \nu interactions
   that energize the shock;
-- Standing accretion Shock Instability (SASI, [[http://adsabs.harvard.edu/abs/2003ApJ...584..971B][Blondin et al. 2003]], see
+- *during (or possibly "after")*: Standing accretion Shock Instability (SASI, [[http://adsabs.harvard.edu/abs/2003ApJ...584..971B][Blondin et al. 2003]], see
   also embedded video below): when the shock stalls its surface is
   perturbed by the infalling material. These perturbation (e.g., in
   terms of the local velocity) are advected downwards by convection
@@ -315,9 +325,10 @@ collapsing core of a massive star:
   can develop, see [[https://ui.adsabs.harvard.edu/abs/2023ApJ...957...68B][Burrows et al. 2023]].) *N.B.:* there is a mathematical
   analogy between the problem of the propagation of a perturbed shock
   with convection behind it and the draining of shallow water, and the
-  same instability can develop in a table top experiment, see
-  [[https://www.youtube.com/watch?v=5fcsSA31rkE][for example this experiment]].
-- Lepton-number Emission Self-Sustained Asymmetry (LESA, [[https://ui.adsabs.harvard.edu/\#abs/2014ApJ...792...96T][Tamborra et al 2014]]),
+  same instability can develop in a table top experiment, see for
+  example [[https://ui.adsabs.harvard.edu/abs/2012PhRvL.108e1103F/abstract][Foglizzo et al. 2012]]:
+  #+HTML: <iframe width="560" height="315" src="https://www.youtube.com/embed/5fcsSA31rkE?si=HqK5-YUQQdO8k9p1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+- *during*: Lepton-number Emission Self-Sustained Asymmetry (LESA, [[https://ui.adsabs.harvard.edu/\#abs/2014ApJ...792...96T][Tamborra et al 2014]]),
   found in 3D simulations where the neutrino emission is roughly
   dipolar.
 
@@ -336,6 +347,11 @@ artificially in these calculation was changing the turbulent cascade:
 instead of dripping towards smaller scale and be dissipated at the
 viscous scale, energy is pumped to larger scales in 2D, which
 artificially helps the explosion.
+
+#+CAPTION: Asymmetries are key to the explosion. The figure shows the spatially-averaged shock radius in numerical simulations of CCSNe, note the total duration of the simulations $\sim 1$\,sec. The legend indicates the neutrino luminosity input in units of $10^{52}$ ergs assumed. 2D simulations (solid lines) always explode faster than 3D simulations (dashed lines). Higher resolution 2D explodes slower than low resolution 2D simulations (comparing blue and cyan). The 1D simulation has the higherst energy input and still barely explodes. This is Fig. 2 from [[https://iopscience.iop.org/article/10.1088/0004-637X/775/1/35#apj482201f2][Couch 2013]].
+#+ATTR_HTML: :width 100%
+[[./images/couch13.jpg]]
+
 
 
 #+CAPTION: Visualization of the shock morphology in 3D (left) and 2D(right): clearly the artificial imposition of a symmetry by running at lower dimensionality changes the dynamics of the explosion.
@@ -356,23 +372,31 @@ of a SASI-driven explosion:
 #+HTML: <iframe width="560" height="315" src="https://www.youtube.com/embed/4SPq9_-h0Bs?si=-Ljb_roZT__rprtf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 Example of a 3D \nu-RHD simulation dominated by neutrino convection:
-#+HTML: <iframe width="560" height="315" src="https://www.youtube.com/embed/5fcsSA31rkE?si=BNgv4wtP0vdJs4lL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+#+HTML: <iframe width="560" height="315" src="https://www.youtube.com/embed/i-Ly8aCoF7E?si=gZ0c5HD17o-l3-pY&amp;start=11" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 *** Black hole formation: explosion or not?
-The most massive stellar cores, for which the Si/O interface is at a
-large Lagrangian mass coordinate, develop strong neutrino driven
-convection, which together with the contribution of the turbulent
-pressure drives a successful explosion with significant fallback and
-result in the formation of a BH.
 
-*N.B.:* BHs may form if this explosion mechanism fails (possibly with
-very little more than the disappearance of the star as a transient,
-see for instance [[https://ui.adsabs.harvard.edu/abs/2015MNRAS.450.3289G/abstract][Gerke et al. 2015]], [[https://ui.adsabs.harvard.edu/abs/2021MNRAS.508.1156B/abstract][Basinger et al. 2021]], [[https://ui.adsabs.harvard.edu/abs/2024arXiv241007055T/abstract][Tsuna et al.
-2024]]), /or/ with an explosions and a visible transient anyways (see for
-instance [[https://ui.adsabs.harvard.edu/abs/2013ApJ...769..109L/abstract][Lovegrove & Woosley 2013]], [[https://ui.adsabs.harvard.edu/abs/2019MNRAS.485L..83Q/abstract][Quartaet et al. 2019]], [[https://ui.adsabs.harvard.edu/abs/2022MNRAS.511..176A/abstract][Antoni et al.
-2022]]) -- it is possible both occur in nature depending on the mass of
-the progenitor (and BH) considered and this is highly debated
-presently.
+Effectively, this is still an open question. BHs may form if this
+explosion mechanism fails (possibly with very little more than the
+disappearance of the star as a transient, see for instance [[https://ui.adsabs.harvard.edu/abs/2015MNRAS.450.3289G/abstract][Gerke et
+al. 2015]], [[https://ui.adsabs.harvard.edu/abs/2021MNRAS.508.1156B/abstract][Basinger et al. 2021]],
+[[https://ui.adsabs.harvard.edu/abs/2024arXiv241007055T/abstract][Tsuna
+et al. 2024]], [[https://ui.adsabs.harvard.edu/abs/2026ApJ...999L..25D/abstract][De et al. 2026]]), /or/ with an explosions and a visible
+transient anyways (see for instance [[https://ui.adsabs.harvard.edu/abs/2013ApJ...769..109L/abstract][Lovegrove & Woosley 2013]],
+[[https://ui.adsabs.harvard.edu/abs/2019MNRAS.485L..83Q/abstract][Quartaet
+et al. 2019]], [[https://ui.adsabs.harvard.edu/abs/2022MNRAS.511..176A/abstract][Antoni et al. 2022]]) -- it is possible both occur in
+nature depending on the mass of the progenitor (and BH) considered and
+this is highly debated presently.
+
+Present-day consensus based on 3D neutrino-driven radiation
+hydrodynamics simulation is that the most massive stellar cores, for
+which the Si/O interface is at a large Lagrangian mass coordinate,
+have very high accretion rates onto the shock early on, which do
+provide large ram pressure, but also enhances the neutrino luminosity.
+Ultimately, these models develop strong neutrino driven convection
+that can (in 3D) drive a successful explosion with significant
+fallback (in some of the directions) and still result in the formation
+of a BH.
 
 Intermediate mass cores show a steep density gradient at the Si/O
 interface: if the shock can reach this interface, it will
@@ -397,7 +421,7 @@ the maximum velocity at which we observe O and B type stars moving
 through the galaxy ($\le10$ km s^{-1} for the bulk of the population).
 
 #+CAPTION: Guitar nebula formed by the bow shock of a NS travelling at $\sim1000$ km s^{-1} $\gg v_{OB} \sim 10$ km s^{-1}. From [[https://ui.adsabs.harvard.edu/abs/2004ApJ...600L..51C/abstract][Chatterjee & Cordes 2003]].
-#+ATTR_HTML: :width 100%
+#+ATTR_HTML: :width 75%
 [[./images/guitar_nebula.png]]
 
 These are explained invoking an energy and momentum re-distribution
@@ -412,7 +436,7 @@ flows.
 
 
 #+CAPTION: Schematic of the development of a large asymmetry in a 3D CCSN simulation resulting in a large natal kick. From \cite{muller:17}.
-#+ATTR_HTML: :width 100%
+#+ATTR_HTML: :width 75%
 [[./images/sketch_perturbations.png]]
 
 Whether the SN shock achieves a runaway radial growth (successful
@@ -425,11 +449,9 @@ dynamically connected, and interact through gravity (see, e.g, [[http://adsabs.h
 because of asymmetries in the flow (a situation routinely realized in
 3D ab-initio simulations of the core-collapse process), it can
 gravitationally pull the newly born compact object in its direction
-and accelerate it.
-
-A key prediction of this "tug-boat" model is that the SN shock is
-faster in the direction opposite to the one in which the compact
-object is accelerated. A faster shock is more efficient at
+and accelerate it. A key prediction of this "tug-boat" model is that
+the SN shock is faster in the direction opposite to the one in which
+the compact object is accelerated. A faster shock is more efficient at
 photodisintegrating nuclei, producing light particles that can be
 accreted by the surviving nuclei: this model predicts stronger
 explosive nucleosynthesis in the direction opposite to the compact
@@ -482,16 +504,16 @@ pre-explosion $v_{2}$, and if $v_{2}>30$ km s^{-1} it becomes a runaway star
 transfer during the binary evolution tends to increase the separation
 a, decrease the mass $M_{1}$, and increase the mass $M_{2}$.
 
-Note typically SN ejecta achieve velocities of $\sim10^{4$} km s^{-1} $\gg
-v_\mathrm{orb}$, thus we can neglect the orbital motion of the binary
+Note typically SN ejecta achieve velocities of $\sim10^{4}\,\mathrm{km\ s^{-1}}\gg
+v_\mathrm{\rm orb}$, thus we can neglect the orbital motion of the binary
 during the SN (although see also [[http://adsabs.harvard.edu/abs/2017ApJ...846L..15B][Batta et al. 2017]]): effectively this
 corresponds to an instantaneous loss of mass from the exploding star,
 which is not the center of mass of the binary. This off-center mass
 loss (from the point of view of the binary) is also referred to as or
 "Blaauw kick" and can modify the orbit, and in extreme case where
 $M_\mathrm{ejecta}\geq (M_1+M_2)/2$ it can change it from an
-circle/ellipse to a parabola/hyperbole - so unbind the binary [[http://adsabs.harvard.edu/abs/1961BAN....15..265B][Blaauw
-1961]] (see also homework on virial theorem!). Typically in massive
+circle/ellipse to a parabola/hyperbole - so unbind the binary ([[http://adsabs.harvard.edu/abs/1961BAN....15..265B][Blaauw
+1961]], see also homework on virial theorem!). Typically in massive
 binary evolution, the exploding star loses its H-rich envelope to the
 companion long before its SN explosion, therefore $M_\mathrm{ej}$ is
 rarely sufficiently large to unbind the binary without a natal kick
@@ -504,9 +526,10 @@ significant kicks, and consequently whether most BHs remain bound to
 their stellar companion, or whether their formation breaks the
 binaries in which they form. In at least a handful of cases, it can be
 shown that large mass BHs were formed with negligible natal kicks
-([[https://ui.adsabs.harvard.edu/abs/2023arXiv231001509V][Vigna-gomez et al. 2024]]) although observations of the kinematic
-properties of X-ray binaries hosting BHs accreting mass from a
-companion seem to require moderate kicks (see e.g., [[https://ui.adsabs.harvard.edu/abs/2019MNRAS.489.3116A/abstract][Atri et al. 2019]]).
+([[https://www.nature.com/articles/s41586-024-08120-6][Burge et al. 2024]], [[https://ui.adsabs.harvard.edu/abs/2023arXiv231001509V][Vigna-gomez et al. 2024]]) although observations of
+the kinematic properties of X-ray binaries hosting BHs accreting mass
+from a companion seem to require moderate kicks (see e.g., [[https://ui.adsabs.harvard.edu/abs/2019MNRAS.489.3116A/abstract][Atri et al.
+2019]]).
 
 The observation of double pulsars ([[http://adsabs.harvard.edu/abs/1975ApJ...195L..51H][Hulse & Taylor 1975]], we will
 discuss this more extensively [[./notes-lecture-GWprog.org][in the next lecture]]) also raises the
@@ -552,9 +575,8 @@ luminosity.
 The first step to classify transients is to look at Hydrogen lines in
 the spectrum, and in absence of Hydrogen lines, whether there are
 Silicon lines. No hydrogen and silicon is called a type Ia SN which is
-theoretically associated to the thermonuclear obliteration of a white
-dwarf (see corresponding project for more information, the rest of
-this lecture focuses on massive stars explosions).
+associated to the thermonuclear obliteration of a white
+dwarf (see also [[./notes-lecture-SNIa.org][corresponding lecture]]).
 
 All other SN types are associated to young stellar populations and are
 commonly interpreted as the death of massive stars: in absence of
@@ -579,8 +601,8 @@ narrow (\sim1000 km s^{-1}) *emission* lines.
 
 SNe are also said to be "super-luminous" if their absolute bolometric
 magnitude exceeds M=-21 at peak. For these extremely high peak
-luminosity the driving mechanism is still unclear, three proposed
-models exist:
+luminosity the driving mechanism is still unclear and may not be the
+same for all events. Three proposed models exist:
 
  - Pair instability supernovae: these should have extremely high
    ejecta masses and produce long-lasting light curves which are /not/
@@ -816,10 +838,10 @@ more rare explosions such as long gamma-ray bursts, and possibly for
 any explosion producing \ge10^{52} erg of energy. These are also very
 active research topics, where our understanding of the progenitor
 structure (in terms of angular momentum and magnetic fields) is even
-more uncertain. Rotation and magnetic fields can produce a
-fast-spinning magnetar (NS with magnetic field in excess of 10^{14}
-Gauss) which can transfer its initially high energy to the ejecta
-helping the explosions.
+more uncertain (see e.g., [[https://ui.adsabs.harvard.edu/abs/2024ApJ...976L..13G/abstract][Gottlieb et al. 2024]]). Rotation and magnetic
+fields can produce a fast-spinning magnetar (NS with magnetic field in
+excess of 10^{14} Gauss) which can transfer its initially high energy to
+the ejecta helping the explosions.
 
 Another source of energy is interaction between the ejecta and
 possible circumstellar material: as the ejecta run into it, kinetic
@@ -830,25 +852,20 @@ ions/atoms which then de-excite radiatively producing emission lines
 
 * Current open questions
 "Time domain" astronomy is a vibrant field, with many upcoming
-facilities on the ground (e.g., Rubin/LSST) and in space (AstroSat,
-Roman), that will contribute significant advances. Stellar evolution
-of the progenitors is recognized as one of the key bottlenecks in
-better understanding this problem, and a lot of efforts are being
-dedicated to understanding better the evolution and explosion of
-massive stars, which releases chemicals (e.g., C and O) and vasts amounts
-of energy and momentum shaping the host galaxies.
+facilities on the ground (e.g., Rubin/LSST and robotic networks of
+$\sim1$\,m-class telescopes across the globe offering continuous coverage
+unlimited by night-time) and in space (AstroSat, Roman), that will
+contribute significant advances. Stellar evolution of the progenitors
+is recognized as one of the key bottlenecks in better understanding
+this problem, and a lot of efforts are being dedicated to
+understanding better the evolution and explosion of massive stars,
+which releases chemicals (e.g., C and O) and vasts amounts of energy
+and momentum shaping the host galaxies.
 
 Key open questions actively debated today include:
  - Does a given star form a  neutron star or black hole?
  - If black hole, with or without explosion?
  - Do BHs receive natal kicks? And what is the distribution of NS kicks?
-
-* Time domain astrophysics is much more than SNe
-The transient zoology is bigger than just SNe. With the expansion of observational capabilities in cadence, depth,
-wavelength ranges and availability of progenitor catalogs and star
-formation maps for host galaxies, we now can detect a wide variety of
-transients:
-
-#+CAPTION: Distribution of transient classes in terms of peak brightness and typical timescale (note how both scales are logarithmic), from [[https://www.mdpi.com/2218-1997/8/10/493][Cai et al. 2022]].
-#+ATTR_HTML: :width 100%
-[[./images/transients_phase_space.jpg]]
+ - What is (if any) the role of rotation and magnetic fields in
+   "normal" SNe? What drives the diversity of transients and
+   especially the extremes (in $L$, duration, etc.)?

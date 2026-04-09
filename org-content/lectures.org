@@ -56,8 +56,6 @@ substitute other sources. You are *strongly encouraged* to consult books
 </div>
 #+END_EXPORT
 
-
-
 ** <2026-01-14 Wed> - Intro
 *Aim*:
  - Discuss [[./syllabus.org][syllabus]] and learning outcomes
@@ -239,7 +237,7 @@ and dynamical assembly), discuss some known uncertainties.
 
 [[./notes-lecture-GWprog.org][Notes]]
 
-** TODO <2026-04-15 Wed> - SNIa
+** <2026-04-15 Wed> - SNIa
 *Aim*: discuss SNIa
 
 [[./notes-lecture-SNIa.org][Notes]]
@@ -273,6 +271,5 @@ and dynamical assembly), discuss some known uncertainties.
 *** Stellar rotation observations
 
 ** <2026-05-06 Wed> - Two students presentations
-
 *** Clusters GC/Open
 *** Magnetic braking

@@ -6,18 +6,33 @@
 
 *Materials:* Hansen & Kawaler book Sec. 2.6.3,
 
-* Explosion of WDs
+* Time domain astrophysics is much more than just CCSNe
 
 We have discussed in the [[./notes-lecture-SNe.org][core-collapse lecture]] the collapse of an iron
-(or in some cases ONeMg) core and how it can trigger th core-collapse
-SN explosion of a massive star. Here, we will instead discuss
-explosions of low-mass stars ending their life as WDs.
+(or in some cases ONeMg) core and how it can trigger the SN explosion
+of a massive star. The transient zoology is bigger than just SNe. With
+the expansion of observational capabilities in cadence, depth,
+wavelength ranges and availability of progenitor catalogs and star
+formation maps for host galaxies, we now can detect a wide variety of
+transients:
+
+#+CAPTION: Distribution of transient classes in terms of peak brightness and typical timescale (note how both scales are logarithmic), from [[https://www.mdpi.com/2218-1997/8/10/493][Cai et al. 2022]].
+#+ATTR_HTML: :width 100%
+[[./images/transients_phase_space.jpg]]
+
+Understanding the physics driving each of these transients, their
+astrophysical host galaxies and parent populations, their absolute and
+relative rates is a very active topic of research.
+
+* Explosion of WDs
+In this lecture, we will instead discuss explosions of low-mass stars
+ending their life as WDs.
 
 In isolation, a WD can only cool down, possibly crystallize releasing
-some latent heat to slow down the cooling, and continue cooling
-further afterwards, until it becomes too faint and cold to be
-detected. Ultimately this should produce a "black dwarf" (in a time
-longer than the age of the Universe).
+some latent heat to slow down the cooling when it crystallize, and
+continue cooling further afterwards, until it becomes too faint and
+cold to be detected. Ultimately this should produce a "black dwarf"
+(in a time longer than the age of the Universe).
 
 While in a hypothetical "black dwarf" the density may be so high that
 density-driven nuclear reactions (pico-nuclear reactions) could occur
@@ -31,6 +46,8 @@ which can /also/ lead to dynamical and explosive consequences. Here, we
 focus on these explosions, and more specifically the ones that will
 result in a full destruction of the WD -- so called SNIa.
 
+** Accreting WDs
+
 ** A zoo within a zoo: WD explosions landscape
 
 
@@ -38,3 +55,26 @@ result in a full destruction of the WD -- so called SNIa.
 * Phillips relation
 
 * D6 stars
+
+* Host galaxies
+
+Another way to empirically infer the physical origin of an observed
+transient, is to look at the surrounding stellar population. The
+initial distinction between type Ia and CCSNe was based on the former
+occurring typically in elliptical galaxies with old stellar
+populations or in between star forming regions in spiral galaxies (so
+far from the star forming region itself): this suggests these events
+have long delays and are /not/ associated to young and short-lived
+stars, and instead related to longer-lived objects, perhaps low-mass
+stars.
+
+Studying the age distribution of the surrounding population can also
+corroborate this, provided the surrounding population is related to
+the transient (which may not be true if the progenitor moves a lot
+during its lifetime, e.g., runaway stars).
+
+* Homework
+ - Make a hydrostatic sphere of radioactive $^{56}\mathrm{Ni}$ in MESA,
+   you need =v_flag= set to true (allow for hydrodynamics), and this is
+   a very crude model of a SNIa explosion! This is an advanced =MESA=
+   use, not possible with =MESA-web=.

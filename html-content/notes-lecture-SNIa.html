@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 2026-04-06 Mon 12:15 -->
+<!-- 2026-04-09 Thu 09:19 -->
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>ASTR545 - SNIa</title>
@@ -13,6 +13,38 @@
 			       stellar evolution, ASTR545, PYTS545, 545, University of
 			       Arizona, Steward Observatory, stars,
 			       theoretical astrophysics">
+<script>
+  window.MathJax = {
+    tex: {
+      ams: {
+        multlineWidth: '85%'
+      },
+      tags: 'ams',
+      tagSide: 'right',
+      tagIndent: '.8em'
+    },
+    chtml: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    svg: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    output: {
+      font: 'mathjax-modern',
+      displayOverflow: 'overflow'
+    }
+  };
+</script>
+
+<script
+  id="MathJax-script"
+  async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
 </head>
 <body>
 <div id="preamble" class="status">
@@ -86,37 +118,6 @@
       });
   };
 </script>
-
-<!-- jump to nearest date in lectures.html -->
-<script>
-document.addEventListener("DOMContentLoaded", () => {
-  const headers = [...document.querySelectorAll("h1, h2, h3, h4, h5, h6")];
-  const today = new Date();
-  today.setHours(0, 0, 0, 0);
-
-  let closest = null;
-  let closestDiff = Infinity;
-
-  for (const h of headers) {
-    const ts = h.querySelector("span.timestamp");
-    if (!ts) continue;
-
-    const match = ts.textContent.match(/(\d{4}-\d{2}-\d{2})/);
-    if (!match) continue;
-
-    const parsed = new Date(match[1] + "T00:00:00");
-    const diff = Math.abs(parsed - today);
-
-    if (diff < closestDiff) {
-      closestDiff = diff;
-      closest = h;
-    }
-  }
-
-  if (closest) closest.scrollIntoView({ behavior: "smooth", block: "start" });
-});
-</script>
-
 <!-- end scripts-->
 </div>
 <div id="content" class="content">
@@ -124,22 +125,48 @@ document.addEventListener("DOMContentLoaded", () => {
 <b>Materials:</b> Hansen &amp; Kawaler book Sec. 2.6.3,
 </p>
 
+<div id="outline-container-org07880be" class="outline-2">
+<h2 id="org07880be"><a href="#org07880be">Time domain astrophysics is much more than just CCSNe</a></h2>
+<div class="outline-text-2" id="text-org07880be">
+<p>
+We have discussed in the <a href="./notes-lecture-SNe.html">core-collapse lecture</a> the collapse of an iron
+(or in some cases ONeMg) core and how it can trigger the SN explosion
+of a massive star. The transient zoology is bigger than just SNe. With
+the expansion of observational capabilities in cadence, depth,
+wavelength ranges and availability of progenitor catalogs and star
+formation maps for host galaxies, we now can detect a wide variety of
+transients:
+</p>
+
+
+<figure id="orgb414ea5">
+<img src="./images/transients_phase_space.jpg" alt="transients_phase_space.jpg" width="100%">
+
+<figcaption><span class="figure-number">Figure 1: </span>Distribution of transient classes in terms of peak brightness and typical timescale (note how both scales are logarithmic), from <a href="https://www.mdpi.com/2218-1997/8/10/493">Cai et al. 2022</a>.</figcaption>
+</figure>
+
+<p>
+Understanding the physics driving each of these transients, their
+astrophysical host galaxies and parent populations, their absolute and
+relative rates is a very active topic of research.
+</p>
+</div>
+</div>
+
 <div id="outline-container-org9204c81" class="outline-2">
 <h2 id="org9204c81"><a href="#org9204c81">Explosion of WDs</a></h2>
 <div class="outline-text-2" id="text-org9204c81">
 <p>
-We have discussed in the <a href="./notes-lecture-SNe.html">core-collapse lecture</a> the collapse of an iron
-(or in some cases ONeMg) core and how it can trigger th core-collapse
-SN explosion of a massive star. Here, we will instead discuss
-explosions of low-mass stars ending their life as WDs.
+In this lecture, we will instead discuss explosions of low-mass stars
+ending their life as WDs.
 </p>
 
 <p>
 In isolation, a WD can only cool down, possibly crystallize releasing
-some latent heat to slow down the cooling, and continue cooling
-further afterwards, until it becomes too faint and cold to be
-detected. Ultimately this should produce a "black dwarf" (in a time
-longer than the age of the Universe).
+some latent heat to slow down the cooling when it crystallize, and
+continue cooling further afterwards, until it becomes too faint and
+cold to be detected. Ultimately this should produce a "black dwarf"
+(in a time longer than the age of the Universe).
 </p>
 
 <p>
@@ -159,6 +186,10 @@ result in a full destruction of the WD &#x2013; so called SNIa.
 </p>
 </div>
 
+<div id="outline-container-org77ef0ff" class="outline-3">
+<h3 id="org77ef0ff"><a href="#org77ef0ff">Accreting WDs</a></h3>
+</div>
+
 <div id="outline-container-orgb2ae555" class="outline-3">
 <h3 id="orgb2ae555"><a href="#orgb2ae555">A zoo within a zoo: WD explosions landscape</a></h3>
 </div>
@@ -173,13 +204,49 @@ result in a full destruction of the WD &#x2013; so called SNIa.
 <div id="outline-container-org7d85e6a" class="outline-2">
 <h2 id="org7d85e6a"><a href="#org7d85e6a">D6 stars</a></h2>
 </div>
+
+<div id="outline-container-orgb3c5aaf" class="outline-2">
+<h2 id="orgb3c5aaf"><a href="#orgb3c5aaf">Host galaxies</a></h2>
+<div class="outline-text-2" id="text-orgb3c5aaf">
+<p>
+Another way to empirically infer the physical origin of an observed
+transient, is to look at the surrounding stellar population. The
+initial distinction between type Ia and CCSNe was based on the former
+occurring typically in elliptical galaxies with old stellar
+populations or in between star forming regions in spiral galaxies (so
+far from the star forming region itself): this suggests these events
+have long delays and are <i>not</i> associated to young and short-lived
+stars, and instead related to longer-lived objects, perhaps low-mass
+stars.
+</p>
+
+<p>
+Studying the age distribution of the surrounding population can also
+corroborate this, provided the surrounding population is related to
+the transient (which may not be true if the progenitor moves a lot
+during its lifetime, e.g., runaway stars).
+</p>
+</div>
+</div>
+
+<div id="outline-container-org130b102" class="outline-2">
+<h2 id="org130b102"><a href="#org130b102">Homework</a></h2>
+<div class="outline-text-2" id="text-org130b102">
+<ul class="org-ul">
+<li>Make a hydrostatic sphere of radioactive \(^{56}\mathrm{Ni}\) in MESA,
+you need <code>v_flag</code> set to true (allow for hydrodynamics), and this is
+a very crude model of a SNIa explosion! This is an advanced <code>MESA</code>
+use, not possible with <code>MESA-web</code>.</li>
+</ul>
+</div>
+</div>
 </div>
 <div id="postamble" class="status">
 <div class="footer">
   <hr>
   <a href="#light-dark-toggle"><i id="light-dark-toggle"><i class="fa-solid fa-circle-half-stroke"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="projects.html"><i class="fa-solid fa-arrow-left" style="font-size:16px"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="#top"><i class="fa-solid fa-arrow-up" style="font-size:16px"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="notes-lecture-GWprog.html"><i class="fa-solid fa-arrow-right" style="font-size:16px"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="https://github.com/mathren/stellar_phys_545"><i class="fa-brands fa-github" style="font-size:16px"></i></a><hr>
   <br>
-  Last updated on 6 April 2026 <br>
+  Last updated on 9 April 2026 <br>
   Made with Emacs 29.2 - Org mode 9.6.15
   <br>
 </div>
