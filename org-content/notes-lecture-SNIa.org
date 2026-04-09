@@ -63,7 +63,7 @@ If a WD can accrete mass from a companion star (of any type), several
 outcomes are possible depending on the accretion rate, composition of
 the accreted matter, cooling time of the added material, etc.
 
-#+CAPTION: Regimes of accretion rates vs. WD mass and resulting outcomes. Modified from Fig. 1 in [[https://ui.adsabs.harvard.edu/abs/2013ApJ...777..136W/abstract][Wolf et al. 2013]].
+#+CAPTION: Regimes of accretion rates vs. CO WD mass and resulting outcomes based on =MESA= simulations of accreting WD at fixed $\dot{M}$. Modified from Fig. 1 in [[https://ui.adsabs.harvard.edu/abs/2013ApJ...777..136W/abstract][Wolf et al. 2013]].
 #+ATTR_HTML: :width 75%
 [[./images/nova_accretion_rate.png]]
 
@@ -238,18 +238,59 @@ hypervelocity weird-looking stars in /Gaia/ samples have been claimed
 (see e.g., [[https://ui.adsabs.harvard.edu/abs/2018ApJ...865...15S/abstract][Shen et al. 2018]]).
 
 ** SNIa models based on WD mass
+
+*** Super-Chandrasekhar mass
 The mass of the exploding WD could be just exceeding $\sim M_{\rm
-Chandrasekhar}\sim1.4\,M_{\odot}$ (at which point one can analytically
+Chandrasekhar}\sim1.4\,M_{\odot}$, at which point one can analytically
 demonstrate hydrostatic equilibrium is impossible, justifying
-expecting an explosion), or the explosion could be triggered in a
-sub-Chandrasekhar WD, depending on the thermal state of the material
-landing on the WD and in what kind of nuclear burning the
-thermodynamic trajectory ($T$, $\rho$) of this material will lead to.
+expecting an explosion.
+
+*** Sub-Chandrasekhar mass
+Alternative models where the explosion is triggered earlier in a
+sub-Chandrasekhar WD (lower $M_{\rm WD} \Rightarrow$ less time spent accreting),
+depending on the thermal state of the material landing on the WD and
+in what kind of nuclear burning the thermodynamic trajectory ($T$,
+$\rho$) of this material will lead to.
 
 ** SNIa models based on ignition
+This is where the WD composition, structure, and stratification may
+become important. For the most common type of WD, made of a mixture of
+C and O left by He core burning, the accretion of H from a companion
+which burns /stably/ (required to be in the SNIa regime between the two
+red lines in Fig. 1) will grow a He layer from the H ashes at the WD
+surface (or alternatively, the donor star may be He-rich, as in a
+lower mass He WD or a stripped non-degenerate star). This He layer
+will be typically "cold" and degenerate.
 
+As the He layer grows though, it will at some point ignite (note the
+analogy with [[./in-class-evol-wrap-up.org::*Low mass stars: AGB thermal pulses and WD cooling][AGB thermal pulses]]!). This will generate a convective
+flame (recall that $\varepsilon_{3\alpha}$ scales very steeply with $T$), and depending
+on the nature of the propagation of this flame, or in other words,
+depending on the dynamics ensuing because of this ignition, we
+distinguish various classes of models.
 
+*N.B.:* finer distinctions are also possible based on the number of
+ignition points in a 3D star (whether it's a spherical shell that
+ignites, or not).
 
+*** Subsonic flame propagation: *deflagration*
+If the flame propagates sub-sonically, we talk about deflagration.
+Flames that never accelerate into a super-sonic regime (and which
+consequently may fail at igniting further nuclear burning) may be
+involved in SNIax.
+
+*** Supersonic flame: *detonation* & *double detonation*
+
+In the case the flame propagates super-sonically, meaning as a shock,
+it can compress the underlying CO layer, increasing its $T$ and
+possibly leading to a second explosion. It may be this second
+explosion that blows up the star, in a *double detonation* (first of the
+He layer built up by accretion, and then the underlying CO WD).
+
+A detonation of the CO material may also be caused by an initial
+deflagration of He (subsonic) which accelerates because of the energy
+release by He burning into a detonation, producing a *delayed
+detonation*.
 
 
 ** Summary of theoretical SNIa model classes

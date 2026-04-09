@@ -238,7 +238,8 @@ and dynamical assembly), discuss some known uncertainties.
 [[./notes-lecture-GWprog.org][Notes]]
 
 ** <2026-04-15 Wed> - SNIa
-*Aim*: discuss SNIa
+*Aim*: Overview of various classes of theoretical models and basic
+empirical properties for WD explosions. Brief mention also of Novae.
 
 [[./notes-lecture-SNIa.org][Notes]]
 ** <2026-04-17 Fri> - Two students presentations

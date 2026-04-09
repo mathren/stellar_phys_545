@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 2026-04-09 Thu 11:29 -->
+<!-- 2026-04-09 Thu 11:48 -->
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>ASTR545 - SNIa</title>
@@ -141,7 +141,7 @@ transients:
 </p>
 
 
-<figure id="org52e2994">
+<figure id="org698ffc0">
 <img src="./images/transients_phase_space.jpg" alt="transients_phase_space.jpg" width="100%">
 
 <figcaption><span class="figure-number">Figure 1: </span>Distribution of transient classes in terms of peak brightness and typical timescale (note how both scales are logarithmic), from <a href="https://www.mdpi.com/2218-1997/8/10/493">Cai et al. 2022</a>.</figcaption>
@@ -209,10 +209,10 @@ the accreted matter, cooling time of the added material, etc.
 </p>
 
 
-<figure id="org37f0cce">
+<figure id="org06736ff">
 <img src="./images/nova_accretion_rate.png" alt="nova_accretion_rate.png" width="75%">
 
-<figcaption><span class="figure-number">Figure 2: </span>Regimes of accretion rates vs. WD mass and resulting outcomes. Modified from Fig. 1 in <a href="https://ui.adsabs.harvard.edu/abs/2013ApJ...777..136W/abstract">Wolf et al. 2013</a>.</figcaption>
+<figcaption><span class="figure-number">Figure 2: </span>Regimes of accretion rates vs. CO WD mass and resulting outcomes based on <code>MESA</code> simulations of accreting WD at fixed \(\dot{M}\). Modified from Fig. 1 in <a href="https://ui.adsabs.harvard.edu/abs/2013ApJ...777..136W/abstract">Wolf et al. 2013</a>.</figcaption>
 </figure>
 
 <p>
@@ -337,7 +337,7 @@ stars.
 
 
 
-<figure id="orgeacdb41">
+<figure id="org033b372">
 <img src="./images/KEPLER-SNIa.jpg" alt="KEPLER-SNIa.jpg" width="75%">
 
 <figcaption><span class="figure-number">Figure 3: </span>Composite image of the SN remnant of SN1604, a type Ia SN observed by J. Kepler (among others).  Credits: NASA/ESA/JHU/R.Sankrit &amp; W.Blair.</figcaption>
@@ -489,24 +489,95 @@ hypervelocity weird-looking stars in <i>Gaia</i> samples have been claimed
 <div id="outline-container-org9220585" class="outline-3">
 <h3 id="org9220585"><a href="#org9220585">SNIa models based on WD mass</a></h3>
 <div class="outline-text-3" id="text-org9220585">
+</div>
+<div id="outline-container-org891618f" class="outline-4">
+<h4 id="org891618f"><a href="#org891618f">Super-Chandrasekhar mass</a></h4>
+<div class="outline-text-4" id="text-org891618f">
 <p>
 The mass of the exploding WD could be just exceeding \(\sim M_{\rm
-Chandrasekhar}\sim1.4\,M_{☉}\) (at which point one can analytically
+Chandrasekhar}\sim1.4\,M_{☉}\), at which point one can analytically
 demonstrate hydrostatic equilibrium is impossible, justifying
-expecting an explosion), or the explosion could be triggered in a
-sub-Chandrasekhar WD, depending on the thermal state of the material
-landing on the WD and in what kind of nuclear burning the
-thermodynamic trajectory (\(T\), \(\rho\)) of this material will lead to.
+expecting an explosion.
 </p>
+</div>
+</div>
+
+<div id="outline-container-org23eaf1a" class="outline-4">
+<h4 id="org23eaf1a"><a href="#org23eaf1a">Sub-Chandrasekhar mass</a></h4>
+<div class="outline-text-4" id="text-org23eaf1a">
+<p>
+Alternative models where the explosion is triggered earlier in a
+sub-Chandrasekhar WD (lower \(M_{\rm WD} \Rightarrow\) less time spent accreting),
+depending on the thermal state of the material landing on the WD and
+in what kind of nuclear burning the thermodynamic trajectory (\(T\),
+\(\rho\)) of this material will lead to.
+</p>
+</div>
 </div>
 </div>
 
 <div id="outline-container-org0cd858d" class="outline-3">
 <h3 id="org0cd858d"><a href="#org0cd858d">SNIa models based on ignition</a></h3>
+<div class="outline-text-3" id="text-org0cd858d">
+<p>
+This is where the WD composition, structure, and stratification may
+become important. For the most common type of WD, made of a mixture of
+C and O left by He core burning, the accretion of H from a companion
+which burns <i>stably</i> (required to be in the SNIa regime between the two
+red lines in Fig. 1) will grow a He layer from the H ashes at the WD
+surface (or alternatively, the donor star may be He-rich, as in a
+lower mass He WD or a stripped non-degenerate star). This He layer
+will be typically "cold" and degenerate.
+</p>
+
+<p>
+As the He layer grows though, it will at some point ignite (note the
+analogy with <a href="./in-class-evol-wrap-up.html#org98916b9">AGB thermal pulses</a>!). This will generate a convective
+flame (recall that \(\varepsilon_{3\alpha}\) scales very steeply with \(T\)), and depending
+on the nature of the propagation of this flame, or in other words,
+depending on the dynamics ensuing because of this ignition, we
+distinguish various classes of models.
+</p>
+
+<p>
+<b>N.B.:</b> finer distinctions are also possible based on the number of
+ignition points in a 3D star (whether it's a spherical shell that
+ignites, or not).
+</p>
 </div>
 
+<div id="outline-container-org68590ff" class="outline-4">
+<h4 id="org68590ff"><a href="#org68590ff">Subsonic flame propagation: <b>deflagration</b></a></h4>
+<div class="outline-text-4" id="text-org68590ff">
+<p>
+If the flame propagates sub-sonically, we talk about deflagration.
+Flames that never accelerate into a super-sonic regime (and which
+consequently may fail at igniting further nuclear burning) may be
+involved in SNIax.
+</p>
+</div>
+</div>
 
+<div id="outline-container-org7edadda" class="outline-4">
+<h4 id="org7edadda"><a href="#org7edadda">Supersonic flame: <b>detonation</b> &amp; <b>double detonation</b></a></h4>
+<div class="outline-text-4" id="text-org7edadda">
+<p>
+In the case the flame propagates super-sonically, meaning as a shock,
+it can compress the underlying CO layer, increasing its \(T\) and
+possibly leading to a second explosion. It may be this second
+explosion that blows up the star, in a <b>double detonation</b> (first of the
+He layer built up by accretion, and then the underlying CO WD).
+</p>
 
+<p>
+A detonation of the CO material may also be caused by an initial
+deflagration of He (subsonic) which accelerates because of the energy
+release by He burning into a detonation, producing a <b>delayed
+detonation</b>.
+</p>
+</div>
+</div>
+</div>
 
 
 <div id="outline-container-orgefa862f" class="outline-3">
