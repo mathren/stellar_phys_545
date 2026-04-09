@@ -5,8 +5,8 @@
 #+PREVIOUS_PAGE: projects.org
 
 *Materials:* Hansen & Kawaler book Sec. 2.6.3, [[http://www.annualreviews.org/doi/10.1146/annurev.astro.35.1.309][Filippenko 1997]], [[https://ui.adsabs.harvard.edu/abs/2007ApJ...660.1444S/abstract][Shen &
-Bildsten 2007]], [[https://ui.adsabs.harvard.edu/abs/2012PASA...29..447M/abstract][Maoz & Mannuci 2012]], [[https://ui.adsabs.harvard.edu/abs/2013ApJ...777..136W/abstract][Wolf et al. 2013]], [[https://www.aanda.org/articles/aa/ref/2025/02/aa51852-24/aa51852-24.html][Dimitriadis
-2026]], [[https://ui.adsabs.harvard.edu/abs/2026arXiv260200223D/abstract][Desai et al. 2026]]
+Bildsten 2007]], [[https://ui.adsabs.harvard.edu/abs/2010NewAR..54..201H/abstract][Hillebrand & Roepke 2011]], [[https://ui.adsabs.harvard.edu/abs/2012PASA...29..447M/abstract][Maoz & Mannuci 2012]], [[https://ui.adsabs.harvard.edu/abs/2013ApJ...777..136W/abstract][Wolf
+et al. 2013]], [[https://www.aanda.org/articles/aa/ref/2025/02/aa51852-24/aa51852-24.html][Dimitriadis 2026]], [[https://ui.adsabs.harvard.edu/abs/2026arXiv260200223D/abstract][Desai et al. 2026]]
 
 * Time domain astrophysics is much more than just CCSNe
 
@@ -178,6 +178,9 @@ models, and spectral properties exist, the list here covers only the
 main subtypes.
 
 * Classes of theoretical models for WD explosions
+
+The theory of WD explosions is vast and highly-debated, see reviews by
+
 
 
 * Phillips relation
