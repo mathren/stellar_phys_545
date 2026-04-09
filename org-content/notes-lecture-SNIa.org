@@ -140,6 +140,14 @@ These correspond to $\gtrsim 90\%$ of SNIa subtypes ([[https://ui.adsabs.harvard
 the overall rate of SNIa and CCSN have similar orders of magnitude, of
 order of 0.1-1/century per Milky-way-like galaxy.
 
+From their location in their host galaxies, we know that these
+transients are /not/ associated to young stellar populations: they occur
+often in elliptical galaxies with no ongoing star formation, or in
+between spiral arms (once again, far from star formation), implying
+long-lived progenitors such as WDs and unlike short-lived massive
+stars.
+
+
 #+CAPTION: Composite image of the SN remnant of SN1604, a type Ia SN observed by J. Kepler (among others).  Credits: NASA/ESA/JHU/R.Sankrit & W.Blair.
 #+ATTR_HTML: :width 75%
 [[./images/KEPLER-SNIa.jpg]]
@@ -173,13 +181,64 @@ CSM suggests that the WD and its companion (whatever it may be) were
 brought close together by non-conservative binary evolution processes
 shortly before the explosion.
 
-*N.B.:* Other sub-classes based on energetics, connection to theoretical
-models, and spectral properties exist, the list here covers only the
-main subtypes.
+*N.B.:* Other sub-classes based on energetics, WD compositions,
+connection to theoretical models, and spectral properties exist, the
+list here covers only the main subtypes.
 
 * Classes of theoretical models for WD explosions
 
-The theory of WD explosions is vast and highly-debated, see reviews by
+Theoretical models of WD explosions are a very rich, vast, and and
+highly-debated landscape. They can be subdivided along various axes
+(progenitor, propagation of the burning front, ignition mechanism)
+that are /not/ orthogonal. In the following, I try to sub-divide them to
+highlight the crucial components
+
+** SNIa models based on progenitors
+As discussed above, a SNIa requires a WD accreting at a typical rate
+where burning of the newly accreted material at the surface is
+dynamically stable and grows the WD mass.
+
+Depending on where the material comes from, there are two main
+sub-classes of theoretical models:
+
+*** Single-degenerate models
+The donor companion to the WD is a non-degenerate star. This implies a
+wider progenitor binary system (so that the non-degenerate star can
+fit within the orbit), but to avoid the Nova regime it is helpful for
+the non-degenerate companion to be a He-rich stripped star (e.g., post
+Red giant+WD common envelope ejection).
+
+This channel should occur occasionally in nature, and may be
+particularly relevant to explain the SNIa-CSM (because it's easier to
+keep the CSM around if the companion didn't have time to evolve to
+become degenerate).
+
+*** Double-degenerate models
+In this case, the donor companion to the exploding WD is /another/ WD!
+
+*N.B.:* bringing together 2 WDs close enough that go through mass
+transfer requires at least a common envelope + GW emission to further
+shrink the orbit.
+
+Because of the $M\propto R^{-3}$ relation for WDs dominated by
+non-ultra-relativistic electrons, the donor star is the /lowest/ mass WD
+(corresponding to the largest radius). The accreting WD is thought to
+be the one that will explode in the SNIa, which will eject *all* the
+mass of this WD, completely removing the mass around which the donor
+orbits.
+
+Therefore, in this scenario, the lower mass WD donor, is shot out from
+the binary with its pre-explosion orbital velocity (think of the
+"Blaauw kick" and SN-kick discussions). Because of the lower donor
+mass and necessarily tight pre-SN period to allow for mass transfer,
+this should produce extremely fast-moving stars possibly out of
+thermal equilibrium because of the pre-SN mass transfer /and/ the
+perturbation caused by the companion explosion. Detection of such
+hypervelocity weird-looking stars in /Gaia/ samples have been claimed
+(see e.g., [[https://ui.adsabs.harvard.edu/abs/2018ApJ...865...15S/abstract][Shen et al. 2018]]).
+
+** SNIa models based on ignition
+
 
 
 
