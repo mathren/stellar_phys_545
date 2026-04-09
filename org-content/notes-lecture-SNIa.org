@@ -4,9 +4,10 @@
 #+NEXT_PAGE: notes-lecture-GWprog.org
 #+PREVIOUS_PAGE: projects.org
 
-*Materials:* Hansen & Kawaler book Sec. 2.6.3, [[http://www.annualreviews.org/doi/10.1146/annurev.astro.35.1.309][Filippenko 1997]], [[https://ui.adsabs.harvard.edu/abs/2007ApJ...660.1444S/abstract][Shen &
-Bildsten 2007]], [[https://ui.adsabs.harvard.edu/abs/2000ARA%26A..38..191H/abstract][Hillebrandt & Niemeyer 2000]] , [[https://ui.adsabs.harvard.edu/abs/2012PASA...29..447M/abstract][Maoz & Mannuci 2012]],
-[[https://ui.adsabs.harvard.edu/abs/2013ApJ...777..136W/abstract][Wolf et al. 2013]], [[https://www.aanda.org/articles/aa/ref/2025/02/aa51852-24/aa51852-24.html][Dimitriadis 2026]], [[https://ui.adsabs.harvard.edu/abs/2026arXiv260200223D/abstract][Desai et al. 2026]]
+*Materials:* Hansen & Kawaler book Sec. 2.6.3, [[https://ui.adsabs.harvard.edu/abs/1982ApJ...253..785A/abstract][Arnett 1982]], [[https://ui.adsabs.harvard.edu/abs/1993ApJ...413L.105P/abstract][Phillips
+1993]], [[http://www.annualreviews.org/doi/10.1146/annurev.astro.35.1.309][Filippenko 1997]], [[https://ui.adsabs.harvard.edu/abs/2007ApJ...660.1444S/abstract][Shen & Bildsten 2007]], [[https://ui.adsabs.harvard.edu/abs/2000ARA%26A..38..191H/abstract][Hillebrandt &
+Niemeyer 2000]], [[https://ui.adsabs.harvard.edu/abs/2012PASA...29..447M/abstract][Maoz & Mannuci 2012]], [[https://ui.adsabs.harvard.edu/abs/2013ApJ...777..136W/abstract][Wolf et al. 2013]], [[https://www.aanda.org/articles/aa/ref/2025/02/aa51852-24/aa51852-24.html][Dimitriadis
+2026]]
 
 * Time domain astrophysics is much more than just CCSNe
 
@@ -275,7 +276,7 @@ distinguish various classes of models.
 ignition points in a 3D star (whether it's a spherical shell that
 ignites, or not).
 
-*** Subsonic flame propagation: *deflagration*
+*** Subsonic flame propagation: deflagration
 If the flame propagates sub-sonically, we talk about deflagration.
 Flames that never accelerate into a super-sonic regime (and which
 consequently may fail at igniting further nuclear burning) may be
@@ -310,16 +311,84 @@ detonation*.
 *N.B.:* In principle each entry in a column can be combined with any
 other element in the other columns unless proven otherwise.
 
+Any successful SNIa model needs to:
+1. produce the right ejecta composition and velocities (probed with
+   spectral series of observed SNIa)
+2. have a robust explosion mechanism that accounts for the relative
+   homogeneity of "normal" SNIa
+3. allow for some intrinsic variability to explain the deviations from
+   "normal" SNIa
+4. be compatible with progenitor binaries and observed rates, spatial
+   off-sets, etc.
+
+The debate (on all these points) is ongoing.
+
+*** Key outcome: explosive burning turns most mass into radioactive $^{56}\mathrm{Ni}$
+Regardless of the progenitor system, ignition mechanism, and explosion
+details, the outcome is a thermonuclear explosion of the WD, where
+most of the material turns into Fe group elements, and especially iron
+and nickel (the most bound nuclei!).
+
+The burning ultimately needs to be explosive, since the pressure in
+the WD does not depend on $T$ (the same situation encountered in the
+[[./in-class-evol-wrap-up.org::*He ignition in degenerate conditions: flash][He flash]] and other ignitions in degenerate environment during the
+stellar evolution).
+
+In fact, [[https://ui.adsabs.harvard.edu/abs/1982ApJ...253..785A/abstract][Arnett 1982]] developed an analytic radiative transfer
+model for the light curves and broad-band color evolution of SNIa (now
+often referred to as "Arnett's rules") where the main source of energy
+is the [[file:notes-lecture-SNe.org::*Adiabatic expansion and radioactive energy input][radioactive decay of]] $^{56}\mathrm{Ni}$ centrally condensed in a
+spherical star. A key (and questionable) assumption of Arnett's rules
+is that the $\gamma$ rays produced by the annihilation of the positron
+produced by the decay $^{56}\mathrm{Ni}$ with an electron are trapped in
+the expanding explosion -- if they can escape the peak luminosity
+should be lower since less energy is deposited in the ejecta.
+
 * Light curve properties
+As already mentioned, the light curve properties of SNe showing no H
+lines and Si lines (type Ia) are surprisingly homogeneous. The figure
+below shows a subset of light curves examples:
+
+#+CAPTION: Nine example multi-band SNIa light curves from [[https://ui.adsabs.harvard.edu/abs/2009ApJ...700..331H/abstract][Hicken et al. 2009]]. Errorbars are typically smaller than symbols.
+#+ATTR_HTML: :width 100%
+[[./images/SNIaLC_cfa.png]]
+
+However, there is significant scatter in peak luminosity: SNIa are /not/
+standard candles out of the box! Nevertheless the morphology of the
+light curve in each band is qualitatively very similar, which suggest
+it may be possible to "standardize" them.
+
+#+CAPTION: Qualitative light curve evolution of SNIa across various photometric optical and IR bands (from blue to red moving up). From [[https://www.astronomy.swin.edu.au/cosmos/T/Type%2BIa%2Bsupernova%2Blight%2Bcurves][Swinburn university educational materials]]. The x-axis units are roughly days and it spans roughly 60 days.
+#+ATTR_HTML: :width 70%
+[[./images/SNIaLC.jpg]]
 
 
-** Phillips relation
+** Phillips relation, standardization, and connection to dark energy
 
-*** SNIa and dark energy
-Using the Phillips relation, SNIa can be *empirically* calibrated
-(stepping aside the theoretical debates on the explosion mechanism and
-parent systems) to create a step in the distance ladder that uses
-transients rather than stars.
+[[https://ui.adsabs.harvard.edu/abs/1993ApJ...413L.105P][Phillips 1993]] derived the absolute B, V, and I peak magnitudes for a
+(by today's standards small) sample of SNIa, and noticed that there is
+a *strong correlation between peak magnitude* (especially in B-band)
+*and decline rate* of the SN.
+
+The latter is measured as $\Delta m_{15}(B)$, that is the variation in
+magnitude in B band during the 15 days post-maximum.
+
+#+CAPTION: Illustration of the Phillips relation between peak magnitude and decline rate of "normal" SNIa. This is Fig. 1 [[https://ui.adsabs.harvard.edu/abs/1993ApJ...413L.105P][Phillips 1993]].
+#+ATTR_HTML: :width 50%
+[[./images/phillips_relation.png]]
+
+Since peak magnitude and decline rates are easy photometric
+measurements (provided at least one spectrum is available to classify
+the event as a SNIa!), if one SNIa occurs at a distance otherwise
+known (e.g., through parallax measurements, or Cepheid distances),
+this relation can be used to *measure distances photometrically*.
+This calibration is *purely empirical* and thus side-steps the
+theoretical debates on the explosion mechanism and parent systems.
+
+Moreover, since SNIa outshine stars (and integrated galaxies), this
+give access to direct distance measurements at much larger distances
+than Cepheids and parallax, making the last rung of the cosmological
+distance ladder.
 
 This allowed to extend the distance ladder significantly, since
 explosions outshine stars (although still remaining in the relatively

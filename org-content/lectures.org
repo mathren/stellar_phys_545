@@ -176,7 +176,9 @@ Discuss written and oral presentations, and refereeing process.
 [[./notes-in-class-evol.org][Notes]]
 
 ** <2026-03-06 Fri> - *Guest Lecture*: Coupling rapid binary evolution and galactic dynamics
-Guest lecturer: [[https://www.tomwagg.com/][Dr. Tom Wagg]]
+*Guest lecturer*: [[https://www.tomwagg.com/][Dr. Tom Wagg]]
+
+
 
 ** <2026-03-07 Sat> - <2026-03-15 Sun> - SPRING BREAK
 
@@ -229,8 +231,13 @@ common envelope and its main phases.
 core-collapse and the formation of compact objects.
 
 [[./notes-lecture-SNe.org][Notes]]
-** <2026-04-10 Fri> - *Guest Lecture* (topic TBD)
-Guest lecturer: [[https://carlnotsagan.github.io/][Prof. Carl Fields]]
+
+** <2026-04-10 Fri> - *Guest Lecture*: Exoplanets
+*Guest lecturer*: [[https://carlnotsagan.github.io/][Prof. Carl Fields]]
+
+ - [[https://carlnotsagan.github.io/ast400a/lectures/bonus/extra1.html][Lecture slides]]
+ - [[https://carlnotsagan.github.io/ast400a/assignments/bonus_ica1.html][In class activity]]
+
 ** <2026-04-13 Mon> - Gravitational wave progenitors
 *Aim*: introduce gravitational wave formation scenario (isolated binary
 and dynamical assembly), discuss some known uncertainties.
