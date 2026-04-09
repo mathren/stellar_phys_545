@@ -136,15 +136,22 @@ and how exactly this happens is still a matter of heated debates.
 
 **** SNIa
 These correspond to $\gtrsim 90\%$ of SNIa subtypes ([[https://ui.adsabs.harvard.edu/abs/2026arXiv260200223D/abstract][Desai et al.
-2026]]) and $\sim30\%$ of all SNe (including CCSNe) observed.
-Therefore the overall rate of SNIa and CCSN have similar orders of
-magnitude, of order of 0.1-1/century per Milky-way-like galaxy.
+2026]]) and $\sim30\%$ of all SNe (including CCSNe) observed. Therefore
+the overall rate of SNIa and CCSN have similar orders of magnitude, of
+order of 0.1-1/century per Milky-way-like galaxy.
+
+#+CAPTION: Composite image of the SN remnant of SN1604, a type Ia SN observed by J. Kepler (among others).  Credits: NASA/ESA/JHU/R.Sankrit & W.Blair.
+#+ATTR_HTML: :width 75%
+[[./images/KEPLER_SNIa.jpg]]
+
 
 The "normal" SNIa show significant homogeneity in photometric
 properties. This enables to use them as "standardized candles" for
 distance measurements in cosmological context (see below).
 
 **** SNIax
+These can be thought of as "failed" SNIa
+
 
 **** SN .Ia (note the period)
 
