@@ -237,6 +237,15 @@ perturbation caused by the companion explosion. Detection of such
 hypervelocity weird-looking stars in /Gaia/ samples have been claimed
 (see e.g., [[https://ui.adsabs.harvard.edu/abs/2018ApJ...865...15S/abstract][Shen et al. 2018]]).
 
+** SNIa models based on WD mass
+The mass of the exploding WD could be just exceeding $\sim M_{\rm
+Chandrasekhar}\sim1.4\,M_{\odot}$ (at which point one can analytically
+demonstrate hydrostatic equilibrium is impossible, justifying
+expecting an explosion), or the explosion could be triggered in a
+sub-Chandrasekhar WD, depending on the thermal state of the material
+landing on the WD and in what kind of nuclear burning the
+thermodynamic trajectory ($T$, $\rho$) of this material will lead to.
+
 ** SNIa models based on ignition
 
 
