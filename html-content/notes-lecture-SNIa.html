@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 2026-04-09 Thu 10:13 -->
+<!-- 2026-04-09 Thu 10:37 -->
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>ASTR545 - SNIa</title>
@@ -124,7 +124,7 @@
 <p>
 <b>Materials:</b> Hansen &amp; Kawaler book Sec. 2.6.3, <a href="http://www.annualreviews.org/doi/10.1146/annurev.astro.35.1.309">Filippenko 1997</a>, <a href="https://ui.adsabs.harvard.edu/abs/2007ApJ...660.1444S/abstract">Shen &amp;
 Bildsten 2007</a>, <a href="https://ui.adsabs.harvard.edu/abs/2012PASA...29..447M/abstract">Maoz &amp; Mannuci 2012</a>, <a href="https://ui.adsabs.harvard.edu/abs/2013ApJ...777..136W/abstract">Wolf et al. 2013</a>, <a href="https://www.aanda.org/articles/aa/ref/2025/02/aa51852-24/aa51852-24.html">Dimitriadis
-2026</a>
+2026</a>, <a href="https://ui.adsabs.harvard.edu/abs/2026arXiv260200223D/abstract">Desai et al. 2026</a>
 </p>
 
 <div id="outline-container-org07880be" class="outline-2">
@@ -141,7 +141,7 @@ transients:
 </p>
 
 
-<figure id="org6a06a7d">
+<figure id="org76bdab7">
 <img src="./images/transients_phase_space.jpg" alt="transients_phase_space.jpg" width="100%">
 
 <figcaption><span class="figure-number">Figure 1: </span>Distribution of transient classes in terms of peak brightness and typical timescale (note how both scales are logarithmic), from <a href="https://www.mdpi.com/2218-1997/8/10/493">Cai et al. 2022</a>.</figcaption>
@@ -209,7 +209,7 @@ the accreted matter, cooling time of the added material, etc.
 </p>
 
 
-<figure id="orgb210f73">
+<figure id="org5fb4eed">
 <img src="./images/nova_accretion_rate.png" alt="nova_accretion_rate.png" width="75%">
 
 <figcaption><span class="figure-number">Figure 2: </span>Regimes of accretion rates vs. WD mass and resulting outcomes. Modified from Fig. 1 in <a href="https://ui.adsabs.harvard.edu/abs/2013ApJ...777..136W/abstract">Wolf et al. 2013</a>.</figcaption>
@@ -242,7 +242,8 @@ transient, until accretion (from a binary companion) resumes
 restarting the cycle. The bottom red-line in Fig. 1 corresponds to the
 accretion rate below which novae are expected, and the dashed black
 line show modelled "recurrence times", i.e., time intervals between
-nova eruptions.
+nova eruptions. Overall, novae are expected to <i>not</i> grow the WD mass
+(although debates remain active on this).
 </p>
 
 <p>
@@ -250,7 +251,6 @@ nova eruptions.
 compared to human lifetimes: novae can (rarely) repeat often enough
 that we can see multiple explosions.
 </p>
-
 
 <p>
 Depending on the composition of the material accreted, and the orbital
@@ -275,44 +275,122 @@ see <a href="https://www.annualreviews.org/content/journals/10.1146/annurev-astr
 </div>
 </div>
 
-<div id="outline-container-orgc11f1d0" class="outline-4">
-<h4 id="orgc11f1d0"><a href="#orgc11f1d0">Rebuilding a red-giant</a></h4>
-<div class="outline-text-4" id="text-orgc11f1d0">
+
+<div id="outline-container-org3d5ac58" class="outline-4">
+<h4 id="org3d5ac58"><a href="#org3d5ac58">Highest accretion rates: Rebuilding a red-giant</a></h4>
+<div class="outline-text-4" id="text-org3d5ac58">
 <p>
 For accretion rates <i>above</i> the upper red line in Fig. 1, the matter
 comes in too fast to burn, and will pile up at the surface of the WD,
-re-creating an H-rich envelope. If this extends enough it will be
-cold and non-degenerate, leading to the "reconstruction" of a star
-with a degenerate core (the WD) and a non-degenerate envelope!
+re-creating an H-rich envelope. If this extends enough it will be cold
+and non-degenerate. At the bottom of this envelope, slow, steady shell
+burning will occur, leading to the "reconstruction" of a star with a
+degenerate core (the WD) and a non-degenerate envelope!
 </p>
 </div>
 </div>
 
+<div id="outline-container-org637943c" class="outline-4">
+<h4 id="org637943c"><a href="#org637943c">Intermediate accretion rates: growing the WD</a></h4>
+<div class="outline-text-4" id="text-org637943c">
+<p>
+For accretion rate in between the red lines in Fig. 1, the nuclear
+burning of the accreted material will be stable. At the bottom red
+line, the heating and cooling rate are the same, meaning the energy
+release by the burning doesn't impact the structure, and the ashes are
+added to the WD.
+</p>
 
-<div id="outline-container-orgf342916" class="outline-4">
-<h4 id="orgf342916"><a href="#orgf342916">SNIax</a></h4>
+<p>
+However, as a WD grows in mass, the electrons become more energetic
+(\(\varpsilon_{\r Fermi}\) increases), until they become
+ultra-relativistic. Once \(P\sim\rho^{4/3}\) in the majority of the domain, there
+is a maximum possible WD mass (the Chandrasekhar mass), above which
+hydrostatic equilibrium cannot be satisfied.
+</p>
+
+<p>
+Therefore, accreting WD approaching this limit will experience a
+<b>dynamical</b> phase of evolution, resulting in an explosive signal. When
+and how exactly this happens is still a matter of heated debates.
+</p>
 </div>
 
-<div id="outline-container-org914ac22" class="outline-4">
-<h4 id="org914ac22"><a href="#org914ac22">SN .Ia (note the period)</a></h4>
+<ul class="org-ul">
+<li><a id="org7d10220"></a><a href="#org7d10220">SNIa</a><br>
+<div class="outline-text-5" id="text-org7d10220">
+<p>
+These correspond to \(\gtrsim 90\%\) of SNIa subtypes (<a href="https://ui.adsabs.harvard.edu/abs/2026arXiv260200223D/abstract">Desai et al.
+2026</a>) and \(\sim30\%\) of all SNe (including CCSNe) observed.
+Therefore the overall rate of SNIa and CCSN have similar orders of
+magnitude, of order of 0.1-1/century per Milky-way-like galaxy.
+</p>
+
+<p>
+The "normal" SNIa show significant homogeneity in photometric
+properties. This enables to use them as "standardized candles" for
+distance measurements in cosmological context (see below).
+</p>
+</div>
+</li>
+
+<li><a id="orgf342916"></a><a href="#orgf342916">SNIax</a><br></li>
+
+<li><a id="org914ac22"></a><a href="#org914ac22">SN .Ia (note the period)</a><br></li>
+
+<li><a id="org6bcf999"></a><a href="#org6bcf999">SNIa-CSM</a><br>
+<div class="outline-text-5" id="text-org6bcf999">
+<p>
+While the type Ia class is <i>defined</i> to not show H lines (and the "a"
+implies Si lines), some SNIa do show <b>narrow</b> H line which are
+interpreted as the blast wave from the SNIa running into nearby
+slow-moving (narrowness of the lines) circumstellar material (CSM).
+</p>
+
+<p>
+This is a relatively rare class of SNIa, where the presence of nearby
+CSM suggests that the WD and its companion (whatever it may be) were
+brought close together by non-conservative binary evolution processes
+shortly before the explosion.
+</p>
+</div>
+</li>
+</ul>
+</div>
+</div>
 </div>
 
-<div id="outline-container-org7d10220" class="outline-4">
-<h4 id="org7d10220"><a href="#org7d10220">SNIa</a></h4>
+
+<div id="outline-container-org91515dc" class="outline-2">
+<h2 id="org91515dc"><a href="#org91515dc">Classes of theoretical models for WD explosions</a></h2>
 </div>
-</div>
-</div>
-
-
-
-
-
-
-
 
 
 <div id="outline-container-org3ab1b92" class="outline-2">
 <h2 id="org3ab1b92"><a href="#org3ab1b92">Phillips relation</a></h2>
+<div class="outline-text-2" id="text-org3ab1b92">
+</div>
+<div id="outline-container-org92842bb" class="outline-3">
+<h3 id="org92842bb"><a href="#org92842bb">SNIa and dark energy</a></h3>
+<div class="outline-text-3" id="text-org92842bb">
+<p>
+Using the Phillips relation, SNIa can be <b>empirically</b> calibrated
+(stepping aside the theoretical debates on the explosion mechanism and
+parent systems) to create a step in the distance ladder that uses
+transients rather than stars.
+</p>
+
+<p>
+This allowed to extend the distance ladder significantly, since
+explosions outshine stars (although still remaining in the relatively
+"local" Universe w.r.t. the cosmic microwave background), and lead to
+the discovery of the acceleration of the Universe and thus the concept
+of dark energy. This discovery was awarded the <a href="https://www.nobelprize.org/prizes/physics/2011/summary/">2011 physics Nobel
+prize</a> (including a former Steward Observatory undergraduate
+student!).
+</p>
+</div>
+</div>
 </div>
 
 <div id="outline-container-org7d85e6a" class="outline-2">
