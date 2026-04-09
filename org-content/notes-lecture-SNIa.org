@@ -142,18 +142,25 @@ order of 0.1-1/century per Milky-way-like galaxy.
 
 #+CAPTION: Composite image of the SN remnant of SN1604, a type Ia SN observed by J. Kepler (among others).  Credits: NASA/ESA/JHU/R.Sankrit & W.Blair.
 #+ATTR_HTML: :width 75%
-[[./images/KEPLER_SNIa.jpg]]
+[[./images/KEPLER-SNIa.jpg]]
 
+These explosions are completely destructive: the WD is obliterated
+with all its gas being sent to infinity by the explosion. They leave
+behind no compact object (in this they are analogous of
+pair-instability SN at much higher stellar masses).
 
 The "normal" SNIa show significant homogeneity in photometric
 properties. This enables to use them as "standardized candles" for
 distance measurements in cosmological context (see below).
 
 **** SNIax
-These can be thought of as "failed" SNIa
+These can be thought of as "failed" SNIa where the WD is not
+completely destroyed. This leads to overall fainter explosions, and
+are much rare than normal SNIa.
 
-
-**** SN .Ia (note the period)
+The surviving WD remnant's surface properties may depend on the
+explosion which could in principle create unique degenerate stars
+impossible in isolation.
 
 **** SNIa-CSM
 While the type Ia class is /defined/ to not show H lines (and the "a"
@@ -166,6 +173,9 @@ CSM suggests that the WD and its companion (whatever it may be) were
 brought close together by non-conservative binary evolution processes
 shortly before the explosion.
 
+*N.B.:* Other sub-classes based on energetics, connection to theoretical
+models, and spectral properties exist, the list here covers only the
+main subtypes.
 
 * Classes of theoretical models for WD explosions
 
