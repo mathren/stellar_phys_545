@@ -26,13 +26,14 @@ relative rates is a very active topic of research.
 
 * Explosion of WDs
 In this lecture, we will instead discuss explosions of low-mass stars
-ending their life as WDs.
+ending their life as WDs, indicated as "thermonuclear SNe" in the
+figure above.
 
-In isolation, a WD can only cool down, possibly crystallize releasing
-some latent heat to slow down the cooling when it crystallize, and
-continue cooling further afterwards, until it becomes too faint and
-cold to be detected. Ultimately this should produce a "black dwarf"
-(in a time longer than the age of the Universe).
+In isolation, a WD can only cool down, possibly releasing some latent
+heat to slow down the cooling if/when it crystallize, and continue
+cooling further afterwards, until it becomes too faint and cold to be
+detected. Ultimately this should produce a "black dwarf" (in a time
+longer than the age of the Universe).
 
 While in a hypothetical "black dwarf" the density may be so high that
 density-driven nuclear reactions (pico-nuclear reactions) could occur
