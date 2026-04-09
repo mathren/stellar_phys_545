@@ -300,7 +300,6 @@ detonation*.
 +------------------+----------------------+---------------------------+
 | Companion donor  | Mass of exploding WD | Burning front propagation |
 +------------------+----------------------+---------------------------+
-+------------------+----------------------+---------------------------+
 | Single-degenerate|   sub-Chandrasekhar  | Deflagration+Detonation   |
 |        or        |        or            |             or            |
 | Double-degenerate|  super-Chandrasekhar |    Double detonation      |
