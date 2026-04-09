@@ -4,7 +4,9 @@
 #+NEXT_PAGE: notes-lecture-GWprog.org
 #+PREVIOUS_PAGE: projects.org
 
-*Materials:* Hansen & Kawaler book Sec. 2.6.3,
+*Materials:* Hansen & Kawaler book Sec. 2.6.3, [[http://www.annualreviews.org/doi/10.1146/annurev.astro.35.1.309][Filippenko 1997]], [[https://ui.adsabs.harvard.edu/abs/2007ApJ...660.1444S/abstract][Shen &
+Bildsten 2007]], [[https://ui.adsabs.harvard.edu/abs/2012PASA...29..447M/abstract][Maoz & Mannuci 2012]], [[https://ui.adsabs.harvard.edu/abs/2013ApJ...777..136W/abstract][Wolf et al. 2013]], [[https://www.aanda.org/articles/aa/ref/2025/02/aa51852-24/aa51852-24.html][Dimitriadis
+2026]]
 
 * Time domain astrophysics is much more than just CCSNe
 
@@ -32,8 +34,8 @@ figure above.
 In isolation, a WD can only cool down, possibly releasing some latent
 heat to slow down the cooling if/when it crystallize, and continue
 cooling further afterwards, until it becomes too faint and cold to be
-detected. Ultimately this should produce a "black dwarf" (in a time
-longer than the age of the Universe).
+detected. Theoretically, this should eventually produce a "black
+dwarf" (in a time longer than the age of the Universe).
 
 While in a hypothetical "black dwarf" the density may be so high that
 density-driven nuclear reactions (pico-nuclear reactions) could occur
@@ -41,15 +43,90 @@ and start a dynamical phase of evolution (e.g., [[https://ui.adsabs.harvard.edu/
 that the Universe is too young to have formed black dwarfs guarantees
 that this is /not/ part of the transients we /do/ observe.
 
-A WD that is /not/ in isolation, but instead is part of a binary system,
-may be perturbed by the companion (e.g. during a mass-transfer phase),
-which can /also/ lead to dynamical and explosive consequences. Here, we
-focus on these explosions, and more specifically the ones that will
-result in a full destruction of the WD -- so called SNIa.
+Conversely, a WD that is /not/ in isolation, but instead is part of a
+binary system, may be perturbed by the companion (e.g. during a
+mass-transfer phase), which can /also/ lead to dynamical and explosive
+consequences. Here, we focus on these explosions, and more
+specifically the ones that will result in a full destruction of the WD
+-- so called SNIa.
 
-** Accreting WDs
+** Accreting WDs: a zoo within a zoo
 
-** A zoo within a zoo: WD explosions landscape
+Recall that a WD is "cold" from the point of view of the structure
+(because the electron degeneracy pressure dominates and is independent
+of $T\ll\varepsilon_{\rm Fermi}/k_{B}$), but on the HR diagram they populate the region
+on the left of the ZAMS: their effective temperatures are higher than
+main-sequence stars, which is important for the radiative transfer in
+their envelopes and ultimately observational properties.
+
+If a WD can accrete mass from a companion star (of any type), several
+outcomes are possible depending on the accretion rate, composition of
+the accreted matter, cooling time of the added material, etc.
+
+#+CAPTION: Regimes of accretion rates vs. WD mass and resulting outcomes. Modified from Fig. 1 in [[https://ui.adsabs.harvard.edu/abs/2013ApJ...777..136W/abstract][Wolf et al. 2013]].
+#+ATTR_HTML: :width 75%
+[[./images/nova_accretion_rate.png]]
+
+The figure above shows the accretion rate as a function of WD mass on
+the x-axis, and three separate regimes are marked (assuming a solar
+metallicity composition of the accreted material, dominated by
+Hydrogen).
+
+*** Low accretion rates: Novae
+For low accretion rates, the material landing at the WD surface
+encounters the hot surface and burns. But the burning is /unstable/:
+small $T$ perturbations increase the $\varepsilon_{\rm nuc}$ of this surface
+burning more than the (radiative) cooling rate. Therefore, small $T$
+perturbations result in a pile-up of thermal energy in the burning
+region, accelerating the burning into a "thermonuclear runaway" (TRN)
+resulting in a *nova* explosion.
+
+The explosion itself ejects (small amounts) of matter, producing a
+transient, until accretion (from a binary companion) resumes
+restarting the cycle. The bottom red-line in Fig. 1 corresponds to the
+accretion rate below which novae are expected, and the dashed black
+line show modelled "recurrence times", i.e., time intervals between
+nova eruptions.
+
+*N.B.:* For high WD masses and accretion rates, these times become small
+compared to human lifetimes: novae can (rarely) repeat often enough
+that we can see multiple explosions.
+
+
+Depending on the composition of the material accreted, and the orbital
+architecture of the binary hosting a WD accretor (or in other words,
+the nature of the companion and the accretion rate evolution), there
+are several sub-classes of novae (e.g., cataclysmic variables with a
+main-sequence companion from which the [[./notes-lecture-CE.org][common envelope idea]] stems,
+symbiotic variables with a red-giant companion, He novae, etc.).
+
+*N.B.:* We also see a rarer-class of He-novae where the composition of
+the accreted material is He-rich, which changes the $\varepsilon_{\nuc}$ and thus
+the lines in Fig. 1.
+
+Recently, novae studies have become a hot topic because of the
+detection of $\gamma$-rays in these events. For a recent review on novae,
+see [[https://www.annualreviews.org/content/journals/10.1146/annurev-astro-112420-114502][Chomiuk, Metzger, and Shen 2021]].
+
+*** Rebuilding a red-giant
+For accretion rates /above/ the upper red line in Fig. 1, the matter
+comes in too fast to burn, and will pile up at the surface of the WD,
+re-creating an H-rich envelope. If this extends enough it will be
+cold and non-degenerate, leading to the "reconstruction" of a star
+with a degenerate core (the WD) and a non-degenerate envelope!
+
+
+*** SNIax
+
+*** SN .Ia (note the period)
+
+*** SNIa
+
+
+
+
+
+
 
 
 
