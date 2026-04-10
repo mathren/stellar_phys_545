@@ -239,7 +239,7 @@ and Eq. \ref{eq:quadrupole_def}).
 For the Hulse-Taylor pulsar, we have:
  - $M_{1} = 1.441M_{\odot}$ for the mass of the detectable radio-pulsar
  - $M_{2} = 1.387M_{\odot}$ for the mass of the unseen object
- - $P=0.323$ days for the orbit
+ - $P = 0.323$ days for the orbit
  - $e = 0.61$ for the orbit (likely a product of the [[file:notes-lecture-SNe.org::*Neutron star kicks][natal kick]] of the
    second-born NS)
 
@@ -318,7 +318,7 @@ L\le10^{-16}$ cm in the travel path of laser beams bouncing between mirrors
 $L\sim4$ km apart. $\Delta L$ produced by the passage of the GW is is
 *$\le1/1000$ of the characteristic size of a nucleus*!
 
-Today, while observations continue, we know of $\sim100$ BBH mergers, a
+Today, while observations continue, we know of $\sim250$ BBH mergers, a
 couple of BNS merger, and we have a few BH-NS mergers (but
 unfortunately all BNS except GW170817 -- the first one -- and all
 BH-NS mergers have been too far for the detection of EM counterparts):
@@ -688,3 +688,21 @@ scale of the x-axis) that one can attempt to detect.
 #+CAPTION: Sensitivity curves of present and planned GW detectors: Ground based detectors are on the right (highest frequencies), space-based in the middle, and galaxy-size pulsar-timing based on the left. Resonances in the detectors can make them "blind" to specific narrow frequencies: this can cause narrow "spikes" in the black curves at specific frequencies, which are removed here for clarity. From [[https://ui.adsabs.harvard.edu/abs/2015CQGra..32a5014M/abstract][Moore et al. 2015]].
 #+ATTR_HTML: :width 100%
 [[./images/GWdetectors.png]]
+
+
+Restricting the view to *merging* (so high-frequency GW $\Rightarrow$ ground based
+detectors) *stellar-mass* ($M\lesssim 500M_{\odot}$) sources, based on the
+projected improvements in sensitivity and inferred rates, we can
+predict how many detection are expected:
+
+
+#+HTML: <video  controls width="600" height="400" src="./images/125M-ONe-3.mp4" </video>
+#  [[./images/GWcatalogSize.mpeg]]
+
+The animation above shows the cumulative distribution of BBH, BNS, and
+BHNS mergers detected (up to the beginning of the $4^{\rm th}$ LVK
+observing run - O4) and projection into the future. CE/ET stands for
+Cosmic Explorer/Einstein Telescope, planned $3^{\rm rd}$ generation
+ground-based GW-detectors. Note that the predictions from 2024 are
+quite on spot as of 2026. Credits: [[https://arxiv.org/abs/2303.17628][Broekgaarden et al. 2024]], source of
+the animation [[https://zenodo.org/records/10995271][in this reproducibility package]].
