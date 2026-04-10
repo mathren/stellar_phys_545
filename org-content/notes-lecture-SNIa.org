@@ -1,8 +1,8 @@
 #+Title: ASTR545 - SNIa
 #+author: Mathieu Renzo
 #+email: mrenzo@arizona.edu
-#+NEXT_PAGE: notes-lecture-GWprog.org
-#+PREVIOUS_PAGE: projects.org
+#+NEXT_PAGE: projects.org
+#+PREVIOUS_PAGE: notes-lecture-GWprog.org
 
 *Materials:* Hansen & Kawaler book Sec. 2.6.3, [[https://ui.adsabs.harvard.edu/abs/1982ApJ...253..785A/abstract][Arnett 1982]], [[https://ui.adsabs.harvard.edu/abs/1993ApJ...413L.105P/abstract][Phillips
 1993]], [[http://www.annualreviews.org/doi/10.1146/annurev.astro.35.1.309][Filippenko 1997]], [[https://ui.adsabs.harvard.edu/abs/2007ApJ...660.1444S/abstract][Shen & Bildsten 2007]], [[https://ui.adsabs.harvard.edu/abs/2000ARA%26A..38..191H/abstract][Hillebrandt &
@@ -397,7 +397,6 @@ the discovery of the acceleration of the Universe and thus the concept
 of dark energy. This discovery was awarded the [[https://www.nobelprize.org/prizes/physics/2011/summary/][2011 physics Nobel
 prize]] (including a former Steward Observatory undergraduate
 student!).
-
 
 * Homework
  - Make a hydrostatic sphere of radioactive $^{56}\mathrm{Ni}$ in MESA,

@@ -693,16 +693,14 @@ scale of the x-axis) that one can attempt to detect.
 Restricting the view to *merging* (so high-frequency GW $\Rightarrow$ ground based
 detectors) *stellar-mass* ($M\lesssim 500M_{\odot}$) sources, based on the
 projected improvements in sensitivity and inferred rates, we can
-predict how many detection are expected:
+predict how many detection are expected. The animation below shows the
+cumulative distribution of BBH, BNS, and BHNS mergers detected (up to
+the beginning of the $4^{\rm th}$ LVK observing run - O4) and projection
+into the future. CE/ET stands for Cosmic Explorer/Einstein Telescope,
+planned $3^{\rm rd}$ generation ground-based GW-detectors. Note that the
+predictions from 2024 are quite on spot as of 2026. Credits:
+[[https://arxiv.org/abs/2303.17628][Broekgaarden et al. 2024]], source of the animation [[https://zenodo.org/records/10995271][in this
+reproducibility package]].
 
-
-#+HTML: <video  controls width="600" height="400" src="./images/125M-ONe-3.mp4" </video>
-#  [[./images/GWcatalogSize.mpeg]]
-
-The animation above shows the cumulative distribution of BBH, BNS, and
-BHNS mergers detected (up to the beginning of the $4^{\rm th}$ LVK
-observing run - O4) and projection into the future. CE/ET stands for
-Cosmic Explorer/Einstein Telescope, planned $3^{\rm rd}$ generation
-ground-based GW-detectors. Note that the predictions from 2024 are
-quite on spot as of 2026. Credits: [[https://arxiv.org/abs/2303.17628][Broekgaarden et al. 2024]], source of
-the animation [[https://zenodo.org/records/10995271][in this reproducibility package]].
+#+HTML: <video  controls width="600" height="400" src="./images//GWcatalogSize.mp4" </video>
+#  [[./images/GWcatalogSize.mp4]]
