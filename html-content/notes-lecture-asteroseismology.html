@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 2026-04-06 Mon 12:15 -->
+<!-- 2026-04-11 Sat 14:23 -->
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>ASTR545 - Asteroseismology</title>
@@ -92,6 +92,14 @@
 
 <!-- toggle drawers -->
 <script>
+  function toggleDrawer(id) {
+      const drawer = document.getElementById(id);
+      drawer.style.display = drawer.style.display === "none" ? "block" : "none";
+  }
+</script>
+
+<!-- toggle dark mode -->
+<script>
   window.onload = () => {
       const toggleButton = document.getElementById("light-dark-toggle");
       const body = document.body;
@@ -118,37 +126,6 @@
       });
   };
 </script>
-
-<!-- jump to nearest date in lectures.html -->
-<script>
-document.addEventListener("DOMContentLoaded", () => {
-  const headers = [...document.querySelectorAll("h1, h2, h3, h4, h5, h6")];
-  const today = new Date();
-  today.setHours(0, 0, 0, 0);
-
-  let closest = null;
-  let closestDiff = Infinity;
-
-  for (const h of headers) {
-    const ts = h.querySelector("span.timestamp");
-    if (!ts) continue;
-
-    const match = ts.textContent.match(/(\d{4}-\d{2}-\d{2})/);
-    if (!match) continue;
-
-    const parsed = new Date(match[1] + "T00:00:00");
-    const diff = Math.abs(parsed - today);
-
-    if (diff < closestDiff) {
-      closestDiff = diff;
-      closest = h;
-    }
-  }
-
-  if (closest) closest.scrollIntoView({ behavior: "smooth", block: "start" });
-});
-</script>
-
 <!-- end scripts-->
 </div>
 <div id="content" class="content">
@@ -157,9 +134,9 @@ document.addEventListener("DOMContentLoaded", () => {
 Christensen-Dalsgaard, Kurtz 2010</a>, <a href="https://doi.org/10.1103/RevModPhys.93.015001">Aerts 2021</a>.
 </p>
 
-<div id="outline-container-org60eba19" class="outline-2">
-<h2 id="org60eba19"><a href="#org60eba19">How to see inside stars?</a></h2>
-<div class="outline-text-2" id="text-org60eba19">
+<div id="outline-container-how-to-see-inside-stars" class="outline-2">
+<h2 id="how-to-see-inside-stars"><a href="#how-to-see-inside-stars">How to see inside stars?</a></h2>
+<div class="outline-text-2" id="text-org-element-1">
 <p>
 Stars are optically thick (allowing us to treat them as black bodies
 inside and excluding the atmosphere), and we have developed a physical
@@ -204,9 +181,9 @@ the planets by observing Earth quakes.</li>
 </div>
 </div>
 
-<div id="outline-container-orgbf5bce1" class="outline-2">
-<h2 id="orgbf5bce1"><a href="#orgbf5bce1">Asteroseismology</a></h2>
-<div class="outline-text-2" id="text-orgbf5bce1">
+<div id="outline-container-asteroseismology" class="outline-2">
+<h2 id="asteroseismology"><a href="#asteroseismology">Asteroseismology</a></h2>
+<div class="outline-text-2" id="text-org-element-2">
 <p>
 Asteroseismology is etymologically "the study of how stars shake". The
 idea is to obtain the properties of the stellar interior indirectly by
@@ -251,9 +228,9 @@ time-variability of stars revealing their eigen modes.
 </p>
 </div>
 
-<div id="outline-container-orgec06ad3" class="outline-3">
-<h3 id="orgec06ad3"><a href="#orgec06ad3">Stellar variability</a></h3>
-<div class="outline-text-3" id="text-orgec06ad3">
+<div id="outline-container-stellar-variability" class="outline-3">
+<h3 id="stellar-variability"><a href="#stellar-variability">Stellar variability</a></h3>
+<div class="outline-text-3" id="text-org-element-3">
 <p>
 Stochastic processes (e.g., stellar flares for magnetic and convective
 stars such as M dwarfs, or the Sun) can contribute to the stellar
@@ -262,7 +239,7 @@ variability.
 </p>
 
 
-<figure id="orgbc17555">
+<figure id="org-element-4">
 <img src="./images/HRD_asteroseismology.png" alt="HRD_asteroseismology.png" width="100%">
 
 <figcaption><span class="figure-number">Figure 1: </span>HR diagram with stellar evolution tracks (black) and marked regions (blue/red) of observed periodic photometric stellar variability, labeled according to the acronyms for each observational class of pulsators defined in <a href="https://doi.org/10.1007/978-1-4020-5803-5">Aerts, Christensen-Dalsgaard, Kurtz 2010</a>. This is Fig. 1 from <a href="https://doi.org/10.1103/RevModPhys.93.015001">Aerts 2021</a>.</figcaption>
@@ -281,9 +258,9 @@ splitting, etc.
 </div>
 </div>
 
-<div id="outline-container-orge6189f4" class="outline-3">
-<h3 id="orge6189f4"><a href="#orge6189f4">General considerations</a></h3>
-<div class="outline-text-3" id="text-orge6189f4">
+<div id="outline-container-general-considerations" class="outline-3">
+<h3 id="general-considerations"><a href="#general-considerations">General considerations</a></h3>
+<div class="outline-text-3" id="text-org-element-5">
 <p>
 As for any other linear perturbation theory, the idea is to start with
 a solution to the equations describing a stellar structure, introduce
@@ -306,7 +283,7 @@ At linear order, solutions will be
 expressed in general as the linear superposition of modes with
 functional form:
 </p>
-<div class="latex" id="org450fd1a">
+<div class="latex" id="org-element-6">
 \begin{equation}
 \delta\mathrm{x} \sim \sum_{l,n,m} \delta_{n,l,m}\ \ \mathrm{with}  \ \ \delta_{n,l,m} \sim F_{n}(r)Y_{l}^{m}(\theta,\varphi) \ \ ,
 \end{equation}
@@ -320,7 +297,7 @@ radial direction for the perturbation, and \(m\) the number of zeros
 along the equator. \(l\) is related to the wavelength \(\lambda\) of the
 perturbation and the radius of the star by
 </p>
-<div class="latex" id="org64b4514">
+<div class="latex" id="org-element-7">
 \begin{equation}
 \lambda = \frac{2\pi R}{\sqrt{l(l+1)}} \ \ .
 \end{equation}
@@ -342,9 +319,9 @@ approximation.
 </p>
 </div>
 
-<div id="outline-container-org32338d5" class="outline-4">
-<h4 id="org32338d5"><a href="#org32338d5">Adiabatic approximation</a></h4>
-<div class="outline-text-4" id="text-org32338d5">
+<div id="outline-container-adiabatic-approximation" class="outline-4">
+<h4 id="adiabatic-approximation"><a href="#adiabatic-approximation">Adiabatic approximation</a></h4>
+<div class="outline-text-4" id="text-org-element-8">
 <p>
 The typical oscillation periods observed in stars span \(\sim\) minutes to
 \(\sim\) decades. This are extremely short compared to the global thermal
@@ -365,9 +342,9 @@ without introducing a temperature variable.
 </div>
 </div>
 
-<div id="outline-container-org049a880" class="outline-4">
-<h4 id="org049a880"><a href="#org049a880">Asymptotic theory</a></h4>
-<div class="outline-text-4" id="text-org049a880">
+<div id="outline-container-asymptotic-theory" class="outline-4">
+<h4 id="asymptotic-theory"><a href="#asymptotic-theory">Asymptotic theory</a></h4>
+<div class="outline-text-4" id="text-org-element-9">
 <p>
 Restricting the analysis to high-order radial modes (that is high
 values of \(n\)), we can use asymptotic theory to derive <i>analytic</i>
@@ -384,7 +361,7 @@ and the success of asymptotic theory are remarkable.
 In this approximation the solution for the perturbation \(\mathbf{\delta x}\)
 is written as an asymptotic series:
 </p>
-<div class="latex" id="org70b0bbf">
+<div class="latex" id="org-element-10">
 \begin{equation}
 \mathbf{\delta x} = \exp\left(\frac{1}{\varepsilon} \sum_{k}\varepsilon^{k}S_{k}(x)\right) \ \ ,
 \end{equation}
@@ -403,9 +380,9 @@ We are not going to do the full mathematical treatment here, see
 </div>
 </div>
 
-<div id="outline-container-orgb71003f" class="outline-3">
-<h3 id="orgb71003f"><a href="#orgb71003f">Oscillation modes</a></h3>
-<div class="outline-text-3" id="text-orgb71003f">
+<div id="outline-container-oscillation-modes" class="outline-3">
+<h3 id="oscillation-modes"><a href="#oscillation-modes">Oscillation modes</a></h3>
+<div class="outline-text-3" id="text-org-element-11">
 <p>
 There can be several different modes of pulsations for stars, each
 propagate in (and thus probe) different regions, and wave-dynamics
@@ -414,9 +391,9 @@ different modes.
 </p>
 </div>
 
-<div id="outline-container-org70b59db" class="outline-4">
-<h4 id="org70b59db"><a href="#org70b59db">p-modes</a></h4>
-<div class="outline-text-4" id="text-org70b59db">
+<div id="outline-container-p-modes" class="outline-4">
+<h4 id="p-modes"><a href="#p-modes">p-modes</a></h4>
+<div class="outline-text-4" id="text-org-element-12">
 <p>
 Pressure modes are oscillations of the stellar gas where the restoring
 force is the pressure gradient, that is <i>sound waves</i> propagating in the
@@ -434,7 +411,7 @@ star.
 <a href="https://ui.adsabs.harvard.edu/abs/1980ApJS...43..469T/abstract">Tassoul 1980</a> and <a href="https://ui.adsabs.harvard.edu/abs/1990ApJ...358..313T/abstract">1990</a> calculated the asymptotic period spacing for
 p-modes as:
 </p>
-<div class="latex" id="org9883692">
+<div class="latex" id="org-element-13">
 \begin{equation}\label{eq:p-spacing}
 \nu_{n,l} \simeq \Delta\nu \left(n+\frac{l}{2}+\tilde{\alpha}\right)+\delta\nu_{n,l}\ \ ,
 \end{equation}
@@ -445,7 +422,7 @@ where \(\tilde{\alpha}\) is a constant of \(\mathcal{O}(1)\), \(\delta\nu_{n,l}\
 corrections, and \(\Delta \nu\) is the <i>large separation</i> related to the sound
 travel time through the star:
 </p>
-<div class="latex" id="orge94399f">
+<div class="latex" id="org-element-14">
 \begin{equation}\label{eq:delta_nu}
 \Delta\nu = \frac{1}{2\int_{0}^{R}\frac{dr}{c_{\rm sound}(r)}} \ \ .
 \end{equation}
@@ -453,7 +430,7 @@ travel time through the star:
 </div>
 
 
-<figure id="org48cd732">
+<figure id="org-element-15">
 <img src="./images/Sun_powerspectrum.png" alt="Sun_powerspectrum.png" width="100%">
 
 <figcaption><span class="figure-number">Figure 2: </span>Power spectrum of the Sun-like star from CoRoT. The vertical axis shows how much power there is in modes of the corresponding frequency on the x-axis (in Hz), in arbitrary units. The frequency separation between the large peaks correspond to \(\Delta\nu(n+l/2+\tilde{\alpha})\) and the distances between small peaks arises because of the \(\delta\nu_{n,l}\). From <a href="https://sci.esa.int/web/corot/-/40955-frequency-power-spectrum-of-stellar-light-variations">ESA's CoRoT webpage</a>.</figcaption>
@@ -461,9 +438,9 @@ travel time through the star:
 </div>
 </div>
 
-<div id="outline-container-org5d55bdd" class="outline-4">
-<h4 id="org5d55bdd"><a href="#org5d55bdd">g-modes</a></h4>
-<div class="outline-text-4" id="text-org5d55bdd">
+<div id="outline-container-g-modes" class="outline-4">
+<h4 id="g-modes"><a href="#g-modes">g-modes</a></h4>
+<div class="outline-text-4" id="text-org-element-16">
 <p>
 Gravity modes are oscillations where the restoring force is buoyancy.
 These are the stable oscillation of <i>radiative</i> regions, in a sense the
@@ -482,7 +459,7 @@ core.
 </p>
 
 
-<figure id="orgb1bc535">
+<figure id="org-element-17">
 <img src="./images/g_mode.gif" alt="g_mode.gif" width="50%">
 
 <figcaption><span class="figure-number">Figure 3: </span>This animation shows a (greatly exaggerated) g-mode oscillation (credits: R. Townsend).</figcaption>
@@ -499,7 +476,7 @@ the study of neutron stars
 The characteristic frequency of these g-mode oscillations in an ideal
 gas is the Brunt-Väisälä frequency
 </p>
-<div class="latex" id="org2a7c9b5">
+<div class="latex" id="org-element-18">
 \begin{equation}\label{eq:brunt-vaisala}
 N^{2} = \frac{g^{2} \rho}{P}\left(\nabla_{\rm ad}-\nabla+\frac{\varphi}{\delta}\nabla_{\mu}\right) = N^{2}_{\rm struct}+N^{2}_{\rm composition}\ \ ,
 \end{equation}
@@ -524,7 +501,7 @@ by convection settles.
 The asymptotic period spacing for g-modes is (e.g., <a href="https://doi.org/10.1007/978-1-4020-5803-5">Aerts,
 Christensen-Dalsgaard, Kurtz 2010</a>):
 </p>
-<div class="latex" id="orgb81f213">
+<div class="latex" id="org-element-19">
 \begin{equation}\label{eq:g-spacing}
 \Pi_{n,l} = \frac{\Pi_{0}}{\sqrt{l(l+1)}}(n+\varepsilon) \ \ ,
 \end{equation}
@@ -537,9 +514,9 @@ Brunt-Väisälä frequency.
 </div>
 </div>
 
-<div id="outline-container-org190f110" class="outline-4">
-<h4 id="org190f110"><a href="#org190f110">Other modes</a></h4>
-<div class="outline-text-4" id="text-org190f110">
+<div id="outline-container-other-modes" class="outline-4">
+<h4 id="other-modes"><a href="#other-modes">Other modes</a></h4>
+<div class="outline-text-4" id="text-org-element-20">
 <ul class="org-ul">
 <li><b>Mixed modes:</b> Oscillation modes with different restoring forces can
 be coupled to each other if the stellar structure allows it (think
@@ -555,9 +532,9 @@ force, this requires a rotating star</li>
 </div>
 </div>
 
-<div id="outline-container-org4831fea" class="outline-4">
-<h4 id="org4831fea"><a href="#org4831fea">Where do these oscillation propagate</a></h4>
-<div class="outline-text-4" id="text-org4831fea">
+<div id="outline-container-where-do-these-oscillation-propagate" class="outline-4">
+<h4 id="where-do-these-oscillation-propagate"><a href="#where-do-these-oscillation-propagate">Where do these oscillation propagate</a></h4>
+<div class="outline-text-4" id="text-org-element-21">
 <p>
 To visualize where each of these mode in the stars can exist, consider
 "ray-tracing" approach, that is imagine the wave vector \(\mathbf{k}\)
@@ -566,7 +543,7 @@ oscillations, p- and g-modes.
 </p>
 
 
-<figure id="orgbbd3d3e">
+<figure id="org-element-22">
 <img src="./images/rays_pulsation.png" alt="rays_pulsation.png" width="75%">
 
 <figcaption><span class="figure-number">Figure 4: </span>Ray-tracing of p-modes (right) and g-modes (left) in a Sun-like star with a convective envelope and radiative core. The left panel shows sound waves with \(\nu=3000\) &mu; Hz and, in increasing depth of penetration, modes with \(l=75, 25, 20, 2\): sound waves are deflected as they penetrate inwards, until they turn around, lower \(l\) stay shallower. The right panel shows g-modes of \(\nu=190\) &mu; Hz and \(l=5\) trapped in the radiative core. From <a href="https://ui.adsabs.harvard.edu/abs/2007A%26ARv..14..217C/abstract">Cuhna et al. 2007</a>.</figcaption>
@@ -583,7 +560,7 @@ frequencies.
 </p>
 
 
-<figure id="org4272ece">
+<figure id="org-element-23">
 <img src="./images/propagation_diagram.png" alt="propagation_diagram.png" width="75%">
 
 <figcaption><span class="figure-number">Figure 5: </span>Relevant frequencies as a function of stellar radius for a \(15M_{☉}\) star during O core burning. This consider the propagation of a wave of frequency \(\omega_{\rm wave}\) comparing it to the Bunt-Väisälä frequency \(N\) and the frequency of the \(l=1\) p-mode (\(L_{1}\)). From <a href="https://ui.adsabs.harvard.edu/abs/2017MNRAS.470.1642F/abstract">Fuller 2017</a>.</figcaption>
@@ -606,7 +583,7 @@ wave}\ge L_{1}(r)\) with \(L_{1}\) the frequency of sound waves with \(l=1\), so
 called Lamb frequency:
 </p>
 
-<div class="latex" id="org150f12c">
+<div class="latex" id="org-element-24">
 \begin{equation}\label{eq:lamb}
 L_{1} = \sqrt{2}\frac{c_{s}}{r} \ \ .
 \end{equation}
@@ -617,9 +594,9 @@ L_{1} = \sqrt{2}\frac{c_{s}}{r} \ \ .
 </div>
 </div>
 
-<div id="outline-container-org58ba82b" class="outline-2">
-<h2 id="org58ba82b"><a href="#org58ba82b">Mode identification</a></h2>
-<div class="outline-text-2" id="text-org58ba82b">
+<div id="outline-container-mode-identification" class="outline-2">
+<h2 id="mode-identification"><a href="#mode-identification">Mode identification</a></h2>
+<div class="outline-text-2" id="text-org-element-25">
 <p>
 In the limit of high-order (\(l\gg1\)), using asymptotic theory to treat
 the solutions to the linearly-perturbed stellar structure equations,
@@ -640,7 +617,7 @@ on this plane:
 </p>
 
 
-<figure id="org593080c">
+<figure id="org-element-26">
 <img src="./images/pg-modes_l.png" alt="pg-modes_l.png" width="70%">
 
 <figcaption><span class="figure-number">Figure 6: </span>Frequency (in \(\mu\) Hz) versus order \(l\) of g-modes (conventionally labeled with \(n<0\)), p-modes in a Sun-like star. The right x-axis labels the \(n\) of corresponding p-modes. Note that \(l\in\mathbb{Z}\) is an integer even if the curves are continuous. Modified from <a href="https://doi.org/10.1007/978-1-4020-5803-5">Aerts, Christensen-Dalsgaard, Kurtz 2010</a>.</figcaption>
@@ -654,9 +631,9 @@ g-modes), and is rather flat w.r.t. variations in \(l\).
 </div>
 </div>
 
-<div id="outline-container-orgee851ef" class="outline-2">
-<h2 id="orgee851ef"><a href="#orgee851ef">Excitation and driving mechanisms</a></h2>
-<div class="outline-text-2" id="text-orgee851ef">
+<div id="outline-container-excitation-and-driving-mechanisms" class="outline-2">
+<h2 id="excitation-and-driving-mechanisms"><a href="#excitation-and-driving-mechanisms">Excitation and driving mechanisms</a></h2>
+<div class="outline-text-2" id="text-org-element-27">
 <p>
 While identifying the frequencies of oscillations provides a lot of
 information, it is not always clear what excites and keeps going the
@@ -675,14 +652,14 @@ keeps plucking guitar strings).
 </p>
 </div>
 
-<div id="outline-container-org9776e6e" class="outline-3">
-<h3 id="org9776e6e"><a href="#org9776e6e">Stochastic excitation</a></h3>
-<div class="outline-text-3" id="text-org9776e6e">
+<div id="outline-container-stochastic-excitation" class="outline-3">
+<h3 id="stochastic-excitation"><a href="#stochastic-excitation">Stochastic excitation</a></h3>
+<div class="outline-text-3" id="text-org-element-28">
 <p>
 When there is a convective layer (core or shell), convective plumes
 are going to stochastically overshoot, "banging" on the
 convective/radiative boundary. We have discussed this in the context
-of <a href="./notes-lecture-convection.html#orga83a80d">overshooting</a>, but this process can also perturb the stable layer
+of <a href="./notes-lecture-convection.html#org-element-29">overshooting</a>, but this process can also perturb the stable layer
 above, seeding g-modes.
 </p>
 
@@ -694,9 +671,9 @@ the circumstellar material around SNe.
 </div>
 </div>
 
-<div id="outline-container-org4842704" class="outline-3">
-<h3 id="org4842704"><a href="#org4842704">&epsilon;-mechanism</a></h3>
-<div class="outline-text-3" id="text-org4842704">
+<div id="outline-container-epsilon-mechanism" class="outline-3">
+<h3 id="epsilon-mechanism"><a href="#epsilon-mechanism">&epsilon;-mechanism</a></h3>
+<div class="outline-text-3" id="text-org-element-30">
 <p>
 If a portion of the star (e.g., a spherical shell for a radial
 pulsator) contract, it usually heats up during the compression: these
@@ -709,9 +686,9 @@ of stellar layers.
 </div>
 </div>
 
-<div id="outline-container-orgfe6036c" class="outline-3">
-<h3 id="orgfe6036c"><a href="#orgfe6036c">&kappa;-mechanism</a></h3>
-<div class="outline-text-3" id="text-orgfe6036c">
+<div id="outline-container-kappa-mechanism" class="outline-3">
+<h3 id="kappa-mechanism"><a href="#kappa-mechanism">&kappa;-mechanism</a></h3>
+<div class="outline-text-3" id="text-org-element-31">
 <p>
 The contraction/expansion cycle caused by an oscillation can cause
 changes in the opacity profile \(\kappa\). An ionized layer layer of the star
@@ -734,9 +711,9 @@ and the presence of metals can significantly complicate this picture.
 </div>
 </div>
 
-<div id="outline-container-orgce4f5c7" class="outline-2">
-<h2 id="orgce4f5c7"><a href="#orgce4f5c7">Observational asteroseismology</a></h2>
-<div class="outline-text-2" id="text-orgce4f5c7">
+<div id="outline-container-observational-asteroseismology" class="outline-2">
+<h2 id="observational-asteroseismology"><a href="#observational-asteroseismology">Observational asteroseismology</a></h2>
+<div class="outline-text-2" id="text-org-element-32">
 <p>
 To be able to do asteroseismology, we need to <i>monitor</i> stars and study
 their time variability, photometrically and/or spectroscopically. The
@@ -772,9 +749,9 @@ each frequency bin.
 </div>
 </div>
 
-<div id="outline-container-orgcf14660" class="outline-2">
-<h2 id="orgcf14660"><a href="#orgcf14660">Homeworks</a></h2>
-<div class="outline-text-2" id="text-orgcf14660">
+<div id="outline-container-homeworks" class="outline-2">
+<h2 id="homeworks"><a href="#homeworks">Homeworks</a></h2>
+<div class="outline-text-2" id="text-org-element-33">
 <p>
 -Use GYRE (maybe from zenodo?) To make a propagation diagram?
 </p>
@@ -786,7 +763,7 @@ each frequency bin.
   <hr>
   <a href="#light-dark-toggle"><i id="light-dark-toggle"><i class="fa-solid fa-circle-half-stroke"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="notes-in-class-evol.html"><i class="fa-solid fa-arrow-left" style="font-size:16px"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="#top"><i class="fa-solid fa-arrow-up" style="font-size:16px"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="notes-lecture-tides.html"><i class="fa-solid fa-arrow-right" style="font-size:16px"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="https://github.com/mathren/stellar_phys_545"><i class="fa-brands fa-github" style="font-size:16px"></i></a><hr>
   <br>
-  Last updated on 6 April 2026 <br>
+  Last updated on 11 April 2026 <br>
   Made with Emacs 29.2 - Org mode 9.6.15
   <br>
 </div>

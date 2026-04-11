@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 2026-04-06 Mon 12:15 -->
+<!-- 2026-04-11 Sat 14:23 -->
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>ASTR545 - Tides</title>
@@ -92,6 +92,14 @@
 
 <!-- toggle drawers -->
 <script>
+  function toggleDrawer(id) {
+      const drawer = document.getElementById(id);
+      drawer.style.display = drawer.style.display === "none" ? "block" : "none";
+  }
+</script>
+
+<!-- toggle dark mode -->
+<script>
   window.onload = () => {
       const toggleButton = document.getElementById("light-dark-toggle");
       const body = document.body;
@@ -118,37 +126,6 @@
       });
   };
 </script>
-
-<!-- jump to nearest date in lectures.html -->
-<script>
-document.addEventListener("DOMContentLoaded", () => {
-  const headers = [...document.querySelectorAll("h1, h2, h3, h4, h5, h6")];
-  const today = new Date();
-  today.setHours(0, 0, 0, 0);
-
-  let closest = null;
-  let closestDiff = Infinity;
-
-  for (const h of headers) {
-    const ts = h.querySelector("span.timestamp");
-    if (!ts) continue;
-
-    const match = ts.textContent.match(/(\d{4}-\d{2}-\d{2})/);
-    if (!match) continue;
-
-    const parsed = new Date(match[1] + "T00:00:00");
-    const diff = Math.abs(parsed - today);
-
-    if (diff < closestDiff) {
-      closestDiff = diff;
-      closest = h;
-    }
-  }
-
-  if (closest) closest.scrollIntoView({ behavior: "smooth", block: "start" });
-});
-</script>
-
 <!-- end scripts-->
 </div>
 <div id="content" class="content">
@@ -158,9 +135,9 @@ Heuvel book, Ch. 5.3.2 of "Tapestry of Modern Astrophysics" by S. N.
 Shore, <a href="https://ui.adsabs.harvard.edu/abs/2018A%26A...616A..28Q/abstract">Qin et al. 2018</a>, <a href="https://ui.adsabs.harvard.edu/abs/2023MNRAS.524.3978M/abstract">Mirouh et al. 2023</a>
 </p>
 
-<div id="outline-container-orgd5db150" class="outline-2">
-<h2 id="orgd5db150"><a href="#orgd5db150">Tides</a></h2>
-<div class="outline-text-2" id="text-orgd5db150">
+<div id="outline-container-tides" class="outline-2">
+<h2 id="tides"><a href="#tides">Tides</a></h2>
+<div class="outline-text-2" id="text-org-element-1">
 <p>
 When considering the effect of a gravitational potential across an
 <i>extended</i> mass (i.e., whose size is not negligible compared to the size
@@ -175,8 +152,8 @@ points of an extended object.
 </p>
 
 <div class="org-drawer-container">
-  <button class="org-drawer-toggle" onclick="toggleDrawer('drawer-Question-1369')">Question ▼</button>
-  <div id="drawer-Question-1369" class="org-drawer-content" style="display: none;"><ul class="org-ul">
+  <button class="org-drawer-toggle" onclick="toggleDrawer('drawer-Question-1')">Question ▼</button>
+  <div id="drawer-Question-1" class="org-drawer-content" style="display: none;"><ul class="org-ul">
 <li><b>Q</b>: for which kind of binaries do we expect tides to be relevant?</li>
 </ul>
 </div>
@@ -197,7 +174,7 @@ respectively, assuming a BH of \(\sim 1M_{☉}\)).
 <p>
 The gravitational force acting between the two bodies is
 </p>
-<div class="latex" id="org7b15292">
+<div class="latex" id="org-element-2">
 \begin{equation}\label{eq:newtonian_grav}
 \mathbf{F}_{\rm grav} = -\frac{GMm}{r^{2}}\mathbf{\hat{r}} \ \ .
 \end{equation}
@@ -208,7 +185,7 @@ If the star \(m\) has a radius \(R_{\star}\), there is a difference in the
 gravitational force across the side facing the companion and the one
 facing away, hence a tidal field
 </p>
-<div class="latex" id="org003a763">
+<div class="latex" id="org-element-3">
 \begin{equation}\label{eq:tide_Def}
 \mathbf{T}(\mathbf{r}) = \mathbf{F}_{\rm grav}(\mathbf{r}) - \mathbf{F}_{\rm grav}(\mathbf{r}+R_{\star}\mathbf{\hat{r}}) = -GMm\left(\frac{1}{r^{2}}-\frac{1}{(\mathbf{r}+R_{\star}\mathbf{\hat{r}})^{2}}\right)\mathbf{\hat{r}} \ \ .
 \end{equation}
@@ -219,7 +196,7 @@ If the stellar radius is much smaller than the separation (\(R_{\star}\ll r\),
 but still non-negligible), we can Taylor expand the parenthesis to
 obtain:
 </p>
-<div class="latex" id="orga47b5b2">
+<div class="latex" id="org-element-4">
 \begin{equation}
 \left(\frac{1}{r^{2}}-\frac{1}{(\mathbf{r}+R_{\star}\mathbf{\hat{r}})^{2}}\right) \simeq \frac{2R_{\star}}{r^{3}} \ \ ,
 \end{equation}
@@ -228,7 +205,7 @@ obtain:
 <p>
 and thus:
 </p>
-<div class="latex" id="org48c446e">
+<div class="latex" id="org-element-5">
 \begin{equation}
 \mathbf{T}(\mathbf{r}) = - \frac{2GMmR_{\star}}{r^{3}}\mathbf{\hat{r}} \propto \frac{1}{r^{3}} \ \ .
 \end{equation}
@@ -250,15 +227,15 @@ the two bodies.
 </div>
 </div>
 
-<div id="outline-container-orga7bc3fe" class="outline-2">
-<h2 id="orga7bc3fe"><a href="#orga7bc3fe">Non-perturbative tides: tidal disruption radius</a></h2>
-<div class="outline-text-2" id="text-orga7bc3fe">
+<div id="outline-container-non-perturbative-tides-tidal-disruption-radius" class="outline-2">
+<h2 id="non-perturbative-tides-tidal-disruption-radius"><a href="#non-perturbative-tides-tidal-disruption-radius">Non-perturbative tides: tidal disruption radius</a></h2>
+<div class="outline-text-2" id="text-org-element-6">
 <p>
 From the functional dependence on \(r\), we can see that at small
 separation the tidal field can become strong. Could it exceed the
 self-gravity of the star \(m\)?
 </p>
-<div class="latex" id="orgffa94d5">
+<div class="latex" id="org-element-7">
 \begin{equation}\label{eq:tidal_dis_radius}
 \lvert \mathbf{T} \rvert \ge \frac{Gm^{2}}{R_{\star}^{2}} \Rightarrow r\le r_{\rm TD} = \left(\frac{2M}{m}\right)^{1/3} R_{\star} \ \ ,
 \end{equation}
@@ -282,8 +259,8 @@ tidal disruption event to occur.
 </p>
 
 <div class="org-drawer-container">
-  <button class="org-drawer-toggle" onclick="toggleDrawer('drawer-Question-8414')">Question ▼</button>
-  <div id="drawer-Question-8414" class="org-drawer-content" style="display: none;"><ul class="org-ul">
+  <button class="org-drawer-toggle" onclick="toggleDrawer('drawer-Question-2')">Question ▼</button>
+  <div id="drawer-Question-2" class="org-drawer-content" style="display: none;"><ul class="org-ul">
 <li><b>Q</b>: For an intermediate mass BH of \(M=1000\,M_{☉}\), what type of star
 could lead to a tidal disruption event (in terms of \(m\) and \(R_{\star}\))?</li>
 </ul>
@@ -315,9 +292,9 @@ otherwise silent.
 </div>
 </div>
 
-<div id="outline-container-orga18ee55" class="outline-2">
-<h2 id="orga18ee55"><a href="#orga18ee55">Tides as a perturbation</a></h2>
-<div class="outline-text-2" id="text-orga18ee55">
+<div id="outline-container-tides-as-a-perturbation" class="outline-2">
+<h2 id="tides-as-a-perturbation"><a href="#tides-as-a-perturbation">Tides as a perturbation</a></h2>
+<div class="outline-text-2" id="text-org-element-8">
 <p>
 Let's now consider the regime \(r\gg r_{\rm TD} (\gg R_{\star})\), in which case (cf. Eq.
 \ref{eq:tidal_dis_radius}), the tidal field \(\mathbf{T}\) is a small
@@ -345,8 +322,8 @@ observed in nature, cf. <a href="https://ui.adsabs.harvard.edu/abs/2024A%26A...6
 </p>
 
 <div class="org-drawer-container">
-  <button class="org-drawer-toggle" onclick="toggleDrawer('drawer-Question-396')">Question ▼</button>
-  <div id="drawer-Question-396" class="org-drawer-content" style="display: none;"><ul class="org-ul">
+  <button class="org-drawer-toggle" onclick="toggleDrawer('drawer-Question-3')">Question ▼</button>
+  <div id="drawer-Question-3" class="org-drawer-content" style="display: none;"><ul class="org-ul">
 <li><b>Q</b>: Does the deformed non-synchronously rotating star structure match
 equipotential surfaces?</li>
 </ul>
@@ -380,7 +357,7 @@ For a circular binary with equal mass-ratio, every half-period the
 situation is identical by symmetry, so we can deduce the dominant
 time-frequency for the effects of tides:
 </p>
-<div class="latex" id="orgbc2b5b4">
+<div class="latex" id="org-element-9">
 \begin{equation}\label{eq:tides_freq}
 \omega_{\rm tides}\simeq 2(\omega_{\rm surf}-\omega_{\rm orb}) \ll \tau_{\rm ff}^{-1} \ \ ,
 \end{equation}
@@ -416,9 +393,9 @@ synchronized orbit.
 </p>
 </div>
 
-<div id="outline-container-org3bba232" class="outline-3">
-<h3 id="org3bba232"><a href="#org3bba232">Tidal evolution for a generic orbit</a></h3>
-<div class="outline-text-3" id="text-org3bba232">
+<div id="outline-container-tidal-evolution-for-a-generic-orbit" class="outline-3">
+<h3 id="tidal-evolution-for-a-generic-orbit"><a href="#tidal-evolution-for-a-generic-orbit">Tidal evolution for a generic orbit</a></h3>
+<div class="outline-text-3" id="text-org-element-10">
 <p>
 For a generic orbit with arbitrary eccentricity and non-synchronized
 rotation rate of \(m\), we expect tides to couple orbital energy and
@@ -482,9 +459,9 @@ structure: resonant waves may <i>not</i> damp at all!
 </div>
 </div>
 
-<div id="outline-container-org6805dc0" class="outline-2">
-<h2 id="org6805dc0"><a href="#org6805dc0">Observational evidence: P(e) diagram</a></h2>
-<div class="outline-text-2" id="text-org6805dc0">
+<div id="outline-container-observational-evidence-p-e-diagram" class="outline-2">
+<h2 id="observational-evidence-p-e-diagram"><a href="#observational-evidence-p-e-diagram">Observational evidence: P(e) diagram</a></h2>
+<div class="outline-text-2" id="text-org-element-11">
 <p>
 As we have seen above, when the size of the stars is non-negligible
 compared to the size of an orbit, the tides resulting from the
@@ -499,7 +476,7 @@ rotation rates!
 </p>
 
 
-<figure id="org4673f00">
+<figure id="org-element-12">
 <img src="./images/Pe_M35.png" alt="Fig. 8 in Leiner et al. 2015." width="50%">
 
 <figcaption><span class="figure-number">Figure 1: </span>Eccentricity vs. orbital period (on a logarithmic scale) for binaries in the open cluster M35 from <a href="https://ui.adsabs.harvard.edu/abs/2015AJ....150...10L/abstract">Leiner et al. 2015</a>. For \(P<10\) days, all binaries appear circularized (\(e=0\)), meaning the circularization timescale at those periods or orbital separations is shorter than the cluster age. For \(P>10\) days instead a distribution of \(e\) is found, indicating that tides are less important.</figcaption>
@@ -532,13 +509,13 @@ depending on the age of the cluster, see for example <a href="https://ui.adsabs.
 </div>
 </div>
 
-<div id="outline-container-orgd86a3dd" class="outline-2">
-<h2 id="orgd86a3dd"><a href="#orgd86a3dd">Examples of applications/implications</a></h2>
-<div class="outline-text-2" id="text-orgd86a3dd">
+<div id="outline-container-examples-of-applications-implications" class="outline-2">
+<h2 id="examples-of-applications-implications"><a href="#examples-of-applications-implications">Examples of applications/implications</a></h2>
+<div class="outline-text-2" id="text-examples-of-applications-implications">
 </div>
-<div id="outline-container-org06ae054" class="outline-3">
-<h3 id="org06ae054"><a href="#org06ae054">BH spins misteries</a></h3>
-<div class="outline-text-3" id="text-org06ae054">
+<div id="outline-container-bh-spins-misteries" class="outline-3">
+<h3 id="bh-spins-misteries"><a href="#bh-spins-misteries">BH spins misteries</a></h3>
+<div class="outline-text-3" id="text-org-element-13">
 <p>
 Current models of angular momentum transport in stars invoke
 turbulence in convective regions and magnetic torques in radiative
@@ -567,16 +544,16 @@ amounts of X-rays (<a href="https://ui.adsabs.harvard.edu/abs/2026ApJ..1000....2
 </div>
 </div>
 
-<div id="outline-container-orgb178763" class="outline-3">
-<h3 id="orgb178763"><a href="#orgb178763">Tidal heating</a></h3>
-<div class="outline-text-3" id="text-orgb178763">
+<div id="outline-container-tidal-heating" class="outline-3">
+<h3 id="tidal-heating"><a href="#tidal-heating">Tidal heating</a></h3>
+<div class="outline-text-3" id="text-org-element-14">
 <p>
 For a binary with a significant eccentricity \(e\), the tidal field
 \(\mathbf{T}\equiv\mathbf{T}(\nu)\) will depend on the binary phase \(\nu\), since
 it depends on the instantaneous \(R_{\star}/r\) with:
 </p>
 
-<div class="latex" id="org172cb4b">
+<div class="latex" id="org-element-15">
 \begin{equation}
 r = \frac{a(1-e^{2})}{1+e\cos(\nu)} \ \ ,
 \end{equation}
@@ -599,7 +576,7 @@ eccentric orbits.
   <hr>
   <a href="#light-dark-toggle"><i id="light-dark-toggle"><i class="fa-solid fa-circle-half-stroke"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="notes-lecture-asteroseismology.html"><i class="fa-solid fa-arrow-left" style="font-size:16px"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="#top"><i class="fa-solid fa-arrow-up" style="font-size:16px"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="notes-lecture-RLOF.html"><i class="fa-solid fa-arrow-right" style="font-size:16px"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="https://github.com/mathren/stellar_phys_545"><i class="fa-brands fa-github" style="font-size:16px"></i></a><hr>
   <br>
-  Last updated on 6 April 2026 <br>
+  Last updated on 11 April 2026 <br>
   Made with Emacs 29.2 - Org mode 9.6.15
   <br>
 </div>

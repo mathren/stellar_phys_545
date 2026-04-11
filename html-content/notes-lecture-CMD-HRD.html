@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 2026-04-06 Mon 12:15 -->
+<!-- 2026-04-11 Sat 14:23 -->
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>ASTR545 - CMD &amp; HRD</title>
@@ -92,6 +92,14 @@
 
 <!-- toggle drawers -->
 <script>
+  function toggleDrawer(id) {
+      const drawer = document.getElementById(id);
+      drawer.style.display = drawer.style.display === "none" ? "block" : "none";
+  }
+</script>
+
+<!-- toggle dark mode -->
+<script>
   window.onload = () => {
       const toggleButton = document.getElementById("light-dark-toggle");
       const body = document.body;
@@ -118,37 +126,6 @@
       });
   };
 </script>
-
-<!-- jump to nearest date in lectures.html -->
-<script>
-document.addEventListener("DOMContentLoaded", () => {
-  const headers = [...document.querySelectorAll("h1, h2, h3, h4, h5, h6")];
-  const today = new Date();
-  today.setHours(0, 0, 0, 0);
-
-  let closest = null;
-  let closestDiff = Infinity;
-
-  for (const h of headers) {
-    const ts = h.querySelector("span.timestamp");
-    if (!ts) continue;
-
-    const match = ts.textContent.match(/(\d{4}-\d{2}-\d{2})/);
-    if (!match) continue;
-
-    const parsed = new Date(match[1] + "T00:00:00");
-    const diff = Math.abs(parsed - today);
-
-    if (diff < closestDiff) {
-      closestDiff = diff;
-      closest = h;
-    }
-  }
-
-  if (closest) closest.scrollIntoView({ behavior: "smooth", block: "start" });
-});
-</script>
-
 <!-- end scripts-->
 </div>
 <div id="content" class="content">
@@ -158,13 +135,13 @@ Lightman, Sec. 30.2 of Kippehahn book, Sec. 8.2 of Ostie &amp; Carroll
 book, <a href="https://ui.adsabs.harvard.edu/abs/1914PA.....22..331R">Russell 1914</a>.
 </p>
 
-<div id="outline-container-org8042bbb" class="outline-2">
-<h2 id="org8042bbb"><a href="#org8042bbb">How can we study things that evolve too slow for us to see?</a></h2>
-<div class="outline-text-2" id="text-org8042bbb">
+<div id="outline-container-how-can-we-study-things-that-evolve-too-slow-for-us-to-see" class="outline-2">
+<h2 id="how-can-we-study-things-that-evolve-too-slow-for-us-to-see"><a href="#how-can-we-study-things-that-evolve-too-slow-for-us-to-see">How can we study things that evolve too slow for us to see?</a></h2>
+<div class="outline-text-2" id="text-how-can-we-study-things-that-evolve-too-slow-for-us-to-see">
 </div>
-<div id="outline-container-org98ce0ac" class="outline-3">
-<h3 id="org98ce0ac"><a href="#org98ce0ac">Population studies</a></h3>
-<div class="outline-text-3" id="text-org98ce0ac">
+<div id="outline-container-population-studies" class="outline-3">
+<h3 id="population-studies"><a href="#population-studies">Population studies</a></h3>
+<div class="outline-text-3" id="text-org-element-1">
 <p>
 We can look at large samples and try to infer lifetimes from how many
 individual stars we find in each subset of the population.
@@ -245,9 +222,9 @@ production of chemical elements</b>.
 </div>
 </div>
 
-<div id="outline-container-org6a8849c" class="outline-3">
-<h3 id="org6a8849c"><a href="#org6a8849c">Observational color-magnitude diagram</a></h3>
-<div class="outline-text-3" id="text-org6a8849c">
+<div id="outline-container-observational-color-magnitude-diagram" class="outline-3">
+<h3 id="observational-color-magnitude-diagram"><a href="#observational-color-magnitude-diagram">Observational color-magnitude diagram</a></h3>
+<div class="outline-text-3" id="text-org-element-2">
 <p>
 One of the main tools used in stellar physics to study a "population"
 of stars (e.g., I and II defined above, or a group of stars selected
@@ -263,7 +240,7 @@ interchangeably.
 </p>
 
 
-<figure id="org284a9e7">
+<figure id="org-element-3">
 <img src="./images/Gaia_DR2_HRD_Gaia.png" alt="[[https://sci.esa.int/web/gaia/-/60198-gaia-hertzsprung-russell-diagram][Gaia DR2 CMD]]" width="100%">
 
 <figcaption><span class="figure-number">Figure 1: </span><i>Gaia</i> <a href="https://ui.adsabs.harvard.edu/abs/2018A%26A...616A..10G/abstract">DR2</a> (second data release) color magnitude diagram, containing about \(\sim\) 1.3 billion Galactic stars. Only \(\sim\) 4.2 millions are plotted here (because of data quality cuts).</figcaption>
@@ -309,8 +286,8 @@ position in the galaxy</i>, etc.
 </p>
 
 <div class="org-drawer-container">
-  <button class="org-drawer-toggle" onclick="toggleDrawer('drawer-Questions-440')">Questions ▼</button>
-  <div id="drawer-Questions-440" class="org-drawer-content" style="display: none;"><ul class="org-ul">
+  <button class="org-drawer-toggle" onclick="toggleDrawer('drawer-Questions-1')">Questions ▼</button>
+  <div id="drawer-Questions-1" class="org-drawer-content" style="display: none;"><ul class="org-ul">
 <li><b>Q</b>: where are the cool stars?</li>
 <li><b>Q</b>: where are the bright stars?</li>
 <li><b>Q</b>: where would the Sun be on this diagram? (<b>N.B.:</b> <i>Gaia</i>
@@ -344,7 +321,7 @@ color index is even more clear.
 </p>
 
 
-<figure id="orgd64d863">
+<figure id="org-element-4">
 <img src="./images/MS_hayades_praesepe.png" alt="/Gaia/ zoom-in on the CMD diagram of two clusters, Hyades and Praesepe" width="100%">
 
 <figcaption><span class="figure-number">Figure 2: </span><i>Gaia</i> <a href="https://ui.adsabs.harvard.edu/abs/2018A%26A...616A..10G/abstract">DR2</a> zoom-in on the  color magnitude diagram of two clusters of similar ages Hyades and Praesepe. When selecting only "related" stars, It is much more evident than most are along one line on this diagram (the so-called "Main sequence"), and that this line agrees fairly well across different clusters of similar ages. The few points offset by up to 0.75 mag above the main sequence are unresolved binaries where the light of two stars adds up in the signal.</figcaption>
@@ -372,9 +349,9 @@ all stars.
 </div>
 </div>
 
-<div id="outline-container-org1d0fa38" class="outline-3">
-<h3 id="org1d0fa38"><a href="#org1d0fa38">Digression: Spectral types and the letters OBAFGKM(LTY)</a></h3>
-<div class="outline-text-3" id="text-org1d0fa38">
+<div id="outline-container-digression-spectral-types-and-the-letters-obafgkm-lty" class="outline-3">
+<h3 id="digression-spectral-types-and-the-letters-obafgkm-lty"><a href="#digression-spectral-types-and-the-letters-obafgkm-lty">Digression: Spectral types and the letters OBAFGKM(LTY)</a></h3>
+<div class="outline-text-3" id="text-org-element-5">
 <p>
 To explain the physical meaning of the x axes (bottom, and top), we
 need to do a detour and talk about stellar spectra and spectral types.
@@ -425,7 +402,7 @@ the light.
 </p>
 
 
-<figure id="orgeda2099">
+<figure id="org-element-6">
 <img src="./images/solar-spectrum.jpg" alt="Solar spectrum" width="100%">
 
 <figcaption><span class="figure-number">Figure 3: </span>Spectrum of the Sun from the /Fourier Transform Spectrometer at McMath-Pierce Solar Facility at the National Solar Observatory on Kitt Peak</figcaption>
@@ -469,9 +446,9 @@ and thus how many and which lines can be seen, and ultimately the
 </p>
 </div>
 
-<div id="outline-container-org291c344" class="outline-4">
-<h4 id="org291c344"><a href="#org291c344">A modern view on spectra</a></h4>
-<div class="outline-text-4" id="text-org291c344">
+<div id="outline-container-a-modern-view-on-spectra" class="outline-4">
+<h4 id="a-modern-view-on-spectra"><a href="#a-modern-view-on-spectra">A modern view on spectra</a></h4>
+<div class="outline-text-4" id="text-org-element-7">
 <p>
 The image above of the solar spectrum is pretty, but that is not how
 most astrophysicists look at spectra nowadays.
@@ -484,7 +461,7 @@ wavelength &lambda; (or equivalently F<sub>&nu;</sub>&equiv; F<sub>&nu;</sub>(&n
 c/&lambda; frequency), given by Planck's function:
 </p>
 
-<div class="latex" id="orgd2067d5">
+<div class="latex" id="org-element-8">
 \begin{equation}
 F_{\lambda} d\lambda = \frac{2\pi
 hc^{2}}{\lambda^{5}}\frac{d\lambda}{e^{hc/\lambda k_{B} T} -1} \ \ ,
@@ -526,7 +503,7 @@ know yet &#x2013; but we will derive and write down during this course.
 
 
 
-<figure id="orgf986aee">
+<figure id="org-element-9">
 <img src="./images/Blackbody.png" alt="Blackbody.png" width="50%">
 
 <figcaption><span class="figure-number">Figure 4: </span>Example of black-body spectrum. Credits: Rich Townsend.</figcaption>
@@ -547,7 +524,7 @@ close to each other in energy/frequency/wavelength).
 </p>
 
 
-<figure id="org7aadac6">
+<figure id="org-element-10">
 <img src="./images/sun-SED.jpg" alt="sun-SED.jpg" width="100%">
 
 <figcaption><span class="figure-number">Figure 5: </span>Schematic representation of the Sun spectral energy distribution from <a href="https://www.sciencedirect.com/science/article/pii/B9780443187865000020?via%3Dihub">Wang et al. 2023</a>.</figcaption>
@@ -562,7 +539,7 @@ of the ions responsible for the visible absorption lines annotated is
 </p>
 
 
-<figure id="org369c6bd">
+<figure id="org-element-11">
 <img src="./images/sun-normalized.png" alt="sun-normalized.png" width="100%">
 
 <figcaption><span class="figure-number">Figure 6: </span>Example of reduced (portion of the) solar spectrum modified from <a href="https://ui.adsabs.harvard.edu/abs/2021ApJ...919..100V/abstract">Vejar et al. 2021</a></figcaption>
@@ -590,8 +567,8 @@ is neutral iron, FeII is once ionized iron, etc.
 </p>
 
 <div class="org-drawer-container">
-  <button class="org-drawer-toggle" onclick="toggleDrawer('drawer-Question-6195')">Question ▼</button>
-  <div id="drawer-Question-6195" class="org-drawer-content" style="display: none;"><ul class="org-ul">
+  <button class="org-drawer-toggle" onclick="toggleDrawer('drawer-Question-2')">Question ▼</button>
+  <div id="drawer-Question-2" class="org-drawer-content" style="display: none;"><ul class="org-ul">
 <li><b>Q</b>: Do the units in all these plots match?</li>
 </ul>
 </div>
@@ -599,9 +576,9 @@ is neutral iron, FeII is once ionized iron, etc.
 </div>
 </div>
 
-<div id="outline-container-org15a6d7d" class="outline-4">
-<h4 id="org15a6d7d"><a href="#org15a6d7d">Relation with colors</a></h4>
-<div class="outline-text-4" id="text-org15a6d7d">
+<div id="outline-container-relation-with-colors" class="outline-4">
+<h4 id="relation-with-colors"><a href="#relation-with-colors">Relation with colors</a></h4>
+<div class="outline-text-4" id="text-org-element-12">
 <p>
 On the <i>Gaia</i> color-magnitude diagram, the color index and both the spectral
 types and effective temperature are all on the x-axis (bottom and top,
@@ -628,7 +605,7 @@ telescope used to make the diagram above:
 </p>
 
 
-<figure id="org2403289">
+<figure id="org-element-13">
 <img src="./images/GaiaEDR3_ExtPhotSystem.png" alt="https://www.cosmos.esa.int/web/gaia/edr3-passbands" width="100%">
 
 <figcaption><span class="figure-number">Figure 7: </span>The coloured lines in the figure show the transmission function T(&lambda;) of the G, G<sub>BP</sub> and G<sub>RP</sub> passbands (green: G; blue: G<sub>BP</sub>; red: G<sub>RP</sub>), defining the Gaia EDR3 photometric system. The thin, grey lines show the nominal, pre-launch passbands published in Jordi et al. 2010, used for Gaia DR1. Credits: ESA/Gaia/DPAC, P. Montegriffo, F. De Angeli, M. Bellazzini, E. Pancino, C. Cacciari, D. W. Evans, and CU5/PhotPipe team.</figcaption>
@@ -646,9 +623,9 @@ body distribution.
 </div>
 </div>
 
-<div id="outline-container-orgbe7ada2" class="outline-3">
-<h3 id="orgbe7ada2"><a href="#orgbe7ada2">Theoretical Hertzsprung-Russel diagram</a></h3>
-<div class="outline-text-3" id="text-orgbe7ada2">
+<div id="outline-container-theoretical-hertzsprung-russel-diagram" class="outline-3">
+<h3 id="theoretical-hertzsprung-russel-diagram"><a href="#theoretical-hertzsprung-russel-diagram">Theoretical Hertzsprung-Russel diagram</a></h3>
+<div class="outline-text-3" id="text-org-element-14">
 <p>
 Let's now get back to the main topic of the lecture, CMD and HRD. The
 <i>Gaia</i> color-magnitude diagram on the top shows on the right y-axis and
@@ -692,7 +669,7 @@ core-collapse and thus the point where it will go supernova.
 </p>
 
 
-<figure id="org76f286f">
+<figure id="org-element-15">
 <img src="./images/15Msun_thesis.png" alt="15M_{☉} single stellar evolution track" width="100%">
 
 <figcaption><span class="figure-number">Figure 8: </span>Hertzsprung-Russell diagram of a 15M<sub>☉</sub> stellar model from <a href="https://lavinia.as.arizona.edu/~mrenzo/materials/Thesis/Renzo_MSc_thesis.pdf">Renzo 2015</a>. Note that this is the evolution of <b>one</b> star throughout time!</figcaption>
@@ -706,8 +683,8 @@ much about them now.
 </p>
 
 <div class="org-drawer-container">
-  <button class="org-drawer-toggle" onclick="toggleDrawer('drawer-Questions-2807')">Questions ▼</button>
-  <div id="drawer-Questions-2807" class="org-drawer-content" style="display: none;"><ul class="org-ul">
+  <button class="org-drawer-toggle" onclick="toggleDrawer('drawer-Questions-3')">Questions ▼</button>
+  <div id="drawer-Questions-3" class="org-drawer-content" style="display: none;"><ul class="org-ul">
 <li><b>Q</b>: on this diagram, how does a line for stars at constant radius look like?</li>
 </ul>
 </div>
@@ -715,9 +692,9 @@ much about them now.
 </div>
 </div>
 
-<div id="outline-container-org1389223" class="outline-3">
-<h3 id="org1389223"><a href="#org1389223">Putting the two together</a></h3>
-<div class="outline-text-3" id="text-org1389223">
+<div id="outline-container-putting-the-two-together" class="outline-3">
+<h3 id="putting-the-two-together"><a href="#putting-the-two-together">Putting the two together</a></h3>
+<div class="outline-text-3" id="text-org-element-16">
 <p>
 We have effectively introduced two types of related diagram:
 </p>
@@ -741,9 +718,9 @@ the observed stars and the processes determining them.
 </p>
 </div>
 
-<div id="outline-container-org1653317" class="outline-4">
-<h4 id="org1653317"><a href="#org1653317">Example: &Omega; Centauri cluster</a></h4>
-<div class="outline-text-4" id="text-org1653317">
+<div id="outline-container-example-omega-centauri-cluster" class="outline-4">
+<h4 id="example-omega-centauri-cluster"><a href="#example-omega-centauri-cluster">Example: &Omega; Centauri cluster</a></h4>
+<div class="outline-text-4" id="text-org-element-17">
 <p>
 This video shows how <i>HST</i> observations of the Globular cluster &Omega;
 Centauri can be sorted in color and magnitude to create&#x2026;a
@@ -756,8 +733,8 @@ Estacion, STScI).
 </div>
 
 <ul class="org-ul">
-<li><a id="org8e58290"></a><a href="#org8e58290">Isochrone fitting</a><br>
-<div class="outline-text-5" id="text-org8e58290">
+<li><a id="isochrone-fitting"></a><a href="#isochrone-fitting">Isochrone fitting</a><br>
+<div class="outline-text-5" id="text-org-element-18">
 <p>
 An <b>isochrone</b> (from iso = "same" + chronos = "time") is the locus of
 points occupied by a population of different stars at a given time.
@@ -782,7 +759,7 @@ nothing forbids one to make isochrones on other planes.
 </p>
 
 
-<figure id="orgdce0155">
+<figure id="org-element-19">
 <img src="./images/Wang_NGC1818.png" alt="/HST/ observations of NGC1818 with isochrone fitting" width="100%">
 
 <figcaption><span class="figure-number">Figure 9: </span>Example of isochrone fitting with different stellar models for <i>HST</i> observations of the cluster NGC1818 from <a href="https://ui.adsabs.harvard.edu/abs/2023A%26A...670A..43W/abstract">Wang et al. 2023</a></figcaption>
@@ -792,9 +769,9 @@ nothing forbids one to make isochrones on other planes.
 </ul>
 </div>
 
-<div id="outline-container-org0fd8941" class="outline-4">
-<h4 id="org0fd8941"><a href="#org0fd8941">Example: 30 Doradus region</a></h4>
-<div class="outline-text-4" id="text-org0fd8941">
+<div id="outline-container-example-30-doradus-region" class="outline-4">
+<h4 id="example-30-doradus-region"><a href="#example-30-doradus-region">Example: 30 Doradus region</a></h4>
+<div class="outline-text-4" id="text-org-element-20">
 <p>
 The 30 Doradus region (a.k.a. Tarantula Nebula) is a bright massive
 star forming region in the LMC that contains &sim;1000 massive stars. This
@@ -803,14 +780,14 @@ those stars were not around when dinosaurs were roaming the Earth!
 </p>
 
 
-<figure id="orgfb3f59c">
+<figure id="org-element-21">
 <img src="./images/JWST_30Dor_R136.jpg" alt="JWST_30Dor_R136.jpg" width="100%">
 
 <figcaption><span class="figure-number">Figure 10: </span><i>JWST</i> image of the cluster R136 in the core of 30 Doradus</figcaption>
 </figure>
 
 
-<figure id="orgb4670f3">
+<figure id="org-element-22">
 <img src="./images/tarantula2_hst_1280.jpg" alt="tarantula2_hst_1280.jpg" width="100%">
 
 <figcaption><span class="figure-number">Figure 11: </span>Broader image of the whole 30Dor nebula. Note the different orientation from above, the multiple clusters of stars.</figcaption>
@@ -824,7 +801,7 @@ e.g., <a href="https://ui.adsabs.harvard.edu/abs/2022A%26A...663A..36B/abstract"
 </p>
 
 
-<figure id="org399544e">
+<figure id="org-element-23">
 <img src="./images/30Dor_Schneider30_HRD.png" alt="VLT/FLAMES observations of 30 Doradus with theoretical stellar evolution tracks and isochrones" width="100%">
 
 <figcaption><span class="figure-number">Figure 12: </span>Color-magnitude diagram of the 30 Doradus region in the LMC overlayed with theoretical stellar tracks (solid black lines), and isochrones obtained sampling the theoretical tracks at fixed times (dashed black lines) from <a href="https://www.aanda.org/10.1051/0004-6361/201833433">Schneider et al. 2018</a></figcaption>
@@ -839,17 +816,17 @@ necessarily, hence the wider distribution of stars on the HRD.
 </div>
 </div>
 
-<div id="outline-container-org82776ee" class="outline-2">
-<h2 id="org82776ee"><a href="#org82776ee">Homework</a></h2>
-<div class="outline-text-2" id="text-org82776ee">
+<div id="outline-container-homework" class="outline-2">
+<h2 id="homework"><a href="#homework">Homework</a></h2>
+<div class="outline-text-2" id="text-homework">
 </div>
-<div id="outline-container-orgcf1c60e" class="outline-3">
-<h3 id="orgcf1c60e"><a href="#orgcf1c60e">Make your own CMD</a></h3>
-<div class="outline-text-3" id="text-orgcf1c60e">
+<div id="outline-container-make-your-own-cmd" class="outline-3">
+<h3 id="make-your-own-cmd"><a href="#make-your-own-cmd">Make your own CMD</a></h3>
+<div class="outline-text-3" id="text-make-your-own-cmd">
 </div>
-<div id="outline-container-orgcdcefb5" class="outline-4">
-<h4 id="orgcdcefb5"><a href="#orgcdcefb5">Aim</a></h4>
-<div class="outline-text-4" id="text-orgcdcefb5">
+<div id="outline-container-aim" class="outline-4">
+<h4 id="aim"><a href="#aim">Aim</a></h4>
+<div class="outline-text-4" id="text-org-element-24">
 <p>
 Make your own color-magnitude diagram of a selected group of stars.
 This is mainly a data-visualization exercise, so try to make your
@@ -882,9 +859,9 @@ text for the purpose of this exercise.
 </div>
 </div>
 
-<div id="outline-container-org6040016" class="outline-4">
-<h4 id="org6040016"><a href="#org6040016">Deliverables</a></h4>
-<div class="outline-text-4" id="text-org6040016">
+<div id="outline-container-deliverables" class="outline-4">
+<h4 id="deliverables"><a href="#deliverables">Deliverables</a></h4>
+<div class="outline-text-4" id="text-org-element-25">
 <ul class="org-ul">
 <li>Color-magnitude diagram/Hertzsprung-Russell diagram.</li>
 <li>One paragraph of description (i.e., I want you to <i>interpret</i> your
@@ -901,9 +878,9 @@ the main one producing the script.</li>
 </div>
 </div>
 
-<div id="outline-container-org469499d" class="outline-4">
-<h4 id="org469499d"><a href="#org469499d">Instructions</a></h4>
-<div class="outline-text-4" id="text-org469499d">
+<div id="outline-container-instructions" class="outline-4">
+<h4 id="instructions"><a href="#instructions">Instructions</a></h4>
+<div class="outline-text-4" id="text-org-element-26">
 <p>
 You will use the latest data release from ESA's <i>Gaia</i> mission, you will
 be using a bleeding-edge dataset! These are publicly available in the
@@ -922,8 +899,8 @@ but keep in mind that you will need to briefly explain what it is
 you plot.
 </p>
 <div class="org-drawer-container">
-  <button class="org-drawer-toggle" onclick="toggleDrawer('drawer-Hint-7861')">Hint ▼</button>
-  <div id="drawer-Hint-7861" class="org-drawer-content" style="display: none;"><p>
+  <button class="org-drawer-toggle" onclick="toggleDrawer('drawer-Hint-4')">Hint ▼</button>
+  <div id="drawer-Hint-4" class="org-drawer-content" style="display: none;"><p>
 if you are having troubles selecting stars to
 plot based on some (astro)-physical criterion, you can rely on the
 <i>Gaia</i> Catalog of Nearby Stars to plot all the stars within 100pc
@@ -934,8 +911,8 @@ probably want to download and plot <a href="https://cdsarc.cds.unistra.fr/ftp/J/
 </div>
 </div>
 <div class="org-drawer-container">
-  <button class="org-drawer-toggle" onclick="toggleDrawer('drawer-Hint-8768')">Hint ▼</button>
-  <div id="drawer-Hint-8768" class="org-drawer-content" style="display: none;"><p>
+  <button class="org-drawer-toggle" onclick="toggleDrawer('drawer-Hint-5')">Hint ▼</button>
+  <div id="drawer-Hint-5" class="org-drawer-content" style="display: none;"><p>
 you can find in papers the queries of the <i>Gaia</i> database for specific
 clusters! For example the cluster NGC6231 can be found using the
 appendix A of <a href="https://ui.adsabs.harvard.edu/abs/2021A%26A...655A..31V/abstract">this paper</a>.
@@ -952,8 +929,8 @@ the y-axis, BP-RP color on the x-axis, like the plot shown in
 class).
 </p>
 <div class="org-drawer-container">
-  <button class="org-drawer-toggle" onclick="toggleDrawer('drawer-Hint-3068')">Hint ▼</button>
-  <div id="drawer-Hint-3068" class="org-drawer-content" style="display: none;"><p>
+  <button class="org-drawer-toggle" onclick="toggleDrawer('drawer-Hint-6')">Hint ▼</button>
+  <div id="drawer-Hint-6" class="org-drawer-content" style="display: none;"><p>
 Be careful whether you have the <b>absolute</b> or the
 <b>relative</b> magnitude in the data you downloaded, and do the
 appropriate conversion
@@ -977,9 +954,9 @@ If so, can you speculate on why?</li>
 </div>
 </div>
 
-<div id="outline-container-orgc9519a4" class="outline-3">
-<h3 id="orgc9519a4"><a href="#orgc9519a4">Suggested</a></h3>
-<div class="outline-text-3" id="text-orgc9519a4">
+<div id="outline-container-suggested" class="outline-3">
+<h3 id="suggested"><a href="#suggested">Suggested</a></h3>
+<div class="outline-text-3" id="text-org-element-27">
 <p>
 To follow the next lecture, it will be helpful for you to revise
 Kepler's laws, orbital, and celestial mechanics.
@@ -993,7 +970,7 @@ Kepler's laws, orbital, and celestial mechanics.
   <hr>
   <a href="#light-dark-toggle"><i id="light-dark-toggle"><i class="fa-solid fa-circle-half-stroke"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="notes-lecture-Intro.html"><i class="fa-solid fa-arrow-left" style="font-size:16px"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="#top"><i class="fa-solid fa-arrow-up" style="font-size:16px"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="notes-lecture-BIN.html"><i class="fa-solid fa-arrow-right" style="font-size:16px"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="https://github.com/mathren/stellar_phys_545"><i class="fa-brands fa-github" style="font-size:16px"></i></a><hr>
   <br>
-  Last updated on 6 April 2026 <br>
+  Last updated on 11 April 2026 <br>
   Made with Emacs 29.2 - Org mode 9.6.15
   <br>
 </div>

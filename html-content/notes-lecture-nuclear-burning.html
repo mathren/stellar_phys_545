@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 2026-04-06 Mon 12:15 -->
+<!-- 2026-04-11 Sat 14:23 -->
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>ASTR545 - Nuclear burning</title>
@@ -92,6 +92,14 @@
 
 <!-- toggle drawers -->
 <script>
+  function toggleDrawer(id) {
+      const drawer = document.getElementById(id);
+      drawer.style.display = drawer.style.display === "none" ? "block" : "none";
+  }
+</script>
+
+<!-- toggle dark mode -->
+<script>
   window.onload = () => {
       const toggleButton = document.getElementById("light-dark-toggle");
       const body = document.body;
@@ -118,37 +126,6 @@
       });
   };
 </script>
-
-<!-- jump to nearest date in lectures.html -->
-<script>
-document.addEventListener("DOMContentLoaded", () => {
-  const headers = [...document.querySelectorAll("h1, h2, h3, h4, h5, h6")];
-  const today = new Date();
-  today.setHours(0, 0, 0, 0);
-
-  let closest = null;
-  let closestDiff = Infinity;
-
-  for (const h of headers) {
-    const ts = h.querySelector("span.timestamp");
-    if (!ts) continue;
-
-    const match = ts.textContent.match(/(\d{4}-\d{2}-\d{2})/);
-    if (!match) continue;
-
-    const parsed = new Date(match[1] + "T00:00:00");
-    const diff = Math.abs(parsed - today);
-
-    if (diff < closestDiff) {
-      closestDiff = diff;
-      closest = h;
-    }
-  }
-
-  if (closest) closest.scrollIntoView({ behavior: "smooth", block: "start" });
-});
-</script>
-
 <!-- end scripts-->
 </div>
 <div id="content" class="content">
@@ -158,23 +135,23 @@ book Chapter 9 and 18, Cox &amp; Giuli vol. I, Chapter 17.7, Clayton
 Chapter 4, <a href="https://ui.adsabs.harvard.edu/abs/1928Natur.122..805G/abstract">Gamow 1928</a>, <a href="https://ui.adsabs.harvard.edu/abs/1999RPPh...62..395A/abstract">Arnould &amp; Takahashi 1999</a>, <a href="https://ui.adsabs.harvard.edu/abs/2011RPPh...74i6901J/abstract">Jose &amp; Iliadis 2011</a>
 </p>
 
-<div id="outline-container-org31b9d49" class="outline-2">
-<h2 id="org31b9d49"><a href="#org31b9d49">Microphysics of nuclear burning</a></h2>
-<div class="outline-text-2" id="text-org31b9d49">
+<div id="outline-container-microphysics-of-nuclear-burning" class="outline-2">
+<h2 id="microphysics-of-nuclear-burning"><a href="#microphysics-of-nuclear-burning">Microphysics of nuclear burning</a></h2>
+<div class="outline-text-2" id="text-microphysics-of-nuclear-burning">
 </div>
-<div id="outline-container-org9e4e1a7" class="outline-3">
-<h3 id="org9e4e1a7"><a href="#org9e4e1a7">Summary of where we are</a></h3>
-<div class="outline-text-3" id="text-org9e4e1a7">
+<div id="outline-container-summary-of-where-we-are" class="outline-3">
+<h3 id="summary-of-where-we-are"><a href="#summary-of-where-we-are">Summary of where we are</a></h3>
+<div class="outline-text-3" id="text-org-element-1">
 <p>
 We have four equations of the stellar <i>structure</i> assuming spherical
 symmetry, LTE, and hydrostatic (\(\partial t \equiv 0\)) equilibrium:
 </p>
 </div>
 
-<div id="outline-container-org6c435c0" class="outline-4">
-<h4 id="org6c435c0"><a href="#org6c435c0">Mass conservation</a></h4>
-<div class="outline-text-4" id="text-org6c435c0">
-<div class="latex" id="org045ee69">
+<div id="outline-container-mass-conservation" class="outline-4">
+<h4 id="mass-conservation"><a href="#mass-conservation">Mass conservation</a></h4>
+<div class="outline-text-4" id="text-org-element-2">
+<div class="latex" id="org-element-3">
 \begin{equation}\label{eq:mass_cont}
 \frac{dr}{dm} = \frac{1}{4\pi r^{2}\rho}\ \ .
 \end{equation}
@@ -183,10 +160,10 @@ symmetry, LTE, and hydrostatic (\(\partial t \equiv 0\)) equilibrium:
 </div>
 </div>
 
-<div id="outline-container-orgd8be04d" class="outline-4">
-<h4 id="orgd8be04d"><a href="#orgd8be04d">Hydrostatic equilibrium</a></h4>
-<div class="outline-text-4" id="text-orgd8be04d">
-<div class="latex" id="orgda4c173">
+<div id="outline-container-hydrostatic-equilibrium" class="outline-4">
+<h4 id="hydrostatic-equilibrium"><a href="#hydrostatic-equilibrium">Hydrostatic equilibrium</a></h4>
+<div class="outline-text-4" id="text-org-element-4">
+<div class="latex" id="org-element-5">
 \begin{equation}\label{eq:HSE}
 \frac{dP}{dm} = -\frac{Gm}{4\pi r^{4}} \ \ ,
 \end{equation}
@@ -198,10 +175,10 @@ which follows from the momentum conservation equation.
 </div>
 </div>
 
-<div id="outline-container-org777e292" class="outline-4">
-<h4 id="org777e292"><a href="#org777e292">Equation of state</a></h4>
-<div class="outline-text-4" id="text-org777e292">
-<div class="latex" id="orge91392f">
+<div id="outline-container-equation-of-state" class="outline-4">
+<h4 id="equation-of-state"><a href="#equation-of-state">Equation of state</a></h4>
+<div class="outline-text-4" id="text-org-element-6">
+<div class="latex" id="org-element-7">
 \begin{equation}
 P_\mathrm{tot} = P_\mathrm{gas} + P_\mathrm{rad} = \frac{\rho}{\mu m_{u}}k_{B}T + P_{QM} + \frac{1}{3}aT^{4}  \ \ .
 \end{equation}
@@ -210,10 +187,10 @@ P_\mathrm{tot} = P_\mathrm{gas} + P_\mathrm{rad} = \frac{\rho}{\mu m_{u}}k_{B}T 
 </div>
 </div>
 
-<div id="outline-container-orge99211d" class="outline-4">
-<h4 id="orge99211d"><a href="#orge99211d">Energy transport</a></h4>
-<div class="outline-text-4" id="text-orge99211d">
-<div class="latex" id="org67dca8d">
+<div id="outline-container-energy-transport" class="outline-4">
+<h4 id="energy-transport"><a href="#energy-transport">Energy transport</a></h4>
+<div class="outline-text-4" id="text-org-element-8">
+<div class="latex" id="org-element-9">
 \begin{equation}
 \frac{dT}{dm} = \frac{T}{P}\frac{dP}{dm}\nabla
 \end{equation}
@@ -223,7 +200,7 @@ P_\mathrm{tot} = P_\mathrm{gas} + P_\mathrm{rad} = \frac{\rho}{\mu m_{u}}k_{B}T 
 where \(\nabla =\partial \log(T)/\partial \log(P)\) is the local temperature gradient,
 equal to the radiative gradient in stably stratified regions:
 </p>
-<div class="latex" id="org5a54fbd">
+<div class="latex" id="org-element-10">
 \begin{equation}
 \nabla \equiv \nabla_\mathrm{rad} = \frac{3 P}{16\pi acGm T^{4}}\kappa L
 \end{equation}
@@ -241,10 +218,10 @@ is which.
 </div>
 </div>
 
-<div id="outline-container-org92dea9f" class="outline-4">
-<h4 id="org92dea9f"><a href="#org92dea9f">Energy conservation</a></h4>
-<div class="outline-text-4" id="text-org92dea9f">
-<div class="latex" id="org8d307db">
+<div id="outline-container-energy-conservation" class="outline-4">
+<h4 id="energy-conservation"><a href="#energy-conservation">Energy conservation</a></h4>
+<div class="outline-text-4" id="text-org-element-11">
+<div class="latex" id="org-element-12">
 \begin{equation}
 \frac{dL}{dm} = \varepsilon_\mathrm{nuc} -\varepsilon_{\nu} + \varepsilon_\mathrm{grav} \ \ .
 \end{equation}
@@ -259,9 +236,9 @@ much slower than \(\tau_{KH}\)), and \(\varepsilon_{\nu}>0\) (neutrinos are an e
 </div>
 </div>
 
-<div id="outline-container-orgf80f24d" class="outline-3">
-<h3 id="orgf80f24d"><a href="#orgf80f24d">The next step</a></h3>
-<div class="outline-text-3" id="text-orgf80f24d">
+<div id="outline-container-the-next-step" class="outline-3">
+<h3 id="the-next-step"><a href="#the-next-step">The next step</a></h3>
+<div class="outline-text-3" id="text-org-element-13">
 <p>
 With all the equations above we almost have a complete set of solvable
 differential equations. What is left to discuss is the specific energy
@@ -281,15 +258,15 @@ dynamical timescales.
 </div>
 </div>
 
-<div id="outline-container-orge05abe2" class="outline-3">
-<h3 id="orge05abe2"><a href="#orge05abe2">Energy generation as a self-regulating process</a></h3>
-<div class="outline-text-3" id="text-orge05abe2">
+<div id="outline-container-energy-generation-as-a-self-regulating-process" class="outline-3">
+<h3 id="energy-generation-as-a-self-regulating-process"><a href="#energy-generation-as-a-self-regulating-process">Energy generation as a self-regulating process</a></h3>
+<div class="outline-text-3" id="text-org-element-14">
 <p>
 We have seen in the <a href="./notes-lecture-VirTheo.html">virial theorem lecture</a> that one can derive from
 first principle that stars have a "negative heat capacity" and obtain
 a scaling between mass, radius and average temperature:
 </p>
-<div class="latex" id="orgecd93bd">
+<div class="latex" id="org-element-15">
 \begin{equation}
 \langle T \rangle = \frac{2\mu m_{u}}{3} C \frac{GM^{}}{R} \propto \frac{\mu M}{R} \ \ ,
 \end{equation}
@@ -325,8 +302,8 @@ insufficient.
 </p>
 
 <div class="org-drawer-container">
-  <button class="org-drawer-toggle" onclick="toggleDrawer('drawer-Question-1497')">Question ▼</button>
-  <div id="drawer-Question-1497" class="org-drawer-content" style="display: none;"><ul class="org-ul">
+  <button class="org-drawer-toggle" onclick="toggleDrawer('drawer-Question-1')">Question ▼</button>
+  <div id="drawer-Question-1" class="org-drawer-content" style="display: none;"><ul class="org-ul">
 <li><b>Q</b>: how would you show that these sources are insufficient? (<b>Hint</b>:
 consider the \(\phi\) factor for the amount of mass released in the
 equations below)</li>
@@ -367,9 +344,9 @@ temperature until \(L_\mathrm{nuc} = L\).
 </div>
 </div>
 
-<div id="outline-container-org0bc7bc5" class="outline-3">
-<h3 id="org0bc7bc5"><a href="#org0bc7bc5">The nuclear timescale</a></h3>
-<div class="outline-text-3" id="text-org0bc7bc5">
+<div id="outline-container-the-nuclear-timescale" class="outline-3">
+<h3 id="the-nuclear-timescale"><a href="#the-nuclear-timescale">The nuclear timescale</a></h3>
+<div class="outline-text-3" id="text-org-element-16">
 <p>
 Naturally, nuclear energy generation consumes nuclear fuel: to provide
 \(L_\mathrm{nuc}\) the composition of the star slightly changes in time.
@@ -383,7 +360,7 @@ is the time it takes to lose the energy generated by nuclear
 reactions:
 </p>
 
-<div class="latex" id="org5cec42d">
+<div class="latex" id="org-element-17">
 \begin{equation}
 \tau_\mathrm{nuc} = \varphi f_\mathrm{burn} \frac{Mc^{2}}{L_\mathrm{nuc}} \equiv \varphi f_\mathrm{burn} \frac{Mc^{2}}{L_{}} \ \ ,
 \end{equation}
@@ -408,7 +385,7 @@ of helium 4 is \(m(^{4}He) = 4.0039 m_{u}\), so the fraction of rest mass of 4
 protons turning into a helium nucleus is:
 </p>
 
-<div class="latex" id="orgd8fa6f7">
+<div class="latex" id="org-element-18">
 \begin{equation}\label{eq:mass_defect}
 \varphi = \frac{4m_{p} - m(^{4}\mathrm{He})}{4m_{p}} = \frac{2.85 \times 10^{-2} m_{u} c^{2}}{4m_{p}} \simeq 0.007 \ \ .
 \end{equation}
@@ -420,7 +397,7 @@ Plugging in \(\phi\) and \(M_{☉}\) and \(L_{☉}\) we get for the nuclear
 timescale:
 </p>
 
-<div class="latex" id="org3dde96d">
+<div class="latex" id="org-element-19">
 \begin{equation}\label{eq:tau_nuc_scaling}
 \tau_\mathrm{nuc} \simeq 10^{10} \frac{f_\mathrm{burn}}{0.1} \frac{M}{M_{☉}} \frac{L}{L_{☉}} \ \mathrm{yr} \ \ .
 \end{equation}
@@ -432,7 +409,7 @@ So we now have estimates that allow us to see the complete
 ordering for the main <i>global</i> timescales for stellar evolution:
 </p>
 
-<div class="latex" id="org547c6b7">
+<div class="latex" id="org-element-20">
 \begin{equation}\label{eq:timescale_ordering}
 \tau_\mathrm{ff} \ll \tau_\mathrm{KH} \ll \tau_\mathrm{nuc} \ \ .
 \end{equation}
@@ -458,9 +435,9 @@ nuclear burning.
 </div>
 </div>
 
-<div id="outline-container-orgf35398a" class="outline-3">
-<h3 id="orgf35398a"><a href="#orgf35398a">The energy reservoir: binding energy per nucleon</a></h3>
-<div class="outline-text-3" id="text-orgf35398a">
+<div id="outline-container-the-energy-reservoir-binding-energy-per-nucleon" class="outline-3">
+<h3 id="the-energy-reservoir-binding-energy-per-nucleon"><a href="#the-energy-reservoir-binding-energy-per-nucleon">The energy reservoir: binding energy per nucleon</a></h3>
+<div class="outline-text-3" id="text-org-element-21">
 <p>
 The energy reservoir that stars tap into is the nuclear binding
 energy: nuclear reactions rearrange nucleons in nuclei to create more
@@ -470,7 +447,7 @@ nucleon of all nuclei in the periodic table:
 </p>
 
 
-<figure id="orgb10d81a">
+<figure id="org-element-22">
 <img src="./images/nuclear_binding.png" alt="nuclear_binding.png" width="100%">
 
 <figcaption><span class="figure-number">Figure 1: </span>Nuclear binding energy per nucleon as a function of atomic mass \(A=Z+N\), where \(Z\) is the number of protons and \(N\) the number of neutrons (therefore \(A\) is the total number of baryons in a given nucleus, and \(A\times m_{u}\) the mass). From <a href="https://etd.adm.unipi.it/theses/available/etd-05062015-125630/unrestricted/Thesis_colored_10052015.pdf">Renzo 2015</a>.</figcaption>
@@ -530,7 +507,7 @@ the sum of the masses of the \(Z\) protons (\(m_{p}\)) and \(N=A-Z\) neutrons
 (\(m_{n}\)) minus the mass of the nucleus (measured experimentally):
 </p>
 
-<div class="latex" id="org17cf7b9">
+<div class="latex" id="org-element-23">
 \begin{equation}
 B = \left(Zm_{p}+(A-Z)m_{n} - m_\mathrm{nucleus}\right)c^{2} \simeq \left(Zm_{H}+(A-Z)m_{n} - m_\mathrm{nucleus}\right)c^{2} >0 \ \ ,
 \end{equation}
@@ -572,16 +549,16 @@ quantities).
 </p>
 </div>
 
-<div id="outline-container-org3eb6f5a" class="outline-4">
-<h4 id="org3eb6f5a"><a href="#org3eb6f5a">Q-value</a></h4>
-<div class="outline-text-4" id="text-org3eb6f5a">
+<div id="outline-container-q-value" class="outline-4">
+<h4 id="q-value"><a href="#q-value">Q-value</a></h4>
+<div class="outline-text-4" id="text-org-element-24">
 <p>
 For any nuclear reaction that may happen \(a+X \rightarrow b+Y\) with \(a, b, X, Y\)
 generic particles, it is useful to define the so called \(Q\) value as the
 mass difference between the reagents and the products:
 </p>
 
-<div class="latex" id="orgb4af46e">
+<div class="latex" id="org-element-25">
 \begin{equation}
 Q = \left((m_{a} + m_{X}) -(m_{b} + m_{Y}) \right)c^{2} = \Delta\left(\frac{B}{A}\right) \ \ ,
 \end{equation}
@@ -608,7 +585,7 @@ The energy release by nuclear reaction per unit time and unit mass is
 just:
 </p>
 
-<div class="latex" id="orgad2bb07">
+<div class="latex" id="org-element-26">
 \begin{equation}\label{eq:eps_nuc}
 \varepsilon_\mathrm{nuc} = \sum_{i} \frac{Q_{i} r_{i}}{\rho} \ \ ,
 \end{equation}
@@ -629,9 +606,9 @@ that can occur in a star.
 </div>
 </div>
 
-<div id="outline-container-org05c9263" class="outline-3">
-<h3 id="org05c9263"><a href="#org05c9263">Variety of possible nuclear reactions</a></h3>
-<div class="outline-text-3" id="text-org05c9263">
+<div id="outline-container-variety-of-possible-nuclear-reactions" class="outline-3">
+<h3 id="variety-of-possible-nuclear-reactions"><a href="#variety-of-possible-nuclear-reactions">Variety of possible nuclear reactions</a></h3>
+<div class="outline-text-3" id="text-org-element-27">
 <p>
 A generic nuclear reaction \(X+a \rightarrow Y+b\) is often written as \(X(a,b)Y\)
 to make it easy to express chains of reactions, e.g.,
@@ -646,9 +623,9 @@ reactions.
 </p>
 </div>
 
-<div id="outline-container-org738f186" class="outline-4">
-<h4 id="org738f186"><a href="#org738f186">Charged-particles reactions</a></h4>
-<div class="outline-text-4" id="text-org738f186">
+<div id="outline-container-charged-particles-reactions" class="outline-4">
+<h4 id="charged-particles-reactions"><a href="#charged-particles-reactions">Charged-particles reactions</a></h4>
+<div class="outline-text-4" id="text-org-element-28">
 <p>
 When \(X\) and \(a\) are charged nuclei, then the reaction can only occur
 if something allows them to overcome the Coulomb repulsion. These can
@@ -659,7 +636,7 @@ particles (the distinction will come back later).
 <p>
 Example:
 </p>
-<div class="latex" id="org67854ca">
+<div class="latex" id="org-element-29">
 \begin{equation}
  ^{12}\mathrm{C}(\alpha,\gamma)^{16}\mathrm{O}
 \end{equation}
@@ -668,9 +645,9 @@ Example:
 </div>
 </div>
 
-<div id="outline-container-orgf633210" class="outline-4">
-<h4 id="orgf633210"><a href="#orgf633210">Reactions involving neutrons</a></h4>
-<div class="outline-text-4" id="text-orgf633210">
+<div id="outline-container-reactions-involving-neutrons" class="outline-4">
+<h4 id="reactions-involving-neutrons"><a href="#reactions-involving-neutrons">Reactions involving neutrons</a></h4>
+<div class="outline-text-4" id="text-org-element-30">
 <p>
 In this case the force involved is the strong force, and there is no
 Coulomb repulsion to overcome. However, these require an environment
@@ -704,9 +681,9 @@ rotating massive star).
 </div>
 </div>
 
-<div id="outline-container-orgd29af64" class="outline-4">
-<h4 id="orgd29af64"><a href="#orgd29af64">Weak reactions</a></h4>
-<div class="outline-text-4" id="text-orgd29af64">
+<div id="outline-container-weak-reactions" class="outline-4">
+<h4 id="weak-reactions"><a href="#weak-reactions">Weak reactions</a></h4>
+<div class="outline-text-4" id="text-org-element-31">
 <p>
 These can typically be spotted by the presence of a neutrino and/or
 the conversion of a nucleon from one eigenstate of isospin to another
@@ -717,7 +694,7 @@ viceversa).
 <p>
 Example:
 </p>
-<div class="latex" id="org1a1c54d">
+<div class="latex" id="org-element-32">
 \begin{equation}
 p+e^{-} \rightarrow n+\nu_{e} \ \ \mathrm{or} \ \ p(e^{-},\nu_{e})n
 \end{equation}
@@ -726,9 +703,9 @@ p+e^{-} \rightarrow n+\nu_{e} \ \ \mathrm{or} \ \ p(e^{-},\nu_{e})n
 </div>
 </div>
 
-<div id="outline-container-org44ec2f8" class="outline-4">
-<h4 id="org44ec2f8"><a href="#org44ec2f8">Photodisintegrations</a></h4>
-<div class="outline-text-4" id="text-org44ec2f8">
+<div id="outline-container-photodisintegrations" class="outline-4">
+<h4 id="photodisintegrations"><a href="#photodisintegrations">Photodisintegrations</a></h4>
+<div class="outline-text-4" id="text-org-element-33">
 <p>
 When one of the particles is a photon and the outgoing particles can
 be seen as "fragments" of the ingoing nucleus. These require very
@@ -741,7 +718,7 @@ evolution.
 <p>
 Example:
 </p>
-<div class="latex" id="orgd764687">
+<div class="latex" id="org-element-34">
 \begin{equation}
 ^{56}\mathrm{Fe}+\gamma \rightarrow 14\alpha
 \end{equation}
@@ -751,16 +728,16 @@ Example:
 </div>
 </div>
 
-<div id="outline-container-orgc274d88" class="outline-3">
-<h3 id="orgc274d88"><a href="#orgc274d88">Nuclear reactions in stars</a></h3>
-<div class="outline-text-3" id="text-orgc274d88">
+<div id="outline-container-nuclear-reactions-in-stars" class="outline-3">
+<h3 id="nuclear-reactions-in-stars"><a href="#nuclear-reactions-in-stars">Nuclear reactions in stars</a></h3>
+<div class="outline-text-3" id="text-org-element-35">
 <p>
 All of the types of reactions listed above (and more) can occur at
 some point in the evolution (and explosion!) of stars. For example,
 during hydrogen core burning (which we have used to estimate &phi; and
 thus \(\tau_\mathrm{nuc}\)) the star burns 4 protons into &alpha; particles:
 </p>
-<div class="latex" id="orgd4597f0">
+<div class="latex" id="org-element-36">
 \begin{equation}\label{eq:overall_h_burn}
 4^{1}\mathrm{H}\rightarrow^{4}\mathrm{He}+2e^{+} + 2\nu_{e} \ \ ,
 \end{equation}
@@ -821,9 +798,9 @@ the slowest rate and last the longest.
 </div>
 </div>
 
-<div id="outline-container-org16051f5" class="outline-3">
-<h3 id="org16051f5"><a href="#org16051f5">Charged particle reactions</a></h3>
-<div class="outline-text-3" id="text-org16051f5">
+<div id="outline-container-charged-particle-reactions" class="outline-3">
+<h3 id="charged-particle-reactions"><a href="#charged-particle-reactions">Charged particle reactions</a></h3>
+<div class="outline-text-3" id="text-org-element-37">
 <p>
 For the rest of this lecture we will focus mostly on charged particle
 reactions: as we just saw these are involved since H core burning, and
@@ -834,9 +811,9 @@ discovery that the energy source in stars are nuclear reactions.
 </p>
 </div>
 
-<div id="outline-container-orgc77dd5e" class="outline-4">
-<h4 id="orgc77dd5e"><a href="#orgc77dd5e">Bohr's approximation</a></h4>
-<div class="outline-text-4" id="text-orgc77dd5e">
+<div id="outline-container-bohr-s-approximation" class="outline-4">
+<h4 id="bohr-s-approximation"><a href="#bohr-s-approximation">Bohr's approximation</a></h4>
+<div class="outline-text-4" id="text-org-element-38">
 <p>
 To discuss them, we will implicitly use <i>Bohr's approximation</i>, which is
 not a completely accurate physical picture, but it is intuitive and
@@ -846,7 +823,7 @@ approximation, we treat the generic reaction between charged particles
 compound nucleus \(C\):
 </p>
 
-<div class="latex" id="org9f05d60">
+<div class="latex" id="org-element-39">
 \begin{equation}
 X + a \rightarrow C^{\star} \rightarrow Y + b \ \ ,
 \end{equation}
@@ -882,7 +859,7 @@ the experimental result on the size of nuclei (something that also
 needs to be explained by models of the strong force):
 </p>
 
-<div class="latex" id="orgedce2f7">
+<div class="latex" id="org-element-40">
 \begin{equation}
 r_{n} = r_{0} A^{1/3} \simeq 1.4 \times 10^{-13} A^{1/3} \ \mathrm{cm} \Rightarrow \tau_\mathrm{light\ cross} = \frac{r_{n}}{c} \simeq 10^{-23} A^{1/3} \ \mathrm{s} \ \ .
 \end{equation}
@@ -919,7 +896,7 @@ To understand how two charged nuclei, both with positive charge, can
 governing their interaction:
 </p>
 
-<div class="latex" id="org071e77c">
+<div class="latex" id="org-element-41">
 \begin{equation}
 V \equiv V(r) = V_\mathrm{EM} + V_\mathrm{nuc} + \frac{\ell(\ell+1)\hbar^{2}}{2m_{aX}r^{2}} \ \ ,
 \end{equation}
@@ -938,13 +915,13 @@ are going to have \(\ell = 0\), that is head-on collisions between \(a\) and \(X
 </div>
 </div>
 
-<div id="outline-container-orgf76426b" class="outline-4">
-<h4 id="orgf76426b"><a href="#orgf76426b">Electromagnetic potential term</a></h4>
-<div class="outline-text-4" id="text-orgf76426b">
+<div id="outline-container-electromagnetic-potential-term" class="outline-4">
+<h4 id="electromagnetic-potential-term"><a href="#electromagnetic-potential-term">Electromagnetic potential term</a></h4>
+<div class="outline-text-4" id="text-org-element-42">
 <p>
 For the electromagnetic term we can write:
 </p>
-<div class="latex" id="org9947f00">
+<div class="latex" id="org-element-43">
 \begin{equation}
 V_\mathrm{EM} = \frac{Z_{a}Z_{X}e^{2}}{r} - \{\mathrm{electron\ screening\ term}\} \ \ ,
 \end{equation}
@@ -959,7 +936,7 @@ surrounded by a "cloud" of electrons of radius of the order of the
 Debye length of the plasma:
 </p>
 
-<div class="latex" id="org2c40503">
+<div class="latex" id="org-element-44">
 \begin{equation}
 r_\mathrm{Debye} = \sqrt{\frac{k_{B}T}{4\pi e N\chi}} \ \ ,
 \end{equation}
@@ -978,16 +955,16 @@ screening reduces the Coulomb repulsion between the nuclei.
 </div>
 </div>
 
-<div id="outline-container-org20e48b8" class="outline-4">
-<h4 id="org20e48b8"><a href="#org20e48b8">Nuclear potential term</a></h4>
-<div class="outline-text-4" id="text-org20e48b8">
+<div id="outline-container-nuclear-potential-term" class="outline-4">
+<h4 id="nuclear-potential-term"><a href="#nuclear-potential-term">Nuclear potential term</a></h4>
+<div class="outline-text-4" id="text-org-element-45">
 <p>
 Finally, for the nuclear potential, there isn't a well known
 functional form from first principles, and it is typically derived
 experimentally. This is because the interactions between nucleons
 (=protons and neutrons) cannot be treated in a perturbative theory of
 the strong force. For more details than necessary to understand
-thermonuclear reactions, see also <a href="#org0f258f4">this appendix</a> and nuclear physics
+thermonuclear reactions, see also <a href="#org-element-46">this appendix</a> and nuclear physics
 textbooks such as "<i>Introductory nuclear physics</i>" by K. Krane.
 </p>
 
@@ -1003,9 +980,9 @@ distances (the strong force has a short range).
 </div>
 </div>
 
-<div id="outline-container-org357c4c8" class="outline-4">
-<h4 id="org357c4c8"><a href="#org357c4c8">Combining electromagnetic and nuclear potential</a></h4>
-<div class="outline-text-4" id="text-org357c4c8">
+<div id="outline-container-combining-electromagnetic-and-nuclear-potential" class="outline-4">
+<h4 id="combining-electromagnetic-and-nuclear-potential"><a href="#combining-electromagnetic-and-nuclear-potential">Combining electromagnetic and nuclear potential</a></h4>
+<div class="outline-text-4" id="text-org-element-47">
 <p>
 Putting things together we can sketch the following graph for the
 potential felt by particle a and generated by the strong and
@@ -1031,7 +1008,7 @@ barrier.</li>
 </ul>
 
 
-<figure id="org47f6e64">
+<figure id="org-element-48">
 <img src="./images/nuc_pot.png" alt="nuc_pot.png" width="100%">
 
 <figcaption><span class="figure-number">Figure 2: </span>Top: Interaction potential generated by the nucleus \(X\) and felt by the nucleus \(a\) considering nuclear and electromagnetic interactions. For \(r>r_\mathrm{Debye}\) the potential deviates from a \(r^{-1}\) Coulomb potential (sketched in red) because of electron screening. The gray vertical band marks the repulsive core of the nuclear force (necessary to obtain a constant nuclear density), purple shading marks metastable states of the compound nucleus \(C^{\star}\) where \(a\) is trapped inside the nuclear potential well of \(X\). Bottom: qualitative sketch of the wave function of particle \(a\) in the potential caused by particle \(X\) (blue). The region between \(r_{n}\) and \(r_{c}\) is the "classically forbidden region". The wavefunction needs to be smooth at both those radii and the solution where quantum tunnelling succeeds allow for a large amplitude of the wave function inside \(r<r_{n}\). Modified from Fig. 6.2 of Onno Pols' lecture notes.</figcaption>
@@ -1040,9 +1017,9 @@ barrier.</li>
 </div>
 
 
-<div id="outline-container-orgedb752c" class="outline-4">
-<h4 id="orgedb752c"><a href="#orgedb752c">Impossibility of nuclear reactions without QM</a></h4>
-<div class="outline-text-4" id="text-orgedb752c">
+<div id="outline-container-impossibility-of-nuclear-reactions-without-qm" class="outline-4">
+<h4 id="impossibility-of-nuclear-reactions-without-qm"><a href="#impossibility-of-nuclear-reactions-without-qm">Impossibility of nuclear reactions without QM</a></h4>
+<div class="outline-text-4" id="text-org-element-49">
 <p>
 Without QM, for a nuclear reaction to happen the two charged particles
 would need a relative energy at infinity higher than the maximum of
@@ -1050,7 +1027,7 @@ the Coulomb barrier, so that \(r_{c} \leq r_{n}\). Assuming the energy is just
 coming from the thermal energy of the gas:
 </p>
 
-<div class="latex" id="orgb85bb1e">
+<div class="latex" id="org-element-50">
 \begin{equation}
 E \simeq k_{B} T \geq E_{C} = \frac{Z_{a}Z_{X}e^{2}}{r_{n}} \geq \frac{e^{2}}{r_{0}} \Rightarrow T\geq \frac{e^{2}}{r_{0} k_{B}} \simeq 10^{10} \ \mathrm{K} \ \ ,
 \end{equation}
@@ -1075,9 +1052,9 @@ than nuclear reactions in stars</i>.
 </div>
 </div>
 
-<div id="outline-container-org8b972d2" class="outline-4">
-<h4 id="org8b972d2"><a href="#org8b972d2">Charged particles reactions tunneling through the Coulomb barrier</a></h4>
-<div class="outline-text-4" id="text-org8b972d2">
+<div id="outline-container-charged-particles-reactions-tunneling-through-the-coulomb-barrier" class="outline-4">
+<h4 id="charged-particles-reactions-tunneling-through-the-coulomb-barrier"><a href="#charged-particles-reactions-tunneling-through-the-coulomb-barrier">Charged particles reactions tunneling through the Coulomb barrier</a></h4>
+<div class="outline-text-4" id="text-org-element-51">
 <p>
 The piece of puzzle that allows for charged particles nuclear
 reactions in stars is the QM <i>tunnel effect</i>, which was studied in the
@@ -1146,7 +1123,7 @@ of a Lorentzian with width determined by the energy width of the
 metastable state \(C^{\star{}}\):
 </p>
 
-<div class="latex" id="org9bc8e8a">
+<div class="latex" id="org-element-52">
 \begin{equation}
 \sigma_\mathrm{nuc} \propto \frac{1}{(E-E_\mathrm{metastable})^{2} +\left(\frac{\Delta E}{2}\right)^{2}} \ \ .
 \end{equation}
@@ -1163,7 +1140,7 @@ neglect the energy dependence of \(\sigma_\mathrm{nuc}\).
 Finally, actually carrying out the calculation give a probability of
 tunneling (<a href="https://ui.adsabs.harvard.edu/abs/1928ZPhy...51..204G/abstract">Gamow 1928</a>)
 </p>
-<div class="latex" id="orgc7e08ec">
+<div class="latex" id="org-element-53">
 \begin{equation}
 P\propto \exp\left(-\int_{r_{n}}^{r_c} \frac{\sqrt{2m_{aX} (V(r) - E)}}{\hbar} dr \right) \equiv P_{0} \exp\left(-\frac{b}{\sqrt{E}}\right) \ \ ,
 \end{equation}
@@ -1177,7 +1154,7 @@ with \(b = 2\pi Z_{a} Z_{X} e^{2} (m_{aX}/2)^{1/2} / \hbar\).
 <b>N.B.:</b> Nuclear resonances allow stars to work, and for example the
 existence of a specific resonance in the nucleus of \(^{12}\mathrm{C}\)
 (Hoyle state) is what allows helium to burn into carbon and ultimately
-allows for life (as we will see in more detail in the <a href="./notes-lecture-nuclear-cycles.html#org52d677f">next lecture</a>)!
+allows for life (as we will see in more detail in the <a href="./notes-lecture-nuclear-cycles.html#org-element-54">next lecture</a>)!
 </p>
 
 <p>
@@ -1190,9 +1167,9 @@ that would change significantly the rate.
 </div>
 </div>
 
-<div id="outline-container-org52e1faf" class="outline-3">
-<h3 id="org52e1faf"><a href="#org52e1faf">Thermonuclear reaction rates</a></h3>
-<div class="outline-text-3" id="text-org52e1faf">
+<div id="outline-container-thermonuclear-reaction-rates" class="outline-3">
+<h3 id="thermonuclear-reaction-rates"><a href="#thermonuclear-reaction-rates">Thermonuclear reaction rates</a></h3>
+<div class="outline-text-3" id="text-org-element-55">
 <p>
 Now that we have discussed how a charged particle nuclear reaction is
 possible via quantum tunneling through the Coulomb barrier, to
@@ -1230,7 +1207,7 @@ With these ingredients we can make a rate of the number of reactions
 \(X(a,b)Y\) per unit time and volume with:
 </p>
 
-<div class="latex" id="org1d564c1">
+<div class="latex" id="org-element-56">
 \begin{equation}
 r_{aX} = \sigma(v) v n_{a} n_{X}  \ \ ,
 \end{equation}
@@ -1242,7 +1219,7 @@ there are reactions among identical particles (for example the weak
 reaction \(p+p\rightarrow D+e^{+} +\nu_{e}\)). In such cases we should make sure to not
 double count particle pairs, so we can write more generally:
 </p>
-<div class="latex" id="org73e169a">
+<div class="latex" id="org-element-57">
 \begin{equation}
 r_{aX} = \frac{1}{1+\delta_{aX}} \sigma(v) v n_{a} n_{X}  \ \ ,
 \end{equation}
@@ -1264,7 +1241,7 @@ the phase space densities \(n_{i} \rightarrow \int dn_{i}(v)\) (<b>N.B.</b>: we 
 already done this many times when deriving the EOS, just in momentum
 instead of velocity), our expression for the rate becomes:
 </p>
-<div class="latex" id="org98ded65">
+<div class="latex" id="org-element-58">
 \begin{equation}
 r_{aX} = \frac{1}{1+\delta_{aX}}\int\int dn_{a}(v_{a}) dn_{X}(v_{X}) \sigma(v)v  \ \ ,
 \end{equation}
@@ -1277,8 +1254,8 @@ environment.
 </p>
 
 <div class="org-drawer-container">
-  <button class="org-drawer-toggle" onclick="toggleDrawer('drawer-Question-2314')">Question ▼</button>
-  <div id="drawer-Question-2314" class="org-drawer-content" style="display: none;"><ul class="org-ul">
+  <button class="org-drawer-toggle" onclick="toggleDrawer('drawer-Question-2')">Question ▼</button>
+  <div id="drawer-Question-2" class="org-drawer-content" style="display: none;"><ul class="org-ul">
 <li><b>Q</b>: can you think of stellar situations where there is burning in a
 (partially) degenerate environment?</li>
 </ul>
@@ -1293,7 +1270,7 @@ that the product of two Maxwell-Boltzmann distribution keeps the same
 functional form by changing variables to express things in the center
 of mass frame of the \(a+X\) system, yielding:
 </p>
-<div class="latex" id="org5d9e851">
+<div class="latex" id="org-element-59">
 \begin{equation}
 r_{aX} = \frac{1}{1+\delta_{aX}}4\pi N_{a}N_{X} \left(\frac{m_{aX}}{2\pi k_{B}T}\right)^{3/2}\int_{0}^{+\infty}\exp\left(-\frac{m_{aX}v^{2}}{k_{B}T}\right) \sigma(v)v v^{2}dv  \ \ .
 \end{equation}
@@ -1321,7 +1298,7 @@ velocities of \(\langle\sigma(v)v\rangle\), which has the dimension of [L<sup>2<
 Often, this average quantity is approximated as a powerlaw from the
 known value at a certain temperature \(T_{0}\).
 </p>
-<div class="latex" id="orgc24e636">
+<div class="latex" id="org-element-60">
 \begin{equation}
 \langle \sigma(v)v \rangle = \langle \sigma(v)v \rangle_{T_{0}} \left(\frac{T}{T_{0}}\right)^{\xi}
 \end{equation}
@@ -1352,7 +1329,7 @@ screening!). Thus \(v=(2E/m_{aX})^{1/2}\), and we can also use that the cross
 section \(\sigma\) is proportional to the tunneling probability so \(\sigma(E)\propto
 exp(-b/E^{1/2})\):
 </p>
-<div class="latex" id="orgee8939e">
+<div class="latex" id="org-element-61">
 \begin{equation}
 r_{aX} \propto \frac{N_{a}N_{X}}{1+\delta_{aX}}\sqrt{\frac{2}{\pi}}\frac{1}{k_{B}T}\int_{0}^{+\infty}\exp\left(-\frac{E}{k_{B}T}-\frac{b}{\sqrt{E}}\right)  \ \ .
 \end{equation}
@@ -1365,7 +1342,7 @@ is going to peak:
 </p>
 
 
-<figure id="org1e77ed3">
+<figure id="org-element-62">
 <img src="./images/gamow_peak.png" alt="gamow_peak.png" width="75%">
 
 <figcaption><span class="figure-number">Figure 3: </span>Sketch of the "Gamow peak" resulting from the combination of the Maxwell-Boltzmann distribution of particles in (thermal) energy and the tunneling probability through the Coulomb repulsion. Credits: L. Trache.</figcaption>
@@ -1384,9 +1361,9 @@ specific energy!
 </div>
 </div>
 
-<div id="outline-container-org057b01d" class="outline-2">
-<h2 id="org057b01d"><a href="#org057b01d">Nuclear physics in stellar evolution codes</a></h2>
-<div class="outline-text-2" id="text-org057b01d">
+<div id="outline-container-nuclear-physics-in-stellar-evolution-codes" class="outline-2">
+<h2 id="nuclear-physics-in-stellar-evolution-codes"><a href="#nuclear-physics-in-stellar-evolution-codes">Nuclear physics in stellar evolution codes</a></h2>
+<div class="outline-text-2" id="text-org-element-63">
 <p>
 When trying to model the structure and evolution of a star, we cannot
 carry out all the integrals we wrote down here on-the-fly. Instead, we
@@ -1405,9 +1382,9 @@ example <a href="https://ui.adsabs.harvard.edu/abs/2023ApJ...945...41S/abstract"
 </div>
 </div>
 
-<div id="outline-container-org56e9e4e" class="outline-2">
-<h2 id="org56e9e4e"><a href="#org56e9e4e">Composition changes and stellar <i>evolution</i> term</a></h2>
-<div class="outline-text-2" id="text-org56e9e4e">
+<div id="outline-container-composition-changes-and-stellar-i-evolution-i-term" class="outline-2">
+<h2 id="composition-changes-and-stellar-i-evolution-i-term"><a href="#composition-changes-and-stellar-i-evolution-i-term">Composition changes and stellar <i>evolution</i> term</a></h2>
+<div class="outline-text-2" id="text-org-element-64">
 <p>
 We already wrote Eq. \ref{eq:eps_nuc} for the energy generation term
 \(\varepsilon_\mathrm{nuc}\) entering in the stellar structure equation describing
@@ -1434,7 +1411,7 @@ reactions $j+k&rarr; i+&#x2026;$ that have \(i\) as an outgoing particle, minus
 the <i>destruction</i> rate \(i+j\rightarrow \cdots\):
 </p>
 
-<div class="latex" id="org5272cf6">
+<div class="latex" id="org-element-65">
 \begin{equation}
 \frac{dn_{i}}{dt} = \sum_{k,l} r_{k,l} - \sum_{i,j} (1+\delta_{ij})r_{ij} \ \,
 \end{equation}
@@ -1451,7 +1428,7 @@ the rates \(r_{ij}\) and \(r_{kl}\) we can rewrite this as a function of
 variables that already appear in our stellar structure equations:
 </p>
 
-<div class="latex" id="org1a9d51a">
+<div class="latex" id="org-element-66">
 \begin{equation}
 \frac{dX_{i}}{dt} = A_{i}\frac{m_{u}}{\rho}\left(\sum_{k,l} r_{k,l} - \sum_{i,j} (1+\delta_{ij})r_{ij}\right) \equiv \frac{dX_{i}}{dt}(T,\rho, {X_{j}}) \ \ ,
 \end{equation}
@@ -1472,9 +1449,9 @@ only the <i>structure</i> of stars but also their long-term <i>evolution</i>.
 </div>
 </div>
 
-<div id="outline-container-org0f258f4" class="outline-2">
-<h2 id="org0f258f4"><a href="#org0f258f4">Appendix: Nuclear liquid drop model</a></h2>
-<div class="outline-text-2" id="text-org0f258f4">
+<div id="outline-container-appendix-nuclear-liquid-drop-model" class="outline-2">
+<h2 id="appendix-nuclear-liquid-drop-model"><a href="#appendix-nuclear-liquid-drop-model">Appendix: Nuclear liquid drop model</a></h2>
+<div class="outline-text-2" id="text-org-element-67">
 <p>
 In the 1930s Gamow, and later Bethe, Weiszacker and collaborators
 developed a model of the nuclear interactions based on the analogy
@@ -1497,7 +1474,7 @@ determined parameters like this model.
 In the liquid drop model, the nuclear binding energy can be expressed
 as:
 </p>
-<div class="latex" id="org7c3593a">
+<div class="latex" id="org-element-68">
 \begin{equation}
 \mathrm{BE}_\mathrm{nuc} = a_\mathrm{vol} A - a_\mathrm{surf} A^{2/3} - a_\mathrm{Coulomb} \frac{Z^{2}}{A^{1/3}} - a_\mathrm{sym} \frac{(N-Z)^{2}}{A} - a_\mathrm{coupling} \ \ ,
 \end{equation}
@@ -1528,7 +1505,7 @@ fill their electron levels to be stable), so they tend to prefer
 having an even number for each, one spin up and one spin down in
 each energy level. (<b>N.B.:</b> this means that there are some number of
 nucleons for which nuclei are particularly stable, these are the
-"magic numbers" that will come back in the <a href="./notes-lecture-nuclear-cycles.html#org08fec5f">next lecture</a>)</li>
+"magic numbers" that will come back in the <a href="./notes-lecture-nuclear-cycles.html#org-element-69">next lecture</a>)</li>
 </ul>
 </div>
 </div>
@@ -1538,7 +1515,7 @@ nucleons for which nuclei are particularly stable, these are the
   <hr>
   <a href="#light-dark-toggle"><i id="light-dark-toggle"><i class="fa-solid fa-circle-half-stroke"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="notes-lecture-convection.html"><i class="fa-solid fa-arrow-left" style="font-size:16px"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="#top"><i class="fa-solid fa-arrow-up" style="font-size:16px"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="notes-lecture-nuclear-cycles.html"><i class="fa-solid fa-arrow-right" style="font-size:16px"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="https://github.com/mathren/stellar_phys_545"><i class="fa-brands fa-github" style="font-size:16px"></i></a><hr>
   <br>
-  Last updated on 6 April 2026 <br>
+  Last updated on 11 April 2026 <br>
   Made with Emacs 29.2 - Org mode 9.6.15
   <br>
 </div>

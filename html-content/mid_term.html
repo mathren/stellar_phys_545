@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 2026-04-06 Mon 12:15 -->
+<!-- 2026-04-11 Sat 14:23 -->
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>ASTR/PYTS 545 Mid-term take-home exam</title>
@@ -92,6 +92,14 @@
 
 <!-- toggle drawers -->
 <script>
+  function toggleDrawer(id) {
+      const drawer = document.getElementById(id);
+      drawer.style.display = drawer.style.display === "none" ? "block" : "none";
+  }
+</script>
+
+<!-- toggle dark mode -->
+<script>
   window.onload = () => {
       const toggleButton = document.getElementById("light-dark-toggle");
       const body = document.body;
@@ -118,44 +126,13 @@
       });
   };
 </script>
-
-<!-- jump to nearest date in lectures.html -->
-<script>
-document.addEventListener("DOMContentLoaded", () => {
-  const headers = [...document.querySelectorAll("h1, h2, h3, h4, h5, h6")];
-  const today = new Date();
-  today.setHours(0, 0, 0, 0);
-
-  let closest = null;
-  let closestDiff = Infinity;
-
-  for (const h of headers) {
-    const ts = h.querySelector("span.timestamp");
-    if (!ts) continue;
-
-    const match = ts.textContent.match(/(\d{4}-\d{2}-\d{2})/);
-    if (!match) continue;
-
-    const parsed = new Date(match[1] + "T00:00:00");
-    const diff = Math.abs(parsed - today);
-
-    if (diff < closestDiff) {
-      closestDiff = diff;
-      closest = h;
-    }
-  }
-
-  if (closest) closest.scrollIntoView({ behavior: "smooth", block: "start" });
-});
-</script>
-
 <!-- end scripts-->
 </div>
 <div id="content" class="content">
 
-<div id="outline-container-org6a1e106" class="outline-2">
-<h2 id="org6a1e106"><a href="#org6a1e106">Mid-term exam</a></h2>
-<div class="outline-text-2" id="text-org6a1e106">
+<div id="outline-container-mid-term-exam" class="outline-2">
+<h2 id="mid-term-exam"><a href="#mid-term-exam">Mid-term exam</a></h2>
+<div class="outline-text-2" id="text-org-element-1">
 <p>
 This mid-term is a take-home exam due on <b><span class="timestamp-wrapper"><span class="timestamp">2026-03-30 Mon</span></span></b>. All
 assignments can be completed using data generated with <code>MESA-web</code>
@@ -171,20 +148,20 @@ in performing numerical experiments to answer the questions.
 </p>
 </div>
 
-<div id="outline-container-org9b9b7a2" class="outline-3">
-<h3 id="org9b9b7a2"><a href="#org9b9b7a2">What physics drives the evolution of the stellar radius?</a></h3>
-<div class="outline-text-3" id="text-org9b9b7a2">
+<div id="outline-container-what-physics-drives-the-evolution-of-the-stellar-radius" class="outline-3">
+<h3 id="what-physics-drives-the-evolution-of-the-stellar-radius"><a href="#what-physics-drives-the-evolution-of-the-stellar-radius">What physics drives the evolution of the stellar radius?</a></h3>
+<div class="outline-text-3" id="text-what-physics-drives-the-evolution-of-the-stellar-radius">
 </div>
-<div id="outline-container-orgadfed64" class="outline-4">
-<h4 id="orgadfed64"><a href="#orgadfed64">A simple model of the Sun</a></h4>
-<div class="outline-text-4" id="text-orgadfed64">
+<div id="outline-container-a-simple-model-of-the-sun" class="outline-4">
+<h4 id="a-simple-model-of-the-sun"><a href="#a-simple-model-of-the-sun">A simple model of the Sun</a></h4>
+<div class="outline-text-4" id="text-org-element-2">
 <p>
 Run a model of a \(1M_{☉}\) star until 14Gyr.
 </p>
 
 <div class="org-drawer-container">
-  <button class="org-drawer-toggle" onclick="toggleDrawer('drawer-Hint-8133')">Hint ▼</button>
-  <div id="drawer-Hint-8133" class="org-drawer-content" style="display: none;"><p>
+  <button class="org-drawer-toggle" onclick="toggleDrawer('drawer-Hint-1')">Hint ▼</button>
+  <div id="drawer-Hint-1" class="org-drawer-content" style="display: none;"><p>
 You may want to change the <code>Detailed profile output frequency</code> under the
 <code>General</code> options to get enough snapshots of the internal structure of
 your stellar model.
@@ -209,8 +186,8 @@ with the Sun today.</li>
 </ol>
 
 <div class="org-drawer-container">
-  <button class="org-drawer-toggle" onclick="toggleDrawer('drawer-Hint-4')">Hint ▼</button>
-  <div id="drawer-Hint-4" class="org-drawer-content" style="display: none;"><p>
+  <button class="org-drawer-toggle" onclick="toggleDrawer('drawer-Hint-2')">Hint ▼</button>
+  <div id="drawer-Hint-2" class="org-drawer-content" style="display: none;"><p>
 For the bonus task, you can help yourself searching <a href="https://ui.adsabs.harvard.edu/">NASA/ADS</a> to search
 for papers modeling the Sun with MESA.
 </p>
@@ -219,9 +196,9 @@ for papers modeling the Sun with MESA.
 </div>
 </div>
 
-<div id="outline-container-org5f59555" class="outline-4">
-<h4 id="org5f59555"><a href="#org5f59555">Stellar evolution</a></h4>
-<div class="outline-text-4" id="text-org5f59555">
+<div id="outline-container-stellar-evolution" class="outline-4">
+<h4 id="stellar-evolution"><a href="#stellar-evolution">Stellar evolution</a></h4>
+<div class="outline-text-4" id="text-org-element-3">
 <p>
 The evolution of a star is mostly driven by the thermonuclear
 conversion of fuel in the core, which changes (on a nuclear timescale)
@@ -259,9 +236,9 @@ Compare the radial evolution of the four (or five) models at end.
 </div>
 </div>
 
-<div id="outline-container-orgd2dd54e" class="outline-4">
-<h4 id="orgd2dd54e"><a href="#orgd2dd54e">Metallicity variations</a></h4>
-<div class="outline-text-4" id="text-orgd2dd54e">
+<div id="outline-container-metallicity-variations" class="outline-4">
+<h4 id="metallicity-variations"><a href="#metallicity-variations">Metallicity variations</a></h4>
+<div class="outline-text-4" id="text-org-element-4">
 <p>
 Now run models of a 1M<sub>☉</sub> star with normal physics assumptions (<i>not</i>
 neglecting chemical evolution and/or energy release) varying the
@@ -281,8 +258,8 @@ analytic estimate and confront it quantitatively with your models</li>
 </ol>
 
 <div class="org-drawer-container">
-  <button class="org-drawer-toggle" onclick="toggleDrawer('drawer-Debugging-7559')">Debugging ▼</button>
-  <div id="drawer-Debugging-7559" class="org-drawer-content" style="display: none;"><p>
+  <button class="org-drawer-toggle" onclick="toggleDrawer('drawer-Debugging-3')">Debugging ▼</button>
+  <div id="drawer-Debugging-3" class="org-drawer-content" style="display: none;"><p>
 In case you run into issues with producing the MESA models, first try
 searching the web (specifically the <a href="http://user.astro.wisc.edu/~townsend/static.php?ref=mesa-web">MESA-web documentation</a>, <a href="https://docs.mesastar.org/en/25.12.1/">MESA
 documentation</a>, and <a href="https://lists.mesastar.org/pipermail/mesa-users/">MESA mailing list archive</a>). It is also acceptable
@@ -295,9 +272,9 @@ helps - just describe it in your answers!
 </div>
 </div>
 
-<div id="outline-container-org466e89c" class="outline-3">
-<h3 id="org466e89c"><a href="#org466e89c">Core evolution: \(T(\rho)\) diagrams</a></h3>
-<div class="outline-text-3" id="text-org466e89c">
+<div id="outline-container-core-evolution-t-rho-diagrams" class="outline-3">
+<h3 id="core-evolution-t-rho-diagrams"><a href="#core-evolution-t-rho-diagrams">Core evolution: \(T(\rho)\) diagrams</a></h3>
+<div class="outline-text-3" id="text-org-element-5">
 <p>
 We have discussed extensively Hertzsprung-Russel diagrams, which give
 information on the <i>surface properties</i> of a star (\(L\),
@@ -338,15 +315,15 @@ based on these calculations?</li>
 </ol>
 
 
-<figure id="org2a1af6d">
+<figure id="org-element-6">
 <img src="./images/TcRhoc.png" alt="TcRhoc.png" width="100%">
 
 <figcaption><span class="figure-number">Figure 1: </span>Central temperature vs. central density for a grid of <code>MESA</code> models.</figcaption>
 </figure>
 
 <div class="org-drawer-container">
-  <button class="org-drawer-toggle" onclick="toggleDrawer('drawer-Hint-5313')">Hint ▼</button>
-  <div id="drawer-Hint-5313" class="org-drawer-content" style="display: none;"><p>
+  <button class="org-drawer-toggle" onclick="toggleDrawer('drawer-Hint-4')">Hint ▼</button>
+  <div id="drawer-Hint-4" class="org-drawer-content" style="display: none;"><p>
 The figure corresponds to the bottom panel of Fig. 22 in <a href="https://ui.adsabs.harvard.edu/abs/2011ApJS..192....3P/abstract">Paxton et al.
 2011</a>. However, this is a code-release paper describing the
 capabilities of <code>MESA</code> circa 2010-2011, and does not focus on the
@@ -356,8 +333,8 @@ physical explanation of the models exhibited.
 </div>
 
 <div class="org-drawer-container">
-  <button class="org-drawer-toggle" onclick="toggleDrawer('drawer-Hint-7898')">Hint ▼</button>
-  <div id="drawer-Hint-7898" class="org-drawer-content" style="display: none;"><p>
+  <button class="org-drawer-toggle" onclick="toggleDrawer('drawer-Hint-5')">Hint ▼</button>
+  <div id="drawer-Hint-5" class="org-drawer-content" style="display: none;"><p>
 You may want to run your own model of certain masses (e.g., with
 <code>MESA-web</code>), confirm the qualitative behavior is similar to the tracks
 shown above, and use your own model to investigate the answers to the
@@ -369,16 +346,16 @@ numerical experiment to answer.
 </div>
 </div>
 
-<div id="outline-container-org8835c39" class="outline-3">
-<h3 id="org8835c39"><a href="#org8835c39">Kippenhahn diagram</a></h3>
-<div class="outline-text-3" id="text-org8835c39">
+<div id="outline-container-kippenhahn-diagram" class="outline-3">
+<h3 id="kippenhahn-diagram"><a href="#kippenhahn-diagram">Kippenhahn diagram</a></h3>
+<div class="outline-text-3" id="text-org-element-7">
 <p>
 Another important way to visualize the internal evolution of a star
 are Kippenhahn diagrams. Consider the following:
 </p>
 
 
-<figure id="orgcb631df">
+<figure id="org-element-8">
 <img src="./images/conv_000800.png" alt="conv_000800.png" width="100%">
 
 <figcaption><span class="figure-number">Figure 2: </span>Kippenhahn diagram auto-generated by <code>MESA</code> (see <a href="https://github.com/mathren/stellar_phys_545/blob/main/MESA_files/mid_term_star.tar.xz">setup for MESA r24.08.1</a>). Labels in between the x axis and its label indicate the meaning of the colors: light blue indicates convection, white is for overshooting, dark blue indicates energy losses by cooling \(\varepsilon<0\), red indicates energy generation \(\varepsilon>0\) on a logarithmic scale. The thick green line marks the He core mass. The x-axis is in <code>model_number</code>, <i>not</i> a physical quantity.</figcaption>
@@ -396,8 +373,8 @@ Describe qualitatively what happens at timestep \(\sim 600\).
 Specifically, how do you expect the stellar radius to change?
 </p>
 <div class="org-drawer-container">
-  <button class="org-drawer-toggle" onclick="toggleDrawer('drawer-Hint-2655')">Hint ▼</button>
-  <div id="drawer-Hint-2655" class="org-drawer-content" style="display: none;"><p>
+  <button class="org-drawer-toggle" onclick="toggleDrawer('drawer-Hint-6')">Hint ▼</button>
+  <div id="drawer-Hint-6" class="org-drawer-content" style="display: none;"><p>
 You don't need to be able to give a physical motivation here, just
 a qualitative description.
 </p>
@@ -409,9 +386,9 @@ a qualitative description.
 </div>
 </div>
 
-<div id="outline-container-orgf3922fd" class="outline-3">
-<h3 id="orgf3922fd"><a href="#orgf3922fd">Mass loss exercise</a></h3>
-<div class="outline-text-3" id="text-orgf3922fd">
+<div id="outline-container-mass-loss-exercise" class="outline-3">
+<h3 id="mass-loss-exercise"><a href="#mass-loss-exercise">Mass loss exercise</a></h3>
+<div class="outline-text-3" id="text-org-element-9">
 <p>
 Throughout their evolution, stars can lose a significant amount of mass.
 Mass loss channels include:
@@ -437,8 +414,8 @@ Discuss which stars are more likely to lose mass (main sequence vs.
 evolved star) using physical arguments.
 </p>
 <div class="org-drawer-container">
-  <button class="org-drawer-toggle" onclick="toggleDrawer('drawer-Hint-1823')">Hint ▼</button>
-  <div id="drawer-Hint-1823" class="org-drawer-content" style="display: none;"><p>
+  <button class="org-drawer-toggle" onclick="toggleDrawer('drawer-Hint-7')">Hint ▼</button>
+  <div id="drawer-Hint-7" class="org-drawer-content" style="display: none;"><p>
 Energetic arguments may be helpful to answer here.
 </p>
 </div>
@@ -449,8 +426,8 @@ globally (give a lower limit as a function of \(M\) and \(R\))?</li>
 How high does it need to be to break thermal equilibrium globally?
 </p>
 <div class="org-drawer-container">
-  <button class="org-drawer-toggle" onclick="toggleDrawer('drawer-Hint-4685')">Hint ▼</button>
-  <div id="drawer-Hint-4685" class="org-drawer-content" style="display: none;"><p>
+  <button class="org-drawer-toggle" onclick="toggleDrawer('drawer-Hint-8')">Hint ▼</button>
+  <div id="drawer-Hint-8" class="org-drawer-content" style="display: none;"><p>
 The widely used scaling of the wind mass loss from <a href="https://ui.adsabs.harvard.edu/abs/1975psae.book..229R/abstract">Reimers
 1975</a> assumes that the actual mass-loss rate has the scaling you
 should find here times a small pre-factor that keeps the stars in
@@ -511,9 +488,9 @@ luminosity.</li>
 </div>
 </div>
 
-<div id="outline-container-org69ca5c9" class="outline-2">
-<h2 id="org69ca5c9"><a href="#org69ca5c9">Evaluation rubric</a></h2>
-<div class="outline-text-2" id="text-org69ca5c9">
+<div id="outline-container-evaluation-rubric" class="outline-2">
+<h2 id="evaluation-rubric"><a href="#evaluation-rubric">Evaluation rubric</a></h2>
+<div class="outline-text-2" id="text-org-element-10">
 <!-- This HTML table template is generated by emacs 29.2 -->
 <table border="1">
   <tr>
@@ -713,7 +690,7 @@ luminosity.</li>
   <hr>
   <a href="#light-dark-toggle"><i id="light-dark-toggle"><i class="fa-solid fa-circle-half-stroke"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="#"><i class="fa-solid fa-arrow-left" style="font-size:16px"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="#top"><i class="fa-solid fa-arrow-up" style="font-size:16px"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="#"><i class="fa-solid fa-arrow-right" style="font-size:16px"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="https://github.com/mathren/stellar_phys_545"><i class="fa-brands fa-github" style="font-size:16px"></i></a><hr>
   <br>
-  Last updated on 6 April 2026 <br>
+  Last updated on 11 April 2026 <br>
   Made with Emacs 29.2 - Org mode 9.6.15
   <br>
 </div>

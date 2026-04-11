@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 2026-04-06 Mon 12:15 -->
+<!-- 2026-04-11 Sat 14:23 -->
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>ASTR545 - Common Envelope Evolution</title>
@@ -92,6 +92,14 @@
 
 <!-- toggle drawers -->
 <script>
+  function toggleDrawer(id) {
+      const drawer = document.getElementById(id);
+      drawer.style.display = drawer.style.display === "none" ? "block" : "none";
+  }
+</script>
+
+<!-- toggle dark mode -->
+<script>
   window.onload = () => {
       const toggleButton = document.getElementById("light-dark-toggle");
       const body = document.body;
@@ -118,37 +126,6 @@
       });
   };
 </script>
-
-<!-- jump to nearest date in lectures.html -->
-<script>
-document.addEventListener("DOMContentLoaded", () => {
-  const headers = [...document.querySelectorAll("h1, h2, h3, h4, h5, h6")];
-  const today = new Date();
-  today.setHours(0, 0, 0, 0);
-
-  let closest = null;
-  let closestDiff = Infinity;
-
-  for (const h of headers) {
-    const ts = h.querySelector("span.timestamp");
-    if (!ts) continue;
-
-    const match = ts.textContent.match(/(\d{4}-\d{2}-\d{2})/);
-    if (!match) continue;
-
-    const parsed = new Date(match[1] + "T00:00:00");
-    const diff = Math.abs(parsed - today);
-
-    if (diff < closestDiff) {
-      closestDiff = diff;
-      closest = h;
-    }
-  }
-
-  if (closest) closest.scrollIntoView({ behavior: "smooth", block: "start" });
-});
-</script>
-
 <!-- end scripts-->
 </div>
 <div id="content" class="content">
@@ -158,9 +135,9 @@ al. 2021</a>, <a href="https://ui.adsabs.harvard.edu/abs/2023LRCA....9....2R/abs
 al. 2020.
 </p>
 
-<div id="outline-container-orga799203" class="outline-2">
-<h2 id="orga799203"><a href="#orga799203">Dynamically unstable mass-transfer</a></h2>
-<div class="outline-text-2" id="text-orga799203">
+<div id="outline-container-dynamically-unstable-mass-transfer" class="outline-2">
+<h2 id="dynamically-unstable-mass-transfer"><a href="#dynamically-unstable-mass-transfer">Dynamically unstable mass-transfer</a></h2>
+<div class="outline-text-2" id="text-org-element-1">
 <p>
 As stars evolve, their radius tends to increase. We have <a href="./notes-lecture-RLOF.html">seen</a>
 that in a binary system, this can lead the more massive and faster
@@ -183,7 +160,7 @@ the orbit (e.g., <a href="https://ui.adsabs.harvard.edu/abs/2012ApJ...760...99P/
 </p>
 
 
-<figure id="org0bf66dd">
+<figure id="org-element-2">
 <img src="./images/RLOFCE.png" alt="RLOFCE.png" width="100%">
 
 <figcaption><span class="figure-number">Figure 1: </span>Schematic division between modes of mass-transfer based on the response of the orbital separation.</figcaption>
@@ -220,9 +197,9 @@ the outcome in rapid binary population synthesis calculations.
 </p>
 </div>
 
-<div id="outline-container-org2ee492b" class="outline-3">
-<h3 id="org2ee492b"><a href="#org2ee492b">Stability criteria</a></h3>
-<div class="outline-text-3" id="text-org2ee492b">
+<div id="outline-container-stability-criteria" class="outline-3">
+<h3 id="stability-criteria"><a href="#stability-criteria">Stability criteria</a></h3>
+<div class="outline-text-3" id="text-org-element-3">
 <p>
 <a href="https://ui.adsabs.harvard.edu/abs/1997A%26A...327..620S/abstract">Soberman et al. 1997</a> formalized analytically a stability criterion
 for mass transfer, based on the response of the donor star radius to
@@ -296,11 +273,11 @@ numerical simulations and/or observations.
 </div>
 
 
-<div id="outline-container-orgf6ebe66" class="outline-2">
-<h2 id="orgf6ebe66"><a href="#orgf6ebe66">Common envelope evolution</a></h2>
-<div class="outline-text-2" id="text-orgf6ebe66">
+<div id="outline-container-common-envelope-evolution" class="outline-2">
+<h2 id="common-envelope-evolution"><a href="#common-envelope-evolution">Common envelope evolution</a></h2>
+<div class="outline-text-2" id="text-org-element-4">
 
-<figure id="org753b260">
+<figure id="org-element-5">
 <img src="./images/CE_evol.png" alt="CE_evol.png" width="50%">
 
 <figcaption><span class="figure-number">Figure 2: </span>Schematic representation of the phases of a common envelope, with possible outcomes ejection of the envelope or stellar merger. Not every phase need to happen in every CE. This is Fig. 1 from <a href="https://ui.adsabs.harvard.edu/abs/2021ApJ...919..128R/abstract">Renzo et al. 2021</a>.</figcaption>
@@ -370,9 +347,9 @@ drag), and the formation of a tight period binary</li>
 </ul>
 </div>
 
-<div id="outline-container-org31d1c97" class="outline-3">
-<h3 id="org31d1c97"><a href="#org31d1c97">Direct numerical simulations of CE</a></h3>
-<div class="outline-text-3" id="text-org31d1c97">
+<div id="outline-container-direct-numerical-simulations-of-ce" class="outline-3">
+<h3 id="direct-numerical-simulations-of-ce"><a href="#direct-numerical-simulations-of-ce">Direct numerical simulations of CE</a></h3>
+<div class="outline-text-3" id="text-org-element-6">
 <p>
 Common envelope evolution, since it's theorization in the 1970s by
 Paczynski, Webbink, Taam, and Ostriker, remains one of the biggest
@@ -410,9 +387,9 @@ unresolved region.
 </div>
 
 
-<div id="outline-container-org727ffb2" class="outline-3">
-<h3 id="org727ffb2"><a href="#org727ffb2">Energetic considerations for CE outcome</a></h3>
-<div class="outline-text-3" id="text-org727ffb2">
+<div id="outline-container-energetic-considerations-for-ce-outcome" class="outline-3">
+<h3 id="energetic-considerations-for-ce-outcome"><a href="#energetic-considerations-for-ce-outcome">Energetic considerations for CE outcome</a></h3>
+<div class="outline-text-3" id="text-org-element-7">
 <p>
 In lack of a viable first-principle approach to CE, we often rely on
 simple conservation laws arguments to try to map the pre-CE to the
@@ -425,7 +402,7 @@ The core idea is to relate a fraction \(\alpha_{\rm CE}\) of the change in orbit
 energy as the binary spirals in, to the binding energy of the (pre-CE)
 envelope:
 </p>
-<div class="latex" id="orgdba39ec">
+<div class="latex" id="org-element-8">
 \begin{equation}
  \alpha_{\rm CE} \Delta E_{\rm orb} = E_{\rm bind} \Rightarrow \alpha_{\rm CE}\left(-\frac{GM_{1}M_{2}}{2a_{i}} + \frac{GM_{\rm 1,core} M_{2}}{2a_{f}} \right) = E_{\rm bind} \ \ ,
 \end{equation}
@@ -445,7 +422,7 @@ on the structure of the donor star before the onset of mass transfer
 (i.e., neglecting modifications introduced in the initial RLOF phase
 lasting possibly \(\sim{}\tau_{\rm thermal}\)):
 </p>
-<div class="latex" id="org9dc4ef7">
+<div class="latex" id="org-element-9">
 \begin{equation}
 E_{\rm bind} = \frac{GM_{1} M_{\rm env}}{\lambda_{CE}R_{1}} \ \,
 \end{equation}
@@ -496,8 +473,8 @@ bound and the ejecta may not apply if losses from the system are significant!
 </p>
 
 <div class="org-drawer-container">
-  <button class="org-drawer-toggle" onclick="toggleDrawer('drawer-Question-5799')">Question ▼</button>
-  <div id="drawer-Question-5799" class="org-drawer-content" style="display: none;"><ul class="org-ul">
+  <button class="org-drawer-toggle" onclick="toggleDrawer('drawer-Question-1')">Question ▼</button>
+  <div id="drawer-Question-1" class="org-drawer-content" style="display: none;"><ul class="org-ul">
 <li><b>Q</b>: How would you constrain observationally \(\alpha_{\rm CE}\) using observed populations?</li>
 </ul>
 </div>
@@ -506,9 +483,9 @@ bound and the ejecta may not apply if losses from the system are significant!
 </div>
 </div>
 
-<div id="outline-container-org3d4c934" class="outline-2">
-<h2 id="org3d4c934"><a href="#org3d4c934">Electromagnetic counterparts: luminous red novae</a></h2>
-<div class="outline-text-2" id="text-org3d4c934">
+<div id="outline-container-electromagnetic-counterparts-luminous-red-novae" class="outline-2">
+<h2 id="electromagnetic-counterparts-luminous-red-novae"><a href="#electromagnetic-counterparts-luminous-red-novae">Electromagnetic counterparts: luminous red novae</a></h2>
+<div class="outline-text-2" id="text-org-element-10">
 <p>
 CE is crucial in the formation of most close-binary systems and thus
 the vast astrophysical phenomenology that they can produce (double WDs
@@ -526,7 +503,7 @@ pre-outburst characterization of a shrinking binary is available:
 </p>
 
 
-<figure id="org0e3bbe3">
+<figure id="org-element-11">
 <img src="./images/v1309Sco.png" alt="v1309Sco.png" width="100%">
 
 <figcaption><span class="figure-number">Figure 3: </span>Pre-outburst evolution of the period of the binary V1309Sco and pre- and post outburst light curve, from <a href="https://ui.adsabs.harvard.edu/abs/2011A%26A...528A.114T/abstract">Tylenda et al. 2011</a>.</figcaption>
@@ -546,7 +523,7 @@ has a nice light-echo image from <i>HST</i>:
 </p>
 
 
-<figure id="org64f49b7">
+<figure id="org-element-12">
 <img src="./images/V838_Mon_1989-2006.gif" alt="V838_Mon_1989-2006.gif" width="50%">
 
 <figcaption><span class="figure-number">Figure 4: </span>Light echos of the LRN V838Mon, By Lasunncty <a href="https://commons.wikimedia.org/w/index.php?curid=83852409">https://commons.wikimedia.org/w/index.php?curid=83852409</a></figcaption>
@@ -571,9 +548,9 @@ time-domain astrophysics.
 </div>
 </div>
 
-<div id="outline-container-org459ceb4" class="outline-2">
-<h2 id="org459ceb4"><a href="#org459ceb4">Stellar mergers are common</a></h2>
-<div class="outline-text-2" id="text-org459ceb4">
+<div id="outline-container-stellar-mergers-are-common" class="outline-2">
+<h2 id="stellar-mergers-are-common"><a href="#stellar-mergers-are-common">Stellar mergers are common</a></h2>
+<div class="outline-text-2" id="text-org-element-13">
 <p>
 Sometimes, dynamically unstable mass-transfer ultimately result in the
 merger of two stars (if the temporarily shared envelope cannot be
@@ -598,9 +575,9 @@ al. 2019</a>, <a href="https://ui.adsabs.harvard.edu/abs/2020ApJ...896...50C/abs
 </p>
 </div>
 
-<div id="outline-container-org7db25b0" class="outline-4">
-<h4 id="org7db25b0"><a href="#org7db25b0">Main-sequence + main-sequence mergers</a></h4>
-<div class="outline-text-4" id="text-org7db25b0">
+<div id="outline-container-main-sequence-main-sequence-mergers" class="outline-4">
+<h4 id="main-sequence-main-sequence-mergers"><a href="#main-sequence-main-sequence-mergers">Main-sequence + main-sequence mergers</a></h4>
+<div class="outline-text-4" id="text-org-element-14">
 <p>
 <a href="https://ui.adsabs.harvard.edu/abs/2002ApJ...568..939L/abstract">Lombardi 2002</a>, <a href="https://ui.adsabs.harvard.edu/abs/2013MNRAS.434.3497G/abstract">Gleebek et al. 2013</a> studied the hydrodynamics (no
 radiation) of head on collisions and mergers driven by dynamics (e.g.,
@@ -616,7 +593,7 @@ initially bound binary with \(E<0\) and an elliptic orbit (\(0\le e<1\)).
 </p>
 
 
-<figure id="orgcf512d9">
+<figure id="org-element-15">
 <img src="./images/lombardi02.png" alt="lombardi02.png" width="50%">
 
 <figcaption><span class="figure-number">Figure 5: </span>Fractional amount of mass loss in smoothed particle hydrodynamics simulations of dynamical mergers as a function of the impact parameter \(b\) between the colliding stars in units of the sum of their radii.</figcaption>
@@ -635,8 +612,8 @@ density on the equatorial plane:
 <iframe width="600" height="400" src="https://player.vimeo.com/video/365050032" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
 
 <div class="org-drawer-container">
-  <button class="org-drawer-toggle" onclick="toggleDrawer('drawer-Question-7923')">Question ▼</button>
-  <div id="drawer-Question-7923" class="org-drawer-content" style="display: none;"><ul class="org-ul">
+  <button class="org-drawer-toggle" onclick="toggleDrawer('drawer-Question-2')">Question ▼</button>
+  <div id="drawer-Question-2" class="org-drawer-content" style="display: none;"><ul class="org-ul">
 <li><b>Q</b>: where does the orbital angular momentum go during a merger?</li>
 </ul>
 </div>
@@ -680,9 +657,9 @@ after it has relaxed for a thermal timescale
 </div>
 </div>
 
-<div id="outline-container-org1f080ca" class="outline-4">
-<h4 id="org1f080ca"><a href="#org1f080ca">Post-main sequence + main sequence</a></h4>
-<div class="outline-text-4" id="text-org1f080ca">
+<div id="outline-container-post-main-sequence-main-sequence" class="outline-4">
+<h4 id="post-main-sequence-main-sequence"><a href="#post-main-sequence-main-sequence">Post-main sequence + main sequence</a></h4>
+<div class="outline-text-4" id="text-org-element-16">
 <p>
 Assuming a flat (or flat in log) initial period distribution of
 binaries, mergers between a main-sequence (unevolved, initially less
@@ -719,7 +696,7 @@ ejecta that result in the "hourglass" morphology of SN1987A's remnant
 </p>
 
 
-<figure id="orgf1e1295">
+<figure id="org-element-17">
 <img src="./images/merger_justham.jpg" alt="merger_justham.jpg" width="75%">
 
 <figcaption><span class="figure-number">Figure 6: </span>Cartoon of the pre-merger and merger evolution, with corresponding HR diagram with both pre-merger stars and the re-constructed 1D post-merger evolution, this is Fig. 1 in <a href="https://ui.adsabs.harvard.edu/abs/2014ApJ...796..121J/abstract">Justham et al. 2014</a>.</figcaption>
@@ -758,7 +735,7 @@ stellar physics).
   <hr>
   <a href="#light-dark-toggle"><i id="light-dark-toggle"><i class="fa-solid fa-circle-half-stroke"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="notes-lecture-RLOF.html"><i class="fa-solid fa-arrow-left" style="font-size:16px"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="#top"><i class="fa-solid fa-arrow-up" style="font-size:16px"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="notes-lecture-SNe.html"><i class="fa-solid fa-arrow-right" style="font-size:16px"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="https://github.com/mathren/stellar_phys_545"><i class="fa-brands fa-github" style="font-size:16px"></i></a><hr>
   <br>
-  Last updated on 6 April 2026 <br>
+  Last updated on 11 April 2026 <br>
   Made with Emacs 29.2 - Org mode 9.6.15
   <br>
 </div>
