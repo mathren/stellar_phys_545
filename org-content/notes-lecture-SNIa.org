@@ -140,6 +140,10 @@ These correspond to $\gtrsim 90\%$ of SNIa subtypes ([[https://ui.adsabs.harvard
 the overall rate of SNIa and CCSN have similar orders of magnitude, of
 order of 0.1-1/century per Milky-way-like galaxy.
 
+#+CAPTION: Top: Cumulative distribution of projected distances between various SN-types and their host galaxy (SLSNe are "super-luminous" SNe, with peak absolute magnitude brighter than -21). Bottom: Same, but normalized by the host galaxy half-light radius. Modified from Fig. 3 of [[https://iopscience.iop.org/article/10.3847/1538-4357/ad12be][Hsu et al. 2024]]. Credits: Brian Hsu.
+#+ATTR_HTML: :width 50%
+[[./images/SNIa_offsets.png]]
+
 From their location in their host galaxies, we know that these
 transients (unlike CCSNe) are /not/ associated to young stellar
 populations: they occur often in elliptical galaxies with no ongoing
@@ -294,7 +298,6 @@ A detonation of the CO material may also be caused by an initial
 deflagration of He (subsonic) which accelerates because of the energy
 release by He burning into a detonation, producing a *delayed
 detonation*.
-
 
 ** Summary of theoretical SNIa model classes
 
