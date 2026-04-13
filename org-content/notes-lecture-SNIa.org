@@ -5,9 +5,8 @@
 #+PREVIOUS_PAGE: notes-lecture-GWprog.org
 
 *Materials:* Hansen & Kawaler book Sec. 2.6.3, [[https://ui.adsabs.harvard.edu/abs/1982ApJ...253..785A/abstract][Arnett 1982]], [[https://ui.adsabs.harvard.edu/abs/1993ApJ...413L.105P/abstract][Phillips
-1993]], [[http://www.annualreviews.org/doi/10.1146/annurev.astro.35.1.309][Filippenko 1997]], [[https://ui.adsabs.harvard.edu/abs/2007ApJ...660.1444S/abstract][Shen & Bildsten 2007]], [[https://ui.adsabs.harvard.edu/abs/2000ARA%26A..38..191H/abstract][Hillebrandt &
-Niemeyer 2000]], [[https://ui.adsabs.harvard.edu/abs/2012PASA...29..447M/abstract][Maoz & Mannuci 2012]], [[https://ui.adsabs.harvard.edu/abs/2013ApJ...777..136W/abstract][Wolf et al. 2013]], [[https://www.aanda.org/articles/aa/ref/2025/02/aa51852-24/aa51852-24.html][Dimitriadis
-2026]]
+1993]], [[http://www.annualreviews.org/doi/10.1146/annurev.astro.35.1.309][Filippenko 1997]], [[https://ui.adsabs.harvard.edu/abs/2007ApJ...660.1444S/abstract][Shen & Bildsten 2007]], [[https://ui.adsabs.harvard.edu/abs/2000ARA%26A..38..191H/abstract][Hillebrandt & Niemeyer
+2000]], [[https://ui.adsabs.harvard.edu/abs/2012PASA...29..447M/abstract][Maoz & Mannuci 2012]], [[https://ui.adsabs.harvard.edu/abs/2013ApJ...777..136W/abstract][Wolf et al. 2013]], [[https://www.aanda.org/articles/aa/ref/2025/02/aa51852-24/aa51852-24.html][Dimitriadis 2026]]
 
 * Time domain astrophysics is much more than just CCSNe
 
@@ -140,7 +139,7 @@ These correspond to $\gtrsim 90\%$ of SNIa subtypes ([[https://ui.adsabs.harvard
 the overall rate of SNIa and CCSN have similar orders of magnitude, of
 order of 0.1-1/century per Milky-way-like galaxy.
 
-#+CAPTION: Top: Cumulative distribution of projected distances between various SN-types and their host galaxy (SLSNe are "super-luminous" SNe, with peak absolute magnitude brighter than -21). Bottom: Same, but normalized by the host galaxy half-light radius. Modified from Fig. 3 of [[https://iopscience.iop.org/article/10.3847/1538-4357/ad12be][Hsu et al. 2024]]. Credits: Brian Hsu.
+#+CAPTION: Top: Cumulative distribution of projected distances between various SN-types and their host galaxy (SLSNe are "super-luminous" SNe, with peak absolute magnitude brighter than -21). Bottom: Same, but normalized by the host galaxy half-light radius. SNIa tend to occur farther from their host (top panel), but the hosts tend to be bigger elliptical galaxies (larger normalization in the bottom panel). Modified from Fig. 3 of [[https://iopscience.iop.org/article/10.3847/1538-4357/ad12be][Hsu et al. 2024]]. Credits: Brian Hsu.
 #+ATTR_HTML: :width 50%
 [[./images/SNIa_offsets.png]]
 

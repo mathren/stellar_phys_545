@@ -178,6 +178,8 @@ Discuss written and oral presentations, and refereeing process.
 ** <2026-03-06 Fri> - *Guest Lecture*: Coupling rapid binary evolution and galactic dynamics
 *Guest lecturer*: [[https://www.tomwagg.com/][Dr. Tom Wagg]]
 
+[[https://users.flatironinstitute.org/~twagg/slides/guest_lecture_UoA_renzo_stars.pptx][Tom's slides are available on his website]]
+
 ** <2026-03-07 Sat> - <2026-03-15 Sun> - SPRING BREAK
 
 [[./mid_term.org][Take home midterm exam]]

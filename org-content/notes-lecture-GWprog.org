@@ -121,6 +121,11 @@ of propagation in Newtonian physics, one can build a lot of intuition
 and quantitative results correct to order of magnitude for GW physics,
 see [[https://ui.adsabs.harvard.edu/abs/1984AmJPh..52..412S/abstract][Schutz 1984]] and  [[https://onlinelibrary.wiley.com/doi/full/10.1002/andp.201600209][LVK Collaboration 2017]].
 
+:Question:
+- *Q*: For which stars do you expect GR to be important?
+:end:
+
+
 For general relativity effects to be important, $M/R$ needs to be
 "large": either extremely large masses regardless of the scale (see
 the very first ideas of what today we call a black hole from [[https://ui.adsabs.harvard.edu/abs/1784RSPT...74...35M/abstract][Michell
@@ -366,9 +371,7 @@ $\ge100-1000R_{\odot}$. How can we reconcile these two facts?
 novae and main-sequence + WD binary, where the orbital separation of
 the present-day binary is much smaller than the radii of the
 progenitor of the WD, which lead to the idea of "common envelope
-evolution" (see [[https://ui.adsabs.harvard.edu/abs/1976IAUS...73...75P/abstract][Paczynski 1976]] and [[https://ui.adsabs.harvard.edu/abs/1978ApJ...222..269T/abstract][Taam et al. 1978]] for the original
-ideas, and [[https://ui.adsabs.harvard.edu/abs/2013A%26ARv..21...59I/abstract][Ivanova et al. 2013]], [[https://ui.adsabs.harvard.edu/abs/2020cee..book.....I/abstract][2020]] and [[https://ui.adsabs.harvard.edu/abs/2023LRCA....9....2R/abstract][Ropke & de Marco 2023]] for
-more recent extensive resources).
+evolution" (see [[./notes-lecture-CE.org][corresponding lecture notes]] and references therein).
 
 The proposed solutions of this apparent paradox are many, and it is a
 very active research topic presently. They can broadly be subdivided
@@ -444,8 +447,9 @@ The key steps are:
    [[https://ui.adsabs.harvard.edu/abs/2021A%26A...650A.107M/abstract][Marchant et al. 2021]], [[https://ui.adsabs.harvard.edu/abs/2022ApJ...940..184V/abstract][van Son et al. 2021]]). Note that the common
    envelope can again result into a stellar merger (but now between a
    compact object and a star, which would make interesting objects
-   such as Thorne-Zytkow objects and quasi-stars, cf. e.g., [[https://ui.adsabs.harvard.edu/abs/1975ApJ...199L..19T/abstract][Thorne &
-   Zytkow 1975]], [[https://ui.adsabs.harvard.edu/abs/2024arXiv241002896O/abstract][O'Grady et al. 2024]])
+   such as Thorne-Zytkow objects or quasi-stars, cf. e.g., [[https://ui.adsabs.harvard.edu/abs/1975ApJ...199L..19T/abstract][Thorne &
+   Zytkow 1975]], [[https://ui.adsabs.harvard.edu/abs/2024arXiv241002896O/abstract][O'Grady et al. 2024]], or possibly an interesting
+   transient, e.g., [[https://ui.adsabs.harvard.edu/abs/2025Ap%26SS.370...11G/abstract][Grichener 2025]])
 7. If the CE succeeds, we have now a compact object orbiting around
    the core of the initially less massive star, this can again briefly
    be an X-ray source.
@@ -487,6 +491,33 @@ much more likely to have a significant gravitational interaction
 between a binary and a star (or between two binaries) than between two
 single stars.
 
+Multiple dense stellar environment have been proposed:
+ - stellar clusters: if sufficiently dense they can produce large
+   rates of BBH (while they don't work well for systems involving NS
+   that get a kick at birth and whose progenitors are less massive and
+   live in the cluster outskirts preventing them from entering the
+   most dense part of the cluster where most interactions occur).
+ - nuclear star cluster: these are clusters around the supermassive BH
+   at the center of a galaxy. This makes the escape velocity from
+   these higher, and increases the chances of retaining the merger
+   products and get multiple "generations" of mergers. However, the
+   presence of a large mass can also increase the velocity dispersion,
+   lowering the cross-section for encounters.
+ - Active Galactic Nucleus disk: in the accretion disk of the
+   supermassive BH in the center of a galaxy there can be stars and
+   compact objects. They can interact dynamically (possibly with the
+   gas of the disk playing an important role), and this has been
+   proposed as a possible site for GW mergers.
+ - (Newtonian) Gravitational dynamics in triples and quadruple systems
+   are in a sense a "transition" class between dynamical and isolated
+   evolution channels.
+
+
+*N.B.:* This brief overview is far from complete: this is a relatively
+new and extremely active field, and by the time I finish writing any
+comprehensive summary there would be much more to summarize already!
+
+
 
 The video (from Prof. Carl Rodriguez) below shows a "zoom in" on one
 of the many N-body interactions that can happen. There is one incoming
@@ -505,29 +536,6 @@ and merge within the age of the Universe.
 #+HTML: <video  controls width="600" height="400" src="./images/nopn_dvd.mp4" </video>
 #  [[./images/nopn_dvd.mp4]]
 
-Multiple dense stellar environment have been proposed:
- - stellar clusters: if sufficiently dense they can produce large
-   rates of BBH (while they don't work well for systems involving NS
-   that get a kick at birth and whose progenitors are less massive and
-   live in the cluster outskirts preventing them from entering the
-   most dense part of the cluster where most interactions occur)
- - nuclear star cluster: these are clusters around the supermassive BH
-   at the center of a galaxy. This makes the escape velocity from
-   these higher, and increases the chances of retaining the merger
-   products and get multiple "generations" of mergers
- - Active Galactic Nucleus disk: in the accretion disk of the
-   supermassive BH in the center of a galaxy there can be stars and
-   compact objects. They can interact dynamically (possibly with the
-   gas of the disk playing an important role), and this has been
-   proposed as a possible site for GW mergers.
- - (Newtonian) Gravitational dynamics in triples and quadruple systems
-   are in a sense a "transition" class between dynamical and isolated
-   evolution channels.
-
-
-*N.B.:* This brief overview is far from complete: this is a relatively
-new and extremely active field, and by the time I finish writing any
-comprehensive summary there would be much more to summarize already!
 
 * The present and future of GW astronomy
 
@@ -542,7 +550,7 @@ umbrella of the "LIGO Virgo KAGRA scientific collaboration". The
 figure below shows the short term future observing plan for the
 existing ground based detectors:
 
-#+CAPTION: LIGO, VIRGO, and KAGRA are three ground-based GW observatories. This figure shows the predicted uptime for each detector with the horizon out to which they are predicted to be able to detect a BNS merger. From [[https://observing.docs.ligo.org/plan/]].
+#+CAPTION: LIGO, VIRGO, and KAGRA are three ground-based GW observatories. This figure shows the predicted uptime for each detector with the horizon out to which they are predicted to be able to detect an optimally ordiented BNS merger. From [[https://observing.docs.ligo.org/plan/]].
 #+ATTR_HTML: :width 100%
 [[./images/GW_timeline.png]]
 
@@ -575,6 +583,7 @@ micro-earthquakes. Multiple competing plans exist at this point (e.g.,
 Cosmic Explorer in the US and Einstein Telescope in Europe), and are
 expected to be able to detect BBH merger up to redshift \sim20, much
 before the formation of the first stars!
+
 
 ** Space-based detectors
 
@@ -621,7 +630,7 @@ differences:
   much longer. Since LISA is a planned space mission with a finite lifetime
   ($\sim 5-10$ years), during this time most expected sources are going
   to be effectively stationary: $\dot{f}_\mathrm{GW} \simeq 0$ and
-  $f_\mathrm{GW} = $ constant: DWD produce a pure GW "tone".
+  $f_\mathrm{GW}$ = constant: DWD produce a pure GW "tone".
 
 For all binary sources of GWs, if the mass ratio is $q=1$ then the
 mass configuration returns the same every half-orbital-period:
