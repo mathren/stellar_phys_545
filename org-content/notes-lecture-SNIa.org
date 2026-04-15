@@ -317,7 +317,7 @@ detonation*.
 |                  |                      |  Delayed detonation       |
 +------------------+----------------------+---------------------------+
 
-*N.B.:* In principle each entry in a column can be combined with any
+*N.B.:* In principle, each entry in a column can be combined with any
 other element in the other columns unless proven otherwise.
 
 Any successful SNIa model needs to:
@@ -368,7 +368,7 @@ light curve in each band is qualitatively very similar, which suggest
 it may be possible to "standardize" them.
 
 #+CAPTION: Qualitative light curve evolution of SNIa across various photometric optical and IR bands (from blue to red moving up). From [[https://www.astronomy.swin.edu.au/cosmos/T/Type%2BIa%2Bsupernova%2Blight%2Bcurves][Swinburn university educational materials]]. The x-axis units are roughly days and it spans roughly 60 days.
-#+ATTR_HTML: :width 70%
+#+ATTR_HTML: :width 40%
 [[./images/SNIaLC.jpg]]
 
 
