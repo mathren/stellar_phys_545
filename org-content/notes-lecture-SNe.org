@@ -735,7 +735,9 @@ unstable nucleus that initiates the following decay cascade:
 
 #+begin_latex
 \begin{equation}
-^{56}\mathrm{Ni} \rightarrow e^{+} + \nu_{e} + ^{56}\mathrm{CO} \\
+^{56}\mathrm{Ni} \rightarrow e^{+} + \nu_{e} + ^{56}\mathrm{CO} \ \ ,
+\end{equation}
+\begin{equation}
 ^{56}\mathrm{CO} \rightarrow e^{+} + \nu_{e} + ^{56}\mathrm{Fe} \ \ ,
 \end{equation}
 #+end_latex
