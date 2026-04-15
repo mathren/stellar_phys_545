@@ -108,7 +108,7 @@ main-sequence companion from which the [[./notes-lecture-CE.org][common envelope
 symbiotic variables with a red-giant companion, He novae, etc.).
 
 *N.B.:* We also see a rarer-class of He-novae where the composition of
-the accreted material is He-rich, which changes the $\varepsilon_{\nuc}$ and thus
+the accreted material is He-rich, which changes the $\varepsilon_{\rm nuc}$ and thus
 the lines in Fig. 1.
 
 Recently, novae studies have become a hot topic because of the
@@ -177,7 +177,7 @@ distance measurements in cosmological context (see below).
 **** SNIax
 These can be thought of as "failed" SNIa where the WD is not
 completely destroyed. This leads to overall fainter explosions, and
-are much rare than normal SNIa.
+are much rarer than normal SNIa.
 
 The surviving WD remnant's surface properties may depend on the
 explosion which could in principle create unique degenerate stars
