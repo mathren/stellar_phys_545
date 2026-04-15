@@ -33,7 +33,8 @@ astronomy across electromagnetic wavelengths, GWs, and neutrinos!
 * Explosion of WDs
 In this lecture, we will instead discuss explosions of low-mass stars
 ending their life as WDs, indicated as "thermonuclear SNe" in the
-figure above.
+figure above (if terminal explosions), and "classical novae" for
+non-terminal explosions.
 
 In isolation, a WD can only cool down, possibly releasing some latent
 heat to slow down the cooling if/when it crystallize, and continue
