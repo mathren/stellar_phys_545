@@ -24,7 +24,11 @@ transients:
 
 Understanding the physics driving each of these transients, their
 astrophysical host galaxies and parent populations, their absolute and
-relative rates is a very active topic of research.
+relative rates is a very active topic of research. In a sense, the
+time dimension (i.e., the ability to detect astronomical signals that
+appear, evolve, and possibly fade away within short timescales)
+complements the "multi-messenger" nature of $21^{\rm st}$ century
+astronomy across electromagnetic wavelengths, GWs, and neutrinos!
 
 * Explosion of WDs
 In this lecture, we will instead discuss explosions of low-mass stars
