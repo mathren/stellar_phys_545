@@ -79,9 +79,11 @@ Hydrogen).
 
 *** Low accretion rates: Novae
 For low accretion rates, the material landing at the WD surface
-encounters the hot surface and burns. But the burning is /unstable/:
+encounters the hot surface and burns, but in a degenerate environment
+($P$ does not depend on $T$). This burning is /unstable/:
 small $T$ perturbations increase the $\varepsilon_{\rm nuc}$ of this surface
-burning more than the (radiative) cooling rate. Therefore, small $T$
+burning more than the (radiative) cooling rate without affecting $P$
+(akin to "nuclear flashes" inside stars!). Therefore, small $T$
 perturbations result in a pile-up of thermal energy in the burning
 region, accelerating the burning into a "thermonuclear runaway" (TRN)
 resulting in a *nova* explosion.
