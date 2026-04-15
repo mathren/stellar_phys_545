@@ -346,7 +346,7 @@ stellar evolution).
 In fact, [[https://ui.adsabs.harvard.edu/abs/1982ApJ...253..785A/abstract][Arnett 1982]] developed an analytic radiative transfer
 model for the light curves and broad-band color evolution of SNIa (now
 often referred to as "Arnett's rules") where the main source of energy
-is the [[file:notes-lecture-SNe.org::*Adiabatic expansion and radioactive energy input][radioactive decay of]] $^{56}\mathrm{Ni}$ centrally condensed in a
+is the [[./notes-lecture-SNe.org::*Adiabatic expansion and radioactive energy input][radioactive decay of]] $^{56}\mathrm{Ni}$ centrally condensed in a
 spherical star. A key (and questionable) assumption of Arnett's rules
 is that the $\gamma$ rays produced by the annihilation of the positron
 produced by the decay $^{56}\mathrm{Ni}$ with an electron are trapped in
