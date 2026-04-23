@@ -54,3 +54,5 @@ Each semester's website will be archived as a release.
 - [ ] HW on Chandrasekhar mass: design approximation bypassing
   Lane-Emden equation?
 - [ ] =MESA-web= final condition for WD models needs double checking
+- [ ] mid-term exam question: when is R_{\odot} reached should specify "in
+  gravothermal equilibrium"
