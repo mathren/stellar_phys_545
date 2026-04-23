@@ -164,8 +164,8 @@ Mass loss channels include:
 - pressure- or radiation-driven stellar winds
   ($-14\le\log_{10}(-\dot{M}/[M_{\odot}\ \mathrm{yr}^{-1}])\le-5$)
 - some binary interactions (for the donor star)
-- eruptive events (e.g., Luminous blue variable eruptions, flares and
-  coronal mass-ejections, etc.)
+- eruptive events (e.g., Luminous blue variable eruptions, coronal
+  mass-ejections, etc.)
 
 Let's consider a star of mass $M$, outermost radius $R$, luminosity
 $L$, and mass-loss rate $\dot{M}$:
