@@ -48,11 +48,10 @@ Each semester's website will be archived as a release.
 * TODO Feedback
 - [ ] clarify instructions for submission of final project materials
   - submission of manuscript: email cc-ing instructor and referees, =author_last_name_topic.pdf=
-  - referee reports: email cc-ing author and instructor (but not the
-    other referee), =referee_last_name_referee_author_last_name_topic.pdf=
+  - referee reports: email cc-ing author and instructor (but *not* the other referee), =referee_last_name_referee_author_last_name_topic.pdf=
 - [ ] provide examples of referee report and written manuscript?
-- [ ] HW on Chandrasekhar mass: design approximation bypassing
-  Lane-Emden equation?
-- [ ] =MESA-web= final condition for WD models needs double checking
-- [ ] mid-term exam question: when is R_{\odot} reached should specify "in
-  gravothermal equilibrium"
+- [ ] HW on Chandrasekhar mass: design approximation bypassing Lane-Emden equation?
+- [ ] =MESA-web= final condition for WD models fails
+- [ ] mid-term exam question: when is R_{\odot} reached should specify "in gravothermal equilibrium"
+- [ ] mid-term exam question: R(Z) better done with radiative envelope, ask comparison at fixed X_{c} and fixed t
+- [ ] mid-term exam: too long to go through without TA
