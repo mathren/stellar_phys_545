@@ -55,3 +55,4 @@ Each semester's website will be archived as a release.
 - [ ] mid-term exam question: when is R_{\odot} reached should specify "in gravothermal equilibrium"
 - [ ] mid-term exam question: R(Z) better done with radiative envelope, ask comparison at fixed X_{c} and fixed t
 - [ ] mid-term exam: too long to go through without TA
+- [ ] use Liu  et al. 2023 for SNIa zoo super-imposed with Phillips relation
